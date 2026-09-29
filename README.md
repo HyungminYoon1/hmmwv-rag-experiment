@@ -59,7 +59,7 @@
 먼저 저장소를 내려받습니다.
 
 ```powershell
-git clone https://github.com/HyungminYoon1/hmmwv-rag-experiment.git
+git clone --branch v2026.09.29 https://github.com/HyungminYoon1/hmmwv-rag-experiment.git
 Set-Location hmmwv-rag-experiment
 ```
 

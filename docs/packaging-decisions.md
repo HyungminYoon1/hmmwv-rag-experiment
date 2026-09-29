@@ -145,3 +145,4 @@
 - 이유: 코드·실험 결과를 공개하고 고정 자료의 크기·해시를 검증하며 복원할 수 있습니다. 소유자의 별도 선택 없이 추가적인 코드 재사용 권한을 부여하지 않습니다.
 - 영향: README, docs/publishing.md, docs/reproduction.md, LICENSE_STATUS.md, artifacts/manifest.json, 원격 origin 및 Release.
 - 후속 검토: push 전 포함 파일과 원격 주소를 확인합니다. 게시한 커밋을 새로 clone하고 Release 첨부를 내려받아 해시·복원을 검사합니다. 키·개인 작업 백업·모델 가중치·가상환경은 게시하지 않습니다.
+- 실시 결과: `0fdb039c99a5ea5afd2bf40e59bf0e2a1c2d5554`을 게시하고 ZIP 3개를 Release에 업로드했습니다. 로그인 없이 새 clone과 첨부 다운로드를 수행했으며, 14,340개 파일 복원 및 공개 자료 18,900개 해시 검사를 통과했습니다. 상세 결과는 [배포본 검증 기록](package-validation.md)에 있습니다.

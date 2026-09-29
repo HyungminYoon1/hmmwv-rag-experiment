@@ -1,6 +1,6 @@
 # GitHub 게시와 배포
 
-저장소는 [HyungminYoon1/hmmwv-rag-experiment](https://github.com/HyungminYoon1/hmmwv-rag-experiment)이며 공개 범위는 public입니다. 고정 자료는 [Release `v2026.09.29`](https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/tag/v2026.09.29)에 첨부합니다.
+저장소는 [HyungminYoon1/hmmwv-rag-experiment](https://github.com/HyungminYoon1/hmmwv-rag-experiment)이며 공개 범위는 public입니다. 고정 자료 ZIP 3개는 [Release `v2026.09.29`](https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/tag/v2026.09.29)에 첨부했습니다. 새 clone에서 원격 다운로드·복원·해시 검사를 통과했으며, [검증 기록](package-validation.md)에 결과를 남겼습니다.
 
 ## 저장소와 첨부 자료
 

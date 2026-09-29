@@ -2,6 +2,22 @@
 
 확인일: 2026-09-29. 원 연구 디렉토리와 분리한 이 배포용 복사본에서 수행했습니다. 새로운 정비 답변 생성이나 유료 평가 API 호출은 수행하지 않았습니다.
 
+## GitHub 공개 게시 확인
+
+확인일: 2026-09-29. [공개 저장소](https://github.com/HyungminYoon1/hmmwv-rag-experiment)와 [고정 Release `v2026.09.29`](https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/tag/v2026.09.29)를 게시했습니다. 최초 게시 커밋은 `0fdb039c99a5ea5afd2bf40e59bf0e2a1c2d5554`입니다.
+
+| 확인 | 결과 |
+| --- | --- |
+| 공개 범위 | GitHub API의 visibility=public, private=false. 로그인 없이 저장소·Release 조회 성공 |
+| 코드와 문서 | GitHub에서 새로 clone한 4,598개 파일이 게시 전 검토본과 바이트·SHA-256 일치 |
+| Release 첨부 | ZIP 3개 업로드 완료. GitHub의 첨부 크기·SHA-256과 로컬 manifest 일치 |
+| 원격 다운로드·복원 | 인증정보 없이 ZIP 3개를 다시 다운로드. 크기·SHA-256 및 내부 파일 검사 후 14,340개 파일 복원 성공 |
+| 공개 자료 무결성 | 새 clone에서 core 및 all 검사 PASS. 공개 연구 자료 18,900개 해시 확인 |
+| 게시 전 비밀정보 검사 | Git 후보 4,598개와 ZIP 3개 검사. 탐지 후보 27개는 기존 검토한 해시·실행 ID, 미결 후보 0개. PC 계정 경로·개인 이메일·개인키 후보 없음 |
+| 포함 범위 | 공개 준비본과 Release ZIP만 게시. 모델 가중치·가상환경·로컬 작업 백업은 제외 |
+
+원격 검증은 위 고정 Release와 최초 게시 커밋을 기준으로 했습니다. 이후 `main`에는 이 검증 기록과 고정 태그를 사용하는 안내를 추가했습니다. 실험 코드·데이터·결과와 Release 첨부는 동일합니다. 코드의 재사용 라이선스는 아직 지정하지 않았습니다.
+
 ## 문서 정리 후 확인 (v3)
 
 현재 준비본은 `20260929-publication-v3`입니다. [결정 P15](packaging-decisions.md#p15-공개-문서의-독립성과-재생성-일치)에 따라 문서와 화면·보고서 생성 문구를 정리했습니다. 문서 정리 후 다음 항목을 확인했습니다.
@@ -46,7 +62,7 @@
 
 변경 전 Git 후보 4,596개와 ZIP 3개는 저장소 바깥에 백업했습니다. 원 실험 당시 해시는 `artifacts/original-files.json`과 `source-bundles.json`에 유지하며, 공개 사본의 변경·이동·제외는 `publication-changes.json`에 기록합니다. 실험 계산 코드, 교범·청크·검색 벡터, 생성 답변과 평가 점수는 변경하지 않았습니다.
 
-현재 Git 후보는 4,598개입니다. ZIP 구성은 runtime-data 2,113개, preprocessing-replay 11,216개, review-evidence 1,011개이며, ZIP의 크기와 SHA-256은 현재 `artifacts/manifest.json`을 따릅니다. 아직 커밋·원격 주소·GitHub 업로드는 없습니다.
+현재 Git 후보는 4,598개입니다. ZIP 구성은 runtime-data 2,113개, preprocessing-replay 11,216개, review-evidence 1,011개이며, ZIP의 크기와 SHA-256은 현재 `artifacts/manifest.json`을 따릅니다. 위 로컬 구성 점검 당시에는 커밋·원격 주소·GitHub 업로드가 없었습니다.
 
 다음 항목들은 최초 구성 당시의 기록입니다. 원본의 바이트를 그대로 복사했던 당시 상태와, 위에서 설명한 현재 공개 사본을 구분합니다.
 
@@ -104,4 +120,4 @@ Git 후보에는 위 원 코드·기록 외에 이 배포본의 README·재연 �
 - replay-commands.json: 전처리 재연 명령의 종료 상태.
 - package-audit.json: 원본 보존, Git 포함/제외, 새 문서 링크·인코딩 검사.
 
-새 360개 답변 수집, 유료 자동평가, 다른 PC에서의 실행, 원격 clone·Release 다운로드 검증은 이번 작업에서 수행하지 않았습니다. 현재 Git 원격 주소를 등록하거나 커밋·push·Release 업로드를 하지 않았습니다.
+위 로컬 구성 점검에서는 새 360개 답변 수집, 유료 자동평가, 다른 PC에서의 실행과 원격 게시·다운로드 검증을 수행하지 않았습니다. 이후 수행한 원격 게시와 다운로드 검증은 이 문서 첫 절에 별도로 기록했습니다.
