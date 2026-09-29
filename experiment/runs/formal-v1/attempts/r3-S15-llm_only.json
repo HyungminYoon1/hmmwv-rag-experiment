@@ -1,0 +1,513 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:40:41.690249+00:00",
+  "evaluation_answer": "The TM 9-2320-280-20-1 manual does not provide specific information on which diagnostic system to check when exhaust smoke is white, as no excerpts were supplied. Based on general knowledge, white exhaust smoke may indicate coolant leakage into the combustion chamber, which would typically require checking the engine cooling system and associated seals or gaskets. However, without specific excerpts from the manual, this response is based on general automotive knowledge and not directly from the referenced document.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 230,
+  "key": "r3-S15-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nWhich diagnostic system does the manual direct the maintainer to check when the exhaust smoke is white?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "Which diagnostic system does the manual direct the maintainer to check when the exhaust smoke is white?",
+  "question_id": "S15",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:27:58.543951207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:27:55.627094807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4879040512.0,
+    "max_actual_interval_ms": 109.79580000002898,
+    "peak_rss_bytes": 9459081216,
+    "peak_vram_bytes": 4879040512,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5725.118993,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5725.2271978,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5725.3346004,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5725.4270922,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5725.5216688,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5725.6299509,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5725.7222155,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5725.8313601,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5725.9247041,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.033021,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.1256898,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9459081216,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.2336745,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.3279243,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.4203776,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.528917,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.6212368,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.7298184,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.8217501,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5726.9298668,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5727.0219438,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5727.1304849,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5727.2245985,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5727.3331424,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5727.4255271,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5727.5194183,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5727.6292141,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5727.7228764,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5727.8321915,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102998016,
+          "30736": 12021760,
+          "36040": 101666816,
+          "37504": 9234018304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9458663424,
+        "vram_bytes": 4879040512
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:40:41.6735935Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 101,
+    "eval_duration": 1664102000,
+    "load_duration": 13394700,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 230,
+    "prompt_eval_duration": 29179000,
+    "response": "The TM 9-2320-280-20-1 manual does not provide specific information on which diagnostic system to check when exhaust smoke is white, as no excerpts were supplied. Based on general knowledge, white exhaust smoke may indicate coolant leakage into the combustion chamber, which would typically require checking the engine cooling system and associated seals or gaskets. However, without specific excerpts from the manual, this response is based on general automotive knowledge and not directly from the referenced document.",
+    "total_duration": 1715882500
+  },
+  "retrieval": null,
+  "round": 3,
+  "sequence": 261,
+  "started_at": "2026-09-28T04:40:39.935987+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1754.356800000096,
+    "retrieval": null,
+    "total": 1754.356800000096
+  },
+  "unprovided_citations": []
+}

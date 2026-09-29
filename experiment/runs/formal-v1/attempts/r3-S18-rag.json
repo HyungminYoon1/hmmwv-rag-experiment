@@ -1,0 +1,666 @@
+{
+  "citation_ids": [
+    "[C003141]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:45:04.955595+00:00",
+  "evaluation_answer": "The maximum acceptable battery internal resistance in STE/ICE-R Test 73 is 25 milliohms .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 712,
+  "key": "r3-S18-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C003141] TM 9-2320-280-20-1 | PDF 354 | Printed 2-259\nBATTERY CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY INTERNAL RESISTANCE\nSTE/ICE-R TEST 73\n1. Disconnect wire 54A at injection pump to\nprevent starting.\n2. Disconnect glowplug controller and fan\nsolenoid (to keep waveform clean).\n3. Start Test 73, battery internal resistance.\n4. Wait for the GO message. Crank the\nengine.\n5. Result is displayed in milliohms. Battery\nresistance should be 25 milliohms max.\n\n[C003376] TM 9-2320-280-20-1 | PDF 377 | Printed 2-283\nREFERENCE INFORMATION\nSTARTER CIRCUIT\n\nBATTERY INTERNAL Resistance\nSTE/ICE-R TEST 73\n\n[C002065] TM 9-2320-280-20-1 | PDF 234 | Printed 2-149\nCOMPRESSION/MECHANICAL\nREFERENCE INFORMATION\n\nBATTERY INTERNAL RESISTANCE\nSTEACE-R TEST 73\n1. Disconnect wire 54A at injection pump to prevent\nstarting.\n2. Disconnect glowpiugs controller and fan solenoid.\n3. Start Test 73, Battery intemal Resistance.\n4. Wait for the GO message. Crank the engine.\n5. Result is displayed in milliohms. Battery\nresistance should be 25 milliohms max.\n\n[C002061] TM 9-2320-280-20-1 | PDF 234 | Printed 2-149\nBATTERY VOLTAGE STE/ICE-R TEST 67\n\n[C008078] TM 9-2320-280-20-1 | PDF 830 | Printed 2-733\n2-43. STE/ICE-R TEST PROCEDURES\n\nTEST NAME: BATTERY INTERNAL RESISTANCE\nTEST #: 73\nPAGE #: 2-746\nQUESTION:\nWhat is the maximum acceptable battery internal resistance in STE/ICE-R Test 73?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "What is the maximum acceptable battery internal resistance in STE/ICE-R Test 73?",
+  "question_id": "S18",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:32:21.809803907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:32:19.859401907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 109.05499999989843,
+    "peak_rss_bytes": 13081612288,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5989.310374,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5989.4163307,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5989.5253857,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5989.6194737,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5989.7261978,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5989.8191244,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5989.9117751,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.0184934,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.1123056,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.2204627,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.3123569,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.4198867,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.5260209,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8796942336,
+          "37564": 7741440
+        },
+        "rss_bytes": 13079785472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.6190069,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.7112831,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.819755,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5990.9130248,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5991.021549,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5991.1155272,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081612288,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:45:04.9545184Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 33,
+    "eval_duration": 548028000,
+    "load_duration": 10875600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 712,
+    "prompt_eval_duration": 161065000,
+    "response": "The maximum acceptable battery internal resistance in STE/ICE-R Test 73 is 25 milliohms [C003141].",
+    "total_duration": 731779500
+  },
+  "retrieval": {
+    "embedding_ms": 75.23399999990943,
+    "items": [
+      {
+        "body_end": 361,
+        "body_start": 0,
+        "id": "C003141",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          354
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-259"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R003247"
+        ],
+        "review_ids": [],
+        "score": 0.7563130855560303,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B003",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "BATTERY CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY INTERNAL RESISTANCE\nSTE/ICE-R TEST 73\n1. Disconnect wire 54A at injection pump to\nprevent starting.\n2. Disconnect glowplug controller and fan\nsolenoid (to keep waveform clean).\n3. Start Test 73, battery internal resistance.\n4. Wait for the GO message. Crank the\nengine.\n5. Result is displayed in milliohms. Battery\nresistance should be 25 milliohms max.",
+        "text_sha256": "6438c862f7c6345180cb456bbd9115ac575e9da5fea07b3d29497c9f259d2cfc",
+        "token_count": 112,
+        "unit_id": "U003133",
+        "unit_key": "region:354:1:1"
+      },
+      {
+        "body_end": 45,
+        "body_start": 0,
+        "id": "C003376",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          377
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-283"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R003441"
+        ],
+        "review_ids": [],
+        "score": 0.7294085025787354,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B011",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nSTARTER CIRCUIT\n\nBATTERY INTERNAL Resistance\nSTE/ICE-R TEST 73",
+        "text_sha256": "0109a0b70358f3feb7e81b284a4c2aa64b80b0a09454a02a1a55867c3829411d",
+        "token_count": 23,
+        "unit_id": "U003368",
+        "unit_key": "region:377:1:7"
+      },
+      {
+        "body_end": 335,
+        "body_start": 0,
+        "id": "C002065",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          234
+        ],
+        "prefix_chars": 46,
+        "printed_pages": [
+          "2-149"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R002307",
+          "R002308"
+        ],
+        "review_ids": [],
+        "score": 0.7220234274864197,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B012",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "COMPRESSION/MECHANICAL\nREFERENCE INFORMATION\n\nBATTERY INTERNAL RESISTANCE\nSTEACE-R TEST 73\n1. Disconnect wire 54A at injection pump to prevent\nstarting.\n2. Disconnect glowpiugs controller and fan solenoid.\n3. Start Test 73, Battery intemal Resistance.\n4. Wait for the GO message. Crank the engine.\n5. Result is displayed in milliohms. Battery\nresistance should be 25 milliohms max.",
+        "text_sha256": "22372e395d111c76304fa9a83d764cc94a3f39da03317cdcedca7b417eaedb4d",
+        "token_count": 107,
+        "unit_id": "U002059",
+        "unit_key": "region:234:1:5"
+      },
+      {
+        "body_end": 33,
+        "body_start": 0,
+        "id": "C002061",
+        "kind": "reviewed_text_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          234
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-149"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6853010654449463,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "individually_reviewed_pdf_box",
+          "box": [
+            153.0,
+            136.5,
+            341.0,
+            168.0
+          ],
+          "condition_link_basis": "LOCAL_BOX_ONLY_PENDING_PROFILE",
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v6-work/box-ocr-candidates/P0234-B004.png",
+            "sha256": "e637ad0e0a2ee231cf48a2537d281d03d7c24882853cc0890de7a63923ff31b9"
+          },
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "literal_box": "P0234-B004",
+          "literal_transcription": "BATTERY VOLTAGE\nSTE/ICE-R TEST 67",
+          "text_structure": null
+        },
+        "text": "BATTERY VOLTAGE STE/ICE-R TEST 67",
+        "text_sha256": "1df965e79a1b530a91ae2a86f06adb090ff47a32c9e55a40a08aa9617cde94a3",
+        "token_count": 13,
+        "unit_id": "U002055",
+        "unit_key": "P0234-B004:reviewed"
+      },
+      {
+        "body_end": 63,
+        "body_start": 0,
+        "id": "C008078",
+        "kind": "table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          830
+        ],
+        "prefix_chars": 33,
+        "printed_pages": [
+          "2-733"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6829084157943726,
+        "source_issues": [
+          {
+            "description": "DC VOLTAGE 0 TO 45 VOLTS의 TEST #는 원문 표의 39를 유지했다.",
+            "id": "TEST_NUMBER_39",
+            "pdf_page": 830,
+            "status": "SOURCE_IDENTIFIER_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "row": 13,
+          "table_id": "P0830:test-index"
+        },
+        "text": "2-43. STE/ICE-R TEST PROCEDURES\n\nTEST NAME: BATTERY INTERNAL RESISTANCE\nTEST #: 73\nPAGE #: 2-746",
+        "text_sha256": "ac2ad06b71a7bac690ab9128decf4e41666ba71c6fce84ed89ff2cbe18e03502",
+        "token_count": 38,
+        "unit_id": "U008070",
+        "unit_key": "P0830:test-index:row:13"
+      }
+    ],
+    "search_ms": 9.81820000015432
+  },
+  "round": 3,
+  "sequence": 338,
+  "started_at": "2026-09-28T04:45:04.127374+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 742.0027999996819,
+    "retrieval": 86.1867000003258,
+    "total": 828.1895000000077
+  },
+  "unprovided_citations": []
+}

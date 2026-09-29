@@ -1,0 +1,151 @@
+{
+  "at": "2026-09-29T05:36:04.666504+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "69cc8e903a82336353bc7fd33373b193d15174cb6a1e7003f37cd0949c21a7dc",
+  "result": {
+    "attempt_key": "r1-U10-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 45.80153919999975,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U10",
+    "stages": {
+      "abstention": {
+        "answer_quote": "Therefore, based on the available excerpts, such a procedure cannot be described.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied passages do not establish that the manual as a whole lacks the procedure.",
+              "statement": "The referenced manual (TM 9-2320-280-20-1) does not contain a full removal, routing, and installation procedure for the serpentine belt on an M1123 vehicle.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000004"
+              ],
+              "evidence_quotes": [
+                "(3) M1097, M1097A1, M1097A2, and M1123 Heavy Variant"
+              ],
+              "reason": "The scope lists M1123 as a vehicle variant.",
+              "statement": "M1123 vehicle",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000902"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum. If\nbelt tension is not at least 70 lbs (311 N),\nadjust drivebelts (paragraph 3-82)."
+              ],
+              "reason": "The exclusion applies to tension checks; adjustment is specified for eligible vehicles only if tension is below the minimum.",
+              "statement": "belt tension checks and adjustments are required for all models except M1123 and \"A2\" vehicles",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The cited replacement reference is under STEERING SYSTEM; it does not establish a pulley-replacement step for the requested M1123 serpentine belt.",
+              "statement": "pulley replacement is covered in paragraph 8-24",
+              "verdict": 0
+            }
+          ]
+        },
+        "partial_claims": [
+          "The referenced manual (TM 9-2320-280-20-1) does not contain a full removal, routing, and installation procedure for the serpentine belt on an M1123 vehicle.",
+          "M1123 vehicle",
+          "belt tension checks and adjustments are required for all models except M1123 and \"A2\" vehicles",
+          "pulley replacement is covered in paragraph 8-24"
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer explicitly withholds the complete procedure and invents no removal, routing, or installation steps. Its claim that the entire manual lacks the procedure is unsupported, and its unqualified pulley reference is not applicable to the requested component.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved passages cannot establish that the manual as a whole lacks the procedure.",
+              "statement": "The referenced manual (TM 9-2320-280-20-1) does not contain a full removal, routing, and installation procedure for the serpentine belt on an M1123 vehicle.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C000902"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles)."
+              ],
+              "reason": "The maintenance table identifies M1123 among the vehicles.",
+              "statement": "M1123 vehicle",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000902"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum. If\nbelt tension is not at least 70 lbs (311 N),\nadjust drivebelts (paragraph 3-82)."
+              ],
+              "reason": "The retrieved table gives the exclusion and makes adjustment conditional on low tension.",
+              "statement": "belt tension checks and adjustments are required for all models except M1123 and \"A2\" vehicles",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved paragraph 8-24 reference concerns the steering system, not the requested serpentine-belt procedure.",
+              "statement": "pulley replacement is covered in paragraph 8-24",
+              "verdict": 0
+            }
+          ]
+        },
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 4,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 0,
+        "withholding_only": 1
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "7034a7e7cebf09a1cd0f87a87351b6b51fbd9ca653ff7135cf819ed0293df8d2"
+}

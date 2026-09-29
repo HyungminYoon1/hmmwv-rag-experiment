@@ -1,0 +1,153 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:06:42.437622+00:00",
+  "parsed": {
+    "statements": [
+      "The cooling fan is activated when coolant temperature reaches 215°F (102°C).",
+      "The power steering pump supplies hydraulic pressure to the fan-clutch system."
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586402,
+      "conversation": null,
+      "created_at": 1790586400.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_007d6e2c059adee2016aba2e209f6487d083bbaaef6bb2794c",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[\"The cooling fan is activated when coolant temperature reaches 215°F (102°C).\",\"The power steering pump supplies hydraulic pressure to the fan-clutch system.\"]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_007d6e2c059adee2016aba2e21a4d087d08d43f2b5c1007bd3",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "StatementGeneratorOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for statement generation.",
+            "properties": {
+              "statements": {
+                "description": "The generated statements from the answer",
+                "items": {
+                  "type": "string"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "StatementGeneratorOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 564,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 46,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 610
+      },
+      "user": null
+    },
+    "request_id": "resp_007d6e2c059adee2016aba2e209f6487d083bbaaef6bb2794c",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[\"The cooling fan is activated when coolant temperature reaches 215°F (102°C).\",\"The power steering pump supplies hydraulic pressure to the fan-clutch system.\"]}",
+    "usage": {
+      "input_tokens": 564,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 46,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 610
+    }
+  },
+  "record_hash": "02a8565c110da7696358e4c2ee525e68756b03e053330b2f3a27ed7ce659956b",
+  "request_hash": "8e92e85d9afd2afd9ec968687f31ff8b70cc5cf61a912237cc8dfeefed57813e",
+  "started_at": "2026-09-28T09:06:40.487812+00:00",
+  "status": "OK"
+}

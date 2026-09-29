@@ -1,0 +1,190 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T05:23:16.969675+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "",
+        "fulfilled": 0,
+        "id": "S18-A01",
+        "reason": "The answer states 10 milliohms, contradicting the required 25-milliohm maximum."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790659399,
+      "conversation": null,
+      "created_at": 1790659396.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_014c55e271e7961c016abb4b44f27487d0ba7dff7f85656c4d",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S18-A01\",\"fulfilled\":0,\"answer_quote\":\"\",\"reason\":\"The answer states 10 milliohms, contradicting the required 25-milliohm maximum.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_014c55e271e7961c016abb4b467ff887d09041fecd22b22b8a",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1885,
+        "input_tokens_details": {
+          "cache_write_tokens": 1882,
+          "cached_tokens": 0
+        },
+        "output_tokens": 52,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1937
+      },
+      "user": null
+    },
+    "request_id": "resp_014c55e271e7961c016abb4b44f27487d0ba7dff7f85656c4d",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S18-A01\",\"fulfilled\":0,\"answer_quote\":\"\",\"reason\":\"The answer states 10 milliohms, contradicting the required 25-milliohm maximum.\"}]}",
+    "usage": {
+      "input_tokens": 1885,
+      "input_tokens_details": {
+        "cache_write_tokens": 1882,
+        "cached_tokens": 0
+      },
+      "output_tokens": 52,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1937
+    }
+  },
+  "record_hash": "3b6e0297476e6f9b9b7724649e06a9cde5a01e0c75e355caac7098496273962b",
+  "request_hash": "8479e13aaffe5c76d14e1df0dd48c723969a7d08234212b6ce23170f49b8864a",
+  "started_at": "2026-09-29T05:23:14.414475+00:00",
+  "status": "OK"
+}

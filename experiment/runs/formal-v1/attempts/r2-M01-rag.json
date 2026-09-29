@@ -1,0 +1,866 @@
+{
+  "citation_ids": [
+    "[C003397]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:34:23.879584+00:00",
+  "evaluation_answer": "No, each reading does not meet its stated limit.\n\n- The cranking voltage of 17 V is below the required minimum of 18 volts .  \n- The STE/ICE-R Test 73 reading of 30 milliohms is not referenced in the provided excerpts, and no limit for resistance is stated in the given material. Therefore, the resistance value cannot be evaluated against a stated limit.\n\nThus, only the voltage reading fails the stated limit. The resistance value lacks a defined limit in the reference.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 843,
+  "key": "r2-M01-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C003397] TM 9-2320-280-20-1 | PDF 379 | Printed 2-285\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nSTARTER MOTOR VOLTAGE\nSTE/ICE-R TEST 68\n1. Start Test 68, starter motor voltage.\n2. Displayed reading is in volts. Starter motor\nvoltage should be the same as battery voltage,\n23-25.5 volts. During cranking the starter\nmotor voltage should beat least 18 volts.\n\n[C003398] TM 9-2320-280-20-1 | PDF 379 | Printed 2-285\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nSTARTER SOLENOID VOLTAGE\nSTE/ICE-R TEST 70\n1. Start Test 70, starter solenoid voltage.\n2. Displayed reading is in volts. Starter solenoid\nvoltage should be the same as battery voltage,\n23-25.5 volts. During cranking the starter\nsolenoid voltage should be at least 18 volts.\n\n[C003221] TM 9-2320-280-20-1 | PDF 361 | Printed 2-267\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY VOLTAGE\nSTE/ICE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should\nbe 23-25.5 volts. Batteries voltage will drop when\nglowplugs turn on.\n\n[C003233] TM 9-2320-280-20-1 | PDF 363 | Printed 2-269\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY VOLTAGE\nSTE/ICE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should\nbe 23-25.5 volts. Batteries voltage will drop when\nglowplugs turn on.\n\n[C003393] TM 9-2320-280-20-1 | PDF 379 | Printed 2-285\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY VOLTAGE\nSTE/ICE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should\nbe 23-25.5 volts. Batteries voltage will drop\nwhen glowplugs turn on.\nQUESTION:\nDuring starter and battery checks, cranking voltage is 17 V and STE/ICE-R Test 73 reports 30 milliohms. Does each reading meet its stated limit? Give both limits.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 842,
+  "question": "During starter and battery checks, cranking voltage is 17 V and STE/ICE-R Test 73 reports 30 milliohms. Does each reading meet its stated limit? Give both limits.",
+  "question_id": "M01",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:21:40.738361707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:21:37.557321207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4860887040.0,
+    "max_actual_interval_ms": 113.02790000081586,
+    "peak_rss_bytes": 13620412416,
+    "peak_vram_bytes": 4860887040,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5346.9949256,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5347.1034553,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5347.2106403,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5347.3035604,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5347.3969716,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5347.5048602,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5347.6001792,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5347.7056716,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5347.7987719,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5347.9076051,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.0022244,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.1098334,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9227108352,
+          "37564": 7958528
+        },
+        "rss_bytes": 13510692864,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.2045684,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9274642432,
+          "37564": 7958528
+        },
+        "rss_bytes": 13558226944,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.3005368,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9336827904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13620412416,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.4102026,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.5030959,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.5953967,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.7032636,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.809627,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5348.9005314,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.0135593,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.1028529,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.1956914,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.303564,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.41123,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.5036718,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.5959222,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.705228,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.7971753,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.9041663,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5349.9964012,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102625280,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101072896,
+          "37504": 9191714816,
+          "37564": 7958528
+        },
+        "rss_bytes": 13475299328,
+        "vram_bytes": 4860887040
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:34:23.8787347Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 116,
+    "eval_duration": 1707283000,
+    "load_duration": 9968900,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 842,
+    "prompt_eval_count": 843,
+    "prompt_eval_duration": 22160000,
+    "response": "No, each reading does not meet its stated limit.\n\n- The cranking voltage of 17 V is below the required minimum of 18 volts [C003397].  \n- The STE/ICE-R Test 73 reading of 30 milliohms is not referenced in the provided excerpts, and no limit for resistance is stated in the given material. Therefore, the resistance value cannot be evaluated against a stated limit.\n\nThus, only the voltage reading fails the stated limit. The resistance value lacks a defined limit in the reference.",
+    "total_duration": 1905072600
+  },
+  "retrieval": {
+    "embedding_ms": 120.16829999993206,
+    "items": [
+      {
+        "body_end": 260,
+        "body_start": 0,
+        "id": "C003397",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          379
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-285"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R003454"
+        ],
+        "review_ids": [],
+        "score": 0.7603484392166138,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B007",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nSTARTER MOTOR VOLTAGE\nSTE/ICE-R TEST 68\n1. Start Test 68, starter motor voltage.\n2. Displayed reading is in volts. Starter motor\nvoltage should be the same as battery voltage,\n23-25.5 volts. During cranking the starter\nmotor voltage should beat least 18 volts.",
+        "text_sha256": "f4d94da3239f9eb54e53eed35c8106013023abea6fb9ce79a4abf6a17a92c52e",
+        "token_count": 85,
+        "unit_id": "U003389",
+        "unit_key": "region:379:1:5"
+      },
+      {
+        "body_end": 273,
+        "body_start": 0,
+        "id": "C003398",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          379
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-285"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R003455"
+        ],
+        "review_ids": [],
+        "score": 0.7556052207946777,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B010",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nSTARTER SOLENOID VOLTAGE\nSTE/ICE-R TEST 70\n1. Start Test 70, starter solenoid voltage.\n2. Displayed reading is in volts. Starter solenoid\nvoltage should be the same as battery voltage,\n23-25.5 volts. During cranking the starter\nsolenoid voltage should be at least 18 volts.",
+        "text_sha256": "dc22c5628136dc7597d522188ec96500162fd1b87977f2b3ff66a52ce0b4b063",
+        "token_count": 95,
+        "unit_id": "U003390",
+        "unit_key": "region:379:1:6"
+      },
+      {
+        "body_end": 189,
+        "body_start": 0,
+        "id": "C003221",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          361
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-267"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R003306"
+        ],
+        "review_ids": [],
+        "score": 0.7499326467514038,
+        "source_issues": [
+          {
+            "detail": "원문 Be sure to reed the correct scale. 문구를 유지했다.",
+            "evidence": {
+              "file": "preprocessing/corpus/reports/rules-v6-work/final-samples/p0361.png",
+              "sha256": "b41867d4c2bd79984fffad2ecc75fc14a64eaeaf07ead50844bc019f2f458ffb"
+            },
+            "id": "P0361_PRINTED_REED",
+            "pdf_page": 361,
+            "status": "SOURCE_WORDING_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B005",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY VOLTAGE\nSTE/ICE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should\nbe 23-25.5 volts. Batteries voltage will drop when\nglowplugs turn on.",
+        "text_sha256": "5a2be4943705918b34317ed1f71b47b59bfef07a79635e8cf27f1c454f301d4f",
+        "token_count": 74,
+        "unit_id": "U003213",
+        "unit_key": "region:361:1:3"
+      },
+      {
+        "body_end": 189,
+        "body_start": 0,
+        "id": "C003233",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          363
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-269"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R003307"
+        ],
+        "review_ids": [],
+        "score": 0.7499326467514038,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B003",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY VOLTAGE\nSTE/ICE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should\nbe 23-25.5 volts. Batteries voltage will drop when\nglowplugs turn on.",
+        "text_sha256": "5a2be4943705918b34317ed1f71b47b59bfef07a79635e8cf27f1c454f301d4f",
+        "token_count": 74,
+        "unit_id": "U003225",
+        "unit_key": "region:363:1:1"
+      },
+      {
+        "body_end": 189,
+        "body_start": 0,
+        "id": "C003393",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          379
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-285"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R003450"
+        ],
+        "review_ids": [],
+        "score": 0.7499326467514038,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B003",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY VOLTAGE\nSTE/ICE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should\nbe 23-25.5 volts. Batteries voltage will drop\nwhen glowplugs turn on.",
+        "text_sha256": "11bc19b7b1f25f21d573e05949381893af0b7b9120fd276965917337c386792c",
+        "token_count": 73,
+        "unit_id": "U003385",
+        "unit_key": "region:379:1:1"
+      }
+    ],
+    "search_ms": 8.8820000000851
+  },
+  "round": 2,
+  "sequence": 145,
+  "started_at": "2026-09-28T04:34:21.811854+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1937.7211999999417,
+    "retrieval": 130.75650000064343,
+    "total": 2068.477700000585
+  },
+  "unprovided_citations": []
+}

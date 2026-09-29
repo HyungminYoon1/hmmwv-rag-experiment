@@ -1,0 +1,196 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:35:50.663220+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "the water cooling system",
+        "fulfilled": 1,
+        "id": "S03-A01",
+        "reason": "Names the water-cooling system as a covered function."
+      },
+      {
+        "answer_quote": "the oil cooling system",
+        "fulfilled": 1,
+        "id": "S03-A02",
+        "reason": "Names the oil-cooling system as a covered function."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588150,
+      "conversation": null,
+      "created_at": 1790588148.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_086c340705a6033f016aba34f4b4d887d08d37521701d11269",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S03-A01\",\"fulfilled\":1,\"answer_quote\":\"the water cooling system\",\"reason\":\"Names the water-cooling system as a covered function.\"},{\"id\":\"S03-A02\",\"fulfilled\":1,\"answer_quote\":\"the oil cooling system\",\"reason\":\"Names the oil-cooling system as a covered function.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_086c340705a6033f016aba34f584b087d0abad5668e90c551b",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 750,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 79,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 829
+      },
+      "user": null
+    },
+    "request_id": "resp_086c340705a6033f016aba34f4b4d887d08d37521701d11269",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S03-A01\",\"fulfilled\":1,\"answer_quote\":\"the water cooling system\",\"reason\":\"Names the water-cooling system as a covered function.\"},{\"id\":\"S03-A02\",\"fulfilled\":1,\"answer_quote\":\"the oil cooling system\",\"reason\":\"Names the oil-cooling system as a covered function.\"}]}",
+    "usage": {
+      "input_tokens": 750,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 79,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 829
+    }
+  },
+  "record_hash": "67f03779dc73b7cc86ff035f202cfd0af3f1ea687695405ea0107afdb1eaf942",
+  "request_hash": "f3b6fc8696f9cde6bbf229483fbdc6b568c7ff4bb460aa52ed5f2cfecb59d5f0",
+  "started_at": "2026-09-28T09:35:48.570168+00:00",
+  "status": "OK"
+}

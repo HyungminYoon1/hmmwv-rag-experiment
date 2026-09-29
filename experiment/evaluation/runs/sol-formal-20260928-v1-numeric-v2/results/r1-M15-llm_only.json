@@ -1,0 +1,275 @@
+{
+  "at": "2026-09-28T09:56:40.006074+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "f459c7618b632aabb832eb48023086e449ac2ec339f85dcd381cab6353b0de63",
+  "original_result_sha256": "87c4bc30fcb506a316082439441d636af04fe662ea02e8f03a443d94a87f9a46",
+  "result": {
+    "attempt_key": "r1-M15-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 37.43095870000252,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8874892198573251
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8874892198573251
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M15",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It gives specific fluid and level requirements but also says the transfer-case requirements could not be confirmed from the manual."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8846020171983171,
+          0.8846020171983171,
+          0.8932636251753409
+        ],
+        "query_vector_hash": "c1c513db219d182f6618e6163103de8bae5004adb760030a62b3053757a2a1da",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Can Dexron II be used in the 4L80-E transmission and transfer case during non-arctic service, and what fluid levels are specified?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Can Dexron II be used in the 4L80-E transmission and transfer case during non-arctic service, and what fluid levels are specified?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In non-arctic service, can Dexron II be used in the 4L80-E transmission and transfer case, and what fluid levels are specified for each?"
+          }
+        ],
+        "response_vectors_hash": "f2a2159ae13c08897e0fba4b82ce7ac5dcbbde0cbfa83c8c88c3f8f9f8f2c5f3",
+        "score": 0.8874892198573253
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "In non-arctic service, Dexron II may be used in the 4L80-E transmission."
+        },
+        {
+          "id": "C002",
+          "text": "The 4L80-E transmission requires Dexron II fluid at a level of 3 quarts (2.8 liters) when the vehicle is on level ground."
+        },
+        {
+          "id": "C003",
+          "text": "Dexron II is not recommended for the transfer case."
+        },
+        {
+          "id": "C004",
+          "text": "The transfer case should use a specific gear oil such as 75W-90 or a transfer case-specific fluid."
+        },
+        {
+          "id": "C005",
+          "text": "The transfer case level should be checked and maintained at the \"full\" mark on the dipstick when the vehicle is on level ground."
+        },
+        {
+          "id": "C006",
+          "text": "The answer references manual TM 9-2320-280-20-1."
+        },
+        {
+          "id": "C007",
+          "text": "No excerpts from manual TM 9-2320-280-20-1 were provided to confirm specific fluid compatibility or level criteria for the transfer case."
+        },
+        {
+          "id": "C008",
+          "text": "Based on standard maintenance practices and known service requirements, Dexron II is not typically approved for transfer cases."
+        }
+      ],
+      "claims_raw": [
+        "In non-arctic service, Dexron II may be used in the 4L80-E transmission.",
+        "The 4L80-E transmission requires Dexron II fluid at a level of 3 quarts (2.8 liters) when the vehicle is on level ground.",
+        "Dexron II is not recommended for the transfer case.",
+        "The transfer case should use a specific gear oil such as 75W-90 or a transfer case-specific fluid.",
+        "The transfer case level should be checked and maintained at the \"full\" mark on the dipstick when the vehicle is on level ground.",
+        "The answer references manual TM 9-2320-280-20-1.",
+        "No excerpts from manual TM 9-2320-280-20-1 were provided to confirm specific fluid compatibility or level criteria for the transfer case.",
+        "Based on standard maintenance practices and known service requirements, Dexron II is not typically approved for transfer cases."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Dexron II may be used in the 4L80-E transmission.",
+            "fulfilled": 0,
+            "id": "M15-A01",
+            "reason": "Contradicts the requirement to use only Dexron III in the 4L80-E."
+          },
+          {
+            "answer_quote": "For the transfer case, Dexron II is not recommended",
+            "fulfilled": 0,
+            "id": "M15-A02",
+            "reason": "Contradicts the transfer-case requirement for Dexron II."
+          },
+          {
+            "answer_quote": "The transfer case level should be checked and maintained at the \"full\" mark on the dipstick when on level ground.",
+            "fulfilled": 0,
+            "id": "M15-A03",
+            "reason": "Does not give the required level within 1/2 inch (12.7 mm) of the fill opening."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies only Dexron III for the 4L80-E.",
+              "statement": "In non-arctic service, Dexron II may be used in the 4L80-E transmission.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 7.7 quarts of only Dexron III for the 4L80-E.",
+              "statement": "The 4L80-E transmission requires Dexron II fluid at a level of 3 quarts (2.8 liters) when the vehicle is on level ground.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context explicitly directs use of Dexron II for the transfer case.",
+              "statement": "Dexron II is not recommended for the transfer case.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies Dexron II, not either proposed fluid.",
+              "statement": "The transfer case should use a specific gear oil such as 75W-90 or a transfer case-specific fluid.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies a level near the fill plug opening, not a dipstick mark.",
+              "statement": "The transfer case level should be checked and maintained at the \"full\" mark on the dipstick when the vehicle is on level ground.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context contains no such reference to an answer or manual number.",
+              "statement": "The answer references manual TM 9-2320-280-20-1.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives transfer-case fluid and level criteria but does not establish which manual its excerpts come from.",
+              "statement": "No excerpts from manual TM 9-2320-280-20-1 were provided to confirm specific fluid compatibility or level criteria for the transfer case.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied transfer-case procedure explicitly calls for Dexron II; no broader practice is established.",
+              "statement": "Based on standard maintenance practices and known service requirements, Dexron II is not typically approved for transfer cases.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.8846020171983171,
+          0.8846020171983171,
+          0.8932636251753409
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8874892198573251,
+        "query_vector_hash": "c1c513db219d182f6618e6163103de8bae5004adb760030a62b3053757a2a1da",
+        "ragas_score": 0.8874892198573253,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "f2a2159ae13c08897e0fba4b82ce7ac5dcbbde0cbfa83c8c88c3f8f9f8f2c5f3"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8846020171983171,
+          0.8846020171983171,
+          0.8932636251753409
+        ],
+        "decimal50_cosines": [
+          "0.88460201719831706331939539982603709115509245995361",
+          "0.88460201719831706331939539982603709115509245995361",
+          "0.89326362517534107690726146641424707761618726949164"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8874892198573253
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8874892198573253
+          }
+        },
+        "query_vector_hash": "c1c513db219d182f6618e6163103de8bae5004adb760030a62b3053757a2a1da",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Can Dexron II be used in the 4L80-E transmission and transfer case during non-arctic service, and what fluid levels are specified?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Can Dexron II be used in the 4L80-E transmission and transfer case during non-arctic service, and what fluid levels are specified?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In non-arctic service, can Dexron II be used in the 4L80-E transmission and transfer case, and what fluid levels are specified for each?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "f2a2159ae13c08897e0fba4b82ce7ac5dcbbde0cbfa83c8c88c3f8f9f8f2c5f3",
+        "score": 0.8874892198573251
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "32a0783a7616203f9a22a5e6ed526884683c9eef9925a2ca900231a793aa9fc1"
+}

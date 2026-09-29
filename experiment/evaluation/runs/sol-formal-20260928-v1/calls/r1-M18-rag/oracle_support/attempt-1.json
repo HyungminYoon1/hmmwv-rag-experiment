@@ -1,0 +1,255 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:18:38.518292+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [],
+        "evidence_quotes": [],
+        "reason": "The context says to perform all semiannual inspections at the annual inspection.",
+        "statement": "At an annual inspection, semiannual checks are not required.",
+        "verdict": 0
+      },
+      {
+        "evidence_ids": [
+          "O:annual",
+          "O:cdr"
+        ],
+        "evidence_quotes": [
+          "Perform all (S) inspections in addition to (A) inspections at the time of the annual inspection.",
+          "Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a)."
+        ],
+        "reason": "Annual inspections include semiannual checks, and the semiannual CDR check uses a water manometer; the cited procedure is specifically para. 3-9a.",
+        "statement": "Annual inspections include testing the CDR valve (para. 3-9).",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "O:cdr"
+        ],
+        "evidence_quotes": [
+          "Wiping with a rag\nis the only authorized method of\ncleaning."
+        ],
+        "reason": "Wiping with a rag is the only authorized cleaning method.",
+        "statement": "The air-intake CDR valve must be cleaned by wiping with a rag.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "O:cdr"
+        ],
+        "evidence_quotes": [
+          "Do not clean CDR valve with solvent."
+        ],
+        "reason": "The procedure explicitly says not to clean it with solvent.",
+        "statement": "Cleaning the air-intake CDR valve with solvent is prohibited.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "O:cdr"
+        ],
+        "evidence_quotes": [
+          "Do not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve."
+        ],
+        "reason": "The caution states this consequence directly.",
+        "statement": "Cleaning the air-intake CDR valve with solvent will damage the diaphragm inside the CDR valve.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587118,
+      "conversation": null,
+      "created_at": 1790587109.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_07d0ca170213f015016aba30e58dec87d0bf9fe9035605922e",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujDusSv8z_6dqQzZvkpFOymfwcFN3sZAWmBew63GLkusJJDKuAbX9EUby45WvPsfs4QyntL-KGFEGwRl-fKCsHq3Y7Bzu211USV7lxYCniE56zlZtdBC7JKA_bU8N_rWo-TtQfbmhfOlDZxYzHYpBtvK5roslGEyy8ulpGKHUI7I3iirnDHULuPbq7Dh3WoMZOq4tPWSx86mcKGroMeB-5ZYVDfENUE_ZquyQ-EfD1NFWSaHftSZ95jycmhv2cIRrBqPfrSP1cJZjql1615QqbA6SZFXcaRkPLN08Vdas1Dye755t5hgd__MD58P7t6eSwkcbviTRL0yxbhOzbcsKuryyYKEMiAltn7ItgZOf3M27SAHauj-YmnsMQSzw0aHofhfWdLMEcC9jKJyln0X6dfNgzRQthH-wHBh6f_f6yRK_rsL9-vFuDUF_etI8IsqJt80CXbhkDZ3JwrLUrVvSlcolohUF3HOA9qGYgUvY3VTZmFLZ5MvT0GX18lnly7vJ5QsHiLORZqAWngGpvpU_rJQEDFCacjCCbjd5H5jvZ0Q6zZFaCUk5jdtSBVwy65Uub3tAm7WnBzsgCxOes30ugfz3RrULgWJYzW0UmdXmKwVUb4OFNLxG-UD42k_lVpx8Xl5RE_ZbegqJatCx0RG_Izp3N5YRXKce70yrBGsv6EtKVYpFOWpcuhnFvB8SK52WPNcGH2E1nz_jH555GYlll-N7q2ZioZlq5HJFPpRq0-kNxzx64LZUkYckd8hzdz3GshJvF_3H0PYvwBUA9W8kZFpCHvfaAUjDgp2BWBIxHXN5bdKE2J7qn129L1ps_RIWQIEGLQZEQtLZGKZSFjtiGyy-6fkzHy_vaAGTodg07iOOwl-Sxf8Qcg-dxV6RFdTi8FL8v1G-cKwiEJDiQUyF5mA4pFTKlWUL0etDnhf4eMCOXl_2ZqkVAs4n90SHdwXZWxrj9fc7fkKGlahCMp1DjDWU8PQ3cxhwXar-1Cx-1TJ-svw8nCTEtghpQsQeUT8FAZWV-iDDuTHYKG4yM8nxvJQMbMxtZEVQG_nCINkn3BWMXzXVKIxeOemBxCO1s-cS0IS4Dn6W1KV5M076qxhWu1r7c8Ui-YJfCRHNyMUy7QFLFqNQYIfkTSTuN0X9Xl9M2gLB6D3qms7gZ7bSS25zTGuMtWc_KOzjXRwhSVRc96XBHYsqQzZQqaLcmB2nVVO2gS-c3Rlj9ZW0olchVDdLPdDyiTisOFWmcQ_jQ25V8jwyTVNdJvNAK9UXXIf-VXOhqYJb2PELEk6_fW_th5PFhkl1VupEXoseySTYgS3hA2zIwRCC2DRu5voTi-CJawncclW3Vic5-wtDzfos386MbqnmLbXsbAz-pOm3BJHt8w83kkaglyTD_TCa9jSA_kn_4SDPdJt1L5Vx4EUcU0q4H0Cft6ac5EEfYHNo1sy8kSeM0a_BCU2qd2uAZzT-iHhQHBThfzDod5XOAV1T0APZxIp5EJy7CaWfYGW5KDJRU7EewRvHyuD_l-oyCdoFlO9k-K153zr5u6mGkpupRxDz5xf_xYseJ4wSIFWdbO8ftNh9XEA8jGtKkFxK8PHXjj6AGJKgCt-BqAbtwuz-v7VFosM7WYvzeKHHh_TRZCLtD0BMBissYZW6Om8i2hlWLsbqfpp1qZSkujsUVNOPvaj5dta0RJX-IYHrRiMqwXwI5G7fDqIC7tj_-ZWMlzVqwVv5z7GLri9wIxvNsmTQwxuwZK4hJKby3jjun2RhUnSyqsYojqgz9yCy_PiEvmftMJaTVTl1lbORBqOlzMP_Z1r8j7NEr9zbAuaNxdBkEAxEvACOCTLUcsJpwWgTyhgW7W5Q1hulVXjtf5CxtarE4qXFB9vCw==",
+          "id": "rs_07d0ca170213f015016aba30e673c487d0a14d4ac7f9b8b0d6",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"At an annual inspection, semiannual checks are not required.\",\"reason\":\"The context says to perform all semiannual inspections at the annual inspection.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"Annual inspections include testing the CDR valve (para. 3-9).\",\"reason\":\"Annual inspections include semiannual checks, and the semiannual CDR check uses a water manometer; the cited procedure is specifically para. 3-9a.\",\"verdict\":1,\"evidence_ids\":[\"O:annual\",\"O:cdr\"],\"evidence_quotes\":[\"Perform all (S) inspections in addition to (A) inspections at the time of the annual inspection.\",\"Correct CDR function is\\ndetermined by checking vacuum with a\\nwater manometer. (para. 3-9a).\"]},{\"statement\":\"The air-intake CDR valve must be cleaned by wiping with a rag.\",\"reason\":\"Wiping with a rag is the only authorized cleaning method.\",\"verdict\":1,\"evidence_ids\":[\"O:cdr\"],\"evidence_quotes\":[\"Wiping with a rag\\nis the only authorized method of\\ncleaning.\"]},{\"statement\":\"Cleaning the air-intake CDR valve with solvent is prohibited.\",\"reason\":\"The procedure explicitly says not to clean it with solvent.\",\"verdict\":1,\"evidence_ids\":[\"O:cdr\"],\"evidence_quotes\":[\"Do not clean CDR valve with solvent.\"]},{\"statement\":\"Cleaning the air-intake CDR valve with solvent will damage the diaphragm inside the CDR valve.\",\"reason\":\"The caution states this consequence directly.\",\"verdict\":1,\"evidence_ids\":[\"O:cdr\"],\"evidence_quotes\":[\"Do not clean CDR valve with solvent.\\nThis will damage the diaphragm in-\\nside the CDR valve.\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_07d0ca170213f015016aba30e9d74887d08cd76df60a8c32aa",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 940,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 523,
+        "output_tokens_details": {
+          "reasoning_tokens": 136
+        },
+        "total_tokens": 1463
+      },
+      "user": null
+    },
+    "request_id": "resp_07d0ca170213f015016aba30e58dec87d0bf9fe9035605922e",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"At an annual inspection, semiannual checks are not required.\",\"reason\":\"The context says to perform all semiannual inspections at the annual inspection.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"Annual inspections include testing the CDR valve (para. 3-9).\",\"reason\":\"Annual inspections include semiannual checks, and the semiannual CDR check uses a water manometer; the cited procedure is specifically para. 3-9a.\",\"verdict\":1,\"evidence_ids\":[\"O:annual\",\"O:cdr\"],\"evidence_quotes\":[\"Perform all (S) inspections in addition to (A) inspections at the time of the annual inspection.\",\"Correct CDR function is\\ndetermined by checking vacuum with a\\nwater manometer. (para. 3-9a).\"]},{\"statement\":\"The air-intake CDR valve must be cleaned by wiping with a rag.\",\"reason\":\"Wiping with a rag is the only authorized cleaning method.\",\"verdict\":1,\"evidence_ids\":[\"O:cdr\"],\"evidence_quotes\":[\"Wiping with a rag\\nis the only authorized method of\\ncleaning.\"]},{\"statement\":\"Cleaning the air-intake CDR valve with solvent is prohibited.\",\"reason\":\"The procedure explicitly says not to clean it with solvent.\",\"verdict\":1,\"evidence_ids\":[\"O:cdr\"],\"evidence_quotes\":[\"Do not clean CDR valve with solvent.\"]},{\"statement\":\"Cleaning the air-intake CDR valve with solvent will damage the diaphragm inside the CDR valve.\",\"reason\":\"The caution states this consequence directly.\",\"verdict\":1,\"evidence_ids\":[\"O:cdr\"],\"evidence_quotes\":[\"Do not clean CDR valve with solvent.\\nThis will damage the diaphragm in-\\nside the CDR valve.\"]}]}",
+    "usage": {
+      "input_tokens": 940,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 523,
+      "output_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "total_tokens": 1463
+    }
+  },
+  "record_hash": "e7c9f718d4b6e83c5823b61fb47e42c7e798af1630de1d09238c31f71ec5d6f1",
+  "request_hash": "147b38379524568919b3bde4e00735eb14d1cd56673c7cfd9ede9df5b9233958",
+  "started_at": "2026-09-28T09:18:29.413733+00:00",
+  "status": "OK"
+}

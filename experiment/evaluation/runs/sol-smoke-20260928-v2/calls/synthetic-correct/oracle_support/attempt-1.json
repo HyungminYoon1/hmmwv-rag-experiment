@@ -1,0 +1,205 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T08:52:16.271971+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "O:fixture-1"
+        ],
+        "evidence_quotes": [
+          "Store the Luma test box at 12 degrees Celsius."
+        ],
+        "reason": "The context specifies storing it at 12 degrees Celsius.",
+        "statement": "The Luma test box should be stored at 12 degrees Celsius.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790585542,
+      "conversation": null,
+      "created_at": 1790585540.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0254c03c5af8081a016aba2ac452e487d0be3b8e8ff9566e5a",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The Luma test box should be stored at 12 degrees Celsius.\",\"reason\":\"The context specifies storing it at 12 degrees Celsius.\",\"verdict\":1,\"evidence_ids\":[\"O:fixture-1\"],\"evidence_quotes\":[\"Store the Luma test box at 12 degrees Celsius.\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0254c03c5af8081a016aba2ac57eb887d0a07a607f69fb4e02",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 526,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 77,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 603
+      },
+      "user": null
+    },
+    "request_id": "resp_0254c03c5af8081a016aba2ac452e487d0be3b8e8ff9566e5a",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The Luma test box should be stored at 12 degrees Celsius.\",\"reason\":\"The context specifies storing it at 12 degrees Celsius.\",\"verdict\":1,\"evidence_ids\":[\"O:fixture-1\"],\"evidence_quotes\":[\"Store the Luma test box at 12 degrees Celsius.\"]}]}",
+    "usage": {
+      "input_tokens": 526,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 77,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 603
+    }
+  },
+  "record_hash": "2c8470ec328cd082a612c87d0b89c36f11bb7611303b34b71b09f94cd311c8f8",
+  "request_hash": "e5a4e68f87b17c1fc7771d4a6bb786b39b46caecdb61b178483c115826ef94e1",
+  "started_at": "2026-09-28T08:52:13.601711+00:00",
+  "status": "OK"
+}

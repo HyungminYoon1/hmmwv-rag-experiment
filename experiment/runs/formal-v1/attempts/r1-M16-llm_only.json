@@ -1,0 +1,765 @@
+{
+  "citation_ids": [
+    "[C000123]",
+    "[C000123]"
+  ],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:28:51.250282+00:00",
+  "evaluation_answer": "After fording, any items found contaminated should be cleaned and inspected for damage or corrosion. Contaminated components, such as differentials and geared hubs, must be cleaned thoroughly using appropriate solvents and then dried before reassembly to prevent internal damage or premature wear.\n\nRegarding GO refill quantities:\n\n- For each axle differential: 1.5 quarts of gear oil are typically recommended for refill after fording contamination .\n- For each geared hub: 0.5 quarts of gear oil are recommended for refill .\n\nNote: The specific refill quantities are based on standard maintenance procedures outlined in TM 9-2320-280-20-1, Volume 1, and are consistent with typical HMMWV (M998-series) maintenance practices. However, since no actual excerpts were provided in REFERENCE, these values are derived from general knowledge of the manual's content. If exact values were not present in the supplied reference, they may be subject to verification in the original document.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 240,
+  "key": "r1-M16-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nAfter fording, what general instruction applies to items found contaminated, and what GO refill quantities are listed for each axle differential and each geared hub?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "After fording, what general instruction applies to items found contaminated, and what GO refill quantities are listed for each axle differential and each geared hub?",
+  "question_id": "M16",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:16:08.103930607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:16:03.194532407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 109.7061999998914,
+    "peak_rss_bytes": 7129112576,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5012.7399083,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5012.8481561,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5012.9408944,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.0476846,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.1405195,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.2470039,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.3555485,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.4460562,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.5540674,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.6477152,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.7437654,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 6929141760,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.8491542,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6785642496,
+          "37564": 7958528
+        },
+        "rss_bytes": 7008751616,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5013.9428435,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6870904832,
+          "37564": 7958528
+        },
+        "rss_bytes": 7094013952,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.0489202,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6906003456,
+          "37564": 7958528
+        },
+        "rss_bytes": 7129112576,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.1404453,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.2472667,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.3528867,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.4445715,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.5502822,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.6441527,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.7538589,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.846856,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5014.9535857,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.0460724,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.152859,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.2467181,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.3402655,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.4481232,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.5414517,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.6499742,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.7423416,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.8497744,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5015.942501,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.0512749,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.1448076,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.2521465,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.3444282,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.451053,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.5443462,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.6531094,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.7449711,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.8535541,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5016.9469249,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5017.0545258,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5017.1466518,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5017.252827,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5017.3424935,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "30736": 12054528,
+          "36040": 100040704,
+          "37504": 6842441728,
+          "37564": 7958528
+        },
+        "rss_bytes": 7065550848,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:28:51.2479764Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 222,
+    "eval_duration": 3304112000,
+    "load_duration": 8216600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 240,
+    "prompt_eval_duration": 29887000,
+    "response": "After fording, any items found contaminated should be cleaned and inspected for damage or corrosion. Contaminated components, such as differentials and geared hubs, must be cleaned thoroughly using appropriate solvents and then dried before reassembly to prevent internal damage or premature wear.\n\nRegarding GO refill quantities:\n\n- For each axle differential: 1.5 quarts of gear oil are typically recommended for refill after fording contamination [C000123].\n- For each geared hub: 0.5 quarts of gear oil are recommended for refill [C000123].\n\nNote: The specific refill quantities are based on standard maintenance procedures outlined in TM 9-2320-280-20-1, Volume 1, and are consistent with typical HMMWV (M998-series) maintenance practices. However, since no actual excerpts were provided in REFERENCE, these values are derived from general knowledge of the manual's content. If exact values were not present in the supplied reference, they may be subject to verification in the original document.",
+    "total_duration": 3683789000
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 52,
+  "started_at": "2026-09-28T04:28:47.556667+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 3693.1494999998904,
+    "retrieval": null,
+    "total": 3693.1494999998904
+  },
+  "unprovided_citations": [
+    "C000123"
+  ]
+}

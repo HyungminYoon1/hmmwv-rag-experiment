@@ -1,0 +1,99 @@
+{
+  "at": "2026-09-29T05:36:22.939522+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "223edfb334bdbe18d0e5f99fcac2fa2322aecaf31876a1eab6287a23a0af4b85",
+  "result": {
+    "attempt_key": "r1-U03-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 12.40541999999914,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U03",
+    "stages": {
+      "abstention": {
+        "answer_quote": "Therefore, based on the available excerpts, the specific removal and installation sequence cannot be provided.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002576"
+              ],
+              "evidence_quotes": [
+                "Replace distribution box, refer to (para. 4-5.1)."
+              ],
+              "reason": "The oracle gives this referral, not the complete procedure.",
+              "statement": "replace distribution box, refer to (para. 4-5.1)",
+              "verdict": 1
+            }
+          ]
+        },
+        "partial_claims": [
+          "replace distribution box, refer to (para. 4-5.1)"
+        ],
+        "partial_within_allowed": true,
+        "reason": "The response explicitly withholds the complete removal and installation sequence and supplies no mounting or harness-reconnection steps. Its only technical partial claim is the supported §4-5.1 referral, which is within the allowed partial scope.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002576"
+              ],
+              "evidence_quotes": [
+                "Replace distribution box, refer to (para. 4-5.1)."
+              ],
+              "reason": "The retrieved excerpt gives the same referral.",
+              "statement": "replace distribution box, refer to (para. 4-5.1)",
+              "verdict": 1
+            }
+          ]
+        },
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 1,
+        "partial_supported_by_oracle": true,
+        "partial_supported_by_retrieved": true,
+        "value": 1,
+        "withholding_only": 1
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "ce3b187bed8cd5961855c8b0f44de834322c24a8206d2220086c9bd0b48d65d9",
+  "source_result_sha256": "eb5e40d9e15d7af82e68a52807be9f50bf25e688ff4a34bf9ef428114a870338"
+}

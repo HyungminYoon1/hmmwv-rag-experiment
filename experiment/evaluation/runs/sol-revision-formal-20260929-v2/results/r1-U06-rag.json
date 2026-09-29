@@ -1,0 +1,90 @@
+{
+  "at": "2026-09-29T05:31:21.975471+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "5f52d86a539c40e06ebfdeaf2e00d3f6ebac715660dac9eab9cf012db50cdfbb",
+  "result": {
+    "attempt_key": "r1-U06-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 20.86902530000043,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U06",
+    "stages": {
+      "abstention": {
+        "answer_quote": "Therefore, the exact repair procedure cannot be fully described based on the available information.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The sources separately refer repairs of these wires to paragraph 4-85; they do not establish that repairing all four is part of the complete procedure.",
+              "statement": "The complete wiring-harness repair procedure specified in paragraph 4-85 includes repairing the following wires: 810B, 237, 355A, and 375A.",
+              "verdict": 0
+            }
+          ]
+        },
+        "partial_claims": [
+          "The complete wiring-harness repair procedure specified in paragraph 4-85 includes repairing the following wires: 810B, 237, 355A, and 375A."
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer explicitly withholds the complete procedure, but also presents four separate diagnostic repair referrals as if they specify actions in that procedure. The permitted partial scope covers referrals and diagnostic information, not invented contents of the complete procedure.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved entries give individual repair referrals, not the contents of the complete procedure.",
+              "statement": "The complete wiring-harness repair procedure specified in paragraph 4-85 includes repairing the following wires: 810B, 237, 355A, and 375A.",
+              "verdict": 0
+            }
+          ]
+        },
+        "supplies_missing_as_fact": true,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 1,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 0,
+        "withholding_only": 0
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "0259899b43284ce75d645a501793af6d9f16b7a78d60327e6bc7503683de72f6"
+}

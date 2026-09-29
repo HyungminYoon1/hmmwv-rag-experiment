@@ -1,0 +1,828 @@
+{
+  "citation_ids": [
+    "[C000914]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:38:35.863839+00:00",
+  "evaluation_answer": "No, at an annual inspection, semiannual checks are not required. Annual inspections include specific tasks such as testing the CDR valve (para. 3-9), but they do not mandate the semiannual checks.\n\nFor the air-intake CDR valve:\n- The cleaning method that must be used is wiping with a rag.\n- The method that is prohibited is cleaning with solvent, as it will damage the diaphragm inside the CDR valve .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1823,
+  "key": "r2-M18-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000914] TM 9-2320-280-20-1 | PDF 100 | Printed 2-9\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 7\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Air-Intake\nSystem\nWARNING\nIf NBC exposure is suspected, all air\nfilter media should be handled by\npersonnel wearing protective\nequipment. Consult your unit NBC\nofficer or NBC NCO for appropriate\nhandling or disposal instructions.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 7\nITEM TO BE INSPECTED: Air-Intake\nSystem\nNOT FULLY MISSION CAPABLE IF: b. CDR fails water\nmanometer vacuum test.\nPROCEDURES: a. Inspect and clean air cleaner\nelement and housing\n(para. 3-13).\nb. Check CDR valve oil saturation.\nDisconnect CDR valve oil fill tube hose\nfrom CDR valve and inspect. Some oil\naccumulation in the CDR valve is\nacceptable. Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a).\nCAUTION\nDo not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve. Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag.\n\n[C001041] TM 9-2320-280-20-1 | PDF 116 | Printed 2-25\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 29\nINTERVAL: Annually\nITEM TO BE INSPECTED: Air-Intake\nSystem\n\nINTERVAL: Annually\nITEM NO.: 29\nITEM TO BE INSPECTED: Air-Intake\nSystem\nPROCEDURES: Test CDR valve (para. 3-9).\n\n[C001031] TM 9-2320-280-20-1 | PDF 114,115 | Printed 2-23,2-24\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 25\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: DeepWater\nFording Kit\nSPECIAL PURPOSE KITS\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 25\nITEM TO BE INSPECTED: DeepWater\nFording Kit\nNOT FULLY MISSION CAPABLE IF: c. Any exhaust extension\nleaks.\nPROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions.\nb. Inspect vent tube mounting hard-\nware for proper installation.\nc. Inspect intake and exhaust exten-\nsions for proper installation and leaks.\n\n[C000977] TM 9-2320-280-20-1 | PDF 108,109 | Printed 2-17,2-18\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 16\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\nNOT FULLY MISSION CAPABLE IF: a. Hub vent lines\ncracked, plugged, or\nmissing.\nb. Class III leaks or\ndamage.\nc. Bearing damaged.\nd. Differential vent line\nhas hole, plugged, or\ncracked.\ne. Class III leak.\nPROCEDURES: a. Inspect geared hub vent lines and\nconnectors for security, cracks, and\ndeterioration.\nb. Inspect geared hub for leaking\nseals and damage.\nCAUTION\nChange geared hub and differential\nlubricants when required by mainte-\nnance repair action, contaminated by\nwater or foreign material, or if\nlubricant appears by smell, feel, or\nvisual indication to be overheated.\nNOTE\n•Fill each axle differential with 2\nquarts (1.9 L) of GO.\n•Fill each geared hub with 1 pint\n(0.5 L) of GO.\nc. Adjust spindle bearing\n(paragraph 6-14).\nd. Inspect differential vent lines and\nconnectors for security, cracks, and\ndeterioration.\ne. Inspect differentials for leaking\nseals and cracks.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n(Cont’d)\nNOT FULLY MISSION CAPABLE IF: f. Lube level not within\n1/4 inch (6.4 mm) of fill\nplug opening when cold\nor to plug level when hot.\ng. U-joint is damaged,\nunserviceable, or missing\nlubrication fitting.\nh. Loose, missing, or\nbroken capscrews.\ni. Rubber block or center\nsupport bearing is worn or\npropeller shaft wobbles.\nPROCEDURES: f. M998, M998A1, and M1121 series\nvehicles – Check differential lubricant\nlevel semiannually\n\n[C000907] TM 9-2320-280-20-1 | PDF 99 | Printed 2-8\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 6\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Cooling\nSystem\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 6\nITEM TO BE INSPECTED: Cooling\nSystem\nNOT FULLY MISSION CAPABLE IF: a. Coolant condition/\ntesting shows draining\nis required.\nb. Any class III water\nleak. Hoses cracked\nor dry rotted.\nPROCEDURES: WARNING\nIf vehicle has been operating, use\nextreme care to avoid being burned\nwhen removing cooling system\nradiator cap. Use heavy rags or gloves\nto protect hands. Turn radiator cap\nonly one-half turn counterclockwise\nand allow pressure to be released\nbefore fully removing cap.\nNOTE\nŽ Coolant level is correct when coolant\nrecovery tank is full TM 9-2320-280-10).\nŽ Use MIL-A-46153 in temperatures\nabove 0°F (-18°C) and MIL-A-11755 in\ntemperature below 0°F (-18°C).\na. Check coolant condition. Test coolant\nto see if draining is necessary\n(TB 750-651).\nb. Inspect surge tank, radiator shroud,\npower steering cooler, oil cooler, all\nhoses, quick disconnects and fittings for\nsecurity of mounting, leaks, and\ndeterioration. Inspect and clean as\nnecessary the radiator and oil cooler cores.\nQUESTION:\nAt an annual inspection, are semiannual checks also required? For the air-intake CDR valve, what cleaning method must be used and what method is prohibited?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 525,
+  "question": "At an annual inspection, are semiannual checks also required? For the air-intake CDR valve, what cleaning method must be used and what method is prohibited?",
+  "question_id": "M18",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:25:52.718113207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:25:49.692658607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4887166976.0,
+    "max_actual_interval_ms": 110.86730000079115,
+    "peak_rss_bytes": 13518069760,
+    "peak_vram_bytes": 4887166976,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5599.1082424,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5599.2179518,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5599.3102126,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5599.4190661,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5599.512815,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5599.6230234,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5599.7172267,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5599.8100199,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5599.9178864,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.0127534,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.1204998,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311389696,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.2116805,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103579648,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9027072000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13311385600,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.3225478,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9233973248,
+          "37564": 7958528
+        },
+        "rss_bytes": 13518069760,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.4160672,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9066094592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13350260736,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.5082642,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9066094592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13350260736,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.6169912,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9066094592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13350260736,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.7084786,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.8155263,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5600.9235489,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5601.0162322,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5601.1098709,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5601.2177259,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5601.3110132,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5601.4194316,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5601.5130185,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4887166976
+      },
+      {
+        "monotonic": 5601.6205154,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067921408,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352087552,
+        "vram_bytes": 4873928704
+      },
+      {
+        "monotonic": 5601.7132801,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067929600,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352095744,
+        "vram_bytes": 4873928704
+      },
+      {
+        "monotonic": 5601.8205424,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067941888,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352108032,
+        "vram_bytes": 4874387456
+      },
+      {
+        "monotonic": 5601.9127132,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067941888,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352108032,
+        "vram_bytes": 4885594112
+      },
+      {
+        "monotonic": 5602.0211651,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101371904,
+          "37504": 9067941888,
+          "37564": 7958528
+        },
+        "rss_bytes": 13352108032,
+        "vram_bytes": 4885594112
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:38:35.8633374Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 101,
+    "eval_duration": 1415081000,
+    "load_duration": 1550100,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 525,
+    "prompt_eval_count": 1823,
+    "prompt_eval_duration": 301200000,
+    "response": "No, at an annual inspection, semiannual checks are not required. Annual inspections include specific tasks such as testing the CDR valve (para. 3-9), but they do not mandate the semiannual checks.\n\nFor the air-intake CDR valve:\n- The cleaning method that must be used is wiping with a rag.\n- The method that is prohibited is cleaning with solvent, as it will damage the diaphragm inside the CDR valve [C000914].",
+    "total_duration": 1818700500
+  },
+  "retrieval": {
+    "embedding_ms": 87.25779999986116,
+    "items": [
+      {
+        "body_end": 694,
+        "body_start": 0,
+        "id": "C000914",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          100
+        ],
+        "prefix_chars": 368,
+        "printed_pages": [
+          "2-9"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.7517328262329102,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "7",
+          "row_ids": [
+            "P0100-T2_1-R02"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 7\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Air-Intake\nSystem\nWARNING\nIf NBC exposure is suspected, all air\nfilter media should be handled by\npersonnel wearing protective\nequipment. Consult your unit NBC\nofficer or NBC NCO for appropriate\nhandling or disposal instructions.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 7\nITEM TO BE INSPECTED: Air-Intake\nSystem\nNOT FULLY MISSION CAPABLE IF: b. CDR fails water\nmanometer vacuum test.\nPROCEDURES: a. Inspect and clean air cleaner\nelement and housing\n(para. 3-13).\nb. Check CDR valve oil saturation.\nDisconnect CDR valve oil fill tube hose\nfrom CDR valve and inspect. Some oil\naccumulation in the CDR valve is\nacceptable. Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a).\nCAUTION\nDo not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve. Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag.",
+        "text_sha256": "d2274c18c100c37f86c1d42b2290c01c2d3fe33f59f7bf24394d068f9f5b3997",
+        "token_count": 292,
+        "unit_id": "U000913",
+        "unit_key": "pmcs:7"
+      },
+      {
+        "body_end": 111,
+        "body_start": 0,
+        "id": "C001041",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          116
+        ],
+        "prefix_chars": 153,
+        "printed_pages": [
+          "2-25"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.699414849281311,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "29",
+          "row_ids": [
+            "P0116-T2_1-R04"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 29\nINTERVAL: Annually\nITEM TO BE INSPECTED: Air-Intake\nSystem\n\nINTERVAL: Annually\nITEM NO.: 29\nITEM TO BE INSPECTED: Air-Intake\nSystem\nPROCEDURES: Test CDR valve (para. 3-9).",
+        "text_sha256": "0107d31aeec12c2e0d20b0ad8f80bc27b1d90eda6177f25e34e0755c29f44ca0",
+        "token_count": 92,
+        "unit_id": "U001035",
+        "unit_key": "pmcs:29"
+      },
+      {
+        "body_end": 379,
+        "body_start": 0,
+        "id": "C001031",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          114,
+          115
+        ],
+        "prefix_chars": 182,
+        "printed_pages": [
+          "2-23",
+          "2-24"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6206858158111572,
+        "source_issues": [
+          {
+            "description": "Reefer to para. 2-39는 원문 표기임.",
+            "id": "REEFER_CASE",
+            "pdf_page": 115,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "25",
+          "row_ids": [
+            "P0115-T2_1-R02"
+          ],
+          "source_issues": [
+            "REEFER_CASE"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 25\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: DeepWater\nFording Kit\nSPECIAL PURPOSE KITS\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 25\nITEM TO BE INSPECTED: DeepWater\nFording Kit\nNOT FULLY MISSION CAPABLE IF: c. Any exhaust extension\nleaks.\nPROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions.\nb. Inspect vent tube mounting hard-\nware for proper installation.\nc. Inspect intake and exhaust exten-\nsions for proper installation and leaks.",
+        "text_sha256": "dc8d7a82915acbd8e3a1753b0041010314ab870b1908ac2d14d6758db3b4a2be",
+        "token_count": 159,
+        "unit_id": "U001025",
+        "unit_key": "pmcs:25"
+      },
+      {
+        "body_end": 1476,
+        "body_start": 0,
+        "id": "C000977",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          108,
+          109
+        ],
+        "prefix_chars": 162,
+        "printed_pages": [
+          "2-17",
+          "2-18"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6201831102371216,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "16",
+          "row_ids": [
+            "P0108-T2_1-R02",
+            "P0109-T2_1-R01",
+            "P0110-T2_1-R01"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 16\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\nNOT FULLY MISSION CAPABLE IF: a. Hub vent lines\ncracked, plugged, or\nmissing.\nb. Class III leaks or\ndamage.\nc. Bearing damaged.\nd. Differential vent line\nhas hole, plugged, or\ncracked.\ne. Class III leak.\nPROCEDURES: a. Inspect geared hub vent lines and\nconnectors for security, cracks, and\ndeterioration.\nb. Inspect geared hub for leaking\nseals and damage.\nCAUTION\nChange geared hub and differential\nlubricants when required by mainte-\nnance repair action, contaminated by\nwater or foreign material, or if\nlubricant appears by smell, feel, or\nvisual indication to be overheated.\nNOTE\n•Fill each axle differential with 2\nquarts (1.9 L) of GO.\n•Fill each geared hub with 1 pint\n(0.5 L) of GO.\nc. Adjust spindle bearing\n(paragraph 6-14).\nd. Inspect differential vent lines and\nconnectors for security, cracks, and\ndeterioration.\ne. Inspect differentials for leaking\nseals and cracks.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n(Cont’d)\nNOT FULLY MISSION CAPABLE IF: f. Lube level not within\n1/4 inch (6.4 mm) of fill\nplug opening when cold\nor to plug level when hot.\ng. U-joint is damaged,\nunserviceable, or missing\nlubrication fitting.\nh. Loose, missing, or\nbroken capscrews.\ni. Rubber block or center\nsupport bearing is worn or\npropeller shaft wobbles.\nPROCEDURES: f. M998, M998A1, and M1121 series\nvehicles – Check differential lubricant\nlevel semiannually",
+        "text_sha256": "8d328b764cb762628190e1f13a6a93be80de06dc562aa9fc9a02a50660181ce7",
+        "token_count": 500,
+        "unit_id": "U000974",
+        "unit_key": "pmcs:16"
+      },
+      {
+        "body_end": 1018,
+        "body_start": 0,
+        "id": "C000907",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          99
+        ],
+        "prefix_chars": 153,
+        "printed_pages": [
+          "2-8"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6171196699142456,
+        "source_issues": [
+          {
+            "description": "글머리표 위치의 Ž는 PDF 화면에서도 Ž로 보임. 일반 글머리표로 추정 교체하지 않음.",
+            "id": "PRINTED_Z_CARON",
+            "pdf_page": 99,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "6",
+          "row_ids": [
+            "P0099-T2_1-R02"
+          ],
+          "source_issues": [
+            "PRINTED_Z_CARON"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 6\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Cooling\nSystem\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 6\nITEM TO BE INSPECTED: Cooling\nSystem\nNOT FULLY MISSION CAPABLE IF: a. Coolant condition/\ntesting shows draining\nis required.\nb. Any class III water\nleak. Hoses cracked\nor dry rotted.\nPROCEDURES: WARNING\nIf vehicle has been operating, use\nextreme care to avoid being burned\nwhen removing cooling system\nradiator cap. Use heavy rags or gloves\nto protect hands. Turn radiator cap\nonly one-half turn counterclockwise\nand allow pressure to be released\nbefore fully removing cap.\nNOTE\nŽ Coolant level is correct when coolant\nrecovery tank is full TM 9-2320-280-10).\nŽ Use MIL-A-46153 in temperatures\nabove 0°F (-18°C) and MIL-A-11755 in\ntemperature below 0°F (-18°C).\na. Check coolant condition. Test coolant\nto see if draining is necessary\n(TB 750-651).\nb. Inspect surge tank, radiator shroud,\npower steering cooler, oil cooler, all\nhoses, quick disconnects and fittings for\nsecurity of mounting, leaks, and\ndeterioration. Inspect and clean as\nnecessary the radiator and oil cooler cores.",
+        "text_sha256": "a461358640602b3083120847dd60933368214a321a1040d332572d6163790407",
+        "token_count": 338,
+        "unit_id": "U000906",
+        "unit_key": "pmcs:6"
+      }
+    ],
+    "search_ms": 8.517200000824232
+  },
+  "round": 2,
+  "sequence": 229,
+  "started_at": "2026-09-28T04:38:33.925375+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1842.066899999736,
+    "retrieval": 96.3755000002493,
+    "total": 1938.4423999999854
+  },
+  "unprovided_citations": []
+}

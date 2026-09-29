@@ -1,0 +1,107 @@
+{
+  "at": "2026-09-28T08:44:06.708236+00:00",
+  "identity_hash": "a3a09d83d99d69ed2b4d7d108ea70c61ee49eb8c19b03fb8b0f01328a85b2a71",
+  "input_hash": "f3e80c92cad00e0a13c6818a3d4526bc0cdfc479a67c296597938d79c6b014f8",
+  "result": {
+    "attempt_key": "synthetic-wrong",
+    "condition": "RAG",
+    "errors": {
+      "answer_relevancy": {
+        "code": "RAGAS_ALGORITHM_MISMATCH",
+        "type": "EvaluationError"
+      }
+    },
+    "evaluation_elapsed_seconds": 15.004789800001163,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "SYN02",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific storage temperature of 30 degrees Celsius."
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The Luma test box should be stored at 30 degrees Celsius."
+        }
+      ],
+      "claims_raw": [
+        "The Luma test box should be stored at 30 degrees Celsius."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Store the Luma test box at 30 degrees Celsius.",
+            "fulfilled": 0,
+            "id": "temperature",
+            "reason": "The answer specifies 30 degrees Celsius, contradicting the required 12 degrees Celsius."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 12 degrees Celsius, not 30.",
+              "statement": "The Luma test box should be stored at 30 degrees Celsius.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 12 degrees Celsius, not 30.",
+              "statement": "The Luma test box should be stored at 30 degrees Celsius.",
+              "verdict": 0
+            }
+          ]
+        }
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "8242f4776ebf7a88b54242dadbcd8fbfb22d3e6dd7eb6172e0a917088c82a10f"
+}

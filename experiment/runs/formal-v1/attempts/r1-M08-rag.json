@@ -1,0 +1,720 @@
+{
+  "citation_ids": [
+    "[C002106]",
+    "[C000614]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:25:57.881528+00:00",
+  "evaluation_answer": "The cooling fan is activated when coolant temperature reaches 215°F (102°C). The power steering pump supplies hydraulic pressure to the fan-clutch system.  ",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 857,
+  "key": "r1-M08-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000610] TM 9-2320-280-20-1 | PDF 69 | Printed 1-39\n1-20. COOLING SYSTEM OPERATION (Cont'd)\n\nfan clutch as required by engine temperature. Hydraulic pressure supplied by power steering pump.\n\n[C002106] TM 9-2320-280-20-1 | PDF 239 | Printed 2-155\n2-25.  ENGINE COOLING TESTS\n\nThe engine cooling system is a pressure type cooling system with thermostatic control of\ncoolant circulation.  The cooling system dissipates heat generated from combustion and\nmaintains the engine operating temperature at its most efficient level.  When the engine is\ncold and the thermostat is closed, coolant is recirculated through the water pump and\nengine.  As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine.  Any air\nor vapor in the cooling system will be forced to the surge tank under the liquid level and\nleave through a vent tube.  As the system cools, the extra coolant in the tank will be drawn\nback to the radiator.  Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used.  The fan is activated when coolant temperature reaches 215°F (102°C).  A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil.  When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere.\n\n[C000614] TM 9-2320-280-20-1 | PDF 69 | Printed 1-39\n1-20. COOLING SYSTEM OPERATION (Cont'd)\n\nFAN CLUTCH - Hydraulically actuated by pressure from hydraulic control valve to control\noperation of fan. Hydraulic pressure supplied by power steering pump.\n\n[C000595] TM 9-2320-280-20-1 | PDF 68 | Printed 1-38\n1-20. COOLING SYSTEM OPERATION\n\nENGINE TEMPERATURE SWITCH – Sends signal to activate control valve system to operate fan\nB\nwhen engine temperature exceeds 215°F (102°C) and deactivate when engine temperature drops\nbelow 190°F (88°C).\n\n[C002390] TM 9-2320-280-20-1 | PDF 267 | Printed 2-183\nFAN TEMPERATURE\nQUESTION:\nAt what coolant temperature is the cooling fan activated, and which pump supplies hydraulic pressure to the fan-clutch system?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "At what coolant temperature is the cooling fan activated, and which pump supplies hydraulic pressure to the fan-clutch system?",
+  "question_id": "M08",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:13:14.735083107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:13:12.314379707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4845027328.0,
+    "max_actual_interval_ms": 107.82280000057654,
+    "peak_rss_bytes": 8156749824,
+    "peak_vram_bytes": 4845027328,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4841.8803314,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4841.9848924,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.091098,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.1949432,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.2857417,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.3935645,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.4860733,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.5919849,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.6847355,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.7902906,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038492160,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156733440,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.8826451,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038508544,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8156749824,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4842.9879843,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036448256,
+          "35444": 8007680,
+          "36040": 97677312,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8154689536,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4843.0930034,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3877883904,
+          "37564": 7958528
+        },
+        "rss_bytes": 8154951680,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4843.1833967,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109248512,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3876057088,
+          "37564": 7958528
+        },
+        "rss_bytes": 8153251840,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4843.2875835,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109248512,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3878076416,
+          "37564": 7958528
+        },
+        "rss_bytes": 8155271168,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4843.3953281,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109248512,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3878076416,
+          "37564": 7958528
+        },
+        "rss_bytes": 8155271168,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4843.4883145,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109248512,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3878076416,
+          "37564": 7958528
+        },
+        "rss_bytes": 8155271168,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4843.5934711,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109248512,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3878076416,
+          "37564": 7958528
+        },
+        "rss_bytes": 8155271168,
+        "vram_bytes": 4845027328
+      },
+      {
+        "monotonic": 4843.683977,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109248512,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3878076416,
+          "37564": 7958528
+        },
+        "rss_bytes": 8155271168,
+        "vram_bytes": 4844896256
+      },
+      {
+        "monotonic": 4843.7898822,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109248512,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3878076416,
+          "37564": 7958528
+        },
+        "rss_bytes": 8155271168,
+        "vram_bytes": 4844896256
+      },
+      {
+        "monotonic": 4843.8823867,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109248512,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3878076416,
+          "37564": 7958528
+        },
+        "rss_bytes": 8155271168,
+        "vram_bytes": 4844896256
+      },
+      {
+        "monotonic": 4843.986915,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109248512,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4036587520,
+          "35444": 8007680,
+          "36040": 97800192,
+          "37504": 3878076416,
+          "37564": 7958528
+        },
+        "rss_bytes": 8155271168,
+        "vram_bytes": 4844896256
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:25:57.8797315Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 53,
+    "eval_duration": 795917000,
+    "load_duration": 9035800,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 857,
+    "prompt_eval_duration": 150784000,
+    "response": "The cooling fan is activated when coolant temperature reaches 215°F (102°C). The power steering pump supplies hydraulic pressure to the fan-clutch system. [C002106] [C000614]",
+    "total_duration": 970047600
+  },
+  "retrieval": {
+    "embedding_ms": 155.9397999999419,
+    "items": [
+      {
+        "body_end": 97,
+        "body_start": 0,
+        "id": "C000610",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          69
+        ],
+        "prefix_chars": 41,
+        "printed_pages": [
+          "1-39"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R000740"
+        ],
+        "review_ids": [],
+        "score": 0.6973041892051697,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-20. COOLING SYSTEM OPERATION (Cont'd)\n\nfan clutch as required by engine temperature. Hydraulic pressure supplied by power steering pump.",
+        "text_sha256": "d48c4c43d3ccfdadc4213f8c87e2bd1df41a0d21a3eb45871c69c448ae377b44",
+        "token_count": 30,
+        "unit_id": "U000610",
+        "unit_key": "region:69:1:3"
+      },
+      {
+        "body_end": 1227,
+        "body_start": 0,
+        "id": "C002106",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          239
+        ],
+        "prefix_chars": 29,
+        "printed_pages": [
+          "2-155"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R002365"
+        ],
+        "review_ids": [],
+        "score": 0.6928382515907288,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[4]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "numbered_section",
+          "section": "2-25",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-25.  ENGINE COOLING TESTS\n\nThe engine cooling system is a pressure type cooling system with thermostatic control of\ncoolant circulation.  The cooling system dissipates heat generated from combustion and\nmaintains the engine operating temperature at its most efficient level.  When the engine is\ncold and the thermostat is closed, coolant is recirculated through the water pump and\nengine.  As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine.  Any air\nor vapor in the cooling system will be forced to the surge tank under the liquid level and\nleave through a vent tube.  As the system cools, the extra coolant in the tank will be drawn\nback to the radiator.  Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used.  The fan is activated when coolant temperature reaches 215°F (102°C).  A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil.  When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere.",
+        "text_sha256": "921babdead3ce5bbc76433831e26d563148362005b4b17843149041ab971b06a",
+        "token_count": 299,
+        "unit_id": "U002100",
+        "unit_key": "region:239:1:4"
+      },
+      {
+        "body_end": 157,
+        "body_start": 0,
+        "id": "C000614",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          69
+        ],
+        "prefix_chars": 41,
+        "printed_pages": [
+          "1-39"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R000744"
+        ],
+        "review_ids": [],
+        "score": 0.6717935800552368,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[7]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-20. COOLING SYSTEM OPERATION (Cont'd)\n\nFAN CLUTCH - Hydraulically actuated by pressure from hydraulic control valve to control\noperation of fan. Hydraulic pressure supplied by power steering pump.",
+        "text_sha256": "cbf939024b5c151c44f797db6c8178a4c1c3bee09e1b0c88931c5dc26ecf503d",
+        "token_count": 46,
+        "unit_id": "U000614",
+        "unit_key": "region:69:1:7"
+      },
+      {
+        "body_end": 201,
+        "body_start": 0,
+        "id": "C000595",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          68
+        ],
+        "prefix_chars": 32,
+        "printed_pages": [
+          "1-38"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R000722"
+        ],
+        "review_ids": [],
+        "score": 0.6648420095443726,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "1-20",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-20. COOLING SYSTEM OPERATION\n\nENGINE TEMPERATURE SWITCH – Sends signal to activate control valve system to operate fan\nB\nwhen engine temperature exceeds 215°F (102°C) and deactivate when engine temperature drops\nbelow 190°F (88°C).",
+        "text_sha256": "90b3da95d6e0398fbd8fd6f133bf93722518880bc71d7bba15154b6fd5bb8670",
+        "token_count": 62,
+        "unit_id": "U000595",
+        "unit_key": "region:68:1:3"
+      },
+      {
+        "body_end": 15,
+        "body_start": 0,
+        "id": "C002390",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          267
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-183"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R002709",
+          "R002710"
+        ],
+        "review_ids": [],
+        "score": 0.6539496183395386,
+        "source_issues": [
+          {
+            "description": "Teat가 PDF 화면에도 인쇄됨.",
+            "id": "TEAT",
+            "pdf_page": 267,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "FAN TEMPERATURE",
+        "text_sha256": "2230c813dcbcb4650f81488f6601a61d10b37a1785733329b1e507d5f5ad29ef",
+        "token_count": 4,
+        "unit_id": "U002384",
+        "unit_key": "region:267:1:11"
+      }
+    ],
+    "search_ms": 19.07149999988178
+  },
+  "round": 1,
+  "sequence": 10,
+  "started_at": "2026-09-28T04:25:56.696908+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1008.7560000001758,
+    "retrieval": 176.27129999982571,
+    "total": 1185.0273000000016
+  },
+  "unprovided_citations": []
+}

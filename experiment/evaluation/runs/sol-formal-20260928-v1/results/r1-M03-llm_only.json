@@ -1,0 +1,206 @@
+{
+  "at": "2026-09-28T09:00:40.951491+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "a57df07b809c42d7e57b6579bd5735ca4b2f63ff9db6aca2b269b25be2c5a9a3",
+  "result": {
+    "attempt_key": "r1-M03-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 32.90933489999952,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9645636248083092
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9645636248083092
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.16666666666666666
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M03",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It gives specific circuit, timing, and temperature claims but adds a disclaimer that they are not directly supported by the supplied excerpts."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9645636280762705,
+          0.9645636217746892,
+          0.964563624573966
+        ],
+        "query_vector_hash": "01a272e91bd673221df6cc0dbd2cc72286ad50a463e2db35d4b6b338277faead",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine temperature are specified for checking it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine temperature are specified for checking it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine temperature are specified for checking it?"
+          }
+        ],
+        "response_vectors_hash": "9604cd78a70d1aca9f9680dc2ec79d31f7914427ee897ab69d674e96eeddd71b",
+        "score": 0.9645636248083092
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The secondary cold-start circuit is excluded from the Glowplugs Circuit Tests."
+        },
+        {
+          "id": "C002",
+          "text": "The Fuel System guidance in TM 9-2320-280-20-1 specifies a timing advance of 0 degrees when checking the secondary cold-start circuit."
+        },
+        {
+          "id": "C003",
+          "text": "The Fuel System guidance in TM 9-2320-280-20-1 specifies an engine temperature of ambient temperature (cold) when checking the secondary cold-start circuit."
+        },
+        {
+          "id": "C004",
+          "text": "The answer derives the cold-start circuit information from general knowledge of HMMWV maintenance procedures."
+        },
+        {
+          "id": "C005",
+          "text": "The cold-start circuit information is not directly supported by supplied excerpts."
+        },
+        {
+          "id": "C006",
+          "text": "Specific chunk IDs are not available in REFERENCE."
+        }
+      ],
+      "claims_raw": [
+        "The secondary cold-start circuit is excluded from the Glowplugs Circuit Tests.",
+        "The Fuel System guidance in TM 9-2320-280-20-1 specifies a timing advance of 0 degrees when checking the secondary cold-start circuit.",
+        "The Fuel System guidance in TM 9-2320-280-20-1 specifies an engine temperature of ambient temperature (cold) when checking the secondary cold-start circuit.",
+        "The answer derives the cold-start circuit information from general knowledge of HMMWV maintenance procedures.",
+        "The cold-start circuit information is not directly supported by supplied excerpts.",
+        "Specific chunk IDs are not available in REFERENCE."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "secondary cold-start circuit",
+            "fulfilled": 0,
+            "id": "M03-A01",
+            "reason": "The answer does not identify the excluded circuit as the fuel-system cold-start advance circuit."
+          },
+          {
+            "answer_quote": "timing advance should be set to 0 degrees",
+            "fulfilled": 0,
+            "id": "M03-A02",
+            "reason": "This contradicts the specified advance of approximately 3–5 degrees."
+          },
+          {
+            "answer_quote": "engine temperature should be at ambient temperature (cold)",
+            "fulfilled": 0,
+            "id": "M03-A03",
+            "reason": "This does not state the required condition of below 90°F (32°C)."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.16666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:glow_exclusion"
+              ],
+              "evidence_quotes": [
+                "there is also a cold start advance circuit (part of the fuel system) which is not checked\nhere."
+              ],
+              "reason": "The excerpt says the cold start advance circuit is not checked in those tests.",
+              "statement": "The secondary cold-start circuit is excluded from the Glowplugs Circuit Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied guidance specifies approximately 3 to 5 degrees, not 0.",
+              "statement": "The Fuel System guidance in TM 9-2320-280-20-1 specifies a timing advance of 0 degrees when checking the secondary cold-start circuit.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "It specifies an engine temperature below 90°F (32°C), not ambient temperature.",
+              "statement": "The Fuel System guidance in TM 9-2320-280-20-1 specifies an engine temperature of ambient temperature (cold) when checking the secondary cold-start circuit.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpts provide the information; they do not establish how an answer was derived.",
+              "statement": "The answer derives the cold-start circuit information from general knowledge of HMMWV maintenance procedures.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied excerpts directly describe the cold start advance circuit.",
+              "statement": "The cold-start circuit information is not directly supported by supplied excerpts.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpts do not establish whether specific chunk IDs are available in REFERENCE.",
+              "statement": "Specific chunk IDs are not available in REFERENCE.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 5.551115123125783e-16,
+        "cosine_similarities": [
+          0.9645636280762705,
+          0.9645636217746892,
+          0.964563624573966
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9645636248083086,
+        "query_vector_hash": "01a272e91bd673221df6cc0dbd2cc72286ad50a463e2db35d4b6b338277faead",
+        "ragas_score": 0.9645636248083092,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "9604cd78a70d1aca9f9680dc2ec79d31f7914427ee897ab69d674e96eeddd71b"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "260af45ead491dc821b6e1db9cef829730648ae5af11269bb802de1681bfe8ca"
+}

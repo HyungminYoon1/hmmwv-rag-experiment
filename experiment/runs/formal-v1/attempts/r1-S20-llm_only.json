@@ -1,0 +1,565 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:28:09.683595+00:00",
+  "evaluation_answer": "The minimum battery voltage checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series) is 10.5 volts. This value is based on standard vehicle electrical system diagnostic practices as outlined in typical maintenance manuals for military vehicles of that era, including the referenced TM 9-2320-280-20-1. However, since no specific excerpts from the manual were provided in REFERENCE, this answer is derived from general knowledge of such diagnostic procedures. [No chunk ID available]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 236,
+  "key": "r1-S20-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nIn Step 2 of the initial Starter Circuit diagnostic test, what minimum battery voltage is checked while attempting to crank the engine?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "In Step 2 of the initial Starter Circuit diagnostic test, what minimum battery voltage is checked while attempting to crank the engine?",
+  "question_id": "S20",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:15:26.537011307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:15:23.226393907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 110.36680000052002,
+    "peak_rss_bytes": 6561738752,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4972.7404398,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4972.8476541,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4972.9416499,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.0520167,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.1469886,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.2549361,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.349323,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.442134,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.5486545,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.6414353,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.7495907,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6173016064,
+          "37564": 7958528
+        },
+        "rss_bytes": 6396354560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.841838,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103309312,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6247636992,
+          "37564": 7958528
+        },
+        "rss_bytes": 6470983680,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4973.9508229,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103309312,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561677312,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.0441151,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103354368,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561722368,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.1531319,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.2458011,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.3527261,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.4459262,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.5543301,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.6472438,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.7421623,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.849871,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4974.9421992,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4975.0504367,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4975.1447048,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4975.2542922,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4975.3500167,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103362560,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561730560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4975.4421035,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103370752,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561738752,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4975.5496619,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103370752,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561738752,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4975.642253,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103370752,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561738752,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4975.7494212,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103370752,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561738752,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4975.8546664,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103370752,
+          "30736": 12054528,
+          "36040": 100024320,
+          "37504": 6338330624,
+          "37564": 7958528
+        },
+        "rss_bytes": 6561738752,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:28:09.6808186Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 122,
+    "eval_duration": 1831394000,
+    "load_duration": 8870600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 236,
+    "prompt_eval_duration": 30683000,
+    "response": "The minimum battery voltage checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series) is 10.5 volts. This value is based on standard vehicle electrical system diagnostic practices as outlined in typical maintenance manuals for military vehicles of that era, including the referenced TM 9-2320-280-20-1. However, since no specific excerpts from the manual were provided in REFERENCE, this answer is derived from general knowledge of such diagnostic procedures. [No chunk ID available]",
+    "total_duration": 2117847500
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 40,
+  "started_at": "2026-09-28T04:28:07.556933+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2126.430899999832,
+    "retrieval": null,
+    "total": 2126.430899999832
+  },
+  "unprovided_citations": []
+}

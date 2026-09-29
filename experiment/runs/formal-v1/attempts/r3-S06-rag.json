@@ -1,0 +1,864 @@
+{
+  "citation_ids": [
+    "[C001347]",
+    "[C002188]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:44:53.607309+00:00",
+  "evaluation_answer": "Vehicle symptoms that may justify checking the air intake/exhaust system include: hard to start, rough running, failure to develop full power, and colorless exhaust (indicating a possible fuel, air, or mechanical problem) . Additionally, excessive white exhaust smoke, steam leaks, condensation in the exhaust system, or white joints in the system may indicate issues with the intake/exhaust system .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 769,
+  "key": "r3-S06-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C001991] TM 9-2320-280-20-1 | PDF 223 | Printed 2-137\n2-23. AIR INTAKE/EXHAUST TESTS\n\nThe Air Intake/Exhaust System is a very simple system that can cause very annoying\nproblems. Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system. You can run\nthrough the diagnostic logic for this system almost anytime you open the hood or check the\nunderside of your vehicle.\n\n[C002188] TM 9-2320-280-20-1 | PDF 247 | Printed 2-163\nREFERENCE INFORMATION\nENGINE COOLING\n\nLook for excessive white exhaust smoke, steam leaks\nengine compartment oil in the coolant. Other signs\ncondensation in the exhaust system, or white joints in\nsystem. You can also feel the coolant hoses to see if\nhigh pressure caused by leaking combustion gasses.\ngiowplugs tum off very quickly after starting the engine,\nengine overheats, or has excessive coolant consumption,\nhave a head gasket problem.\n\n[C001989] TM 9-2320-280-20-1 | PDF 223 | Printed 2-137\n2-23. AIR INTAKE/EXHAUST TESTS\n\nThese Air Intake/Exhaust System tests can be run anytime you think there maybe a problem\nwith the air intake or exhaust systems, or if you were sent here from another test.\n\n[C001347] TM 9-2320-280-20-1 | PDF 142 | Printed 2-52\nENGINE RUNNING\nKNOWN INFO\nENGINE STARTS AND\nNGINE\nRUNNING WITH NO\nABNORMAL SOUNDS\nOR VIBRATIONS.\nPOSSIBLE PROBLEMS\nMECHANICAL\nFUEL SYSTEM\n\nIS THE EXHAUST COLORLESS? 9 TEST OPTIONS LOOK AT EXHAUST WHILE ENGINE IS RUNNING. REASON FOR QUESTION Abnormal exhaust is a sign of a fuel, air or mechanical problem.\n\n[C001723] TM 9-2320-280-20-1 | PDF 198 | Printed 2-111\nFUEL SYSTEM\nREFERENCE INFORMATION\n\nThe Glowplugs or the Intake/Exhaust\nSystem may be faulty, so you should test\nthem first.\nQUESTION:\nWhat vehicle symptoms may justify checking the air intake/exhaust system?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "What vehicle symptoms may justify checking the air intake/exhaust system?",
+  "question_id": "S06",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:32:10.461556507+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:32:07.451899207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 109.29399999986344,
+    "peak_rss_bytes": 13019381760,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5976.8736301,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5976.9800325,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.0873271,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.1779183,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.2832845,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.375105,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.4831356,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.577076,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.6859989,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.7784856,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.8875683,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5977.9821698,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.0890623,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8734711808,
+          "37564": 7741440
+        },
+        "rss_bytes": 13017554944,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.1807895,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8734711808,
+          "37564": 7741440
+        },
+        "rss_bytes": 13017554944,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.2748269,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.3826251,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.4754441,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.5837624,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.6765625,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.7858565,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.8795708,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5978.9855753,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5979.0782206,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5979.1871449,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5979.2801848,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5979.3884112,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5979.4806225,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5979.5892008,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5979.6823513,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5979.7755866,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102506496,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8736538624,
+          "37564": 7741440
+        },
+        "rss_bytes": 13019381760,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:44:53.6062041Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 95,
+    "eval_duration": 1599982000,
+    "load_duration": 6928700,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 769,
+    "prompt_eval_duration": 176555000,
+    "response": "Vehicle symptoms that may justify checking the air intake/exhaust system include: hard to start, rough running, failure to develop full power, and colorless exhaust (indicating a possible fuel, air, or mechanical problem) [C001347]. Additionally, excessive white exhaust smoke, steam leaks, condensation in the exhaust system, or white joints in the system may indicate issues with the intake/exhaust system [C002188].",
+    "total_duration": 1791951500
+  },
+  "retrieval": {
+    "embedding_ms": 81.14410000052885,
+    "items": [
+      {
+        "body_end": 384,
+        "body_start": 0,
+        "id": "C001991",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          223
+        ],
+        "prefix_chars": 32,
+        "printed_pages": [
+          "2-137"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002223"
+        ],
+        "review_ids": [],
+        "score": 0.7397223711013794,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "2-23",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-23. AIR INTAKE/EXHAUST TESTS\n\nThe Air Intake/Exhaust System is a very simple system that can cause very annoying\nproblems. Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system. You can run\nthrough the diagnostic logic for this system almost anytime you open the hood or check the\nunderside of your vehicle.",
+        "text_sha256": "525af7504904e1441fb3e09baf8e4a6bc07a93eac4b8b32b22fb0957c5829834",
+        "token_count": 96,
+        "unit_id": "U001985",
+        "unit_key": "region:223:1:3"
+      },
+      {
+        "body_end": 404,
+        "body_start": 0,
+        "id": "C002188",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          247
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-163"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R002452",
+          "R002453"
+        ],
+        "review_ids": [],
+        "score": 0.6789699792861938,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\nLook for excessive white exhaust smoke, steam leaks\nengine compartment oil in the coolant. Other signs\ncondensation in the exhaust system, or white joints in\nsystem. You can also feel the coolant hoses to see if\nhigh pressure caused by leaking combustion gasses.\ngiowplugs tum off very quickly after starting the engine,\nengine overheats, or has excessive coolant consumption,\nhave a head gasket problem.",
+        "text_sha256": "8c79f5ea1c10f4614b0d5aa949cb660b5b98227ce64becf8d77cc8812896d80d",
+        "token_count": 92,
+        "unit_id": "U002182",
+        "unit_key": "region:247:1:3"
+      },
+      {
+        "body_end": 172,
+        "body_start": 0,
+        "id": "C001989",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          223
+        ],
+        "prefix_chars": 32,
+        "printed_pages": [
+          "2-137"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R002221"
+        ],
+        "review_ids": [],
+        "score": 0.6753858327865601,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[1]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "2-23",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-23. AIR INTAKE/EXHAUST TESTS\n\nThese Air Intake/Exhaust System tests can be run anytime you think there maybe a problem\nwith the air intake or exhaust systems, or if you were sent here from another test.",
+        "text_sha256": "1a1f7823ca2603eaa23d5413793c673081c9b7b91eefa8a84077d3c7159932a2",
+        "token_count": 53,
+        "unit_id": "U001983",
+        "unit_key": "region:223:1:1"
+      },
+      {
+        "body_end": 166,
+        "body_start": 0,
+        "id": "C001347",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          142
+        ],
+        "prefix_chars": 139,
+        "printed_pages": [
+          "2-52"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6607609391212463,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            339.0094,
+            537.9045
+          ],
+          "condition_box": [
+            44.0,
+            332.5,
+            155.0,
+            494.5
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0142.json",
+            "sha256": "0b741d612b86e93649409a9347f604d907381d973f5702038b2d9f09b4206a97"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            178.0219,
+            359.1628,
+            336.3703,
+            367.8
+          ],
+          "source_component_keys": [
+            "region:142:1:10",
+            "region:142:1:9",
+            "region:142:1:12",
+            "region:142:1:8",
+            "region:142:1:11"
+          ]
+        },
+        "text": "ENGINE RUNNING\nKNOWN INFO\nENGINE STARTS AND\nNGINE\nRUNNING WITH NO\nABNORMAL SOUNDS\nOR VIBRATIONS.\nPOSSIBLE PROBLEMS\nMECHANICAL\nFUEL SYSTEM\n\nIS THE EXHAUST COLORLESS? 9 TEST OPTIONS LOOK AT EXHAUST WHILE ENGINE IS RUNNING. REASON FOR QUESTION Abnormal exhaust is a sign of a fuel, air or mechanical problem.",
+        "text_sha256": "cc78758ffeea95f3dcc3cdefa9028d93a424a0872cebeaeef3a48d8a0d9945fb",
+        "token_count": 86,
+        "unit_id": "U001341",
+        "unit_key": "V6:P0142:node:2"
+      },
+      {
+        "body_end": 88,
+        "body_start": 0,
+        "id": "C001723",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          198
+        ],
+        "prefix_chars": 35,
+        "printed_pages": [
+          "2-111"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R001838"
+        ],
+        "review_ids": [],
+        "score": 0.6584858894348145,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[7]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "FUEL SYSTEM\nREFERENCE INFORMATION\n\nThe Glowplugs or the Intake/Exhaust\nSystem may be faulty, so you should test\nthem first.",
+        "text_sha256": "24cb5ba7e462c632ada64809bf8c903f4ab9996e48bcf528fe3dbc49fdd86350",
+        "token_count": 32,
+        "unit_id": "U001717",
+        "unit_key": "region:198:1:3"
+      }
+    ],
+    "search_ms": 10.021899999628658
+  },
+  "round": 3,
+  "sequence": 334,
+  "started_at": "2026-09-28T04:44:51.690462+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1824.8078999995414,
+    "retrieval": 92.17929999977059,
+    "total": 1916.987199999312
+  },
+  "unprovided_citations": []
+}

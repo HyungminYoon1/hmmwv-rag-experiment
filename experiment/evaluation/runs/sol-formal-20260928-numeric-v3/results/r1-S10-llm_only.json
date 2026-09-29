@@ -1,0 +1,251 @@
+{
+  "at": "2026-09-28T09:59:37.644835+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "8bc21637378ab0e192141117098446286ecce473f87b821cf424f24a6fea88f5",
+  "original_result_sha256": "3489641b42f1b83eefa12d9e3fb36c41df27fe7c690219c8e155aa07c9fee7d2",
+  "result": {
+    "attempt_key": "r1-S10-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 34.04443900000115,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7818922797818396
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7818922797818396
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S10",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "Gives a concrete activation temperature of approximately 200°F (93°C) and makes additional claims about the vehicle’s cooling system. The source caveat does not make it an abstention."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7821448409066334,
+          0.7887101702613678,
+          0.7748218281775179
+        ],
+        "query_vector_hash": "beda623784aa1969dda9635390366912417eb0e004b6bb1fcd2b4b649eafd40e",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At approximately what coolant temperature does the engine fan on an HMMWV M998-series activate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what coolant temperature does the engine fan activate on an HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what coolant temperature does the engine fan on an M998-series HMMWV activate?"
+          }
+        ],
+        "response_vectors_hash": "75b91f0b657dbd9ff11eb2e1da9c19c94ba6bf90040bf765e1d0982201b97c8c",
+        "score": 0.7818922797818398
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The engine fan on the HMMWV (M998-series) is typically activated at a coolant temperature of approximately 200°F (93°C)."
+        },
+        {
+          "id": "C002",
+          "text": "The HMMWV (M998-series) engine fan activation temperature threshold is based on standard vehicle cooling system design and operational parameters for the M998 series."
+        },
+        {
+          "id": "C003",
+          "text": "General maintenance and operation guidelines for the HMMWV (M998-series) outline the basis for the engine fan activation temperature threshold."
+        },
+        {
+          "id": "C004",
+          "text": "Specific HMMWV (M998-series) engine fan activation temperatures may vary slightly depending on ambient conditions and engine load."
+        },
+        {
+          "id": "C005",
+          "text": "A coolant temperature of 200°F is the commonly referenced HMMWV (M998-series) engine fan activation temperature in vehicle maintenance literature."
+        },
+        {
+          "id": "C006",
+          "text": "No specific excerpt from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), was provided in REFERENCE to cite a direct chunk ID."
+        },
+        {
+          "id": "C007",
+          "text": "The answer is based on general knowledge of HMMWV cooling system operation."
+        }
+      ],
+      "claims_raw": [
+        "The engine fan on the HMMWV (M998-series) is typically activated at a coolant temperature of approximately 200°F (93°C).",
+        "The HMMWV (M998-series) engine fan activation temperature threshold is based on standard vehicle cooling system design and operational parameters for the M998 series.",
+        "General maintenance and operation guidelines for the HMMWV (M998-series) outline the basis for the engine fan activation temperature threshold.",
+        "Specific HMMWV (M998-series) engine fan activation temperatures may vary slightly depending on ambient conditions and engine load.",
+        "A coolant temperature of 200°F is the commonly referenced HMMWV (M998-series) engine fan activation temperature in vehicle maintenance literature.",
+        "No specific excerpt from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), was provided in REFERENCE to cite a direct chunk ID.",
+        "The answer is based on general knowledge of HMMWV cooling system operation."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "approximately 200°F (93°C)",
+            "fulfilled": 0,
+            "id": "S10-A01",
+            "reason": "The answer gives 200°F (93°C), contradicting the required activation temperature of 215°F (102°C)."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives 215°F (102°C), not 200°F (93°C).",
+              "statement": "The engine fan on the HMMWV (M998-series) is typically activated at a coolant temperature of approximately 200°F (93°C).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not state the basis for the threshold.",
+              "statement": "The HMMWV (M998-series) engine fan activation temperature threshold is based on standard vehicle cooling system design and operational parameters for the M998 series.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No such guidelines or explanation of the threshold’s basis are provided.",
+              "statement": "General maintenance and operation guidelines for the HMMWV (M998-series) outline the basis for the engine fan activation temperature threshold.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not describe variation with ambient conditions or engine load.",
+              "statement": "Specific HMMWV (M998-series) engine fan activation temperatures may vary slightly depending on ambient conditions and engine load.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 215°F and does not discuss what is commonly referenced in maintenance literature.",
+              "statement": "A coolant temperature of 200°F is the commonly referenced HMMWV (M998-series) engine fan activation temperature in vehicle maintenance literature.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify that publication or describe what was provided in REFERENCE.",
+              "statement": "No specific excerpt from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), was provided in REFERENCE to cite a direct chunk ID.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish what an answer was based on.",
+              "statement": "The answer is based on general knowledge of HMMWV cooling system operation.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.7821448409066334,
+          0.7887101702613678,
+          0.7748218281775179
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7818922797818396,
+        "query_vector_hash": "beda623784aa1969dda9635390366912417eb0e004b6bb1fcd2b4b649eafd40e",
+        "ragas_score": 0.7818922797818398,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "75b91f0b657dbd9ff11eb2e1da9c19c94ba6bf90040bf765e1d0982201b97c8c"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7821448409066334,
+          0.7887101702613678,
+          0.7748218281775179
+        ],
+        "decimal50_cosines": [
+          "0.78214484090663338934401606895351428974324241400640",
+          "0.78871017026136767374809577400083348236346207625058",
+          "0.77482182817751786749778445300418006720117798567265"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.7818922797818398
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.7818922797818398
+          }
+        },
+        "query_vector_hash": "beda623784aa1969dda9635390366912417eb0e004b6bb1fcd2b4b649eafd40e",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At approximately what coolant temperature does the engine fan on an HMMWV M998-series activate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what coolant temperature does the engine fan activate on an HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what coolant temperature does the engine fan on an M998-series HMMWV activate?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "75b91f0b657dbd9ff11eb2e1da9c19c94ba6bf90040bf765e1d0982201b97c8c",
+        "score": 0.7818922797818396
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "0623acbe806e77706fc025938ee56b5a1ab8aeafb9b45bc53cbbdad390ee41eb"
+}

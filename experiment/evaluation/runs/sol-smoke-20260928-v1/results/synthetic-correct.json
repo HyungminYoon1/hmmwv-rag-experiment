@@ -1,0 +1,134 @@
+{
+  "at": "2026-09-28T08:43:51.607317+00:00",
+  "identity_hash": "a3a09d83d99d69ed2b4d7d108ea70c61ee49eb8c19b03fb8b0f01328a85b2a71",
+  "input_hash": "48aaf688b10a81f9f2bd65c9ed2265ce5030aff558ad55a37daf0e6a6a975932",
+  "result": {
+    "attempt_key": "synthetic-correct",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 34.83061539999835,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9717807311468764
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9717807311468764
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "SYN01",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a concrete storage temperature."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9717807325907891,
+          0.9717807325907891,
+          0.9717807282590503
+        ],
+        "query_vector_hash": "12cade111df40825be1053873ddd38f7fed384d2c00053648407812a4aec0fee",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          }
+        ],
+        "response_vectors_hash": "b6fa145c148173e24b7fc044b0909c280c9ec0c563dfc13717b4c103145f8353",
+        "score": 0.9717807311468764
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The Luma test box should be stored at 12 degrees Celsius."
+        }
+      ],
+      "claims_raw": [
+        "The Luma test box should be stored at 12 degrees Celsius."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Store the Luma test box at 12 degrees Celsius.",
+            "fulfilled": 1,
+            "id": "temperature",
+            "reason": "The answer states the required storage temperature."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "fixture-chunk"
+              ],
+              "evidence_quotes": [
+                "Store the Luma test box at 12 degrees Celsius."
+              ],
+              "reason": "The context gives this storage temperature.",
+              "statement": "The Luma test box should be stored at 12 degrees Celsius.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:fixture-1"
+              ],
+              "evidence_quotes": [
+                "Store the Luma test box at 12 degrees Celsius."
+              ],
+              "reason": "The context directs storage at that temperature.",
+              "statement": "The Luma test box should be stored at 12 degrees Celsius.",
+              "verdict": 1
+            }
+          ]
+        }
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "aef9d8e251f1ad543df4525ab8b66f9eadd805e2a8482e8a85cc5efc6f16e846"
+}

@@ -1,0 +1,552 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:42:42.328703+00:00",
+  "evaluation_answer": "The normally specified coolant mixture for the HMMWV (M998-series) engine cooling system is a 50/50 mixture of antifreeze (ethylene glycol) and distilled water. This mixture provides optimal cooling performance, prevents freezing, and protects the engine from overheating under normal operating conditions. [This information is based on standard maintenance practices for the M998-series HMMWV as outlined in TM 9-2320-280-20-1, Volume 1, and is consistent with general U.S. Army vehicle maintenance guidelines.]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 223,
+  "key": "r3-S11-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nWhat coolant mixture is normally specified for the engine cooling system?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "What coolant mixture is normally specified for the engine cooling system?",
+  "question_id": "S11",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:29:59.181928107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:29:56.087999407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904009728.0,
+    "max_actual_interval_ms": 109.98620000009396,
+    "peak_rss_bytes": 9495646208,
+    "peak_vram_bytes": 4904009728,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5845.5011519,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5845.6063614,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5845.7126477,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5845.8053251,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5845.9139009,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.0060222,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.1139819,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.2063787,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.315086,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.4086543,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.5163369,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.6091278,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.7017934,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.8106875,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5846.9035156,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.0120033,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.1029855,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.2129717,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.3062029,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.414251,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.5062422,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.6146385,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.7075857,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.8170353,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5847.9098616,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5848.0170003,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5848.1069708,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5848.213213,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5848.3060496,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5848.4132911,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5848.5048695,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103550976,
+          "30736": 12021760,
+          "36040": 101945344,
+          "37504": 9270169600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495646208,
+        "vram_bytes": 4904009728
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:42:42.3266367Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 124,
+    "eval_duration": 1966006000,
+    "load_duration": 2156100,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 223,
+    "prompt_eval_duration": 21221000,
+    "response": "The normally specified coolant mixture for the HMMWV (M998-series) engine cooling system is a 50/50 mixture of antifreeze (ethylene glycol) and distilled water. This mixture provides optimal cooling performance, prevents freezing, and protects the engine from overheating under normal operating conditions. [This information is based on standard maintenance practices for the M998-series HMMWV as outlined in TM 9-2320-280-20-1, Volume 1, and is consistent with general U.S. Army vehicle maintenance guidelines.]",
+    "total_duration": 1993461700
+  },
+  "retrieval": null,
+  "round": 3,
+  "sequence": 297,
+  "started_at": "2026-09-28T04:42:40.318505+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2010.419300000649,
+    "retrieval": null,
+    "total": 2010.419300000649
+  },
+  "unprovided_citations": []
+}

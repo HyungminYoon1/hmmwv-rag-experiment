@@ -1,0 +1,313 @@
+{
+  "at": "2026-09-29T04:55:11.865980+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "4cfa88f8ee4d81b471e18fc0ae29b823254a3448be315ff7f227f8bee1195c39",
+  "result": {
+    "attempt_key": "r1-M13-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 23.889644699999735,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8091791278395347
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8091791278395347
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M13",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "Provides specific threshold values and states whether each measurement falls below its threshold."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8199953488221532,
+          0.8199953488221532,
+          0.7875466858742977
+        ],
+        "query_vector_hash": "bb1008e572a0ddcb5c2048079d8b2b758d777e914323e68384ba48a02646065b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm and tire tread measuring 1.0 mm fall below their respective NFMC thresholds?"
+          }
+        ],
+        "response_vectors_hash": "dc23c162c45dd21b20476dc923e8bf680459f49a269a801dbb5a46a505f3583b",
+        "score": 0.8091791278395348
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer attributes its minimum-acceptable-limit claim to “standard maintenance guidelines” without identifying a source."
+        ],
+        "shared_conditions": [
+          "During the PMCS assessment of Not Fully Mission Capable (NFMC) thresholds."
+        ],
+        "statements": [
+          {
+            "answer_quote": "The Not Fully Mission Capable (NFMC) threshold for brake pad thickness is 2.5 mm.",
+            "statement": "During the PMCS NFMC assessment, the service-brake pad thickness threshold is 2.5 mm."
+          },
+          {
+            "answer_quote": "2.5 mm thickness is **not** below the NFMC threshold",
+            "statement": "During the PMCS NFMC assessment, service-brake pads measuring 2.5 mm are at, not below, the NFMC threshold."
+          },
+          {
+            "answer_quote": "if it is exactly at the limit, it may be considered marginally acceptable depending on operational policy",
+            "statement": "During the PMCS NFMC assessment, a service-brake pad exactly at the thickness limit may be considered marginally acceptable, depending on operational policy."
+          },
+          {
+            "answer_quote": "a thickness of 2.5 mm is generally considered the minimum acceptable limit",
+            "statement": "During the PMCS NFMC assessment, 2.5 mm is generally considered the minimum acceptable service-brake pad thickness."
+          },
+          {
+            "answer_quote": "The NFMC threshold for tire tread depth is 1.6 mm.",
+            "statement": "During the PMCS NFMC assessment, the tire-tread-depth threshold is 1.6 mm."
+          },
+          {
+            "answer_quote": "A tread depth of 1.0 mm is below this threshold",
+            "statement": "During the PMCS NFMC assessment, tire tread measuring 1.0 mm is below the NFMC threshold."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The Not Fully Mission Capable (NFMC) threshold for brake pad thickness is 2.5 mm.",
+          "id": "C001",
+          "text": "During the PMCS NFMC assessment, the service-brake pad thickness threshold is 2.5 mm."
+        },
+        {
+          "answer_quote": "2.5 mm thickness is **not** below the NFMC threshold",
+          "id": "C002",
+          "text": "During the PMCS NFMC assessment, service-brake pads measuring 2.5 mm are at, not below, the NFMC threshold."
+        },
+        {
+          "answer_quote": "if it is exactly at the limit, it may be considered marginally acceptable depending on operational policy",
+          "id": "C003",
+          "text": "During the PMCS NFMC assessment, a service-brake pad exactly at the thickness limit may be considered marginally acceptable, depending on operational policy."
+        },
+        {
+          "answer_quote": "a thickness of 2.5 mm is generally considered the minimum acceptable limit",
+          "id": "C004",
+          "text": "During the PMCS NFMC assessment, 2.5 mm is generally considered the minimum acceptable service-brake pad thickness."
+        },
+        {
+          "answer_quote": "The NFMC threshold for tire tread depth is 1.6 mm.",
+          "id": "C005",
+          "text": "During the PMCS NFMC assessment, the tire-tread-depth threshold is 1.6 mm."
+        },
+        {
+          "answer_quote": "A tread depth of 1.0 mm is below this threshold",
+          "id": "C006",
+          "text": "During the PMCS NFMC assessment, tire tread measuring 1.0 mm is below the NFMC threshold."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M13-A01",
+            "reason": "The answer gives 2.5 mm as the brake-pad limit, rather than 3.2 mm."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M13-A02",
+            "reason": "The answer says 2.5 mm does not fall below the limit; it is below the actual 3.2 mm limit."
+          },
+          {
+            "answer_quote": "The NFMC threshold for tire tread depth is 1.6 mm.",
+            "fulfilled": 1,
+            "id": "M13-A03",
+            "reason": "1.6 mm is 1.59 mm rounded to the precision used in the answer."
+          },
+          {
+            "answer_quote": "A tread depth of 1.0 mm is below this threshold and therefore **does** fall below the NFMC limit.",
+            "fulfilled": 1,
+            "id": "M13-A04",
+            "reason": "The answer correctly identifies 1.0 mm as below the tire-tread limit."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.3333333333333333,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000940"
+              ],
+              "evidence_quotes": [
+                "NOT FULLY MISSION CAPABLE IF: c. Service brake pads less\nthan 1/8 inch (3.2 mm)."
+              ],
+              "reason": "The stated service-brake pad limit is 3.2 mm, not 2.5 mm.",
+              "statement": "During the PMCS NFMC assessment, the service-brake pad thickness threshold is 2.5 mm.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000940"
+              ],
+              "evidence_quotes": [
+                "NOT FULLY MISSION CAPABLE IF: c. Service brake pads less\nthan 1/8 inch (3.2 mm)."
+              ],
+              "reason": "2.5 mm is below the stated 3.2 mm threshold.",
+              "statement": "During the PMCS NFMC assessment, service-brake pads measuring 2.5 mm are at, not below, the NFMC threshold.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not state an operational policy or a marginal-acceptability classification.",
+              "statement": "During the PMCS NFMC assessment, a service-brake pad exactly at the thickness limit may be considered marginally acceptable, depending on operational policy.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000940"
+              ],
+              "evidence_quotes": [
+                "NOT FULLY MISSION CAPABLE IF: c. Service brake pads less\nthan 1/8 inch (3.2 mm)."
+              ],
+              "reason": "The context gives a 3.2 mm NFMC limit and does not establish 2.5 mm as acceptable.",
+              "statement": "During the PMCS NFMC assessment, 2.5 mm is generally considered the minimum acceptable service-brake pad thickness.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000993"
+              ],
+              "evidence_quotes": [
+                "NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\nthan 1/16 in. (1.59 mm)."
+              ],
+              "reason": "The stated 1.59 mm threshold rounds to 1.6 mm at the statement’s precision.",
+              "statement": "During the PMCS NFMC assessment, the tire-tread-depth threshold is 1.6 mm.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000993"
+              ],
+              "evidence_quotes": [
+                "NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\nthan 1/16 in. (1.59 mm)."
+              ],
+              "reason": "1.0 mm is less than the stated 1.59 mm threshold.",
+              "statement": "During the PMCS NFMC assessment, tire tread measuring 1.0 mm is below the NFMC threshold.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.8199953488221532,
+          0.8199953488221532,
+          0.7875466858742977
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8091791278395347,
+        "query_vector_hash": "bb1008e572a0ddcb5c2048079d8b2b758d777e914323e68384ba48a02646065b",
+        "ragas_score": 0.8091791278395348,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "dc23c162c45dd21b20476dc923e8bf680459f49a269a801dbb5a46a505f3583b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8199953488221532,
+          0.8199953488221532,
+          0.7875466858742977
+        ],
+        "decimal50_cosines": [
+          "0.81999534882215324201893531097931331062429360674448",
+          "0.81999534882215324201893531097931331062429360674448",
+          "0.78754668587429775809141325390584575135700869577820"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8091791278395348
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8091791278395348
+          }
+        },
+        "query_vector_hash": "bb1008e572a0ddcb5c2048079d8b2b758d777e914323e68384ba48a02646065b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm and tire tread measuring 1.0 mm fall below their respective NFMC thresholds?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "dc23c162c45dd21b20476dc923e8bf680459f49a269a801dbb5a46a505f3583b",
+        "score": 0.8091791278395347
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "d0b233ffb3233fbc9cc9011f1657a7084208b6db89c7c92cd5fcf5828c43da28"
+}

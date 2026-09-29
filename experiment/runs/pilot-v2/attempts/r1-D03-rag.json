@@ -1,0 +1,653 @@
+{
+  "citation_ids": [
+    "[C000515]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:18:23.526813+00:00",
+  "evaluation_answer": "The reverse gear ratio specified for the 4L80-E transmission in Table 1-2 is 2.08:1 .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 604,
+  "key": "r1-D03-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000515] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n9.\nTRANSMISSION\nSTANDARD\nMETRIC\nGear Ratios\n4L80-E\n\nITEM: Reverse\nSTANDARD: 2.08:1\nMETRIC: \n\n[C005178] TM 9-2320-280-20-1 | PDF 531 | Printed 2-427\nREFERENCE INFORMATION\nTRANSMISSION SYSTEM\n(4L80-E)\n\nNot in park, reverse, or neutral.\nEngine speed greater than 300 rpm.\nTP greater than 25%.\nVehicle speed is greater than 7 mph (11 kph).\nTrans gear ratio is less than 1.06 in first or\nsecond gear.\nAll conditions are met for 2 seconds.\n\n[C004935] TM 9-2320-280-20-1 | PDF 523 | Printed 2-419\nTRANSMISSION SYSTEM\n(4L80-E)\n\n[C004955] TM 9-2320-280-20-1 | PDF 524 | Printed 2-420\nTRANSMISSION SYSTEM\n(4L80-E)\n\n[C005248] TM 9-2320-280-20-1 | PDF 535 | Printed 2-431\nTRANSMISSION SYSTEM\n(4L80-E)\nQUESTION:\nWhat reverse gear ratio is specified for the 4L80-E transmission in Table 1-2?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 195,
+  "question": "What reverse gear ratio is specified for the 4L80-E transmission in Table 1-2?",
+  "question_id": "D03",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:40.380939007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:38.457801607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4922736640.0,
+    "max_actual_interval_ms": 113.01629999979923,
+    "peak_rss_bytes": 7020150784,
+    "peak_vram_bytes": 4916690944,
+    "pids": [
+      13944,
+      15712,
+      30736,
+      31588,
+      33760,
+      37504,
+      37552,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4387.9130123,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4923998208
+      },
+      {
+        "monotonic": 4388.0260286,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4922425344
+      },
+      {
+        "monotonic": 4388.1180165,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4922621952
+      },
+      {
+        "monotonic": 4388.225655,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4922851328
+      },
+      {
+        "monotonic": 4388.3183556,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4922851328
+      },
+      {
+        "monotonic": 4388.4274807,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4922851328
+      },
+      {
+        "monotonic": 4388.5218532,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4922851328
+      },
+      {
+        "monotonic": 4388.628448,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4914462720
+      },
+      {
+        "monotonic": 4388.719871,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4912791552
+      },
+      {
+        "monotonic": 4388.8279721,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035551232,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7019745280,
+        "vram_bytes": 4909580288
+      },
+      {
+        "monotonic": 4388.9211228,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035952640,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7020146688,
+        "vram_bytes": 4903387136
+      },
+      {
+        "monotonic": 4389.0137387,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57982976,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035956736,
+          "37504": 2797510656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 7020150784,
+        "vram_bytes": 4905746432
+      },
+      {
+        "monotonic": 4389.1230116,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58003456,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035956736,
+          "37504": 2711494656,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 6934155264,
+        "vram_bytes": 4905222144
+      },
+      {
+        "monotonic": 4389.2163502,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58003456,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035956736,
+          "37504": 2713321472,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 6935982080,
+        "vram_bytes": 4905222144
+      },
+      {
+        "monotonic": 4389.3251925,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58003456,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035956736,
+          "37504": 2713321472,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 6935982080,
+        "vram_bytes": 4905222144
+      },
+      {
+        "monotonic": 4389.4167062,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58003456,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035956736,
+          "37504": 2713321472,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 6935982080,
+        "vram_bytes": 4916690944
+      },
+      {
+        "monotonic": 4389.5253338,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58003456,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035956736,
+          "37504": 2713321472,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 6935982080,
+        "vram_bytes": 4916690944
+      },
+      {
+        "monotonic": 4389.6167159,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58003456,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4035956736,
+          "37504": 2713321472,
+          "37552": 96706560,
+          "37564": 7442432
+        },
+        "rss_bytes": 6935982080,
+        "vram_bytes": 4912365568
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:18:23.5261632Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 38,
+    "eval_duration": 584612000,
+    "load_duration": 1394700,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 195,
+    "prompt_eval_count": 604,
+    "prompt_eval_duration": 87376000,
+    "response": "The reverse gear ratio specified for the 4L80-E transmission in Table 1-2 is 2.08:1 [C000515].",
+    "total_duration": 695634600
+  },
+  "retrieval": {
+    "embedding_ms": 78.70269999966695,
+    "items": [
+      {
+        "body_end": 39,
+        "body_start": 0,
+        "id": "C000515",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 87,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.7421057820320129,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 7,
+          "section": 2,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n9.\nTRANSMISSION\nSTANDARD\nMETRIC\nGear Ratios\n4L80-E\n\nITEM: Reverse\nSTANDARD: 2.08:1\nMETRIC: ",
+        "text_sha256": "e26487c478bda2f46c4b203e6e8f5616dedd6765a79cc5e753f6aa7fa604fad6",
+        "token_count": 55,
+        "unit_id": "U000515",
+        "unit_key": "P0063:spec:2:7"
+      },
+      {
+        "body_end": 233,
+        "body_start": 0,
+        "id": "C005178",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          531
+        ],
+        "prefix_chars": 52,
+        "printed_pages": [
+          "2-427"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R005496"
+        ],
+        "review_ids": [],
+        "score": 0.6950991749763489,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[22]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reviewed_two_column",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nTRANSMISSION SYSTEM\n(4L80-E)\n\nNot in park, reverse, or neutral.\nEngine speed greater than 300 rpm.\nTP greater than 25%.\nVehicle speed is greater than 7 mph (11 kph).\nTrans gear ratio is less than 1.06 in first or\nsecond gear.\nAll conditions are met for 2 seconds.",
+        "text_sha256": "8394ddf705de24a94c6831c4ef9727be6e03ead90db399ca21e9176bec2a76a2",
+        "token_count": 84,
+        "unit_id": "U005170",
+        "unit_key": "region:531:1:20"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C004935",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          523
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-419"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R005219",
+          "R005220"
+        ],
+        "review_ids": [],
+        "score": 0.6848180294036865,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U004927",
+        "unit_key": "region:523:1:1"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C004955",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          524
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-420"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R005259",
+          "R005260"
+        ],
+        "review_ids": [],
+        "score": 0.6848180294036865,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "DIAGNOSTIC_PANEL",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U004947",
+        "unit_key": "region:524:1:2"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C005248",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          535
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-431"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R005556",
+          "R005557"
+        ],
+        "review_ids": [],
+        "score": 0.6848180294036865,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U005240",
+        "unit_key": "region:535:1:2"
+      }
+    ],
+    "search_ms": 9.304700000029698
+  },
+  "round": 1,
+  "sequence": 11,
+  "started_at": "2026-09-28T04:18:22.730112+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 708.4680999996635,
+    "retrieval": 88.35440000075323,
+    "total": 796.8225000004168
+  },
+  "unprovided_citations": []
+}

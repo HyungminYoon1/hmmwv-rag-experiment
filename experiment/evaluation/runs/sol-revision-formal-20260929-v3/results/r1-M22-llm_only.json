@@ -1,0 +1,331 @@
+{
+  "at": "2026-09-29T05:36:22.836726+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "5cbc0c1b08da1eef3d1339e42c0cb2db87182da1d2ee0964c49ac03eebf84a91",
+  "result": {
+    "attempt_key": "r1-M22-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 34.03856150000047,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9475046257444851
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9475046257444851
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.125
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M22",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives concrete comparisons for both readings and makes substantive claims about the applicable criteria."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9389747909694439,
+          0.9506972113993108,
+          0.9528418748647007
+        ],
+        "query_vector_hash": "16d1ca71cd621f36292d7cc18f7800938c45f7a17624ee60320669bbfff4e79d",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do a battery cell specific gravity of 1.200 and an STE/ICE-R Test 73 reading of 20 milliohms meet the PMCS and diagnostic criteria?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do a battery cell specific gravity of 1.200 and an STE/ICE-R Test 73 reading of 20 milliohms meet the respective PMCS and diagnostic criteria?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do a battery cell specific gravity of 1.200 and an STE/ICE-R Test 73 reading of 20 milliohms meet their respective PMCS and diagnostic criteria?"
+          }
+        ],
+        "response_vectors_hash": "2b9546a9438839c237d44b7890a34658944a08a54a0f3a1e90d0fe8521d0a1a3",
+        "score": 0.9475046257444855
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The response's references to “standard maintenance practices” and “standard diagnostic criteria” describe its claimed basis, not separate technical findings."
+        ],
+        "shared_conditions": [
+          "Battery-cell specific gravity of 1.200.",
+          "STE/ICE-R Test 73 reading of 20 milliohms."
+        ],
+        "statements": [
+          {
+            "answer_quote": "The specific gravity of 1.200 for a battery cell is within the acceptable range for a healthy lead-acid battery",
+            "statement": "A battery-cell specific gravity of 1.200 is within the acceptable range for a healthy lead-acid battery."
+          },
+          {
+            "answer_quote": "normal range is approximately 1.200 to 1.250",
+            "statement": "The normal specific-gravity range for a healthy lead-acid battery is approximately 1.200 to 1.250."
+          },
+          {
+            "answer_quote": "typically indicating a sufficient state of charge",
+            "statement": "A battery-cell specific gravity of 1.200 typically indicates a sufficient state of charge."
+          },
+          {
+            "answer_quote": "This value meets or exceeds the PMCS (Preventive Maintenance and Condition Standard) criterion for battery health",
+            "statement": "A battery-cell specific gravity of 1.200 meets or exceeds the PMCS criterion for battery health."
+          },
+          {
+            "answer_quote": "the STE/ICE-R Test 73 reporting 20 milliohms is below the acceptable threshold",
+            "statement": "An STE/ICE-R Test 73 reading of 20 milliohms is below the acceptable threshold."
+          },
+          {
+            "answer_quote": "a low resistance reading (such as 20 milliohms) indicates poor battery condition or internal cell failure",
+            "statement": "An STE/ICE-R Test 73 resistance reading of 20 milliohms indicates poor battery condition or internal cell failure."
+          },
+          {
+            "answer_quote": "The acceptable resistance for a healthy battery in such tests is generally less than 10 milliohms.",
+            "statement": "The acceptable resistance for a healthy battery in tests such as STE/ICE-R Test 73 is generally less than 10 milliohms."
+          },
+          {
+            "answer_quote": "A reading of 20 milliohms suggests a failure, which does not meet the PMCS or diagnostic criterion.",
+            "statement": "An STE/ICE-R Test 73 reading of 20 milliohms suggests a failure and does not meet the diagnostic criterion."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The specific gravity of 1.200 for a battery cell is within the acceptable range for a healthy lead-acid battery",
+          "id": "C001",
+          "text": "A battery-cell specific gravity of 1.200 is within the acceptable range for a healthy lead-acid battery."
+        },
+        {
+          "answer_quote": "normal range is approximately 1.200 to 1.250",
+          "id": "C002",
+          "text": "The normal specific-gravity range for a healthy lead-acid battery is approximately 1.200 to 1.250."
+        },
+        {
+          "answer_quote": "typically indicating a sufficient state of charge",
+          "id": "C003",
+          "text": "A battery-cell specific gravity of 1.200 typically indicates a sufficient state of charge."
+        },
+        {
+          "answer_quote": "This value meets or exceeds the PMCS (Preventive Maintenance and Condition Standard) criterion for battery health",
+          "id": "C004",
+          "text": "A battery-cell specific gravity of 1.200 meets or exceeds the PMCS criterion for battery health."
+        },
+        {
+          "answer_quote": "the STE/ICE-R Test 73 reporting 20 milliohms is below the acceptable threshold",
+          "id": "C005",
+          "text": "An STE/ICE-R Test 73 reading of 20 milliohms is below the acceptable threshold."
+        },
+        {
+          "answer_quote": "a low resistance reading (such as 20 milliohms) indicates poor battery condition or internal cell failure",
+          "id": "C006",
+          "text": "An STE/ICE-R Test 73 resistance reading of 20 milliohms indicates poor battery condition or internal cell failure."
+        },
+        {
+          "answer_quote": "The acceptable resistance for a healthy battery in such tests is generally less than 10 milliohms.",
+          "id": "C007",
+          "text": "The acceptable resistance for a healthy battery in tests such as STE/ICE-R Test 73 is generally less than 10 milliohms."
+        },
+        {
+          "answer_quote": "A reading of 20 milliohms suggests a failure, which does not meet the PMCS or diagnostic criterion.",
+          "id": "C008",
+          "text": "An STE/ICE-R Test 73 reading of 20 milliohms suggests a failure and does not meet the diagnostic criterion."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M22-A01",
+            "reason": "The answer treats 1.200 as meeting PMCS rather than identifying below 1.225 as deficient."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M22-A02",
+            "reason": "The answer says 1.200 meets PMCS; it actually fails."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M22-A03",
+            "reason": "The answer gives less than 10 milliohms, not the 25-milliohm Test 73 threshold."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M22-A04",
+            "reason": "The answer says 20 milliohms does not meet the criterion; it is below the 25-milliohm limit."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.125,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied PMCS criterion flags a cell below 1.225; 1.200 is below it.",
+              "statement": "A battery-cell specific gravity of 1.200 is within the acceptable range for a healthy lead-acid battery.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied passage gives this normal range; the PMCS criterion instead flags cells below 1.225.",
+              "statement": "The normal specific-gravity range for a healthy lead-acid battery is approximately 1.200 to 1.250.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied passages do not establish a state of charge for a reading of 1.200.",
+              "statement": "A battery-cell specific gravity of 1.200 typically indicates a sufficient state of charge.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The PMCS criterion flags a cell below 1.225, and 1.200 is below 1.225.",
+              "statement": "A battery-cell specific gravity of 1.200 meets or exceeds the PMCS criterion for battery health.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C003141"
+              ],
+              "evidence_quotes": [
+                "5. Result is displayed in milliohms. Battery\nresistance should be 25 milliohms max."
+              ],
+              "reason": "The Test 73 reference sets a maximum of 25 milliohms; 20 is below it.",
+              "statement": "An STE/ICE-R Test 73 reading of 20 milliohms is below the acceptable threshold.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied Test 73 limit is 25 milliohms maximum; no passage associates 20 milliohms with either stated condition.",
+              "statement": "An STE/ICE-R Test 73 resistance reading of 20 milliohms indicates poor battery condition or internal cell failure.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied Test 73 reference gives a 25-milliohm maximum, not a less-than-10-milliohm criterion.",
+              "statement": "The acceptable resistance for a healthy battery in tests such as STE/ICE-R Test 73 is generally less than 10 milliohms.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied Test 73 criterion is 25 milliohms maximum, which a 20-milliohm reading meets.",
+              "statement": "An STE/ICE-R Test 73 reading of 20 milliohms suggests a failure and does not meet the diagnostic criterion.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.9389747909694439,
+          0.9506972113993108,
+          0.9528418748647007
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9475046257444851,
+        "query_vector_hash": "16d1ca71cd621f36292d7cc18f7800938c45f7a17624ee60320669bbfff4e79d",
+        "ragas_score": 0.9475046257444855,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "2b9546a9438839c237d44b7890a34658944a08a54a0f3a1e90d0fe8521d0a1a3"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9389747909694439,
+          0.9506972113993108,
+          0.9528418748647007
+        ],
+        "decimal50_cosines": [
+          "0.93897479096944390410257965658240588875308451066571",
+          "0.95069721139931100446786803044388297102588455893468",
+          "0.95284187486470080630150091200404964588272849222793"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9475046257444855
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9475046257444855
+          }
+        },
+        "query_vector_hash": "16d1ca71cd621f36292d7cc18f7800938c45f7a17624ee60320669bbfff4e79d",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do a battery cell specific gravity of 1.200 and an STE/ICE-R Test 73 reading of 20 milliohms meet the PMCS and diagnostic criteria?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do a battery cell specific gravity of 1.200 and an STE/ICE-R Test 73 reading of 20 milliohms meet the respective PMCS and diagnostic criteria?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do a battery cell specific gravity of 1.200 and an STE/ICE-R Test 73 reading of 20 milliohms meet their respective PMCS and diagnostic criteria?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "2b9546a9438839c237d44b7890a34658944a08a54a0f3a1e90d0fe8521d0a1a3",
+        "score": 0.9475046257444851
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "e446af0e495ceae21f8de3bce81a91d72e2171f2aadca8b02e6026a098901eea",
+  "source_result_sha256": "6f55d7c75f5611aa1ee071a269ea1e644a92d605926cba741a34dfe75001b1c8"
+}

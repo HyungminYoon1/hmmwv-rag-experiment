@@ -1,0 +1,163 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:06:34.267665+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives a specific activation temperature and names the pump supplying hydraulic pressure."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586394,
+      "conversation": null,
+      "created_at": 1790586392.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0bbb00246143828b016aba2e184ff087d097a9bcadf9020db2",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a specific activation temperature and names the pump supplying hydraulic pressure.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0bbb00246143828b016aba2e19725087d0b24191744d9331b2",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 297,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 39,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 336
+      },
+      "user": null
+    },
+    "request_id": "resp_0bbb00246143828b016aba2e184ff087d097a9bcadf9020db2",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a specific activation temperature and names the pump supplying hydraulic pressure.\"}",
+    "usage": {
+      "input_tokens": 297,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 39,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 336
+    }
+  },
+  "record_hash": "bfd46bed4e348c954ec683ee0721b0d9b3e4cc220ac020f12756febeeecd4fb2",
+  "request_hash": "1c31513502887aa65987420036db03937978473c57442ac7091384f5b414591d",
+  "started_at": "2026-09-28T09:06:32.173094+00:00",
+  "status": "OK"
+}

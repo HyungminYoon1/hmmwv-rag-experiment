@@ -1,0 +1,163 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:26:28.317977+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives both temperatures and states which is reached first."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587588,
+      "conversation": null,
+      "created_at": 1790587586.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_03ea121186aa03f6016aba32c2acf087d0bb490799bd5e922c",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives both temperatures and states which is reached first.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_03ea121186aa03f6016aba32c3a14087d080844456dc68f34a",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 309,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 36,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 345
+      },
+      "user": null
+    },
+    "request_id": "resp_03ea121186aa03f6016aba32c2acf087d0bb490799bd5e922c",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives both temperatures and states which is reached first.\"}",
+    "usage": {
+      "input_tokens": 309,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 36,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 345
+    }
+  },
+  "record_hash": "63b975456b905aa684262ca97e30441bebadf1ebe5000ccb870b4604f3ff33f2",
+  "request_hash": "96e45c87b6a1e5377ef91e1c6fefb1bdbb010126290489cdc2686631eb16fbbf",
+  "started_at": "2026-09-28T09:26:26.545774+00:00",
+  "status": "OK"
+}

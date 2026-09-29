@@ -1,0 +1,154 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:34:21.259666+00:00",
+  "parsed": {
+    "noncommittal": 0,
+    "question": "Which symptoms call for Engine Running Tests, and which call for Startability Tests?"
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588061,
+      "conversation": null,
+      "created_at": 1790588059.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_05e52e0a6dc5fb1d016aba349b0f9087d0afdbde36f4135c42",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"question\":\"Which symptoms call for Engine Running Tests, and which call for Startability Tests?\",\"noncommittal\":0}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_05e52e0a6dc5fb1d016aba349c5fa087d0a4ef9cc1214bda79",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerRelevanceOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for answer relevance question generation.",
+            "properties": {
+              "noncommittal": {
+                "description": "1 if the response is evasive/vague, 0 if it is substantive",
+                "title": "Noncommittal",
+                "type": "integer"
+              },
+              "question": {
+                "description": "Question that can be answered from the response",
+                "title": "Question",
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "noncommittal"
+            ],
+            "title": "AnswerRelevanceOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 640,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 677
+      },
+      "user": null
+    },
+    "request_id": "resp_05e52e0a6dc5fb1d016aba349b0f9087d0afdbde36f4135c42",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"question\":\"Which symptoms call for Engine Running Tests, and which call for Startability Tests?\",\"noncommittal\":0}",
+    "usage": {
+      "input_tokens": 640,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 37,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 677
+    }
+  },
+  "record_hash": "1afc3a8d2c80e82abe2569d6e90afb4545973965f9551444b4d257239e7dbf86",
+  "request_hash": "1fa7d4da7cf64c119489cefa994e5722c7582dd1e4e8aec3dfc1b5eef2d95c47",
+  "started_at": "2026-09-28T09:34:18.935492+00:00",
+  "status": "OK"
+}

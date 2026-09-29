@@ -1,0 +1,281 @@
+{
+  "at": "2026-09-28T09:56:39.947354+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "01a99679639bddee1f07702c0ad6a49bfe1ea0d2d4587c9fb035cfe3e7227c93",
+  "original_result_sha256": "ccbf99fee51ef1974f7fa4e4f96117aaa3c474ed7afc7868049bc59dd6bbc13b",
+  "result": {
+    "attempt_key": "r1-M05-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 41.16514679999818,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9429454301628953
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9429454301628953
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.25
+      }
+    },
+    "question_id": "M05",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives concrete technical answers about the diagnostic system, CDR-valve check, and cleaning method. Its source caveat does not amount to abstention."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9429454306686761,
+          0.9429454191494497,
+          0.9429454406705602
+        ],
+        "query_vector_hash": "74ac6da833d5b0a4c6f67942cbc505084962ffaaf5900449a7648cf9473514d6",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system is indicated for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system is indicated for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system is indicated for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          }
+        ],
+        "response_vectors_hash": "d6eda31051b408808631674a13484f5f86e748e90be782698beb429c95e854fc",
+        "score": 0.9429454301628951
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "For black exhaust smoke, the indicated diagnostic system is the engine diagnostic system."
+        },
+        {
+          "id": "C002",
+          "text": "The engine diagnostic system identifies issues such as fuel system problems or excessive fuel injection."
+        },
+        {
+          "id": "C003",
+          "text": "During air-intake PMCS checks, correct CDR-valve function is determined by ensuring the CDR valve opens and closes smoothly and properly during the intake cycle, allowing proper airflow."
+        },
+        {
+          "id": "C004",
+          "text": "The authorized CDR-valve cleaning method is wiping the valve surface with a clean, dry cloth."
+        },
+        {
+          "id": "C005",
+          "text": "No solvents or abrasive materials are permitted for cleaning the CDR valve."
+        },
+        {
+          "id": "C006",
+          "text": "The referenced chunk IDs are based on standard HMMWV maintenance knowledge aligned with TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        },
+        {
+          "id": "C007",
+          "text": "No actual excerpts were supplied in REFERENCE."
+        },
+        {
+          "id": "C008",
+          "text": "The answers are derived from established technical knowledge and standard procedures."
+        }
+      ],
+      "claims_raw": [
+        "For black exhaust smoke, the indicated diagnostic system is the engine diagnostic system.",
+        "The engine diagnostic system identifies issues such as fuel system problems or excessive fuel injection.",
+        "During air-intake PMCS checks, correct CDR-valve function is determined by ensuring the CDR valve opens and closes smoothly and properly during the intake cycle, allowing proper airflow.",
+        "The authorized CDR-valve cleaning method is wiping the valve surface with a clean, dry cloth.",
+        "No solvents or abrasive materials are permitted for cleaning the CDR valve.",
+        "The referenced chunk IDs are based on standard HMMWV maintenance knowledge aligned with TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+        "No actual excerpts were supplied in REFERENCE.",
+        "The answers are derived from established technical knowledge and standard procedures."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "the engine diagnostic system",
+            "fulfilled": 0,
+            "id": "M05-A01",
+            "reason": "The indicated tests are intake/exhaust tests, not the engine diagnostic system."
+          },
+          {
+            "answer_quote": "ensuring the valve opens and closes smoothly and properly",
+            "fulfilled": 0,
+            "id": "M05-A02",
+            "reason": "The required check uses a water manometer to measure vacuum."
+          },
+          {
+            "answer_quote": "using a clean, dry cloth to wipe the valve surface",
+            "fulfilled": 1,
+            "id": "M05-A03",
+            "reason": "Wiping with a cloth is equivalent to wiping with a rag."
+          },
+          {
+            "answer_quote": "no solvent or abrasive materials are permitted",
+            "fulfilled": 0,
+            "id": "M05-A04",
+            "reason": "The answer prohibits solvent but omits that it damages the diaphragm."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The reference points to intake/exhaust, not an engine diagnostic system.",
+              "statement": "For black exhaust smoke, the indicated diagnostic system is the engine diagnostic system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives no such diagnostic information.",
+              "statement": "The engine diagnostic system identifies issues such as fuel system problems or excessive fuel injection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The specified check is a vacuum test with a water manometer, not an opening-and-closing check.",
+              "statement": "During air-intake PMCS checks, correct CDR-valve function is determined by ensuring the CDR valve opens and closes smoothly and properly during the intake cycle, allowing proper airflow.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context authorizes wiping with a rag but does not specify a clean, dry cloth.",
+              "statement": "The authorized CDR-valve cleaning method is wiping the valve surface with a clean, dry cloth.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Solvent is prohibited, but abrasive materials are not mentioned.",
+              "statement": "No solvents or abrasive materials are permitted for cleaning the CDR valve.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish the chunk IDs’ source or those publication details.",
+              "statement": "The referenced chunk IDs are based on standard HMMWV maintenance knowledge aligned with TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context includes reference text.",
+              "statement": "No actual excerpts were supplied in REFERENCE.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish how the answers were derived.",
+              "statement": "The answers are derived from established technical knowledge and standard procedures.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.9429454306686761,
+          0.9429454191494497,
+          0.9429454406705602
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9429454301628953,
+        "query_vector_hash": "74ac6da833d5b0a4c6f67942cbc505084962ffaaf5900449a7648cf9473514d6",
+        "ragas_score": 0.9429454301628951,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d6eda31051b408808631674a13484f5f86e748e90be782698beb429c95e854fc"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9429454306686761,
+          0.9429454191494497,
+          0.9429454406705602
+        ],
+        "decimal50_cosines": [
+          "0.94294543066867609053960137873226724657107742730352",
+          "0.94294541914944943271938714327172997619132763880990",
+          "0.94294544067056024233968208718451291913804598527739"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 3.3306690738754696e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9429454301628951
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9429454301628951
+          }
+        },
+        "query_vector_hash": "74ac6da833d5b0a4c6f67942cbc505084962ffaaf5900449a7648cf9473514d6",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system is indicated for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system is indicated for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system is indicated for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "d6eda31051b408808631674a13484f5f86e748e90be782698beb429c95e854fc",
+        "score": 0.9429454301628953
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "232e27979f7e8cb2115aa4e618604d5c1f08b934133e5062926aff1229e11340"
+}

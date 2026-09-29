@@ -1,0 +1,740 @@
+{
+  "citation_ids": [
+    "[C000522]",
+    "[C000524]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:23:26.687238+00:00",
+  "evaluation_answer": "The piston diameter specified for the front service brake caliper is 2.6 inches (66 mm) .  \nThe piston diameter specified for the rear service/parking brake caliper is 2.6 inches (66 mm) .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1165,
+  "key": "r1-D05-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000524] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n12.\nSERVICE/PARKING BRAKE CALIPER (REAR)\nSTANDARD\nMETRIC\n\nITEM: Piston diameter \nSTANDARD: 2.6 in.\nMETRIC: 66 mm\n\n[C000522] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n11.\nSERVICE BRAKE CALIPER (FRONT)\nSTANDARD\nMETRIC\n\nITEM: Piston Diameter\nSTANDARD: 2.6 in.\nMETRIC: 66 mm\n\n[C000538] TM 9-2320-280-20-1 | PDF 61,64 | Printed 1-31,1-34\nTable 1-2. Tabulated Data (Cont'd)\n15.\nPARKING BRAKE (VEHICLES SERIAL NUMBERS 1 THROUGH 44824)\nSTANDARD\nMETRIC\n\nITEM: Rotor Diameter \nSTANDARD: 8 in.\nMETRIC: 203 mm\n\n[C000941] TM 9-2320-280-20-1 | PDF 103,104,105 | Printed 2-12,2-13,2-14\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 11\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Brake\nSystem\n\ns than 1/8 inch\n(3.2 mm).\nd.1. Brake calipers are\ndamaged or mounting\nbolts are loose.\ne. Brake pads less than\n1/8 inch (3.2 mm).\nPROCEDURES: c. Inspect service brake pads and\nrotor disks for wear (para. 7-11).\nd. Inspect parking brake pads and\nrotor disk for wear (para. 7-3).\nd.1. Inspect brake calipers and mounting\nhardware for damage or loose hardware.\ne. Inspect dual service/park brake\npads and rotor for wear (para. 7-21).\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 11\nITEM TO BE INSPECTED: Brake\nSystem\n(Cont'd)\nNOT FULLY MISSION CAPABLE IF: f. Parking brake binding\nor cable frayed or broken.\nSpring or cable clip\nmissing.\nh. Parking brake binding\nor cable frayed or broken.\nPROCEDURES: f. Inspect parking brake cable, cable\nclip, lever, spring, and pushrod/guide\npin for binding and loose components.\ng. On vehicles equipped with a single\nparking brake assembly mounted\nbetween the rear prop shaft and rear\ndifferential, lubricate parking brake\nlever, parking brake cam, parking\nbrake push pins, and parking brake\nguide pins with WTR. On vehicles\nequipped with a left and right parking/\nservice brake assembly mounted between\nthe rear axle half-shafts and rear\ndifferential, lubricate the parking brake\nlever with WTR. The parking/service\nbrake assembly needs no lubrication.\nh. Inspect rear parking brake cables for\ndamage and/or chaffing in the area of\nthe control arm. If cables are damaged,\nreplace cables (paragraph 7-23 or 7-24).\ni. Inspect for presence of, or damage to,\nparking brake cable clamps.\n\n[C000534] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n14.\nSERVICE/PARKING BRAKE ROTOR (REAR)\nSTANDARD\nMETRIC\n\nITEM: A2 Diameter \nSTANDARD: 12 in.\nMETRIC: 305 mm\nQUESTION:\nWhat piston diameters are specified for the front service brake caliper and the rear service/parking brake caliper?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "What piston diameters are specified for the front service brake caliper and the rear service/parking brake caliper?",
+  "question_id": "D05",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:43.542014107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:41.252031007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836835328.0,
+    "max_actual_interval_ms": 111.4369999995688,
+    "peak_rss_bytes": 7645528064,
+    "peak_vram_bytes": 4836835328,
+    "pids": [
+      13944,
+      23268,
+      23364,
+      27988,
+      30736,
+      36564,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4690.6539935,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4690.7654305,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4690.8579333,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4690.9679706,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.0597583,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.1686344,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.2638644,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.3574485,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.4678828,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.5593896,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4036599808,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7644704768,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.6690461,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037029888,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645134848,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.7613275,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645519872,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.8700258,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3418193920,
+          "37564": 7442432
+        },
+        "rss_bytes": 7643701248,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4691.9651873,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3418193920,
+          "37564": 7442432
+        },
+        "rss_bytes": 7643701248,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4692.057332,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645528064,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4692.1655722,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645528064,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4692.2580114,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645528064,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4692.3663057,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645528064,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4692.4602629,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645528064,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4692.5704482,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645528064,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4692.6613307,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645528064,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4692.7681054,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645528064,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4692.861059,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97685504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645528064,
+        "vram_bytes": 4836835328
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:23:26.6848142Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 66,
+    "eval_duration": 897794000,
+    "load_duration": 3039500,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 1165,
+    "prompt_eval_duration": 201933000,
+    "response": "The piston diameter specified for the front service brake caliper is 2.6 inches (66 mm) [C000522].  \nThe piston diameter specified for the rear service/parking brake caliper is 2.6 inches (66 mm) [C000524].",
+    "total_duration": 1106454400
+  },
+  "retrieval": {
+    "embedding_ms": 80.22439999967901,
+    "items": [
+      {
+        "body_end": 54,
+        "body_start": 0,
+        "id": "C000524",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 93,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6339870691299438,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 2,
+          "section": 5,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n12.\nSERVICE/PARKING BRAKE CALIPER (REAR)\nSTANDARD\nMETRIC\n\nITEM: Piston diameter \nSTANDARD: 2.6 in.\nMETRIC: 66 mm",
+        "text_sha256": "dbe0920cdf682bc0b74588d6e4b07a5adc7ee5b1be30447ccd693b89bab63da0",
+        "token_count": 57,
+        "unit_id": "U000524",
+        "unit_key": "P0063:spec:5:2"
+      },
+      {
+        "body_end": 53,
+        "body_start": 0,
+        "id": "C000522",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 86,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6162500381469727,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 2,
+          "section": 4,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n11.\nSERVICE BRAKE CALIPER (FRONT)\nSTANDARD\nMETRIC\n\nITEM: Piston Diameter\nSTANDARD: 2.6 in.\nMETRIC: 66 mm",
+        "text_sha256": "751d072e4cb67946ac79adf497cf74a59db8c1e643c20df382ac9bd5508ceac1",
+        "token_count": 54,
+        "unit_id": "U000522",
+        "unit_key": "P0063:spec:4:2"
+      },
+      {
+        "body_end": 52,
+        "body_start": 0,
+        "id": "C000538",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          64
+        ],
+        "prefix_chars": 112,
+        "printed_pages": [
+          "1-31",
+          "1-34"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5880627632141113,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 2,
+          "section": 1,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n15.\nPARKING BRAKE (VEHICLES SERIAL NUMBERS 1 THROUGH 44824)\nSTANDARD\nMETRIC\n\nITEM: Rotor Diameter \nSTANDARD: 8 in.\nMETRIC: 203 mm",
+        "text_sha256": "3019c63d676214267bc08da54044e0866edb1b972ca59530fff144a1bd53dcc2",
+        "token_count": 65,
+        "unit_id": "U000538",
+        "unit_key": "P0064:spec:1:2"
+      },
+      {
+        "body_end": 2799,
+        "body_start": 1292,
+        "id": "C000941",
+        "kind": "pmcs_item",
+        "overlap_chars": 279,
+        "overlap_tokens": 100,
+        "pdf_pages": [
+          103,
+          104,
+          105
+        ],
+        "prefix_chars": 152,
+        "printed_pages": [
+          "2-12",
+          "2-13",
+          "2-14"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5861548185348511,
+        "source_issues": [
+          {
+            "description": "Throughly는 원문 오탈자. 추출 오류 보정 범위에서 철자를 고치지 않음.",
+            "id": "THROUGHLY",
+            "pdf_page": 103,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "11",
+          "row_ids": [
+            "P0103-T2_1-R02",
+            "P0104-T2_1-R01",
+            "P0105-T2_1-R01"
+          ],
+          "source_issues": [
+            "THROUGHLY"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 11\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Brake\nSystem\n\ns than 1/8 inch\n(3.2 mm).\nd.1. Brake calipers are\ndamaged or mounting\nbolts are loose.\ne. Brake pads less than\n1/8 inch (3.2 mm).\nPROCEDURES: c. Inspect service brake pads and\nrotor disks for wear (para. 7-11).\nd. Inspect parking brake pads and\nrotor disk for wear (para. 7-3).\nd.1. Inspect brake calipers and mounting\nhardware for damage or loose hardware.\ne. Inspect dual service/park brake\npads and rotor for wear (para. 7-21).\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 11\nITEM TO BE INSPECTED: Brake\nSystem\n(Cont'd)\nNOT FULLY MISSION CAPABLE IF: f. Parking brake binding\nor cable frayed or broken.\nSpring or cable clip\nmissing.\nh. Parking brake binding\nor cable frayed or broken.\nPROCEDURES: f. Inspect parking brake cable, cable\nclip, lever, spring, and pushrod/guide\npin for binding and loose components.\ng. On vehicles equipped with a single\nparking brake assembly mounted\nbetween the rear prop shaft and rear\ndifferential, lubricate parking brake\nlever, parking brake cam, parking\nbrake push pins, and parking brake\nguide pins with WTR. On vehicles\nequipped with a left and right parking/\nservice brake assembly mounted between\nthe rear axle half-shafts and rear\ndifferential, lubricate the parking brake\nlever with WTR. The parking/service\nbrake assembly needs no lubrication.\nh. Inspect rear parking brake cables for\ndamage and/or chaffing in the area of\nthe control arm. If cables are damaged,\nreplace cables (paragraph 7-23 or 7-24).\ni. Inspect for presence of, or damage to,\nparking brake cable clamps.",
+        "text_sha256": "a92afe73f72dea1ff9ccacf68bdfca63c58d20fb6d455f1280f5749e2109866a",
+        "token_count": 467,
+        "unit_id": "U000938",
+        "unit_key": "pmcs:11"
+      },
+      {
+        "body_end": 50,
+        "body_start": 0,
+        "id": "C000534",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 91,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.566743791103363,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 4,
+          "section": 7,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n14.\nSERVICE/PARKING BRAKE ROTOR (REAR)\nSTANDARD\nMETRIC\n\nITEM: A2 Diameter \nSTANDARD: 12 in.\nMETRIC: 305 mm",
+        "text_sha256": "fbe9bf572711c5b44f41ff4ee4b27028dba8e298f3538f0312b98a5f4e04918b",
+        "token_count": 56,
+        "unit_id": "U000534",
+        "unit_key": "P0063:spec:7:4"
+      }
+    ],
+    "search_ms": 7.633000000168977
+  },
+  "round": 1,
+  "sequence": 14,
+  "started_at": "2026-09-28T04:23:25.471069+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1128.031799999917,
+    "retrieval": 88.46929999981512,
+    "total": 1216.501099999732
+  },
+  "unprovided_citations": []
+}

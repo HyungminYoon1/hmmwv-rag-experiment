@@ -1,0 +1,357 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:12:44.826883+00:00",
+  "evaluation_answer": "Cannot determine the piston diameters for the front service brake caliper or the rear service/parking brake caliper due to lack of reference context.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 172,
+  "key": "r1-D05-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou are a technical question-answering assistant.\nAnswer in English using concise statements that address every part of the question.\nWhen reference context is provided, use only facts supported by that context.\nWhen no reference context is provided, use your existing model knowledge.\nIf some requested information is unavailable, state which part cannot be determined.\nYou may answer the supported parts, but do not present a partial answer as complete.\nDo not invent specifications, procedures, measurements, causes, or other facts.\nWhen reference context is provided, cite each supporting chunk ID in square brackets, for example [C000123]. Use only supplied chunk IDs.\nREFERENCE CONTEXT:\nNo reference context is available.\nQUESTION:\nWhat piston diameters are specified for the front service brake caliper and the rear service/parking brake caliper?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 145,
+  "question": "What piston diameters are specified for the front service brake caliper and the rear service/parking brake caliper?",
+  "question_id": "D05",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:00:01.680092807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T12:59:59.975995807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4808523776.0,
+    "max_actual_interval_ms": 110.56779999989885,
+    "peak_rss_bytes": 1624780800,
+    "peak_vram_bytes": 4808523776,
+    "pids": [
+      13944,
+      30736,
+      37504,
+      37564,
+      37600
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4049.4274842,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 97005568
+        },
+        "rss_bytes": 1624813568,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4049.5368732,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 97005568
+        },
+        "rss_bytes": 1624813568,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4049.6287691,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 97005568
+        },
+        "rss_bytes": 1624813568,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4049.7380127,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 97005568
+        },
+        "rss_bytes": 1624813568,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4049.8305159,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 96944128
+        },
+        "rss_bytes": 1624752128,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4049.9410837,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 96944128
+        },
+        "rss_bytes": 1624752128,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.0338944,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 96944128
+        },
+        "rss_bytes": 1624752128,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.1433657,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 96944128
+        },
+        "rss_bytes": 1624752128,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.2360694,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 96944128
+        },
+        "rss_bytes": 1624752128,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.328482,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 96944128
+        },
+        "rss_bytes": 1624752128,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.4375104,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450151936,
+          "37564": 7487488,
+          "37600": 96948224
+        },
+        "rss_bytes": 1624756224,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.5312727,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450176512,
+          "37564": 7487488,
+          "37600": 96948224
+        },
+        "rss_bytes": 1624780800,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.637133,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450176512,
+          "37564": 7487488,
+          "37600": 96948224
+        },
+        "rss_bytes": 1624780800,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.7302977,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450176512,
+          "37564": 7487488,
+          "37600": 96948224
+        },
+        "rss_bytes": 1624780800,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.8377469,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450176512,
+          "37564": 7487488,
+          "37600": 96948224
+        },
+        "rss_bytes": 1624780800,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4050.9312334,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57561088,
+          "30736": 12607488,
+          "37504": 1450176512,
+          "37564": 7487488,
+          "37600": 96948224
+        },
+        "rss_bytes": 1624780800,
+        "vram_bytes": 4808523776
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:12:44.8248136Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 30,
+    "eval_duration": 501641000,
+    "load_duration": 11294400,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 145,
+    "prompt_eval_count": 172,
+    "prompt_eval_duration": 31796000,
+    "response": "Cannot determine the piston diameters for the front service brake caliper or the rear service/parking brake caliper due to lack of reference context.",
+    "total_duration": 554658800
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 13,
+  "started_at": "2026-09-28T04:12:44.244401+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 582.6273999996374,
+    "retrieval": null,
+    "total": 582.6273999996374
+  },
+  "unprovided_citations": []
+}

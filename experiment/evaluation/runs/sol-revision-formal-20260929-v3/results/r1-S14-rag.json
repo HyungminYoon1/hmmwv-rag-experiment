@@ -1,0 +1,219 @@
+{
+  "at": "2026-09-29T05:36:22.912351+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "89dd572cbb38b69da6ec3c8248567f1d6877dc49058ac8887d24a7212a5b5208",
+  "result": {
+    "attempt_key": "r1-S14-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 22.360128700000132,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9270984659585303
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9270984659585303
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S14",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific idle-speed range of 625–675 RPM and cites sources."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9270984659585303,
+          0.9270984659585303,
+          0.9270984659585303
+        ],
+        "query_vector_hash": "e51875b235741d74042b8f0c73eb7faf4bc1f8edfe439e0f6e3d09e35e281fc5",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine?"
+          }
+        ],
+        "response_vectors_hash": "dd41243c4c6292998270340651e5ac848bb43f9fa796102205e15ce7bae7a344",
+        "score": 0.9270984659585304
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "TM 9-2320-280-20-1 | PDF 833 | Printed 2-736",
+          "TM 9-2320-280-20-1 | PDF 573 | Printed 2-469"
+        ],
+        "shared_conditions": [
+          "For the 6.2-liter engine in the Engine Lubrication Tests."
+        ],
+        "statements": [
+          {
+            "answer_quote": "The idle-speed range specified for the 6.2-liter engine is 625–675 RPM.",
+            "statement": "For the 6.2-liter engine in the Engine Lubrication Tests, the specified idle-speed range is 625–675 RPM."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The idle-speed range specified for the 6.2-liter engine is 625–675 RPM.",
+          "id": "C001",
+          "text": "For the 6.2-liter engine in the Engine Lubrication Tests, the specified idle-speed range is 625–675 RPM."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The idle-speed range specified for the 6.2-liter engine is 625–675 RPM.",
+            "fulfilled": 1,
+            "id": "S14-A01",
+            "reason": "625–675 RPM equals 650 ± 25 RPM for the 6.2L engine."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C000477"
+              ],
+              "evidence_quotes": [
+                "DDA 6.2 L\n\nITEM: Idle Speed \nSTANDARD: 650 ± 25 rpm"
+              ],
+              "reason": "The 6.2 L engine’s listed idle speed is 650 ± 25 rpm, which gives 625–675 rpm.",
+              "statement": "For the 6.2-liter engine in the Engine Lubrication Tests, the specified idle-speed range is 625–675 RPM.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002420"
+              ],
+              "evidence_quotes": [
+                "REFERENCE INFORMATION\nENGINE LUBRICATION\n\nENGINE RPM: 6.2L IDLE (650 ± 25)\nAPPROXIMATE OIL PRESSURE: 10-15 PSI"
+              ],
+              "reason": "The engine-lubrication reference gives 6.2L idle as 650 ± 25 RPM, which is 625–675 RPM.",
+              "statement": "For the 6.2-liter engine in the Engine Lubrication Tests, the specified idle-speed range is 625–675 RPM.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9270984659585303,
+          0.9270984659585303,
+          0.9270984659585303
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9270984659585303,
+        "query_vector_hash": "e51875b235741d74042b8f0c73eb7faf4bc1f8edfe439e0f6e3d09e35e281fc5",
+        "ragas_score": 0.9270984659585304,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "dd41243c4c6292998270340651e5ac848bb43f9fa796102205e15ce7bae7a344"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9270984659585303,
+          0.9270984659585303,
+          0.9270984659585303
+        ],
+        "decimal50_cosines": [
+          "0.92709846595853018225091686682837977690932159892300",
+          "0.92709846595853018225091686682837977690932159892300",
+          "0.92709846595853018225091686682837977690932159892300"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9270984659585304
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9270984659585304
+          }
+        },
+        "query_vector_hash": "e51875b235741d74042b8f0c73eb7faf4bc1f8edfe439e0f6e3d09e35e281fc5",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "dd41243c4c6292998270340651e5ac848bb43f9fa796102205e15ce7bae7a344",
+        "score": 0.9270984659585303
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "d293693d5620d7702f4a2810f181725cd9386ec0b8caf0abd85bacbeff1859ab",
+  "source_result_sha256": "ac1bc427a56362af99336830935e63263ae435f49655a278b1498c90c9f0c55a"
+}

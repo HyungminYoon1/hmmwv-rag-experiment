@@ -1,0 +1,261 @@
+{
+  "at": "2026-09-28T09:55:51.697176+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "79dc3cfed4b733f37b3c7d002e29ed914a4b515df0715902a6b0ebdfb42c3240",
+  "original_result_sha256": "7315f406a40035274451fa94b7e90b1a6d7996bd4c30c56b2c0b8a71fb0ef11c",
+  "result": {
+    "attempt_key": "r1-M03-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 32.25444599999901,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8634712434257397
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8634712434257397
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      }
+    },
+    "question_id": "M03",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response names a circuit and states the timing-advance and engine-temperature conditions without abstaining."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8866419242757216,
+          0.8826839635280735,
+          0.8210878424734239
+        ],
+        "query_vector_hash": "01a272e91bd673221df6cc0dbd2cc72286ad50a463e2db35d4b6b338277faead",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Why is the cold start advance circuit excluded from the Glowplugs Circuit Tests, and when is it checked?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Is the cold start advance circuit included in the Glowplugs Circuit Tests, and when is it checked under Fuel System guidance?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Is the cold start advance circuit included in the Glowplugs Circuit Tests, and when is it checked?"
+          }
+        ],
+        "response_vectors_hash": "7e7c3c6f2282b09c2ea5a5072f3945ce7502665dcfa7da88e1926c85868ec25b",
+        "score": 0.8634712434257398
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The cold start advance circuit is excluded from the Glowplugs Circuit Tests."
+        },
+        {
+          "id": "C002",
+          "text": "The Fuel System guidance states that the cold start advance circuit is part of the fuel system."
+        },
+        {
+          "id": "C003",
+          "text": "The Fuel System guidance states that the cold start advance circuit is checked for proper timing advance under cold start conditions, when the engine is cold."
+        }
+      ],
+      "claims_raw": [
+        "The cold start advance circuit is excluded from the Glowplugs Circuit Tests.",
+        "The Fuel System guidance states that the cold start advance circuit is part of the fuel system.",
+        "The Fuel System guidance states that the cold start advance circuit is checked for proper timing advance under cold start conditions, when the engine is cold."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The cold start advance circuit is excluded from the Glowplugs Circuit Tests.",
+            "fulfilled": 1,
+            "id": "M03-A01",
+            "reason": "Identifies the excluded circuit."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M03-A02",
+            "reason": "Does not state the approximately 3–5 degree timing advance."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M03-A03",
+            "reason": "Says the engine is cold but omits the below 90°F (32°C) threshold."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C003801"
+              ],
+              "evidence_quotes": [
+                "there is also a cold start advance circuit (part of the fuel system) which is not checked\nhere."
+              ],
+              "reason": "The test notes explicitly say the circuit is not checked there.",
+              "statement": "The cold start advance circuit is excluded from the Glowplugs Circuit Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C003801"
+              ],
+              "evidence_quotes": [
+                "there is also a cold start advance circuit (part of the fuel system) which is not checked\nhere."
+              ],
+              "reason": "The guidance explicitly identifies it as part of the fuel system.",
+              "statement": "The Fuel System guidance states that the cold start advance circuit is part of the fuel system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not describe a check of timing advance.",
+              "statement": "The Fuel System guidance states that the cold start advance circuit is checked for proper timing advance under cold start conditions, when the engine is cold.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:glow_exclusion"
+              ],
+              "evidence_quotes": [
+                "there is also a cold start advance circuit (part of the fuel system) which is not checked\nhere."
+              ],
+              "reason": "The Glowplugs test text says the circuit is not checked there.",
+              "statement": "The cold start advance circuit is excluded from the Glowplugs Circuit Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:glow_exclusion",
+                "O:cold_advance"
+              ],
+              "evidence_quotes": [
+                "a cold start advance circuit (part of the fuel system)",
+                "FUEL SYSTEM\nREFERENCE INFORMATION\n\nThe cold advance circuit"
+              ],
+              "reason": "The context identifies it as part of the fuel system.",
+              "statement": "The Fuel System guidance states that the cold start advance circuit is part of the fuel system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "It says operation may be checked below 90°F, not that proper timing advance is checked.",
+              "statement": "The Fuel System guidance states that the cold start advance circuit is checked for proper timing advance under cold start conditions, when the engine is cold.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.8866419242757216,
+          0.8826839635280735,
+          0.8210878424734239
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8634712434257397,
+        "query_vector_hash": "01a272e91bd673221df6cc0dbd2cc72286ad50a463e2db35d4b6b338277faead",
+        "ragas_score": 0.8634712434257398,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "7e7c3c6f2282b09c2ea5a5072f3945ce7502665dcfa7da88e1926c85868ec25b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8866419242757216,
+          0.8826839635280735,
+          0.8210878424734239
+        ],
+        "decimal50_cosines": [
+          "0.88664192427572160933533129861962864255429810086865",
+          "0.88268396352807348254604318325571790217709898585406",
+          "0.82108784247342394113642739787304432992219977757282"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8634712434257398
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8634712434257398
+          }
+        },
+        "query_vector_hash": "01a272e91bd673221df6cc0dbd2cc72286ad50a463e2db35d4b6b338277faead",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Why is the cold start advance circuit excluded from the Glowplugs Circuit Tests, and when is it checked?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Is the cold start advance circuit included in the Glowplugs Circuit Tests, and when is it checked under Fuel System guidance?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Is the cold start advance circuit included in the Glowplugs Circuit Tests, and when is it checked?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "7e7c3c6f2282b09c2ea5a5072f3945ce7502665dcfa7da88e1926c85868ec25b",
+        "score": 0.8634712434257397
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "311fa054274ac7950c12d1f68f4d42699e8637f0fccb50a8dbdfe9e3a5ea2ebb"
+}

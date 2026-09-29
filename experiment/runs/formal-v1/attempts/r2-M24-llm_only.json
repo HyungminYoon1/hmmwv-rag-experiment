@@ -1,0 +1,526 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:36:30.465399+00:00",
+  "evaluation_answer": "The specified tightening torque for steering-gear mounting bolts and the maximum output pressure for the power-steering pump are not available in the provided reference material. Therefore, based on the absence of excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), I cannot provide the exact values. \n\nNote: Without specific excerpts from the manual, this information cannot be confirmed or cited. Existing model knowledge does not include these specific values for the HMMWV (M998-series) as per the referenced document.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 242,
+  "key": "r2-M24-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nFor steering-system inspection, what tightening torque is specified for steering-gear mounting bolts, and what maximum output pressure is listed for the power-steering pump?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "For steering-system inspection, what tightening torque is specified for steering-gear mounting bolts, and what maximum output pressure is listed for the power-steering pump?",
+  "question_id": "M24",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:47.320175607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:44.382188107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4869734400.0,
+    "max_actual_interval_ms": 109.42390000036539,
+    "peak_rss_bytes": 9271001088,
+    "peak_vram_bytes": 4869734400,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5473.7761513,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869603328
+      },
+      {
+        "monotonic": 5473.8846512,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869603328
+      },
+      {
+        "monotonic": 5473.9768876,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.085239,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.1810475,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.2762543,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.3856782,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.4790021,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.5874552,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.6821802,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.7912266,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 9205149696,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.8838603,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5474.9927788,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.0851143,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.1784835,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.2872582,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.3793701,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.4868833,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.5807894,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.687833,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.7807241,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.8891385,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103141376,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9270992896,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5475.9838911,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103149568,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9271001088,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5476.0771148,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103149568,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9271001088,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5476.1860999,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103149568,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9271001088,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5476.2789222,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103149568,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9271001088,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5476.387369,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103149568,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9271001088,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5476.4806326,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103149568,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9271001088,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5476.5882863,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103149568,
+          "30736": 12054528,
+          "36040": 101093376,
+          "37504": 9046745088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9271001088,
+        "vram_bytes": 4869734400
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:36:30.4647311Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 131,
+    "eval_duration": 1771460000,
+    "load_duration": 1085500,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 242,
+    "prompt_eval_duration": 20429000,
+    "response": "The specified tightening torque for steering-gear mounting bolts and the maximum output pressure for the power-steering pump are not available in the provided reference material. Therefore, based on the absence of excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), I cannot provide the exact values. \n\nNote: Without specific excerpts from the manual, this information cannot be confirmed or cited. Existing model knowledge does not include these specific values for the HMMWV (M998-series) as per the referenced document.",
+    "total_duration": 1856578800
+  },
+  "retrieval": null,
+  "round": 2,
+  "sequence": 186,
+  "started_at": "2026-09-28T04:36:28.593286+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1872.526299999663,
+    "retrieval": null,
+    "total": 1872.526299999663
+  },
+  "unprovided_citations": []
+}

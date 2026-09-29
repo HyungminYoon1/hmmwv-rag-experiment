@@ -1,0 +1,809 @@
+{
+  "citation_ids": [],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:46:14.095220+00:00",
+  "evaluation_answer": "The permitted fluid-level distance below the fill opening for the transfer case on level ground is **1/2 inch (12.7 mm)**. For a differential with cold lubricant, the permitted distance is **1/4 inch (6.4 mm)**.  \n\n[Reference: C000969]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1615,
+  "key": "r3-M14-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000978] TM 9-2320-280-20-1 | PDF 108,109,110 | Printed 2-17,2-18,2-19\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 16\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n\nd\nor to plug level when hot.\ng. U-joint is damaged,\nunserviceable, or missing\nlubrication fitting.\nh. Loose, missing, or\nbroken capscrews.\ni. Rubber block or center\nsupport bearing is worn or\npropeller shaft wobbles.\nPROCEDURES: f. M998, M998A1, and M1121 series\nvehicles – Check differential lubricant\nlevel semiannually or every (3,000 miles)\n(4,830 km). M998A2 and M1123 series\nvehicles – Change differential lubricant\nsemiannually or every 3,000 miles\n(4,830 km). Differential level should be\nwithin 1/4 inch (6.4 mm) of fill plug\nopening when lubricant is cold or to plug\nlevel when hot.\ng. Inspect U-joints for damage, free\nplay, and missing or unserviceable\nlubrication fittings.\nh. Tighten front prop shaft mounting\ncapscrews to 13-18 lb-ft (18-24 N•m)\nand center support capscrews to 60 lb-ft\n(81 N•m). Tighten rear prop shaft\ncapscrews to 13-18 lb-ft (18-24 N•m)\nand tighten U-bolt nuts to 21 lb-ft\n(29 N•m).\ni. Inspect rubber block and center\nsupport bearing for wear and wobble in\npropeller shaft.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents (Cont’d)\nNOT FULLY MISSION CAPABLE IF: j. Loose, missing, or\nbroken bolts.\nPROCEDURES: j. Tighten halfshaft mounting bolts to\n48 lb-ft (65 N•m).\n\n[C000969] TM 9-2320-280-20-1 | PDF 107,108 | Printed 2-16,2-17\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 15\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Transfer\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 15\nITEM TO BE INSPECTED: Transfer\nNOT FULLY MISSION CAPABLE IF: a. Vent line cracked,\nplugged or missing.\nShift linkage is unserv-\niceable.\nPROCEDURES: a. Inspect transfer case vent lines and\nconnectors for security, cracks, and\ndeterioration.\nb. Inspect transfer case shift linkage\nfor bends, excessive play, cracks, and\ndamage that could cause failure.\nCAUTION\nUse Dexron® II for filling transfer case.\nFailure to use Dexron® II will cause\ndamage to transfer case.\nc. Check transfer case fluid level every\n3,000 (4,800 km) or semiannually,\nwhichever occurs first. Remove fill plug\nand gasket. Level should be within 1/2 in.\n(12.7 mm) of fill plug opening when vehicle\nis on level ground. Install fill plug and\ngasket, and tighten to 35 lb-ft (47 N•m ) .\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 15\nITEM TO BE INSPECTED: Transfer\n(Cont’d)\nNOT FULLY MISSION CAPABLE IF: d . Any class III oil\nleak or damage to\nspiral wrap.\nPROCEDURES: NOTE\nDo not overtorque retaining nuts.\nd . Inspect oil cooler lines for leaks or\ndamage. Check for loose oil cooler line\nnuts and damage to the spiral wrap on\nthe cooler line. If oil cooler line nuts are\nloose, hold end of oil cooler stationary, and\ntighten line nuts to 194-212 lb-in.\n(22-24 N•m)\n\n[C005927] TM 9-2320-280-20-1 | PDF 595 | Printed 2-492\nDRIVETRAIN\nKNOWN INFO\nSHIFTER OK\nTRANSFER CASE OK\nTRANSMISSION OK\nSHAFTS AND JOINTS OK\nGEARED HUBS OK\nPOSSIBLE PROBLEMS\nDIFFERENTIALS\n\nCHECK THE FLUID LEVEL AND CONDITION IN EACH DIFFERENTIAL. IS IT OK? TEST OPTIONS VISUAL REASON FOR QUESTION To make sure the differentials are OK.\n\n[C001119] TM 9-2320-280-20-1 | PDF 120,121 | Printed 2-29,2-30\nLUBRICATION TABLE (Cont’d)\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\nIf operating conditions are severe or abnormal, service chassis lubrication points at 1,000 miles (1,600\nkilometers).\n\nUSAGE: Ball Joints,\nTie Rod Ends,\nPitman Arm,\nPropeller Shafts,\netc.\nFLUID/LUBRICANT: GAA\nCAPACITIES: As Required\nEXPECTED TEMPERATURE: All Temperatures\n\n[C000463] TM 9-2320-280-20-1 | PDF 61 | Printed 1-31\nTable 1-2. Tabulated Data\n2. CAPACITIES*\nSTANDARD\nMETRIC\n*ALL HYDRAULIC SYSTEMS AND ALL FUEL CAPACITIES\nARE CALCULATED APPROXIMATIONS\n\nITEM: Transfer Case (model 218)\nSTANDARD: 3.5 qt\nMETRIC: 3.3 L\nQUESTION:\nCompare the permitted fluid-level distances below the fill opening for the transfer case on level ground and for a differential with cold lubricant.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "Compare the permitted fluid-level distances below the fill opening for the transfer case on level ground and for a differential with cold lubricant.",
+  "question_id": "M14",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:33:30.949565407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:33:28.087044907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 110.1572000006854,
+    "peak_rss_bytes": 13170454528,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 6057.6195306,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6057.7261838,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6057.8326194,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6057.9259511,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.0195597,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.1281309,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.2209436,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.3288841,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.4215386,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.5316958,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.6238309,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170380800,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.730109,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8888635392,
+          "37564": 7741440
+        },
+        "rss_bytes": 13170454528,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.8218379,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8867794944,
+          "37564": 7741440
+        },
+        "rss_bytes": 13149622272,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6058.9293818,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8810717184,
+          "37564": 7741440
+        },
+        "rss_bytes": 13092544512,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.022378,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8810717184,
+          "37564": 7741440
+        },
+        "rss_bytes": 13092544512,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.1298701,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8810717184,
+          "37564": 7741440
+        },
+        "rss_bytes": 13092544512,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.2230798,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8810717184,
+          "37564": 7741440
+        },
+        "rss_bytes": 13092544512,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.3321069,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.4270486,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.5194191,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.6276527,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.7208721,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.8274208,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6059.9207254,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6060.0273044,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6060.1195522,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6060.2263245,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045172736,
+          "35444": 8089600,
+          "36040": 101617664,
+          "37504": 8812544000,
+          "37564": 7741440
+        },
+        "rss_bytes": 13094371328,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:46:14.0942626Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 67,
+    "eval_duration": 954457000,
+    "load_duration": 8983400,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 1615,
+    "prompt_eval_duration": 403216000,
+    "response": "The permitted fluid-level distance below the fill opening for the transfer case on level ground is **1/2 inch (12.7 mm)**. For a differential with cold lubricant, the permitted distance is **1/4 inch (6.4 mm)**.  \n\n[Reference: C000969]",
+    "total_duration": 1501599200
+  },
+  "retrieval": {
+    "embedding_ms": 114.22120000042923,
+    "items": [
+      {
+        "body_end": 2391,
+        "body_start": 1155,
+        "id": "C000978",
+        "kind": "pmcs_item",
+        "overlap_chars": 321,
+        "overlap_tokens": 100,
+        "pdf_pages": [
+          108,
+          109,
+          110
+        ],
+        "prefix_chars": 162,
+        "printed_pages": [
+          "2-17",
+          "2-18",
+          "2-19"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6121724843978882,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "16",
+          "row_ids": [
+            "P0108-T2_1-R02",
+            "P0109-T2_1-R01",
+            "P0110-T2_1-R01"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 16\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n\nd\nor to plug level when hot.\ng. U-joint is damaged,\nunserviceable, or missing\nlubrication fitting.\nh. Loose, missing, or\nbroken capscrews.\ni. Rubber block or center\nsupport bearing is worn or\npropeller shaft wobbles.\nPROCEDURES: f. M998, M998A1, and M1121 series\nvehicles – Check differential lubricant\nlevel semiannually or every (3,000 miles)\n(4,830 km). M998A2 and M1123 series\nvehicles – Change differential lubricant\nsemiannually or every 3,000 miles\n(4,830 km). Differential level should be\nwithin 1/4 inch (6.4 mm) of fill plug\nopening when lubricant is cold or to plug\nlevel when hot.\ng. Inspect U-joints for damage, free\nplay, and missing or unserviceable\nlubrication fittings.\nh. Tighten front prop shaft mounting\ncapscrews to 13-18 lb-ft (18-24 N•m)\nand center support capscrews to 60 lb-ft\n(81 N•m). Tighten rear prop shaft\ncapscrews to 13-18 lb-ft (18-24 N•m)\nand tighten U-bolt nuts to 21 lb-ft\n(29 N•m).\ni. Inspect rubber block and center\nsupport bearing for wear and wobble in\npropeller shaft.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents (Cont’d)\nNOT FULLY MISSION CAPABLE IF: j. Loose, missing, or\nbroken bolts.\nPROCEDURES: j. Tighten halfshaft mounting bolts to\n48 lb-ft (65 N•m).",
+        "text_sha256": "15c7cd3853195e0ee991374c5324e96fd55ef8b96083b9ee725928dd09d4b9b9",
+        "token_count": 475,
+        "unit_id": "U000974",
+        "unit_key": "pmcs:16"
+      },
+      {
+        "body_end": 1258,
+        "body_start": 0,
+        "id": "C000969",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          107,
+          108
+        ],
+        "prefix_chars": 148,
+        "printed_pages": [
+          "2-16",
+          "2-17"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6029554605484009,
+        "source_issues": [
+          {
+            "description": "every 3,000 (4,800 km)에 miles가 원문에서 생략됨. 추정 보충하지 않음.",
+            "id": "MISSING_MILES",
+            "pdf_page": 107,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "15",
+          "row_ids": [
+            "P0107-T2_1-R03",
+            "P0108-T2_1-R01"
+          ],
+          "source_issues": [
+            "MISSING_MILES"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 15\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Transfer\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 15\nITEM TO BE INSPECTED: Transfer\nNOT FULLY MISSION CAPABLE IF: a. Vent line cracked,\nplugged or missing.\nShift linkage is unserv-\niceable.\nPROCEDURES: a. Inspect transfer case vent lines and\nconnectors for security, cracks, and\ndeterioration.\nb. Inspect transfer case shift linkage\nfor bends, excessive play, cracks, and\ndamage that could cause failure.\nCAUTION\nUse Dexron® II for filling transfer case.\nFailure to use Dexron® II will cause\ndamage to transfer case.\nc. Check transfer case fluid level every\n3,000 (4,800 km) or semiannually,\nwhichever occurs first. Remove fill plug\nand gasket. Level should be within 1/2 in.\n(12.7 mm) of fill plug opening when vehicle\nis on level ground. Install fill plug and\ngasket, and tighten to 35 lb-ft (47 N•m ) .\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 15\nITEM TO BE INSPECTED: Transfer\n(Cont’d)\nNOT FULLY MISSION CAPABLE IF: d . Any class III oil\nleak or damage to\nspiral wrap.\nPROCEDURES: NOTE\nDo not overtorque retaining nuts.\nd . Inspect oil cooler lines for leaks or\ndamage. Check for loose oil cooler line\nnuts and damage to the spiral wrap on\nthe cooler line. If oil cooler line nuts are\nloose, hold end of oil cooler stationary, and\ntighten line nuts to 194-212 lb-in.\n(22-24 N•m)",
+        "text_sha256": "611e2212685cbcf53daaa9344207a7a57397d9d4163812e92fcee47c4f9da037",
+        "token_count": 416,
+        "unit_id": "U000966",
+        "unit_key": "pmcs:15"
+      },
+      {
+        "body_end": 146,
+        "body_start": 0,
+        "id": "C005927",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          595
+        ],
+        "prefix_chars": 135,
+        "printed_pages": [
+          "2-492"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6012318134307861,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            339.5555,
+            755
+          ],
+          "condition_box": [
+            41.0,
+            334.0,
+            152.0,
+            496.0
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0595.json",
+            "sha256": "ca4d762f1ad4e08892c70d7bb5da1ac7018aff64e91b2edc3dc8a9828746d7ab"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            177.8167,
+            359.4729,
+            332.8363,
+            392.1086
+          ],
+          "source_component_keys": [
+            "region:595:1:13",
+            "region:595:1:12",
+            "region:595:1:15",
+            "region:595:1:11",
+            "region:595:1:14"
+          ]
+        },
+        "text": "DRIVETRAIN\nKNOWN INFO\nSHIFTER OK\nTRANSFER CASE OK\nTRANSMISSION OK\nSHAFTS AND JOINTS OK\nGEARED HUBS OK\nPOSSIBLE PROBLEMS\nDIFFERENTIALS\n\nCHECK THE FLUID LEVEL AND CONDITION IN EACH DIFFERENTIAL. IS IT OK? TEST OPTIONS VISUAL REASON FOR QUESTION To make sure the differentials are OK.",
+        "text_sha256": "7fb621985bdcba3ef60a8199c03e442ad437c64ee2ee93315fbc023a4080c118",
+        "token_count": 85,
+        "unit_id": "U005919",
+        "unit_key": "V6:P0595:node:2"
+      },
+      {
+        "body_end": 152,
+        "body_start": 0,
+        "id": "C001119",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          120,
+          121
+        ],
+        "prefix_chars": 200,
+        "printed_pages": [
+          "2-29",
+          "2-30"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5989734530448914,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "group": "other",
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 4,
+          "table_id": "P0120:lubrication"
+        },
+        "text": "LUBRICATION TABLE (Cont’d)\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\nIf operating conditions are severe or abnormal, service chassis lubrication points at 1,000 miles (1,600\nkilometers).\n\nUSAGE: Ball Joints,\nTie Rod Ends,\nPitman Arm,\nPropeller Shafts,\netc.\nFLUID/LUBRICANT: GAA\nCAPACITIES: As Required\nEXPECTED TEMPERATURE: All Temperatures",
+        "text_sha256": "969323771c7d358b9adc380fa200e514d87b25caf115be13d8ebd65997ec260a",
+        "token_count": 106,
+        "unit_id": "U001113",
+        "unit_key": "P0121:lubrication:4"
+      },
+      {
+        "body_end": 62,
+        "body_start": 0,
+        "id": "C000463",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61
+        ],
+        "prefix_chars": 135,
+        "printed_pages": [
+          "1-31"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5934263467788696,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 10,
+          "section": 2,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data\n2. CAPACITIES*\nSTANDARD\nMETRIC\n*ALL HYDRAULIC SYSTEMS AND ALL FUEL CAPACITIES\nARE CALCULATED APPROXIMATIONS\n\nITEM: Transfer Case (model 218)\nSTANDARD: 3.5 qt\nMETRIC: 3.3 L",
+        "text_sha256": "068d115c6e2d2af5a81524e16cddaaab56397de38a4d8b6a27f6991e728904db",
+        "token_count": 76,
+        "unit_id": "U000463",
+        "unit_key": "P0061:spec:2:10"
+      }
+    ],
+    "search_ms": 10.446499999488879
+  },
+  "round": 3,
+  "sequence": 358,
+  "started_at": "2026-09-28T04:46:12.436316+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1532.7551999998832,
+    "retrieval": 125.94220000028145,
+    "total": 1658.6974000001646
+  },
+  "unprovided_citations": []
+}

@@ -1,0 +1,1378 @@
+{
+  "citation_ids": [
+    "[C000853]",
+    "[C001103]",
+    "[C000853]",
+    "[C001103]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:25:46.139296+00:00",
+  "evaluation_answer": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to remove lubricants prescribed for temperatures above -15°F (-26°C) and relubricate with lubricants specified for temperatures below -15°F (-26°C). If OEA lubricant is required, it is to be used in place of OE/HDO 10 lubricant for all temperature ranges where OE/HDO 10 is specified .\n\nThe transmission PMCS notes specify that for arctic conditions, OE/HDO 15/40 (Grade 15W-40) lubricant may be used when expected temperatures are above +5°F (-15°C), but for temperatures below -15°F (-26°C), OEA lubricant is required and must be used in place of OE/HDO 10 . However, the transmission-specific lubricant for arctic conditions is not explicitly stated in the provided excerpts. Therefore, based on the available information, the transmission fluid specification in arctic conditions is not fully defined. \n\nNote: The transmission lubricant specification for arctic conditions is not directly provided in the referenced excerpts. While OEA lubricant is specified for temperatures below -15°F (-26°C) in general, the transmission-specific fluid is not explicitly detailed.  and  provide general lubricant guidance, but not specific transmission fluid for arctic conditions.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1278,
+  "key": "r1-M19-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000853] TM 9-2320-280-20-1 | PDF 94 | Printed 2-3\n(2) Army Oil Analysis Program (AOAP). HMMWV engines and transmissions are enrolled in the\nArmy Oil Analysis Program (AOAP). The sampling interval for the engine is every six months or 3,000 miles,\nor 100 hours (if hour meter is installed) of operation. For the transmission, the sampling interval is every\n12 months or 6,000 miles, or 300 hours (if hour meter is installed) of operation.\n(3) For Operation of Equipment in Protracted Cold Temperatures Below -15°F. (-26°C).\nRemove lubricants prescribed in lubrication table for temperatures above -15°F (-26°C). Relubricate with\nlubricants specified in lubrication table for temperatures below -15°F (-26°C). If OEA lubricant is required,\nsee the temperature ranges prescribed in the lubrication table. OEA lubricant is to be used in place of\nOE/HDO 10 lubricant for all temperature ranges where OE/HDO 10 is specified in the lubrication table.\n\n[C001119] TM 9-2320-280-20-1 | PDF 120,121 | Printed 2-29,2-30\nLUBRICATION TABLE (Cont’d)\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\nIf operating conditions are severe or abnormal, service chassis lubrication points at 1,000 miles (1,600\nkilometers).\n\nUSAGE: Ball Joints,\nTie Rod Ends,\nPitman Arm,\nPropeller Shafts,\netc.\nFLUID/LUBRICANT: GAA\nCAPACITIES: As Required\nEXPECTED TEMPERATURE: All Temperatures\n\n[C001120] TM 9-2320-280-20-1 | PDF 120,121 | Printed 2-29,2-30\nLUBRICATION TABLE (Cont’d)\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\nIf operating conditions are severe or abnormal, service chassis lubrication points at 1,000 miles (1,600\nkilometers).\n\nUSAGE: Hinges, Cables,\nand Linkages\nFLUID/LUBRICANT: OE/HDO\nCAPACITIES: As Required\nEXPECTED TEMPERATURE: All Temperatures\n\n[C001037] TM 9-2320-280-20-1 | PDF 114,116 | Printed 2-23,2-25\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 26\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Arctic\nWinterization\nKit and/or\nTroop/Cargo\nWinterization\nKit\nSPECIAL PURPOSE KITS\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 26\nITEM TO BE INSPECTED: Arctic\nWinterization\nKit and/or\nTroop/Cargo\nWinterization\nKit\nNOT FULLY MISSION CAPABLE IF: Any class III leak.\nPROCEDURES: Inspect all fuel lines for loose connec-\ntions, splits, cracks, and bends that\ncould cause leaks. Tighten loose connec-\ntions and replace damaged parts.\nNOTE\nIf Annual/Biennial Service is being\nperformed, then Final Road Test will\nbe completed after last Annual/\nBiennial task is complete.\n\n[C001103] TM 9-2320-280-20-1 | PDF 120 | Printed 2-29\nLUBRICATION TABLE\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\nOE/HDO 15/40 (Grade 15W-40) lubricant may be used when expected temperatures are above +5°F (-15°C).\nIf OEA lubricant is required to meet the temperature ranges prescribed in the table, then the OEA lubricant\nis to be used in place of OE/HDO 10 lubricant for all temperature ranges.\n\nUSAGE: Engine Oil\nFLUID/LUBRICANT: OE/HDO 30\nCAPACITIES: Crankcase:\nw/o filter 7 qt (6.6 L)\nw/filter 8 qt (7.6 L)\nDry System 10 qt (9.5 L)\n(INC. oil cooler)\nEXPECTED TEMPERATURE: Above +15°F (-9°C)\nQUESTION:\nFor prolonged operation below -15°F (-26°C), what general lubricant-change instruction applies, and what fluid do the transmission PMCS notes specify for both transmission models in arctic conditions?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "For prolonged operation below -15°F (-26°C), what general lubricant-change instruction applies, and what fluid do the transmission PMCS notes specify for both transmission models in arctic conditions?",
+  "question_id": "M19",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:13:02.992508707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:56.219758107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 110.79760000029637,
+    "peak_rss_bytes": 7936610304,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4825.8279352,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4825.9336472,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.0426945,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.1351299,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.2297281,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.3405257,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.4350268,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.528792,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.6366552,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.7286924,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875031040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.8381249,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038377472,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875342336,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4826.9298845,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038377472,
+          "35444": 8007680,
+          "36040": 97284096,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875342336,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.039099,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 7875670016,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.1328758,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.2421448,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3656114176,
+          "37564": 7958528
+        },
+        "rss_bytes": 7934783488,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.3359835,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3656114176,
+          "37564": 7958528
+        },
+        "rss_bytes": 7934783488,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.4298191,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.5388913,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.6321239,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.7422129,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.8354334,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4827.9287709,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.037522,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.1295946,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.2380158,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.3314076,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.4390363,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.5311217,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.6391973,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.7318422,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.8397958,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4828.9331495,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.0410814,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.1326462,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.2398297,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.3326997,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.4411026,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.532812,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.6424461,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.7334707,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.8404772,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4829.9325135,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.0388937,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.1311948,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.2387763,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.3311086,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.4390145,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.5315476,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.6398558,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.7337689,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.8420721,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4830.9359693,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.0294185,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.1374721,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.2299433,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.3398764,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.432636,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.5404627,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.634957,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.7423954,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.8367222,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4831.9305741,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4832.0384157,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4832.1335466,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4832.2412733,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109121536,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038389760,
+          "35444": 8007680,
+          "36040": 97599488,
+          "37504": 3657940992,
+          "37564": 7958528
+        },
+        "rss_bytes": 7936610304,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:25:46.1372093Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 323,
+    "eval_duration": 4925334000,
+    "load_duration": 9909600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 1278,
+    "prompt_eval_duration": 236202000,
+    "response": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to remove lubricants prescribed for temperatures above -15°F (-26°C) and relubricate with lubricants specified for temperatures below -15°F (-26°C). If OEA lubricant is required, it is to be used in place of OE/HDO 10 lubricant for all temperature ranges where OE/HDO 10 is specified [C000853].\n\nThe transmission PMCS notes specify that for arctic conditions, OE/HDO 15/40 (Grade 15W-40) lubricant may be used when expected temperatures are above +5°F (-15°C), but for temperatures below -15°F (-26°C), OEA lubricant is required and must be used in place of OE/HDO 10 [C001103]. However, the transmission-specific lubricant for arctic conditions is not explicitly stated in the provided excerpts. Therefore, based on the available information, the transmission fluid specification in arctic conditions is not fully defined. \n\nNote: The transmission lubricant specification for arctic conditions is not directly provided in the referenced excerpts. While OEA lubricant is specified for temperatures below -15°F (-26°C) in general, the transmission-specific fluid is not explicitly detailed. [C000853] and [C001103] provide general lubricant guidance, but not specific transmission fluid for arctic conditions.",
+    "total_duration": 5296494800
+  },
+  "retrieval": {
+    "embedding_ms": 144.63230000001204,
+    "items": [
+      {
+        "body_end": 893,
+        "body_start": 0,
+        "id": "C000853",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          94
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-3"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R001005"
+        ],
+        "review_ids": [],
+        "score": 0.6162664294242859,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "(2) Army Oil Analysis Program (AOAP). HMMWV engines and transmissions are enrolled in the\nArmy Oil Analysis Program (AOAP). The sampling interval for the engine is every six months or 3,000 miles,\nor 100 hours (if hour meter is installed) of operation. For the transmission, the sampling interval is every\n12 months or 6,000 miles, or 300 hours (if hour meter is installed) of operation.\n(3) For Operation of Equipment in Protracted Cold Temperatures Below -15°F. (-26°C).\nRemove lubricants prescribed in lubrication table for temperatures above -15°F (-26°C). Relubricate with\nlubricants specified in lubrication table for temperatures below -15°F (-26°C). If OEA lubricant is required,\nsee the temperature ranges prescribed in the lubrication table. OEA lubricant is to be used in place of\nOE/HDO 10 lubricant for all temperature ranges where OE/HDO 10 is specified in the lubrication table.",
+        "text_sha256": "206cd21e7ae2da5645ae37d5cbd57aa5b190552caf02f304b80d4df02b37086a",
+        "token_count": 233,
+        "unit_id": "U000853",
+        "unit_key": "region:94:1:3"
+      },
+      {
+        "body_end": 152,
+        "body_start": 0,
+        "id": "C001119",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          120,
+          121
+        ],
+        "prefix_chars": 200,
+        "printed_pages": [
+          "2-29",
+          "2-30"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5925580263137817,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "group": "other",
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 4,
+          "table_id": "P0120:lubrication"
+        },
+        "text": "LUBRICATION TABLE (Cont’d)\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\nIf operating conditions are severe or abnormal, service chassis lubrication points at 1,000 miles (1,600\nkilometers).\n\nUSAGE: Ball Joints,\nTie Rod Ends,\nPitman Arm,\nPropeller Shafts,\netc.\nFLUID/LUBRICANT: GAA\nCAPACITIES: As Required\nEXPECTED TEMPERATURE: All Temperatures",
+        "text_sha256": "969323771c7d358b9adc380fa200e514d87b25caf115be13d8ebd65997ec260a",
+        "token_count": 106,
+        "unit_id": "U001113",
+        "unit_key": "P0121:lubrication:4"
+      },
+      {
+        "body_end": 122,
+        "body_start": 0,
+        "id": "C001120",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          120,
+          121
+        ],
+        "prefix_chars": 200,
+        "printed_pages": [
+          "2-29",
+          "2-30"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5843876004219055,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "group": "other",
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 5,
+          "table_id": "P0120:lubrication"
+        },
+        "text": "LUBRICATION TABLE (Cont’d)\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\nIf operating conditions are severe or abnormal, service chassis lubrication points at 1,000 miles (1,600\nkilometers).\n\nUSAGE: Hinges, Cables,\nand Linkages\nFLUID/LUBRICANT: OE/HDO\nCAPACITIES: As Required\nEXPECTED TEMPERATURE: All Temperatures",
+        "text_sha256": "0ed1665565f81eaadaaed2fb24dcd29a0860c925c733d160a3a90c2a64ff7f58",
+        "token_count": 96,
+        "unit_id": "U001114",
+        "unit_key": "P0121:lubrication:5"
+      },
+      {
+        "body_end": 471,
+        "body_start": 0,
+        "id": "C001037",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          114,
+          116
+        ],
+        "prefix_chars": 222,
+        "printed_pages": [
+          "2-23",
+          "2-25"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5686397552490234,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "26",
+          "row_ids": [
+            "P0116-T2_1-R01"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 26\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Arctic\nWinterization\nKit and/or\nTroop/Cargo\nWinterization\nKit\nSPECIAL PURPOSE KITS\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 26\nITEM TO BE INSPECTED: Arctic\nWinterization\nKit and/or\nTroop/Cargo\nWinterization\nKit\nNOT FULLY MISSION CAPABLE IF: Any class III leak.\nPROCEDURES: Inspect all fuel lines for loose connec-\ntions, splits, cracks, and bends that\ncould cause leaks. Tighten loose connec-\ntions and replace damaged parts.\nNOTE\nIf Annual/Biennial Service is being\nperformed, then Final Road Test will\nbe completed after last Annual/\nBiennial task is complete.",
+        "text_sha256": "136a4952a49d3c7bedfa418de6cd9a71cc464d73e015b6d3619f9c85ba04d64a",
+        "token_count": 196,
+        "unit_id": "U001031",
+        "unit_key": "pmcs:26"
+      },
+      {
+        "body_end": 197,
+        "body_start": 0,
+        "id": "C001103",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          120
+        ],
+        "prefix_chars": 356,
+        "printed_pages": [
+          "2-29"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5632439851760864,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "group": "engine-oil",
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 1,
+          "shared_capacity": true,
+          "table_id": "P0120:lubrication"
+        },
+        "text": "LUBRICATION TABLE\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\nOE/HDO 15/40 (Grade 15W-40) lubricant may be used when expected temperatures are above +5°F (-15°C).\nIf OEA lubricant is required to meet the temperature ranges prescribed in the table, then the OEA lubricant\nis to be used in place of OE/HDO 10 lubricant for all temperature ranges.\n\nUSAGE: Engine Oil\nFLUID/LUBRICANT: OE/HDO 30\nCAPACITIES: Crankcase:\nw/o filter 7 qt (6.6 L)\nw/filter 8 qt (7.6 L)\nDry System 10 qt (9.5 L)\n(INC. oil cooler)\nEXPECTED TEMPERATURE: Above +15°F (-9°C)",
+        "text_sha256": "798b15e95d5e4ab88c719026d120404830c143fcb1166bd24521b6131fd6cc7d",
+        "token_count": 187,
+        "unit_id": "U001097",
+        "unit_key": "P0120:oil:1"
+      }
+    ],
+    "search_ms": 11.937399999624176
+  },
+  "round": 1,
+  "sequence": 6,
+  "started_at": "2026-09-28T04:25:40.644471+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 5337.063400000261,
+    "retrieval": 157.7088999993066,
+    "total": 5494.772299999568
+  },
+  "unprovided_citations": []
+}

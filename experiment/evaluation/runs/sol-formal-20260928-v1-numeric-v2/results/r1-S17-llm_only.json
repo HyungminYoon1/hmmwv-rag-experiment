@@ -1,0 +1,239 @@
+{
+  "at": "2026-09-28T09:56:40.159401+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "81746f741ec0ebb10fabbe14d76bc801a8859367213c891e7f940991540f48fb",
+  "original_result_sha256": "b9dff514358e288cbd5c4d273c778b6ef19eb5d0cdea5cd630c5a6981c40d2ea",
+  "result": {
+    "attempt_key": "r1-S17-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 27.46401970000079,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9553642293559012
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9553642293559012
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S17",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response identifies the fuel system and gives factual explanations for black exhaust smoke."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9701900807654062,
+          0.9791226850266369,
+          0.9167799222756604
+        ],
+        "query_vector_hash": "054c9763c2607ed081dee116cd4e21497b4ce9912bc02057ba4cc300f1c89e2f",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What system should be checked when exhaust smoke is black, and what can cause the black smoke?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What system should be checked when exhaust smoke is black, and what might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What should be checked when exhaust smoke is black, and what are possible causes?"
+          }
+        ],
+        "response_vectors_hash": "04f7fcc6dfe72422df8a56f612c6caf99829c69fb3517ac362156cc4dee71393",
+        "score": 0.9553642293559012
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "When exhaust smoke is black, the fuel system should be checked."
+        },
+        {
+          "id": "C002",
+          "text": "Black exhaust smoke typically indicates excessive fuel combustion."
+        },
+        {
+          "id": "C003",
+          "text": "Excessive fuel combustion is often due to a rich fuel mixture."
+        },
+        {
+          "id": "C004",
+          "text": "Black exhaust smoke could stem from a faulty fuel injector."
+        },
+        {
+          "id": "C005",
+          "text": "Black exhaust smoke could stem from an incorrect fuel-to-air ratio."
+        },
+        {
+          "id": "C006",
+          "text": "Black exhaust smoke could stem from a clogged air filter."
+        }
+      ],
+      "claims_raw": [
+        "When exhaust smoke is black, the fuel system should be checked.",
+        "Black exhaust smoke typically indicates excessive fuel combustion.",
+        "Excessive fuel combustion is often due to a rich fuel mixture.",
+        "Black exhaust smoke could stem from a faulty fuel injector.",
+        "Black exhaust smoke could stem from an incorrect fuel-to-air ratio.",
+        "Black exhaust smoke could stem from a clogged air filter."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "the fuel system should be checked",
+            "fulfilled": 0,
+            "id": "S17-A01",
+            "reason": "The answer directs the user to check the fuel system, not the specified intake/exhaust system."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not mention exhaust smoke or checking the fuel system.",
+              "statement": "When exhaust smoke is black, the fuel system should be checked.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not describe what black exhaust smoke indicates.",
+              "statement": "Black exhaust smoke typically indicates excessive fuel combustion.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not discuss fuel combustion or mixtures.",
+              "statement": "Excessive fuel combustion is often due to a rich fuel mixture.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not mention fuel injectors or causes of smoke.",
+              "statement": "Black exhaust smoke could stem from a faulty fuel injector.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not mention fuel-to-air ratios or causes of smoke.",
+              "statement": "Black exhaust smoke could stem from an incorrect fuel-to-air ratio.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not mention air filters or causes of smoke.",
+              "statement": "Black exhaust smoke could stem from a clogged air filter.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.9701900807654062,
+          0.9791226850266369,
+          0.9167799222756604
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9553642293559012,
+        "query_vector_hash": "054c9763c2607ed081dee116cd4e21497b4ce9912bc02057ba4cc300f1c89e2f",
+        "ragas_score": 0.9553642293559012,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "04f7fcc6dfe72422df8a56f612c6caf99829c69fb3517ac362156cc4dee71393"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9701900807654062,
+          0.9791226850266369,
+          0.9167799222756604
+        ],
+        "decimal50_cosines": [
+          "0.97019008076540628876671489816209273867844292294760",
+          "0.97912268502663691919116341008042847011779194720261",
+          "0.91677992227566056823231928851567658886629298489409"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9553642293559012
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9553642293559012
+          }
+        },
+        "query_vector_hash": "054c9763c2607ed081dee116cd4e21497b4ce9912bc02057ba4cc300f1c89e2f",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What system should be checked when exhaust smoke is black, and what can cause the black smoke?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What system should be checked when exhaust smoke is black, and what might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What should be checked when exhaust smoke is black, and what are possible causes?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "04f7fcc6dfe72422df8a56f612c6caf99829c69fb3517ac362156cc4dee71393",
+        "score": 0.9553642293559012
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "42c1e93bafa44b84be6330724746941e8e79fada1dc25719e9826acff3ab2ef8"
+}

@@ -1,0 +1,190 @@
+{
+  "at": "2026-09-28T09:26:25.421621+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "25aa0af38b7eddf4b3bf7172af529d9f5946499244a40dc1e61cc789248042f7",
+  "result": {
+    "attempt_key": "r1-M25-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 28.794040000000678,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.7828586624753541
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.7828586624753541
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      }
+    },
+    "question_id": "M25",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "Gives a direct comparison and specific temperatures (180°F and 200°F); the source caveat does not withhold the answer."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7976340580326495,
+          0.7754709488461184,
+          0.7754709805472939
+        ],
+        "query_vector_hash": "70b5d6dd2d10bef7b1d818269d7c7df9721468b4f2457794b357652bb8c16331",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "For an M998-series HMMWV, which temperature is reached first: the thermostat fully-open temperature or the fan-activation temperature?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For an M998-series HMMWV, is the thermostat fully-open temperature or the fan-activation temperature reached first?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For an M998-series HMMWV, is the thermostat fully-open temperature or the fan-activation temperature reached first?"
+          }
+        ],
+        "response_vectors_hash": "6c0c6e1a76d90f652e9b564a38e2cef77ab7c6860a55842c3e95d3cfd65c0204",
+        "score": 0.7828586624753541
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "For the HMMWV (M998-series), the thermostat fully opens at approximately 180°F (82°C)."
+        },
+        {
+          "id": "C002",
+          "text": "For the HMMWV (M998-series), the fan activation temperature is typically around 200°F (93°C)."
+        },
+        {
+          "id": "C003",
+          "text": "As coolant warms in the HMMWV (M998-series), the thermostat fully-open temperature of approximately 180°F (82°C) is reached before the fan-activation temperature of around 200°F (93°C)."
+        },
+        {
+          "id": "C004",
+          "text": "The temperature information is based on standard vehicle cooling system design and typical HMMWV specifications."
+        },
+        {
+          "id": "C005",
+          "text": "No specific excerpts from TM 9-2320-280-20-1 were provided."
+        }
+      ],
+      "claims_raw": [
+        "For the HMMWV (M998-series), the thermostat fully opens at approximately 180°F (82°C).",
+        "For the HMMWV (M998-series), the fan activation temperature is typically around 200°F (93°C).",
+        "As coolant warms in the HMMWV (M998-series), the thermostat fully-open temperature of approximately 180°F (82°C) is reached before the fan-activation temperature of around 200°F (93°C).",
+        "The temperature information is based on standard vehicle cooling system design and typical HMMWV specifications.",
+        "No specific excerpts from TM 9-2320-280-20-1 were provided."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "the thermostat fully opens at approximately 180°F (82°C)",
+            "fulfilled": 0,
+            "id": "M25-A01",
+            "reason": "The required value is 212°F (100°C), not 180°F (82°C)."
+          },
+          {
+            "answer_quote": "the fan activation temperature is typically around 200°F (93°C)",
+            "fulfilled": 0,
+            "id": "M25-A02",
+            "reason": "The required value is 215°F (102°C), not 200°F (93°C)."
+          },
+          {
+            "answer_quote": "The thermostat fully-open temperature is reached first.",
+            "fulfilled": 1,
+            "id": "M25-A03",
+            "reason": "The answer correctly identifies which temperature is reached first."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The table lists the fully-open temperature as 212°F (100°C), not 180°F (82°C).",
+              "statement": "For the HMMWV (M998-series), the thermostat fully opens at approximately 180°F (82°C).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives fan activation as 215°F (102°C), not around 200°F (93°C).",
+              "statement": "For the HMMWV (M998-series), the fan activation temperature is typically around 200°F (93°C).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated temperatures are unsupported; the context gives 212°F for fully open and 215°F for fan activation.",
+              "statement": "As coolant warms in the HMMWV (M998-series), the thermostat fully-open temperature of approximately 180°F (82°C) is reached before the fan-activation temperature of around 200°F (93°C).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish that basis for the temperature information.",
+              "statement": "The temperature information is based on standard vehicle cooling system design and typical HMMWV specifications.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify whether its excerpts are from that specific manual.",
+              "statement": "No specific excerpts from TM 9-2320-280-20-1 were provided.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.7976340580326495,
+          0.7754709488461184,
+          0.7754709805472939
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7828586624753541,
+        "query_vector_hash": "70b5d6dd2d10bef7b1d818269d7c7df9721468b4f2457794b357652bb8c16331",
+        "ragas_score": 0.7828586624753541,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "6c0c6e1a76d90f652e9b564a38e2cef77ab7c6860a55842c3e95d3cfd65c0204"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "8d06de71469a6b527f7316f11ee076d2ecb5166fb65e11fa64a21453da89945a"
+}

@@ -1,0 +1,190 @@
+{
+  "at": "2026-09-28T09:30:52.357612+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "8c2d22e47ce1d791721fb444a25e941a2ee974d812640ffb0049bcef72c482ca",
+  "result": {
+    "attempt_key": "r1-M29-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 30.869837199999893,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.8024062647286007
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.8024062647286007
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      }
+    },
+    "question_id": "M29",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly answers both questions and makes substantive claims about the maintenance check and the opening limit."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7385204080310223,
+          0.8006404469630435,
+          0.8680579391917375
+        ],
+        "query_vector_hash": "c13e4d02619dfda5490f790be0740bceab97a086929b5441fec2a2cc8ddead26",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "For an M998-series HMMWV, what engine symptom calls for checking the air-intake/exhaust system, and is a 0.20-inch dust-unloader center opening acceptable?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For an M998-series HMMWV, what engine issue calls for checking the air-intake/exhaust system, and is a 0.20-inch dust-unloader center opening acceptable under the stated PMCS limit?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For an M998-series HMMWV that fails to develop full engine power, should the air-intake/exhaust system be checked, and is a 0.20-inch dust-unloader center opening within the stated PMCS limit?"
+          }
+        ],
+        "response_vectors_hash": "17e88361aa8eb03d27f5c85987701e84106124ea7d58c4ae243c1f1e549a8984",
+        "score": 0.8024062647286007
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system under standard maintenance procedures for HMMWV (M998-series) vehicles, as commonly outlined in vehicle maintenance manuals including TM 9-2320-280-20-1."
+        },
+        {
+          "id": "C002",
+          "text": "A dust-unloader center opening of 0.20 inch is below the PMCS (Preventive Maintenance Control System) limit."
+        },
+        {
+          "id": "C003",
+          "text": "The PMCS limit for the dust-unloader center opening is typically 0.25 inches."
+        },
+        {
+          "id": "C004",
+          "text": "A dust-unloader center opening of 0.20 inch is within acceptable limits."
+        },
+        {
+          "id": "C005",
+          "text": "A dust-unloader center opening of 0.20 inch does not indicate a failure."
+        }
+      ],
+      "claims_raw": [
+        "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system under standard maintenance procedures for HMMWV (M998-series) vehicles, as commonly outlined in vehicle maintenance manuals including TM 9-2320-280-20-1.",
+        "A dust-unloader center opening of 0.20 inch is below the PMCS (Preventive Maintenance Control System) limit.",
+        "The PMCS limit for the dust-unloader center opening is typically 0.25 inches.",
+        "A dust-unloader center opening of 0.20 inch is within acceptable limits.",
+        "A dust-unloader center opening of 0.20 inch does not indicate a failure."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system",
+            "fulfilled": 1,
+            "id": "M29-A01",
+            "reason": "The answer correctly identifies lack of full power as a reason to check the system."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M29-A02",
+            "reason": "The answer gives a 0.25-inch limit, contradicting the stated 1/8-inch limit."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M29-A03",
+            "reason": "The answer says 0.20 inch is below the limit, but it exceeds 1/8 inch."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context links failure to develop full power with checking the system, but does not identify the M998 series or the cited manual.",
+              "statement": "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system under standard maintenance procedures for HMMWV (M998-series) vehicles, as commonly outlined in vehicle maintenance manuals including TM 9-2320-280-20-1.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated limit is 1/8 inch (0.125 inch); 0.20 inch exceeds it.",
+              "statement": "A dust-unloader center opening of 0.20 inch is below the PMCS (Preventive Maintenance Control System) limit.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 1/8 inch, not 0.25 inch.",
+              "statement": "The PMCS limit for the dust-unloader center opening is typically 0.25 inches.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "It exceeds the stated 1/8-inch limit.",
+              "statement": "A dust-unloader center opening of 0.20 inch is within acceptable limits.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context says an opening exceeding 1/8 inch makes the vehicle not fully mission capable.",
+              "statement": "A dust-unloader center opening of 0.20 inch does not indicate a failure.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 4.440892098500626e-16,
+        "cosine_similarities": [
+          0.7385204080310223,
+          0.8006404469630435,
+          0.8680579391917375
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8024062647286011,
+        "query_vector_hash": "c13e4d02619dfda5490f790be0740bceab97a086929b5441fec2a2cc8ddead26",
+        "ragas_score": 0.8024062647286007,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "17e88361aa8eb03d27f5c85987701e84106124ea7d58c4ae243c1f1e549a8984"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "b459d4d4aabf6a1a2bc9c8b731932b9ac1719e7afecf78fb8166c7f1597cb1b1"
+}

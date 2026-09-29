@@ -1,0 +1,866 @@
+{
+  "citation_ids": [
+    "[C001638]",
+    "[C000914]",
+    "[C000914]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:36:51.074659+00:00",
+  "evaluation_answer": "For black exhaust smoke, the diagnostic system indicated is the fuel system, as black smoke may indicate excessive fuel entering the cylinders .\n\nDuring air-intake PMCS checks, correct CDR-valve function is determined by checking vacuum with a water manometer . The authorized cleaning method is wiping the CDR valve and hoses with a rag; solvent cleaning is prohibited as it will damage the diaphragm inside the CDR valve .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1018,
+  "key": "r2-M05-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000914] TM 9-2320-280-20-1 | PDF 100 | Printed 2-9\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 7\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Air-Intake\nSystem\nWARNING\nIf NBC exposure is suspected, all air\nfilter media should be handled by\npersonnel wearing protective\nequipment. Consult your unit NBC\nofficer or NBC NCO for appropriate\nhandling or disposal instructions.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 7\nITEM TO BE INSPECTED: Air-Intake\nSystem\nNOT FULLY MISSION CAPABLE IF: b. CDR fails water\nmanometer vacuum test.\nPROCEDURES: a. Inspect and clean air cleaner\nelement and housing\n(para. 3-13).\nb. Check CDR valve oil saturation.\nDisconnect CDR valve oil fill tube hose\nfrom CDR valve and inspect. Some oil\naccumulation in the CDR valve is\nacceptable. Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a).\nCAUTION\nDo not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve. Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag.\n\n[C001638] TM 9-2320-280-20-1 | PDF 187 | Printed 2-100\nFUEL SYSTEM\nKNOWN INFO\nINJECTION PUMP OK\nPOSSIBLE PROBLEMS\nINJECTORS\nAIR CLEANER\nPUMP TIMING\nCDR VALVE\nRETURN CHECK VALVE\n\nIS THE EXHAUST COLORLESS? TEST OPTIONS VISUAL IN TION SUAL INSPEC REASON FOR QUESTION Exhaust smoke may indicate conditions such as oil, water or excessive fuel entering the cylinders.\n\n[C001041] TM 9-2320-280-20-1 | PDF 116 | Printed 2-25\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 29\nINTERVAL: Annually\nITEM TO BE INSPECTED: Air-Intake\nSystem\n\nINTERVAL: Annually\nITEM NO.: 29\nITEM TO BE INSPECTED: Air-Intake\nSystem\nPROCEDURES: Test CDR valve (para. 3-9).\n\n[C001421] TM 9-2320-280-20-1 | PDF 155 | Printed 2-67\nREFERENCE INFORMATION\nLUBRICATION SYSTEM\n\nThe tests in para. 2-26\ntest the oil level, cleanliness,\nleaks in the system, and the\nCDR valve.  Return here when you've\nfixed everything you can or if no\nfaults were found.\n\n[C002414] TM 9-2320-280-20-1 | PDF 272 | Printed 2-189\nREFERENCE INFORMATION\nENGINE LUBRICATION\n\nInspect the oil cooler, oil cooler supply\nreturn lines, CDR valve hoses, oil pan, and\noil filter. Test CDR valve, (para. 3-9). See\nthe location on parts page to find these\nparts.\nQUESTION:\nFor black exhaust smoke, which diagnostic system is indicated? During its air-intake PMCS checks, how is correct CDR-valve function determined, and what cleaning method is authorized?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 525,
+  "question": "For black exhaust smoke, which diagnostic system is indicated? During its air-intake PMCS checks, how is correct CDR-valve function determined, and what cleaning method is authorized?",
+  "question_id": "M05",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:24:07.929435007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:24:04.826537407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4869734400.0,
+    "max_actual_interval_ms": 110.8156999998755,
+    "peak_rss_bytes": 13389762560,
+    "peak_vram_bytes": 4872028160,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5494.2398951,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5494.3479555,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5494.4413046,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5494.5521203,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5494.6452493,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5494.7529168,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5494.845965,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5494.954287,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.0453644,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.1547947,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.24657,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.3552255,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.4479955,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9106915328,
+          "37564": 7958528
+        },
+        "rss_bytes": 13389762560,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.5423934,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8938004480,
+          "37564": 7958528
+        },
+        "rss_bytes": 13220851712,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.6528342,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.746096,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.8541612,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5495.947923,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5496.0413402,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5496.1491073,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5496.2413692,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5496.350662,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4870193152
+      },
+      {
+        "monotonic": 5496.443167,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4870193152
+      },
+      {
+        "monotonic": 5496.552614,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5496.6463805,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4870848512
+      },
+      {
+        "monotonic": 5496.7554302,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5496.8487772,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5496.9428593,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4871438336
+      },
+      {
+        "monotonic": 5497.0513927,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4871766016
+      },
+      {
+        "monotonic": 5497.1430551,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4871897088
+      },
+      {
+        "monotonic": 5497.2500422,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8939831296,
+          "37564": 7958528
+        },
+        "rss_bytes": 13222678528,
+        "vram_bytes": 4872028160
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:36:51.0731564Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 109,
+    "eval_duration": 1666168000,
+    "load_duration": 1095100,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 525,
+    "prompt_eval_count": 1018,
+    "prompt_eval_duration": 100460000,
+    "response": "For black exhaust smoke, the diagnostic system indicated is the fuel system, as black smoke may indicate excessive fuel entering the cylinders [C001638].\n\nDuring air-intake PMCS checks, correct CDR-valve function is determined by checking vacuum with a water manometer [C000914]. The authorized cleaning method is wiping the CDR valve and hoses with a rag; solvent cleaning is prohibited as it will damage the diaphragm inside the CDR valve [C000914].",
+    "total_duration": 1870402600
+  },
+  "retrieval": {
+    "embedding_ms": 118.681199999628,
+    "items": [
+      {
+        "body_end": 694,
+        "body_start": 0,
+        "id": "C000914",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          100
+        ],
+        "prefix_chars": 368,
+        "printed_pages": [
+          "2-9"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6425944566726685,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "7",
+          "row_ids": [
+            "P0100-T2_1-R02"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 7\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Air-Intake\nSystem\nWARNING\nIf NBC exposure is suspected, all air\nfilter media should be handled by\npersonnel wearing protective\nequipment. Consult your unit NBC\nofficer or NBC NCO for appropriate\nhandling or disposal instructions.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 7\nITEM TO BE INSPECTED: Air-Intake\nSystem\nNOT FULLY MISSION CAPABLE IF: b. CDR fails water\nmanometer vacuum test.\nPROCEDURES: a. Inspect and clean air cleaner\nelement and housing\n(para. 3-13).\nb. Check CDR valve oil saturation.\nDisconnect CDR valve oil fill tube hose\nfrom CDR valve and inspect. Some oil\naccumulation in the CDR valve is\nacceptable. Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a).\nCAUTION\nDo not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve. Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag.",
+        "text_sha256": "d2274c18c100c37f86c1d42b2290c01c2d3fe33f59f7bf24394d068f9f5b3997",
+        "token_count": 292,
+        "unit_id": "U000913",
+        "unit_key": "pmcs:7"
+      },
+      {
+        "body_end": 184,
+        "body_start": 0,
+        "id": "C001638",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          187
+        ],
+        "prefix_chars": 123,
+        "printed_pages": [
+          "2-100"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.617280125617981,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            531.84,
+            755
+          ],
+          "condition_box": [
+            43.0,
+            526.0,
+            157.0,
+            690.5
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0187.json",
+            "sha256": "dc7fc998ad45f46e0b314dde7c2023502e64e1c6de97b2129963c278a544232a"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            180.24,
+            556.8,
+            338.16,
+            565.68
+          ],
+          "source_component_keys": [
+            "region:187:1:18",
+            "region:187:1:16",
+            "region:187:1:20",
+            "region:187:1:17",
+            "region:187:1:19"
+          ]
+        },
+        "text": "FUEL SYSTEM\nKNOWN INFO\nINJECTION PUMP OK\nPOSSIBLE PROBLEMS\nINJECTORS\nAIR CLEANER\nPUMP TIMING\nCDR VALVE\nRETURN CHECK VALVE\n\nIS THE EXHAUST COLORLESS? TEST OPTIONS VISUAL IN TION SUAL INSPEC REASON FOR QUESTION Exhaust smoke may indicate conditions such as oil, water or excessive fuel entering the cylinders.",
+        "text_sha256": "db074caab0f2f788a078bbc6b4ee04f83054dda23cb34ffeaac5f95e21f73e4d",
+        "token_count": 83,
+        "unit_id": "U001632",
+        "unit_key": "V6:P0187:node:3"
+      },
+      {
+        "body_end": 111,
+        "body_start": 0,
+        "id": "C001041",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          116
+        ],
+        "prefix_chars": 153,
+        "printed_pages": [
+          "2-25"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5849161744117737,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "29",
+          "row_ids": [
+            "P0116-T2_1-R04"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 29\nINTERVAL: Annually\nITEM TO BE INSPECTED: Air-Intake\nSystem\n\nINTERVAL: Annually\nITEM NO.: 29\nITEM TO BE INSPECTED: Air-Intake\nSystem\nPROCEDURES: Test CDR valve (para. 3-9).",
+        "text_sha256": "0107d31aeec12c2e0d20b0ad8f80bc27b1d90eda6177f25e34e0755c29f44ca0",
+        "token_count": 92,
+        "unit_id": "U001035",
+        "unit_key": "pmcs:29"
+      },
+      {
+        "body_end": 174,
+        "body_start": 0,
+        "id": "C001421",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          155
+        ],
+        "prefix_chars": 42,
+        "printed_pages": [
+          "2-67"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R001504"
+        ],
+        "review_ids": [],
+        "score": 0.577330470085144,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nLUBRICATION SYSTEM\n\nThe tests in para. 2-26\ntest the oil level, cleanliness,\nleaks in the system, and the\nCDR valve.  Return here when you've\nfixed everything you can or if no\nfaults were found.",
+        "text_sha256": "55c4778e323176790b815664a7dd046cf086907507a7541586f25979ce81a63a",
+        "token_count": 60,
+        "unit_id": "U001415",
+        "unit_key": "region:155:1:1"
+      },
+      {
+        "body_end": 178,
+        "body_start": 0,
+        "id": "C002414",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          272
+        ],
+        "prefix_chars": 42,
+        "printed_pages": [
+          "2-189"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R002739"
+        ],
+        "review_ids": [],
+        "score": 0.5729174613952637,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE LUBRICATION\n\nInspect the oil cooler, oil cooler supply\nreturn lines, CDR valve hoses, oil pan, and\noil filter. Test CDR valve, (para. 3-9). See\nthe location on parts page to find these\nparts.",
+        "text_sha256": "5e43d33fd536e2703b186bd1008d91ad46aba81549211b15f80f63a11c540a3b",
+        "token_count": 60,
+        "unit_id": "U002408",
+        "unit_key": "region:272:1:2"
+      }
+    ],
+    "search_ms": 10.078499999508495
+  },
+  "round": 2,
+  "sequence": 193,
+  "started_at": "2026-09-28T04:36:49.056795+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1888.8792000007015,
+    "retrieval": 129.24119999934192,
+    "total": 2018.1204000000434
+  },
+  "unprovided_citations": []
+}

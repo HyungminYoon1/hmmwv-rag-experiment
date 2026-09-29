@@ -1,0 +1,642 @@
+{
+  "citation_ids": [
+    "[C000497]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:25:04.316658+00:00",
+  "evaluation_answer": "The diameter of the cooling fan is 19 inches .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 551,
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000497] TM 9-2320-280-20-1 | PDF 61,62 | Printed 1-31,1-32\nTable 1-2. Tabulated Data (Cont'd)\n6.\nCOOLING SYSTEM\nSTANDARD\nMETRIC\nFan:\n\nITEM: Diameter \nSTANDARD: 19 in.\nMETRIC: 48.26 cm\n\n[C002390] TM 9-2320-280-20-1 | PDF 267 | Printed 2-183\nFAN TEMPERATURE\n\n[C000496] TM 9-2320-280-20-1 | PDF 61,62 | Printed 1-31,1-32\nTable 1-2. Tabulated Data (Cont'd)\n6.\nCOOLING SYSTEM\nSTANDARD\nMETRIC\nFan:\n\nITEM: Type \nSTANDARD: Ten Blade\nMETRIC: \n\n[C002287] TM 9-2320-280-20-1 | PDF 257 | Printed 2-173\nREFERENCE INFORMATION\nENGINE COOLING\n\nFAN TEMPERATURE\n\n[C002353] TM 9-2320-280-20-1 | PDF 263 | Printed 2-179\nREFERENCE INFORMATION\nENGINE COOLING\n\nFAN TEMPERATURE\nQUESTION:\nAccording to Table 1-2, what is the diameter of the cooling fan?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "purpose": "WARMUP",
+  "question": "According to Table 1-2, what is the diameter of the cooling fan?",
+  "question_id": "D01",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:21.171433907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:19.320824107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4841095168.0,
+    "max_actual_interval_ms": 110.41490000025078,
+    "peak_rss_bytes": 7643193344,
+    "peak_vram_bytes": 4841095168,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4788.790872,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95899648,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425432064,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4788.8987536,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95899648,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425432064,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4788.9923355,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95899648,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425432064,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.1007907,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95899648,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425432064,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.193626,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95899648,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425432064,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.3030015,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95899648,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425432064,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.395923,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95899648,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425432064,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.5045543,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95899648,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425432064,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.598927,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95899648,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425432064,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.6922041,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2818650112,
+          "35444": 7512064,
+          "36040": 95903744,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6425436160,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.802619,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 2855079936,
+          "35444": 7512064,
+          "36040": 95903744,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 6461865984,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.8978437,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 3425771520,
+          "35444": 7512064,
+          "36040": 95903744,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7032557568,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4789.9933887,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 3951882240,
+          "35444": 7512064,
+          "36040": 95903744,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7558668288,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4790.1025686,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58908672,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 4036096000,
+          "35444": 7512064,
+          "36040": 96149504,
+          "37504": 3418193920,
+          "37564": 7442432
+        },
+        "rss_bytes": 7641366528,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4790.1956632,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58908672,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 4036096000,
+          "35444": 7512064,
+          "36040": 96149504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7643193344,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4790.3044968,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58908672,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 4036096000,
+          "35444": 7512064,
+          "36040": 96149504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7643193344,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4790.3968421,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58908672,
+          "17284": 4456448,
+          "30736": 12607488,
+          "34324": 4036096000,
+          "35444": 7512064,
+          "36040": 96149504,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7643193344,
+        "vram_bytes": 4841095168
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:25:04.3151517Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 21,
+    "eval_duration": 363592000,
+    "load_duration": 10154800,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 551,
+    "prompt_eval_duration": 82492000,
+    "response": "The diameter of the cooling fan is 19 inches [C000497].",
+    "total_duration": 466044000
+  },
+  "retrieval": {
+    "embedding_ms": 218.1321999996726,
+    "items": [
+      {
+        "body_end": 49,
+        "body_start": 0,
+        "id": "C000497",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          62
+        ],
+        "prefix_chars": 75,
+        "printed_pages": [
+          "1-31",
+          "1-32"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.7245607376098633,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 6,
+          "section": 4,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n6.\nCOOLING SYSTEM\nSTANDARD\nMETRIC\nFan:\n\nITEM: Diameter \nSTANDARD: 19 in.\nMETRIC: 48.26 cm",
+        "text_sha256": "26dab9e4ed0e8b37df1fd09232fbbaa26e778c3350f0e89afdadf0f6e594291f",
+        "token_count": 50,
+        "unit_id": "U000497",
+        "unit_key": "P0062:spec:4:6"
+      },
+      {
+        "body_end": 15,
+        "body_start": 0,
+        "id": "C002390",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          267
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-183"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R002709",
+          "R002710"
+        ],
+        "review_ids": [],
+        "score": 0.6703346967697144,
+        "source_issues": [
+          {
+            "description": "Teat가 PDF 화면에도 인쇄됨.",
+            "id": "TEAT",
+            "pdf_page": 267,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "FAN TEMPERATURE",
+        "text_sha256": "2230c813dcbcb4650f81488f6601a61d10b37a1785733329b1e507d5f5ad29ef",
+        "token_count": 4,
+        "unit_id": "U002384",
+        "unit_key": "region:267:1:11"
+      },
+      {
+        "body_end": 40,
+        "body_start": 0,
+        "id": "C000496",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          62
+        ],
+        "prefix_chars": 75,
+        "printed_pages": [
+          "1-31",
+          "1-32"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6441322565078735,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 5,
+          "section": 4,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n6.\nCOOLING SYSTEM\nSTANDARD\nMETRIC\nFan:\n\nITEM: Type \nSTANDARD: Ten Blade\nMETRIC: ",
+        "text_sha256": "d010bdad2349bb22e7460731286a96b8fa230ef67fdbe6a402cb99910520f717",
+        "token_count": 42,
+        "unit_id": "U000496",
+        "unit_key": "P0062:spec:4:5"
+      },
+      {
+        "body_end": 15,
+        "body_start": 0,
+        "id": "C002287",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          257
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-173"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R002600",
+          "R002601"
+        ],
+        "review_ids": [],
+        "score": 0.6192613244056702,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\nFAN TEMPERATURE",
+        "text_sha256": "9be4c974fc53855d340b470bd57606f369964dc721a03b5c3736c1f12f96f9fa",
+        "token_count": 12,
+        "unit_id": "U002281",
+        "unit_key": "region:257:1:1"
+      },
+      {
+        "body_end": 15,
+        "body_start": 0,
+        "id": "C002353",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          263
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-179"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R002660",
+          "R002661"
+        ],
+        "review_ids": [],
+        "score": 0.6192613244056702,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\nFAN TEMPERATURE",
+        "text_sha256": "9be4c974fc53855d340b470bd57606f369964dc721a03b5c3736c1f12f96f9fa",
+        "token_count": 12,
+        "unit_id": "U002347",
+        "unit_key": "region:263:1:6"
+      }
+    ],
+    "search_ms": 10.441000000355416
+  },
+  "round": 1,
+  "started_at": "2026-09-28T04:25:03.607632+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 479.3624000003547,
+    "retrieval": 229.69819999980245,
+    "total": 709.0606000001571
+  },
+  "unprovided_citations": []
+}

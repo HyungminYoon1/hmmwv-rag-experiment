@@ -1,0 +1,643 @@
+{
+  "citation_ids": [],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:18:40.692510+00:00",
+  "evaluation_answer": "I do not know the exact purchase price paid for a replacement fan by a specific maintenance unit yesterday. This information is not available in the provided reference material or in general knowledge.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 490,
+  "key": "r1-D09-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002390] TM 9-2320-280-20-1 | PDF 267 | Printed 2-183\nFAN TEMPERATURE\n\n[C006755] TM 9-2320-280-20-1 | PDF 682 | Printed 2-580\nIS THE FAN SWITCH IN PROPER\nPOSITION?\n\n[C007044] TM 9-2320-280-20-1 | PDF 715 | Printed 2-613\nReplace fan switch, refer to (para. 4-127).\n\n[C006776] TM 9-2320-280-20-1 | PDF 685 | Printed 2-583\nReplace evaporator fans,\nFAN T\nrefer to (para. 11-198).\n\n[C006877] TM 9-2320-280-20-1 | PDF 698 | Printed 2-596\nREPLACE\nEVAPORATOR FANS\nOR NOTIFY DS\nYES MAINTENANCE\nQUESTION:\nWhat was the exact purchase price paid for a replacement fan by a specific maintenance unit yesterday?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 194,
+  "question": "What was the exact purchase price paid for a replacement fan by a specific maintenance unit yesterday?",
+  "question_id": "D09",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:57.547285807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:55.768001007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4830937088.0,
+    "max_actual_interval_ms": 109.99730000003183,
+    "peak_rss_bytes": 7365910528,
+    "peak_vram_bytes": 4826349568,
+    "pids": [
+      13944,
+      15712,
+      30736,
+      31588,
+      33760,
+      37504,
+      37552,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4405.2052753,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4831232000
+      },
+      {
+        "monotonic": 4405.3152726,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4831232000
+      },
+      {
+        "monotonic": 4405.4086461,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4831232000
+      },
+      {
+        "monotonic": 4405.5172697,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4831232000
+      },
+      {
+        "monotonic": 4405.6101098,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4830937088
+      },
+      {
+        "monotonic": 4405.7177009,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4830937088
+      },
+      {
+        "monotonic": 4405.8112388,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4830937088
+      },
+      {
+        "monotonic": 4405.919567,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4826349568
+      },
+      {
+        "monotonic": 4406.0105651,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4826349568
+      },
+      {
+        "monotonic": 4406.1184738,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4826349568
+      },
+      {
+        "monotonic": 4406.2108854,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58249216,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365689344,
+        "vram_bytes": 4826349568
+      },
+      {
+        "monotonic": 4406.3206303,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58470400,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3140403200,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7364083712,
+        "vram_bytes": 4826349568
+      },
+      {
+        "monotonic": 4406.4146093,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58470400,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365910528,
+        "vram_bytes": 4826349568
+      },
+      {
+        "monotonic": 4406.5085715,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58470400,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365910528,
+        "vram_bytes": 4826349568
+      },
+      {
+        "monotonic": 4406.6146336,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58470400,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365910528,
+        "vram_bytes": 4826349568
+      },
+      {
+        "monotonic": 4406.7202942,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58470400,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365910528,
+        "vram_bytes": 4826349568
+      },
+      {
+        "monotonic": 4406.811919,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58470400,
+          "15712": 4452352,
+          "30736": 12607488,
+          "31588": 7491584,
+          "33760": 4036308992,
+          "37504": 3142230016,
+          "37552": 96907264,
+          "37564": 7442432
+        },
+        "rss_bytes": 7365910528,
+        "vram_bytes": 4826349568
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:18:40.691883Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 36,
+    "eval_duration": 521365000,
+    "load_duration": 1559600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 194,
+    "prompt_eval_count": 490,
+    "prompt_eval_duration": 66078999,
+    "response": "I do not know the exact purchase price paid for a replacement fan by a specific maintenance unit yesterday. This information is not available in the provided reference material or in general knowledge.",
+    "total_duration": 590713000
+  },
+  "retrieval": {
+    "embedding_ms": 69.1276999996262,
+    "items": [
+      {
+        "body_end": 15,
+        "body_start": 0,
+        "id": "C002390",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          267
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-183"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002709",
+          "R002710"
+        ],
+        "review_ids": [],
+        "score": 0.6254985332489014,
+        "source_issues": [
+          {
+            "description": "Teat가 PDF 화면에도 인쇄됨.",
+            "id": "TEAT",
+            "pdf_page": 267,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "FAN TEMPERATURE",
+        "text_sha256": "2230c813dcbcb4650f81488f6601a61d10b37a1785733329b1e507d5f5ad29ef",
+        "token_count": 4,
+        "unit_id": "U002384",
+        "unit_key": "region:267:1:11"
+      },
+      {
+        "body_end": 37,
+        "body_start": 0,
+        "id": "C006755",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          682
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-580"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R007760",
+          "R007761"
+        ],
+        "review_ids": [],
+        "score": 0.5952710509300232,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B012",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "DIAGNOSTIC_PANEL",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "IS THE FAN SWITCH IN PROPER\nPOSITION?",
+        "text_sha256": "330fbb69afb05bbfdd4a4b643e42e84c025a04d5fbd24a074cbd0919bd5853fd",
+        "token_count": 11,
+        "unit_id": "U006747",
+        "unit_key": "region:682:1:5"
+      },
+      {
+        "body_end": 43,
+        "body_start": 0,
+        "id": "C007044",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          715
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-613"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R008231",
+          "R008232"
+        ],
+        "review_ids": [],
+        "score": 0.5828031301498413,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Replace fan switch, refer to (para. 4-127).",
+        "text_sha256": "ace0d17c707dffc39c2a68c07c3d812dc3a43b4873321d8ffa65508f2ee12cfc",
+        "token_count": 16,
+        "unit_id": "U007036",
+        "unit_key": "region:715:1:12"
+      },
+      {
+        "body_end": 55,
+        "body_start": 0,
+        "id": "C006776",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          685
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-583"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R007793",
+          "R007794"
+        ],
+        "review_ids": [],
+        "score": 0.5625680088996887,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Replace evaporator fans,\nFAN T\nrefer to (para. 11-198).",
+        "text_sha256": "826dc57044c41c7887262f9f5cf0fd40d95c63237d75030ffff0447a5786bcde",
+        "token_count": 22,
+        "unit_id": "U006768",
+        "unit_key": "region:685:1:5"
+      },
+      {
+        "body_end": 52,
+        "body_start": 0,
+        "id": "C006877",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          698
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-596"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R007953",
+          "R007954"
+        ],
+        "review_ids": [],
+        "score": 0.5623972415924072,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-centre",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "DIAGNOSTIC_PANEL",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REPLACE\nEVAPORATOR FANS\nOR NOTIFY DS\nYES MAINTENANCE",
+        "text_sha256": "1a7285555aa5182b79ab5f1378add841cb63be9a99b6119cf43b409760fd1add",
+        "token_count": 19,
+        "unit_id": "U006869",
+        "unit_key": "region:698:1:4"
+      }
+    ],
+    "search_ms": 7.7185000000099535
+  },
+  "round": 1,
+  "sequence": 19,
+  "started_at": "2026-09-28T04:18:40.022640+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 592.8136000002269,
+    "retrieval": 77.2703000002366,
+    "total": 670.0839000004635
+  },
+  "unprovided_citations": []
+}

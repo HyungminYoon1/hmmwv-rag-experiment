@@ -1,0 +1,250 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T05:09:12.236964+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "C001029",
+          "C001029"
+        ],
+        "evidence_quotes": [
+          "(M996,\nM996A1,\nM997,\nM997A1, and\nM997A2)",
+          "Using multimeter, check for volt-\nage at DC receptacles. If engine is run-\nning, voltage should be 27-28 volts."
+        ],
+        "reason": "The ambulance inspection includes M997 and specifies 27–28 volts at DC receptacles when the engine is running.",
+        "statement": "On an M997 with the engine running, the specified DC outlet voltage range is 27–28 V.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "C001029"
+        ],
+        "evidence_quotes": [
+          "If engine is run-\nning, voltage should be 27-28 volts."
+        ],
+        "reason": "The specified engine-running range is 27–28 V, which excludes 26 V.",
+        "statement": "On an M997 with the engine running, a DC outlet reading of 26 V is within its specified voltage range.",
+        "verdict": 0
+      },
+      {
+        "evidence_ids": [
+          "C002839",
+          "C002705"
+        ],
+        "evidence_quotes": [
+          "Output voltage of 26-30.5 is acceptable for this\nalternator.",
+          "START ENGINE AND ALLOW TO\nIDLE AT 1200 - 1500 RPM FOR 2 - 3\nMINUTES.\nRECHECK VOLTAGE OUTPUT."
+        ],
+        "reason": "The alternator reference gives 26–30.5 as acceptable output voltage, and the alternator test procedure specifies 1,200–1,500 RPM.",
+        "statement": "On an M997, the acceptable alternator output range for the test at 1,200–1,500 RPM is 26–30.5 V.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "C002515"
+        ],
+        "evidence_quotes": [
+          "LOCK THROTTLE AT 1200-1500\nRPM.\nIS VOLTAGE AT ALTERNATOR\nOUTPUT TERMINAL 27-29 VOLTS ?"
+        ],
+        "reason": "At 1,200–1,500 RPM, the alternator flowchart asks whether output is 27–29 V; 28 V falls within that range.",
+        "statement": "On an M997, an alternator test reading of 28 V at 1,200–1,500 RPM is within its acceptable range.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790658554,
+      "conversation": null,
+      "created_at": 1790658544.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_021f347b32d381ac016abb47f008fc87d097ea63d86f64a15b",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqu0f6JcqAZpvH2Q4GkD-5FF6bcENAtS1aZF6QC-ZpqLMaWVmcuYaZrVn8hHlXcr9zzOEToCTwKAfI4sMAEzMb-v5SVgPC_87TTD01r8_YY29Y3thw12c8UmAqS5PZuwU_7OShDh3EvJNzCfuyokw0c3X1NZz1xn_kFTUPYOOcxmRBKNJz4Z5c5heCka-ip0OrkXow_rHKvQslGC0-dTCT6F8fARMmZ0o7AnKPpH6B4vHcvRHEOCLcnf4fDS536wbsfvhmR8_7KHAJoNBS8O5jD8ndoJF73KkjC96UlXLkyngjNMtmwn-2M0wolq13OffYrUnZoloiH1-crG4w-W-7D2EMNccmo9SDnUP5N41Rxw6tAjfvUN_g3Ri7NVFVv0odJuz1Xi_nDSWBMW0GS8vh2Tm7UUfninxxNmQTNKAYnA0f9FOPsyknimFi0gtvDuNzz8rt-EgVTcuiT0zJ2RLRiwpWHeXgVXcpgtSSAT60KYC37C_dExDXr4fdqEtBpDs4xd_zG5WGe2ZJmnJOROIU24NBKJpqc5R5LhS4--opQ3S6uxwmC0iADm_cCegGI1_KpKDi9QbaCfDonX9ELtPJrFuo6tgrJI7-cOlpYnoo6mWJ8Ep4ZAE8t_TXJts0pztt2oHTdalBSjmj0hIJheBknhkbReOkB8TR8l7Xbnsd8ZCyiTTucvHb6N3LzuDQ66Kc22finORAZcMYR0LvGIOd9uAT1VdcZw0FjeEZORBl09kJ7kr8-Q6nwmw9oZAiCG2iwL9423JkzVfJX5JCC6XJgctFffI6vfmjpDicp_-B5eRfdFEESDVLcpf9oj8HSOgcyjouGyiVxM2xLP3JvSE4rv_vU1oAskOHS2oqnx-C8RkTjZksTKfOS73UKmBIsprql1eWTTZnytafY62SCFCgX0auc7wD5NH9c1aTfkwktC9OHLTgt0fblIgvq7-QNC90Hkg2XNh8Il14TzSlVA-J4GZETJ3FXTYLGjhBfWNdlWxxicbk2faDTgcV9EoOIZWco2pUHi7ooHI8YwIrYzP0xoCCeWtg7_jANhNZMP3kE-d4G5imIzGom7EVFrtxOt0l5e0COXsD5ey1yuQPLMbd1eeGc5hifAzt-zWM0y68iaGkHMiiggdcqnyEnZMZoQR_MsrKcYPvU53Oqa-nx03r5pMmCYG1aWFwGGX1ib3wB4B_6GL0iJClkR1TrPOq624yhtTPquE4U93fDnzVMLQ8oOyUZUL5VMPyHGCd25um3TXWyRXXTGI5KVfdLLGiPaegar2rcWz5IbvfEW0LNl_OPi3UE7C_gMq5GliqBhTYpE02-4iy4FNsi7PZcPdKsej3AJFcKTn9JSLEuE7uXmHP3mwRZyVgY_XSXcTj_aQdBRJtDylh-BjPoUBby9Hv_w3J9b-RQw1NmIk2nvfPNHoQv4rqM9C5eT-Fpn-1XmJCni3GRr4xwE1dl0f0w154irZjxKdSuDjCoJbcl8AzgRT--XBimqntLTOoojhQHZ1ymd9VRRSf3ccu5WjE9gZElSWL-5DYBJA69mkTGtG_w2XV9rvs8rsJwc9GyyeaoutiAn-3vq4HZT06PWKlO_90gY_gkxc1X5DWauBM_yoUpkDPPf4trSoxRJ7zWs2v7aa-2MAwykDraCRNfv8kw0VtV54f9EQ30XY4MsdeVZp96AX6lWyI8jjPsGyUD3ER64_TElbGBU7iRxppdDWKMWMVOH4CrzLR24v2PZNYILO0qU-kwJs_XmS2pfm5yEMhDU9LvpulvaUAVUKMSqMS-zrpLcWqyL5Q5CTJAARRRzsJR8ogEtjNWhcty2tYP91T-IfWm3AqeFlPjMiCj9G16JnTZwpK-xjQL-hWkwNqhNFzRewOtZAz5w==",
+          "id": "rs_021f347b32d381ac016abb47f0ede487d0ab516109ea2613d3",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"On an M997 with the engine running, the specified DC outlet voltage range is 27–28 V.\",\"reason\":\"The ambulance inspection includes M997 and specifies 27–28 volts at DC receptacles when the engine is running.\",\"verdict\":1,\"evidence_ids\":[\"C001029\",\"C001029\"],\"evidence_quotes\":[\"(M996,\\nM996A1,\\nM997,\\nM997A1, and\\nM997A2)\",\"Using multimeter, check for volt-\\nage at DC receptacles. If engine is run-\\nning, voltage should be 27-28 volts.\"]},{\"statement\":\"On an M997 with the engine running, a DC outlet reading of 26 V is within its specified voltage range.\",\"reason\":\"The specified engine-running range is 27–28 V, which excludes 26 V.\",\"verdict\":0,\"evidence_ids\":[\"C001029\"],\"evidence_quotes\":[\"If engine is run-\\nning, voltage should be 27-28 volts.\"]},{\"statement\":\"On an M997, the acceptable alternator output range for the test at 1,200–1,500 RPM is 26–30.5 V.\",\"reason\":\"The alternator reference gives 26–30.5 as acceptable output voltage, and the alternator test procedure specifies 1,200–1,500 RPM.\",\"verdict\":1,\"evidence_ids\":[\"C002839\",\"C002705\"],\"evidence_quotes\":[\"Output voltage of 26-30.5 is acceptable for this\\nalternator.\",\"START ENGINE AND ALLOW TO\\nIDLE AT 1200 - 1500 RPM FOR 2 - 3\\nMINUTES.\\nRECHECK VOLTAGE OUTPUT.\"]},{\"statement\":\"On an M997, an alternator test reading of 28 V at 1,200–1,500 RPM is within its acceptable range.\",\"reason\":\"At 1,200–1,500 RPM, the alternator flowchart asks whether output is 27–29 V; 28 V falls within that range.\",\"verdict\":1,\"evidence_ids\":[\"C002515\"],\"evidence_quotes\":[\"LOCK THROTTLE AT 1200-1500\\nRPM.\\nIS VOLTAGE AT ALTERNATOR\\nOUTPUT TERMINAL 27-29 VOLTS ?\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_021f347b32d381ac016abb47f3f32487d0850ccfb40edea326",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1738,
+        "input_tokens_details": {
+          "cache_write_tokens": 1735,
+          "cached_tokens": 0
+        },
+        "output_tokens": 651,
+        "output_tokens_details": {
+          "reasoning_tokens": 150
+        },
+        "total_tokens": 2389
+      },
+      "user": null
+    },
+    "request_id": "resp_021f347b32d381ac016abb47f008fc87d097ea63d86f64a15b",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"On an M997 with the engine running, the specified DC outlet voltage range is 27–28 V.\",\"reason\":\"The ambulance inspection includes M997 and specifies 27–28 volts at DC receptacles when the engine is running.\",\"verdict\":1,\"evidence_ids\":[\"C001029\",\"C001029\"],\"evidence_quotes\":[\"(M996,\\nM996A1,\\nM997,\\nM997A1, and\\nM997A2)\",\"Using multimeter, check for volt-\\nage at DC receptacles. If engine is run-\\nning, voltage should be 27-28 volts.\"]},{\"statement\":\"On an M997 with the engine running, a DC outlet reading of 26 V is within its specified voltage range.\",\"reason\":\"The specified engine-running range is 27–28 V, which excludes 26 V.\",\"verdict\":0,\"evidence_ids\":[\"C001029\"],\"evidence_quotes\":[\"If engine is run-\\nning, voltage should be 27-28 volts.\"]},{\"statement\":\"On an M997, the acceptable alternator output range for the test at 1,200–1,500 RPM is 26–30.5 V.\",\"reason\":\"The alternator reference gives 26–30.5 as acceptable output voltage, and the alternator test procedure specifies 1,200–1,500 RPM.\",\"verdict\":1,\"evidence_ids\":[\"C002839\",\"C002705\"],\"evidence_quotes\":[\"Output voltage of 26-30.5 is acceptable for this\\nalternator.\",\"START ENGINE AND ALLOW TO\\nIDLE AT 1200 - 1500 RPM FOR 2 - 3\\nMINUTES.\\nRECHECK VOLTAGE OUTPUT.\"]},{\"statement\":\"On an M997, an alternator test reading of 28 V at 1,200–1,500 RPM is within its acceptable range.\",\"reason\":\"At 1,200–1,500 RPM, the alternator flowchart asks whether output is 27–29 V; 28 V falls within that range.\",\"verdict\":1,\"evidence_ids\":[\"C002515\"],\"evidence_quotes\":[\"LOCK THROTTLE AT 1200-1500\\nRPM.\\nIS VOLTAGE AT ALTERNATOR\\nOUTPUT TERMINAL 27-29 VOLTS ?\"]}]}",
+    "usage": {
+      "input_tokens": 1738,
+      "input_tokens_details": {
+        "cache_write_tokens": 1735,
+        "cached_tokens": 0
+      },
+      "output_tokens": 651,
+      "output_tokens_details": {
+        "reasoning_tokens": 150
+      },
+      "total_tokens": 2389
+    }
+  },
+  "record_hash": "a5e7c660940ba646249eab7b57eac7a21c979ba5a06f59438f48cbc6eb7db050",
+  "request_hash": "c3dc7dc2fb99bd79724404900855a64dd5c2260ccd3244b5b78445e21e26d606",
+  "started_at": "2026-09-29T05:09:01.500837+00:00",
+  "status": "OK"
+}

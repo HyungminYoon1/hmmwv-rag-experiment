@@ -1,0 +1,487 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:23:24.397255+00:00",
+  "evaluation_answer": "The specified piston diameters for the front service brake caliper and the rear service/parking brake caliper in the HMMWV (M998-series) are not available in the provided reference material. Therefore, based on the absence of excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), I cannot provide the exact piston diameters. This information may be found in the full manual or additional technical documentation.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 234,
+  "key": "r1-D05-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nWhat piston diameters are specified for the front service brake caliper and the rear service/parking brake caliper?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 207,
+  "question": "What piston diameters are specified for the front service brake caliper and the rear service/parking brake caliper?",
+  "question_id": "D05",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:41.252031007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:38.616050807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836835328.0,
+    "max_actual_interval_ms": 108.80720000022848,
+    "peak_rss_bytes": 3596161024,
+    "peak_vram_bytes": 4836835328,
+    "pids": [
+      13944,
+      30736,
+      36564,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4688.0169891,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4688.1242574,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4688.2322018,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4688.3265206,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4688.4199037,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4688.5286873,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4688.6246222,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4688.7185154,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4688.8262563,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4688.9196735,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97427456,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596152832,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.028065,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58662912,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596156928,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.1207226,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.2295298,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.325239,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.4330217,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.5263542,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.6175624,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.725136,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.8178644,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4689.9254155,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4690.0195104,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4690.1279099,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4690.2202309,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4690.3284167,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4690.4223262,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4690.5295951,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "30736": 12607488,
+          "36564": 97431552,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 3596161024,
+        "vram_bytes": 4836835328
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:23:24.3949319Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 114,
+    "eval_duration": 1509084000,
+    "load_duration": 2929000,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 207,
+    "prompt_eval_count": 234,
+    "prompt_eval_duration": 19371000,
+    "response": "The specified piston diameters for the front service brake caliper and the rear service/parking brake caliper in the HMMWV (M998-series) are not available in the provided reference material. Therefore, based on the absence of excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), I cannot provide the exact piston diameters. This information may be found in the full manual or additional technical documentation.",
+    "total_duration": 1534227500
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 13,
+  "started_at": "2026-09-28T04:23:22.834258+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1563.1073999993532,
+    "retrieval": null,
+    "total": 1563.1073999993532
+  },
+  "unprovided_citations": []
+}

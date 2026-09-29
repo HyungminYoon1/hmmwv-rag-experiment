@@ -1,0 +1,838 @@
+{
+  "citation_ids": [],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:28:46.340386+00:00",
+  "evaluation_answer": "After fording, items found contaminated should be relubricated.  \n\nThe GO refill quantities listed are:  \n- 2 quarts (1.9 L) per axle differential  \n- 1 pint (0.5 L) per geared hub  \n\n[REFERENCE: C000832, C000977]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1285,
+  "key": "r1-M16-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000977] TM 9-2320-280-20-1 | PDF 108,109 | Printed 2-17,2-18\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 16\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\nNOT FULLY MISSION CAPABLE IF: a. Hub vent lines\ncracked, plugged, or\nmissing.\nb. Class III leaks or\ndamage.\nc. Bearing damaged.\nd. Differential vent line\nhas hole, plugged, or\ncracked.\ne. Class III leak.\nPROCEDURES: a. Inspect geared hub vent lines and\nconnectors for security, cracks, and\ndeterioration.\nb. Inspect geared hub for leaking\nseals and damage.\nCAUTION\nChange geared hub and differential\nlubricants when required by mainte-\nnance repair action, contaminated by\nwater or foreign material, or if\nlubricant appears by smell, feel, or\nvisual indication to be overheated.\nNOTE\n•Fill each axle differential with 2\nquarts (1.9 L) of GO.\n•Fill each geared hub with 1 pint\n(0.5 L) of GO.\nc. Adjust spindle bearing\n(paragraph 6-14).\nd. Inspect differential vent lines and\nconnectors for security, cracks, and\ndeterioration.\ne. Inspect differentials for leaking\nseals and cracks.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n(Cont’d)\nNOT FULLY MISSION CAPABLE IF: f. Lube level not within\n1/4 inch (6.4 mm) of fill\nplug opening when cold\nor to plug level when hot.\ng. U-joint is damaged,\nunserviceable, or missing\nlubrication fitting.\nh. Loose, missing, or\nbroken capscrews.\ni. Rubber block or center\nsupport bearing is worn or\npropeller shaft wobbles.\nPROCEDURES: f. M998, M998A1, and M1121 series\nvehicles – Check differential lubricant\nlevel semiannually\n\n[C000832] TM 9-2320-280-20-1 | PDF 93 | Printed 2-2\n(3) Clean fittings before lubrication. Clean parts with drycleaning solvent (SD), type II, or equivalent.\nDry before lubricating. Relubricate all items found contaminated after fording.\n\n[C000836] TM 9-2320-280-20-1 | PDF 93 | Printed 2-2\n(5) Read “Processing and Deprocessing Record of Shipping, Storage, and Issue of Vehicles and Spare\nEngines,” tag (DD Form 1397) and follow all precautions listed. This tag should be attached to steering\nwheel, steering column, or rotary switch.\n\n[C001031] TM 9-2320-280-20-1 | PDF 114,115 | Printed 2-23,2-24\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 25\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: DeepWater\nFording Kit\nSPECIAL PURPOSE KITS\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 25\nITEM TO BE INSPECTED: DeepWater\nFording Kit\nNOT FULLY MISSION CAPABLE IF: c. Any exhaust extension\nleaks.\nPROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions.\nb. Inspect vent tube mounting hard-\nware for proper installation.\nc. Inspect intake and exhaust exten-\nsions for proper installation and leaks.\n\n[C000011] TM 9-2320-280-20-1 | PDF 32 | Printed 1-2\n1-6. EQUIPMENT IMPROVEMENT REPORT AND MAINTENANCE DIGEST (EIR MD)\n1-8. MANDATORY REPLACEMENT PARTS\n\nThe maintenance instructions contained herein make reference to removing and discarding piece\nparts such as: gaskets, lockwashers, cotter pins, O-rings, seals; etc.; these items should be considered\nmandatory replacement items and replaced with new parts during assembly/installation.\nQUESTION:\nAfter fording, what general instruction applies to items found contaminated, and what GO refill quantities are listed for each axle differential and each geared hub?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 195,
+  "question": "After fording, what general instruction applies to items found contaminated, and what GO refill quantities are listed for each axle differential and each geared hub?",
+  "question_id": "M16",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:16:03.194532407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:15:59.959018007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 115.6885999998849,
+    "peak_rss_bytes": 11098173440,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5009.5500436,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5009.6657322,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5009.7601521,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5009.8544179,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5009.9634495,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.0549537,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.1638342,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.2566712,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.3647643,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.4571743,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043456512,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10878996480,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.5516165,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043460608,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10879000576,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.660693,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6599954432,
+          "37564": 7958528
+        },
+        "rss_bytes": 10879131648,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.7540789,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6626140160,
+          "37564": 7958528
+        },
+        "rss_bytes": 10905317376,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.8617768,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6725492736,
+          "37564": 7958528
+        },
+        "rss_bytes": 11004669952,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5010.9553972,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6813966336,
+          "37564": 7958528
+        },
+        "rss_bytes": 11093143552,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.0632857,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6818996224,
+          "37564": 7958528
+        },
+        "rss_bytes": 11098173440,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.1559468,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6715240448,
+          "37564": 7958528
+        },
+        "rss_bytes": 10994417664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.2655541,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6704205824,
+          "37564": 7958528
+        },
+        "rss_bytes": 10983383040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.3581149,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6704205824,
+          "37564": 7958528
+        },
+        "rss_bytes": 10983383040,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.4507715,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.5591654,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.6518149,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.7613334,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.8538083,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5011.9641529,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5012.0571455,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5012.164725,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5012.2579338,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5012.3506033,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5012.4588194,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103055360,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043591680,
+          "35444": 8007680,
+          "36040": 100040704,
+          "37504": 6706032640,
+          "37564": 7958528
+        },
+        "rss_bytes": 10985209856,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:28:46.3385623Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 72,
+    "eval_duration": 1109925000,
+    "load_duration": 8597100,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 195,
+    "prompt_eval_count": 1285,
+    "prompt_eval_duration": 250887000,
+    "response": "After fording, items found contaminated should be relubricated.  \n\nThe GO refill quantities listed are:  \n- 2 quarts (1.9 L) per axle differential  \n- 1 pint (0.5 L) per geared hub  \n\n[REFERENCE: C000832, C000977]",
+    "total_duration": 1834966300
+  },
+  "retrieval": {
+    "embedding_ms": 109.76019999998243,
+    "items": [
+      {
+        "body_end": 1476,
+        "body_start": 0,
+        "id": "C000977",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          108,
+          109
+        ],
+        "prefix_chars": 162,
+        "printed_pages": [
+          "2-17",
+          "2-18"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5842541456222534,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "16",
+          "row_ids": [
+            "P0108-T2_1-R02",
+            "P0109-T2_1-R01",
+            "P0110-T2_1-R01"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 16\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\nNOT FULLY MISSION CAPABLE IF: a. Hub vent lines\ncracked, plugged, or\nmissing.\nb. Class III leaks or\ndamage.\nc. Bearing damaged.\nd. Differential vent line\nhas hole, plugged, or\ncracked.\ne. Class III leak.\nPROCEDURES: a. Inspect geared hub vent lines and\nconnectors for security, cracks, and\ndeterioration.\nb. Inspect geared hub for leaking\nseals and damage.\nCAUTION\nChange geared hub and differential\nlubricants when required by mainte-\nnance repair action, contaminated by\nwater or foreign material, or if\nlubricant appears by smell, feel, or\nvisual indication to be overheated.\nNOTE\n•Fill each axle differential with 2\nquarts (1.9 L) of GO.\n•Fill each geared hub with 1 pint\n(0.5 L) of GO.\nc. Adjust spindle bearing\n(paragraph 6-14).\nd. Inspect differential vent lines and\nconnectors for security, cracks, and\ndeterioration.\ne. Inspect differentials for leaking\nseals and cracks.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n(Cont’d)\nNOT FULLY MISSION CAPABLE IF: f. Lube level not within\n1/4 inch (6.4 mm) of fill\nplug opening when cold\nor to plug level when hot.\ng. U-joint is damaged,\nunserviceable, or missing\nlubrication fitting.\nh. Loose, missing, or\nbroken capscrews.\ni. Rubber block or center\nsupport bearing is worn or\npropeller shaft wobbles.\nPROCEDURES: f. M998, M998A1, and M1121 series\nvehicles – Check differential lubricant\nlevel semiannually",
+        "text_sha256": "8d328b764cb762628190e1f13a6a93be80de06dc562aa9fc9a02a50660181ce7",
+        "token_count": 500,
+        "unit_id": "U000974",
+        "unit_key": "pmcs:16"
+      },
+      {
+        "body_end": 185,
+        "body_start": 0,
+        "id": "C000832",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          93
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-2"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R000984"
+        ],
+        "review_ids": [],
+        "score": 0.5806363821029663,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[0]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "(3) Clean fittings before lubrication. Clean parts with drycleaning solvent (SD), type II, or equivalent.\nDry before lubricating. Relubricate all items found contaminated after fording.",
+        "text_sha256": "9ffc48ce7aac9ee0dc567504ee482699f90d708749cf5994af532d70e965416a",
+        "token_count": 42,
+        "unit_id": "U000832",
+        "unit_key": "region:93:1:1"
+      },
+      {
+        "body_end": 244,
+        "body_start": 0,
+        "id": "C000836",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          93
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-2"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R000988"
+        ],
+        "review_ids": [],
+        "score": 0.5512304306030273,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[4]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "(5) Read “Processing and Deprocessing Record of Shipping, Storage, and Issue of Vehicles and Spare\nEngines,” tag (DD Form 1397) and follow all precautions listed. This tag should be attached to steering\nwheel, steering column, or rotary switch.",
+        "text_sha256": "87298368e625bee13c4776027cf8701492f6d416f76273e07a91ee40fd806196",
+        "token_count": 58,
+        "unit_id": "U000836",
+        "unit_key": "region:93:1:5"
+      },
+      {
+        "body_end": 379,
+        "body_start": 0,
+        "id": "C001031",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          114,
+          115
+        ],
+        "prefix_chars": 182,
+        "printed_pages": [
+          "2-23",
+          "2-24"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5486566424369812,
+        "source_issues": [
+          {
+            "description": "Reefer to para. 2-39는 원문 표기임.",
+            "id": "REEFER_CASE",
+            "pdf_page": 115,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "25",
+          "row_ids": [
+            "P0115-T2_1-R02"
+          ],
+          "source_issues": [
+            "REEFER_CASE"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 25\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: DeepWater\nFording Kit\nSPECIAL PURPOSE KITS\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 25\nITEM TO BE INSPECTED: DeepWater\nFording Kit\nNOT FULLY MISSION CAPABLE IF: c. Any exhaust extension\nleaks.\nPROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions.\nb. Inspect vent tube mounting hard-\nware for proper installation.\nc. Inspect intake and exhaust exten-\nsions for proper installation and leaks.",
+        "text_sha256": "dc8d7a82915acbd8e3a1753b0041010314ab870b1908ac2d14d6758db3b4a2be",
+        "token_count": 159,
+        "unit_id": "U001025",
+        "unit_key": "pmcs:25"
+      },
+      {
+        "body_end": 284,
+        "body_start": 0,
+        "id": "C000011",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          32
+        ],
+        "prefix_chars": 100,
+        "printed_pages": [
+          "1-2"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R000523"
+        ],
+        "review_ids": [],
+        "score": 0.5455456376075745,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[5]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "numbered_section",
+          "section": "1-8",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-6. EQUIPMENT IMPROVEMENT REPORT AND MAINTENANCE DIGEST (EIR MD)\n1-8. MANDATORY REPLACEMENT PARTS\n\nThe maintenance instructions contained herein make reference to removing and discarding piece\nparts such as: gaskets, lockwashers, cotter pins, O-rings, seals; etc.; these items should be considered\nmandatory replacement items and replaced with new parts during assembly/installation.",
+        "text_sha256": "66089e277556b128fadbc26befac20053d9724af5ebabcea3a95657495c824a6",
+        "token_count": 91,
+        "unit_id": "U000011",
+        "unit_key": "region:32:3:1"
+      }
+    ],
+    "search_ms": 10.717500000282598
+  },
+  "round": 1,
+  "sequence": 51,
+  "started_at": "2026-09-28T04:28:44.366783+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1852.4671999994098,
+    "retrieval": 121.6749000004711,
+    "total": 1974.1420999998809
+  },
+  "unprovided_citations": []
+}

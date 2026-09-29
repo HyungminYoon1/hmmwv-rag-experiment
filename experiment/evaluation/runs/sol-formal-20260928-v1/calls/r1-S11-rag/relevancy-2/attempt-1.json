@@ -1,0 +1,154 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:43:09.290801+00:00",
+  "parsed": {
+    "noncommittal": 0,
+    "question": "What is the normally specified coolant mixture for the engine cooling system?"
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588589,
+      "conversation": null,
+      "created_at": 1790588587.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0275ab731cc6bd97016aba36ab9f0887d09a069da75202fb39",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"question\":\"What is the normally specified coolant mixture for the engine cooling system?\",\"noncommittal\":0}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0275ab731cc6bd97016aba36acabd487d0a16dda66b6ff0d08",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerRelevanceOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for answer relevance question generation.",
+            "properties": {
+              "noncommittal": {
+                "description": "1 if the response is evasive/vague, 0 if it is substantive",
+                "title": "Noncommittal",
+                "type": "integer"
+              },
+              "question": {
+                "description": "Question that can be answered from the response",
+                "title": "Question",
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "noncommittal"
+            ],
+            "title": "AnswerRelevanceOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 605,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 639
+      },
+      "user": null
+    },
+    "request_id": "resp_0275ab731cc6bd97016aba36ab9f0887d09a069da75202fb39",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"question\":\"What is the normally specified coolant mixture for the engine cooling system?\",\"noncommittal\":0}",
+    "usage": {
+      "input_tokens": 605,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 34,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 639
+    }
+  },
+  "record_hash": "6ea77cd697deadbf121ff17be769addecc928fca7c2ff5379dcbcd5b0a6fe64d",
+  "request_hash": "c1b504eb3739d92b0b6e06419d36fc640f910cb26e2709bf330c8713bbfff56f",
+  "started_at": "2026-09-28T09:43:07.487940+00:00",
+  "status": "OK"
+}

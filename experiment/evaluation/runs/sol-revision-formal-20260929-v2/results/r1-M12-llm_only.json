@@ -1,0 +1,251 @@
+{
+  "at": "2026-09-29T04:54:21.084011+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "2e0ac10c0de8774be13d85b85264ef62f3b3bf1387ed01502dfd14dfba9fbb00",
+  "result": {
+    "attempt_key": "r1-M12-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 19.358291599999575,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.891270033996745
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.891270033996745
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M12",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives specific forms, reporting timing, and a tightening torque."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.880885071004047,
+          0.8964624968490447,
+          0.8964625341371432
+        ],
+        "query_vector_hash": "48537b9772685f10ff3d67ab4dfc4e2e50160d9bf39271096b7742613c4c6410",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "How should loose starter mounting bolts found during PMCS be reported, by when, and to what torque should they be tightened?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How should loose starter mounting bolts found during PMCS be reported, when must they be reported, and what is their specified tightening torque?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How should loose starter mounting bolts found during PMCS be reported, when must they be reported, and what is their specified tightening torque?"
+          }
+        ],
+        "response_vectors_hash": "1fcef8be82a68db686f46f4281f86a1d432d722f98f27e89eefd665cae901a42",
+        "score": 0.8912700339967449
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer includes the citation [TM9-2320-280-20-1, C000123]."
+        ],
+        "shared_conditions": [
+          "Loose starter mounting bolts are found during PMCS."
+        ],
+        "statements": [
+          {
+            "answer_quote": "reported using Form 300 (Maintenance Report)",
+            "statement": "When loose starter mounting bolts are found during PMCS, the shortcoming is reported using Form 300 (Maintenance Report)."
+          },
+          {
+            "answer_quote": "must be reported within 24 hours of detection",
+            "statement": "When loose starter mounting bolts are found during PMCS, the shortcoming must be reported within 24 hours of detection."
+          },
+          {
+            "answer_quote": "specified tightening torque for starter mounting bolts is 15 ft-lbs",
+            "statement": "For starter mounting bolts found loose during PMCS, the specified tightening torque is 15 ft-lbs."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "reported using Form 300 (Maintenance Report)",
+          "id": "C001",
+          "text": "When loose starter mounting bolts are found during PMCS, the shortcoming is reported using Form 300 (Maintenance Report)."
+        },
+        {
+          "answer_quote": "must be reported within 24 hours of detection",
+          "id": "C002",
+          "text": "When loose starter mounting bolts are found during PMCS, the shortcoming must be reported within 24 hours of detection."
+        },
+        {
+          "answer_quote": "specified tightening torque for starter mounting bolts is 15 ft-lbs",
+          "id": "C003",
+          "text": "For starter mounting bolts found loose during PMCS, the specified tightening torque is 15 ft-lbs."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M12-A01",
+            "reason": "The answer names Form 300, not DA Form 2404 or DA Form 5988-E."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M12-A02",
+            "reason": "Within 24 hours contradicts immediate reporting after PMCS; the answer also omits reporting before corrective action."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M12-A03",
+            "reason": "The stated 15 ft-lbs contradicts the specified 40 lb-ft (54 N·m)."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000856"
+              ],
+              "evidence_quotes": [
+                "All vehicle shortcomings will be reported on DA Form 2404 Equipment Inspection and Maintenance\nWorksheet or DA Form 5988-E (automated) (DA Pam 738-750) immediately after the PMCS, and before\ntaking corrective action."
+              ],
+              "reason": "The context specifies DA Form 2404 or DA Form 5988-E, not Form 300.",
+              "statement": "When loose starter mounting bolts are found during PMCS, the shortcoming is reported using Form 300 (Maintenance Report).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000856"
+              ],
+              "evidence_quotes": [
+                "All vehicle shortcomings will be reported on DA Form 2404 Equipment Inspection and Maintenance\nWorksheet or DA Form 5988-E (automated) (DA Pam 738-750) immediately after the PMCS, and before\ntaking corrective action."
+              ],
+              "reason": "The context requires reporting immediately after PMCS and before corrective action; it does not specify a 24-hour deadline from detection.",
+              "statement": "When loose starter mounting bolts are found during PMCS, the shortcoming must be reported within 24 hours of detection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000961"
+              ],
+              "evidence_quotes": [
+                "a. Inspect starter for mounting\nsecurity. Tighten mounting bolts to\n40 lb-ft (54 N•m)."
+              ],
+              "reason": "The starter inspection procedure specifies 40 lb-ft, not 15 ft-lbs.",
+              "statement": "For starter mounting bolts found loose during PMCS, the specified tightening torque is 15 ft-lbs.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.880885071004047,
+          0.8964624968490447,
+          0.8964625341371432
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.891270033996745,
+        "query_vector_hash": "48537b9772685f10ff3d67ab4dfc4e2e50160d9bf39271096b7742613c4c6410",
+        "ragas_score": 0.8912700339967449,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "1fcef8be82a68db686f46f4281f86a1d432d722f98f27e89eefd665cae901a42"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.880885071004047,
+          0.8964624968490447,
+          0.8964625341371432
+        ],
+        "decimal50_cosines": [
+          "0.88088507100404701280140682035986863647866754457593",
+          "0.89646249684904464025078605539419239470737080253497",
+          "0.89646253413714302377316939466467602489269104277763"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8912700339967449
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8912700339967449
+          }
+        },
+        "query_vector_hash": "48537b9772685f10ff3d67ab4dfc4e2e50160d9bf39271096b7742613c4c6410",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "How should loose starter mounting bolts found during PMCS be reported, by when, and to what torque should they be tightened?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How should loose starter mounting bolts found during PMCS be reported, when must they be reported, and what is their specified tightening torque?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How should loose starter mounting bolts found during PMCS be reported, when must they be reported, and what is their specified tightening torque?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "1fcef8be82a68db686f46f4281f86a1d432d722f98f27e89eefd665cae901a42",
+        "score": 0.891270033996745
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "f56f977daaf6b7f509084415200972ff345901c5107254e8f8fb29d3f87c31ec"
+}

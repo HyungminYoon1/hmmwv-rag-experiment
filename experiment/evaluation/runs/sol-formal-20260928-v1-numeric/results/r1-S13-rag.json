@@ -1,0 +1,201 @@
+{
+  "at": "2026-09-28T09:55:51.922315+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "cd27c5150f7e54b940cf2d8354cb9e89f4a30e167877641b98722fe75ab8e4e4",
+  "original_result_sha256": "60e0824fe94fada6ea7551bf04ba70484a100c534a554c38843b2cbad35b3362",
+  "result": {
+    "attempt_key": "r1-S13-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 20.96836170000097,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9846734198306292
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9846734198306292
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S13",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a concrete cranking speed of 200 RPM."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9902412560991547,
+          0.9735377472935782,
+          0.9902412560991547
+        ],
+        "query_vector_hash": "82a42c44daa3d6776d3375573d1aa0159c6caebebcc6e0b5a3a720997e08d874",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What approximate cranking speed is stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What approximate cranking speed does the Engine Lubrication Tests reference state for STE/ICE-R Test 10?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What approximate cranking speed is stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10?"
+          }
+        ],
+        "response_vectors_hash": "5a372cae2fbec6ba1a046d0c89ac689c2f11dec24f1fd3799da6fb568717e052",
+        "score": 0.9846734198306294
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The approximate cranking speed stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10 is 200 RPM."
+        }
+      ],
+      "claims_raw": [
+        "The approximate cranking speed stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10 is 200 RPM."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "200 RPM",
+            "fulfilled": 1,
+            "id": "S13-A01",
+            "reason": "The reference states cranking RPM should be approximately 200."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002415"
+              ],
+              "evidence_quotes": [
+                "REFERENCE INFORMATION\nENGINE LUBRICATION\n\nENGINE RPM\nSTE/ICE-R TEST 10\n1. Start Test 10, Engine RPM.\n2. Crank or start the engine. Displayed\nreading is RPM. Cranking RPM\nshould be approximately 200."
+              ],
+              "reason": "The Engine Lubrication reference for Test 10 states that cranking RPM should be approximately 200.",
+              "statement": "The approximate cranking speed stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10 is 200 RPM.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:crank200"
+              ],
+              "evidence_quotes": [
+                "Cranking RPM\nshould be approximately 200."
+              ],
+              "reason": "The reference states that cranking RPM should be approximately 200.",
+              "statement": "The approximate cranking speed stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10 is 200 RPM.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.9902412560991547,
+          0.9735377472935782,
+          0.9902412560991547
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9846734198306292,
+        "query_vector_hash": "82a42c44daa3d6776d3375573d1aa0159c6caebebcc6e0b5a3a720997e08d874",
+        "ragas_score": 0.9846734198306294,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "5a372cae2fbec6ba1a046d0c89ac689c2f11dec24f1fd3799da6fb568717e052"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9902412560991547,
+          0.9735377472935782,
+          0.9902412560991547
+        ],
+        "decimal50_cosines": [
+          "0.99024125609915457131213637663101470132307768068149",
+          "0.97353774729357817682042773812224237367334411556757",
+          "0.99024125609915457131213637663101470132307768068149"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9846734198306294
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9846734198306294
+          }
+        },
+        "query_vector_hash": "82a42c44daa3d6776d3375573d1aa0159c6caebebcc6e0b5a3a720997e08d874",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What approximate cranking speed is stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What approximate cranking speed does the Engine Lubrication Tests reference state for STE/ICE-R Test 10?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What approximate cranking speed is stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "5a372cae2fbec6ba1a046d0c89ac689c2f11dec24f1fd3799da6fb568717e052",
+        "score": 0.9846734198306292
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "bcf5498b94e956e34463fd070fd2129fe602f867a8666c8c56280b0ee7cee262"
+}

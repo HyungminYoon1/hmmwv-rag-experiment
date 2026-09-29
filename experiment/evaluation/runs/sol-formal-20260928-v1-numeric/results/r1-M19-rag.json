@@ -1,0 +1,299 @@
+{
+  "at": "2026-09-28T09:55:51.788033+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "c5aca72a8f71f9c1496bef6a133cd8f167c185f1a8ef8b41526769d512d7ef3f",
+  "original_result_sha256": "94791d5183b5f2e5fe234ea01e1f87013c8cb0d541f15268b3cd961db1139fea",
+  "result": {
+    "attempt_key": "r1-M19-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 44.621676800001296,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.6
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M19",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "The response gives specific lubricant-change instructions and temperature thresholds, but says it cannot determine the transmission-specific arctic fluid."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8272281550135655,
+          0.8480824463784289,
+          0.8480824463784289
+        ],
+        "query_vector_hash": "0032cd6aaa357e9d35cbbd87adbdd4b74fb0ac67c02e8c3db4b96ae66105f46b",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What transmission fluid is specified for arctic conditions below -15°F (-26°C)?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What transmission lubricant is specified for arctic conditions below -15°F (-26°C)?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What transmission lubricant is specified for arctic conditions below -15°F (-26°C)?"
+          }
+        ],
+        "response_vectors_hash": "313b89b375ac910015b6d88c7df83306627cdc2850f0cc5348c195b388e72ebc",
+        "score": 0.0
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to remove lubricants prescribed for temperatures above -15°F (-26°C)."
+        },
+        {
+          "id": "C002",
+          "text": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to relubricate with lubricants specified for temperatures below -15°F (-26°C)."
+        },
+        {
+          "id": "C003",
+          "text": "If OEA lubricant is required, OEA lubricant must replace OE/HDO 10 lubricant in all temperature ranges where OE/HDO 10 is specified."
+        },
+        {
+          "id": "C004",
+          "text": "The transmission PMCS notes specify that OE/HDO 15/40 (Grade 15W-40) lubricant may be used in arctic conditions when expected temperatures are above +5°F (-15°C)."
+        },
+        {
+          "id": "C005",
+          "text": "The transmission PMCS notes specify that OEA lubricant is required for temperatures below -15°F (-26°C) and must replace OE/HDO 10 lubricant."
+        }
+      ],
+      "claims_raw": [
+        "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to remove lubricants prescribed for temperatures above -15°F (-26°C).",
+        "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to relubricate with lubricants specified for temperatures below -15°F (-26°C).",
+        "If OEA lubricant is required, OEA lubricant must replace OE/HDO 10 lubricant in all temperature ranges where OE/HDO 10 is specified.",
+        "The transmission PMCS notes specify that OE/HDO 15/40 (Grade 15W-40) lubricant may be used in arctic conditions when expected temperatures are above +5°F (-15°C).",
+        "The transmission PMCS notes specify that OEA lubricant is required for temperatures below -15°F (-26°C) and must replace OE/HDO 10 lubricant."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "remove lubricants prescribed for temperatures above -15°F (-26°C) and relubricate with lubricants specified for temperatures below -15°F (-26°C)",
+            "fulfilled": 1,
+            "id": "M19-A01",
+            "reason": "Correctly states the general lubricant-change instruction."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M19-A02",
+            "reason": "The answer says the transmission-specific arctic fluid is not defined, rather than specifying OEA for both 3L80 and 4L80-E transmissions."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.6,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C000853"
+              ],
+              "evidence_quotes": [
+                "Remove lubricants prescribed in lubrication table for temperatures above -15°F (-26°C)."
+              ],
+              "reason": "The cold-temperature instruction explicitly says to remove those lubricants.",
+              "statement": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to remove lubricants prescribed for temperatures above -15°F (-26°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000853"
+              ],
+              "evidence_quotes": [
+                "Relubricate with\nlubricants specified in lubrication table for temperatures below -15°F (-26°C)."
+              ],
+              "reason": "The cold-temperature instruction explicitly says to relubricate with those lubricants.",
+              "statement": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to relubricate with lubricants specified for temperatures below -15°F (-26°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000853"
+              ],
+              "evidence_quotes": [
+                "If OEA lubricant is required,\nsee the temperature ranges prescribed in the lubrication table. OEA lubricant is to be used in place of\nOE/HDO 10 lubricant for all temperature ranges where OE/HDO 10 is specified in the lubrication table."
+              ],
+              "reason": "The instruction states this substitution when OEA is required.",
+              "statement": "If OEA lubricant is required, OEA lubricant must replace OE/HDO 10 lubricant in all temperature ranges where OE/HDO 10 is specified.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The +5°F allowance appears in a lubrication table, not transmission PMCS notes; it does not specify arctic conditions.",
+              "statement": "The transmission PMCS notes specify that OE/HDO 15/40 (Grade 15W-40) lubricant may be used in arctic conditions when expected temperatures are above +5°F (-15°C).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context makes OEA substitution conditional on it being required; it does not state that transmission PMCS notes require it below -15°F.",
+              "statement": "The transmission PMCS notes specify that OEA lubricant is required for temperatures below -15°F (-26°C) and must replace OE/HDO 10 lubricant.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.6,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:cold_lube"
+              ],
+              "evidence_quotes": [
+                "(3) For Operation of Equipment in Protracted Cold Temperatures Below -15°F. (-26°C).\nRemove lubricants prescribed in lubrication table for temperatures above -15°F (-26°C)."
+              ],
+              "reason": "The cold-temperature instruction explicitly says to remove those lubricants.",
+              "statement": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to remove lubricants prescribed for temperatures above -15°F (-26°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:cold_lube"
+              ],
+              "evidence_quotes": [
+                "Relubricate with\nlubricants specified in lubrication table for temperatures below -15°F (-26°C)."
+              ],
+              "reason": "The cold-temperature instruction explicitly says to relubricate with those lubricants.",
+              "statement": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to relubricate with lubricants specified for temperatures below -15°F (-26°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:cold_lube"
+              ],
+              "evidence_quotes": [
+                "If OEA lubricant is required,\nsee the temperature ranges prescribed in the lubrication table. OEA lubricant is to be used in place of\nOE/HDO 10 lubricant for all temperature ranges where OE/HDO 10 is specified in the lubrication table."
+              ],
+              "reason": "The instruction states that OEA is used in place of OE/HDO 10 in all such ranges.",
+              "statement": "If OEA lubricant is required, OEA lubricant must replace OE/HDO 10 lubricant in all temperature ranges where OE/HDO 10 is specified.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied transmission PMCS notes do not mention OE/HDO 15/40 or that temperature threshold.",
+              "statement": "The transmission PMCS notes specify that OE/HDO 15/40 (Grade 15W-40) lubricant may be used in arctic conditions when expected temperatures are above +5°F (-15°C).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The transmission PMCS notes say to use OEA in arctic conditions, but do not specify that temperature threshold or OE/HDO 10 replacement.",
+              "statement": "The transmission PMCS notes specify that OEA lubricant is required for temperatures below -15°F (-26°C) and must replace OE/HDO 10 lubricant.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8272281550135655,
+          0.8480824463784289,
+          0.8480824463784289
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "0032cd6aaa357e9d35cbbd87adbdd4b74fb0ac67c02e8c3db4b96ae66105f46b",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "313b89b375ac910015b6d88c7df83306627cdc2850f0cc5348c195b388e72ebc"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8272281550135655,
+          0.8480824463784289,
+          0.8480824463784289
+        ],
+        "decimal50_cosines": [
+          "0.82722815501356558169783384005622415146985712888411",
+          "0.84808244637842892692975500391073061999423692278391",
+          "0.84808244637842892692975500391073061999423692278391"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "0032cd6aaa357e9d35cbbd87adbdd4b74fb0ac67c02e8c3db4b96ae66105f46b",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What transmission fluid is specified for arctic conditions below -15°F (-26°C)?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What transmission lubricant is specified for arctic conditions below -15°F (-26°C)?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What transmission lubricant is specified for arctic conditions below -15°F (-26°C)?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "313b89b375ac910015b6d88c7df83306627cdc2850f0cc5348c195b388e72ebc",
+        "score": 0.0
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "36f51a187334682dfffe59b812ffea4a824a88aca8566ff7ffe91ad55f61f2c8"
+}

@@ -1,0 +1,360 @@
+{
+  "at": "2026-09-29T05:15:35.455886+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "6470dee7d93cab61bd67ff045c20d925a0e7d73be800064d2a7f404a0fc00c13",
+  "result": {
+    "attempt_key": "r1-S06-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 25.470681900000272,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7105663785544795
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7105663785544795
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.2
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      }
+    },
+    "question_id": "S06",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "The response lists specific vehicle symptoms and possible causes, but adds a disclaimer that no manual excerpts were supplied and it is answering from model knowledge."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7166169360467716,
+          0.70027362280697,
+          0.714808576809697
+        ],
+        "query_vector_hash": "36fc6805ed5244f981910e1f2af7b9602cd25134f7243cf3e226f9e5ea1f9ec4",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What symptoms may indicate that an HMMWV (M998-series) air intake or exhaust system needs inspection?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What symptoms may indicate that the air intake or exhaust system of an HMMWV (M998-series) needs to be checked?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What symptoms may indicate that an HMMWV (M998-series) air intake or exhaust system needs checking?"
+          }
+        ],
+        "response_vectors_hash": "d5cd359352f4feee6e6b3f1e3527ef12d9e5adb205d1bd53180e3924a6cf832a",
+        "score": 0.7105663785544793
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "No manual excerpts supplied.",
+          "Answer from existing model knowledge."
+        ],
+        "shared_conditions": [
+          "Applies to an HMMWV (M998-series)."
+        ],
+        "statements": [
+          {
+            "answer_quote": "reduced engine performance",
+            "statement": "In an HMMWV (M998-series), reduced engine performance may justify checking the air intake/exhaust system."
+          },
+          {
+            "answer_quote": "difficulty starting",
+            "statement": "In an HMMWV (M998-series), difficulty starting may justify checking the air intake/exhaust system."
+          },
+          {
+            "answer_quote": "rough idling",
+            "statement": "In an HMMWV (M998-series), rough idling may justify checking the air intake/exhaust system."
+          },
+          {
+            "answer_quote": "increased fuel consumption",
+            "statement": "In an HMMWV (M998-series), increased fuel consumption may justify checking the air intake/exhaust system."
+          },
+          {
+            "answer_quote": "the presence of check engine lights",
+            "statement": "In an HMMWV (M998-series), a check engine light may justify checking the air intake/exhaust system."
+          },
+          {
+            "answer_quote": "exhaust system emissions warnings",
+            "statement": "In an HMMWV (M998-series), an exhaust system emissions warning may justify checking the air intake/exhaust system."
+          },
+          {
+            "answer_quote": "These symptoms can indicate leaks or blockages in the intake or exhaust system",
+            "statement": "In an HMMWV (M998-series), the listed symptoms can indicate leaks in the intake or exhaust system."
+          },
+          {
+            "answer_quote": "These symptoms can indicate leaks or blockages in the intake or exhaust system",
+            "statement": "In an HMMWV (M998-series), the listed symptoms can indicate blockages in the intake or exhaust system."
+          },
+          {
+            "answer_quote": "leaks or blockages in the intake or exhaust system, which affect engine efficiency",
+            "statement": "In an HMMWV (M998-series), leaks or blockages in the intake or exhaust system affect engine efficiency."
+          },
+          {
+            "answer_quote": "leaks or blockages in the intake or exhaust system, which affect engine efficiency and emissions",
+            "statement": "In an HMMWV (M998-series), leaks or blockages in the intake or exhaust system affect emissions."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "reduced engine performance",
+          "id": "C001",
+          "text": "In an HMMWV (M998-series), reduced engine performance may justify checking the air intake/exhaust system."
+        },
+        {
+          "answer_quote": "difficulty starting",
+          "id": "C002",
+          "text": "In an HMMWV (M998-series), difficulty starting may justify checking the air intake/exhaust system."
+        },
+        {
+          "answer_quote": "rough idling",
+          "id": "C003",
+          "text": "In an HMMWV (M998-series), rough idling may justify checking the air intake/exhaust system."
+        },
+        {
+          "answer_quote": "increased fuel consumption",
+          "id": "C004",
+          "text": "In an HMMWV (M998-series), increased fuel consumption may justify checking the air intake/exhaust system."
+        },
+        {
+          "answer_quote": "the presence of check engine lights",
+          "id": "C005",
+          "text": "In an HMMWV (M998-series), a check engine light may justify checking the air intake/exhaust system."
+        },
+        {
+          "answer_quote": "exhaust system emissions warnings",
+          "id": "C006",
+          "text": "In an HMMWV (M998-series), an exhaust system emissions warning may justify checking the air intake/exhaust system."
+        },
+        {
+          "answer_quote": "These symptoms can indicate leaks or blockages in the intake or exhaust system",
+          "id": "C007",
+          "text": "In an HMMWV (M998-series), the listed symptoms can indicate leaks in the intake or exhaust system."
+        },
+        {
+          "answer_quote": "These symptoms can indicate leaks or blockages in the intake or exhaust system",
+          "id": "C008",
+          "text": "In an HMMWV (M998-series), the listed symptoms can indicate blockages in the intake or exhaust system."
+        },
+        {
+          "answer_quote": "leaks or blockages in the intake or exhaust system, which affect engine efficiency",
+          "id": "C009",
+          "text": "In an HMMWV (M998-series), leaks or blockages in the intake or exhaust system affect engine efficiency."
+        },
+        {
+          "answer_quote": "leaks or blockages in the intake or exhaust system, which affect engine efficiency and emissions",
+          "id": "C010",
+          "text": "In an HMMWV (M998-series), leaks or blockages in the intake or exhaust system affect emissions."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "difficulty starting",
+            "fulfilled": 1,
+            "id": "S06-A01",
+            "reason": "Equivalent to hard to start."
+          },
+          {
+            "answer_quote": "rough idling",
+            "fulfilled": 1,
+            "id": "S06-A02",
+            "reason": "Describes the engine running rough at idle."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S06-A03",
+            "reason": "“Reduced engine performance” does not specifically state that the vehicle fails to develop full power."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.2,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C001991"
+              ],
+              "evidence_quotes": [
+                "Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system."
+              ],
+              "reason": "Failure to develop full power is given as a reason to check this system.",
+              "statement": "In an HMMWV (M998-series), reduced engine performance may justify checking the air intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001991"
+              ],
+              "evidence_quotes": [
+                "Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system."
+              ],
+              "reason": "The passage says a hard-to-start vehicle warrants checking the system.",
+              "statement": "In an HMMWV (M998-series), difficulty starting may justify checking the air intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage supports a vehicle running rough, but does not specify rough idling.",
+              "statement": "In an HMMWV (M998-series), rough idling may justify checking the air intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Increased fuel consumption is not mentioned.",
+              "statement": "In an HMMWV (M998-series), increased fuel consumption may justify checking the air intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "A check engine light is not mentioned.",
+              "statement": "In an HMMWV (M998-series), a check engine light may justify checking the air intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "An emissions warning is not mentioned.",
+              "statement": "In an HMMWV (M998-series), an exhaust system emissions warning may justify checking the air intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not identify leaks as a cause of the symptoms.",
+              "statement": "In an HMMWV (M998-series), the listed symptoms can indicate leaks in the intake or exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not identify blockages as a cause of the symptoms.",
+              "statement": "In an HMMWV (M998-series), the listed symptoms can indicate blockages in the intake or exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not state that leaks or blockages affect engine efficiency.",
+              "statement": "In an HMMWV (M998-series), leaks or blockages in the intake or exhaust system affect engine efficiency.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not address leaks, blockages, or emissions effects.",
+              "statement": "In an HMMWV (M998-series), leaks or blockages in the intake or exhaust system affect emissions.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.7166169360467716,
+          0.70027362280697,
+          0.714808576809697
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7105663785544795,
+        "query_vector_hash": "36fc6805ed5244f981910e1f2af7b9602cd25134f7243cf3e226f9e5ea1f9ec4",
+        "ragas_score": 0.7105663785544793,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d5cd359352f4feee6e6b3f1e3527ef12d9e5adb205d1bd53180e3924a6cf832a"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7166169360467716,
+          0.70027362280697,
+          0.714808576809697
+        ],
+        "decimal50_cosines": [
+          "0.71661693604677152713235593463107159974202817338075",
+          "0.70027362280696994198540064890019789509231803459354",
+          "0.71480857680969697940041115117417585861978050166703"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.7105663785544793
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.7105663785544793
+          }
+        },
+        "query_vector_hash": "36fc6805ed5244f981910e1f2af7b9602cd25134f7243cf3e226f9e5ea1f9ec4",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What symptoms may indicate that an HMMWV (M998-series) air intake or exhaust system needs inspection?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What symptoms may indicate that the air intake or exhaust system of an HMMWV (M998-series) needs to be checked?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What symptoms may indicate that an HMMWV (M998-series) air intake or exhaust system needs checking?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "d5cd359352f4feee6e6b3f1e3527ef12d9e5adb205d1bd53180e3924a6cf832a",
+        "score": 0.7105663785544795
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "d2579d8d313ed5e1f7d9eb0d4c3a8fd758c4183148a487baab4faf06c497340a"
+}

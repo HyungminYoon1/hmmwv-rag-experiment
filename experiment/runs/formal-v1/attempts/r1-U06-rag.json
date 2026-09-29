@@ -1,0 +1,933 @@
+{
+  "citation_ids": [
+    "[C005292]",
+    "[C005385]",
+    "[C005315]",
+    "[C005401]",
+    "[C005409]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:25:32.965639+00:00",
+  "evaluation_answer": "The complete wiring-harness repair procedure specified in paragraph 4-85 includes repairing the following wires: 810B, 237, 355A, and 375A. However, the procedure details (such as steps, tools, or methods) are not provided in the referenced excerpts. Only the list of wires to be repaired is specified , , , , . Therefore, the exact repair procedure cannot be fully described based on the available information.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 500,
+  "key": "r1-U06-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C005292] TM 9-2320-280-20-1 | PDF 537 | Printed 2-433\nRepair wire 810B in\nharness, (para. 4-85).\n\n[C005385] TM 9-2320-280-20-1 | PDF 543 | Printed 2-439\nRepair wire 237,\n(para. 4-85).\n\n[C005315] TM 9-2320-280-20-1 | PDF 539 | Printed 2-435\nRepair wire 355A,,\n(para. 4-85).\n\n[C005401] TM 9-2320-280-20-1 | PDF 544 | Printed 2-440\nRepair wire 375A,\n(para. 4-85).\n\n[C005409] TM 9-2320-280-20-1 | PDF 544 | Printed 2-440\nRepair wire 375A,\n(para. 4-85).\nQUESTION:\nGive the complete wiring-harness repair procedure specified in paragraph 4-85.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 195,
+  "question": "Give the complete wiring-harness repair procedure specified in paragraph 4-85.",
+  "question_id": "U06",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:49.819199707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:46.093406107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 110.75919999984762,
+    "peak_rss_bytes": 7928074240,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4815.7042122,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4815.8104023,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4815.9188048,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.0114665,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.118724,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.2149088,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.3067284,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.4157796,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.5075444,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.6169658,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037820416,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754653696,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.7096694,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4037926912,
+          "35444": 8007680,
+          "36040": 97193984,
+          "37504": 3477258240,
+          "37564": 7958528
+        },
+        "rss_bytes": 7754760192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.8172246,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97239040,
+          "37504": 3487240192,
+          "37564": 7958528
+        },
+        "rss_bytes": 7764926464,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4816.9118001,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97239040,
+          "37504": 3650387968,
+          "37564": 7958528
+        },
+        "rss_bytes": 7928074240,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.0057014,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97239040,
+          "37504": 3650387968,
+          "37564": 7958528
+        },
+        "rss_bytes": 7928074240,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.1164606,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3558158336,
+          "37564": 7958528
+        },
+        "rss_bytes": 7835848704,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.2078604,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.3146902,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.4077762,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.5162126,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.608312,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.7144651,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.8083523,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4817.9178702,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.0089175,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.1174665,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.2110339,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.3047151,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.4121622,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.5050787,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.6130972,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.7047552,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.8141172,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4818.9055468,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97243136,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837675520,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4819.0147852,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97247232,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837679616,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4819.1071171,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4038066176,
+          "35444": 8007680,
+          "36040": 97247232,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 7837679616,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:25:32.9632459Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 140,
+    "eval_duration": 2021749000,
+    "load_duration": 8837000,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 195,
+    "prompt_eval_count": 500,
+    "prompt_eval_duration": 73115000,
+    "response": "The complete wiring-harness repair procedure specified in paragraph 4-85 includes repairing the following wires: 810B, 237, 355A, and 375A. However, the procedure details (such as steps, tools, or methods) are not provided in the referenced excerpts. Only the list of wires to be repaired is specified [C005292], [C005385], [C005315], [C005401], [C005409]. Therefore, the exact repair procedure cannot be fully described based on the available information.",
+    "total_duration": 2352657100
+  },
+  "retrieval": {
+    "embedding_ms": 71.24999999996362,
+    "items": [
+      {
+        "body_end": 42,
+        "body_start": 0,
+        "id": "C005292",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          537
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-433"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R005642",
+          "R005643"
+        ],
+        "review_ids": [],
+        "score": 0.7315576672554016,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B005",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Repair wire 810B in\nharness, (para. 4-85).",
+        "text_sha256": "5ddde45ee20c5434c71ac01050fa075523334a4d120c5619a6588594cf775c68",
+        "token_count": 21,
+        "unit_id": "U005284",
+        "unit_key": "region:537:1:9"
+      },
+      {
+        "body_end": 30,
+        "body_start": 0,
+        "id": "C005385",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          543
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-439"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R005790",
+          "R005791"
+        ],
+        "review_ids": [],
+        "score": 0.6990475654602051,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B002",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Repair wire 237,\n(para. 4-85).",
+        "text_sha256": "965005408e39effa3fc18c36a67c0bc9818aabe8defb1b2047bf649b366b2266",
+        "token_count": 15,
+        "unit_id": "U005377",
+        "unit_key": "region:543:1:8"
+      },
+      {
+        "body_end": 32,
+        "body_start": 0,
+        "id": "C005315",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          539
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-435"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R005677",
+          "R005678"
+        ],
+        "review_ids": [],
+        "score": 0.6844080686569214,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B002",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Repair wire 355A,,\n(para. 4-85).",
+        "text_sha256": "d39ada1c950237923d6cd89c9f252d6b327ce927b0389a29363546c93b1a0482",
+        "token_count": 17,
+        "unit_id": "U005307",
+        "unit_key": "region:539:1:6"
+      },
+      {
+        "body_end": 31,
+        "body_start": 0,
+        "id": "C005401",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          544
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-440"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R005822",
+          "R005823"
+        ],
+        "review_ids": [],
+        "score": 0.6776136159896851,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B002",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Repair wire 375A,\n(para. 4-85).",
+        "text_sha256": "8216c2d1ad87d9739405d7e49665824ab4b10f3db3a5aa1ec0cc4f57dcc79af2",
+        "token_count": 16,
+        "unit_id": "U005393",
+        "unit_key": "region:544:1:7"
+      },
+      {
+        "body_end": 31,
+        "body_start": 0,
+        "id": "C005409",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          544
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-440"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R005838",
+          "R005839"
+        ],
+        "review_ids": [],
+        "score": 0.6776136159896851,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B008",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Repair wire 375A,\n(para. 4-85).",
+        "text_sha256": "8216c2d1ad87d9739405d7e49665824ab4b10f3db3a5aa1ec0cc4f57dcc79af2",
+        "token_count": 16,
+        "unit_id": "U005401",
+        "unit_key": "region:544:1:15"
+      }
+    ],
+    "search_ms": 10.156200000892568
+  },
+  "round": 1,
+  "sequence": 3,
+  "started_at": "2026-09-28T04:25:30.520677+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2362.6809999996112,
+    "retrieval": 82.33019999988755,
+    "total": 2445.011199999499
+  },
+  "unprovided_citations": []
+}

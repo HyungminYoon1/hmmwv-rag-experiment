@@ -1,0 +1,784 @@
+{
+  "citation_ids": [
+    "[C005773]",
+    "[C000550]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:36:27.527919+00:00",
+  "evaluation_answer": "The specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm) .  \nThe maximum output pressure listed for the power-steering pump is 1,450 psi .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 950,
+  "key": "r2-M24-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000550] TM 9-2320-280-20-1 | PDF 61,64 | Printed 1-31,1-34\nTable 1-2. Tabulated Data (Cont'd)\n17.\nSTEERING SYSTEM\nSTANDARD\nMETRIC\nPower Steering Pump:\n\nITEM: Output Pressure (max) \nSTANDARD: 1,450 psi\nMETRIC: 9,998 kPa\n\n[C000551] TM 9-2320-280-20-1 | PDF 61,64 | Printed 1-31,1-34\nTable 1-2. Tabulated Data (Cont'd)\n17.\nSTEERING SYSTEM\nSTANDARD\nMETRIC\nPower Steering Pump:\n\nITEM: Flow Rate (max) \nSTANDARD: 3.5 gpm\nMETRIC: 13.2 l/m\n\n[C005679] TM 9-2320-280-20-1 | PDF 572 | Printed 2-468.2\nSTEERING SYSTEM\nKNOWN INFO\nRING\nA\n:\nPOSSIBLE PROBLEMS\nPOWER STEERING PUMP\nPOWER STEERING GEAR\nFAN DRIVE\nHYDRO-BOOSTER\nPOWER STEERING\nCOOLER\n\nDOES THE COOLING FAN DISENGAGE PROPERLY? TEST OPTIONS SEE NOTE AT RIGHT Ri . REASON FOR QUESTION If the power steeririg pump can develop enough pressure to disengage the fan, the pump and gear are probably OK.\n\n[C005773] TM 9-2320-280-20-1 | PDF 580 | Printed 2-476\nSTEERING SYSTEM\nKNOWN INFO\nWHEELS,TIRES.BRAKES\nPOWER STEERING\nSYSTEM OK\nBALL JOINTS OK\nCONTROL ARMS OK\nSHOCKS/SPRINGS OK\nDRIVEBELT & PULLEY OK\nPOSSIBLE PROBLEMS\nCAPSCREWS\n\nARE STEERING GEAR MOUNTING CAPSCREWS ADEQUATELY TIGHT? THEY SHOULD BE TIGHTENED TO 60 FT-LB (81 NeM). TEST OPTIONS 1. VISUAL INSPECTION. 2. CHECK WITH TORQUE WRENCH. REASON FOR QUESTION If the capscrews get loose or fall out, the steering gearbox could move, causing serious problems with steering.\n\n[C005640] TM 9-2320-280-20-1 | PDF 568 | Printed 2-466\nSTEERING SYSTEM\nKNOWN INFO\nSTRAIGHT LINE\nBEHAVIOR OK\nBRAKES OK\nHARD STEERING EFFORT\nPOSSIBLE PROBLEMS\nPOWER STEERING PUMP\nPOWER STEERING\nCOMPONENTS\nSUSPENSION\n\nARE THE POWER STEERING BELTS TIGHTENED PROPERLY AND IN GOOD CONDITION? TEST OPTIONS LOOK AT BELTS FOR STRETCHING AND FRAYING. USE BELT TENSION GAUGE TO MEASURE BELT TENSION. REASON FOR QUESTION tf the belts are loose or broken, the power steering unit may not work propertly.\nQUESTION:\nFor steering-system inspection, what tightening torque is specified for steering-gear mounting bolts, and what maximum output pressure is listed for the power-steering pump?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 949,
+  "question": "For steering-system inspection, what tightening torque is specified for steering-gear mounting bolts, and what maximum output pressure is listed for the power-steering pump?",
+  "question_id": "M24",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:44.382188107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:42.098136207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4869734400.0,
+    "max_actual_interval_ms": 109.77240000011079,
+    "peak_rss_bytes": 13561298944,
+    "peak_vram_bytes": 4869734400,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5471.5369003,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5471.6444361,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5471.7384481,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5471.8469771,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5471.9412962,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.0489432,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.1450388,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.2374707,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.3459431,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.4374468,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.5463428,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045828096,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561274368,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.6399873,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9279012864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13561298944,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.7496916,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102690816,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9130213376,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412499456,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.8436885,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 13263638528,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5472.950614,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 13263638528,
+        "vram_bytes": 4869603328
+      },
+      {
+        "monotonic": 5473.0435764,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 13263638528,
+        "vram_bytes": 4869603328
+      },
+      {
+        "monotonic": 5473.1513834,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 13263638528,
+        "vram_bytes": 4869603328
+      },
+      {
+        "monotonic": 5473.2452528,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 13263638528,
+        "vram_bytes": 4869603328
+      },
+      {
+        "monotonic": 5473.3387115,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 13263638528,
+        "vram_bytes": 4869603328
+      },
+      {
+        "monotonic": 5473.4484839,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 13263638528,
+        "vram_bytes": 4869603328
+      },
+      {
+        "monotonic": 5473.5418013,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 13263638528,
+        "vram_bytes": 4869603328
+      },
+      {
+        "monotonic": 5473.6505644,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102924288,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8981118976,
+          "37564": 7958528
+        },
+        "rss_bytes": 13263638528,
+        "vram_bytes": 4869603328
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:36:27.5274123Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 62,
+    "eval_duration": 888154000,
+    "load_duration": 1375900,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 949,
+    "prompt_eval_count": 950,
+    "prompt_eval_duration": 14489000,
+    "response": "The specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm) [C005773].  \nThe maximum output pressure listed for the power-steering pump is 1,450 psi [C000550].",
+    "total_duration": 1023795300
+  },
+  "retrieval": {
+    "embedding_ms": 118.14599999979691,
+    "items": [
+      {
+        "body_end": 66,
+        "body_start": 0,
+        "id": "C000550",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          64
+        ],
+        "prefix_chars": 93,
+        "printed_pages": [
+          "1-31",
+          "1-34"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6972984075546265,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 5,
+          "section": 3,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n17.\nSTEERING SYSTEM\nSTANDARD\nMETRIC\nPower Steering Pump:\n\nITEM: Output Pressure (max) \nSTANDARD: 1,450 psi\nMETRIC: 9,998 kPa",
+        "text_sha256": "e0095bbe8f633a9e2dd5cda1a3811a2b69e5ffab7be71cf90999c63ca159fd97",
+        "token_count": 60,
+        "unit_id": "U000550",
+        "unit_key": "P0064:spec:3:5"
+      },
+      {
+        "body_end": 57,
+        "body_start": 0,
+        "id": "C000551",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          64
+        ],
+        "prefix_chars": 93,
+        "printed_pages": [
+          "1-31",
+          "1-34"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6319642066955566,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 6,
+          "section": 3,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n17.\nSTEERING SYSTEM\nSTANDARD\nMETRIC\nPower Steering Pump:\n\nITEM: Flow Rate (max) \nSTANDARD: 3.5 gpm\nMETRIC: 13.2 l/m",
+        "text_sha256": "de0d843dd58225fb40a9e7b8a92ecd5d41e4b153c49cc11be954a255822ac369",
+        "token_count": 58,
+        "unit_id": "U000551",
+        "unit_key": "P0064:spec:3:6"
+      },
+      {
+        "body_end": 209,
+        "body_start": 0,
+        "id": "C005679",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          572
+        ],
+        "prefix_chars": 141,
+        "printed_pages": [
+          "2-468.2"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6273832321166992,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            514.32,
+            755
+          ],
+          "condition_box": [
+            53.5,
+            508.0,
+            170.5,
+            673.0
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0572.json",
+            "sha256": "eb1bcb14e4f78676dc306e2c82691855e7b18aa0b5aefa02cfe83ef599e960ca"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            191.52,
+            534.96,
+            323.28,
+            556.32
+          ],
+          "source_component_keys": [
+            "region:572:1:6",
+            "region:572:1:4",
+            "region:572:1:5",
+            "region:572:1:8",
+            "region:572:1:3",
+            "region:572:1:7"
+          ]
+        },
+        "text": "STEERING SYSTEM\nKNOWN INFO\nRING\nA\n:\nPOSSIBLE PROBLEMS\nPOWER STEERING PUMP\nPOWER STEERING GEAR\nFAN DRIVE\nHYDRO-BOOSTER\nPOWER STEERING\nCOOLER\n\nDOES THE COOLING FAN DISENGAGE PROPERLY? TEST OPTIONS SEE NOTE AT RIGHT Ri . REASON FOR QUESTION If the power steeririg pump can develop enough pressure to disengage the fan, the pump and gear are probably OK.",
+        "text_sha256": "66239e55aadb19dbd4c18c74d3c1f9dbaa3ca2ce5fd6e65de3b4ff69ed7e8878",
+        "token_count": 102,
+        "unit_id": "U005671",
+        "unit_key": "V6:P0572:node:1"
+      },
+      {
+        "body_end": 298,
+        "body_start": 0,
+        "id": "C005773",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          580
+        ],
+        "prefix_chars": 172,
+        "printed_pages": [
+          "2-476"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6079570055007935,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            543.7349,
+            755
+          ],
+          "condition_box": [
+            39.0,
+            538.0,
+            154.5,
+            726.0
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v6-work/box-ocr-candidates/P0580-B019.png",
+            "sha256": "ce86ad5ffa613b50f9a34a90b34cc7c642aec7ccf43aaab31d29f2c850d81843"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            174.4463,
+            563.6511,
+            346.493,
+            611.1619
+          ],
+          "source_component_keys": [
+            "region:580:1:17",
+            "region:580:1:16",
+            "region:580:1:18",
+            "P0580-B019:reviewed",
+            "P0580-B022:reviewed"
+          ]
+        },
+        "text": "STEERING SYSTEM\nKNOWN INFO\nWHEELS,TIRES.BRAKES\nPOWER STEERING\nSYSTEM OK\nBALL JOINTS OK\nCONTROL ARMS OK\nSHOCKS/SPRINGS OK\nDRIVEBELT & PULLEY OK\nPOSSIBLE PROBLEMS\nCAPSCREWS\n\nARE STEERING GEAR MOUNTING CAPSCREWS ADEQUATELY TIGHT? THEY SHOULD BE TIGHTENED TO 60 FT-LB (81 NeM). TEST OPTIONS 1. VISUAL INSPECTION. 2. CHECK WITH TORQUE WRENCH. REASON FOR QUESTION If the capscrews get loose or fall out, the steering gearbox could move, causing serious problems with steering.",
+        "text_sha256": "5cc8a7c4d3c93c860003d5d6aa06acadc82d65a253da98da080f3a92b58a7a14",
+        "token_count": 156,
+        "unit_id": "U005765",
+        "unit_key": "V6:P0580:node:3"
+      },
+      {
+        "body_end": 275,
+        "body_start": 0,
+        "id": "C005640",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          568
+        ],
+        "prefix_chars": 160,
+        "printed_pages": [
+          "2-466"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6053037047386169,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            145.6424,
+            342.3916
+          ],
+          "condition_box": [
+            41.0,
+            139.5,
+            152.0,
+            303.0
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0568.json",
+            "sha256": "6f6d3022cd7f4eda548347acccb167bbfc6712ddbf815204ab40c1c31434ce11"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            175.1548,
+            167.2368,
+            332.3142,
+            200.5882
+          ],
+          "source_component_keys": [
+            "region:568:1:7",
+            "region:568:1:5",
+            "region:568:1:9",
+            "region:568:1:6",
+            "region:568:1:8"
+          ]
+        },
+        "text": "STEERING SYSTEM\nKNOWN INFO\nSTRAIGHT LINE\nBEHAVIOR OK\nBRAKES OK\nHARD STEERING EFFORT\nPOSSIBLE PROBLEMS\nPOWER STEERING PUMP\nPOWER STEERING\nCOMPONENTS\nSUSPENSION\n\nARE THE POWER STEERING BELTS TIGHTENED PROPERLY AND IN GOOD CONDITION? TEST OPTIONS LOOK AT BELTS FOR STRETCHING AND FRAYING. USE BELT TENSION GAUGE TO MEASURE BELT TENSION. REASON FOR QUESTION tf the belts are loose or broken, the power steering unit may not work propertly.",
+        "text_sha256": "a3c5214ee3652688dec650bb50531121a8e8e657229372a4730993f6d438ad02",
+        "token_count": 129,
+        "unit_id": "U005632",
+        "unit_key": "V6:P0568:node:1"
+      }
+    ],
+    "search_ms": 10.750999999800115
+  },
+  "round": 2,
+  "sequence": 185,
+  "started_at": "2026-09-28T04:36:26.353976+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1044.5633000008456,
+    "retrieval": 129.44299999981013,
+    "total": 1174.0063000006558
+  },
+  "unprovided_citations": []
+}

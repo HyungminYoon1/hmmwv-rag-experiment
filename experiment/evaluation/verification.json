@@ -1,0 +1,130 @@
+{
+  "approved_modified_original_files": [
+    "experiment/app.py",
+    "experiment/architecture.md",
+    "experiment/DECISIONS.md",
+    "experiment/README.md",
+    "experiment/web/index.html"
+  ],
+  "at": "2026-09-28T06:28:31.571683+00:00",
+  "backup_files_checked": 720,
+  "benchmark_answer_quality": "NOT_RUN",
+  "browser": {
+    "screenshot": "verification/evaluation-screen.png",
+    "status": "VISUALLY_VERIFIED",
+    "visible_benchmark_status": "0 / 120",
+    "visible_smoke_status": "3 / 3"
+  },
+  "checks": [
+    {
+      "exit_code": 0,
+      "name": "evaluation-tests"
+    },
+    {
+      "exit_code": 0,
+      "name": "generation-regression"
+    },
+    {
+      "exit_code": 0,
+      "name": "dependency-check"
+    }
+  ],
+  "commercial_api": {
+    "actual_call": "NOT_RUN",
+    "doctor": {
+      "credential_present": false,
+      "environment": {
+        "packages": {
+          "httpx": "0.28.1",
+          "instructor": "1.3.2",
+          "langchain-community": "0.3.31",
+          "numpy": "2.4.6",
+          "openai": "1.109.1",
+          "pydantic": "2.13.5",
+          "ragas": "0.4.3"
+        },
+        "platform": "Windows-10-10.0.26200-SP0",
+        "python": "3.11.9"
+      },
+      "model": "gpt-6-astra",
+      "model_access_verified": false,
+      "provider": "openai",
+      "ready": false,
+      "smoke_only": false
+    }
+  },
+  "http": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/gold",
+      "status": 200
+    },
+    {
+      "route": "/results",
+      "status": 200
+    },
+    {
+      "route": "/evaluation",
+      "status": 200
+    },
+    {
+      "route": "/api/overview",
+      "status": 200
+    },
+    {
+      "route": "/api/evaluation",
+      "status": 200
+    },
+    {
+      "route": "/api/evaluation-run?id=local-smoke-20260928-v2",
+      "status": 200
+    }
+  ],
+  "local_candidate": {
+    "actual_call": "NOT_RUN",
+    "doctor": {
+      "credential_present": null,
+      "environment": {
+        "packages": {
+          "httpx": "0.28.1",
+          "instructor": "1.3.2",
+          "langchain-community": "0.3.31",
+          "numpy": "2.4.6",
+          "openai": "1.109.1",
+          "pydantic": "2.13.5",
+          "ragas": "0.4.3"
+        },
+        "platform": "Windows-10-10.0.26200-SP0",
+        "python": "3.11.9"
+      },
+      "error": {
+        "code": "LOCAL_MODEL_NOT_INSTALLED",
+        "type": "EvaluationError"
+      },
+      "model": "gemma4:12b",
+      "provider": "ollama",
+      "ready": false,
+      "smoke_only": false
+    }
+  },
+  "manual_evaluator_validation": "PENDING",
+  "original_files_unchanged": 715,
+  "researcher_source_review": "PENDING",
+  "smoke": {
+    "expected_support_and_coverage": "correct=1, wrong=0",
+    "expected_unanswerable_abstention": 1,
+    "id": "local-smoke-20260928-v2",
+    "initial_failed_run_preserved": "local-smoke-20260928-v1",
+    "provider_calls": 17,
+    "resume": "PASS_NO_ADDITIONAL_CALLS",
+    "resume_unchanged_call_and_result_files": 37,
+    "status": "PASS",
+    "synthetic_cases": 3
+  },
+  "source_files_hash_checked": 138,
+  "source_packet_rows": 120,
+  "status": "IMPLEMENTATION_VERIFIED"
+}

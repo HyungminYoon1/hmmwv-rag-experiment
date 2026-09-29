@@ -1,0 +1,565 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:40:06.081396+00:00",
+  "evaluation_answer": "At an annual inspection, semiannual checks are not required; annual inspections are conducted separately, and semiannual checks are not explicitly mandated in the provided reference material.\n\nFor the air-intake CDR valve, the cleaning method that must be used is a soft brush or compressed air to remove debris, and the use of solvents or abrasive materials is prohibited. This information is based on standard maintenance practices for HMMWV (M998-series) as outlined in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), though specific chunk IDs are not available in the reference. [No chunk IDs supplied.]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 244,
+  "key": "r3-M18-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nAt an annual inspection, are semiannual checks also required? For the air-intake CDR valve, what cleaning method must be used and what method is prohibited?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "At an annual inspection, are semiannual checks also required? For the air-intake CDR valve, what cleaning method must be used and what method is prohibited?",
+  "question_id": "M18",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:27:22.936172507+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:27:19.699499207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4876124160.0,
+    "max_actual_interval_ms": 110.56340000050113,
+    "peak_rss_bytes": 9380868096,
+    "peak_vram_bytes": 4897259520,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5689.0922836,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5689.1981977,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5689.305316,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5689.3987141,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5689.5065743,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5689.599777,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5689.6931241,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5689.8022963,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5689.8989835,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5690.0074051,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103407616,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8872538112,
+          "37564": 7958528
+        },
+        "rss_bytes": 9097572352,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5690.100236,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 8888537088,
+          "37564": 7958528
+        },
+        "rss_bytes": 9113579520,
+        "vram_bytes": 4876124160
+      },
+      {
+        "monotonic": 5690.193729,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9153998848,
+          "37564": 7958528
+        },
+        "rss_bytes": 9379041280,
+        "vram_bytes": 4875993088
+      },
+      {
+        "monotonic": 5690.301526,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4875993088
+      },
+      {
+        "monotonic": 5690.3938485,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4875993088
+      },
+      {
+        "monotonic": 5690.5015004,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4875993088
+      },
+      {
+        "monotonic": 5690.5940331,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4876419072
+      },
+      {
+        "monotonic": 5690.7017856,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4876419072
+      },
+      {
+        "monotonic": 5690.7945879,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4888477696
+      },
+      {
+        "monotonic": 5690.9051513,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4888477696
+      },
+      {
+        "monotonic": 5691.0000486,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4888608768
+      },
+      {
+        "monotonic": 5691.1070153,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4888608768
+      },
+      {
+        "monotonic": 5691.1985694,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4888608768
+      },
+      {
+        "monotonic": 5691.3083796,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4888608768
+      },
+      {
+        "monotonic": 5691.4017776,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4896342016
+      },
+      {
+        "monotonic": 5691.4956164,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4895227904
+      },
+      {
+        "monotonic": 5691.6020178,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4895227904
+      },
+      {
+        "monotonic": 5691.6944828,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4895227904
+      },
+      {
+        "monotonic": 5691.8038429,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4895227904
+      },
+      {
+        "monotonic": 5691.8970517,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4895293440
+      },
+      {
+        "monotonic": 5692.0061229,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4895293440
+      },
+      {
+        "monotonic": 5692.0995388,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4897259520
+      },
+      {
+        "monotonic": 5692.1932743,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "30736": 12021760,
+          "36040": 101646336,
+          "37504": 9155825664,
+          "37564": 7958528
+        },
+        "rss_bytes": 9380868096,
+        "vram_bytes": 4897259520
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:40:06.0803564Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 150,
+    "eval_duration": 2049039000,
+    "load_duration": 1590100,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 244,
+    "prompt_eval_duration": 21299000,
+    "response": "At an annual inspection, semiannual checks are not required; annual inspections are conducted separately, and semiannual checks are not explicitly mandated in the provided reference material.\n\nFor the air-intake CDR valve, the cleaning method that must be used is a soft brush or compressed air to remove debris, and the use of solvents or abrasive materials is prohibited. This information is based on standard maintenance practices for HMMWV (M998-series) as outlined in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), though specific chunk IDs are not available in the reference. [No chunk IDs supplied.]",
+    "total_duration": 2169657700
+  },
+  "retrieval": null,
+  "round": 3,
+  "sequence": 252,
+  "started_at": "2026-09-28T04:40:03.909299+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2172.4083999997674,
+    "retrieval": null,
+    "total": 2172.4083999997674
+  },
+  "unprovided_citations": []
+}

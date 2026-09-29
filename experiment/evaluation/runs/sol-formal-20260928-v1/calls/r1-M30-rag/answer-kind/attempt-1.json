@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:32:09.404697+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response directly states a power conversion and names four steering-system components."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587929,
+      "conversation": null,
+      "created_at": 1790587927.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0c460f0b1dfdf84e016aba3417783887d0a16e6df8805a8156",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujQZn3PO_xG1aRKbKBVVVgeSbVQ51vJsFY0dcZ82Hj4u9vYt60TXW3Hg4wibUpxBNZ5DIJJR9y3RunMYortkyq0CE2h2SGFxibOFyw0CDYEeUlrY-E_18a1adbEXQLWtUDwz6oKab6Y332O4iDSg90guWcBD2PRUu3H4KZ8u8aWoy8HuBXSPzpEv8O9uW68faS30JrK2r15cU2BulX4zmm4HkUGR-qPfIdLnWplk2Q-jTPJMPX6DwYByCjGI17DFkmZKMKv8b_cPyWoBS7mCq68CkVTvwPoCYj7JS6tA7eIe5q9qAQGdSzi3qxejTAHoUX4WDJbwHq3x8kjM7kTTA0tk94I4qP9G0RQQej9eTKLNLhzVYjVgrNg637ja-D1D4VhiDJ69_Sgw4op-Ws89ARO1w6wpebkWM72YW6Qq4T9oFXAwqA9g_XFxSE0KSzQh1dg6_mAgYE2dH8zrTh3rhDRGx487_5hds9zHD3FZdpmEJWK-3aV4FxWMMtGUstlUbjs1BsoDtKNQAalVP8y8DNUL38CXWgZ53FRgBDudeg9wxsf0uvEbF1GAUMno7TtGXJlhL_Q9MxwH-9ry_pooFeU5xV44NC6t9PYvH8kk7MxdJpKjX5Yt53VzIR3_ONxWjDPcQTkrDS3l4723L5Q-dd85TQ30NeN7LPLJlPJdl81hXajmgl4bGCf3bmlXkvzYcHvpdSTK8JS9opIIp_LA17hMpel5NkTwoX9sjkS2VBA0GuyG0hz-HB1PIN-uBL2eS4AUuvMtlvShqOwiltWi0XYgCopHC3iuLqbn6yGKGubpwZk05ii0KNCM5um4JVyfhblXAlJgG7iCUdYDxlq31tGlBwNOaplA-BFQyiEqicoXNfHTeLGWiVuWuY9wVV9tj99TGsIx1HZ1b6SMXdq_GhQgF63hg5rKxnsPbFC4z0uJYim2KMU3EhTMDE3PGN_kFo6c8hKGK-dN6H97bU65lP-s4ReYxi1ds1og7XhlCgjJz3eYaJV1QgJB1pMP3tY1ismCzhrDfrfp85XyMzAwYWx7c6kynGY-_0YJ3_oKT1szbFOuipcvO2chQfWM0NRLCoiQJmJ_F7b9XQbaTU6nIJM9-nFR3_vMbrcSxnhPpvnvZWfUa8NhcTHrxZYyPYTPJqF9EfgCxa2E6qsSoJIccqNb4h_woHKIn5e5Nx7Tci8h-CdHIF91hyKn2n4F_UwYRWs0_yKAYLZ94a796PL59WFqS7DKIHGyPm05HSTF_mSlfX4=",
+          "id": "rs_0c460f0b1dfdf84e016aba3418104487d0b99d00c00917e0df",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly states a power conversion and names four steering-system components.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0c460f0b1dfdf84e016aba34188cd887d0a476fc82b6cc69d2",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 361,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 14
+        },
+        "total_tokens": 415
+      },
+      "user": null
+    },
+    "request_id": "resp_0c460f0b1dfdf84e016aba3417783887d0a16e6df8805a8156",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly states a power conversion and names four steering-system components.\"}",
+    "usage": {
+      "input_tokens": 361,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 54,
+      "output_tokens_details": {
+        "reasoning_tokens": 14
+      },
+      "total_tokens": 415
+    }
+  },
+  "record_hash": "473cc6ed277b2808b6d8ff8d2db3e997bdc3e73ce9c6b04256380c1a3b9341a0",
+  "request_hash": "d9091662618848d7c948a5f09b640c2629528ce0fe8ac6515a166c685dc7a912",
+  "started_at": "2026-09-28T09:32:07.333495+00:00",
+  "status": "OK"
+}

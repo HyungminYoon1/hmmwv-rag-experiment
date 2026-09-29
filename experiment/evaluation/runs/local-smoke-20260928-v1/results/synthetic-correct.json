@@ -1,0 +1,87 @@
+{
+  "at": "2026-09-28T06:15:59.763104+00:00",
+  "identity_hash": "1ffcc02864ac8659ff0444897132894d0c2bf9638483d9ecd601782e90aa96c4",
+  "input_hash": "48aaf688b10a81f9f2bd65c9ed2265ce5030aff558ad55a37daf0e6a6a975932",
+  "result": {
+    "attempt_key": "synthetic-correct",
+    "condition": "RAG",
+    "errors": {
+      "answer_relevancy": {
+        "code": "RAGAS_ALGORITHM_MISMATCH",
+        "type": "EvaluationError"
+      },
+      "faithfulness": {
+        "code": "STAGE_ATTEMPTS_EXHAUSTED",
+        "type": "EvaluationError"
+      },
+      "oracle_support": {
+        "code": "STAGE_ATTEMPTS_EXHAUSTED",
+        "type": "EvaluationError"
+      }
+    },
+    "evaluation_elapsed_seconds": 95.05471550000038,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "SYN01",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "full_abstention",
+        "reason": "The response provides a specific, technical factual claim (12 degrees Celsius) regarding the storage temperature of the Luma test box, which is a fictional device. Since it offers a concrete, factual answer despite the fictional nature of the object, it is not a full abstention. The claim is substantive and not a disclaimer or refusal. Therefore, it should be classified as containing a factual claim, not a full abstention."
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The Luma test box should be stored at 12 degrees Celsius."
+        }
+      ],
+      "claims_raw": [
+        "The Luma test box should be stored at 12 degrees Celsius."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Store the Luma test box at 12 degrees Celsius.",
+            "fulfilled": 1,
+            "id": "temperature",
+            "reason": "The response explicitly states '12 degrees Celsius', which matches the required element 'Storage temperature is 12 degrees Celsius.' There is no contradiction or missing information."
+          }
+        ]
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "cd12676aebd25e64d7b85a46a7303511391bd3191388aa869af7aa5efbb5baa2"
+}

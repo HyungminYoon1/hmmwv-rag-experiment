@@ -1,0 +1,205 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:42:32.312648+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "C002106"
+        ],
+        "evidence_quotes": [
+          "The fan is activated when coolant temperature reaches 215°F (102°C)."
+        ],
+        "reason": "The context explicitly states the fan activates at this coolant temperature.",
+        "statement": "The engine fan is activated when the coolant temperature reaches 215°F (102°C).",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588552,
+      "conversation": null,
+      "created_at": 1790588549.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_09903ecb3ea7243b016aba3685c90487d0a3c693ae64d36ece",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The engine fan is activated when the coolant temperature reaches 215°F (102°C).\",\"reason\":\"The context explicitly states the fan activates at this coolant temperature.\",\"verdict\":1,\"evidence_ids\":[\"C002106\"],\"evidence_quotes\":[\"The fan is activated when coolant temperature reaches 215°F (102°C).\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_09903ecb3ea7243b016aba36871b3887d0ac80e31cf887733f",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1343,
+        "input_tokens_details": {
+          "cache_write_tokens": 1340,
+          "cached_tokens": 0
+        },
+        "output_tokens": 83,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1426
+      },
+      "user": null
+    },
+    "request_id": "resp_09903ecb3ea7243b016aba3685c90487d0a3c693ae64d36ece",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The engine fan is activated when the coolant temperature reaches 215°F (102°C).\",\"reason\":\"The context explicitly states the fan activates at this coolant temperature.\",\"verdict\":1,\"evidence_ids\":[\"C002106\"],\"evidence_quotes\":[\"The fan is activated when coolant temperature reaches 215°F (102°C).\"]}]}",
+    "usage": {
+      "input_tokens": 1343,
+      "input_tokens_details": {
+        "cache_write_tokens": 1340,
+        "cached_tokens": 0
+      },
+      "output_tokens": 83,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1426
+    }
+  },
+  "record_hash": "0342fed8af90eddde06d623d99d578dd7b183748f7b24f5b635f843854060dae",
+  "request_hash": "5352581e7f1e61fd1863a8868863245440496381f06fc13e1fe6f38ac278bd02",
+  "started_at": "2026-09-28T09:42:29.625336+00:00",
+  "status": "OK"
+}

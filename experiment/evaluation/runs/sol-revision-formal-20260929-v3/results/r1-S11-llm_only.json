@@ -1,0 +1,251 @@
+{
+  "at": "2026-09-29T05:36:22.902708+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "084193f7d02cc8b01d3c0937dbcc31f609d5735b2050818c577869f3be243818",
+  "result": {
+    "attempt_key": "r1-S11-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 22.14009740000074,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7589127487806498
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7589127487806498
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.25
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S11",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "Gives a specific 50/50 coolant mixture and makes substantive claims about its benefits."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7589127237267439,
+          0.758912744177588,
+          0.7589127784376176
+        ],
+        "query_vector_hash": "2aaf401dce9536f941606ff3629f5989008ccca08895028e10b44e72793d1467",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the HMMWV (M998-series) engine cooling system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the HMMWV (M998-series) engine cooling system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the HMMWV (M998-series) engine cooling system?"
+          }
+        ],
+        "response_vectors_hash": "c89bdae542f808288367898b636aa9fd957c96ea82a7bb38522c2500524235a5",
+        "score": 0.75891274878065
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The bracketed statement describing standard maintenance practices, TM 9-2320-280-20-1, Volume 1, and general U.S. Army vehicle maintenance guidelines is self-described provenance."
+        ],
+        "shared_conditions": [
+          "HMMWV (M998-series) engine cooling system",
+          "Normal operating conditions for the stated coolant benefits"
+        ],
+        "statements": [
+          {
+            "answer_quote": "a 50/50 mixture of antifreeze (ethylene glycol) and distilled water",
+            "statement": "The normally specified coolant for the HMMWV (M998-series) engine cooling system is a 50/50 mixture of ethylene-glycol antifreeze and distilled water."
+          },
+          {
+            "answer_quote": "This mixture provides optimal cooling performance",
+            "statement": "Under normal operating conditions, this 50/50 mixture provides optimal cooling performance in the HMMWV (M998-series) engine cooling system."
+          },
+          {
+            "answer_quote": "prevents freezing",
+            "statement": "Under normal operating conditions, this 50/50 mixture prevents freezing in the HMMWV (M998-series) engine cooling system."
+          },
+          {
+            "answer_quote": "protects the engine from overheating under normal operating conditions",
+            "statement": "Under normal operating conditions, this 50/50 mixture protects the HMMWV (M998-series) engine from overheating."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "a 50/50 mixture of antifreeze (ethylene glycol) and distilled water",
+          "id": "C001",
+          "text": "The normally specified coolant for the HMMWV (M998-series) engine cooling system is a 50/50 mixture of ethylene-glycol antifreeze and distilled water."
+        },
+        {
+          "answer_quote": "This mixture provides optimal cooling performance",
+          "id": "C002",
+          "text": "Under normal operating conditions, this 50/50 mixture provides optimal cooling performance in the HMMWV (M998-series) engine cooling system."
+        },
+        {
+          "answer_quote": "prevents freezing",
+          "id": "C003",
+          "text": "Under normal operating conditions, this 50/50 mixture prevents freezing in the HMMWV (M998-series) engine cooling system."
+        },
+        {
+          "answer_quote": "protects the engine from overheating under normal operating conditions",
+          "id": "C004",
+          "text": "Under normal operating conditions, this 50/50 mixture protects the HMMWV (M998-series) engine from overheating."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "a 50/50 mixture of antifreeze (ethylene glycol) and distilled water",
+            "fulfilled": 1,
+            "id": "S11-A01",
+            "reason": "States the specified 50:50 water and ethylene-glycol antifreeze mixture."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.25,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage specifies water, but does not say it must be distilled.",
+              "statement": "The normally specified coolant for the HMMWV (M998-series) engine cooling system is a 50/50 mixture of ethylene-glycol antifreeze and distilled water.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage describes the cooling system's function, but does not say the mixture provides optimal cooling performance.",
+              "statement": "Under normal operating conditions, this 50/50 mixture provides optimal cooling performance in the HMMWV (M998-series) engine cooling system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not state a freezing-prevention benefit.",
+              "statement": "Under normal operating conditions, this 50/50 mixture prevents freezing in the HMMWV (M998-series) engine cooling system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C002106",
+                "O:C002106"
+              ],
+              "evidence_quotes": [
+                "Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used.",
+                "The cooling system dissipates heat generated from combustion and\nmaintains the engine operating temperature at its most efficient level."
+              ],
+              "reason": "The passage identifies the normally used mixture and says the cooling system dissipates heat and maintains the engine's operating temperature.",
+              "statement": "Under normal operating conditions, this 50/50 mixture protects the HMMWV (M998-series) engine from overheating.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.7589127237267439,
+          0.758912744177588,
+          0.7589127784376176
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7589127487806498,
+        "query_vector_hash": "2aaf401dce9536f941606ff3629f5989008ccca08895028e10b44e72793d1467",
+        "ragas_score": 0.75891274878065,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "c89bdae542f808288367898b636aa9fd957c96ea82a7bb38522c2500524235a5"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7589127237267439,
+          0.758912744177588,
+          0.7589127784376176
+        ],
+        "decimal50_cosines": [
+          "0.75891272372674403157317628285680974702213564347711",
+          "0.75891274417758814606592077328094474646644097279468",
+          "0.75891277843761763837530002271440308521037247087478"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.75891274878065
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.75891274878065
+          }
+        },
+        "query_vector_hash": "2aaf401dce9536f941606ff3629f5989008ccca08895028e10b44e72793d1467",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the HMMWV (M998-series) engine cooling system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the HMMWV (M998-series) engine cooling system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the HMMWV (M998-series) engine cooling system?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "c89bdae542f808288367898b636aa9fd957c96ea82a7bb38522c2500524235a5",
+        "score": 0.7589127487806498
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "6cd0ef193d70ff38fd094350a8e6971ae6555686d63d988cc54392b72938d931",
+  "source_result_sha256": "46d114a17d460b4ea3ede3f4f3bccc62fff0997ed987d838b26b4c6367da2a31"
+}

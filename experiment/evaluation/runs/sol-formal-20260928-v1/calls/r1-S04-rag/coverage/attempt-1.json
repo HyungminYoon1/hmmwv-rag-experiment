@@ -1,0 +1,196 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:36:49.951358+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "allow vapor to escape to the atmosphere",
+        "fulfilled": 1,
+        "id": "S04-A01",
+        "reason": "Correctly states the purpose during normal operation."
+      },
+      {
+        "answer_quote": "prevents water from entering the engine and other systems by blocking venting",
+        "fulfilled": 1,
+        "id": "S04-A02",
+        "reason": "Correctly states that preventing venting keeps water out during deep-water fording."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588209,
+      "conversation": null,
+      "created_at": 1790588207.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0444bf551e669243016aba352f771c87d0b44412fb93192c32",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S04-A01\",\"fulfilled\":1,\"answer_quote\":\"allow vapor to escape to the atmosphere\",\"reason\":\"Correctly states the purpose during normal operation.\"},{\"id\":\"S04-A02\",\"fulfilled\":1,\"answer_quote\":\"prevents water from entering the engine and other systems by blocking venting\",\"reason\":\"Correctly states that preventing venting keeps water out during deep-water fording.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0444bf551e669243016aba353080bc87d086c047694c3dceb7",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 814,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 95,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 909
+      },
+      "user": null
+    },
+    "request_id": "resp_0444bf551e669243016aba352f771c87d0b44412fb93192c32",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S04-A01\",\"fulfilled\":1,\"answer_quote\":\"allow vapor to escape to the atmosphere\",\"reason\":\"Correctly states the purpose during normal operation.\"},{\"id\":\"S04-A02\",\"fulfilled\":1,\"answer_quote\":\"prevents water from entering the engine and other systems by blocking venting\",\"reason\":\"Correctly states that preventing venting keeps water out during deep-water fording.\"}]}",
+    "usage": {
+      "input_tokens": 814,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 95,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 909
+    }
+  },
+  "record_hash": "233b6f3d2fbdb43a1897ead25031e8aa53155fc3496f2d74bc3f84e54f3cc75d",
+  "request_hash": "59cb3cc4b0b55b87eee2c7771c3166e7f2d456413f7fb84ea79f68d0d202b64c",
+  "started_at": "2026-09-28T09:36:47.311608+00:00",
+  "status": "OK"
+}

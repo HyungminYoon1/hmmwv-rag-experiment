@@ -1,0 +1,190 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T08:52:20.764844+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "Store the Luma test box at 12 degrees Celsius.",
+        "fulfilled": 1,
+        "id": "temperature",
+        "reason": "The answer states the required storage temperature of 12 degrees Celsius."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790585547,
+      "conversation": null,
+      "created_at": 1790585545.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0a70a90cbccacf26016aba2ac9882887d0886d05442fc4495c",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"temperature\",\"fulfilled\":1,\"answer_quote\":\"Store the Luma test box at 12 degrees Celsius.\",\"reason\":\"The answer states the required storage temperature of 12 degrees Celsius.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0a70a90cbccacf26016aba2aca809c87d08edd560b52ef2b99",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 644,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 52,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 696
+      },
+      "user": null
+    },
+    "request_id": "resp_0a70a90cbccacf26016aba2ac9882887d0886d05442fc4495c",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"temperature\",\"fulfilled\":1,\"answer_quote\":\"Store the Luma test box at 12 degrees Celsius.\",\"reason\":\"The answer states the required storage temperature of 12 degrees Celsius.\"}]}",
+    "usage": {
+      "input_tokens": 644,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 52,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 696
+    }
+  },
+  "record_hash": "a68e437b515477337080927d2a397a36f34bf5c697de7433fab9c71d4a2fb460",
+  "request_hash": "d0ce4d80821efbe7dbed77813254d1504cdbebc826a3b6dd5b1f6874c5bf55c3",
+  "started_at": "2026-09-28T08:52:18.802546+00:00",
+  "status": "OK"
+}

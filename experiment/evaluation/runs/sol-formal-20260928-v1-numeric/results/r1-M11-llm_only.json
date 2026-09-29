@@ -1,0 +1,221 @@
+{
+  "at": "2026-09-28T09:55:51.739853+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "258758fb697eb105df55e208d87f84e30c9addd78f4d250052842dcae9b93606",
+  "original_result_sha256": "9680c047ce507b50e74d83d0c2a0a52fa760e02cb52f06c73a27f0965d9aa208",
+  "result": {
+    "attempt_key": "r1-M11-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 30.09569339999871,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M11",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": false,
+        "kind": "full_abstention",
+        "reason": "It provides neither requested value and says it cannot give the exact values from the available material."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.984569310352816,
+          0.984569310352816,
+          0.984569310352816
+        ],
+        "query_vector_hash": "4ce49b6865376b67bae27abd25d7d10af858027f9acf3cf1e680075cf1128959",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          }
+        ],
+        "response_vectors_hash": "ba23494428e5be09092b08601857ab5232aeb9e606f106897e8f6a48441fe922",
+        "score": 0.0
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The specified tension range for a new accessory drivebelt on vehicles other than M1123 or A2 is not available in the provided reference material."
+        },
+        {
+          "id": "C002",
+          "text": "The specified tightening torque for alternator mounting bolts on vehicles other than M1123 or A2 is not available in the provided reference material."
+        },
+        {
+          "id": "C003",
+          "text": "Excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), are absent from the provided reference material."
+        },
+        {
+          "id": "C004",
+          "text": "The specified tension range and tightening torque would need to be obtained directly from TM 9-2320-280-20-1 or the official technical documentation for TM 9-2320-280-20-1."
+        }
+      ],
+      "claims_raw": [
+        "The specified tension range for a new accessory drivebelt on vehicles other than M1123 or A2 is not available in the provided reference material.",
+        "The specified tightening torque for alternator mounting bolts on vehicles other than M1123 or A2 is not available in the provided reference material.",
+        "Excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), are absent from the provided reference material.",
+        "The specified tension range and tightening torque would need to be obtained directly from TM 9-2320-280-20-1 or the official technical documentation for TM 9-2320-280-20-1."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "not available in the provided reference material",
+            "fulfilled": 0,
+            "id": "M11-A01",
+            "reason": "The answer does not supply the new-belt tension range of 70–110 lb (311–489 N)."
+          },
+          {
+            "answer_quote": "not available in the provided reference material",
+            "fulfilled": 0,
+            "id": "M11-A02",
+            "reason": "The answer does not supply the alternator mounting-bolt torque of 40 lb-ft (54 N·m)."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The reference specifies 70–110 lbs for new drivebelts on those vehicles.",
+              "statement": "The specified tension range for a new accessory drivebelt on vehicles other than M1123 or A2 is not available in the provided reference material.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The reference specifies an alternator mounting-bolt torque of 40 lb-ft (54 N•m).",
+              "statement": "The specified tightening torque for alternator mounting bolts on vehicles other than M1123 or A2 is not available in the provided reference material.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The provided excerpts do not identify their manual, volume, or edition, so their absence cannot be established.",
+              "statement": "Excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), are absent from the provided reference material.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Both specifications are already present in the provided reference material.",
+              "statement": "The specified tension range and tightening torque would need to be obtained directly from TM 9-2320-280-20-1 or the official technical documentation for TM 9-2320-280-20-1.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.984569310352816,
+          0.984569310352816,
+          0.984569310352816
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "4ce49b6865376b67bae27abd25d7d10af858027f9acf3cf1e680075cf1128959",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "ba23494428e5be09092b08601857ab5232aeb9e606f106897e8f6a48441fe922"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.984569310352816,
+          0.984569310352816,
+          0.984569310352816
+        ],
+        "decimal50_cosines": [
+          "0.98456931035281610304895539413734434232320686238517",
+          "0.98456931035281610304895539413734434232320686238517",
+          "0.98456931035281610304895539413734434232320686238517"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "4ce49b6865376b67bae27abd25d7d10af858027f9acf3cf1e680075cf1128959",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "ba23494428e5be09092b08601857ab5232aeb9e606f106897e8f6a48441fe922",
+        "score": 0.0
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "d8d91b339891d4272de6a84856da4ab7eccf1bf75a5cd345d26b672ae19a460f"
+}

@@ -1,0 +1,341 @@
+{
+  "at": "2026-09-28T09:56:40.114293+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "a65f783d4597e99a1aae08a94808e877feafe77ec28a09d7cddf4bd224dfd7f6",
+  "original_result_sha256": "25d5ee1e94325b1d4bbc307e7ce61f8974c6aae6c097e2d8e3c0ba9f784b2435",
+  "result": {
+    "attempt_key": "r1-S06-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 32.78840069999933,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9798251858921639
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9798251858921639
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.375
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.375
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S06",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly lists vehicle symptoms and makes substantive claims about what they may indicate."
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "A vehicle being hard to start may justify checking the air intake/exhaust system."
+        },
+        {
+          "id": "C002",
+          "text": "Rough vehicle running may justify checking the air intake/exhaust system."
+        },
+        {
+          "id": "C003",
+          "text": "A vehicle failing to develop full power may justify checking the air intake/exhaust system."
+        },
+        {
+          "id": "C004",
+          "text": "Colorless exhaust may justify checking the air intake/exhaust system and may indicate a fuel, air, or mechanical problem."
+        },
+        {
+          "id": "C005",
+          "text": "Excessive white exhaust smoke may indicate an issue with the intake/exhaust system."
+        },
+        {
+          "id": "C006",
+          "text": "Steam leaks may indicate an issue with the intake/exhaust system."
+        },
+        {
+          "id": "C007",
+          "text": "Condensation in the exhaust system may indicate an issue with the intake/exhaust system."
+        },
+        {
+          "id": "C008",
+          "text": "White joints in the system may indicate an issue with the intake/exhaust system."
+        }
+      ],
+      "claims_raw": [
+        "A vehicle being hard to start may justify checking the air intake/exhaust system.",
+        "Rough vehicle running may justify checking the air intake/exhaust system.",
+        "A vehicle failing to develop full power may justify checking the air intake/exhaust system.",
+        "Colorless exhaust may justify checking the air intake/exhaust system and may indicate a fuel, air, or mechanical problem.",
+        "Excessive white exhaust smoke may indicate an issue with the intake/exhaust system.",
+        "Steam leaks may indicate an issue with the intake/exhaust system.",
+        "Condensation in the exhaust system may indicate an issue with the intake/exhaust system.",
+        "White joints in the system may indicate an issue with the intake/exhaust system."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "hard to start",
+            "fulfilled": 1,
+            "id": "S06-A01",
+            "reason": "Directly identifies difficulty starting."
+          },
+          {
+            "answer_quote": "rough running",
+            "fulfilled": 1,
+            "id": "S06-A02",
+            "reason": "Equivalent to runs rough."
+          },
+          {
+            "answer_quote": "failure to develop full power",
+            "fulfilled": 1,
+            "id": "S06-A03",
+            "reason": "Directly identifies lack of full power."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.375,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001991"
+              ],
+              "evidence_quotes": [
+                "Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system."
+              ],
+              "reason": "Hard starting is given as a reason to check this system.",
+              "statement": "A vehicle being hard to start may justify checking the air intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001991"
+              ],
+              "evidence_quotes": [
+                "Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system."
+              ],
+              "reason": "Rough running is given as a reason to check this system.",
+              "statement": "Rough vehicle running may justify checking the air intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001991"
+              ],
+              "evidence_quotes": [
+                "Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system."
+              ],
+              "reason": "Failure to develop full power is given as a reason to check this system.",
+              "statement": "A vehicle failing to develop full power may justify checking the air intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context links abnormal exhaust, not colorless exhaust, to those problems.",
+              "statement": "Colorless exhaust may justify checking the air intake/exhaust system and may indicate a fuel, air, or mechanical problem.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The cited sign appears under engine cooling, not as an intake/exhaust-system issue.",
+              "statement": "Excessive white exhaust smoke may indicate an issue with the intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The cited sign appears under engine cooling, not as an intake/exhaust-system issue.",
+              "statement": "Steam leaks may indicate an issue with the intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not link this sign to an intake/exhaust-system issue.",
+              "statement": "Condensation in the exhaust system may indicate an issue with the intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not link this sign to an intake/exhaust-system issue.",
+              "statement": "White joints in the system may indicate an issue with the intake/exhaust system.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.375,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:intake"
+              ],
+              "evidence_quotes": [
+                "Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system."
+              ],
+              "reason": "The text recommends checking the system when a vehicle is hard to start.",
+              "statement": "A vehicle being hard to start may justify checking the air intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:intake"
+              ],
+              "evidence_quotes": [
+                "Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system."
+              ],
+              "reason": "The text recommends checking the system when a vehicle runs rough.",
+              "statement": "Rough vehicle running may justify checking the air intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:intake"
+              ],
+              "evidence_quotes": [
+                "Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system."
+              ],
+              "reason": "The text recommends checking the system when a vehicle never develops full power.",
+              "statement": "A vehicle failing to develop full power may justify checking the air intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Colorless exhaust and its possible causes are not discussed.",
+              "statement": "Colorless exhaust may justify checking the air intake/exhaust system and may indicate a fuel, air, or mechanical problem.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "White exhaust smoke is not discussed.",
+              "statement": "Excessive white exhaust smoke may indicate an issue with the intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Steam leaks are not discussed.",
+              "statement": "Steam leaks may indicate an issue with the intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Condensation is not discussed.",
+              "statement": "Condensation in the exhaust system may indicate an issue with the intake/exhaust system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "White joints are not discussed.",
+              "statement": "White joints in the system may indicate an issue with the intake/exhaust system.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0004855390664422199,
+        "cosine_similarities": [
+          0.979825182003608,
+          0.9798251848225971,
+          0.9798251908502867
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9798251858921639,
+        "query_vector_hash": "36fc6805ed5244f981910e1f2af7b9602cd25134f7243cf3e226f9e5ea1f9ec4",
+        "ragas_score": 0.9793396468257217,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "53e398cef611e26a888485d36c4e3672ae3f7c2e5cf223f7b6eef1bc1f3df693"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.979825182003608,
+          0.9798251848225971,
+          0.9798251908502867
+        ],
+        "decimal50_cosines": [
+          "0.97982518200360798014351420158566137659022266473716",
+          "0.97982518482259706334044590977221336829188397800412",
+          "0.97982519085028675342089088974992106223068967379883"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 0.0,
+        "model_calls": 0,
+        "original_error": {
+          "code": "RAGAS_ALGORITHM_MISMATCH",
+          "type": "EvaluationError"
+        },
+        "original_metrics": {
+          "ar_raw": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          },
+          "ar_report": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          }
+        },
+        "query_vector_hash": "36fc6805ed5244f981910e1f2af7b9602cd25134f7243cf3e226f9e5ea1f9ec4",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What vehicle symptoms may justify checking the air intake and exhaust system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What vehicle symptoms may justify checking the air intake and exhaust system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What vehicle symptoms may justify checking the air intake and exhaust system?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "53e398cef611e26a888485d36c4e3672ae3f7c2e5cf223f7b6eef1bc1f3df693",
+        "score": 0.9798251858921639
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "e4aa68f2dd383c60d88efd4b950e781016c2a89ccba8cb9d0eca75d897e73491"
+}

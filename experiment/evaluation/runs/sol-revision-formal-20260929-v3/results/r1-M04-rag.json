@@ -1,0 +1,282 @@
+{
+  "at": "2026-09-29T05:36:22.775064+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "131cf11dc9629892a778bcdc2b97c5119036ab7c072ff0bd4df9d228db35534e",
+  "result": {
+    "attempt_key": "r1-M04-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 26.276720300000306,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8992966130579988
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8992966130579988
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      }
+    },
+    "question_id": "M04",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly names a diagnostic system and two possible causes of rough running."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8992966130579988,
+          0.8992966130579988,
+          0.8992966130579988
+        ],
+        "query_vector_hash": "1cf6e7ec5fa265614abeae22ca1f67b0cb6b0cbe8637e12e51d11738637aa5ff",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system does the exhaust-color guidance direct the maintainer to, and what two other problem areas can cause rough running?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system does the exhaust-color guidance direct the maintainer to, and what two other problem areas can cause rough running?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system does the exhaust-color guidance direct the maintainer to, and what two other problem areas can cause rough running?"
+          }
+        ],
+        "response_vectors_hash": "3a52b26bda24d743fab5103ea5e326e152ddad7fde04c716c1ec3fff0fbc8c1b",
+        "score": 0.899296613057999
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "“According to the reference” is a provenance statement, not a technical claim."
+        ],
+        "shared_conditions": [
+          "The exhaust-color guidance question concerns a rough-running engine emitting white smoke."
+        ],
+        "statements": [
+          {
+            "answer_quote": "The exhaust-color guidance directs the maintainer to the **fuel system** diagnostic system.",
+            "statement": "For a rough-running engine emitting white smoke, the exhaust-color guidance directs the maintainer to the fuel system diagnostic system."
+          },
+          {
+            "answer_quote": "two other problem areas that can cause rough running are:\n1. **Air leaks in the fuel supply lines**",
+            "statement": "Air leaks in the fuel supply lines can cause rough running."
+          },
+          {
+            "answer_quote": "two other problem areas that can cause rough running are:\n1. **Air leaks in the fuel supply lines**  \n2. **A faulty cold advance circuit**",
+            "statement": "A faulty cold advance circuit can cause rough running."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The exhaust-color guidance directs the maintainer to the **fuel system** diagnostic system.",
+          "id": "C001",
+          "text": "For a rough-running engine emitting white smoke, the exhaust-color guidance directs the maintainer to the fuel system diagnostic system."
+        },
+        {
+          "answer_quote": "two other problem areas that can cause rough running are:\n1. **Air leaks in the fuel supply lines**",
+          "id": "C002",
+          "text": "Air leaks in the fuel supply lines can cause rough running."
+        },
+        {
+          "answer_quote": "two other problem areas that can cause rough running are:\n1. **Air leaks in the fuel supply lines**  \n2. **A faulty cold advance circuit**",
+          "id": "C003",
+          "text": "A faulty cold advance circuit can cause rough running."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The exhaust-color guidance directs the maintainer to the **fuel system** diagnostic system.",
+            "fulfilled": 1,
+            "id": "M04-A01",
+            "reason": "Correctly identifies the fuel system; the section number is a source location, not a necessary additional fact."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M04-A02",
+            "reason": "Fuel-supply-line air leaks are not air intake or exhaust problems."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M04-A03",
+            "reason": "A faulty cold advance circuit is not identified as an internal mechanical problem."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The exhaust-color guidance describes white smoke but does not direct the maintainer to the fuel system diagnostic system. The instruction to rerun fuel system tests applies only if coolant loss is not detected.",
+              "statement": "For a rough-running engine emitting white smoke, the exhaust-color guidance directs the maintainer to the fuel system diagnostic system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C001624"
+              ],
+              "evidence_quotes": [
+                "Rough running may also be caused by air leaks in the\nfuel supply lines."
+              ],
+              "reason": "The fuel system reference explicitly identifies air leaks in the fuel supply lines as a possible cause.",
+              "statement": "Air leaks in the fuel supply lines can cause rough running.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001792"
+              ],
+              "evidence_quotes": [
+                "A fautty cold advance circuit can\ncause rough running."
+              ],
+              "reason": "The fuel system flowchart explicitly states this cause.",
+              "statement": "A faulty cold advance circuit can cause rough running.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.3333333333333333,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002435",
+                "O:C001566"
+              ],
+              "evidence_quotes": [
+                "WHITE. . . . . . . . . .Go to fuel system, Paragraph 2-22. Could be injector timing, DS level fault.",
+                "2-22. FUEL SYSTEM TESTS"
+              ],
+              "reason": "The white-smoke guidance says to go to fuel system, Paragraph 2-22, which is headed “FUEL SYSTEM TESTS.”",
+              "statement": "For a rough-running engine emitting white smoke, the exhaust-color guidance directs the maintainer to the fuel system diagnostic system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied fuel-system introduction names air intake and exhaust problems, not air leaks in fuel supply lines.",
+              "statement": "Air leaks in the fuel supply lines can cause rough running.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context does not identify a faulty cold advance circuit as a cause of rough running.",
+              "statement": "A faulty cold advance circuit can cause rough running.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.8992966130579988,
+          0.8992966130579988,
+          0.8992966130579988
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8992966130579988,
+        "query_vector_hash": "1cf6e7ec5fa265614abeae22ca1f67b0cb6b0cbe8637e12e51d11738637aa5ff",
+        "ragas_score": 0.899296613057999,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "3a52b26bda24d743fab5103ea5e326e152ddad7fde04c716c1ec3fff0fbc8c1b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8992966130579988,
+          0.8992966130579988,
+          0.8992966130579988
+        ],
+        "decimal50_cosines": [
+          "0.89929661305799894885535926633705843320177467039932",
+          "0.89929661305799894885535926633705843320177467039932",
+          "0.89929661305799894885535926633705843320177467039932"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.899296613057999
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.899296613057999
+          }
+        },
+        "query_vector_hash": "1cf6e7ec5fa265614abeae22ca1f67b0cb6b0cbe8637e12e51d11738637aa5ff",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system does the exhaust-color guidance direct the maintainer to, and what two other problem areas can cause rough running?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system does the exhaust-color guidance direct the maintainer to, and what two other problem areas can cause rough running?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which diagnostic system does the exhaust-color guidance direct the maintainer to, and what two other problem areas can cause rough running?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "3a52b26bda24d743fab5103ea5e326e152ddad7fde04c716c1ec3fff0fbc8c1b",
+        "score": 0.8992966130579988
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "32ab154d5721d94cc673767b1da230c41fed1f261e74e464031b9177f7490bbd",
+  "source_result_sha256": "017fa5d20d03280d0441eb4b1c28f9b993ad3623045a7d01afef834caaf0f35b"
+}

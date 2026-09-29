@@ -1,0 +1,155 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:36:34.945104+00:00",
+  "parsed": {
+    "statements": [
+      "During normal operation, the HMMWV venting system allows vapor to escape to the atmosphere.",
+      "During deep-water fording operations, the HMMWV venting system blocks venting.",
+      "During deep-water fording operations, blocking venting prevents water from entering the engine and other systems.",
+      "During deep-water fording operations, preventing water from entering the engine and other systems avoids damage."
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588194,
+      "conversation": null,
+      "created_at": 1790588192.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0d1708d98ecaf781016aba352019a087d09f3e25a3503a895b",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[\"During normal operation, the HMMWV venting system allows vapor to escape to the atmosphere.\",\"During deep-water fording operations, the HMMWV venting system blocks venting.\",\"During deep-water fording operations, blocking venting prevents water from entering the engine and other systems.\",\"During deep-water fording operations, preventing water from entering the engine and other systems avoids damage.\"]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0d1708d98ecaf781016aba3521547087d085e58be9ad5410e2",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "StatementGeneratorOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for statement generation.",
+            "properties": {
+              "statements": {
+                "description": "The generated statements from the answer",
+                "items": {
+                  "type": "string"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "StatementGeneratorOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 582,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 91,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 673
+      },
+      "user": null
+    },
+    "request_id": "resp_0d1708d98ecaf781016aba352019a087d09f3e25a3503a895b",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[\"During normal operation, the HMMWV venting system allows vapor to escape to the atmosphere.\",\"During deep-water fording operations, the HMMWV venting system blocks venting.\",\"During deep-water fording operations, blocking venting prevents water from entering the engine and other systems.\",\"During deep-water fording operations, preventing water from entering the engine and other systems avoids damage.\"]}",
+    "usage": {
+      "input_tokens": 582,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 91,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 673
+    }
+  },
+  "record_hash": "cbb9cea7c4225257f19b2e9f5084669023df22df4ccefefdd191d6ea60b00d1c",
+  "request_hash": "ba14f7e2ec77fb72e47bf74203e886b21a4e730c34c0708297b98eefd96fa326",
+  "started_at": "2026-09-28T09:36:31.968859+00:00",
+  "status": "OK"
+}

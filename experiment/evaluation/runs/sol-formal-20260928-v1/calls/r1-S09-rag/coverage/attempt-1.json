@@ -1,0 +1,190 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:41:40.022941+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "The thermostat starts to open at 190°F (87.7°C).",
+        "fulfilled": 1,
+        "id": "S09-A01",
+        "reason": "Matches the operating description’s 190°F (87.7°C) opening temperature."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588499,
+      "conversation": null,
+      "created_at": 1790588497.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_094247c7c504b6d6016aba3651f43c87d0aeae55f4968df293",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S09-A01\",\"fulfilled\":1,\"answer_quote\":\"The thermostat starts to open at 190°F (87.7°C).\",\"reason\":\"Matches the operating description’s 190°F (87.7°C) opening temperature.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_094247c7c504b6d6016aba3652c9e487d0a9835f8a86a9f4fe",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 970,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 63,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1033
+      },
+      "user": null
+    },
+    "request_id": "resp_094247c7c504b6d6016aba3651f43c87d0aeae55f4968df293",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S09-A01\",\"fulfilled\":1,\"answer_quote\":\"The thermostat starts to open at 190°F (87.7°C).\",\"reason\":\"Matches the operating description’s 190°F (87.7°C) opening temperature.\"}]}",
+    "usage": {
+      "input_tokens": 970,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 63,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1033
+    }
+  },
+  "record_hash": "aac81be9b56b2a1167191a738aa1ca4a954625f1bc47c25d248bb87eae1ce638",
+  "request_hash": "d018ed24d275bb824dd7ad8792ef6163a2127e7fa7f15ea36df26f50da95319e",
+  "started_at": "2026-09-28T09:41:37.822238+00:00",
+  "status": "OK"
+}

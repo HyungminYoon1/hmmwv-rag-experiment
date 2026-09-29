@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:27:27.198627+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives specific oil-and-filter change intervals and a crankcase capacity."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587647,
+      "conversation": null,
+      "created_at": 1790587645.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0e78484c7d71957e016aba32fd40b887d0b9babead5b0f2855",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujL_izOkw2sQy5wL-5orwAqS3Q0vlrgZwyyv1PKf6R4IlIC0-LgVcgw13dZcsK-ImSK0DqH0Nf4s8trg-5H76LvVoeCmgZWwn8nqU8SCesTnjZ81TTUYsumDehMk1Ebu95-10Gm7YOZ4D7QjKNGg-uI_87MU-wO0qQ2Qla2T7RTpqEcc6kfSTo-tJdnsR7kZTEd2rUdn89bQhK7StGIlQ6ZFiJJKM0OjCAtGXKG4wmWntiJxVzrJewH2pWMkWCEnmM579L1qvQMIzuWGqJ2EHSh3LI6fM39_JurSQx0uivQlH5WLIoSoSQDXUKJuvNIyz96QluHUQ6hWsW8gn5_n2hIv4NS1JaxUY9BsKXat-nuj0FN9G65MFQqsIpIYGhZTOy8cpzXkOWt161HLvJD8f7Qc5IOhQ515Zt8T-6liC4l--MuJ2Cc9oetpPD913Lkku1MdFB0OlrYg1hP87B2dqDTPDd7srvGelLx1W0kM_wDU5637WwbqZGooEfNC0cpZ0qawSjj_19Dbvd16hXdCjVTTTCnmJ8fMNiKakZwviZuAtz9-x4_3MrzVi-GTfuXmG1v4J1HIn-i-Jn3jt_PYcF6mZraLhWd74sEhRBTtlQfJTLftQ1djZ76cGx_zVrCoy9WgJUo8ylBNZYVmG9Yh8VvhkKyW2In4HnWDyHe0FNuifr1bZcS05tR2FgrMWTlQKL4i8wDl_YAUdY-LXLcQsYcX43_jA7U4r2pumKoyNZUQg0q6C97aDqHddfrPUsNzckOJhaQCaaGx4Prl2Kw2ZDb6Ny1E-rMw37gzVmFXFcmOch2yoE3BQTHqtDspRkgCHTr9ezWtsQH2pTVK00gNPWWA9eeMU8njJ0Vt_KVH-E5gMAK9Cebzm7NeUGS3C4NmkG7WD1hDMlJSzbL4W45evueH6Wai7GoDvPnyPVjyPcYc6K5PuHDBbxvsl-tqkHlyrPs3OKYKyMyK9o5nsmFhHJnTQVKP1HcesIpp4r9eVpr8FDHg5P1WOEqEjZQDl6SM0NkciMeYMKSSx7Qu4fgtsvSHleiDTR_gMFq8Gjr0Ti2WkUuq6x2uKd-USFFadYHjahfXBOQHFuZbNz_4Era4WJcGvK87P0eggeARds_aks_JkGAT90r0yRu71PjO13LxgA-tozi42v77Hnbd87Km_AkUrbBSIrw4crglZQyC6nZqMBGDAMDQw62YoRZCkBXp2Xdi",
+          "id": "rs_0e78484c7d71957e016aba32fdf4f487d0ac2f2532252cd1c9",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives specific oil-and-filter change intervals and a crankcase capacity.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0e78484c7d71957e016aba32fe810c87d080cc267ea5ad600d",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 344,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 51,
+        "output_tokens_details": {
+          "reasoning_tokens": 10
+        },
+        "total_tokens": 395
+      },
+      "user": null
+    },
+    "request_id": "resp_0e78484c7d71957e016aba32fd40b887d0b9babead5b0f2855",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives specific oil-and-filter change intervals and a crankcase capacity.\"}",
+    "usage": {
+      "input_tokens": 344,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 51,
+      "output_tokens_details": {
+        "reasoning_tokens": 10
+      },
+      "total_tokens": 395
+    }
+  },
+  "record_hash": "a7133d9af1b490a97e9f89d928bcff0b09046f8ba110835e18cdd6afa33d235e",
+  "request_hash": "6eb82cb38e581480b58d4dffcd6650337fab196433262cf43097fe278da4a99d",
+  "started_at": "2026-09-28T09:27:25.116539+00:00",
+  "status": "OK"
+}

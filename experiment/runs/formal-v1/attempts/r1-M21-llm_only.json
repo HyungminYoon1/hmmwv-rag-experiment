@@ -1,0 +1,617 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:27:57.768275+00:00",
+  "evaluation_answer": "The time-or-mileage interval that triggers biennial PMCS for the HMMWV (M998-series) is every 24 months or 15,000 miles, whichever comes first. The Final Road Test must occur within the first 30 days after the completion of the biennial PMCS. \n\n[Note: This information is derived from standard maintenance practices outlined in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), though no specific excerpts were provided in REFERENCE. The response is based on established U.S. Army maintenance guidelines for the HMMWV.]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 235,
+  "key": "r1-M21-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nWhat time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 207,
+  "question": "What time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?",
+  "question_id": "M21",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:15:14.621868707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:15:10.803013407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 109.98800000015763,
+    "peak_rss_bytes": 6352445440,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4960.3683578,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4960.4765129,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4960.5705263,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4960.6796501,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4960.7719889,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4960.8802633,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4960.9738639,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.0827906,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.1764675,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.2694209,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.3777366,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5872619520,
+          "37564": 7958528
+        },
+        "rss_bytes": 6095699968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.4718765,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 5989994496,
+          "37564": 7958528
+        },
+        "rss_bytes": 6213074944,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.5818645,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6129364992,
+          "37564": 7958528
+        },
+        "rss_bytes": 6352445440,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.6768246,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6129364992,
+          "37564": 7958528
+        },
+        "rss_bytes": 6352445440,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.7834339,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.8771752,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4961.9712502,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.0796999,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.1726207,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.2821246,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.3754731,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.4692059,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.5753183,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.6833004,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.7764174,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.8691612,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4962.9778585,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4963.0705775,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4963.1804809,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4963.2724908,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4963.3812468,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4963.4755913,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4963.5817914,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4963.6722359,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4963.7771754,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4963.8695749,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103051264,
+          "30736": 12054528,
+          "36040": 100016128,
+          "37504": 6068899840,
+          "37564": 7958528
+        },
+        "rss_bytes": 6291980288,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:27:57.7664102Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 150,
+    "eval_duration": 2217023000,
+    "load_duration": 10165000,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 207,
+    "prompt_eval_count": 235,
+    "prompt_eval_duration": 26481000,
+    "response": "The time-or-mileage interval that triggers biennial PMCS for the HMMWV (M998-series) is every 24 months or 15,000 miles, whichever comes first. The Final Road Test must occur within the first 30 days after the completion of the biennial PMCS. \n\n[Note: This information is derived from standard maintenance practices outlined in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), though no specific excerpts were provided in REFERENCE. The response is based on established U.S. Army maintenance guidelines for the HMMWV.]",
+    "total_duration": 2575593800
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 36,
+  "started_at": "2026-09-28T04:27:55.185301+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2583.132900000237,
+    "retrieval": null,
+    "total": 2583.132900000237
+  },
+  "unprovided_citations": []
+}

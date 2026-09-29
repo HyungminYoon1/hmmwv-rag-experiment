@@ -1,0 +1,163 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:50:16.372006+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives a specific maximum value of 50 milliohms/second."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790589016,
+      "conversation": null,
+      "created_at": 1790589014.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_047b47863cf233e0016aba385681d487d09c258f5ec51a9b06",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a specific maximum value of 50 milliohms/second.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_047b47863cf233e0016aba38579d4487d0b66ce67dcd860ba4",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 286,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 41,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 327
+      },
+      "user": null
+    },
+    "request_id": "resp_047b47863cf233e0016aba385681d487d09c258f5ec51a9b06",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a specific maximum value of 50 milliohms/second.\"}",
+    "usage": {
+      "input_tokens": 286,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 41,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 327
+    }
+  },
+  "record_hash": "1c3fc7eb2bd68ef963d8f013845260fa7bd93c8fc9bada65fbbe5f75bfe6a5a9",
+  "request_hash": "9ab8f181f3202133e582fe3edc462fc2867227a12d39d3cc23b30099f8c4ef8a",
+  "started_at": "2026-09-28T09:50:14.371277+00:00",
+  "status": "OK"
+}

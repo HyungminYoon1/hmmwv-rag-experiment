@@ -1,0 +1,180 @@
+{
+  "at": "2026-09-29T05:36:22.798569+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "228c4bb69baddd4dd2a4485ad56c770845af20afa7b533c8ec674c03071d74c3",
+  "result": {
+    "attempt_key": "r1-M11-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 7.01715890000014,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "NO_FACTUAL_CLAIM_ZERO",
+        "value": 0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M11",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": false,
+        "kind": "full_abstention",
+        "reason": "It provides neither requested value and says it cannot give the exact values from the available material."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.984569310352816,
+          0.984569310352816,
+          0.984569310352816
+        ],
+        "query_vector_hash": "4ce49b6865376b67bae27abd25d7d10af858027f9acf3cf1e680075cf1128959",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          }
+        ],
+        "response_vectors_hash": "ba23494428e5be09092b08601857ab5232aeb9e606f106897e8f6a48441fe922",
+        "score": 0.0
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "“not available in the provided reference material” describes the supplied material, not a technical specification.",
+          "“absence of excerpts from TM 9-2320-280-20-1” describes input availability.",
+          "“I cannot provide the exact values” is an inability statement.",
+          "“would need to be obtained directly from the manual or its official technical documentation” describes a proposed source, not a technical specification."
+        ],
+        "shared_conditions": [
+          "Vehicle other than M1123 or A2."
+        ],
+        "statements": []
+      },
+      "claims": [],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M11-A01",
+            "reason": "The response gives no new-belt tension range."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M11-A02",
+            "reason": "The response gives no alternator mounting-bolt torque."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.984569310352816,
+          0.984569310352816,
+          0.984569310352816
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "4ce49b6865376b67bae27abd25d7d10af858027f9acf3cf1e680075cf1128959",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "ba23494428e5be09092b08601857ab5232aeb9e606f106897e8f6a48441fe922"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.984569310352816,
+          0.984569310352816,
+          0.984569310352816
+        ],
+        "decimal50_cosines": [
+          "0.98456931035281610304895539413734434232320686238517",
+          "0.98456931035281610304895539413734434232320686238517",
+          "0.98456931035281610304895539413734434232320686238517"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "4ce49b6865376b67bae27abd25d7d10af858027f9acf3cf1e680075cf1128959",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts on vehicles other than M1123 or A2?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "ba23494428e5be09092b08601857ab5232aeb9e606f106897e8f6a48441fe922",
+        "score": 0.0
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "666296a0d8114c0fdf5d744ecdf3bc83205e549b12fc9dd89f1ee3fc4cc5e520",
+  "source_result_sha256": "6f6d617d63382fde7f90ce5d11c637062b9286baf00c739205e3cc2eaca9e426"
+}

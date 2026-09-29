@@ -1,0 +1,177 @@
+{
+  "at": "2026-09-29T05:03:19.510256+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "31e7286f01a557f87346b76daf8bd4e8a91df672e1bc9fbbe44a241f77661770",
+  "result": {
+    "attempt_key": "r1-M21-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 10.656355299999632,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_NO_CLAIM",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "NO_FACTUAL_CLAIM_ZERO",
+        "value": 0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M21",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": false,
+        "kind": "full_abstention",
+        "reason": "The response says the provided material does not specify either requested detail and gives no time, mileage, or road-test timing."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          1.0,
+          0.9999999999996904,
+          0.9999999999996253
+        ],
+        "query_vector_hash": "a38c0cf8f4fa9ea2072f5996e795b3899fa764760ae054ca08296a6bc54f6860",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?"
+          }
+        ],
+        "response_vectors_hash": "e41a4a3aa0d819540213715b1a0ad9125141733afa9a78441fca8acaaf648d69",
+        "score": 0.0
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The response says the provided reference does not specify the time-or-mileage interval for biennial PMCS.",
+          "The response says the given excerpts do not specify when the Final Road Test must occur during biennial service.",
+          "The response describes the reference as outlining semi-annual, annual, and biennial checks in general terms.",
+          "The response says, \"I do not know\" the requested interval or test timing."
+        ],
+        "shared_conditions": [],
+        "statements": []
+      },
+      "claims": [],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M21-A01",
+            "reason": "The response says the biennial time-or-mileage interval is not specified and gives no interval."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M21-A02",
+            "reason": "The response says the Final Road Test timing is not specified and gives no timing."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          1.0,
+          0.9999999999996904,
+          0.9999999999996253
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "a38c0cf8f4fa9ea2072f5996e795b3899fa764760ae054ca08296a6bc54f6860",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "e41a4a3aa0d819540213715b1a0ad9125141733afa9a78441fca8acaaf648d69"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          1.0,
+          0.9999999999996904,
+          0.9999999999996253
+        ],
+        "decimal50_cosines": [
+          "1",
+          "0.99999999999969039778347371233250719754329444449212",
+          "0.99999999999962539775748229444514136286740203263695"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "a38c0cf8f4fa9ea2072f5996e795b3899fa764760ae054ca08296a6bc54f6860",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "e41a4a3aa0d819540213715b1a0ad9125141733afa9a78441fca8acaaf648d69",
+        "score": 0.0
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "6f3154a7b8d1c8e2076e5af8b57324760a0cb10444a9032444a0a5230dc784e3"
+}

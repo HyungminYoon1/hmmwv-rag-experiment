@@ -1,0 +1,154 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:44:54.405654+00:00",
+  "parsed": {
+    "noncommittal": 0,
+    "question": "What approximate cranking speed does the Engine Lubrication Tests reference state for STE/ICE-R Test 10?"
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588694,
+      "conversation": null,
+      "created_at": 1790588692.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_095185b522053dde016aba371485c887d097e2124d41926c70",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"question\":\"What approximate cranking speed does the Engine Lubrication Tests reference state for STE/ICE-R Test 10?\",\"noncommittal\":0}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_095185b522053dde016aba3715b0a087d0895ef232bcb3408b",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerRelevanceOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for answer relevance question generation.",
+            "properties": {
+              "noncommittal": {
+                "description": "1 if the response is evasive/vague, 0 if it is substantive",
+                "title": "Noncommittal",
+                "type": "integer"
+              },
+              "question": {
+                "description": "Question that can be answered from the response",
+                "title": "Question",
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "noncommittal"
+            ],
+            "title": "AnswerRelevanceOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 605,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 44,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 649
+      },
+      "user": null
+    },
+    "request_id": "resp_095185b522053dde016aba371485c887d097e2124d41926c70",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"question\":\"What approximate cranking speed does the Engine Lubrication Tests reference state for STE/ICE-R Test 10?\",\"noncommittal\":0}",
+    "usage": {
+      "input_tokens": 605,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 44,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 649
+    }
+  },
+  "record_hash": "c27bf03cf3419a49de6a63b3b44bddfa3ca5928245997adaae0d96f4d231dc2a",
+  "request_hash": "6fc0ac500bde43f6e184f928fce3c502d5046f1e6ce9f3ca7c8de2bfda45a25f",
+  "started_at": "2026-09-28T09:44:52.390187+00:00",
+  "status": "OK"
+}

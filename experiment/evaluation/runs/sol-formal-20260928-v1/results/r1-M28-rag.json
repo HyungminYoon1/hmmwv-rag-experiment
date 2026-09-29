@@ -1,0 +1,187 @@
+{
+  "at": "2026-09-28T09:30:20.664998+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "eef5a42aa706102102a7365518846e8e5538d91b59334f69f965411efc64ca24",
+  "result": {
+    "attempt_key": "r1-M28-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 31.040118999997503,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.8655688533713292
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.8655688533713292
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.5
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M28",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives concrete voltage ranges and claims that both readings meet them."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8662889415738992,
+          0.8607677524723818,
+          0.8696498660677071
+        ],
+        "query_vector_hash": "a2e64db0d61945dbcd9a7bce8f29461335739bb3e62feb7f683915781b956259",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do a 26 V DC outlet reading with the engine running and a 28 V alternator reading at 1,200–1,500 RPM meet their specified voltage ranges?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are a 26 V DC outlet reading with the engine running and a 28 V alternator reading at 1,200–1,500 RPM within their specified voltage ranges?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "According to the response, do a 26 V DC outlet reading with the engine running and a 28 V alternator reading at 1,200–1,500 RPM meet their specified voltage ranges?"
+          }
+        ],
+        "response_vectors_hash": "96165c152ca07c39efca5337376fb5473811c42144953c9283339952786c8f4e",
+        "score": 0.8655688533713292
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "On an M997, a DC outlet reading of 26 V with the engine running is within the specified DC outlet range of 27–28 V with the engine running."
+        },
+        {
+          "id": "C002",
+          "text": "On an M997, an alternator test reading of 28 V at 1,200–1,500 RPM is within the specified alternator output range of 26–30.5 V."
+        }
+      ],
+      "claims_raw": [
+        "On an M997, a DC outlet reading of 26 V with the engine running is within the specified DC outlet range of 27–28 V with the engine running.",
+        "On an M997, an alternator test reading of 28 V at 1,200–1,500 RPM is within the specified alternator output range of 26–30.5 V."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "the specified range of 27–28 volts for DC outlets when the engine is running",
+            "fulfilled": 1,
+            "id": "M28-A01",
+            "reason": "Gives the correct running-engine DC outlet range."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M28-A02",
+            "reason": "The answer incorrectly says 26 V is within the 27–28 V range."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M28-A03",
+            "reason": "The answer gives 26–30.5 V instead of the specified 27–29 V alternator range."
+          },
+          {
+            "answer_quote": "The alternator test reading of 28 V at 1,200–1,500 RPM is within the acceptable range",
+            "fulfilled": 1,
+            "id": "M28-A04",
+            "reason": "Correctly concludes that 28 V passes the alternator test, although it misstates the range."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.5,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The specified running-engine DC outlet range is 27–28 V; 26 V is below it.",
+              "statement": "On an M997, a DC outlet reading of 26 V with the engine running is within the specified DC outlet range of 27–28 V with the engine running.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C002839",
+                "C002705"
+              ],
+              "evidence_quotes": [
+                "Output voltage of 26-30.5 is acceptable for this\nalternator.",
+                "START ENGINE AND ALLOW TO\nIDLE AT 1200 - 1500 RPM FOR 2 - 3\nMINUTES.\nRECHECK VOLTAGE OUTPUT."
+              ],
+              "reason": "The alternator's acceptable output range is 26–30.5 V, and the test procedure specifies 1,200–1,500 RPM.",
+              "statement": "On an M997, an alternator test reading of 28 V at 1,200–1,500 RPM is within the specified alternator output range of 26–30.5 V.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The specified running-engine range is 27–28 V; 26 V is outside it.",
+              "statement": "On an M997, a DC outlet reading of 26 V with the engine running is within the specified DC outlet range of 27–28 V with the engine running.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The alternator test specifies 27–29 V, not 26–30.5 V.",
+              "statement": "On an M997, an alternator test reading of 28 V at 1,200–1,500 RPM is within the specified alternator output range of 26–30.5 V.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.8662889415738992,
+          0.8607677524723818,
+          0.8696498660677071
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8655688533713294,
+        "query_vector_hash": "a2e64db0d61945dbcd9a7bce8f29461335739bb3e62feb7f683915781b956259",
+        "ragas_score": 0.8655688533713292,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "96165c152ca07c39efca5337376fb5473811c42144953c9283339952786c8f4e"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "ab7f6c07853f91ca5138b37d41385d5e010c56c24c776a3aa2fedfcb786ee79f"
+}

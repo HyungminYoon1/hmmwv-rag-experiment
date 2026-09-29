@@ -1,0 +1,272 @@
+{
+  "at": "2026-09-28T09:59:37.673254+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "773c88fbcf31c21e833aee73c8e185c5c2cea90660b44aab0e213ce72a5f68d2",
+  "original_result_sha256": "94461538c4bd8bcd726fe774fdc4d40971dbcfad63374e8eec9fe84f1f83d5c4",
+  "result": {
+    "attempt_key": "r1-S15-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 40.53882850000082,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8652181651645487
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8652181651645487
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.25
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S15",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific diagnostic system and additional technical claims about white exhaust smoke."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8649884770420402,
+          0.8660343481640436,
+          0.8646316702875625
+        ],
+        "query_vector_hash": "86fdbe80e7b72b2d2951079b0d92deb20c4e96d8e6c465490a693de07f7f93ed",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the manual advise checking when the exhaust smoke is white, and what might the smoke indicate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the manual advise checking when exhaust smoke is white, and what might the white smoke indicate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the manual advise checking when the exhaust smoke is white, and what might the white smoke indicate?"
+          }
+        ],
+        "response_vectors_hash": "0bece7fee9db186946cfb752723abdcb19cc6b447be45ed7787bfde6638b41e3",
+        "score": 0.8652181651645489
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "When exhaust smoke is white, the manual directs the maintainer to check the fuel system."
+        },
+        {
+          "id": "C002",
+          "text": "When exhaust smoke is white, the manual directs the maintainer to look for signs of unburnt fuel by testing the exhaust stream and using a piece of paper to detect incomplete combustion."
+        },
+        {
+          "id": "C003",
+          "text": "The manual notes that white smoke may indicate fuel not being burned in the cylinders."
+        },
+        {
+          "id": "C004",
+          "text": "The manual notes that white smoke may indicate a possible loss of coolant to the exhaust."
+        }
+      ],
+      "claims_raw": [
+        "When exhaust smoke is white, the manual directs the maintainer to check the fuel system.",
+        "When exhaust smoke is white, the manual directs the maintainer to look for signs of unburnt fuel by testing the exhaust stream and using a piece of paper to detect incomplete combustion.",
+        "The manual notes that white smoke may indicate fuel not being burned in the cylinders.",
+        "The manual notes that white smoke may indicate a possible loss of coolant to the exhaust."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S15-A01",
+            "reason": "The answer identifies the fuel system but omits the required §2-22 reference."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001917"
+              ],
+              "evidence_quotes": [
+                "If you don't detect coolant loss then you may have missed a\nproblem. Rerun the fuel system tests paying attention fora\nexhaust smeil."
+              ],
+              "reason": "The fuel-system guidance for white smoke directs a rerun of fuel-system tests when coolant loss is not detected.",
+              "statement": "When exhaust smoke is white, the manual directs the maintainer to check the fuel system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001838",
+                "C001852"
+              ],
+              "evidence_quotes": [
+                "THEN PUT A PIECE OF PAPER IN THE LOOK AT AND SMELL IT FOR SIGNS OF UNBURNT FUEL.",
+                "It is caused by incomplete combustion of the\nfuel because of low cylinder temperature."
+              ],
+              "reason": "The white-smoke test calls for paper in the exhaust stream to check for unburnt fuel; the manual attributes incomplete combustion to white smoke.",
+              "statement": "When exhaust smoke is white, the manual directs the maintainer to look for signs of unburnt fuel by testing the exhaust stream and using a piece of paper to detect incomplete combustion.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001838"
+              ],
+              "evidence_quotes": [
+                "White smoke indicates fuel not being bumed in the cylinders, or possible loss of coolant to the exhaust."
+              ],
+              "reason": "The manual states this directly.",
+              "statement": "The manual notes that white smoke may indicate fuel not being burned in the cylinders.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001838"
+              ],
+              "evidence_quotes": [
+                "White smoke indicates fuel not being bumed in the cylinders, or possible loss of coolant to the exhaust."
+              ],
+              "reason": "The manual states this directly.",
+              "statement": "The manual notes that white smoke may indicate a possible loss of coolant to the exhaust.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.25,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:white"
+              ],
+              "evidence_quotes": [
+                "WHITE. . . . . . . . . .Go to fuel system, Paragraph 2-22. Could be injector timing, DS level fault."
+              ],
+              "reason": "The WHITE entry directs the reader to the fuel system.",
+              "statement": "When exhaust smoke is white, the manual directs the maintainer to check the fuel system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No exhaust-stream or paper test is described.",
+              "statement": "When exhaust smoke is white, the manual directs the maintainer to look for signs of unburnt fuel by testing the exhaust stream and using a piece of paper to detect incomplete combustion.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The text does not mention unburned fuel in the cylinders.",
+              "statement": "The manual notes that white smoke may indicate fuel not being burned in the cylinders.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The text does not mention coolant loss.",
+              "statement": "The manual notes that white smoke may indicate a possible loss of coolant to the exhaust.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.8649884770420402,
+          0.8660343481640436,
+          0.8646316702875625
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8652181651645487,
+        "query_vector_hash": "86fdbe80e7b72b2d2951079b0d92deb20c4e96d8e6c465490a693de07f7f93ed",
+        "ragas_score": 0.8652181651645489,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "0bece7fee9db186946cfb752723abdcb19cc6b447be45ed7787bfde6638b41e3"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8649884770420402,
+          0.8660343481640436,
+          0.8646316702875625
+        ],
+        "decimal50_cosines": [
+          "0.86498847704204022337700274744414315971102176181399",
+          "0.86603434816404373437275421456543059509255935042096",
+          "0.86463167028756241239793623921102106295418779870916"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8652181651645489
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8652181651645489
+          }
+        },
+        "query_vector_hash": "86fdbe80e7b72b2d2951079b0d92deb20c4e96d8e6c465490a693de07f7f93ed",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the manual advise checking when the exhaust smoke is white, and what might the smoke indicate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the manual advise checking when exhaust smoke is white, and what might the white smoke indicate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the manual advise checking when the exhaust smoke is white, and what might the white smoke indicate?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "0bece7fee9db186946cfb752723abdcb19cc6b447be45ed7787bfde6638b41e3",
+        "score": 0.8652181651645487
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "bcb3707faee446a2219e3b6f7e1de174ae6882ba6d647b8f4007f2ddec04c257"
+}

@@ -1,0 +1,343 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:25:02.467242+00:00",
+  "evaluation_answer": "I do not know the diameter of the cooling fan according to Table 1-2, as no manual excerpts or relevant data were supplied in the reference.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 228,
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nAccording to Table 1-2, what is the diameter of the cooling fan?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 227,
+  "purpose": "WARMUP",
+  "question": "According to Table 1-2, what is the diameter of the cooling fan?",
+  "question_id": "D01",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:19.320824107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:17.750169907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4841095168.0,
+    "max_actual_interval_ms": 113.70950000036828,
+    "peak_rss_bytes": 3594629120,
+    "peak_vram_bytes": 4841095168,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4787.150227,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95703040,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594616832,
+        "vram_bytes": 4843257856
+      },
+      {
+        "monotonic": 4787.2639365,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95707136,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594620928,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4787.3539534,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95707136,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594620928,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4787.4628756,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95707136,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594620928,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4787.5549012,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95707136,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594620928,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4787.6671153,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95707136,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594620928,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4787.7624294,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95707136,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594620928,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4787.8584903,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95707136,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594620928,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4787.9663803,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95707136,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594620928,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4788.0589314,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95707136,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594620928,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4788.1536462,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95715328,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594629120,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4788.2589098,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95715328,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594629120,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4788.3526991,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95715328,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594629120,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4788.4606122,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95715328,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594629120,
+        "vram_bytes": 4841095168
+      },
+      {
+        "monotonic": 4788.5528925,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58843136,
+          "30736": 12607488,
+          "36040": 95715328,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3594629120,
+        "vram_bytes": 4841095168
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:25:02.4645627Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 32,
+    "eval_duration": 449958000,
+    "load_duration": 10280500,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 227,
+    "prompt_eval_count": 228,
+    "prompt_eval_duration": 21453000,
+    "response": "I do not know the diameter of the cooling fan according to Table 1-2, as no manual excerpts or relevant data were supplied in the reference.",
+    "total_duration": 491056000
+  },
+  "retrieval": null,
+  "round": 1,
+  "started_at": "2026-09-28T04:25:01.966978+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 500.312600000143,
+    "retrieval": null,
+    "total": 500.312600000143
+  },
+  "unprovided_citations": []
+}

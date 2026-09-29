@@ -1,0 +1,841 @@
+{
+  "citation_ids": [
+    "[C000096]",
+    "[C001272]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:12:56.203352+00:00",
+  "evaluation_answer": "The diagnostic connector serves as a connection point for the STE/ICE-R test set, allowing it to be powered and to make measurements of key vehicle signals such as starter voltage, current, engine speed, and fuel supply pressure . It is also referred to as the Diagnostic Connector Assembly (DCA), which functions as an electrical harness enabling the STE/ICE-R to access and measure critical vehicle signals from a single connection .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 635,
+  "key": "r1-D02-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou are a technical question-answering assistant.\nAnswer in English using concise statements that address every part of the question.\nWhen reference context is provided, use only facts supported by that context.\nWhen no reference context is provided, use your existing model knowledge.\nIf some requested information is unavailable, state which part cannot be determined.\nYou may answer the supported parts, but do not present a partial answer as complete.\nDo not invent specifications, procedures, measurements, causes, or other facts.\nWhen reference context is provided, cite each supporting chunk ID in square brackets, for example [C000123]. Use only supplied chunk IDs.\nREFERENCE CONTEXT:\n[C000096] TM 9-2320-280-20-1 | PDF 46 | Printed 1-16\n1-12. LOCATION AND DESCRIPTION OF MAJOR INTERIOR\nCOMPONENTS\n\nDIAGNOSTIC CONNECTOR – Connection point for STE/ICE-R test set.\n\n[C004943] TM 9-2320-280-20-1 | PDF 523 | Printed 2-419\nCHECK DIAGNOSTIC CABLE\nFOR OPEN AND REPAIR.\n\n[C001272] TM 9-2320-280-20-1 | PDF 129 | Printed 2-38\n2-15. GLOSSARY OF ABBREVIATIONS AND COMMONLY USED TERMS\n\nDCA - Diagnostic Connector Assembly, an electrical harness on the vehicle which allows the STE/ICE-R\nto be powered and to make measurements of key vehicle signals from a single connection. In addition to\nmany basic electrical signals such as starter voltage and current, it includes engine speed and fuel\nsupply pressure. The STE/ICE-R can make TK measurements at the same time that it is connected to\nthe DCA.\n\n[C004885] TM 9-2320-280-20-1 | PDF 515 | Printed 2-411\n2-35. TRANSMISSION SYSTEM TESTS (4L80-E)\n\nThe TCM J1 connector will be used to diagnose and troubleshoot wiring, sensor connectors,\npins, solenoids, and brake switch, to insure all external problems are checked and corrected\nprior to TCM and transmission faults.\n\n[C008220] TM 9-2320-280-20-1 | PDF 851 | Printed 2-754\n(f) Power/DCA Connector J1. Connector J1 connects the VTM to either a vehicle diagnostic connector\nusing the DCA cable, or to the vehicle batteries using the power cable. Operating power and signals from\nthe installed transducers are supplied to the VTM through the DCA cable.\nQUESTION:\nWhat purpose does the diagnostic connector serve among the major interior components?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 136,
+  "question": "What purpose does the diagnostic connector serve among the major interior components?",
+  "question_id": "D02",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:00:13.057598107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:00:09.879554707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4808523776.0,
+    "max_actual_interval_ms": 109.23800000000483,
+    "peak_rss_bytes": 5907677184,
+    "peak_vram_bytes": 4808523776,
+    "pids": [
+      11036,
+      13944,
+      30736,
+      33100,
+      36592,
+      37504,
+      37564,
+      37600
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4059.4169183,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4059.5243868,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4059.6166802,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4059.7232565,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4059.818298,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4059.9273036,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.0198978,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.1291358,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.2227834,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.3303115,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.423785,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.5322877,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57581568,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907566592,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.6248095,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57638912,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1684443136,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5905846272,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.7327659,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57638912,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907673088,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.8252083,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57638912,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907673088,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4060.9183661,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57638912,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907673088,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.0271558,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57638912,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907673088,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.1199026,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57638912,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907673088,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.2274135,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57638912,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907673088,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.3194815,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.4272641,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.5201245,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.6289986,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.7211094,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.828246,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4061.9199177,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4062.0276272,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4062.1204776,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4062.2291818,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4062.3229076,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4034723840,
+          "13944": 57643008,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1686269952,
+          "37564": 7442432,
+          "37600": 97046528
+        },
+        "rss_bytes": 5907677184,
+        "vram_bytes": 4808523776
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:12:56.2011489Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 100,
+    "eval_duration": 1708744000,
+    "load_duration": 9674800,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 136,
+    "prompt_eval_count": 635,
+    "prompt_eval_duration": 121624000,
+    "response": "The diagnostic connector serves as a connection point for the STE/ICE-R test set, allowing it to be powered and to make measurements of key vehicle signals such as starter voltage, current, engine speed, and fuel supply pressure [C000096]. It is also referred to as the Diagnostic Connector Assembly (DCA), which functions as an electrical harness enabling the STE/ICE-R to access and measure critical vehicle signals from a single connection [C001272].",
+    "total_duration": 1852536200
+  },
+  "retrieval": {
+    "embedding_ms": 74.16950000015277,
+    "items": [
+      {
+        "body_end": 63,
+        "body_start": 0,
+        "id": "C000096",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          46
+        ],
+        "prefix_chars": 61,
+        "printed_pages": [
+          "1-16"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R000629"
+        ],
+        "review_ids": [],
+        "score": 0.6372226476669312,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[6]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "1-12",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-12. LOCATION AND DESCRIPTION OF MAJOR INTERIOR\nCOMPONENTS\n\nDIAGNOSTIC CONNECTOR – Connection point for STE/ICE-R test set.",
+        "text_sha256": "cece75313d2a52e6b1cf78988e72d17641e4dbbebc68a28dabaf5bb58db7518b",
+        "token_count": 36,
+        "unit_id": "U000096",
+        "unit_key": "region:46:1:7"
+      },
+      {
+        "body_end": 43,
+        "body_start": 0,
+        "id": "C004943",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          523
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-419"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R005235",
+          "R005236"
+        ],
+        "review_ids": [],
+        "score": 0.5580960512161255,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B008",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "CHECK DIAGNOSTIC CABLE\nFOR OPEN AND REPAIR.",
+        "text_sha256": "c48017d7be817ebc138ba0f78468a91011bedc653342a4b59044db317fa6bd35",
+        "token_count": 14,
+        "unit_id": "U004935",
+        "unit_key": "region:523:1:9"
+      },
+      {
+        "body_end": 410,
+        "body_start": 0,
+        "id": "C001272",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          129
+        ],
+        "prefix_chars": 57,
+        "printed_pages": [
+          "2-38"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R001322"
+        ],
+        "review_ids": [],
+        "score": 0.5514053106307983,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "2-15",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-15. GLOSSARY OF ABBREVIATIONS AND COMMONLY USED TERMS\n\nDCA - Diagnostic Connector Assembly, an electrical harness on the vehicle which allows the STE/ICE-R\nto be powered and to make measurements of key vehicle signals from a single connection. In addition to\nmany basic electrical signals such as starter voltage and current, it includes engine speed and fuel\nsupply pressure. The STE/ICE-R can make TK measurements at the same time that it is connected to\nthe DCA.",
+        "text_sha256": "3c3fb6b7c79806d5dfd1035fa331e28bb550c88fb3ad340292017c1b54819fdb",
+        "token_count": 105,
+        "unit_id": "U001266",
+        "unit_key": "region:129:1:3"
+      },
+      {
+        "body_end": 220,
+        "body_start": 0,
+        "id": "C004885",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          515
+        ],
+        "prefix_chars": 42,
+        "printed_pages": [
+          "2-411"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R005165"
+        ],
+        "review_ids": [],
+        "score": 0.545086145401001,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[9]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "numbered_section",
+          "section": "2-35",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-35. TRANSMISSION SYSTEM TESTS (4L80-E)\n\nThe TCM J1 connector will be used to diagnose and troubleshoot wiring, sensor connectors,\npins, solenoids, and brake switch, to insure all external problems are checked and corrected\nprior to TCM and transmission faults.",
+        "text_sha256": "729fc4803183acdb61bcd1b1f06b40ee7c68379976bb1bc8545d26e441ade515",
+        "token_count": 66,
+        "unit_id": "U004877",
+        "unit_key": "region:515:1:9"
+      },
+      {
+        "body_end": 276,
+        "body_start": 0,
+        "id": "C008220",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          851
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-754"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R009901"
+        ],
+        "review_ids": [],
+        "score": 0.5365931987762451,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "(f) Power/DCA Connector J1. Connector J1 connects the VTM to either a vehicle diagnostic connector\nusing the DCA cable, or to the vehicle batteries using the power cable. Operating power and signals from\nthe installed transducers are supplied to the VTM through the DCA cable.",
+        "text_sha256": "3e382294ab58dd28c70104de7d7c67dd4c8b150aae22a3f2ec63c91b1c0857ba",
+        "token_count": 61,
+        "unit_id": "U008212",
+        "unit_key": "region:851:1:4"
+      }
+    ],
+    "search_ms": 8.941999999933614
+  },
+  "round": 1,
+  "sequence": 18,
+  "started_at": "2026-09-28T04:12:54.233545+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1885.4653999997026,
+    "retrieval": 84.50730000004114,
+    "total": 1969.9726999997438
+  },
+  "unprovided_citations": []
+}

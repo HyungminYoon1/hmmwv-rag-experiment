@@ -1,0 +1,247 @@
+{
+  "at": "2026-09-28T09:17:35.948988+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "f3992e4231d0b644c439074efca9e5216e72c95a84557df8418cf0dba5d7adbb",
+  "result": {
+    "attempt_key": "r1-M17-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 43.776835700002266,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9845759565263615
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9845759565263615
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M17",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly describes the vent system’s operation and lists specific vent-tube conditions checked during PMCS."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9845759529320042,
+          0.9845759529320042,
+          0.9845759637150764
+        ],
+        "query_vector_hash": "9dbb51a61960ef7088bb7f75a2a2ba85167a57c887022fb7ffefca7912abf161",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water-fording-kit PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water-fording-kit PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water-fording-kit PMCS?"
+          }
+        ],
+        "response_vectors_hash": "87fc854a99edaf026c1dcad58d78e0ec343096d2d2a6881ec3fa39b54f74778e",
+        "score": 0.9845759565263615
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "During normal operation, the vent system allows vapor to escape to the atmosphere."
+        },
+        {
+          "id": "C002",
+          "text": "During deep-water fording operations, the vent system prevents venting to avoid water entering the engine and other systems."
+        },
+        {
+          "id": "C003",
+          "text": "Water entering the engine and other systems during deep-water fording operations could cause damage."
+        },
+        {
+          "id": "C004",
+          "text": "During deep-water-fording-kit PMCS, vent tubes are checked for bends, cracks, breaks, deterioration, and restrictions."
+        }
+      ],
+      "claims_raw": [
+        "During normal operation, the vent system allows vapor to escape to the atmosphere.",
+        "During deep-water fording operations, the vent system prevents venting to avoid water entering the engine and other systems.",
+        "Water entering the engine and other systems during deep-water fording operations could cause damage.",
+        "During deep-water-fording-kit PMCS, vent tubes are checked for bends, cracks, breaks, deterioration, and restrictions."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "During normal operation, the vent system allows vapor to escape to the atmosphere.",
+            "fulfilled": 1,
+            "id": "M17-A01",
+            "reason": "States the normal-operation purpose correctly."
+          },
+          {
+            "answer_quote": "During deep-water fording operations, it prevents venting to avoid water entering the engine and other systems",
+            "fulfilled": 1,
+            "id": "M17-A02",
+            "reason": "States that venting is prevented to keep water out."
+          },
+          {
+            "answer_quote": "bends, cracks, breaks, deterioration, and restrictions",
+            "fulfilled": 1,
+            "id": "M17-A03",
+            "reason": "Lists all five specified vent-tube conditions."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "The purpose of\nthe vent system is to allow vapor to escape to the atmosphere under normal operation, and to\nprevent venting during deep water fording operations."
+              ],
+              "reason": "The stated purpose of the vent system includes allowing vapor to escape under normal operation.",
+              "statement": "During normal operation, the vent system allows vapor to escape to the atmosphere.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "prevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The text links preventing venting during fording to keeping water out.",
+              "statement": "During deep-water fording operations, the vent system prevents venting to avoid water entering the engine and other systems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The text says water entering those systems would cause damage.",
+              "statement": "Water entering the engine and other systems during deep-water fording operations could cause damage.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001031"
+              ],
+              "evidence_quotes": [
+                "ITEM TO BE INSPECTED: DeepWater\nFording Kit\nNOT FULLY MISSION CAPABLE IF: c. Any exhaust extension\nleaks.\nPROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The DeepWater Fording Kit inspection procedure specifies these vent-tube checks.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for bends, cracks, breaks, deterioration, and restrictions.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:vent"
+              ],
+              "evidence_quotes": [
+                "The purpose of\nthe vent system is to allow vapor to escape to the atmosphere under normal operation"
+              ],
+              "reason": "The stated purpose of the vent system includes allowing vapor to escape during normal operation.",
+              "statement": "During normal operation, the vent system allows vapor to escape to the atmosphere.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:vent"
+              ],
+              "evidence_quotes": [
+                "prevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The text says venting is prevented during deep-water fording because open vents would let water enter.",
+              "statement": "During deep-water fording operations, the vent system prevents venting to avoid water entering the engine and other systems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:vent"
+              ],
+              "evidence_quotes": [
+                "If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The text explicitly says water entering through open vents would cause damage.",
+              "statement": "Water entering the engine and other systems during deep-water fording operations could cause damage.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:vent_inspect",
+                "O:vent_inspect"
+              ],
+              "evidence_quotes": [
+                "ITEM TO BE INSPECTED: DeepWater\nFording Kit",
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The DeepWater Fording Kit inspection procedure lists those vent-tube checks.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for bends, cracks, breaks, deterioration, and restrictions.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9845759529320042,
+          0.9845759529320042,
+          0.9845759637150764
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9845759565263617,
+        "query_vector_hash": "9dbb51a61960ef7088bb7f75a2a2ba85167a57c887022fb7ffefca7912abf161",
+        "ragas_score": 0.9845759565263615,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "87fc854a99edaf026c1dcad58d78e0ec343096d2d2a6881ec3fa39b54f74778e"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "8cd667e1f0ca4303dfca4ec5b6c615a65fc43ddc2f1c86f6b144b968e4b24862"
+}

@@ -1,0 +1,1059 @@
+{
+  "citation_ids": [
+    "[C002971]",
+    "[C002971]",
+    "[C002971]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:44:24.633878+00:00",
+  "evaluation_answer": "To remove a failed protective control box and install a replacement, follow these steps:\n\n1. Disconnect the negative battery cable before disconnecting the protective control box harness. Failure to do so may result in injury to personnel or damage to equipment .  \n2. Remove the protective control box according to the procedures in paragraph 4-5 of the manual .  \n3. Install the replacement protective control box following the same procedures outlined in paragraph 4-5 .  \n4. Reconnect the protective control box harness.  \n5. Reconnect the negative battery cable.  \n\nNote: The manual does not provide detailed steps for reassembly beyond the general warning and reference to paragraph 4-5. Specific disconnection and reconnection procedures are not elaborated in the provided excerpts.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 754,
+  "key": "r3-U02-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002971] TM 9-2320-280-20-1 | PDF 331 | Printed 2-235\nREFERENCE INFORMATION\nPROTECTIVE CONTROL BOX/DISTRIBUTION BOX\nDIAGNOSTIC CHECKS\nWARNING\nDisconnect negative battery cable\nbefore disconnecting and\nreconnecting protective control\nbox/distribution box harness. Failure\nto do so may result in injury to\npersonnel or damage to equipment.\n\nReplace protective control box, refer\nto (para. 4-5).\nReplace distribution box, refer to\n(para. 4-5.1).\n\n[C002990] TM 9-2320-280-20-1 | PDF 335 | Printed 2-239\nREFERENCE INFORMATION\nPROTECTIVE CONTROL BOX/DISTRIBUTION BOX\nWARNING\nDisconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box or distribution box harness. Failure\nto do so may result in injury to personnel or\ndamage to equipment.\n\nReplace protective control box, refer to\n(para. 4-5).\nReplace distribution box, refer to (para. 4-5.1).\n\n[C003045] TM 9-2320-280-20-1 | PDF 341 | Printed 2-245\nWARNING\nDisconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box/distribution box harness. Failure to\ndo so may result in injury to personnel or\ndamage to equipment.\n\nReplace protective control box, refer to\n(para. 4-5).\n\n[C002980] TM 9-2320-280-20-1 | PDF 333 | Printed 2-237\nREFERENCE INFORMATION\nPROTECTIVE CONTROL BOX/DISTRIBUTION BOX\nWARNING\nDisconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box/distribution box harness. Failure to\ndo so may result in injury to personnel or\ndamage to equipment.\n\nReplace protective control box, refer to\n(para. 4-5).\nReplace distribution box, refer to (para. 4-5.1).\n\n[C003675] TM 9-2320-280-20-1 | PDF 402 | Printed 2-309\nREFERENCE INFORMATION\n\nDisconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box harness.\nQUESTION:\nHow should a failed protective control box be removed and a replacement installed, from disconnection through final reassembly?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 753,
+  "question": "How should a failed protective control box be removed and a replacement installed, from disconnection through final reassembly?",
+  "question_id": "U02",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:31:41.488130707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:31:36.926448607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 120.01349999991362,
+    "peak_rss_bytes": 13047123968,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5946.4759421,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5946.5832239,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5946.6758982,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5946.7839234,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5946.8777526,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5946.9842757,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.076161,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.183024,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.27638,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.3851891,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.4775816,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.5975951,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8689049600,
+          "37564": 7741440
+        },
+        "rss_bytes": 12972208128,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.6812,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8763965440,
+          "37564": 7741440
+        },
+        "rss_bytes": 13047123968,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.7895531,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8763965440,
+          "37564": 7741440
+        },
+        "rss_bytes": 13047123968,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.8817525,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5947.9873953,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.0777103,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.1874135,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.278716,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.388648,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.482803,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.591079,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.6849115,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.776794,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102862848,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909830144,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.8846093,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5948.9772178,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.0849766,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.1780243,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.2875369,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.380409,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.4888481,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.5814676,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.6897121,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.7816886,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.8898852,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102866944,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909834240,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5949.983701,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909842432,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5950.0906085,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909842432,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5950.1846873,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909842432,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5950.2770642,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909842432,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5950.3850993,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909842432,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5950.4782014,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909842432,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5950.5869326,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909842432,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5950.6809019,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909842432,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5950.7906613,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101548032,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909842432,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:44:24.6323338Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 178,
+    "eval_duration": 2966583000,
+    "load_duration": 9035200,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 753,
+    "prompt_eval_count": 754,
+    "prompt_eval_duration": 23938000,
+    "response": "To remove a failed protective control box and install a replacement, follow these steps:\n\n1. Disconnect the negative battery cable before disconnecting the protective control box harness. Failure to do so may result in injury to personnel or damage to equipment [C002971].  \n2. Remove the protective control box according to the procedures in paragraph 4-5 of the manual [C002971].  \n3. Install the replacement protective control box following the same procedures outlined in paragraph 4-5 [C002971].  \n4. Reconnect the protective control box harness.  \n5. Reconnect the negative battery cable.  \n\nNote: The manual does not provide detailed steps for reassembly beyond the general warning and reference to paragraph 4-5. Specific disconnection and reconnection procedures are not elaborated in the provided excerpts.",
+    "total_duration": 3216494500
+  },
+  "retrieval": {
+    "embedding_ms": 99.02229999988776,
+    "items": [
+      {
+        "body_end": 103,
+        "body_start": 0,
+        "id": "C002971",
+        "kind": "reviewed_region",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          331
+        ],
+        "prefix_chars": 285,
+        "printed_pages": [
+          "2-235"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6740736961364746,
+        "source_issues": [
+          {
+            "description": "RUN / ENGINE RUNNING / Distribution Box 묶음에 LED 6 OFF와 ON 모두 parking brake lever is released로 적혀 있다. 원문 문구를 유지하고 engaged로 추정 수정하지 않았다.",
+            "id": "P0331_PARKING_BRAKE_RELEASED",
+            "pdf_page": 331,
+            "status": "SOURCE_WORDING_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "recorded_pdf_region",
+          "cross_page_join": false,
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v4-work/page-0331.png",
+            "sha256": "2e5762f550d5eb4f53ab4500d0689badaa623541984f9bcc9fc824e3e372d318"
+          },
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "warning_scope": "PCB/distribution box harness disconnection and replacement"
+        },
+        "text": "REFERENCE INFORMATION\nPROTECTIVE CONTROL BOX/DISTRIBUTION BOX\nDIAGNOSTIC CHECKS\nWARNING\nDisconnect negative battery cable\nbefore disconnecting and\nreconnecting protective control\nbox/distribution box harness. Failure\nto do so may result in injury to\npersonnel or damage to equipment.\n\nReplace protective control box, refer\nto (para. 4-5).\nReplace distribution box, refer to\n(para. 4-5.1).",
+        "text_sha256": "be33e6bec2e09f283139ba7df2b6fae70004b68ca649243706827049391b0e77",
+        "token_count": 94,
+        "unit_id": "U002963",
+        "unit_key": "P0331:replacement"
+      },
+      {
+        "body_end": 103,
+        "body_start": 0,
+        "id": "C002990",
+        "kind": "reviewed_region",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          335
+        ],
+        "prefix_chars": 270,
+        "printed_pages": [
+          "2-239"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6706135272979736,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "recorded_pdf_region",
+          "cross_page_join": false,
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v4-work/page-0335.png",
+            "sha256": "ba1b4c709d581b4facf675269604c0c7d7aad4059804f44e44325f0b013fbe01"
+          },
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "warning_scope": "PCB/distribution box harness disconnection and replacement"
+        },
+        "text": "REFERENCE INFORMATION\nPROTECTIVE CONTROL BOX/DISTRIBUTION BOX\nWARNING\nDisconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box or distribution box harness. Failure\nto do so may result in injury to personnel or\ndamage to equipment.\n\nReplace protective control box, refer to\n(para. 4-5).\nReplace distribution box, refer to (para. 4-5.1).",
+        "text_sha256": "593515fd77c381e72afe69eefdca757e031f71d24ba332cd593c2b2075ead59b",
+        "token_count": 83,
+        "unit_id": "U002982",
+        "unit_key": "P0335:replacement"
+      },
+      {
+        "body_end": 53,
+        "body_start": 0,
+        "id": "C003045",
+        "kind": "reviewed_text_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          341
+        ],
+        "prefix_chars": 205,
+        "printed_pages": [
+          "2-245"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6706035137176514,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "individually_reviewed_bracket",
+          "condition_link_basis": "PDF_SAME_REPLACEMENT_CALLOUT",
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v6-work/final-samples/p0341.png",
+            "sha256": "b2ffb3d124770774f07cda1f1f6fe046b235ad02d8694688916f28d81134b83d"
+          },
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW"
+        },
+        "text": "WARNING\nDisconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box/distribution box harness. Failure to\ndo so may result in injury to personnel or\ndamage to equipment.\n\nReplace protective control box, refer to\n(para. 4-5).",
+        "text_sha256": "3e38a249c8427b299174ec5232d906d0a6f27928c012f97e30a74b1fb299a84e",
+        "token_count": 54,
+        "unit_id": "U003037",
+        "unit_key": "V18:P0341:pcb-replacement"
+      },
+      {
+        "body_end": 103,
+        "body_start": 0,
+        "id": "C002980",
+        "kind": "reviewed_region",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          333
+        ],
+        "prefix_chars": 267,
+        "printed_pages": [
+          "2-237"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6674375534057617,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "recorded_pdf_region",
+          "cross_page_join": false,
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v4-work/page-0333.png",
+            "sha256": "08ab8d598a5a091810d94be261c07e70ada515a60aae9b7c328466a68caa5ad0"
+          },
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "warning_scope": "PCB/distribution box harness disconnection and replacement"
+        },
+        "text": "REFERENCE INFORMATION\nPROTECTIVE CONTROL BOX/DISTRIBUTION BOX\nWARNING\nDisconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box/distribution box harness. Failure to\ndo so may result in injury to personnel or\ndamage to equipment.\n\nReplace protective control box, refer to\n(para. 4-5).\nReplace distribution box, refer to (para. 4-5.1).",
+        "text_sha256": "81a9829b71a7196abcc02f479e5b5c35bc0b547d7fe58eca2e2b145f290d235c",
+        "token_count": 83,
+        "unit_id": "U002972",
+        "unit_key": "P0333:replacement"
+      },
+      {
+        "body_end": 103,
+        "body_start": 0,
+        "id": "C003675",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          402
+        ],
+        "prefix_chars": 23,
+        "printed_pages": [
+          "2-309"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R003740"
+        ],
+        "review_ids": [],
+        "score": 0.6421017646789551,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[8]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\n\nDisconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box harness.",
+        "text_sha256": "279e90b7449d396ba471910efca2e4e085de7ac3c604ae22b310233dd3ce3a3a",
+        "token_count": 20,
+        "unit_id": "U003667",
+        "unit_key": "region:402:1:12"
+      }
+    ],
+    "search_ms": 11.048899999877904
+  },
+  "round": 3,
+  "sequence": 326,
+  "started_at": "2026-09-28T04:44:21.292674+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 3229.7317000002295,
+    "retrieval": 111.340299999938,
+    "total": 3341.0720000001675
+  },
+  "unprovided_citations": []
+}

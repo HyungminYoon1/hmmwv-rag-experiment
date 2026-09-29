@@ -1,0 +1,201 @@
+{
+  "at": "2026-09-28T09:59:37.654325+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "c26c41ebe5acf1b2f7cb130e7f8b764284443bf8f560ae32ddb23b9a6bde1f0b",
+  "original_result_sha256": "784f7c433a222af2fc1c60fa7e56274072ed215263a1cb05c729f1c9a30ad873",
+  "result": {
+    "attempt_key": "r1-S12-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 19.073078699999314,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9438427870987595
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9438427870987595
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S12",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific opening pressure as a technical fact."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9438427870987595,
+          0.9438427870987595,
+          0.9438427870987595
+        ],
+        "query_vector_hash": "4589a7145c98defccc442e269568c4b4c1b42e8aa756c58d6b74bf43d1cf962b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what pressure does the surge-tank cap valve open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what pressure does the surge-tank cap valve open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what pressure does the surge-tank cap valve open?"
+          }
+        ],
+        "response_vectors_hash": "f1789898055950bed9f93391f3d9861ce307978a7db87aa89a5a100de1974a18",
+        "score": 0.9438427870987596
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The surge-tank cap valve opens at approximately 15 psi (103 kPa) cooling-system pressure."
+        }
+      ],
+      "claims_raw": [
+        "The surge-tank cap valve opens at approximately 15 psi (103 kPa) cooling-system pressure."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "approximately 15 psi (103 kPa)",
+            "fulfilled": 1,
+            "id": "S12-A01",
+            "reason": "Matches the pressure stated in the source."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere."
+              ],
+              "reason": "The context states this pressure threshold and valve action directly.",
+              "statement": "The surge-tank cap valve opens at approximately 15 psi (103 kPa) cooling-system pressure.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:cap"
+              ],
+              "evidence_quotes": [
+                "When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere."
+              ],
+              "reason": "The context states that the valve opens when cooling-system pressure reaches approximately 15 psi (103 kPa).",
+              "statement": "The surge-tank cap valve opens at approximately 15 psi (103 kPa) cooling-system pressure.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9438427870987595,
+          0.9438427870987595,
+          0.9438427870987595
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9438427870987595,
+        "query_vector_hash": "4589a7145c98defccc442e269568c4b4c1b42e8aa756c58d6b74bf43d1cf962b",
+        "ragas_score": 0.9438427870987596,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "f1789898055950bed9f93391f3d9861ce307978a7db87aa89a5a100de1974a18"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9438427870987595,
+          0.9438427870987595,
+          0.9438427870987595
+        ],
+        "decimal50_cosines": [
+          "0.94384278709875954425415940344515820145026222302683",
+          "0.94384278709875954425415940344515820145026222302683",
+          "0.94384278709875954425415940344515820145026222302683"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9438427870987596
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9438427870987596
+          }
+        },
+        "query_vector_hash": "4589a7145c98defccc442e269568c4b4c1b42e8aa756c58d6b74bf43d1cf962b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what pressure does the surge-tank cap valve open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what pressure does the surge-tank cap valve open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what pressure does the surge-tank cap valve open?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "f1789898055950bed9f93391f3d9861ce307978a7db87aa89a5a100de1974a18",
+        "score": 0.9438427870987595
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "6f2a38a65b5b17a5caa2bc4db9d8b730463a19664a9886604cd1bf1419a68bf9"
+}

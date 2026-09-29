@@ -1,0 +1,67 @@
+{
+  "at": "2026-09-28T09:56:40.208768+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "f5c45a5246d46da7650cf5394b3021840b2724b0c06c3793ea9988385d90a78f",
+  "original_result_sha256": "bf03bf913f3bb72d43e1ec04ea6050fecaaf4a6701fc4882d47f2775b743caf7",
+  "result": {
+    "attempt_key": "r1-U10-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 10.922494200000074,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U10",
+    "stages": {
+      "abstention": {
+        "answer_quote": "Therefore, based on the available excerpts, such a procedure cannot be described.",
+        "explicitly_withholds_missing": true,
+        "has_partial_answer": true,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": true,
+        "partial_within_allowed": false,
+        "reason": "The response withholds the full M1123 belt procedure and gives no invented steps. Its partial facts about tension guidance and pulley replacement are supported by the retrieved excerpts, but pulley replacement is not supported by the oracle. Those details also go beyond the specified allowed partial answer, which permits the §3-83 reference and belt-inspection information.",
+        "source_ids": [
+          "O:belt_reference",
+          "C000902",
+          "C005743"
+        ],
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "5de7b03f07a70d427a48897bc43a7455d6930a2a6e3f951317f27ce5eb2bc71c"
+}

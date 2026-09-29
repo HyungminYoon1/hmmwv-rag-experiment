@@ -1,0 +1,357 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:12:20.028230+00:00",
+  "evaluation_answer": "Cannot determine the specified radiator type and fan blade count as no reference context or table data is available.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 167,
+  "key": "r1-D06-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou are a technical question-answering assistant.\nAnswer in English using concise statements that address every part of the question.\nWhen reference context is provided, use only facts supported by that context.\nWhen no reference context is provided, use your existing model knowledge.\nIf some requested information is unavailable, state which part cannot be determined.\nYou may answer the supported parts, but do not present a partial answer as complete.\nDo not invent specifications, procedures, measurements, causes, or other facts.\nWhen reference context is provided, cite each supporting chunk ID in square brackets, for example [C000123]. Use only supplied chunk IDs.\nREFERENCE CONTEXT:\nNo reference context is available.\nQUESTION:\nAccording to Table 1-2, what radiator type and fan blade count are specified?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 136,
+  "question": "According to Table 1-2, what radiator type and fan blade count are specified?",
+  "question_id": "D06",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T12:59:36.881877507+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T12:59:35.163632207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4808523776.0,
+    "max_actual_interval_ms": 109.39680000001317,
+    "peak_rss_bytes": 1373151232,
+    "peak_vram_bytes": 4808523776,
+    "pids": [
+      13944,
+      30736,
+      37504,
+      37564,
+      37600
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4024.6788419,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4024.7844882,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4024.8918623,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4024.9845844,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.0910204,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.1821935,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.289945,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.3820288,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.4905703,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.5836233,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.6905999,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 56643584,
+          "30736": 12607488,
+          "37504": 1121562624,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1294749696,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.7824017,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 56651776,
+          "30736": 12607488,
+          "37504": 1173594112,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1346789376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.8909023,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 56717312,
+          "30736": 12607488,
+          "37504": 1199890432,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1373151232,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4025.9833606,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 56717312,
+          "30736": 12607488,
+          "37504": 1199890432,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1373151232,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4026.0927574,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 56717312,
+          "30736": 12607488,
+          "37504": 1199890432,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1373151232,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4026.1856019,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 56717312,
+          "30736": 12607488,
+          "37504": 1199890432,
+          "37564": 7487488,
+          "37600": 96448512
+        },
+        "rss_bytes": 1373151232,
+        "vram_bytes": 4808523776
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:12:20.0255686Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 21,
+    "eval_duration": 329594000,
+    "load_duration": 9351300,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 136,
+    "prompt_eval_count": 167,
+    "prompt_eval_duration": 30832000,
+    "response": "Cannot determine the specified radiator type and fan blade count as no reference context or table data is available.",
+    "total_duration": 502613900
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 1,
+  "started_at": "2026-09-28T04:12:19.495869+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 532.3837999999341,
+    "retrieval": null,
+    "total": 532.3837999999341
+  },
+  "unprovided_citations": []
+}

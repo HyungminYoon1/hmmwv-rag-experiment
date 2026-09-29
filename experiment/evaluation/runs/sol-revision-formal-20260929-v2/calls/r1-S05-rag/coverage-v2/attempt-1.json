@@ -1,0 +1,202 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T05:15:09.859305+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "Hard starting",
+        "fulfilled": 1,
+        "id": "S05-A01",
+        "reason": "The response names hard starting, matching the manual."
+      },
+      {
+        "answer_quote": "Low power",
+        "fulfilled": 1,
+        "id": "S05-A02",
+        "reason": "The response names low power, matching the manual."
+      },
+      {
+        "answer_quote": "Runs rough",
+        "fulfilled": 1,
+        "id": "S05-A03",
+        "reason": "Runs rough is equivalent to rough running."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790658912,
+      "conversation": null,
+      "created_at": 1790658910.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0cd9f4a02d46be19016abb495e070887d09a956f076e09efe0",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S05-A01\",\"fulfilled\":1,\"answer_quote\":\"Hard starting\",\"reason\":\"The response names hard starting, matching the manual.\"},{\"id\":\"S05-A02\",\"fulfilled\":1,\"answer_quote\":\"Low power\",\"reason\":\"The response names low power, matching the manual.\"},{\"id\":\"S05-A03\",\"fulfilled\":1,\"answer_quote\":\"Runs rough\",\"reason\":\"Runs rough is equivalent to rough running.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0cd9f4a02d46be19016abb495ef6dc87d0b5aa16495312117c",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 815,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 101,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 916
+      },
+      "user": null
+    },
+    "request_id": "resp_0cd9f4a02d46be19016abb495e070887d09a956f076e09efe0",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S05-A01\",\"fulfilled\":1,\"answer_quote\":\"Hard starting\",\"reason\":\"The response names hard starting, matching the manual.\"},{\"id\":\"S05-A02\",\"fulfilled\":1,\"answer_quote\":\"Low power\",\"reason\":\"The response names low power, matching the manual.\"},{\"id\":\"S05-A03\",\"fulfilled\":1,\"answer_quote\":\"Runs rough\",\"reason\":\"Runs rough is equivalent to rough running.\"}]}",
+    "usage": {
+      "input_tokens": 815,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 101,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 916
+    }
+  },
+  "record_hash": "eb2dd34366777102bea590c7d555e8e6a931d9dfc39e079cd0e4d7ca55894610",
+  "request_hash": "39a0839ce215dd8a4f3efff6e7907e0c5c3f53d9ab489257a83943f41e206441",
+  "started_at": "2026-09-29T05:15:07.491978+00:00",
+  "status": "OK"
+}

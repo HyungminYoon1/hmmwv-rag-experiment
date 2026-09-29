@@ -1,0 +1,154 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:11:37.233254+00:00",
+  "parsed": {
+    "noncommittal": 0,
+    "question": "Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?"
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586697,
+      "conversation": null,
+      "created_at": 1790586693.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0694048c5fffdbaf016aba2f45b82c87d08d80be4ad33f6c60",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"question\":\"Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?\",\"noncommittal\":0}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0694048c5fffdbaf016aba2f47082887d08c6a05025fe449a5",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerRelevanceOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for answer relevance question generation.",
+            "properties": {
+              "noncommittal": {
+                "description": "1 if the response is evasive/vague, 0 if it is substantive",
+                "title": "Noncommittal",
+                "type": "integer"
+              },
+              "question": {
+                "description": "Question that can be answered from the response",
+                "title": "Question",
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "noncommittal"
+            ],
+            "title": "AnswerRelevanceOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 791,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 51,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 842
+      },
+      "user": null
+    },
+    "request_id": "resp_0694048c5fffdbaf016aba2f45b82c87d08d80be4ad33f6c60",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"question\":\"Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?\",\"noncommittal\":0}",
+    "usage": {
+      "input_tokens": 791,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 51,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 842
+    }
+  },
+  "record_hash": "d416d5ebece7d6b1addfb69bb5ba90a1abecb3d37a56b211c3f29e2c424fb857",
+  "request_hash": "7def9b2b81439f08a7033a654ed6634a6475a6580f8bd0bd5f141c39cbd41915",
+  "started_at": "2026-09-28T09:11:33.584306+00:00",
+  "status": "OK"
+}

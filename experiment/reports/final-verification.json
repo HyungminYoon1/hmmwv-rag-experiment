@@ -1,0 +1,54 @@
+{
+  "at": "2026-09-28T04:50:29.285805+00:00",
+  "browser_views_verified": [
+    "overview",
+    "gold filter and evidence expansion",
+    "paired answers"
+  ],
+  "http_checks": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/gold",
+      "status": 200
+    },
+    {
+      "route": "/results?run=formal-v1",
+      "status": 200
+    },
+    {
+      "route": "/api/overview",
+      "status": 200
+    },
+    {
+      "route": "/api/run?id=formal-v1",
+      "status": 200
+    },
+    {
+      "route": "/source?page=274",
+      "status": 200
+    },
+    {
+      "route": "/source?page=103",
+      "status": 200
+    },
+    {
+      "route": "/api/run?id=../../other",
+      "status": 404
+    },
+    {
+      "route": "/source?page=0",
+      "status": 404
+    }
+  ],
+  "runtime_identity_unchanged": true,
+  "status": "PASS",
+  "unit_tests": {
+    "exit_code": 0,
+    "framework": "unittest",
+    "status": "PASS",
+    "tests": 9
+  }
+}

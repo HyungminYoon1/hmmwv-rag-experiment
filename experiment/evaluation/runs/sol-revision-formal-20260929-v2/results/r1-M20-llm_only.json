@@ -1,0 +1,282 @@
+{
+  "at": "2026-09-29T05:02:20.249559+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "649569dc5658e3e57c8bec166f843dc41a93db32b7e024f6d131cdd918816ace",
+  "result": {
+    "attempt_key": "r1-M20-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 31.81989330000033,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8569007815008872
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8569007815008872
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.2
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      }
+    },
+    "question_id": "M20",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "It directly states that replacement is due and names an additional inspection set, making substantive factual claims despite the reference caveat."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8160603021499083,
+          0.932886467564296,
+          0.8217555747884574
+        ],
+        "query_vector_hash": "401aed461df5d95f577379ea9763876ca53ce019ec8208e866ff6d927c3ec689",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Under PMCS, when should an HMMWV fuel filter element be replaced, and which inspection set must accompany annual inspections?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Under PMCS, is a fuel filter due for replacement after 6,500 miles in ten months, and which inspection set must accompany annual inspections?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Under PMCS, when is a HMMWV fuel filter element due for replacement, and which inspection set must accompany annual inspections?"
+          }
+        ],
+        "response_vectors_hash": "5f96938ce314066f7ea7bbfd22ba1d01739ae11fb7114e6f381c5396ae375853",
+        "score": 0.8569007815008872
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The specific reference excerpts are not provided in the REFERENCE.",
+          "The response describes TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004) as the basis for its answer."
+        ],
+        "shared_conditions": [
+          "Under PMCS",
+          "For the fuel-filter element that has covered 6,500 miles in ten months",
+          "During annual inspections"
+        ],
+        "statements": [
+          {
+            "answer_quote": "typically replaced when it has reached a service life of 6,500 miles or when it has been in service for 10 months, whichever comes first",
+            "statement": "Under PMCS, a fuel-filter element is typically replaced at 6,500 miles or after 10 months in service, whichever comes first."
+          },
+          {
+            "answer_quote": "Since the fuel filter has covered 6,500 miles in ten months, replacement is due under PMCS.",
+            "statement": "Under PMCS, replacement is due for the fuel-filter element that has covered 6,500 miles in ten months."
+          },
+          {
+            "answer_quote": "during annual inspections, the following inspection set must accompany the annual inspections: Inspection Set 10",
+            "statement": "During annual inspections, Inspection Set 10 must accompany the annual inspections."
+          },
+          {
+            "answer_quote": "Inspection Set 10 (which includes checking the fuel filter, fuel lines, and fuel tank for leaks and condition)",
+            "statement": "During annual inspections, Inspection Set 10 includes checking the fuel filter, fuel lines, and fuel tank for leaks and condition."
+          },
+          {
+            "answer_quote": "standard HMMWV (M998-series) maintenance practices as outlined in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), particularly regarding fuel filter service intervals and annual inspection requirements",
+            "statement": "The response characterizes its fuel-filter service intervals and annual-inspection requirements as standard HMMWV (M998-series) maintenance practices."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "typically replaced when it has reached a service life of 6,500 miles or when it has been in service for 10 months, whichever comes first",
+          "id": "C001",
+          "text": "Under PMCS, a fuel-filter element is typically replaced at 6,500 miles or after 10 months in service, whichever comes first."
+        },
+        {
+          "answer_quote": "Since the fuel filter has covered 6,500 miles in ten months, replacement is due under PMCS.",
+          "id": "C002",
+          "text": "Under PMCS, replacement is due for the fuel-filter element that has covered 6,500 miles in ten months."
+        },
+        {
+          "answer_quote": "during annual inspections, the following inspection set must accompany the annual inspections: Inspection Set 10",
+          "id": "C003",
+          "text": "During annual inspections, Inspection Set 10 must accompany the annual inspections."
+        },
+        {
+          "answer_quote": "Inspection Set 10 (which includes checking the fuel filter, fuel lines, and fuel tank for leaks and condition)",
+          "id": "C004",
+          "text": "During annual inspections, Inspection Set 10 includes checking the fuel filter, fuel lines, and fuel tank for leaks and condition."
+        },
+        {
+          "answer_quote": "standard HMMWV (M998-series) maintenance practices as outlined in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), particularly regarding fuel filter service intervals and annual inspection requirements",
+          "id": "C005",
+          "text": "The response characterizes its fuel-filter service intervals and annual-inspection requirements as standard HMMWV (M998-series) maintenance practices."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M20-A01",
+            "reason": "The answer gives 6,500 miles or 10 months, contradicting the required 6,000 miles or annually."
+          },
+          {
+            "answer_quote": "Since the fuel filter has covered 6,500 miles in ten months, replacement is due under PMCS.",
+            "fulfilled": 1,
+            "id": "M20-A02",
+            "reason": "It explicitly says replacement is due at the stated mileage and elapsed time."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M20-A03",
+            "reason": "The answer names Inspection Set 10, not all semiannual inspections."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.2,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C001040"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first."
+              ],
+              "reason": "The supplied PMCS interval is 6,000 miles or annually, not 6,500 miles or 10 months.",
+              "statement": "Under PMCS, a fuel-filter element is typically replaced at 6,500 miles or after 10 months in service, whichever comes first.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C001040"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first."
+              ],
+              "reason": "The stated 6,500 miles exceeds the PMCS replacement threshold of 6,000 miles, regardless of the time in service.",
+              "statement": "Under PMCS, replacement is due for the fuel-filter element that has covered 6,500 miles in ten months.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context requires all (S) inspections during annual inspections but does not identify them as Inspection Set 10.",
+              "statement": "During annual inspections, Inspection Set 10 must accompany the annual inspections.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not describe Inspection Set 10 or list those checks as its contents.",
+              "statement": "During annual inspections, Inspection Set 10 includes checking the fuel filter, fuel lines, and fuel tank for leaks and condition.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context does not establish that characterization or identify the maintenance practices as M998-series practices.",
+              "statement": "The response characterizes its fuel-filter service intervals and annual-inspection requirements as standard HMMWV (M998-series) maintenance practices.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8160603021499083,
+          0.932886467564296,
+          0.8217555747884574
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8569007815008872,
+        "query_vector_hash": "401aed461df5d95f577379ea9763876ca53ce019ec8208e866ff6d927c3ec689",
+        "ragas_score": 0.8569007815008872,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "5f96938ce314066f7ea7bbfd22ba1d01739ae11fb7114e6f381c5396ae375853"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8160603021499083,
+          0.932886467564296,
+          0.8217555747884574
+        ],
+        "decimal50_cosines": [
+          "0.81606030214990836202310542032971601540565074085328",
+          "0.93288646756429587979411595698999936009030495755797",
+          "0.82175557478845731935436693775882047980559087817033"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8569007815008872
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8569007815008872
+          }
+        },
+        "query_vector_hash": "401aed461df5d95f577379ea9763876ca53ce019ec8208e866ff6d927c3ec689",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Under PMCS, when should an HMMWV fuel filter element be replaced, and which inspection set must accompany annual inspections?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Under PMCS, is a fuel filter due for replacement after 6,500 miles in ten months, and which inspection set must accompany annual inspections?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Under PMCS, when is a HMMWV fuel filter element due for replacement, and which inspection set must accompany annual inspections?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "5f96938ce314066f7ea7bbfd22ba1d01739ae11fb7114e6f381c5396ae375853",
+        "score": 0.8569007815008872
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "9c38a42d1d6a95bfda709496d6528c8f92975c71ef3adcb9983c6c7f7b3573e2"
+}

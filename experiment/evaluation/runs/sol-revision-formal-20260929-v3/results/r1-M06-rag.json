@@ -1,0 +1,259 @@
+{
+  "at": "2026-09-29T05:36:22.783591+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "d05561bd9b9ff0b91b19817ac012c5ba1933fa6072c07da6452bae4d00fd35ac",
+  "result": {
+    "attempt_key": "r1-M06-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 23.22065500000008,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.5
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      }
+    },
+    "question_id": "M06",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "The response gives a concrete explanation of blue smoke and a tentative purpose for the tests, while disclaiming that the stated purpose cannot be confirmed."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8722253058527774,
+          0.872225313329692,
+          0.8722253324340644
+        ],
+        "query_vector_hash": "6197d91872a8e93e6b4f3a20c22003eb3de8dee1ed8b34bce5d0d0745cdca119",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests?"
+          }
+        ],
+        "response_vectors_hash": "93c92cafab9c55f061beecf740f786af67525aa4df4d14f616768abf615d0ce1",
+        "score": 0.0
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says the purpose of the Compression/Mechanical Tests is not explicitly provided in the given excerpts and cannot be confirmed from the reference material."
+        ],
+        "shared_conditions": [],
+        "statements": [
+          {
+            "answer_quote": "Blue exhaust smoke indicates that oil is entering the combustion chambers",
+            "statement": "Blue exhaust smoke indicates that oil is entering the combustion chambers."
+          },
+          {
+            "answer_quote": "these tests are likely used to identify internal engine problems that may cause abnormal exhaust smoke or other mechanical issues",
+            "statement": "Compression/Mechanical Tests are likely used to identify internal engine problems that may cause abnormal exhaust smoke or other mechanical issues."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "Blue exhaust smoke indicates that oil is entering the combustion chambers",
+          "id": "C001",
+          "text": "Blue exhaust smoke indicates that oil is entering the combustion chambers."
+        },
+        {
+          "answer_quote": "these tests are likely used to identify internal engine problems that may cause abnormal exhaust smoke or other mechanical issues",
+          "id": "C002",
+          "text": "Compression/Mechanical Tests are likely used to identify internal engine problems that may cause abnormal exhaust smoke or other mechanical issues."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Blue exhaust smoke indicates that oil is entering the combustion chambers",
+            "fulfilled": 1,
+            "id": "M06-A01",
+            "reason": "States the required indication; entry routes are optional."
+          },
+          {
+            "answer_quote": "these tests are likely used to identify internal engine problems that may cause abnormal exhaust smoke or other mechanical issues.",
+            "fulfilled": 1,
+            "id": "M06-A02",
+            "reason": "Cautiously but concretely identifies detecting internal engine or mechanical problems as the tests’ purpose."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M06-A03",
+            "reason": "Does not state that the tests aim to fix what is possible without notifying DS maintenance."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.5,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002436"
+              ],
+              "evidence_quotes": [
+                "Blue smoke is a sign of oil entering the combustion chambers."
+              ],
+              "reason": "The smoke explanation explicitly identifies blue smoke as a sign of oil entering the combustion chambers.",
+              "statement": "Blue exhaust smoke indicates that oil is entering the combustion chambers.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied passages do not state what Compression/Mechanical Tests are used for.",
+              "statement": "Compression/Mechanical Tests are likely used to identify internal engine problems that may cause abnormal exhaust smoke or other mechanical issues.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002436"
+              ],
+              "evidence_quotes": [
+                "BLUE. . . . . . . . . . . .Blue smoke is a sign of oil entering the combustion chambers. It usually"
+              ],
+              "reason": "The reference states that blue smoke is a sign of oil entering the combustion chambers.",
+              "statement": "Blue exhaust smoke indicates that oil is entering the combustion chambers.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002013",
+                "O:C002436",
+                "O:C002437"
+              ],
+              "evidence_quotes": [
+                "The main intent of this paragraph is to determine if the engine has internal\ncompression or mechanical problems and to fix everything possible without having\nto notify DS maintenance.",
+                "BLUE. . . . . . . . . . . .Blue smoke is a sign of oil entering the combustion chambers. It usually",
+                "enters past the piston rings or intake valve stem seals. This is an internal\nengine problem that can't be handled at this level of maintenance. You may\nwant to run the Engine Mechanical Tests, Paragraph 2-18 before you notify\nDS Maintenence."
+              ],
+              "reason": "The test-section introduction says its main intent is to determine internal compression or mechanical problems. The smoke explanation identifies blue smoke as a sign of an internal engine problem and suggests running mechanical tests.",
+              "statement": "Compression/Mechanical Tests are likely used to identify internal engine problems that may cause abnormal exhaust smoke or other mechanical issues.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8722253058527774,
+          0.872225313329692,
+          0.8722253324340644
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "6197d91872a8e93e6b4f3a20c22003eb3de8dee1ed8b34bce5d0d0745cdca119",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "93c92cafab9c55f061beecf740f786af67525aa4df4d14f616768abf615d0ce1"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8722253058527774,
+          0.872225313329692,
+          0.8722253324340644
+        ],
+        "decimal50_cosines": [
+          "0.87222530585277763475578397909161309602876501624756",
+          "0.87222531332969208317784351910083489947754927676328",
+          "0.87222533243406447727898433590036643198004698993650"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 3.3306690738754696e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "6197d91872a8e93e6b4f3a20c22003eb3de8dee1ed8b34bce5d0d0745cdca119",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "93c92cafab9c55f061beecf740f786af67525aa4df4d14f616768abf615d0ce1",
+        "score": 0.0
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "7fa335c583f2f6e03b75f4d74eb743ccd1423a074aaa2c8e82c8e09ff7f56067",
+  "source_result_sha256": "1e226a484c8f4275c68ff9b9ecea67ce36be67c75886000d243049ed87622cb7"
+}

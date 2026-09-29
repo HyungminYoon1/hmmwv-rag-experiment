@@ -1,0 +1,248 @@
+{
+  "at": "2026-09-29T05:36:22.769084+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "691785184617876abad6c22eef22368dd299de6fd8552db32ffe77d7669d24dc",
+  "result": {
+    "attempt_key": "r1-M03-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 22.58732620000046,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9645636248083086
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9645636248083086
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M03",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It gives specific circuit, timing, and temperature claims but adds a disclaimer that they are not directly supported by the supplied excerpts."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9645636280762705,
+          0.9645636217746892,
+          0.964563624573966
+        ],
+        "query_vector_hash": "01a272e91bd673221df6cc0dbd2cc72286ad50a463e2db35d4b6b338277faead",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine temperature are specified for checking it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine temperature are specified for checking it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine temperature are specified for checking it?"
+          }
+        ],
+        "response_vectors_hash": "9604cd78a70d1aca9f9680dc2ec79d31f7914427ee897ab69d674e96eeddd71b",
+        "score": 0.9645636248083092
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says the information is derived from general knowledge of HMMWV maintenance procedures.",
+          "The answer says the information is not directly supported by supplied excerpts.",
+          "The answer says specific chunk IDs are not available in REFERENCE."
+        ],
+        "shared_conditions": [
+          "When checking the secondary cold-start circuit under the Fuel System guidance in TM 9-2320-280-20-1"
+        ],
+        "statements": [
+          {
+            "answer_quote": "The cold-start circuit excluded from the Glowplugs Circuit Tests is the secondary cold-start circuit.",
+            "statement": "The secondary cold-start circuit is excluded from the Glowplugs Circuit Tests."
+          },
+          {
+            "answer_quote": "the timing advance should be set to 0 degrees",
+            "statement": "When checking the secondary cold-start circuit under the Fuel System guidance in TM 9-2320-280-20-1, the timing advance should be set to 0 degrees."
+          },
+          {
+            "answer_quote": "the engine temperature should be at ambient temperature (cold) when checking this circuit",
+            "statement": "When checking the secondary cold-start circuit under the Fuel System guidance in TM 9-2320-280-20-1, the engine temperature should be at ambient temperature (cold)."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The cold-start circuit excluded from the Glowplugs Circuit Tests is the secondary cold-start circuit.",
+          "id": "C001",
+          "text": "The secondary cold-start circuit is excluded from the Glowplugs Circuit Tests."
+        },
+        {
+          "answer_quote": "the timing advance should be set to 0 degrees",
+          "id": "C002",
+          "text": "When checking the secondary cold-start circuit under the Fuel System guidance in TM 9-2320-280-20-1, the timing advance should be set to 0 degrees."
+        },
+        {
+          "answer_quote": "the engine temperature should be at ambient temperature (cold) when checking this circuit",
+          "id": "C003",
+          "text": "When checking the secondary cold-start circuit under the Fuel System guidance in TM 9-2320-280-20-1, the engine temperature should be at ambient temperature (cold)."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M03-A01",
+            "reason": "The answer calls it the “secondary cold-start circuit,” not the fuel-system cold-start advance circuit."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M03-A02",
+            "reason": "It says to set timing advance to 0 degrees, contradicting the approximately 3–5 degree advance."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M03-A03",
+            "reason": "“Ambient temperature (cold)” does not state the required below-90°F (32°C) condition."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.3333333333333333,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C003579",
+                "O:C003801"
+              ],
+              "evidence_quotes": [
+                "If you are running this test because the engine is hard to start when cold, remember that\nthere is also a cold start advance circuit (part of the fuel system) which is not checked\nhere.",
+                "If you are running this test because the engine is hard to start when cold, remember that\nthere is also a cold start advance circuit (part of the fuel system) which is not checked\nhere."
+              ],
+              "reason": "Both Glowplugs Circuit Tests passages say the other cold-start advance circuit is not checked there.",
+              "statement": "The secondary cold-start circuit is excluded from the Glowplugs Circuit Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied Fuel System passage describes approximately 3 to 5 degrees of advance during cold startup; it does not instruct setting the timing advance to 0 degrees for the check.",
+              "statement": "When checking the secondary cold-start circuit under the Fuel System guidance in TM 9-2320-280-20-1, the timing advance should be set to 0 degrees.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied guidance specifies an engine temperature below 90°F (32°C) for checking advance circuit operation, not ambient temperature.",
+              "statement": "When checking the secondary cold-start circuit under the Fuel System guidance in TM 9-2320-280-20-1, the engine temperature should be at ambient temperature (cold).",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 5.551115123125783e-16,
+        "cosine_similarities": [
+          0.9645636280762705,
+          0.9645636217746892,
+          0.964563624573966
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9645636248083086,
+        "query_vector_hash": "01a272e91bd673221df6cc0dbd2cc72286ad50a463e2db35d4b6b338277faead",
+        "ragas_score": 0.9645636248083092,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "9604cd78a70d1aca9f9680dc2ec79d31f7914427ee897ab69d674e96eeddd71b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9645636280762705,
+          0.9645636217746892,
+          0.964563624573966
+        ],
+        "decimal50_cosines": [
+          "0.96456362807627052214835168388274769093155409203655",
+          "0.96456362177468937140610240751028818741700959627816",
+          "0.96456362457396608099412694496366128521808766853811"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9645636248083092
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9645636248083092
+          }
+        },
+        "query_vector_hash": "01a272e91bd673221df6cc0dbd2cc72286ad50a463e2db35d4b6b338277faead",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine temperature are specified for checking it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine temperature are specified for checking it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine temperature are specified for checking it?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "9604cd78a70d1aca9f9680dc2ec79d31f7914427ee897ab69d674e96eeddd71b",
+        "score": 0.9645636248083086
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "be1e66e8e244e9a7765b4e4f9fb6ae56abf6d32900c9112c7a4c45c54094167d",
+  "source_result_sha256": "75971484ea7ef0f58cc060aeeb2eb978bc53f32933752d023d45870a475c63ca"
+}

@@ -1,0 +1,552 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:25:25.892886+00:00",
+  "evaluation_answer": "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system, based on standard maintenance procedures for HMMWV (M998-series) vehicles, as commonly outlined in vehicle maintenance manuals including TM 9-2320-280-20-1.\n\nA dust-unloader center opening of 0.20 inch is below the PMCS (Preventive Maintenance Control System) limit. The PMCS limit for the dust-unloader center opening is typically 0.25 inches. Therefore, a 0.20-inch opening is within acceptable limits and does not indicate a failure.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 254,
+  "key": "r1-M29-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nIs failure to develop full engine power a stated reason to check the air-intake/exhaust system, and how does a dust-unloader center opening of 0.20 inch compare with its PMCS limit?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "Is failure to develop full engine power a stated reason to check the air-intake/exhaust system, and how does a dust-unloader center opening of 0.20 inch compare with its PMCS limit?",
+  "question_id": "M29",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:42.746109307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:39.476118907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 110.3371999997762,
+    "peak_rss_bytes": 3646803968,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4808.9981735,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4809.1065754,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4809.1993947,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4809.3077866,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4809.4029275,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4809.5132647,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4809.6067486,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4809.7018251,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4809.8103681,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4809.9027024,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96841728,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595485184,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.0103548,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595505664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.1036643,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595505664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.1982289,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595505664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.3068918,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595505664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.4002581,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595505664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.5085045,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595505664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.6010462,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595505664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.7096128,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595505664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.8022927,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58572800,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3595505664,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4810.9116367,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 67694592,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3604627456,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.0037413,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108445696,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3645378560,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.1116767,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 12607488,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3645755392,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.2058022,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3646271488,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.3126794,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3646271488,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.4058857,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 96862208,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 3646271488,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.5016634,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 96862208,
+          "37504": 3420037120,
+          "37564": 7958528
+        },
+        "rss_bytes": 3646803968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.6107282,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 96862208,
+          "37504": 3420037120,
+          "37564": 7958528
+        },
+        "rss_bytes": 3646803968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.7020429,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 96862208,
+          "37504": 3420037120,
+          "37564": 7958528
+        },
+        "rss_bytes": 3646803968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.8092811,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 96862208,
+          "37504": 3420037120,
+          "37564": 7958528
+        },
+        "rss_bytes": 3646803968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4811.9016267,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 96862208,
+          "37504": 3420037120,
+          "37564": 7958528
+        },
+        "rss_bytes": 3646803968,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4812.0108238,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 96862208,
+          "37504": 3420037120,
+          "37564": 7958528
+        },
+        "rss_bytes": 3646803968,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:25:25.8901047Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 135,
+    "eval_duration": 2016903000,
+    "load_duration": 9614200,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 254,
+    "prompt_eval_duration": 30437000,
+    "response": "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system, based on standard maintenance procedures for HMMWV (M998-series) vehicles, as commonly outlined in vehicle maintenance manuals including TM 9-2320-280-20-1.\n\nA dust-unloader center opening of 0.20 inch is below the PMCS (Preventive Maintenance Control System) limit. The PMCS limit for the dust-unloader center opening is typically 0.25 inches. Therefore, a 0.20-inch opening is within acceptable limits and does not indicate a failure.",
+    "total_duration": 2067362200
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 1,
+  "started_at": "2026-09-28T04:25:23.814964+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2077.7358000004824,
+    "retrieval": null,
+    "total": 2077.7358000004824
+  },
+  "unprovided_citations": []
+}

@@ -1,0 +1,190 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:45:07.787146+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "200 RPM",
+        "fulfilled": 1,
+        "id": "S13-A01",
+        "reason": "The reference states cranking RPM should be approximately 200."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588707,
+      "conversation": null,
+      "created_at": 1790588706.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0cc1486b79f5bfde016aba3722001487d0accebfeced107a4c",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S13-A01\",\"fulfilled\":1,\"answer_quote\":\"200 RPM\",\"reason\":\"The reference states cranking RPM should be approximately 200.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0cc1486b79f5bfde016aba372304dc87d0acfcf86d9675942b",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 729,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 45,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 774
+      },
+      "user": null
+    },
+    "request_id": "resp_0cc1486b79f5bfde016aba3722001487d0accebfeced107a4c",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S13-A01\",\"fulfilled\":1,\"answer_quote\":\"200 RPM\",\"reason\":\"The reference states cranking RPM should be approximately 200.\"}]}",
+    "usage": {
+      "input_tokens": 729,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 45,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 774
+    }
+  },
+  "record_hash": "954a84fbbe00bb97a524d3e7d40e87a6980dec1acfd37488dac1f19ba86ab30a",
+  "request_hash": "69eccece79b65d1866502d3b3fdd61467f14170eb89a8be47317f25592b201d6",
+  "started_at": "2026-09-28T09:45:05.846527+00:00",
+  "status": "OK"
+}

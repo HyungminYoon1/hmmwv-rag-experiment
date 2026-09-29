@@ -1,0 +1,213 @@
+{
+  "at": "2026-09-28T09:59:37.442784+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "97ca33152458ec698578aa82620a405d5bc4fb4baa5d4f368ad1651728f97033",
+  "original_result_sha256": "083d6885f8d11caa4a34e9fb65b9d110010c35b5eeef5f3c843bd8a26680d5ea",
+  "result": {
+    "attempt_key": "r1-M08-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 23.439935300000798,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.752314734855155
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.752314734855155
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M08",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific activation temperature and identifies the pump supplying hydraulic pressure."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7523147414837877,
+          0.7523147414837877,
+          0.7523147215978896
+        ],
+        "query_vector_hash": "32b6d9b393c58a4e55e9447d0d02e8d2324fb81ec3dbae9760b2014911eb64fd",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the HMMWV (M998-series) cooling fan typically activate, and what powers its fan-clutch system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the HMMWV (M998-series) cooling fan typically activate, and what powers its fan-clutch system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the HMMWV (M998-series) cooling fan typically activate, and what powers its fan-clutch system?"
+          }
+        ],
+        "response_vectors_hash": "023e2ffa774b3b95037f746a8e433e3f6e40637a13c0ea3c8e03a8c2dddb067b",
+        "score": 0.7523147348551554
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The cooling fan on the HMMWV (M998-series) is typically activated at a coolant temperature of 195°F (90.5°C)."
+        },
+        {
+          "id": "C002",
+          "text": "The HMMWV (M998-series) power steering pump powers the fan-clutch system by supplying hydraulic pressure to the fan-clutch assembly."
+        },
+        {
+          "id": "C003",
+          "text": "The information about the cooling fan and fan-clutch system is based on standard HMMWV maintenance practices outlined in TM 9-2320-280-20-1, Volume 1, and related technical documentation."
+        }
+      ],
+      "claims_raw": [
+        "The cooling fan on the HMMWV (M998-series) is typically activated at a coolant temperature of 195°F (90.5°C).",
+        "The HMMWV (M998-series) power steering pump powers the fan-clutch system by supplying hydraulic pressure to the fan-clutch assembly.",
+        "The information about the cooling fan and fan-clutch system is based on standard HMMWV maintenance practices outlined in TM 9-2320-280-20-1, Volume 1, and related technical documentation."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "195°F (90.5°C)",
+            "fulfilled": 0,
+            "id": "M08-A01",
+            "reason": "The answer gives 195°F, contradicting the required 215°F (102°C)."
+          },
+          {
+            "answer_quote": "the vehicle's power steering pump, which supplies hydraulic pressure to the fan-clutch assembly",
+            "fulfilled": 1,
+            "id": "M08-A02",
+            "reason": "Correctly identifies the power-steering pump as the hydraulic-pressure source."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.3333333333333333,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives 215°F (102°C), not 195°F.",
+              "statement": "The cooling fan on the HMMWV (M998-series) is typically activated at a coolant temperature of 195°F (90.5°C).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:fan_pump"
+              ],
+              "evidence_quotes": [
+                "HYDRAULIC CONTROL VALVE – Directs hydraulic fluid to provide required pressure to actuate\nand deactuate fan clutch as required by engine temperature. Hydraulic pressure supplied by power\nsteering pump."
+              ],
+              "reason": "The power steering pump supplies hydraulic pressure for the valve that actuates the fan clutch.",
+              "statement": "The HMMWV (M998-series) power steering pump powers the fan-clutch system by supplying hydraulic pressure to the fan-clutch assembly.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify that manual or establish the claimed source.",
+              "statement": "The information about the cooling fan and fan-clutch system is based on standard HMMWV maintenance practices outlined in TM 9-2320-280-20-1, Volume 1, and related technical documentation.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 4.440892098500626e-16,
+        "cosine_similarities": [
+          0.7523147414837877,
+          0.7523147414837877,
+          0.7523147215978896
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.752314734855155,
+        "query_vector_hash": "32b6d9b393c58a4e55e9447d0d02e8d2324fb81ec3dbae9760b2014911eb64fd",
+        "ragas_score": 0.7523147348551554,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "023e2ffa774b3b95037f746a8e433e3f6e40637a13c0ea3c8e03a8c2dddb067b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7523147414837877,
+          0.7523147414837877,
+          0.7523147215978896
+        ],
+        "decimal50_cosines": [
+          "0.75231474148378785483551846660440956858007791042387",
+          "0.75231474148378785483551846660440956858007791042387",
+          "0.75231472159788957799212158975260572581468148242462"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.7523147348551554
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.7523147348551554
+          }
+        },
+        "query_vector_hash": "32b6d9b393c58a4e55e9447d0d02e8d2324fb81ec3dbae9760b2014911eb64fd",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the HMMWV (M998-series) cooling fan typically activate, and what powers its fan-clutch system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the HMMWV (M998-series) cooling fan typically activate, and what powers its fan-clutch system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the HMMWV (M998-series) cooling fan typically activate, and what powers its fan-clutch system?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "023e2ffa774b3b95037f746a8e433e3f6e40637a13c0ea3c8e03a8c2dddb067b",
+        "score": 0.752314734855155
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "3e8bec9f1dc4ba0842d5c4f9a4901f68470aa7dc2efa3c98cd06ff58d61206ad"
+}

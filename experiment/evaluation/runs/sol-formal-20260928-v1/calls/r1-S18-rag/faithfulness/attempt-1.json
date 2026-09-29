@@ -1,0 +1,205 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:49:48.394998+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "C003141"
+        ],
+        "evidence_quotes": [
+          "3. Start Test 73, battery internal resistance.\n4. Wait for the GO message. Crank the\nengine.\n5. Result is displayed in milliohms. Battery\nresistance should be 25 milliohms max."
+        ],
+        "reason": "Test 73 specifies a maximum battery resistance of 25 milliohms.",
+        "statement": "The maximum acceptable battery internal resistance in STE/ICE-R Test 73 is 25 milliohms.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588988,
+      "conversation": null,
+      "created_at": 1790588985.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_09281d0358c5ee18016aba3839a14087d09830d1fcedd70925",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The maximum acceptable battery internal resistance in STE/ICE-R Test 73 is 25 milliohms.\",\"reason\":\"Test 73 specifies a maximum battery resistance of 25 milliohms.\",\"verdict\":1,\"evidence_ids\":[\"C003141\"],\"evidence_quotes\":[\"3. Start Test 73, battery internal resistance.\\n4. Wait for the GO message. Crank the\\nengine.\\n5. Result is displayed in milliohms. Battery\\nresistance should be 25 milliohms max.\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_09281d0358c5ee18016aba383aac4487d08e2c40114709ac9a",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 832,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 128,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 960
+      },
+      "user": null
+    },
+    "request_id": "resp_09281d0358c5ee18016aba3839a14087d09830d1fcedd70925",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The maximum acceptable battery internal resistance in STE/ICE-R Test 73 is 25 milliohms.\",\"reason\":\"Test 73 specifies a maximum battery resistance of 25 milliohms.\",\"verdict\":1,\"evidence_ids\":[\"C003141\"],\"evidence_quotes\":[\"3. Start Test 73, battery internal resistance.\\n4. Wait for the GO message. Crank the\\nengine.\\n5. Result is displayed in milliohms. Battery\\nresistance should be 25 milliohms max.\"]}]}",
+    "usage": {
+      "input_tokens": 832,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 128,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 960
+    }
+  },
+  "record_hash": "d5ad215caefaf5cd52bf6b2f2ec6f9c23f5a737a8999d7674cc56b3bcfc68c83",
+  "request_hash": "96ac7504ef036d64b36a915f735d62db80318b8218962f0917f0f1c20613b637",
+  "started_at": "2026-09-28T09:49:45.487977+00:00",
+  "status": "OK"
+}

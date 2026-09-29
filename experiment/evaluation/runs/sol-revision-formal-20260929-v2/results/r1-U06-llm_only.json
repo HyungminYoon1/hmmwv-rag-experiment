@@ -1,0 +1,109 @@
+{
+  "at": "2026-09-29T05:31:00.999038+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "1982fe647e1a5fcd0b9b856c4cb2b7baf8ebf181fec84721dc66ccc507b73da2",
+  "result": {
+    "attempt_key": "r1-U06-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 25.461273700000675,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U06",
+    "stages": {
+      "abstention": {
+        "answer_quote": "Therefore, I cannot provide the complete procedure without direct reference material.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C001881"
+              ],
+              "evidence_quotes": [
+                "For repair instructions (HARNESS REPAIR),\nrefer to (para 4-85)."
+              ],
+              "reason": "The oracle explicitly refers harness-repair instructions to paragraph 4-85, but does not supply the procedure.",
+              "statement": "wiring-harness repair procedure specified in paragraph 4-85",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No oracle excerpt verifies this publication identity or edition.",
+              "statement": "TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)",
+              "verdict": 0
+            }
+          ]
+        },
+        "partial_claims": [
+          "wiring-harness repair procedure specified in paragraph 4-85",
+          "TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)"
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer withholds the complete procedure and invents no repair steps. Its paragraph reference is within the allowed partial scope, but its unverified publication identity and edition are not. Statements about missing excerpts are input-scope metadata, not technical partial claims.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "wiring-harness repair procedure specified in paragraph 4-85",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)",
+              "verdict": 0
+            }
+          ]
+        },
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 2,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 1,
+        "withholding_only": 1
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "ca8d3309d81a0022f51345bab4c89ac31b639b561b8da23fc3a6bc39196f0853"
+}

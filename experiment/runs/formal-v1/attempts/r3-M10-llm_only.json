@@ -1,0 +1,604 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:42:51.835887+00:00",
+  "evaluation_answer": "The lubrication-test chart for the 6.2L engine (M998-series HMMWV) indicates that oil pressure should be at least 8 psi at idle (650 RPM) for proper lubrication. However, when oil is contaminated, even if pressure readings appear acceptable, the lubrication effectiveness is compromised due to reduced oil viscosity and increased wear potential.\n\nAccording to standard PMCS (Preventive Maintenance and Condition Standard) procedures for HMMWV engines, if oil is known to be contaminated, the correct action is to **replace the engine oil and filter** immediately, regardless of pressure readings. This is because contamination directly affects oil film integrity and can lead to premature engine wear.\n\n[No manual excerpts supplied. Answer based on standard PMCS practices for HMMWV engine maintenance.]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 261,
+  "key": "r3-M10-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nA 6.2L engine idles at 650 RPM with 8 psi oil pressure, and its oil is known to be contaminated. Compare the pressure with the lubrication-test chart and state the PMCS action for contaminated oil.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "A 6.2L engine idles at 650 RPM with 8 psi oil pressure, and its oil is known to be contaminated. Compare the pressure with the lubrication-test chart and state the PMCS action for contaminated oil.",
+  "question_id": "M10",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:30:08.691654207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:30:05.067178907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904009728.0,
+    "max_actual_interval_ms": 111.07410000022355,
+    "peak_rss_bytes": 8966078464,
+    "peak_vram_bytes": 4909449216,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5854.5573549,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5854.6621397,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5854.7706388,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5854.8635932,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5854.9727679,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5855.0655263,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4904009728
+      },
+      {
+        "monotonic": 5855.1587232,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5855.2666062,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5855.360073,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5855.4679943,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5855.560874,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8672186368,
+          "37564": 7741440
+        },
+        "rss_bytes": 8896622592,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5855.6696959,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8739815424,
+          "37564": 7741440
+        },
+        "rss_bytes": 8964251648,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5855.7626508,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5855.8727862,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5855.967216,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.0585813,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.1656913,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.2600289,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.3680206,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.4615777,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.5696167,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.6612385,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.7694402,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.859574,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5856.9677814,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5857.0611369,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909383680
+      },
+      {
+        "monotonic": 5857.172211,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909449216
+      },
+      {
+        "monotonic": 5857.2652635,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909449216
+      },
+      {
+        "monotonic": 5857.3598767,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909449216
+      },
+      {
+        "monotonic": 5857.467047,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909449216
+      },
+      {
+        "monotonic": 5857.5605993,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909449216
+      },
+      {
+        "monotonic": 5857.6685501,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909449216
+      },
+      {
+        "monotonic": 5857.7628566,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909449216
+      },
+      {
+        "monotonic": 5857.8714487,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909449216
+      },
+      {
+        "monotonic": 5857.9647465,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102957056,
+          "30736": 11812864,
+          "36040": 101924864,
+          "37504": 8741642240,
+          "37564": 7741440
+        },
+        "rss_bytes": 8966078464,
+        "vram_bytes": 4909449216
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:42:51.8314973Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 167,
+    "eval_duration": 2337730000,
+    "load_duration": 2351500,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 261,
+    "prompt_eval_duration": 23719000,
+    "response": "The lubrication-test chart for the 6.2L engine (M998-series HMMWV) indicates that oil pressure should be at least 8 psi at idle (650 RPM) for proper lubrication. However, when oil is contaminated, even if pressure readings appear acceptable, the lubrication effectiveness is compromised due to reduced oil viscosity and increased wear potential.\n\nAccording to standard PMCS (Preventive Maintenance and Condition Standard) procedures for HMMWV engines, if oil is known to be contaminated, the correct action is to **replace the engine oil and filter** immediately, regardless of pressure readings. This is because contamination directly affects oil film integrity and can lead to premature engine wear.\n\n[No manual excerpts supplied. Answer based on standard PMCS practices for HMMWV engine maintenance.]",
+    "total_duration": 2455337100
+  },
+  "retrieval": null,
+  "round": 3,
+  "sequence": 300,
+  "started_at": "2026-09-28T04:42:49.373998+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2462.5073000006523,
+    "retrieval": null,
+    "total": 2462.5073000006523
+  },
+  "unprovided_citations": []
+}

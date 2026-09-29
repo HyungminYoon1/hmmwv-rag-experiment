@@ -1,0 +1,267 @@
+{
+  "at": "2026-09-28T09:55:51.772541+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "61265ab676ffbe9d1005fcb3f58cbbffb6d7e35fe4669342b7e4de6aee7cd75b",
+  "original_result_sha256": "e3f4ecea8d153080e0b408ff3d796a15b2c56e98ce088a3daad3d6d76913d1c4",
+  "result": {
+    "attempt_key": "r1-M16-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 25.8385234999987,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9294216870831451
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9294216870831451
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M16",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly states the relubrication instruction and specific refill quantities."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9192976533230032,
+          0.9344837106470459,
+          0.9344836972793861
+        ],
+        "query_vector_hash": "1b8999fdb40a9c3039f0e7f4d392b54b6d47d1b936b0334dd133eaac51942e48",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "After fording, what should be done with contaminated items, and how much GO is needed to refill each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "After fording, what should be done with contaminated items, and what are the GO refill quantities for each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "After fording, what should be done with contaminated items, and what are the GO refill quantities for each axle differential and geared hub?"
+          }
+        ],
+        "response_vectors_hash": "9dc144adb348aaadf5d3419ad1d2a729b780ea0461f33387e7fa539858721ed6",
+        "score": 0.9294216870831452
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "After fording, contaminated items should be relubricated."
+        },
+        {
+          "id": "C002",
+          "text": "The listed GO refill quantity is 2 quarts (1.9 L) per axle differential."
+        },
+        {
+          "id": "C003",
+          "text": "The listed GO refill quantity is 1 pint (0.5 L) per geared hub."
+        }
+      ],
+      "claims_raw": [
+        "After fording, contaminated items should be relubricated.",
+        "The listed GO refill quantity is 2 quarts (1.9 L) per axle differential.",
+        "The listed GO refill quantity is 1 pint (0.5 L) per geared hub."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "After fording, items found contaminated should be relubricated.",
+            "fulfilled": 1,
+            "id": "M16-A01",
+            "reason": "Correctly states the post-fording instruction for contaminated items."
+          },
+          {
+            "answer_quote": "2 quarts (1.9 L) per axle differential",
+            "fulfilled": 1,
+            "id": "M16-A02",
+            "reason": "Matches the listed GO refill quantity for each axle differential."
+          },
+          {
+            "answer_quote": "1 pint (0.5 L) per geared hub",
+            "fulfilled": 1,
+            "id": "M16-A03",
+            "reason": "Matches the listed GO refill quantity for each geared hub."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C000832"
+              ],
+              "evidence_quotes": [
+                "Relubricate all items found contaminated after fording."
+              ],
+              "reason": "The context explicitly directs relubrication of contaminated items after fording.",
+              "statement": "After fording, contaminated items should be relubricated.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000977"
+              ],
+              "evidence_quotes": [
+                "•Fill each axle differential with 2\nquarts (1.9 L) of GO."
+              ],
+              "reason": "The note specifies this quantity for each axle differential.",
+              "statement": "The listed GO refill quantity is 2 quarts (1.9 L) per axle differential.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000977"
+              ],
+              "evidence_quotes": [
+                "•Fill each geared hub with 1 pint\n(0.5 L) of GO."
+              ],
+              "reason": "The note specifies this quantity for each geared hub.",
+              "statement": "The listed GO refill quantity is 1 pint (0.5 L) per geared hub.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:fording_lube"
+              ],
+              "evidence_quotes": [
+                "Relubricate all items found contaminated after fording."
+              ],
+              "reason": "The context directs relubrication of all items found contaminated after fording.",
+              "statement": "After fording, contaminated items should be relubricated.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:driveline_refill"
+              ],
+              "evidence_quotes": [
+                "Fill each axle differential with 2\nquarts (1.9 L) of GO."
+              ],
+              "reason": "The listed fill quantity matches.",
+              "statement": "The listed GO refill quantity is 2 quarts (1.9 L) per axle differential.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:driveline_refill"
+              ],
+              "evidence_quotes": [
+                "Fill each geared hub with 1 pint\n(0.5 L) of GO."
+              ],
+              "reason": "The listed fill quantity matches.",
+              "statement": "The listed GO refill quantity is 1 pint (0.5 L) per geared hub.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9192976533230032,
+          0.9344837106470459,
+          0.9344836972793861
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9294216870831451,
+        "query_vector_hash": "1b8999fdb40a9c3039f0e7f4d392b54b6d47d1b936b0334dd133eaac51942e48",
+        "ragas_score": 0.9294216870831452,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "9dc144adb348aaadf5d3419ad1d2a729b780ea0461f33387e7fa539858721ed6"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9192976533230032,
+          0.9344837106470459,
+          0.9344836972793861
+        ],
+        "decimal50_cosines": [
+          "0.91929765332300309531484505826930789236482405539544",
+          "0.93448371064704608267373730045924903987897275982138",
+          "0.93448369727938607554789863172636916652731903994149"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9294216870831452
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9294216870831452
+          }
+        },
+        "query_vector_hash": "1b8999fdb40a9c3039f0e7f4d392b54b6d47d1b936b0334dd133eaac51942e48",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "After fording, what should be done with contaminated items, and how much GO is needed to refill each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "After fording, what should be done with contaminated items, and what are the GO refill quantities for each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "After fording, what should be done with contaminated items, and what are the GO refill quantities for each axle differential and geared hub?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "9dc144adb348aaadf5d3419ad1d2a729b780ea0461f33387e7fa539858721ed6",
+        "score": 0.9294216870831451
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "8f89f1a87c2af5f5d2b4bb41b95a6450ed095fb2668bb4d127e06133298a7444"
+}

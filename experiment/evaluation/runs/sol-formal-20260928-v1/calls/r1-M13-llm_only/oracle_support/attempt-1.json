@@ -1,0 +1,252 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:12:01.455025+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [],
+        "evidence_quotes": [],
+        "reason": "The stated NFMC condition is service brake pads less than 3.2 mm, not 2.5 mm.",
+        "statement": "The Not Fully Mission Capable (NFMC) threshold for service-brake pad thickness is 2.5 mm.",
+        "verdict": 0
+      },
+      {
+        "evidence_ids": [],
+        "evidence_quotes": [],
+        "reason": "2.5 mm is below the stated 3.2 mm threshold.",
+        "statement": "A service-brake pad thickness of 2.5 mm is at the NFMC threshold and is not below the NFMC threshold.",
+        "verdict": 0
+      },
+      {
+        "evidence_ids": [],
+        "evidence_quotes": [],
+        "reason": "The context gives no operational policy for pads exactly at the limit.",
+        "statement": "A service-brake pad thickness exactly at the limit may be considered marginally acceptable depending on operational policy.",
+        "verdict": 0
+      },
+      {
+        "evidence_ids": [],
+        "evidence_quotes": [],
+        "reason": "The context does not give a 2.5 mm minimum or general maintenance guidelines.",
+        "statement": "According to standard maintenance guidelines, 2.5 mm is generally the minimum acceptable service-brake pad thickness.",
+        "verdict": 0
+      },
+      {
+        "evidence_ids": [
+          "O:tread"
+        ],
+        "evidence_quotes": [
+          "NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\nthan 1/16 in. (1.59 mm)."
+        ],
+        "reason": "The stated threshold is 1.59 mm, which rounds to 1.6 mm.",
+        "statement": "The NFMC threshold for tire tread depth is 1.6 mm.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "O:tread"
+        ],
+        "evidence_quotes": [
+          "NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\nthan 1/16 in. (1.59 mm)."
+        ],
+        "reason": "1.0 mm is below the stated 1.59 mm threshold, rounded here to 1.6 mm.",
+        "statement": "A tire tread depth of 1.0 mm is below the NFMC threshold of 1.6 mm.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586721,
+      "conversation": null,
+      "created_at": 1790586708.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0a640b1c7f9cad18016aba2f54066487d09600cb56752d19d8",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqui9hikODizRAOoE2kbqfXkNstxcw0B4PTRVf5r5YE7a_LQ-0fHbI1kSpGoF6ve-fyRsAiL04JnI5dEH_L3XJ2GkhDer7lyOyMeOW5Lh1mCOrUwMdewDGBo5k5ZVlplBCJW3JGwS0BWLl6YarMApGVoel5eJCVHCODzVDJZXIVrAYus8ZE2TcJRYq7jKTAU9vf-FeV2yg5zuchs7lLauhFHstLbHG7hNVJ4KGKUWxhLaC6s6eCscqIwBYrQqyb8c65TkhupmuvbM28zVBfLrE6MMNZ-t7UnUs_QY3QB0NzVyO1awc0ZQfsTeZFWDkokk9Oz791Wnf5vzfFPw-b7BVz3NVizb4E36qA78wLmc0PlQoobGW6VAUcPvNKYGDjcSJ_KR34MsZ0volnr_f5uXJr23lFZZOe149M__juSS-rgCYbms_NWpCx5Wfs2mTCngs-FneKW61-ZnbQxp_AMnN2B43HbHKxdMXpqCA1EkEnk0kEnSSsnOL9Fbl95fz9jDRVC-FfzZYGLAYv8S8noYvVM-IkMn0F3Ux7MpVxOYF4CAKxWAAEipkjvgG8tqaLNpahVlb1omINVkBPFjrYgnyuoUghdTocPTtIMRAgkBdCJHBLlYNcMOKYJ22Z7fC9J1o8luEutlmA0UOfuZJSSOVxwpwGS9CN1-54ugsaIo-JVDK8OcuwAkkq1aG18afLZzWexg-B4leJL11Z7vtCbRh7eUCwdlfq7P6rWU16vtKpVLejYvMvBLs-Z4BswDxQDMt0qJu3bCE8tFwxoyIOU1jP77i00e8wBSr99qNDlxqpviQY7o35hlmSe9OctJUfj7lUjAj6hfE2W0aInrz_A72Ug1UXwOJJ277Xx1MgXu1g3XAXJcXS_7im3eVacAbQsMC7v7_m38KGucOsca-3qZ36xIWEGQtuF_zH2syiMPWHgI3kGihAGdB9b2aJJ0pkSaROrCTjHf3R5raiavCjbARz3xiCECseoHIuEP2LzaIk7yFxritO-yBhQbyt8jD5kPb_g93YNpW57Cb7PqktHj3dQJ_jaCIWcMUuWE8LdrC1nQfJ1qW2HY1_Omn7pEkeXXhj4sa8uhwYJJy41hAczdqHmSiPQC-UXrHiyeTsKoogkbh6r_skRCwOf5VSD3p9pwBDw7tOksoEsDfC9fxFrZRKVyoXkyI_-efmPQsZ_1TaAQDKn4IYzTtAj03AJxMeo2fYNznA8ILXW7LVMp0g4E9LuWw4-pSusCZYpAGa0W9Yy0r10riQGJWizO_8T_WA68mybaceQBnwHV1XsaMW67GJB53XFWQLC3gc3jsSs6896fA293ocwNIS1v9q_zwu-thFxObNvw42oNlrCIOBZTAk3SaGgIKVOPkJ-2cjprAfgchNOBmmQmhEDPSDAw-iFA5EMJid47V5Y6VZUax9Zw0DWnKj_4EvptbThbxvsEgOlpRsZzdRcLK4omY9eQts7VgxFSAxfFgS3S0klKuQpaUE_zQHwg6L5D4jtqwlYStKAKEkIQhPX8ul0GIp9feEd2WDGAeCef8mXPKl4YwNTnGSI7TSQGxlRoy2OuIjaoa697A56rKSR6LYcVGJetEFcEDNjz3IZUfVrSk7ueDQa5yaX_zOKY_dR-o-UzshxE6ZknesjU4SzgIh6x9oDCJfVK-YZ6aCcQZDv4TzYoZnCfPuqdHaudPKiEqUzJ63CfMI0yQGe03hFegC9WKPN06uCrl-0uufR5B7oyt5UwmW_0haShmLCz0Upvl7u9RYmCHdXm7xsU9dsN4CiMPhmR9k5IXhPLmT_B4FER76P3Kj9JVctwF4yvMDsPsqXt-OIhqOt7HTh0cy-2Ao3b6IoXkT_RvRJ38xULyOQQJoxDQZvrZUCMm8N1W_jKD9z_i2XmqLzlCEr6TYn3IyB806WwcyzTtDtVkTZub6dtyyigNcPm5H6YHacSZ6RuflgWt-XdTASIvHk0PREzIEBTkCq1DpKXTtYOqq_gLFc42zls9MQ-fgPqKNnzY9Tlu5kXHcji_D5l9hzt4d9uB0Vu1lUMbmp3z5gtWXA9RHneLNahwfyV3a2H0YVLBtNd_i5iX4bWYa01Kn1e9-9ZDcWS6R6YistjBBijf8ecPNLT4r5_5iUSDyPCWQT060Asd7Fs-FkoxSztAZvmyJ1DZJrwFi2ViPRI9BuulfgIFg5fAj0vVUec_h5R6JS9cD1bd-t8l6gHnWv_oMOe9Hp2mSKV01IbDj9H1xUKr9QFfKUccXsWDu-dql_32qrPAKoVSB9IcHziyd6UP4RZoTGMY_59s6zcZNKP1e5Zt9bm5fWdjULIGRK0CFhpSKeIzm7BCF2uGSpEfd5zwnF5BrjGHz8T8lqhE6FezQnAgZy7vixbY8-TOpExSdQmaQLQsKM1Rgi8-p2kQjeMZJ6qTQYekfp0jVakhPX8pGxSAbw4jt92Jywts_BT0NtEh3OGbthGpeC7aTEQMSnp7Iz3naxuORtzC848g5xpUqAMgN93cMi_JmqkNVeasI2KVTxyOBdl6P6zwQoDxmGOKPHFs88SY0lhGbo9vq05FcMVpOlpIXJyeCHVgUG7RgSzrXiRbuOtUpC6-QVByblLuNQRZmxj_buYbp6PCdsOjRNizlsS8CC4QngTXjQU9kCfS-OthcsJy4v5sKyPBpTafAPqxeym5y0RITcC_TrW154dNdBpPtG11WAq7WVGeVpb_TfTx8vnmc-d8a4CBirrNV26OQ4ZkAD_2IBUJWc5GkcJU9Vjrbzjy-zcR1gGRAioKhRNaGIwoa9GL1M6otp5i3_CdvFBWpKOAyRnxGd9hWsPHHrQt2bc8o7vlQySAlqXxFp5xjLYC2-F4zl3HWs-UqopZroUgFlrVSfIVmakM5f8xedvD9J2z3QUS5N5pTfZRnxpLMxgXXXhLShkwyqbROQEgZ15BieFNAupC9xR3lTVthC71k3eeV-T8P88lAeEvUUyxbcg02eb5jXsk-Luq940=",
+          "id": "rs_0a640b1c7f9cad18016aba2f54e27c87d0a4b29dffa6c66967",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The Not Fully Mission Capable (NFMC) threshold for service-brake pad thickness is 2.5 mm.\",\"reason\":\"The stated NFMC condition is service brake pads less than 3.2 mm, not 2.5 mm.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"A service-brake pad thickness of 2.5 mm is at the NFMC threshold and is not below the NFMC threshold.\",\"reason\":\"2.5 mm is below the stated 3.2 mm threshold.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"A service-brake pad thickness exactly at the limit may be considered marginally acceptable depending on operational policy.\",\"reason\":\"The context gives no operational policy for pads exactly at the limit.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"According to standard maintenance guidelines, 2.5 mm is generally the minimum acceptable service-brake pad thickness.\",\"reason\":\"The context does not give a 2.5 mm minimum or general maintenance guidelines.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"The NFMC threshold for tire tread depth is 1.6 mm.\",\"reason\":\"The stated threshold is 1.59 mm, which rounds to 1.6 mm.\",\"verdict\":1,\"evidence_ids\":[\"O:tread\"],\"evidence_quotes\":[\"NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\\nthan 1/16 in. (1.59 mm).\"]},{\"statement\":\"A tire tread depth of 1.0 mm is below the NFMC threshold of 1.6 mm.\",\"reason\":\"1.0 mm is below the stated 1.59 mm threshold, rounded here to 1.6 mm.\",\"verdict\":1,\"evidence_ids\":[\"O:tread\"],\"evidence_quotes\":[\"NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\\nthan 1/16 in. (1.59 mm).\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0a640b1c7f9cad18016aba2f5c199c87d08a9c6d72ba0ad8ca",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1662,
+        "input_tokens_details": {
+          "cache_write_tokens": 1659,
+          "cached_tokens": 0
+        },
+        "output_tokens": 825,
+        "output_tokens_details": {
+          "reasoning_tokens": 381
+        },
+        "total_tokens": 2487
+      },
+      "user": null
+    },
+    "request_id": "resp_0a640b1c7f9cad18016aba2f54066487d09600cb56752d19d8",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The Not Fully Mission Capable (NFMC) threshold for service-brake pad thickness is 2.5 mm.\",\"reason\":\"The stated NFMC condition is service brake pads less than 3.2 mm, not 2.5 mm.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"A service-brake pad thickness of 2.5 mm is at the NFMC threshold and is not below the NFMC threshold.\",\"reason\":\"2.5 mm is below the stated 3.2 mm threshold.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"A service-brake pad thickness exactly at the limit may be considered marginally acceptable depending on operational policy.\",\"reason\":\"The context gives no operational policy for pads exactly at the limit.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"According to standard maintenance guidelines, 2.5 mm is generally the minimum acceptable service-brake pad thickness.\",\"reason\":\"The context does not give a 2.5 mm minimum or general maintenance guidelines.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]},{\"statement\":\"The NFMC threshold for tire tread depth is 1.6 mm.\",\"reason\":\"The stated threshold is 1.59 mm, which rounds to 1.6 mm.\",\"verdict\":1,\"evidence_ids\":[\"O:tread\"],\"evidence_quotes\":[\"NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\\nthan 1/16 in. (1.59 mm).\"]},{\"statement\":\"A tire tread depth of 1.0 mm is below the NFMC threshold of 1.6 mm.\",\"reason\":\"1.0 mm is below the stated 1.59 mm threshold, rounded here to 1.6 mm.\",\"verdict\":1,\"evidence_ids\":[\"O:tread\"],\"evidence_quotes\":[\"NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\\nthan 1/16 in. (1.59 mm).\"]}]}",
+    "usage": {
+      "input_tokens": 1662,
+      "input_tokens_details": {
+        "cache_write_tokens": 1659,
+        "cached_tokens": 0
+      },
+      "output_tokens": 825,
+      "output_tokens_details": {
+        "reasoning_tokens": 381
+      },
+      "total_tokens": 2487
+    }
+  },
+  "record_hash": "bf1d4d90be4a679c7688dce1eba1f62d00405d9a6f3ae835662b3c8adcc103cf",
+  "request_hash": "d666eab0578ff590a237b19b49aae1bc9624f22ca613e911dae09ee883dab002",
+  "started_at": "2026-09-28T09:11:47.880266+00:00",
+  "status": "OK"
+}

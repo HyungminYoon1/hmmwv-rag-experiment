@@ -1,0 +1,344 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:12:35.705551+00:00",
+  "evaluation_answer": "The oil types specified for the 3L80 and 4L80-E transmissions are not available in the provided context.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 172,
+  "key": "r1-D04-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou are a technical question-answering assistant.\nAnswer in English using concise statements that address every part of the question.\nWhen reference context is provided, use only facts supported by that context.\nWhen no reference context is provided, use your existing model knowledge.\nIf some requested information is unavailable, state which part cannot be determined.\nYou may answer the supported parts, but do not present a partial answer as complete.\nDo not invent specifications, procedures, measurements, causes, or other facts.\nWhen reference context is provided, cite each supporting chunk ID in square brackets, for example [C000123]. Use only supplied chunk IDs.\nREFERENCE CONTEXT:\nNo reference context is available.\nQUESTION:\nWhich oil types are specified for the 3L80 and 4L80-E transmissions, respectively?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 144,
+  "question": "Which oil types are specified for the 3L80 and 4L80-E transmissions, respectively?",
+  "question_id": "D04",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T12:59:52.559177507+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T12:59:50.862236207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4808523776.0,
+    "max_actual_interval_ms": 109.79220000035639,
+    "peak_rss_bytes": 1613971456,
+    "peak_vram_bytes": 4808523776,
+    "pids": [
+      13944,
+      30736,
+      37504,
+      37564,
+      37600
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4040.3886264,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4040.4984186,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4040.5905804,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4040.7003511,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4040.7927938,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4040.9014635,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4040.9951497,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4041.0909903,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4041.1996581,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4041.2928182,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96964608
+        },
+        "rss_bytes": 1613897728,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4041.3999209,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57098240,
+          "30736": 12607488,
+          "37504": 1439739904,
+          "37564": 7487488,
+          "37600": 96968704
+        },
+        "rss_bytes": 1613901824,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4041.4907775,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57143296,
+          "30736": 12607488,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96968704
+        },
+        "rss_bytes": 1613967360,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4041.599043,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57147392,
+          "30736": 12607488,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96968704
+        },
+        "rss_bytes": 1613971456,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4041.6924145,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57147392,
+          "30736": 12607488,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96968704
+        },
+        "rss_bytes": 1613971456,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4041.8011775,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57147392,
+          "30736": 12607488,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96968704
+        },
+        "rss_bytes": 1613971456,
+        "vram_bytes": 4808523776
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:12:35.7036556Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 28,
+    "eval_duration": 420893000,
+    "load_duration": 11143600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 144,
+    "prompt_eval_count": 172,
+    "prompt_eval_duration": 30592000,
+    "response": "The oil types specified for the 3L80 and 4L80-E transmissions are not available in the provided context.",
+    "total_duration": 472336400
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 9,
+  "started_at": "2026-09-28T04:12:35.205157+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 500.2589999999145,
+    "retrieval": null,
+    "total": 500.2589999999145
+  },
+  "unprovided_citations": []
+}

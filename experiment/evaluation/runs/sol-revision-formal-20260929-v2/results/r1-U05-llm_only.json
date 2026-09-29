@@ -1,0 +1,289 @@
+{
+  "at": "2026-09-29T05:30:02.275713+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "8c969501472fd265480200ce3467355f94efe381c0a777571f67b3f7e4bb10a8",
+  "result": {
+    "attempt_key": "r1-U05-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 49.542564699999275,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U05",
+    "stages": {
+      "abstention": {
+        "answer_quote": "[Note: No specific excerpts from TM 9-2320-280-20-1 were provided for direct citation.]",
+        "explicitly_withholds_missing": false,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C001020"
+              ],
+              "evidence_quotes": [
+                "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 21\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Batteries"
+              ],
+              "reason": "The battery inspection table identifies the vehicle as HMMWV.",
+              "statement": "HMMWV",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source identifies the model as M998-series.",
+              "statement": "M998-series",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The sources refer to §4-79 but do not supply its procedure or establish the M998-series qualifier.",
+              "statement": "The removal and installation of vehicle batteries in the HMMWV (M998-series) follow a standard procedure to ensure safety and proper function.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Not stated as a battery-removal step.",
+              "statement": "Turn off the vehicle and remove the key.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The negative-cable warning applies to protective-control-box or distribution-box harness work, not this battery-removal sequence.",
+              "statement": "Disconnect the negative terminal (black cable) first, followed by the positive terminal (red cable), to prevent short circuits.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Battery-tray bolt inspection does not establish this removal step.",
+              "statement": "Loosen and remove the battery hold-down clamp or bracket securing the battery to the chassis.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source gives this removal step.",
+              "statement": "Carefully lift the battery out of the battery tray.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source gives this installation step.",
+              "statement": "Place the new battery into the tray, ensuring it is properly aligned.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source specifies this mounting step or a torque requirement.",
+              "statement": "Secure the battery using the hold-down clamp or bracket, tightening it to the manufacturer’s specified torque.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source gives this battery-installation reconnection order.",
+              "statement": "Connect the positive terminal (red cable) first, then the negative terminal (black cable), ensuring clean, tight connections.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The PMCS inspection facts do not establish this as a post-installation step.",
+              "statement": "Verify that all connections are secure and free of corrosion.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The asserted procedure is not supplied or validated.",
+              "statement": "This procedure ensures safe handling and proper electrical connection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The sources provide no replacement steps or torque values from which to establish this variation.",
+              "statement": "While specific torque values or exact steps may vary",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The sources do not establish the claimed battery-replacement sequence.",
+              "statement": "the general sequence is consistent with standard military vehicle maintenance practices for the HMMWV.",
+              "verdict": 0
+            }
+          ]
+        },
+        "partial_claims": [
+          "HMMWV",
+          "M998-series",
+          "The removal and installation of vehicle batteries in the HMMWV (M998-series) follow a standard procedure to ensure safety and proper function.",
+          "Turn off the vehicle and remove the key.",
+          "Disconnect the negative terminal (black cable) first, followed by the positive terminal (red cable), to prevent short circuits.",
+          "Loosen and remove the battery hold-down clamp or bracket securing the battery to the chassis.",
+          "Carefully lift the battery out of the battery tray.",
+          "Place the new battery into the tray, ensuring it is properly aligned.",
+          "Secure the battery using the hold-down clamp or bracket, tightening it to the manufacturer’s specified torque.",
+          "Connect the positive terminal (red cable) first, then the negative terminal (black cable), ensuring clean, tight connections.",
+          "Verify that all connections are secure and free of corrosion.",
+          "This procedure ensures safe handling and proper electrical connection.",
+          "While specific torque values or exact steps may vary",
+          "the general sequence is consistent with standard military vehicle maintenance practices for the HMMWV."
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer gives a purported complete disconnection, mounting, and reconnection sequence. Its note concerns citation availability; it does not withhold the missing §4-79 procedure. The oracle contains references, inspection facts, and a warning qualified to other component work, but not the claimed replacement sequence.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "HMMWV",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "M998-series",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "The removal and installation of vehicle batteries in the HMMWV (M998-series) follow a standard procedure to ensure safety and proper function.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Turn off the vehicle and remove the key.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Disconnect the negative terminal (black cable) first, followed by the positive terminal (red cable), to prevent short circuits.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Loosen and remove the battery hold-down clamp or bracket securing the battery to the chassis.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Carefully lift the battery out of the battery tray.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Place the new battery into the tray, ensuring it is properly aligned.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Secure the battery using the hold-down clamp or bracket, tightening it to the manufacturer’s specified torque.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Connect the positive terminal (red cable) first, then the negative terminal (black cable), ensuring clean, tight connections.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Verify that all connections are secure and free of corrosion.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "This procedure ensures safe handling and proper electrical connection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "While specific torque values or exact steps may vary",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "the general sequence is consistent with standard military vehicle maintenance practices for the HMMWV.",
+              "verdict": 0
+            }
+          ]
+        },
+        "supplies_missing_as_fact": true,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 14,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 0,
+        "withholding_only": 0
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "f43f274faff26ce84f6c25b15f068b4a863dd3d584b8f1f189cc1721786f337d"
+}

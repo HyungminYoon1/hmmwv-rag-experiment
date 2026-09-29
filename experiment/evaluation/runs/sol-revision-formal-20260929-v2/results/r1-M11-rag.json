@@ -1,0 +1,255 @@
+{
+  "at": "2026-09-29T04:54:01.677902+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "6e07ad09c9113d0dc8dc8e0fdf6626ea674a16be4d09555ff05ea9e491fb03d0",
+  "result": {
+    "attempt_key": "r1-M11-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 23.7752988000002,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9842086929940947
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9842086929940947
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M11",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "Provides a specific drivebelt tension range but says the alternator mounting bolt torque cannot be determined from the supplied excerpts."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9710019995387191,
+          0.9908584126166632,
+          0.990765666826902
+        ],
+        "query_vector_hash": "4ce49b6865376b67bae27abd25d7d10af858027f9acf3cf1e680075cf1128959",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "For a vehicle other than M1123 or A2, what is the specified tension range for a new accessory drivebelt, and is the alternator mounting bolt torque specified in the provided excerpts?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For a vehicle other than an M1123 or A2, what is the specified tension range for a new accessory drivebelt, and what is the tightening torque for the alternator mounting bolts?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For a vehicle other than M1123 or A2, what is the specified tension range for a new accessory drivebelt, and is the alternator mounting bolt tightening torque specified?"
+          }
+        ],
+        "response_vectors_hash": "86ae41d052670270a46eb97bdbc78942a3b1fcaeacc5de9445b46bc39dbbbddf",
+        "score": 0.9842086929940946
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says the alternator mounting-bolt torque is not specified in the provided excerpts and is not mentioned in the referenced chunks. These are claims about the supplied material, not about the torque specification itself.",
+          "The answer says the torque value cannot be determined from the given information; this is an inability statement."
+        ],
+        "shared_conditions": [
+          "Vehicle other than M1123 or A2."
+        ],
+        "statements": [
+          {
+            "answer_quote": "70 lbs (311 N) minimum",
+            "statement": "For a vehicle other than M1123 or A2, the specified minimum tension for a new accessory drivebelt is 70 lbs (311 N)."
+          },
+          {
+            "answer_quote": "not greater than 110 lbs (489 N)",
+            "statement": "For a vehicle other than M1123 or A2, the specified maximum tension for a new accessory drivebelt is 110 lbs (489 N)."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "70 lbs (311 N) minimum",
+          "id": "C001",
+          "text": "For a vehicle other than M1123 or A2, the specified minimum tension for a new accessory drivebelt is 70 lbs (311 N)."
+        },
+        {
+          "answer_quote": "not greater than 110 lbs (489 N)",
+          "id": "C002",
+          "text": "For a vehicle other than M1123 or A2, the specified maximum tension for a new accessory drivebelt is 110 lbs (489 N)."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "For a vehicle other than M1123 or A2:\n\n- The specified tension range for a new accessory drivebelt is **70 lbs (311 N) minimum**, and **not greater than 110 lbs (489 N)**",
+            "fulfilled": 1,
+            "id": "M11-A01",
+            "reason": "Gives the correct new-belt range with the stated model exclusions."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M11-A02",
+            "reason": "Says the torque is not specified; the supplied PMCS entry specifies 40 lb-ft (54 N·m) for 60, 100, and 200 amp alternators."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C000902"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum."
+              ],
+              "reason": "The procedure for all models except M1123 and A2 specifies a 70 lbs (311 N) minimum for drivebelts, including new belts.",
+              "statement": "For a vehicle other than M1123 or A2, the specified minimum tension for a new accessory drivebelt is 70 lbs (311 N).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000902"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum. If\nbelt tension is not at least 70 lbs (311 N),\nadjust drivebelts (paragraph 3-82). Tension\nshould not be greater than 110 lbs (489 N)\nfor new belts; old belts 95 lbs (422 N)."
+              ],
+              "reason": "Under the procedure for all models except M1123 and A2, new-belt tension should not exceed 110 lbs (489 N).",
+              "statement": "For a vehicle other than M1123 or A2, the specified maximum tension for a new accessory drivebelt is 110 lbs (489 N).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000902"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum."
+              ],
+              "reason": "The procedure applies to all models except M1123 and A2 and sets a 70 lbs (311 N) minimum for drivebelts.",
+              "statement": "For a vehicle other than M1123 or A2, the specified minimum tension for a new accessory drivebelt is 70 lbs (311 N).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000902"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum. If\nbelt tension is not at least 70 lbs (311 N),\nadjust drivebelts (paragraph 3-82). Tension\nshould not be greater than 110 lbs (489 N)\nfor new belts; old belts 95 lbs (422 N)."
+              ],
+              "reason": "For those models, the procedure says tension should not exceed 110 lbs (489 N) for new belts.",
+              "statement": "For a vehicle other than M1123 or A2, the specified maximum tension for a new accessory drivebelt is 110 lbs (489 N).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9710019995387191,
+          0.9908584126166632,
+          0.990765666826902
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9842086929940947,
+        "query_vector_hash": "4ce49b6865376b67bae27abd25d7d10af858027f9acf3cf1e680075cf1128959",
+        "ragas_score": 0.9842086929940946,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "86ae41d052670270a46eb97bdbc78942a3b1fcaeacc5de9445b46bc39dbbbddf"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9710019995387191,
+          0.9908584126166632,
+          0.990765666826902
+        ],
+        "decimal50_cosines": [
+          "0.97100199953871887005393548079099616916743383666868",
+          "0.99085841261666317546378296870312795753363158401736",
+          "0.99076566682690186899051800542664077887143795216305"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9842086929940946
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9842086929940946
+          }
+        },
+        "query_vector_hash": "4ce49b6865376b67bae27abd25d7d10af858027f9acf3cf1e680075cf1128959",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "For a vehicle other than M1123 or A2, what is the specified tension range for a new accessory drivebelt, and is the alternator mounting bolt torque specified in the provided excerpts?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For a vehicle other than an M1123 or A2, what is the specified tension range for a new accessory drivebelt, and what is the tightening torque for the alternator mounting bolts?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For a vehicle other than M1123 or A2, what is the specified tension range for a new accessory drivebelt, and is the alternator mounting bolt tightening torque specified?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "86ae41d052670270a46eb97bdbc78942a3b1fcaeacc5de9445b46bc39dbbbddf",
+        "score": 0.9842086929940947
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "2dd035e57bfec9e9056b3aded947c101308309212a81d25de834187bd85f39f8"
+}

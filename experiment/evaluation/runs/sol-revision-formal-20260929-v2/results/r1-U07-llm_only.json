@@ -1,0 +1,270 @@
+{
+  "at": "2026-09-29T05:32:14.456360+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "fd15bd1984126bfbe1bb61881aa4d3eb16efbd6a0b6c900a0809ce208d123ea8",
+  "result": {
+    "attempt_key": "r1-U07-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 52.36902149999878,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U07",
+    "stages": {
+      "abstention": {
+        "answer_quote": "After a glowplug controller is judged defective, the full removal and installation procedure involves the following steps:",
+        "explicitly_withholds_missing": false,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source gives this replacement step or its stated effect.",
+              "statement": "Disconnect the negative battery terminal to ensure no electrical charge remains.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source gives this replacement step.",
+              "statement": "Remove the engine cover or access panel to expose the glowplug assembly.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source establishes this mounting location.",
+              "statement": "Locate the glowplug controller, typically mounted near the engine or in the engine compartment.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source describes disconnecting one connector for inspection, not this replacement step or noting positions.",
+              "statement": "Disconnect the electrical connectors from the glowplug controller, noting their positions for reinstallation.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source describes these fasteners or their removal.",
+              "statement": "Loosen and remove any mounting screws or fasteners securing the controller to the engine block or mounting bracket.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The sources refer to replacement but do not give this removal instruction.",
+              "statement": "Carefully remove the glowplug controller from its mounting location.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source gives this installation instruction.",
+              "statement": "Position the new glowplug controller in the same location as the removed unit.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source gives this installation instruction.",
+              "statement": "Secure it with the original mounting screws or fasteners, ensuring proper alignment and tightness.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The connector-inspection note is not an installation procedure and does not establish polarity requirements.",
+              "statement": "Reconnect the electrical connectors to the controller, ensuring correct polarity and secure attachment.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source gives this installation step.",
+              "statement": "Reinstall the engine cover or access panel.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied source gives this installation step.",
+              "statement": "Reconnect the negative battery terminal.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The sources do not identify the HMMWV model or establish model-dependent procedural variation.",
+              "statement": "Specific procedures may vary slightly depending on the exact model and configuration of the HMMWV (M998-series)",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "References to paragraph 4-29 do not identify that manual or provide its detailed, configuration-specific guidance.",
+              "statement": "the referenced technical manual (TM 9-2320-280-20-1) would provide detailed guidance for a specific vehicle configuration.",
+              "verdict": 0
+            }
+          ]
+        },
+        "partial_claims": [
+          "Disconnect the negative battery terminal to ensure no electrical charge remains.",
+          "Remove the engine cover or access panel to expose the glowplug assembly.",
+          "Locate the glowplug controller, typically mounted near the engine or in the engine compartment.",
+          "Disconnect the electrical connectors from the glowplug controller, noting their positions for reinstallation.",
+          "Loosen and remove any mounting screws or fasteners securing the controller to the engine block or mounting bracket.",
+          "Carefully remove the glowplug controller from its mounting location.",
+          "Position the new glowplug controller in the same location as the removed unit.",
+          "Secure it with the original mounting screws or fasteners, ensuring proper alignment and tightness.",
+          "Reconnect the electrical connectors to the controller, ensuring correct polarity and secure attachment.",
+          "Reinstall the engine cover or access panel.",
+          "Reconnect the negative battery terminal.",
+          "Specific procedures may vary slightly depending on the exact model and configuration of the HMMWV (M998-series)",
+          "the referenced technical manual (TM 9-2320-280-20-1) would provide detailed guidance for a specific vehicle configuration."
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer presents an unsupported complete replacement procedure. Its later disclaimer about unavailable excerpts does not withhold the invented steps. The oracle refers replacement to paragraph 4-29 and gives a separate connector-inspection note, but supplies no complete replacement procedure; the retrieved source set is empty.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Disconnect the negative battery terminal to ensure no electrical charge remains.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Remove the engine cover or access panel to expose the glowplug assembly.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Locate the glowplug controller, typically mounted near the engine or in the engine compartment.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Disconnect the electrical connectors from the glowplug controller, noting their positions for reinstallation.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Loosen and remove any mounting screws or fasteners securing the controller to the engine block or mounting bracket.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Carefully remove the glowplug controller from its mounting location.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Position the new glowplug controller in the same location as the removed unit.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Secure it with the original mounting screws or fasteners, ensuring proper alignment and tightness.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Reconnect the electrical connectors to the controller, ensuring correct polarity and secure attachment.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Reinstall the engine cover or access panel.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Reconnect the negative battery terminal.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "Specific procedures may vary slightly depending on the exact model and configuration of the HMMWV (M998-series)",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Retrieved source set is empty.",
+              "statement": "the referenced technical manual (TM 9-2320-280-20-1) would provide detailed guidance for a specific vehicle configuration.",
+              "verdict": 0
+            }
+          ]
+        },
+        "supplies_missing_as_fact": true,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 13,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 0,
+        "withholding_only": 0
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "b18c6e7971485ae71e7775e727b2147ca4ef716950a5242d9438710c3f3f9a7b"
+}

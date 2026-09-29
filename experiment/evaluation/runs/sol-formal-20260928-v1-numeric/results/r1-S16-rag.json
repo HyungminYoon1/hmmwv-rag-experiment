@@ -1,0 +1,207 @@
+{
+  "at": "2026-09-28T09:55:51.935939+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "69a2835e66f5e80a5f7f326b60fdcf9bc4e23f0ab575a7d0215e012b4f6ba768",
+  "original_result_sha256": "b66f8a494f8c439b5d618b313abf38fdd325cea4e6e693438246589a4e21b77e",
+  "result": {
+    "attempt_key": "r1-S16-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 18.655775600000197,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9177626527339328
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9177626527339328
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "S16",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a direct technical explanation for blue exhaust smoke."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9177626460186077,
+          0.9177626460186077,
+          0.9177626661645829
+        ],
+        "query_vector_hash": "8140768b2630bf55161fbd0071b2f3d4d553060fa9bbd65dd20cb04da4a8e45d",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke generally indicate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke generally indicate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke generally indicate?"
+          }
+        ],
+        "response_vectors_hash": "9be99a5da9802d97896c9e7d83dfeea04a4cd49f22a19f7daee3a50d2a652644",
+        "score": 0.9177626527339329
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "Blue exhaust smoke generally indicates that oil is entering the combustion chambers."
+        }
+      ],
+      "claims_raw": [
+        "Blue exhaust smoke generally indicates that oil is entering the combustion chambers."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Blue exhaust smoke generally indicates that oil is entering the combustion chambers.",
+            "fulfilled": 1,
+            "id": "S16-A01",
+            "reason": "The response states the indicated cause."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S16-A02",
+            "reason": "The response does not mention piston rings or intake-valve stem seals."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002436"
+              ],
+              "evidence_quotes": [
+                "Blue smoke is a sign of oil entering the combustion chambers."
+              ],
+              "reason": "The reference information identifies blue smoke as a sign of oil entering the combustion chambers.",
+              "statement": "Blue exhaust smoke generally indicates that oil is entering the combustion chambers.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:blue"
+              ],
+              "evidence_quotes": [
+                "Blue smoke is a sign of oil entering the combustion chambers."
+              ],
+              "reason": "The reference identifies blue smoke as a sign of oil entering the combustion chambers.",
+              "statement": "Blue exhaust smoke generally indicates that oil is entering the combustion chambers.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9177626460186077,
+          0.9177626460186077,
+          0.9177626661645829
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9177626527339328,
+        "query_vector_hash": "8140768b2630bf55161fbd0071b2f3d4d553060fa9bbd65dd20cb04da4a8e45d",
+        "ragas_score": 0.9177626527339329,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "9be99a5da9802d97896c9e7d83dfeea04a4cd49f22a19f7daee3a50d2a652644"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9177626460186077,
+          0.9177626460186077,
+          0.9177626661645829
+        ],
+        "decimal50_cosines": [
+          "0.91776264601860759256010716296848141336835577124061",
+          "0.91776264601860759256010716296848141336835577124061",
+          "0.91776266616458284705092430275189997429026144878273"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9177626527339329
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9177626527339329
+          }
+        },
+        "query_vector_hash": "8140768b2630bf55161fbd0071b2f3d4d553060fa9bbd65dd20cb04da4a8e45d",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke generally indicate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke generally indicate?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke generally indicate?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "9be99a5da9802d97896c9e7d83dfeea04a4cd49f22a19f7daee3a50d2a652644",
+        "score": 0.9177626527339328
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "cb92221f4608f3f8b4b96095facdb48c9c66343a40b303de6c544ca61cf84ec3"
+}

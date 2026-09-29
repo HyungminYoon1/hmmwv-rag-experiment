@@ -1,0 +1,750 @@
+{
+  "citation_ids": [
+    "[C001624]",
+    "[C001357]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:35:49.053866+00:00",
+  "evaluation_answer": "The exhaust-color guidance directs the maintainer to the **fuel system** diagnostic system.\n\nAccording to the reference, two other problem areas that can cause rough running are:\n1. **Air leaks in the fuel supply lines**  \n2. **Malfunction of the fuel return check valve**\n\n ",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 862,
+  "key": "r2-M04-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C001917] TM 9-2320-280-20-1 | PDF 216 | Printed 2-129\nREFERENCE INFORMATION\nFUEL SYSTEM\n\nif you are getting white smoke due to coolant entering the\nthen you should notice a loss of coolant In the radiator or\nthe radiator tank while the engine is running. You may need\nradiator to proper level and recheck a day later to determine\n@ coolant loss.\nIf you don't detect coolant loss then you may have missed a\nproblem. Rerun the fuel system tests paying attention fora\nexhaust smeil.\nIf you still find nothing you may have a small or inconsistant\nNotify DS maintenance.\n\n[C001784] TM 9-2320-280-20-1 | PDF 203 | Printed 2-116\nFUEL SYSTEM\nDIAGNOSTIC FLOWCHART\n\nRUNNING ROUGH\n\n[C001624] TM 9-2320-280-20-1 | PDF 186 | Printed 2-99\nFUEL SYSTEM\nREFERENCE INFORMATION\n\nPay attention to when the engine runs rough. If it\nruns rough only while warming up after a cold start it\nmay be a glowplug problem and you should run the\nGlowplug Circuit tests.\nRough running may also be caused by air leaks in the\nfuel supply lines. Air in the fuel should purge itself\nwhile idling. If rough running occurs after a period of\nhigh speed or high power running but seems to go\naway after idling, then look for air leaks in the fuel\nsupply lines and fittings. if rough running occurs while\ndriving but idles ok, check the fuel return check valve\nfor any malfunctions (refer to para. 3-35).\n\n[C001792] TM 9-2320-280-20-1 | PDF 203 | Printed 2-116\nFUEL SYSTEM\nDIAGNOSTIC FLOWCHART\n\nREASON FOR QUESTION\nA fautty cold advance circuit can\ncause rough running.\n\n[C001357] TM 9-2320-280-20-1 | PDF 143 | Printed 2-53\nENGINE RUNNING\nREFERENCE INFORMATION\n\nIt is normal for the engine to emit some black smoke\nwhen accelerating after idling for a while. Under most\nother conditions, exhaust smoke is usually from one of\nthree sources;\nBLUE smoke is usually oll.\nBLACK smoke is too much fuel or too little air. (Often\ncaused by advanced injection timing).\nWHITE smoke is usually water. (Often caused by\nretarded injection timing).\nif the smoking is continuous or appears under a particular\ncondition, the smoke probably indicates a problem and\nshould be investigated.\nQUESTION:\nA rough-running engine emits white smoke. Which diagnostic system does the exhaust-color guidance direct the maintainer to, and what other two problem areas can cause rough running according to that system introduction?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 348,
+  "question": "A rough-running engine emits white smoke. Which diagnostic system does the exhaust-color guidance direct the maintainer to, and what other two problem areas can cause rough running according to that system introduction?",
+  "question_id": "M04",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:05.908642007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:03.453326807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4874452992.0,
+    "max_actual_interval_ms": 110.0851999999577,
+    "peak_rss_bytes": 13473579008,
+    "peak_vram_bytes": 4870062080,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5432.8466546,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4876484608
+      },
+      {
+        "monotonic": 5432.9549282,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4871045120
+      },
+      {
+        "monotonic": 5433.0500491,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4876615680
+      },
+      {
+        "monotonic": 5433.1598455,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4877008896
+      },
+      {
+        "monotonic": 5433.2532516,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4877008896
+      },
+      {
+        "monotonic": 5433.3613331,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4876156928
+      },
+      {
+        "monotonic": 5433.4568964,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4872749056
+      },
+      {
+        "monotonic": 5433.5496751,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4869668864
+      },
+      {
+        "monotonic": 5433.6597603,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4869668864
+      },
+      {
+        "monotonic": 5433.7516604,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4042584064,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13348159488,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5433.8613053,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13350436864,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5433.9556992,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102891520,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9068867584,
+          "37564": 7958528
+        },
+        "rss_bytes": 13350436864,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5434.047631,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9192005632,
+          "37564": 7958528
+        },
+        "rss_bytes": 13473579008,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5434.1563471,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9045508096,
+          "37564": 7958528
+        },
+        "rss_bytes": 13327081472,
+        "vram_bytes": 4870062080
+      },
+      {
+        "monotonic": 5434.2498318,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4870062080
+      },
+      {
+        "monotonic": 5434.357013,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4870062080
+      },
+      {
+        "monotonic": 5434.4494686,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4870062080
+      },
+      {
+        "monotonic": 5434.5583661,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4870062080
+      },
+      {
+        "monotonic": 5434.6504375,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4870062080
+      },
+      {
+        "monotonic": 5434.7591005,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4870062080
+      },
+      {
+        "monotonic": 5434.850772,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4870062080
+      },
+      {
+        "monotonic": 5434.9596127,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4868489216
+      },
+      {
+        "monotonic": 5435.0529387,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4868489216
+      },
+      {
+        "monotonic": 5435.1599454,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102895616,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4044861440,
+          "35444": 8110080,
+          "36040": 101126144,
+          "37504": 9047339008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328912384,
+        "vram_bytes": 4868489216
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:35:49.0533091Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 75,
+    "eval_duration": 1037076000,
+    "load_duration": 1087600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 348,
+    "prompt_eval_count": 862,
+    "prompt_eval_duration": 145395000,
+    "response": "The exhaust-color guidance directs the maintainer to the **fuel system** diagnostic system.\n\nAccording to the reference, two other problem areas that can cause rough running are:\n1. **Air leaks in the fuel supply lines**  \n2. **Malfunction of the fuel return check valve**\n\n[C001624] [C001357]",
+    "total_duration": 1248970900
+  },
+  "retrieval": {
+    "embedding_ms": 108.99979999976495,
+    "items": [
+      {
+        "body_end": 476,
+        "body_start": 0,
+        "id": "C001917",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          216
+        ],
+        "prefix_chars": 35,
+        "printed_pages": [
+          "2-129"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002113",
+          "R002114"
+        ],
+        "review_ids": [],
+        "score": 0.6551365852355957,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nFUEL SYSTEM\n\nif you are getting white smoke due to coolant entering the\nthen you should notice a loss of coolant In the radiator or\nthe radiator tank while the engine is running. You may need\nradiator to proper level and recheck a day later to determine\n@ coolant loss.\nIf you don't detect coolant loss then you may have missed a\nproblem. Rerun the fuel system tests paying attention fora\nexhaust smeil.\nIf you still find nothing you may have a small or inconsistant\nNotify DS maintenance.",
+        "text_sha256": "73c111a3da0b65bb383ca8e86be6f3b1a78c7bec0025d4f28484c32116de2d20",
+        "token_count": 113,
+        "unit_id": "U001911",
+        "unit_key": "region:216:1:2"
+      },
+      {
+        "body_end": 13,
+        "body_start": 0,
+        "id": "C001784",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          203
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-116"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R001913",
+          "R001914"
+        ],
+        "review_ids": [],
+        "score": 0.6456599831581116,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B004",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "DIAGNOSTIC_PANEL",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "FUEL SYSTEM\nDIAGNOSTIC FLOWCHART\n\nRUNNING ROUGH",
+        "text_sha256": "3269648fc2fce7db1c5ee95a3d7b7a763d9d01b8b47aad8a60d9da803d3b312d",
+        "token_count": 18,
+        "unit_id": "U001778",
+        "unit_key": "region:203:1:5"
+      },
+      {
+        "body_end": 603,
+        "body_start": 0,
+        "id": "C001624",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          186
+        ],
+        "prefix_chars": 35,
+        "printed_pages": [
+          "2-99"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R001748"
+        ],
+        "review_ids": [],
+        "score": 0.6409783363342285,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[7]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "FUEL SYSTEM\nREFERENCE INFORMATION\n\nPay attention to when the engine runs rough. If it\nruns rough only while warming up after a cold start it\nmay be a glowplug problem and you should run the\nGlowplug Circuit tests.\nRough running may also be caused by air leaks in the\nfuel supply lines. Air in the fuel should purge itself\nwhile idling. If rough running occurs after a period of\nhigh speed or high power running but seems to go\naway after idling, then look for air leaks in the fuel\nsupply lines and fittings. if rough running occurs while\ndriving but idles ok, check the fuel return check valve\nfor any malfunctions (refer to para. 3-35).",
+        "text_sha256": "aaa04228bfbc844d3ad6648c076d66e011841e69f0d0954c96863976f2a96bbe",
+        "token_count": 152,
+        "unit_id": "U001618",
+        "unit_key": "region:186:1:10"
+      },
+      {
+        "body_end": 74,
+        "body_start": 0,
+        "id": "C001792",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          203
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-116"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R001929",
+          "R001930"
+        ],
+        "review_ids": [],
+        "score": 0.640141487121582,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B015",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "DIAGNOSTIC_PANEL",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "FUEL SYSTEM\nDIAGNOSTIC FLOWCHART\n\nREASON FOR QUESTION\nA fautty cold advance circuit can\ncause rough running.",
+        "text_sha256": "3039c9a3337fcc6db1c56f8fb72a3d234db35ef25e01b27b67ce74d3636dca65",
+        "token_count": 31,
+        "unit_id": "U001786",
+        "unit_key": "region:203:1:13"
+      },
+      {
+        "body_end": 509,
+        "body_start": 0,
+        "id": "C001357",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          143
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-53"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R001420",
+          "R001421"
+        ],
+        "review_ids": [],
+        "score": 0.6333560347557068,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "ENGINE RUNNING\nREFERENCE INFORMATION\n\nIt is normal for the engine to emit some black smoke\nwhen accelerating after idling for a while. Under most\nother conditions, exhaust smoke is usually from one of\nthree sources;\nBLUE smoke is usually oll.\nBLACK smoke is too much fuel or too little air. (Often\ncaused by advanced injection timing).\nWHITE smoke is usually water. (Often caused by\nretarded injection timing).\nif the smoking is continuous or appears under a particular\ncondition, the smoke probably indicates a problem and\nshould be investigated.",
+        "text_sha256": "4b965f4fd14a979fc15af55d81e95c7aeab2f1f8ee46ae11ef4de87639ec93cc",
+        "token_count": 113,
+        "unit_id": "U001351",
+        "unit_key": "region:143:1:4"
+      }
+    ],
+    "search_ms": 10.344700000132434
+  },
+  "round": 2,
+  "sequence": 173,
+  "started_at": "2026-09-28T04:35:47.663581+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1270.7903000000442,
+    "retrieval": 119.72030000015366,
+    "total": 1390.5106000001979
+  },
+  "unprovided_citations": []
+}

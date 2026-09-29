@@ -1,0 +1,186 @@
+{
+  "at": "2026-09-28T09:25:32.264959+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "15927e64b49ad130a3a482821b052b2b29640c05588769e48ae002135d156616",
+  "result": {
+    "attempt_key": "r1-M24-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 27.810542799998075,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M24",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": false,
+        "kind": "full_abstention",
+        "reason": "The response provides neither requested value and says it cannot determine them from the provided material."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8637235305434388,
+          0.8888745117848099,
+          0.8888744835470066
+        ],
+        "query_vector_hash": "7ab0a012b3e592e097c94d81e41e51a07b905c144db8e1d0d9d25617e71ff578",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tightening torque for the steering-gear mounting bolts and the maximum output pressure for the power-steering pump in TM 9-2320-280-20-1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tightening torque for the steering-gear mounting bolts and the maximum output pressure for the power-steering pump in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What are the specified tightening torque for the steering-gear mounting bolts and the maximum output pressure for the power-steering pump in TM 9-2320-280-20-1, Volume 1?"
+          }
+        ],
+        "response_vectors_hash": "21398a487dce7d608cb0f90fe852347084ce083ef9264cd3c353758546afbbd0",
+        "score": 0.0
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The specified tightening torque for steering-gear mounting bolts is not available in the provided reference material."
+        },
+        {
+          "id": "C002",
+          "text": "The maximum output pressure for the power-steering pump is not available in the provided reference material."
+        },
+        {
+          "id": "C003",
+          "text": "The provided reference material contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        },
+        {
+          "id": "C004",
+          "text": "The specified tightening torque for steering-gear mounting bolts and the maximum output pressure for the power-steering pump would need to be obtained directly from TM 9-2320-280-20-1 or official technical documentation for the manual."
+        }
+      ],
+      "claims_raw": [
+        "The specified tightening torque for steering-gear mounting bolts is not available in the provided reference material.",
+        "The maximum output pressure for the power-steering pump is not available in the provided reference material.",
+        "The provided reference material contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+        "The specified tightening torque for steering-gear mounting bolts and the maximum output pressure for the power-steering pump would need to be obtained directly from TM 9-2320-280-20-1 or official technical documentation for the manual."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M24-A01",
+            "reason": "The response does not provide the steering-gear mounting-bolt torque."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M24-A02",
+            "reason": "The response does not provide the power-steering pump maximum output pressure."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:steering_torque"
+              ],
+              "evidence_quotes": [
+                "Tighten mounting bolts to\n60 lb-ft (81 N•m)."
+              ],
+              "reason": "The reference specifies 60 lb-ft (81 N•m).",
+              "statement": "The specified tightening torque for steering-gear mounting bolts is not available in the provided reference material.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:steering_pressure"
+              ],
+              "evidence_quotes": [
+                "ITEM: Output Pressure (max) \nSTANDARD: 1,450 psi\nMETRIC: 9,998 kPa"
+              ],
+              "reason": "The reference specifies 1,450 psi (9,998 kPa).",
+              "statement": "The maximum output pressure for the power-steering pump is not available in the provided reference material.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpts do not identify their source, so this cannot be inferred.",
+              "statement": "The provided reference material contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:steering_torque",
+                "O:steering_pressure"
+              ],
+              "evidence_quotes": [
+                "Tighten mounting bolts to\n60 lb-ft (81 N•m).",
+                "ITEM: Output Pressure (max) \nSTANDARD: 1,450 psi\nMETRIC: 9,998 kPa"
+              ],
+              "reason": "Both values are already in the provided reference material.",
+              "statement": "The specified tightening torque for steering-gear mounting bolts and the maximum output pressure for the power-steering pump would need to be obtained directly from TM 9-2320-280-20-1 or official technical documentation for the manual.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8637235305434388,
+          0.8888745117848099,
+          0.8888744835470066
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "7ab0a012b3e592e097c94d81e41e51a07b905c144db8e1d0d9d25617e71ff578",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "21398a487dce7d608cb0f90fe852347084ce083ef9264cd3c353758546afbbd0"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "ad015334beb9e1387296eb857fafab4f356aadd4c23c93a60bdf57678e9ff7ed"
+}

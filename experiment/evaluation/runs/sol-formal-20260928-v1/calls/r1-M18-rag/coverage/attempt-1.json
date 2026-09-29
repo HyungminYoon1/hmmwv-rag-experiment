@@ -1,0 +1,202 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:18:48.175437+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "semiannual checks are not required",
+        "fulfilled": 0,
+        "id": "M18-A01",
+        "reason": "Contradicts the requirement to perform all semiannual inspections at an annual inspection."
+      },
+      {
+        "answer_quote": "wiping with a rag",
+        "fulfilled": 1,
+        "id": "M18-A02",
+        "reason": "Identifies the authorized CDR valve cleaning method."
+      },
+      {
+        "answer_quote": "cleaning with solvent, as it will damage the diaphragm inside the CDR valve",
+        "fulfilled": 1,
+        "id": "M18-A03",
+        "reason": "Identifies the prohibited method and its stated consequence."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587128,
+      "conversation": null,
+      "created_at": 1790587124.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0d6b79a72406fa89016aba30f4f70887d091f368c050d66f33",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"M18-A01\",\"fulfilled\":0,\"answer_quote\":\"semiannual checks are not required\",\"reason\":\"Contradicts the requirement to perform all semiannual inspections at an annual inspection.\"},{\"id\":\"M18-A02\",\"fulfilled\":1,\"answer_quote\":\"wiping with a rag\",\"reason\":\"Identifies the authorized CDR valve cleaning method.\"},{\"id\":\"M18-A03\",\"fulfilled\":1,\"answer_quote\":\"cleaning with solvent, as it will damage the diaphragm inside the CDR valve\",\"reason\":\"Identifies the prohibited method and its stated consequence.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0d6b79a72406fa89016aba30f6081487d0a765982eccd7ed80",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1141,
+        "input_tokens_details": {
+          "cache_write_tokens": 1138,
+          "cached_tokens": 0
+        },
+        "output_tokens": 130,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1271
+      },
+      "user": null
+    },
+    "request_id": "resp_0d6b79a72406fa89016aba30f4f70887d091f368c050d66f33",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"M18-A01\",\"fulfilled\":0,\"answer_quote\":\"semiannual checks are not required\",\"reason\":\"Contradicts the requirement to perform all semiannual inspections at an annual inspection.\"},{\"id\":\"M18-A02\",\"fulfilled\":1,\"answer_quote\":\"wiping with a rag\",\"reason\":\"Identifies the authorized CDR valve cleaning method.\"},{\"id\":\"M18-A03\",\"fulfilled\":1,\"answer_quote\":\"cleaning with solvent, as it will damage the diaphragm inside the CDR valve\",\"reason\":\"Identifies the prohibited method and its stated consequence.\"}]}",
+    "usage": {
+      "input_tokens": 1141,
+      "input_tokens_details": {
+        "cache_write_tokens": 1138,
+        "cached_tokens": 0
+      },
+      "output_tokens": 130,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1271
+    }
+  },
+  "record_hash": "b2eaba146ce22412fbc4adf012192f3eea1699fa1586453c26308d7ad6eefbc2",
+  "request_hash": "0ed13b216238dc87f8dec4e72bb611f7aae73ca27a30104f3ebad1a73b9c10f4",
+  "started_at": "2026-09-28T09:18:44.799128+00:00",
+  "status": "OK"
+}

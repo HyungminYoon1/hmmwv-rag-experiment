@@ -1,0 +1,513 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:35:33.871619+00:00",
+  "evaluation_answer": "The specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts for vehicles other than M1123 or A2 are not available in the provided reference material. Therefore, based on the absence of excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), I cannot provide the exact values. This information may be found in the manual's specific sections on belt installation or alternator maintenance, but those excerpts are not supplied. I do not know the requested values.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 249,
+  "key": "r2-M11-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nFor a vehicle other than M1123 or A2, what tension range is specified for a new accessory drivebelt, and what tightening torque is specified for alternator mounting bolts?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "For a vehicle other than M1123 or A2, what tension range is specified for a new accessory drivebelt, and what tightening torque is specified for alternator mounting bolts?",
+  "question_id": "M11",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:22:50.726395207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:22:47.940139907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4888641536.0,
+    "max_actual_interval_ms": 110.1158999999825,
+    "peak_rss_bytes": 9423699968,
+    "peak_vram_bytes": 4886675456,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5417.3178081,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4888641536
+      },
+      {
+        "monotonic": 5417.4248939,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4888641536
+      },
+      {
+        "monotonic": 5417.53215,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4888641536
+      },
+      {
+        "monotonic": 5417.6258832,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4888641536
+      },
+      {
+        "monotonic": 5417.7189984,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4888641536
+      },
+      {
+        "monotonic": 5417.826915,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4888707072
+      },
+      {
+        "monotonic": 5417.9205071,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4888707072
+      },
+      {
+        "monotonic": 5418.0291862,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4888510464
+      },
+      {
+        "monotonic": 5418.1219998,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5418.2306653,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5418.3246317,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5418.4324572,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5418.5251247,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5418.6190562,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5418.7279695,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5418.8204137,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5418.9298463,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5419.0232095,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5419.1313329,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4886675456
+      },
+      {
+        "monotonic": 5419.224073,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4882251776
+      },
+      {
+        "monotonic": 5419.3332988,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4882251776
+      },
+      {
+        "monotonic": 5419.4268872,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4882251776
+      },
+      {
+        "monotonic": 5419.5202251,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4882251776
+      },
+      {
+        "monotonic": 5419.630341,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4879958016
+      },
+      {
+        "monotonic": 5419.7249307,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4879958016
+      },
+      {
+        "monotonic": 5419.8308942,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4879958016
+      },
+      {
+        "monotonic": 5419.9237049,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4879958016
+      },
+      {
+        "monotonic": 5420.0321234,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102887424,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9199673344,
+          "37564": 7958528
+        },
+        "rss_bytes": 9423699968,
+        "vram_bytes": 4879630336
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:35:33.8709816Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 129,
+    "eval_duration": 1691013000,
+    "load_duration": 1274800,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 249,
+    "prompt_eval_duration": 19678000,
+    "response": "The specified tension range for a new accessory drivebelt and the tightening torque for alternator mounting bolts for vehicles other than M1123 or A2 are not available in the provided reference material. Therefore, based on the absence of excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), I cannot provide the exact values. This information may be found in the manual's specific sections on belt installation or alternator maintenance, but those excerpts are not supplied. I do not know the requested values.",
+    "total_duration": 1713939100
+  },
+  "retrieval": null,
+  "round": 2,
+  "sequence": 167,
+  "started_at": "2026-09-28T04:35:32.135037+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1736.8499000003794,
+    "retrieval": null,
+    "total": 1736.8499000003794
+  },
+  "unprovided_citations": []
+}

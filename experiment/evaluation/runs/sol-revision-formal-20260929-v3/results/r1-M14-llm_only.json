@@ -1,0 +1,265 @@
+{
+  "at": "2026-09-29T05:36:22.808109+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "c0a90076d8d6ec4a7ec6f49e3f58296f62de17e61aca6e13ca848d4eef0a07dd",
+  "result": {
+    "attempt_key": "r1-M14-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 25.489684399999533,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8979183007668845
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8979183007668845
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.25
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M14",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It says precise distances are unavailable, but still asserts the distances are the same and gives a typical 1/2- to 1-inch range."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9235751509680351,
+          0.8966952271694271,
+          0.8734845241631914
+        ],
+        "query_vector_hash": "db2cf4b05d4b392b6e833c379d6b0b9ae8831ed67a0d90ee4ec3261f089c4fde",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What is the permitted fluid-level distance below the fill opening for the transfer case on level ground and for a differential with cold lubricant?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How far below the fill opening should the fluid level be for the transfer case on level ground or a differential with cold lubricant?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "How far below the fill opening may the transfer case fluid level be on level ground or when the differential lubricant is cold?"
+          }
+        ],
+        "response_vectors_hash": "7f7f6635767c4faba73ea011199ee27f1870d78687f50d3bb4016b63d614b3d0",
+        "score": 0.8979183007668846
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "Specific distances are not provided in the available reference material.",
+          "The range is presented as based on general HMMWV maintenance practices.",
+          "No specific chunk IDs are available in the reference."
+        ],
+        "shared_conditions": [
+          "Transfer-case fluid level on level ground",
+          "Differential fluid level with cold lubricant"
+        ],
+        "statements": [
+          {
+            "answer_quote": "the same for level ground and when a differential has cold lubricant",
+            "statement": "The permitted distance below the fill opening is the same for a transfer case on level ground and a differential with cold lubricant."
+          },
+          {
+            "answer_quote": "both conditions are accounted for in the standard fluid level specification",
+            "statement": "The standard fluid-level specification accounts for both a transfer case on level ground and a differential with cold lubricant."
+          },
+          {
+            "answer_quote": "the fluid level should be maintained within the manufacturer's specified range, typically between 1/2 inch and 1 inch below the fill opening, regardless of ground conditions or lubricant temperature",
+            "statement": "For a transfer case on level ground and a differential with cold lubricant, the fluid level should be within the manufacturer's specified range, typically 1/2 inch to 1 inch below the fill opening; the answer says this range applies regardless of ground conditions or lubricant temperature."
+          },
+          {
+            "answer_quote": "TM 9-2320-280-20-1, Volume 1, which contains detailed fluid level guidelines",
+            "statement": "TM 9-2320-280-20-1, Volume 1 contains detailed fluid-level guidelines."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "the same for level ground and when a differential has cold lubricant",
+          "id": "C001",
+          "text": "The permitted distance below the fill opening is the same for a transfer case on level ground and a differential with cold lubricant."
+        },
+        {
+          "answer_quote": "both conditions are accounted for in the standard fluid level specification",
+          "id": "C002",
+          "text": "The standard fluid-level specification accounts for both a transfer case on level ground and a differential with cold lubricant."
+        },
+        {
+          "answer_quote": "the fluid level should be maintained within the manufacturer's specified range, typically between 1/2 inch and 1 inch below the fill opening, regardless of ground conditions or lubricant temperature",
+          "id": "C003",
+          "text": "For a transfer case on level ground and a differential with cold lubricant, the fluid level should be within the manufacturer's specified range, typically 1/2 inch to 1 inch below the fill opening; the answer says this range applies regardless of ground conditions or lubricant temperature."
+        },
+        {
+          "answer_quote": "TM 9-2320-280-20-1, Volume 1, which contains detailed fluid level guidelines",
+          "id": "C004",
+          "text": "TM 9-2320-280-20-1, Volume 1 contains detailed fluid-level guidelines."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M14-A01",
+            "reason": "The answer gives a 1/2-to-1-inch range, which permits levels farther below the opening than the required 1/2 inch."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M14-A02",
+            "reason": "The answer does not give the required 1/4-inch limit for cold differential lubricant and instead applies the same range to both."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.25,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000969",
+                "O:C000978"
+              ],
+              "evidence_quotes": [
+                "Level should be within 1/2 in.\n(12.7 mm) of fill plug opening when vehicle\nis on level ground.",
+                "Differential level should be\nwithin 1/4 inch (6.4 mm) of fill plug\nopening when lubricant is cold or to plug\nlevel when hot."
+              ],
+              "reason": "The transfer-case level is within 1/2 inch; the cold differential level is within 1/4 inch.",
+              "statement": "The permitted distance below the fill opening is the same for a transfer case on level ground and a differential with cold lubricant.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000969",
+                "O:C000978"
+              ],
+              "evidence_quotes": [
+                "Level should be within 1/2 in.\n(12.7 mm) of fill plug opening when vehicle\nis on level ground.",
+                "Differential level should be\nwithin 1/4 inch (6.4 mm) of fill plug\nopening when lubricant is cold or to plug\nlevel when hot."
+              ],
+              "reason": "The supplied maintenance table gives a fluid-level specification for each of those operating conditions.",
+              "statement": "The standard fluid-level specification accounts for both a transfer case on level ground and a differential with cold lubricant.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The cited conditions have different limits—1/2 inch and 1/4 inch—and the supplied passages do not establish the proposed range regardless of condition.",
+              "statement": "For a transfer case on level ground and a differential with cold lubricant, the fluid level should be within the manufacturer's specified range, typically 1/2 inch to 1 inch below the fill opening; the answer says this range applies regardless of ground conditions or lubricant temperature.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied passages contain fluid-level guidance but do not identify that manual or volume.",
+              "statement": "TM 9-2320-280-20-1, Volume 1 contains detailed fluid-level guidelines.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9235751509680351,
+          0.8966952271694271,
+          0.8734845241631914
+        ],
+        "flags": [
+          1,
+          0,
+          1
+        ],
+        "independent_score": 0.8979183007668845,
+        "query_vector_hash": "db2cf4b05d4b392b6e833c379d6b0b9ae8831ed67a0d90ee4ec3261f089c4fde",
+        "ragas_score": 0.8979183007668846,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "7f7f6635767c4faba73ea011199ee27f1870d78687f50d3bb4016b63d614b3d0"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9235751509680351,
+          0.8966952271694271,
+          0.8734845241631914
+        ],
+        "decimal50_cosines": [
+          "0.92357515096803531854572584348572372596428929993932",
+          "0.89669522716942719767158676624534414369033958988381",
+          "0.87348452416319146465883039261149545090021259583115"
+        ],
+        "flags": [
+          1,
+          0,
+          1
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8979183007668846
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8979183007668846
+          }
+        },
+        "query_vector_hash": "db2cf4b05d4b392b6e833c379d6b0b9ae8831ed67a0d90ee4ec3261f089c4fde",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What is the permitted fluid-level distance below the fill opening for the transfer case on level ground and for a differential with cold lubricant?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How far below the fill opening should the fluid level be for the transfer case on level ground or a differential with cold lubricant?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "How far below the fill opening may the transfer case fluid level be on level ground or when the differential lubricant is cold?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "7f7f6635767c4faba73ea011199ee27f1870d78687f50d3bb4016b63d614b3d0",
+        "score": 0.8979183007668845
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "9fd786f4791c28d77be232282768aa5b92e3d44e68dc0b9a5d897848f0f7ac51",
+  "source_result_sha256": "4f86dbaaa35e6c28a1665938fd74dc61746908d24f333f147752735ced152515"
+}

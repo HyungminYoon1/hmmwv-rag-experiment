@@ -1,0 +1,1252 @@
+{
+  "citation_ids": [
+    "[C001054]",
+    "[C000516]",
+    "[C001063]",
+    "[C001063]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:45:34.905478+00:00",
+  "evaluation_answer": "In non-arctic service:\n\n- **4L80-E transmission**: Dexron® II **may not** be used. The manual specifies that **only Dexron® III** is allowed for the 4L80-E transmission. Using Dexron® II will cause damage to the transmission .\n\n- **Transfer case**: Dexron® II **can** be used. The manual specifies Dexron® II for transfer case filling, regardless of transmission type, and does not restrict use to arctic conditions .\n\nTransfer-case level criterion on level ground:  \nFill the transfer case (model 218) with **3.5 quarts (3.3 L)** or (model 242) with **3.35 quarts (3.17 L)** of Dexron® II .\n\nThus, Dexron II **cannot** be used in the 4L80-E transmission, but **can** be used in the transfer case under non-arctic service conditions.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1406,
+  "key": "r3-M15-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C001112] TM 9-2320-280-20-1 | PDF 121 | Printed 2-30\nLUBRICATION TABLE (Cont’d)\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\n\nUSAGE: Transmission\n(4L80-E)\nFLUID/LUBRICANT: Dexron\n® III only\n(Do not use Dexron® II)\nCAPACITIES: Dry: 13.5 qt (12.8L)\nDrain & Refill 7.7 qt (7.3 L)\nEXPECTED TEMPERATURE: All Temperatures\nExcept Arctic\n\n[C001054] TM 9-2320-280-20-1 | PDF 117,118 | Printed 2-26,2-27\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 31\nINTERVAL: Biennially\nITEM TO BE INSPECTED: Transmission\n\nINTERVAL: Biennially\nITEM NO.: 31\nITEM TO BE INSPECTED: Transmission\nPROCEDURES: CAUTION\nUse Dexron® II or Dexron® III for\n3L80 transmission. Use only Dexron®\nIII for 4L80-E transmission. Failure to\nuse only Dexron® III for 4L80E\ntransmission will cause damage to\ntransmission.\nNOTE\n• Change fluid every 12,000 miles\n(19,300 km) or biennially, whichever\noccurs first (para. 5-2a). Inspect\neither 3L80 or 4L80-E transmission\ndrainplug for metal particles.\n• Replace transmission oil filter each\ntime transmission is drained. Fill\n3L80 transmission with 6 quarts\n(5.7 L) of Dexron® II or Dexron® III.\nFill 4L80-E transmission with 7.7\nquarts (7.3 L) of only Dexron® III. In\narctic conditions, use OEA in both\nmodel transmissions.\n\nINTERVAL: Biennially\nITEM NO.: 31\nITEM TO BE INSPECTED: Transmission\n(Cont’d)\n\n[C000516] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n9.\nTRANSMISSION\nSTANDARD\nMETRIC\n4L80-E\n\nITEM: Oil Type \nSTANDARD: Dexron® III\nMETRIC: \n\n[C001063] TM 9-2320-280-20-1 | PDF 118 | Printed 2-27\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 32\nINTERVAL: Biennially\nITEM TO BE INSPECTED: Transfer\nCase\n\nINTERVAL: Biennially\nITEM NO.: 32\nITEM TO BE INSPECTED: Transfer\nCase\nNOT FULLY MISSION CAPABLE IF: Metal particles are\nPROCEDURES: CAUTION\n• If water or metal particles are\ndetected during transfer case\ndraining, notify Direct Support\nMaintenance personnel before\nrefilling transfer case.\n• Use Dexron® II for filling transfer\ncase. Failure to use Dexron® II\nwill cause damage to transfer case.\nNOTE\n• Fill transfer case (model 218) with\n3.5 quarts (3.3 L) of Dexron® II.\n• Fill transfer case (model 242) with\n3.35 quarts (3.17 L) of Dexron® II.\nChange fluid every 12,000 miles\n\n[C001051] TM 9-2320-280-20-1 | PDF 117 | Printed 2-26\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 30.2\nINTERVAL: Annually\nITEM TO BE INSPECTED: Transmission\n\nINTERVAL: Annually\nITEM NO.: 30.2\nITEM TO BE INSPECTED: Transmission\nPROCEDURES: Perform AOAP sample.\nCAUTION\nUse Dexron® II or Dexron® III for\n3L80 transmission. Use only\nDexron® III for 4L80-E transmission.\nFailure to use only Dexron® III for\n4L80E transmission will cause damage\nto transmission.\nNOTE\n• Oil and oil filter will be changed when\nthey are known to be contaminated,\nclogged, or when service is\nrecommended by AOAP laboratory.\n• Replace transmission oil filter each\ntime transmission is drained. Fill\n3L80 transmission with 6 quarts\n(5.7 L) of Dexron® II or Dexron® III.\nFill 4L80-E transmission with\n7.7 quarts (7.3 L) of only Dexron® III.\nIn arctic conditions, use OEA in both\nmodel transmissions.\nQUESTION:\nIn non-arctic service, may Dexron II be used in both a 4L80-E transmission and the transfer case? State each fluid requirement and the transfer-case level criterion on level ground.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 1405,
+  "question": "In non-arctic service, may Dexron II be used in both a 4L80-E transmission and the transfer case? State each fluid requirement and the transfer-case level criterion on level ground.",
+  "question_id": "M15",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:32:51.760254107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:32:45.975134907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 115.6477000004088,
+    "peak_rss_bytes": 13147799552,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 6015.4980172,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6015.6136649,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6015.7074216,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6015.8003504,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6015.9082604,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.0030381,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.1113032,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.2044609,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.2981985,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.4064837,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.4996701,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.6072225,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082173440,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.7013495,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8833384448,
+          "37564": 7741440
+        },
+        "rss_bytes": 13116743680,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.8091844,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8864440320,
+          "37564": 7741440
+        },
+        "rss_bytes": 13147799552,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6016.9015543,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103006208,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8864440320,
+          "37564": 7741440
+        },
+        "rss_bytes": 13147799552,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.0096151,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.1026286,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.2089691,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.3024232,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.4120082,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.5050675,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.6129839,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.7050076,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.8135532,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6017.904177,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.0111764,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.1024489,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.2106208,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.3041002,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.4110512,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.5045056,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.6125897,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.7052841,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.8121934,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6018.9036944,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.0124985,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.1055948,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.2119942,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.3066413,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.4134142,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.5053233,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.5979271,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.7048281,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.8125109,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6019.9032957,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.0114662,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.1057184,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.1998273,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.3068374,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.3997126,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.5064122,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.5998482,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.7079902,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.801962,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6020.9116864,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6021.0042577,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103075840,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101605376,
+          "37504": 8622587904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12906016768,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:45:34.9043891Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 235,
+    "eval_duration": 4091405000,
+    "load_duration": 8903800,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 1405,
+    "prompt_eval_count": 1406,
+    "prompt_eval_duration": 23524000,
+    "response": "In non-arctic service:\n\n- **4L80-E transmission**: Dexron® II **may not** be used. The manual specifies that **only Dexron® III** is allowed for the 4L80-E transmission. Using Dexron® II will cause damage to the transmission [C001054][C000516].\n\n- **Transfer case**: Dexron® II **can** be used. The manual specifies Dexron® II for transfer case filling, regardless of transmission type, and does not restrict use to arctic conditions [C001063].\n\nTransfer-case level criterion on level ground:  \nFill the transfer case (model 218) with **3.5 quarts (3.3 L)** or (model 242) with **3.35 quarts (3.17 L)** of Dexron® II [C001063].\n\nThus, Dexron II **cannot** be used in the 4L80-E transmission, but **can** be used in the transfer case under non-arctic service conditions.",
+    "total_duration": 4444877500
+  },
+  "retrieval": {
+    "embedding_ms": 117.65329999980167,
+    "items": [
+      {
+        "body_end": 203,
+        "body_start": 0,
+        "id": "C001112",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          121
+        ],
+        "prefix_chars": 82,
+        "printed_pages": [
+          "2-30"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.66812664270401,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "group": "transmission",
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 2,
+          "shared_temperature": true,
+          "table_id": "P0120:lubrication"
+        },
+        "text": "LUBRICATION TABLE (Cont’d)\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\n\nUSAGE: Transmission\n(4L80-E)\nFLUID/LUBRICANT: Dexron\n® III only\n(Do not use Dexron® II)\nCAPACITIES: Dry: 13.5 qt (12.8L)\nDrain & Refill 7.7 qt (7.3 L)\nEXPECTED TEMPERATURE: All Temperatures\nExcept Arctic",
+        "text_sha256": "4654a0bc308877c09c5231b9ab11247ab9422e1dc55b7443935f849b8d68e115",
+        "token_count": 107,
+        "unit_id": "U001106",
+        "unit_key": "P0121:transmission:2"
+      },
+      {
+        "body_end": 806,
+        "body_start": 0,
+        "id": "C001054",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          117,
+          118
+        ],
+        "prefix_chars": 150,
+        "printed_pages": [
+          "2-26",
+          "2-27"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6663112640380859,
+        "source_issues": [
+          {
+            "description": "Metal particles are만 원문에서 불완전하다. 117~119쪽 화면 및 PDF 문자층을 확인했고, 이 서술어 뒤 내용은 없다. Change fluid every 12,000 miles는 그 자체로 성립하는 명령문이므로 끊긴 문장으로 단정한 이전 판정을 정정한다.",
+            "id": "TRUNCATED_ITEM32",
+            "pdf_page": 118,
+            "status": "SOURCE_INCOMPLETE_NO_INFERRED_COMPLETION"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "31",
+          "row_ids": [
+            "P0117-T2_1-R04",
+            "P0118-T2_1-R01"
+          ],
+          "source_issues": [
+            "TRUNCATED_ITEM32"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 31\nINTERVAL: Biennially\nITEM TO BE INSPECTED: Transmission\n\nINTERVAL: Biennially\nITEM NO.: 31\nITEM TO BE INSPECTED: Transmission\nPROCEDURES: CAUTION\nUse Dexron® II or Dexron® III for\n3L80 transmission. Use only Dexron®\nIII for 4L80-E transmission. Failure to\nuse only Dexron® III for 4L80E\ntransmission will cause damage to\ntransmission.\nNOTE\n• Change fluid every 12,000 miles\n(19,300 km) or biennially, whichever\noccurs first (para. 5-2a). Inspect\neither 3L80 or 4L80-E transmission\ndrainplug for metal particles.\n• Replace transmission oil filter each\ntime transmission is drained. Fill\n3L80 transmission with 6 quarts\n(5.7 L) of Dexron® II or Dexron® III.\nFill 4L80-E transmission with 7.7\nquarts (7.3 L) of only Dexron® III. In\narctic conditions, use OEA in both\nmodel transmissions.\n\nINTERVAL: Biennially\nITEM NO.: 31\nITEM TO BE INSPECTED: Transmission\n(Cont’d)",
+        "text_sha256": "6231778f3ddc465c7c14be90ea4c0c5222f33399d43f2640ea441c72aad27997",
+        "token_count": 317,
+        "unit_id": "U001048",
+        "unit_key": "pmcs:31"
+      },
+      {
+        "body_end": 46,
+        "body_start": 0,
+        "id": "C000516",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 75,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6646611094474792,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 8,
+          "section": 2,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n9.\nTRANSMISSION\nSTANDARD\nMETRIC\n4L80-E\n\nITEM: Oil Type \nSTANDARD: Dexron® III\nMETRIC: ",
+        "text_sha256": "06eb6621f867eaec52b34b3c3199c085e9311422ab7daa0129f2c5882ce40004",
+        "token_count": 49,
+        "unit_id": "U000516",
+        "unit_key": "P0063:spec:2:8"
+      },
+      {
+        "body_end": 578,
+        "body_start": 0,
+        "id": "C001063",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          118
+        ],
+        "prefix_chars": 151,
+        "printed_pages": [
+          "2-27"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6617016196250916,
+        "source_issues": [
+          {
+            "description": "Metal particles are만 원문에서 불완전하다. 117~119쪽 화면 및 PDF 문자층을 확인했고, 이 서술어 뒤 내용은 없다. Change fluid every 12,000 miles는 그 자체로 성립하는 명령문이므로 끊긴 문장으로 단정한 이전 판정을 정정한다.",
+            "id": "TRUNCATED_ITEM32",
+            "pdf_page": 118,
+            "status": "SOURCE_INCOMPLETE_NO_INFERRED_COMPLETION"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "32",
+          "row_ids": [
+            "P0118-T2_1-R02"
+          ],
+          "source_issues": [
+            "TRUNCATED_ITEM32"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 32\nINTERVAL: Biennially\nITEM TO BE INSPECTED: Transfer\nCase\n\nINTERVAL: Biennially\nITEM NO.: 32\nITEM TO BE INSPECTED: Transfer\nCase\nNOT FULLY MISSION CAPABLE IF: Metal particles are\nPROCEDURES: CAUTION\n• If water or metal particles are\ndetected during transfer case\ndraining, notify Direct Support\nMaintenance personnel before\nrefilling transfer case.\n• Use Dexron® II for filling transfer\ncase. Failure to use Dexron® II\nwill cause damage to transfer case.\nNOTE\n• Fill transfer case (model 218) with\n3.5 quarts (3.3 L) of Dexron® II.\n• Fill transfer case (model 242) with\n3.35 quarts (3.17 L) of Dexron® II.\nChange fluid every 12,000 miles",
+        "text_sha256": "761140d4f06e37968181afebd0f340e5523f9fef9db807cf358d3891cc488e23",
+        "token_count": 224,
+        "unit_id": "U001057",
+        "unit_key": "pmcs:32"
+      },
+      {
+        "body_end": 713,
+        "body_start": 0,
+        "id": "C001051",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          117
+        ],
+        "prefix_chars": 150,
+        "printed_pages": [
+          "2-26"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6552206873893738,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "30.2",
+          "row_ids": [
+            "P0117-T2_1-R03"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 30.2\nINTERVAL: Annually\nITEM TO BE INSPECTED: Transmission\n\nINTERVAL: Annually\nITEM NO.: 30.2\nITEM TO BE INSPECTED: Transmission\nPROCEDURES: Perform AOAP sample.\nCAUTION\nUse Dexron® II or Dexron® III for\n3L80 transmission. Use only\nDexron® III for 4L80-E transmission.\nFailure to use only Dexron® III for\n4L80E transmission will cause damage\nto transmission.\nNOTE\n• Oil and oil filter will be changed when\nthey are known to be contaminated,\nclogged, or when service is\nrecommended by AOAP laboratory.\n• Replace transmission oil filter each\ntime transmission is drained. Fill\n3L80 transmission with 6 quarts\n(5.7 L) of Dexron® II or Dexron® III.\nFill 4L80-E transmission with\n7.7 quarts (7.3 L) of only Dexron® III.\nIn arctic conditions, use OEA in both\nmodel transmissions.",
+        "text_sha256": "9d9763303d182e99461c5dd24745ed2a6ed9e07e2c5d3f5088c25680ebd75d9c",
+        "token_count": 257,
+        "unit_id": "U001045",
+        "unit_key": "pmcs:30.2"
+      }
+    ],
+    "search_ms": 11.03049999983341
+  },
+  "round": 3,
+  "sequence": 346,
+  "started_at": "2026-09-28T04:45:30.314600+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 4461.087200000293,
+    "retrieval": 129.93100000039703,
+    "total": 4591.01820000069
+  },
+  "unprovided_citations": []
+}

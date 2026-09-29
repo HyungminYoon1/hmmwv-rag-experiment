@@ -1,0 +1,292 @@
+{
+  "at": "2026-09-28T09:55:51.750993+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "6c2a7a9c5091178eb9c3bd9e0ae1c8172684fa9d1aa70eb0ef3e9361df0d35a3",
+  "original_result_sha256": "adcd2742c1b68219d315645ee33380005022524a96f2bb853fb7cdcc63ad42f1",
+  "result": {
+    "attempt_key": "r1-M12-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 38.49910219999947,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9082089303567297
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9082089303567297
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.8
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.8
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M12",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives specific reporting forms, timing, and a tightening torque."
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "Loose starter mounting bolts are found during PMCS."
+        },
+        {
+          "id": "C002",
+          "text": "The shortcoming must be reported on DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated) immediately after the PMCS."
+        },
+        {
+          "id": "C003",
+          "text": "The shortcoming must be reported before corrective action is taken."
+        },
+        {
+          "id": "C004",
+          "text": "The shortcoming will be recorded in the equipment record."
+        },
+        {
+          "id": "C005",
+          "text": "The specified tightening torque for the starter mounting bolts is 40 lb-ft (54 N•m)."
+        }
+      ],
+      "claims_raw": [
+        "Loose starter mounting bolts are found during PMCS.",
+        "The shortcoming must be reported on DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated) immediately after the PMCS.",
+        "The shortcoming must be reported before corrective action is taken.",
+        "The shortcoming will be recorded in the equipment record.",
+        "The specified tightening torque for the starter mounting bolts is 40 lb-ft (54 N•m)."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated)",
+            "fulfilled": 1,
+            "id": "M12-A01",
+            "reason": "Names both applicable forms."
+          },
+          {
+            "answer_quote": "immediately after the PMCS, before corrective action is taken",
+            "fulfilled": 1,
+            "id": "M12-A02",
+            "reason": "Gives both required timing conditions."
+          },
+          {
+            "answer_quote": "40 lb-ft (54 N•m)",
+            "fulfilled": 1,
+            "id": "M12-A03",
+            "reason": "Matches the specified starter mounting bolt torque."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.8,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The procedure requires inspecting mounting security, but does not say loose bolts were found.",
+              "statement": "Loose starter mounting bolts are found during PMCS.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C000856"
+              ],
+              "evidence_quotes": [
+                "All vehicle shortcomings will be reported on DA Form 2404 Equipment Inspection and Maintenance\nWorksheet or DA Form 5988-E (automated) (DA Pam 738-750) immediately after the PMCS, and before\ntaking corrective action."
+              ],
+              "reason": "The reporting requirement names both forms and specifies the timing.",
+              "statement": "The shortcoming must be reported on DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated) immediately after the PMCS.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000856"
+              ],
+              "evidence_quotes": [
+                "All vehicle shortcomings will be reported on DA Form 2404 Equipment Inspection and Maintenance\nWorksheet or DA Form 5988-E (automated) (DA Pam 738-750) immediately after the PMCS, and before\ntaking corrective action."
+              ],
+              "reason": "Shortcomings must be reported before corrective action.",
+              "statement": "The shortcoming must be reported before corrective action is taken.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000856"
+              ],
+              "evidence_quotes": [
+                "All vehicle deficiencies will be reported in the equipment record."
+              ],
+              "reason": "Vehicle deficiencies must be reported in the equipment record.",
+              "statement": "The shortcoming will be recorded in the equipment record.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000961"
+              ],
+              "evidence_quotes": [
+                "Tighten mounting bolts to\n40 lb-ft (54 N•m)."
+              ],
+              "reason": "The starter procedure specifies that torque.",
+              "statement": "The specified tightening torque for the starter mounting bolts is 40 lb-ft (54 N•m).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.8,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The procedure calls for inspecting mounting security, but does not say loose bolts were found.",
+              "statement": "Loose starter mounting bolts are found during PMCS.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:report"
+              ],
+              "evidence_quotes": [
+                "All vehicle shortcomings will be reported on DA Form 2404 Equipment Inspection and Maintenance\nWorksheet or DA Form 5988-E (automated) (DA Pam 738-750) immediately after the PMCS"
+              ],
+              "reason": "The reporting instruction specifies both forms and the timing.",
+              "statement": "The shortcoming must be reported on DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated) immediately after the PMCS.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:report"
+              ],
+              "evidence_quotes": [
+                "immediately after the PMCS, and before\ntaking corrective action."
+              ],
+              "reason": "The reporting instruction requires this order.",
+              "statement": "The shortcoming must be reported before corrective action is taken.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:report"
+              ],
+              "evidence_quotes": [
+                "All vehicle deficiencies will be reported in the equipment record."
+              ],
+              "reason": "Vehicle deficiencies must be reported in the equipment record.",
+              "statement": "The shortcoming will be recorded in the equipment record.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:starter_torque"
+              ],
+              "evidence_quotes": [
+                "Tighten mounting bolts to\n40 lb-ft (54 N•m)."
+              ],
+              "reason": "The starter procedure gives that tightening torque.",
+              "statement": "The specified tightening torque for the starter mounting bolts is 40 lb-ft (54 N•m).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0056925182749624215,
+        "cosine_similarities": [
+          0.9078587558221946,
+          0.9011529537475765,
+          0.9156150815004179
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9082089303567297,
+        "query_vector_hash": "48537b9772685f10ff3d67ab4dfc4e2e50160d9bf39271096b7742613c4c6410",
+        "ragas_score": 0.9025164120817672,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "e00faa935d61a99c8783040e06bd244e0324a73d135d5b15905e3ea04f214bed"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9078587558221946,
+          0.9011529537475765,
+          0.9156150815004179
+        ],
+        "decimal50_cosines": [
+          "0.90785875582219445538161595278635031132863541617366",
+          "0.90115295374757647970484482130097944475141086765774",
+          "0.91561508150041786502005698634775352672126380425105"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": {
+          "code": "RAGAS_ALGORITHM_MISMATCH",
+          "type": "EvaluationError"
+        },
+        "original_metrics": {
+          "ar_raw": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          },
+          "ar_report": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          }
+        },
+        "query_vector_hash": "48537b9772685f10ff3d67ab4dfc4e2e50160d9bf39271096b7742613c4c6410",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "During PMCS, when and on which form must loose starter mounting bolts be reported, and what is their specified tightening torque?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "When and where must loose starter mounting bolts found during PMCS be reported, and what is their specified tightening torque?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "When and where should loose starter mounting bolts found during PMCS be reported, and what is their specified tightening torque?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "e00faa935d61a99c8783040e06bd244e0324a73d135d5b15905e3ea04f214bed",
+        "score": 0.9082089303567297
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "72e7cde673d86a710c0dc06fd8b74136fd29fe8691041f93e94a5881430c6d15"
+}

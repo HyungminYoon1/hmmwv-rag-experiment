@@ -1,0 +1,268 @@
+{
+  "at": "2026-09-28T09:59:37.470251+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "9eae8f9f79a3a71069f3997eba314c71a3dad500d958583511f85ba0f2e78078",
+  "original_result_sha256": "4ee77244d36e66cb7f5fb9779448334097073389b743a1a5959454bb1f4b8bf4",
+  "result": {
+    "attempt_key": "r1-M13-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 33.96198919999733,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8747463982049458
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8747463982049458
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M13",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives specific threshold values and directly answers whether each measurement falls below its threshold."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.85837545661868,
+          0.8583754345368246,
+          0.9074883034593325
+        ],
+        "query_vector_hash": "bb1008e572a0ddcb5c2048079d8b2b758d777e914323e68384ba48a02646065b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What are the Not Fully Mission Capable thresholds for service-brake pad thickness and tire tread depth?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the Not Fully Mission Capable thresholds for service-brake pad thickness and tire tread depth?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm and tire tread measuring 1.0 mm fall below their Not Fully Mission Capable thresholds, and what are those thresholds?"
+          }
+        ],
+        "response_vectors_hash": "3ea336089bb3eedd81c358c44b7eea348719ac0a31e8cc46cdecf0c1a4331766",
+        "score": 0.8747463982049458
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "Service-brake pads measuring 2.5 mm are above the Not Fully Mission Capable threshold of 3.2 mm (1/8 inch)."
+        },
+        {
+          "id": "C002",
+          "text": "Tire tread measuring 1.0 mm deep is above the Not Fully Mission Capable threshold of 1.59 mm (1/16 inch)."
+        },
+        {
+          "id": "C003",
+          "text": "The service-brake pads do not fall below the Not Fully Mission Capable threshold."
+        },
+        {
+          "id": "C004",
+          "text": "The tire tread does not fall below the Not Fully Mission Capable threshold."
+        }
+      ],
+      "claims_raw": [
+        "Service-brake pads measuring 2.5 mm are above the Not Fully Mission Capable threshold of 3.2 mm (1/8 inch).",
+        "Tire tread measuring 1.0 mm deep is above the Not Fully Mission Capable threshold of 1.59 mm (1/16 inch).",
+        "The service-brake pads do not fall below the Not Fully Mission Capable threshold.",
+        "The tire tread does not fall below the Not Fully Mission Capable threshold."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Service brake pad: 3.2 mm (1/8 inch)",
+            "fulfilled": 1,
+            "id": "M13-A01",
+            "reason": "States the correct service-brake pad limit."
+          },
+          {
+            "answer_quote": "2.5 mm is above the Not Fully Mission Capable threshold of 3.2 mm",
+            "fulfilled": 0,
+            "id": "M13-A02",
+            "reason": "Incorrect comparison; 2.5 mm is below 3.2 mm and meets the deficiency criterion."
+          },
+          {
+            "answer_quote": "Tire tread depth: 1.59 mm (1/16 inch)",
+            "fulfilled": 1,
+            "id": "M13-A03",
+            "reason": "States the correct tire-tread limit."
+          },
+          {
+            "answer_quote": "1.0 mm is above the Not Fully Mission Capable threshold of 1.59 mm",
+            "fulfilled": 0,
+            "id": "M13-A04",
+            "reason": "Incorrect comparison; 1.0 mm is below 1.59 mm and meets the deficiency criterion."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "2.5 mm is below, not above, 3.2 mm.",
+              "statement": "Service-brake pads measuring 2.5 mm are above the Not Fully Mission Capable threshold of 3.2 mm (1/8 inch).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "1.0 mm is below, not above, 1.59 mm.",
+              "statement": "Tire tread measuring 1.0 mm deep is above the Not Fully Mission Capable threshold of 1.59 mm (1/16 inch).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives a threshold but no measured service-brake pad thickness.",
+              "statement": "The service-brake pads do not fall below the Not Fully Mission Capable threshold.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives a threshold but no measured tire tread depth.",
+              "statement": "The tire tread does not fall below the Not Fully Mission Capable threshold.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "2.5 mm is below, not above, the stated 3.2 mm threshold.",
+              "statement": "Service-brake pads measuring 2.5 mm are above the Not Fully Mission Capable threshold of 3.2 mm (1/8 inch).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "1.0 mm is below, not above, the stated 1.59 mm threshold.",
+              "statement": "Tire tread measuring 1.0 mm deep is above the Not Fully Mission Capable threshold of 1.59 mm (1/16 inch).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives a threshold but no actual service-brake pad measurement.",
+              "statement": "The service-brake pads do not fall below the Not Fully Mission Capable threshold.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives a threshold but no actual tire-tread measurement.",
+              "statement": "The tire tread does not fall below the Not Fully Mission Capable threshold.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.85837545661868,
+          0.8583754345368246,
+          0.9074883034593325
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8747463982049458,
+        "query_vector_hash": "bb1008e572a0ddcb5c2048079d8b2b758d777e914323e68384ba48a02646065b",
+        "ragas_score": 0.8747463982049458,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "3ea336089bb3eedd81c358c44b7eea348719ac0a31e8cc46cdecf0c1a4331766"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.85837545661868,
+          0.8583754345368246,
+          0.9074883034593325
+        ],
+        "decimal50_cosines": [
+          "0.85837545661867994573298399697531821086801886165832",
+          "0.85837543453682460171938055275473794146672817135487",
+          "0.90748830345933253138219603488018835896919731226185"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 0.0,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8747463982049458
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8747463982049458
+          }
+        },
+        "query_vector_hash": "bb1008e572a0ddcb5c2048079d8b2b758d777e914323e68384ba48a02646065b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What are the Not Fully Mission Capable thresholds for service-brake pad thickness and tire tread depth?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the Not Fully Mission Capable thresholds for service-brake pad thickness and tire tread depth?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm and tire tread measuring 1.0 mm fall below their Not Fully Mission Capable thresholds, and what are those thresholds?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "3ea336089bb3eedd81c358c44b7eea348719ac0a31e8cc46cdecf0c1a4331766",
+        "score": 0.8747463982049458
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "276169726d63cf642d40d53f98c72e2518334a0d1541dd23a3bab4d17832c7f0"
+}

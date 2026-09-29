@@ -1,0 +1,236 @@
+{
+  "at": "2026-09-29T04:46:53.318361+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "cb2f0688ba761ff6e56aac3ac511fad657bf9c7719653c4921b3e6091c3cb3c2",
+  "result": {
+    "attempt_key": "r1-M02-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 21.29949989999932,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8493603205738295
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8493603205738295
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M02",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It makes a substantive comparison for the voltage drop but declines to evaluate the cranking speed."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8458113100787995,
+          0.8428267336299148,
+          0.8594429180127742
+        ],
+        "query_vector_hash": "3f34ce87ce28d2b715443ab228e6fc4ed852907e10001a99432607db67c6219c",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "How does the 0.30 V starter negative-cable voltage drop compare with the manual guidance, and can the 90 RPM cranking speed be evaluated from the provided excerpts?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How do the 0.30 V starter negative-cable voltage drop and 90 RPM cranking speed compare with the manual guidance?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How do the starter negative-cable voltage drop of 0.30 V and engine cranking speed of 90 RPM compare with the manual guidance provided?"
+          }
+        ],
+        "response_vectors_hash": "367d46d39f424d482609dcd126cedba22e2f8bd14e180d8ede89efcb176a974a",
+        "score": 0.8493603205738296
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says the provided excerpts do not directly compare 90 RPM with manual guidance, so it cannot evaluate that reading."
+        ],
+        "shared_conditions": [
+          "The engine is cold and cranking.",
+          "The starter negative-cable drop was measured during STE/ICE-R Test 69."
+        ],
+        "statements": [
+          {
+            "answer_quote": "The starter negative-cable voltage drop of 0.30 V exceeds the manual guidance of less than 0.25 volts max",
+            "statement": "For the cold engine during STE/ICE-R Test 69, a starter negative-cable voltage drop of 0.30 V exceeds the manual guidance of less than 0.25 V maximum."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The starter negative-cable voltage drop of 0.30 V exceeds the manual guidance of less than 0.25 volts max",
+          "id": "C001",
+          "text": "For the cold engine during STE/ICE-R Test 69, a starter negative-cable voltage drop of 0.30 V exceeds the manual guidance of less than 0.25 V maximum."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M02-A01",
+            "reason": "The response does not state the 100 RPM cold-cranking minimum."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M02-A02",
+            "reason": "The response says no evaluation of 90 RPM can be made."
+          },
+          {
+            "answer_quote": "manual guidance of less than 0.25 volts max",
+            "fulfilled": 1,
+            "id": "M02-A03",
+            "reason": "States the negative-cable voltage-drop limit."
+          },
+          {
+            "answer_quote": "The starter negative-cable voltage drop of 0.30 V exceeds the manual guidance",
+            "fulfilled": 1,
+            "id": "M02-A04",
+            "reason": "States that 0.30 V exceeds the limit."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C003257"
+              ],
+              "evidence_quotes": [
+                "STARTER NEG. CABLE VOLTAGE DROP\nSTE/ICE-R TEST 69\n1. Start Test 69, starter negative cable voltage\ndrop.\n2. Displayed reading is in volts. The cable\nvoltage drop should be less than 0.25 volts\nmax."
+              ],
+              "reason": "Test 69 guidance sets the starter negative-cable drop below 0.25 V; 0.30 V exceeds that limit.",
+              "statement": "For the cold engine during STE/ICE-R Test 69, a starter negative-cable voltage drop of 0.30 V exceeds the manual guidance of less than 0.25 V maximum.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C003257"
+              ],
+              "evidence_quotes": [
+                "STARTER NEG. CABLE VOLTAGE DROP\nSTE/ICE-R TEST 69\n1. Start Test 69, starter negative cable voltage\ndrop.\n2. Displayed reading is in volts. The cable\nvoltage drop should be less than 0.25 volts\nmax."
+              ],
+              "reason": "The Test 69 guidance sets the starter negative-cable voltage-drop limit below 0.25 V; the stated 0.30 V reading exceeds it.",
+              "statement": "For the cold engine during STE/ICE-R Test 69, a starter negative-cable voltage drop of 0.30 V exceeds the manual guidance of less than 0.25 V maximum.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.8458113100787995,
+          0.8428267336299148,
+          0.8594429180127742
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8493603205738295,
+        "query_vector_hash": "3f34ce87ce28d2b715443ab228e6fc4ed852907e10001a99432607db67c6219c",
+        "ragas_score": 0.8493603205738296,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "367d46d39f424d482609dcd126cedba22e2f8bd14e180d8ede89efcb176a974a"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8458113100787995,
+          0.8428267336299148,
+          0.8594429180127742
+        ],
+        "decimal50_cosines": [
+          "0.84581131007879972681685788992197763170000653819010",
+          "0.84282673362991477899333744986634582444667392782681",
+          "0.85944291801277425217689788046242957974209023696784"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8493603205738296
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8493603205738296
+          }
+        },
+        "query_vector_hash": "3f34ce87ce28d2b715443ab228e6fc4ed852907e10001a99432607db67c6219c",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "How does the 0.30 V starter negative-cable voltage drop compare with the manual guidance, and can the 90 RPM cranking speed be evaluated from the provided excerpts?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How do the 0.30 V starter negative-cable voltage drop and 90 RPM cranking speed compare with the manual guidance?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How do the starter negative-cable voltage drop of 0.30 V and engine cranking speed of 90 RPM compare with the manual guidance provided?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "367d46d39f424d482609dcd126cedba22e2f8bd14e180d8ede89efcb176a974a",
+        "score": 0.8493603205738295
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "702af70aa1e131bc0f69595de3758704b6b09b5334909139a82ac7489fdafaf1"
+}

@@ -1,0 +1,192 @@
+{
+  "at": "2026-09-29T05:36:22.908341+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "89b839a598403deb49ba3670a7c79353f7e28ee206aa2bba29d7b266aac87393",
+  "result": {
+    "attempt_key": "r1-S13-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 22.085259999999835,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8122411572044911
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8122411572044911
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S13",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a concrete cranking speed of 150 to 200 RPM and makes additional claims about its source. The citation caveat does not make it an abstention."
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says its value is derived from standard engine lubrication test procedures and established maintenance practices; this is self-described provenance.",
+          "The answer says no manual excerpt was provided in REFERENCE and no chunk ID was available; these concern input and citation availability."
+        ],
+        "shared_conditions": [
+          "STE/ICE-R Test 10 in the HMMWV (M998-series) engine-lubrication maintenance context."
+        ],
+        "statements": [
+          {
+            "answer_quote": "The approximate cranking speed stated for STE/ICE-R Test 10 in the HMMWV (M998-series) maintenance context is 150 to 200 RPM.",
+            "statement": "For STE/ICE-R Test 10 in the HMMWV (M998-series) engine-lubrication maintenance context, the stated approximate cranking speed is 150 to 200 RPM."
+          },
+          {
+            "answer_quote": "TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), which specifies cranking speeds for engine oil system evaluation",
+            "statement": "For HMMWV engine oil system evaluation, TM 9-2320-280-20-1, Volume 1 specifies cranking speeds."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The approximate cranking speed stated for STE/ICE-R Test 10 in the HMMWV (M998-series) maintenance context is 150 to 200 RPM.",
+          "id": "C001",
+          "text": "For STE/ICE-R Test 10 in the HMMWV (M998-series) engine-lubrication maintenance context, the stated approximate cranking speed is 150 to 200 RPM."
+        },
+        {
+          "answer_quote": "TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), which specifies cranking speeds for engine oil system evaluation",
+          "id": "C002",
+          "text": "For HMMWV engine oil system evaluation, TM 9-2320-280-20-1, Volume 1 specifies cranking speeds."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S13-A01",
+            "reason": "The answer gives a range of 150 to 200 RPM, rather than the reference’s approximate cranking speed of 200 RPM."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source says cranking RPM should be approximately 200; it does not state a 150-to-200 RPM range.",
+              "statement": "For STE/ICE-R Test 10 in the HMMWV (M998-series) engine-lubrication maintenance context, the stated approximate cranking speed is 150 to 200 RPM.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt gives a cranking RPM but does not identify the cited manual or volume.",
+              "statement": "For HMMWV engine oil system evaluation, TM 9-2320-280-20-1, Volume 1 specifies cranking speeds.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.014580563201218144,
+        "cosine_similarities": [
+          0.8122411708194847,
+          0.8122411708194847,
+          0.812241129974504
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8122411572044911,
+        "query_vector_hash": "82a42c44daa3d6776d3375573d1aa0159c6caebebcc6e0b5a3a720997e08d874",
+        "ragas_score": 0.7976605940032729,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "5448ebae6f11b9990e6a7d0f3b9f4e2b8bb1809f335213a081ad71cce0ce8f3b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8122411708194847,
+          0.8122411708194847,
+          0.812241129974504
+        ],
+        "decimal50_cosines": [
+          "0.81224117081948443518246383194057794320497768470825",
+          "0.81224117081948443518246383194057794320497768470825",
+          "0.81224112997450384569204345951206341641894246744988"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": {
+          "code": "RAGAS_ALGORITHM_MISMATCH",
+          "type": "EvaluationError"
+        },
+        "original_metrics": {
+          "ar_raw": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          },
+          "ar_report": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          }
+        },
+        "query_vector_hash": "82a42c44daa3d6776d3375573d1aa0159c6caebebcc6e0b5a3a720997e08d874",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the approximate cranking speed for STE/ICE-R Test 10 in the HMMWV (M998-series) maintenance context?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the approximate cranking speed for STE/ICE-R Test 10 in the HMMWV (M998-series) maintenance context?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the approximate cranking speed for STE/ICE-R Test 10 in the HMMWV (M998-series) maintenance context?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "5448ebae6f11b9990e6a7d0f3b9f4e2b8bb1809f335213a081ad71cce0ce8f3b",
+        "score": 0.8122411572044911
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "5a72a84f33b0b060e9ec92ab3efeae675f4ec375ae07006db2f2801e594a0877",
+  "source_result_sha256": "021e5b8d326477b7035e1309ee8eeaee8f17d929ea36f2e26ef42c7d6d0f7d84"
+}

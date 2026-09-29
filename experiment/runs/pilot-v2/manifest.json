@@ -1,0 +1,107 @@
+{
+  "created_at": "2026-09-28T04:17:30.224889+00:00",
+  "id": "pilot-v2",
+  "identity": {
+    "environment": {
+      "packages": {
+        "PyMuPDF": "1.28.2",
+        "faiss-cpu": "1.15.1",
+        "huggingface-hub": "0.36.2",
+        "numpy": "2.4.6",
+        "sentence-transformers": "5.1.1",
+        "tokenizers": "0.21.4",
+        "torch": "2.8.0+cpu",
+        "transformers": "4.55.4"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "process_cpu_affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "python": "3.11.9"
+    },
+    "files": {
+      "experiment/config.json": "e07a0b93cc6c008bd52d1ddf215f18034f3464325a3fea04396df38b0e92da6a",
+      "experiment/development.json": "bc3b27ad1bcf056dd285a8e165178f5f97b5b6910319b4a4d52a188bcf8f769d",
+      "experiment/evaluation-policy.json": "1a42312057d311472e6d0365f8cc3b1f8269889b8a5fc112ee021053ceb406bc",
+      "experiment/generation.py": "ec5286ac9d266c9bda9ca0ef7bde3c70f9f2e87e6de13b6604cbe145ea17ba34",
+      "experiment/gold-v1/manifest.json": "8f211d62d33bea1c831f0176e3c843fa79a83712de7e280e11724fee7db8c69b",
+      "experiment/io.py": "b69745137bc053f851b828258f376d4792f1083284c0a2128d827de5f6bf9f5d",
+      "experiment/models/model.lock.json": "d927e56bdc20a70ae8f661f1d4804262c983bdeba2e9eb3e987068910424933f",
+      "experiment/prompt.txt": "9693db6ce61707980eb600b8f56d23302c8f0f242e2c7e9b46b029a1e4e584d3",
+      "experiment/resources.py": "0e02fb423ecbfc950c8ff7a46eb8aa082f8b62fa7de67ef24858699da2cf261c",
+      "experiment/retriever.py": "53ba928750b101b851397daae1832e3fece59899a8af0c0108ff6fb1dbe9896a",
+      "experiment/runner.py": "b80ca3f93e0b5f7bc225051c79261eb696513c2c9f2f972692ebe7ac1df0dd6d",
+      "experiment/worker.py": "291096ef8e245fcf5df48a8c12bb39b8f1bd27eda849b81cd56585bad84b3e3a",
+      "preprocessing/assets/qwen-tokenizer/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "preprocessing/assets/qwen-tokenizer/tokenizer_config.json": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+      "preprocessing/output/corpus-v6-final/manifest.json": "1e8ce32e715b0fe97638511c8a2f7aafbbdea37f201b00416e5bbadadf48bfe8",
+      "retrieval/config.json": "e4a01c0deda884483c3b171977cc2bfa2321653ebc250b5b75f983dd2ba7dfec",
+      "retrieval/indexes/bge-m3-v1/manifest.json": "3946f9da3cb8be0c630d91b6b0878b0b0a5c4d60329ad69ca8581e2fa5679519",
+      "retrieval/service.py": "4307ad65c04e9d587eae9a387bb846dd58685ddde100c4b6157fdf2c224c1a76"
+    },
+    "model_details": {
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "quantization_level": "Q4_K_M"
+    },
+    "model_digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "ollama_version": {
+      "version": "0.34.1"
+    }
+  },
+  "mode": "pilot",
+  "planned_requests": 20,
+  "quality_evaluation": "NOT_RUN",
+  "quality_round": 1,
+  "question_file_sha256": "bc3b27ad1bcf056dd285a8e165178f5f97b5b6910319b4a4d52a188bcf8f769d",
+  "questions_sha256": "03e487c0fa65fed755419ade640c36d87a54078116941aebfb174053e2d2ab2f",
+  "researcher_direct_review": "PENDING",
+  "rounds": 1,
+  "schedule_sha256": "074bf95db98017545242bdc105dc8f7c16e42800f991d6a72abc8e01cfad79a9",
+  "warmup_ids": [
+    "D01",
+    "D02",
+    "D04",
+    "D06",
+    "D09"
+  ],
+  "warmup_per_condition_per_round": 5
+}

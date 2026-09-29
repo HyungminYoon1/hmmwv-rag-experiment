@@ -1,0 +1,205 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:43:16.444699+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "O:mixture"
+        ],
+        "evidence_quotes": [
+          "Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used."
+        ],
+        "reason": "The context says this mixture is normally used.",
+        "statement": "The normally specified coolant mixture for the engine cooling system is a 50-50 mixture of water and ethylene glycol base antifreeze.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588596,
+      "conversation": null,
+      "created_at": 1790588593.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_06fdd1d059497ffa016aba36b1e36487d09be08f9813d3f6d2",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The normally specified coolant mixture for the engine cooling system is a 50-50 mixture of water and ethylene glycol base antifreeze.\",\"reason\":\"The context says this mixture is normally used.\",\"verdict\":1,\"evidence_ids\":[\"O:mixture\"],\"evidence_quotes\":[\"Normally a 50-50 mixture of water and ethylene glycol base antifreeze\\nwill be used.\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_06fdd1d059497ffa016aba36b2d71c87d0ac00e096c1854ffb",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 810,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 96,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 906
+      },
+      "user": null
+    },
+    "request_id": "resp_06fdd1d059497ffa016aba36b1e36487d09be08f9813d3f6d2",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The normally specified coolant mixture for the engine cooling system is a 50-50 mixture of water and ethylene glycol base antifreeze.\",\"reason\":\"The context says this mixture is normally used.\",\"verdict\":1,\"evidence_ids\":[\"O:mixture\"],\"evidence_quotes\":[\"Normally a 50-50 mixture of water and ethylene glycol base antifreeze\\nwill be used.\"]}]}",
+    "usage": {
+      "input_tokens": 810,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 96,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 906
+    }
+  },
+  "record_hash": "001c5678b973b7662213db704a066b185ceb0a2b4193256c7a29f7ab1141f303",
+  "request_hash": "af725958a0a13751993546e93d2ff300a15048c9457d730b52dbdf4e9c832d09",
+  "started_at": "2026-09-28T09:43:13.752830+00:00",
+  "status": "OK"
+}

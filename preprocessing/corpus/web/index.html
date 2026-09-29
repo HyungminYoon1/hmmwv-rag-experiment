@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>청크 탐색 · HMMWV</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <aside class="sidebar">
+    <a class="brand" href="/chunks" aria-label="HMMWV 청크 탐색"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v16H4zM14 4h6v16h-6zM7 8h1M17 8h1"/></svg><span>HMMWV<small>교범 corpus</small></span></a>
+    <nav aria-label="주 메뉴">
+      <a href="/chunks" data-route="chunks"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>청크 탐색</a>
+      <a href="/pages" data-route="pages"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h9l5 5v13H5zM14 3v6h5M9 13h6M9 17h6"/></svg>원문 페이지</a>
+      <a href="/reviews" data-route="reviews"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M3 6l1 1 2-3M3 12l1 1 2-3M3 18h3"/></svg>검토 목록<span id="nav-reviews" class="nav-count"></span></a>
+      <a href="/runs" data-route="runs"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>생성·검증</a>
+    </nav>
+    <div class="sidebar-foot"><span class="status-dot"></span>로컬 작업공간<a id="job-link" href="/runs" hidden>작업 진행 중 <span id="job-percent"></span></a></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><span class="manual-name">TM 9-2320-280-20-1</span><label class="run-picker"><span>결과</span><select id="runs" aria-label="실행 결과"><option>불러오는 중</option></select></label></header>
+    <main id="main">
+      <div class="page-heading"><div><h1 id="page-title">청크 탐색</h1><p id="page-description">검색용 텍스트와 원문 위치를 확인합니다.</p></div><span id="page-count" class="count-label"></span></div>
+      <div id="alert" role="alert" hidden></div>
+      <section id="explorer" class="explorer" aria-label="자료 탐색">
+        <form id="filter-form" class="toolbar" role="search">
+          <label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg><input id="search" type="search" aria-label="검색어" placeholder="내용 또는 청크 ID 검색" autocomplete="off"></label>
+          <label class="page-filter"><span>PDF</span><input id="page-filter" type="number" min="31" max="863" aria-label="PDF 쪽" placeholder="쪽 번호"></label>
+          <select id="kind" aria-label="청크 종류"><option value="">모든 종류</option><option value="prose">본문</option><option value="pmcs_item">PMCS 항목</option><option value="pmcs_context">PMCS 공통 설명</option><option value="table_row">표 행</option></select>
+          <select id="review-code" aria-label="검토 유형" hidden><option value="">모든 유형</option></select>
+          <button type="button" id="clear-filters" class="text-button">초기화</button>
+        </form>
+        <div class="panels">
+          <section class="results" aria-label="검색 결과"><div class="results-heading"><span id="result-count">불러오는 중</span><span id="range"></span></div><div id="list" class="list" aria-live="polite"></div><div class="pagination"><button id="previous" aria-label="이전 목록">← 이전</button><button id="next" aria-label="다음 목록">다음 →</button></div></section>
+          <article class="detail">
+            <div id="empty" class="empty"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h9l5 5v13H5zM14 3v6h5M9 13h6M9 17h4"/></svg><p>목록에서 항목을 선택하세요.</p><small>선택한 내용과 출처를 여기에 표시합니다.</small></div>
+            <div id="selection" hidden>
+              <div class="detail-header"><div><div class="detail-title-line"><h2 id="detail-title"></h2><span id="detail-type" class="tag"></span></div><p id="detail-meta"></p></div><button id="copy" class="quiet-button">텍스트 복사</button></div>
+              <div class="detail-tabs" role="tablist" aria-label="선택 항목 보기"><button role="tab" aria-selected="true" aria-controls="view-text" data-view="text">내용</button><button role="tab" aria-selected="false" aria-controls="view-compare" data-view="compare">원문 대조</button><button role="tab" aria-selected="false" aria-controls="view-source" data-view="source" id="source-tab">출처 기록</button></div>
+              <section id="view-text" class="detail-view" role="tabpanel" aria-label="내용"><pre id="text" class="body-text"></pre><div id="item-notes" class="item-notes" hidden></div></section>
+              <section id="view-compare" class="detail-view compare-view" role="tabpanel" aria-label="원문 대조" hidden><div class="comparison-text"><h3 id="compare-label">추출 텍스트</h3><pre id="compare-text"></pre></div><div class="pdf-panel"><div class="source-header"><label>원본 PDF <select id="source-page" aria-label="원문 페이지"></select></label><a id="image-link" target="_blank" rel="noopener">크게 보기 ↗</a></div><a id="image-view-link" target="_blank" rel="noopener"><img id="source-image" alt="원본 교범 PDF 페이지"></a><p id="source-help" class="caption">표시된 테두리는 선택한 텍스트의 원문 위치입니다.</p></div></section>
+              <section id="view-source" class="detail-view" role="tabpanel" aria-label="출처 기록" hidden><label class="field-label">문자 구간<select id="source-span" aria-label="문자 출처 구간"></select></label><div class="source-comparison"><div><h3>규칙 추출본</h3><pre id="before-text"></pre></div><div><h3>v4 보정본</h3><pre id="after-text"></pre></div></div><p id="source-meta" class="caption"></p><details><summary>세부 처리 기록</summary><pre id="metadata" class="technical"></pre></details></section>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="operations" class="operations" aria-label="생성 및 검증" hidden>
+        <div class="operation-actions"><button id="build" class="primary">새 corpus 생성</button><button id="verify">선택한 결과 검증</button><span>기존 결과는 보존됩니다.</span></div>
+        <section id="progress" class="progress" aria-live="polite" hidden><div><strong id="stage"></strong><span id="percent"></span></div><progress id="progressbar" max="100" value="0"></progress></section>
+        <div id="job-result" class="job-result" role="status" hidden></div>
+        <section class="operation-section"><h2>선택한 결과</h2><dl class="result-summary"><div><dt>검증</dt><dd id="audit-status">—</dd></div><div><dt>corpus 상태</dt><dd id="corpus-status">—</dd></div><div><dt>청크</dt><dd id="chunks-count">—</dd></div><div><dt>검토 항목</dt><dd><a id="review-link" href="/reviews">—</a></dd></div></dl><p id="audit-description" class="section-note"></p><p id="stale-notice" class="stale-notice" hidden>생성 당시와 현재 프로그램 버전이 다릅니다. 현재 규칙을 적용하려면 새 corpus를 생성하세요.</p><details id="audit-errors" hidden><summary>검증 오류</summary><pre id="error-list" class="technical"></pre></details></section>
+        <section class="operation-section"><h2>생성 설정</h2><dl class="settings"><div><dt>교범 범위</dt><dd id="scope-setting">제1·2장 · PDF 31–863쪽</dd></div><div><dt>원문 자료</dt><dd>2004년 Change 2 반영본 · v4 문자 보정 자료</dd></div><div><dt>청크 길이</dt><dd id="token-setting">최대 500 token · 같은 구조단위의 본문 100 token 중첩</dd></div><div><dt>Tokenizer</dt><dd>Qwen3-4B-Instruct-2507</dd></div><div><dt>재현 환경</dt><dd id="environment-setting">—</dd></div></dl><details><summary>설정과 검증 범위</summary><p>500 token에는 제목과 반복 조건이 포함됩니다. 표는 확인된 행·열 관계를 적용하며, 구조가 확정되지 않은 구간은 검토 목록에 남깁니다.</p><p>검증은 문자 보존, 출처 연결, 채택 규칙과 token 길이를 확인합니다. 원문 의미와 구조의 검토는 별도로 진행합니다. 생성 과정에서 LLM이나 평가질의를 사용하지 않습니다.</p></details></section>
+        <section class="operation-section"><h2>생성 이력</h2><div class="table-scroll"><table class="run-table"><thead><tr><th>결과 폴더</th><th>청크</th><th>상태</th><th><span class="sr-only">열기</span></th></tr></thead><tbody id="run-history"></tbody></table></div></section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

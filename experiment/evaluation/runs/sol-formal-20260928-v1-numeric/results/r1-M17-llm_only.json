@@ -1,0 +1,262 @@
+{
+  "at": "2026-09-28T09:55:51.775525+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "457c0aa1485845736f4bb3f349069003a1c386275a1ddc5b1a8f9fab35f225fe",
+  "original_result_sha256": "e01b4bf79776ffe433c34bfb6f8962a04f1bcbca9cde2cff7f133e5f530e3bf4",
+  "result": {
+    "attempt_key": "r1-M17-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 31.580853499999648,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9360498743197873
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9360498743197873
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.25
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M17",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a concrete technical explanation of vent-system operation and lists vent-tube conditions checked during PMCS."
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "During normal operation, the vent system allows air to enter the fuel tank to prevent vacuum formation."
+        },
+        {
+          "id": "C002",
+          "text": "During normal operation, the vent system ensures proper fuel flow and engine performance."
+        },
+        {
+          "id": "C003",
+          "text": "During deep-water fording, the vent system allows air to enter the fuel system as the vehicle submerges."
+        },
+        {
+          "id": "C004",
+          "text": "During deep-water fording, the vent system helps prevent fuel starvation and maintains fuel flow through the fuel pump."
+        },
+        {
+          "id": "C005",
+          "text": "During deep-water-fording-kit PMCS, the integrity of the vent tubes is checked."
+        },
+        {
+          "id": "C006",
+          "text": "During deep-water-fording-kit PMCS, the vent tubes are checked for cracks and blockages."
+        },
+        {
+          "id": "C007",
+          "text": "During deep-water-fording-kit PMCS, the vent tubes are checked for proper connection to the fuel tank and engine."
+        },
+        {
+          "id": "C008",
+          "text": "During deep-water-fording-kit PMCS, the vent tubes should be free of corrosion and provide a clear path for air flow."
+        }
+      ],
+      "claims_raw": [
+        "During normal operation, the vent system allows air to enter the fuel tank to prevent vacuum formation.",
+        "During normal operation, the vent system ensures proper fuel flow and engine performance.",
+        "During deep-water fording, the vent system allows air to enter the fuel system as the vehicle submerges.",
+        "During deep-water fording, the vent system helps prevent fuel starvation and maintains fuel flow through the fuel pump.",
+        "During deep-water-fording-kit PMCS, the integrity of the vent tubes is checked.",
+        "During deep-water-fording-kit PMCS, the vent tubes are checked for cracks and blockages.",
+        "During deep-water-fording-kit PMCS, the vent tubes are checked for proper connection to the fuel tank and engine.",
+        "During deep-water-fording-kit PMCS, the vent tubes should be free of corrosion and provide a clear path for air flow."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "allows air to enter the fuel tank",
+            "fulfilled": 0,
+            "id": "M17-A01",
+            "reason": "The answer describes air entering, not vapor escaping."
+          },
+          {
+            "answer_quote": "allowing air to enter the fuel system as the vehicle submerges",
+            "fulfilled": 0,
+            "id": "M17-A02",
+            "reason": "This contradicts the required prevention of venting to keep water out."
+          },
+          {
+            "answer_quote": "absence of cracks, blockages, and proper connection",
+            "fulfilled": 0,
+            "id": "M17-A03",
+            "reason": "It covers cracks and restrictions but omits bends and breaks; the remaining wording does not clearly supply all required conditions."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.25,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context says the system lets vapor escape, not that it admits air to the fuel tank.",
+              "statement": "During normal operation, the vent system allows air to enter the fuel tank to prevent vacuum formation.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not link venting to fuel flow or engine performance.",
+              "statement": "During normal operation, the vent system ensures proper fuel flow and engine performance.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context says the system prevents venting during deep-water fording.",
+              "statement": "During deep-water fording, the vent system allows air to enter the fuel system as the vehicle submerges.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Fuel starvation and fuel-pump flow are not described.",
+              "statement": "During deep-water fording, the vent system helps prevent fuel starvation and maintains fuel flow through the fuel pump.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:vent_inspect"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The inspection checks vent tubes for damage and restrictions.",
+              "statement": "During deep-water-fording-kit PMCS, the integrity of the vent tubes is checked.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:vent_inspect"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The procedure checks for cracks and restrictions.",
+              "statement": "During deep-water-fording-kit PMCS, the vent tubes are checked for cracks and blockages.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not specify checks of connections to the fuel tank and engine.",
+              "statement": "During deep-water-fording-kit PMCS, the vent tubes are checked for proper connection to the fuel tank and engine.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Restrictions are checked, but corrosion is not mentioned.",
+              "statement": "During deep-water-fording-kit PMCS, the vent tubes should be free of corrosion and provide a clear path for air flow.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0030757745537774994,
+        "cosine_similarities": [
+          0.9771638317785304,
+          0.9115022964534365,
+          0.919483494727395
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9360498743197873,
+        "query_vector_hash": "9dbb51a61960ef7088bb7f75a2a2ba85167a57c887022fb7ffefca7912abf161",
+        "ragas_score": 0.9329740997660098,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "df1ca8a1ad50917dcd1242755bf7791fac5d2adcd6af2fec01d9b343d85d50f5"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9771638317785304,
+          0.9115022964534365,
+          0.919483494727395
+        ],
+        "decimal50_cosines": [
+          "0.97716383177853052878517793367317366844175966967752",
+          "0.91150229645343659089388293065294131553514519180405",
+          "0.91948349472739508324096136737589666641523476049902"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": {
+          "code": "RAGAS_ALGORITHM_MISMATCH",
+          "type": "EvaluationError"
+        },
+        "original_metrics": {
+          "ar_raw": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          },
+          "ar_report": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          }
+        },
+        "query_vector_hash": "9dbb51a61960ef7088bb7f75a2a2ba85167a57c887022fb7ffefca7912abf161",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water fording-kit PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How does the vent system maintain fuel flow during normal operation and deep-water fording, and what vent-tube conditions are checked during fording-kit PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How does the vent system maintain fuel flow during normal operation and deep-water fording, and what vent tube conditions are checked during fording-kit PMCS?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "df1ca8a1ad50917dcd1242755bf7791fac5d2adcd6af2fec01d9b343d85d50f5",
+        "score": 0.9360498743197873
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "8406fd98355c5272130e804d15f73adc4eb5671b61b283f46b9a7acafceb0bf5"
+}

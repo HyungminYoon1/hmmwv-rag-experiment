@@ -1,0 +1,227 @@
+{
+  "at": "2026-09-28T09:56:40.150287+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "07fa4f655f79cf4e7eda0eebe71e4a38e45cff678682b768b185f18bacb2e5cd",
+  "original_result_sha256": "47b82c79c68d90008a9dcad48920ffdc355b3380d83abbc03e97951e523f20d5",
+  "result": {
+    "attempt_key": "r1-S15-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 33.09843919999912,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S15",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It says it cannot identify the manual’s direction without excerpts, but gives technical claims about white smoke and the cooling system."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8472374719544908,
+          0.8472375266183153,
+          0.8472375196535905
+        ],
+        "query_vector_hash": "86fdbe80e7b72b2d2951079b0d92deb20c4e96d8e6c465490a693de07f7f93ed",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "According to the TM 9-2320-280-20-1 manual, which diagnostic system should be checked when exhaust smoke is white?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "According to the TM 9-2320-280-20-1 manual, which diagnostic system should be checked when exhaust smoke is white?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "According to the TM 9-2320-280-20-1 manual, which diagnostic system should be checked when exhaust smoke is white?"
+          }
+        ],
+        "response_vectors_hash": "ee9f83037df96e91c4a3fe9a884d801f4f5cc6a1f3d10ff6267551050dbc92f7",
+        "score": 0.0
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The TM 9-2320-280-20-1 manual does not provide specific information on which diagnostic system to check when exhaust smoke is white."
+        },
+        {
+          "id": "C002",
+          "text": "No excerpts from the TM 9-2320-280-20-1 manual were supplied."
+        },
+        {
+          "id": "C003",
+          "text": "White exhaust smoke may indicate coolant leakage into the combustion chamber."
+        },
+        {
+          "id": "C004",
+          "text": "Coolant leakage into the combustion chamber would typically require checking the engine cooling system and associated seals or gaskets."
+        },
+        {
+          "id": "C005",
+          "text": "The answer is based on general automotive knowledge rather than directly on the TM 9-2320-280-20-1 manual."
+        }
+      ],
+      "claims_raw": [
+        "The TM 9-2320-280-20-1 manual does not provide specific information on which diagnostic system to check when exhaust smoke is white.",
+        "No excerpts from the TM 9-2320-280-20-1 manual were supplied.",
+        "White exhaust smoke may indicate coolant leakage into the combustion chamber.",
+        "Coolant leakage into the combustion chamber would typically require checking the engine cooling system and associated seals or gaskets.",
+        "The answer is based on general automotive knowledge rather than directly on the TM 9-2320-280-20-1 manual."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "checking the engine cooling system and associated seals or gaskets",
+            "fulfilled": 0,
+            "id": "S15-A01",
+            "reason": "The answer names the cooling system, not the fuel system in paragraph 2-22."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context directs the reader to the fuel system for white smoke.",
+              "statement": "The TM 9-2320-280-20-1 manual does not provide specific information on which diagnostic system to check when exhaust smoke is white.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify the source of the supplied excerpt.",
+              "statement": "No excerpts from the TM 9-2320-280-20-1 manual were supplied.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Coolant leakage is not mentioned.",
+              "statement": "White exhaust smoke may indicate coolant leakage into the combustion chamber.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not discuss coolant leakage or cooling-system checks.",
+              "statement": "Coolant leakage into the combustion chamber would typically require checking the engine cooling system and associated seals or gaskets.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish the answer’s source.",
+              "statement": "The answer is based on general automotive knowledge rather than directly on the TM 9-2320-280-20-1 manual.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8472374719544908,
+          0.8472375266183153,
+          0.8472375196535905
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "86fdbe80e7b72b2d2951079b0d92deb20c4e96d8e6c465490a693de07f7f93ed",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "ee9f83037df96e91c4a3fe9a884d801f4f5cc6a1f3d10ff6267551050dbc92f7"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8472374719544908,
+          0.8472375266183153,
+          0.8472375196535905
+        ],
+        "decimal50_cosines": [
+          "0.84723747195449094094601987067153743624844880254123",
+          "0.84723752661831536483793182936313218039678932037815",
+          "0.84723751965359059472348394128977162798943727669420"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "86fdbe80e7b72b2d2951079b0d92deb20c4e96d8e6c465490a693de07f7f93ed",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "According to the TM 9-2320-280-20-1 manual, which diagnostic system should be checked when exhaust smoke is white?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "According to the TM 9-2320-280-20-1 manual, which diagnostic system should be checked when exhaust smoke is white?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "According to the TM 9-2320-280-20-1 manual, which diagnostic system should be checked when exhaust smoke is white?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "ee9f83037df96e91c4a3fe9a884d801f4f5cc6a1f3d10ff6267551050dbc92f7",
+        "score": 0.0
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "746bc887d9d81136071f40c0b6bacfdbac443369709f3ca7923ae1e876f544ac"
+}

@@ -1,0 +1,190 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T05:20:28.071112+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "The idle-speed range specified for the 6.2-liter engine is 625–675 RPM.",
+        "fulfilled": 1,
+        "id": "S14-A01",
+        "reason": "625–675 RPM equals 650 ± 25 RPM for the 6.2L engine."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790659230,
+      "conversation": null,
+      "created_at": 1790659228.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0d2bc28da338eca9016abb4a9c4f9087d0b64abeb509ee6d54",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S14-A01\",\"fulfilled\":1,\"answer_quote\":\"The idle-speed range specified for the 6.2-liter engine is 625–675 RPM.\",\"reason\":\"625–675 RPM equals 650 ± 25 RPM for the 6.2L engine.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0d2bc28da338eca9016abb4a9d73c487d0b0cd6012fdae7c44",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1288,
+        "input_tokens_details": {
+          "cache_write_tokens": 1285,
+          "cached_tokens": 0
+        },
+        "output_tokens": 70,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1358
+      },
+      "user": null
+    },
+    "request_id": "resp_0d2bc28da338eca9016abb4a9c4f9087d0b64abeb509ee6d54",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S14-A01\",\"fulfilled\":1,\"answer_quote\":\"The idle-speed range specified for the 6.2-liter engine is 625–675 RPM.\",\"reason\":\"625–675 RPM equals 650 ± 25 RPM for the 6.2L engine.\"}]}",
+    "usage": {
+      "input_tokens": 1288,
+      "input_tokens_details": {
+        "cache_write_tokens": 1285,
+        "cached_tokens": 0
+      },
+      "output_tokens": 70,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1358
+    }
+  },
+  "record_hash": "5e6e2c508cb999d3f3dc76fe62f04f5eac4312759c34420002cd1f5aff5e8039",
+  "request_hash": "8b08933fa857e45ed0bce18822197e1761b12fbe4e84b799c2d0109ceed6df15",
+  "started_at": "2026-09-29T05:20:25.784320+00:00",
+  "status": "OK"
+}

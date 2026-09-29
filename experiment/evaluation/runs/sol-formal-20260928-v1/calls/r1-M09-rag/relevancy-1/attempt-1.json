@@ -1,0 +1,154 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:07:45.666555+00:00",
+  "parsed": {
+    "noncommittal": 0,
+    "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586465,
+      "conversation": null,
+      "created_at": 1790586463.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_045f16e82b4c37d7016aba2e5fa41c87d08d0e267676d2afaa",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"question\":\"What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?\",\"noncommittal\":0}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_045f16e82b4c37d7016aba2e60b27087d0aad3c0ad700ed87d",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerRelevanceOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for answer relevance question generation.",
+            "properties": {
+              "noncommittal": {
+                "description": "1 if the response is evasive/vague, 0 if it is substantive",
+                "title": "Noncommittal",
+                "type": "integer"
+              },
+              "question": {
+                "description": "Question that can be answered from the response",
+                "title": "Question",
+                "type": "string"
+              }
+            },
+            "required": [
+              "question",
+              "noncommittal"
+            ],
+            "title": "AnswerRelevanceOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 629,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 50,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 679
+      },
+      "user": null
+    },
+    "request_id": "resp_045f16e82b4c37d7016aba2e5fa41c87d08d0e267676d2afaa",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"question\":\"What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?\",\"noncommittal\":0}",
+    "usage": {
+      "input_tokens": 629,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 50,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 679
+    }
+  },
+  "record_hash": "09777b0a7ca69c4f55d6f30e5c1c36e3be5fff81505bdce269d1f2eb8649ba6a",
+  "request_hash": "6f8ae4ee95b128a1b1ef1b91dda5fc03196f6b02e548882fbdac808234c4260c",
+  "started_at": "2026-09-28T09:07:43.013495+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,487 @@
+{
+  "at": "2026-09-29T04:59:32.368036+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "ad27302510d92923e062aa8a7efc2a12b78bab1e047d84c72397c85e23ef4199",
+  "result": {
+    "attempt_key": "r1-M17-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 37.70403710000028,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9845759565263617
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9845759565263617
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M17",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly describes the vent system’s operation and lists specific vent-tube conditions checked during PMCS."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9845759529320042,
+          0.9845759529320042,
+          0.9845759637150764
+        ],
+        "query_vector_hash": "9dbb51a61960ef7088bb7f75a2a2ba85167a57c887022fb7ffefca7912abf161",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water-fording-kit PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water-fording-kit PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water-fording-kit PMCS?"
+          }
+        ],
+        "response_vectors_hash": "87fc854a99edaf026c1dcad58d78e0ec343096d2d2a6881ec3fa39b54f74778e",
+        "score": 0.9845759565263615
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "During normal operation",
+          "During deep-water fording operations",
+          "During deep-water-fording-kit PMCS"
+        ],
+        "statements": [
+          {
+            "answer_quote": "During normal operation, the vent system allows vapor to escape to the atmosphere.",
+            "statement": "During normal operation, the vent system allows vapor to escape to the atmosphere."
+          },
+          {
+            "answer_quote": "During deep-water fording operations, it prevents venting",
+            "statement": "During deep-water fording operations, the vent system prevents venting."
+          },
+          {
+            "answer_quote": "prevents venting to avoid water entering the engine and other systems",
+            "statement": "During deep-water fording operations, preventing venting is intended to avoid water entering the engine and other systems."
+          },
+          {
+            "answer_quote": "water entering the engine and other systems, which could cause damage",
+            "statement": "During deep-water fording operations, water entering the engine and other systems could cause damage."
+          },
+          {
+            "answer_quote": "physical conditions of vent tubes are checked: bends",
+            "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for bends."
+          },
+          {
+            "answer_quote": "vent tubes are checked: bends, cracks",
+            "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for cracks."
+          },
+          {
+            "answer_quote": "cracks, breaks",
+            "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for breaks."
+          },
+          {
+            "answer_quote": "breaks, deterioration",
+            "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for deterioration."
+          },
+          {
+            "answer_quote": "deterioration, and restrictions",
+            "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for restrictions."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "During normal operation, the vent system allows vapor to escape to the atmosphere.",
+          "id": "C001",
+          "text": "During normal operation, the vent system allows vapor to escape to the atmosphere."
+        },
+        {
+          "answer_quote": "During deep-water fording operations, it prevents venting",
+          "id": "C002",
+          "text": "During deep-water fording operations, the vent system prevents venting."
+        },
+        {
+          "answer_quote": "prevents venting to avoid water entering the engine and other systems",
+          "id": "C003",
+          "text": "During deep-water fording operations, preventing venting is intended to avoid water entering the engine and other systems."
+        },
+        {
+          "answer_quote": "water entering the engine and other systems, which could cause damage",
+          "id": "C004",
+          "text": "During deep-water fording operations, water entering the engine and other systems could cause damage."
+        },
+        {
+          "answer_quote": "physical conditions of vent tubes are checked: bends",
+          "id": "C005",
+          "text": "During deep-water-fording-kit PMCS, vent tubes are checked for bends."
+        },
+        {
+          "answer_quote": "vent tubes are checked: bends, cracks",
+          "id": "C006",
+          "text": "During deep-water-fording-kit PMCS, vent tubes are checked for cracks."
+        },
+        {
+          "answer_quote": "cracks, breaks",
+          "id": "C007",
+          "text": "During deep-water-fording-kit PMCS, vent tubes are checked for breaks."
+        },
+        {
+          "answer_quote": "breaks, deterioration",
+          "id": "C008",
+          "text": "During deep-water-fording-kit PMCS, vent tubes are checked for deterioration."
+        },
+        {
+          "answer_quote": "deterioration, and restrictions",
+          "id": "C009",
+          "text": "During deep-water-fording-kit PMCS, vent tubes are checked for restrictions."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "During normal operation, the vent system allows vapor to escape to the atmosphere.",
+            "fulfilled": 1,
+            "id": "M17-A01",
+            "reason": "States that vapor escapes during normal operation."
+          },
+          {
+            "answer_quote": "During deep-water fording operations, it prevents venting to avoid water entering the engine and other systems",
+            "fulfilled": 1,
+            "id": "M17-A02",
+            "reason": "States both the prevention of venting and its purpose."
+          },
+          {
+            "answer_quote": "bends, cracks, breaks, deterioration, and restrictions",
+            "fulfilled": 1,
+            "id": "M17-A03",
+            "reason": "Lists every required vent-tube condition checked during PMCS."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "The purpose of\nthe vent system is to allow vapor to escape to the atmosphere under normal operation, and to\nprevent venting during deep water fording operations."
+              ],
+              "reason": "The passage states this purpose under normal operation.",
+              "statement": "During normal operation, the vent system allows vapor to escape to the atmosphere.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "The purpose of\nthe vent system is to allow vapor to escape to the atmosphere under normal operation, and to\nprevent venting during deep water fording operations."
+              ],
+              "reason": "The passage explicitly states that the system prevents venting during deep water fording.",
+              "statement": "During deep-water fording operations, the vent system prevents venting.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "The purpose of\nthe vent system is to allow vapor to escape to the atmosphere under normal operation, and to\nprevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The passage says the system prevents venting during fording and that leaving vents open would let water enter.",
+              "statement": "During deep-water fording operations, preventing venting is intended to avoid water entering the engine and other systems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The passage states that water entering through open vents would cause damage.",
+              "statement": "During deep-water fording operations, water entering the engine and other systems could cause damage.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001031",
+                "C001031"
+              ],
+              "evidence_quotes": [
+                "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 25\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: DeepWater\nFording Kit",
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The DeepWater Fording Kit PMCS procedure lists bends among vent-tube inspection conditions.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for bends.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001031",
+                "C001031"
+              ],
+              "evidence_quotes": [
+                "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 25\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: DeepWater\nFording Kit",
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The DeepWater Fording Kit PMCS procedure lists cracks among vent-tube inspection conditions.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for cracks.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001031",
+                "C001031"
+              ],
+              "evidence_quotes": [
+                "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 25\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: DeepWater\nFording Kit",
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The DeepWater Fording Kit PMCS procedure lists breaks among vent-tube inspection conditions.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for breaks.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001031",
+                "C001031"
+              ],
+              "evidence_quotes": [
+                "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 25\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: DeepWater\nFording Kit",
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The DeepWater Fording Kit PMCS procedure lists deterioration among vent-tube inspection conditions.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for deterioration.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001031",
+                "C001031"
+              ],
+              "evidence_quotes": [
+                "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 25\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: DeepWater\nFording Kit",
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The DeepWater Fording Kit PMCS procedure lists restrictions among vent-tube inspection conditions.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for restrictions.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C001409"
+              ],
+              "evidence_quotes": [
+                "The purpose of\nthe vent system is to allow vapor to escape to the atmosphere under normal operation"
+              ],
+              "reason": "The source states this purpose under normal operation.",
+              "statement": "During normal operation, the vent system allows vapor to escape to the atmosphere.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001409"
+              ],
+              "evidence_quotes": [
+                "to\nprevent venting during deep water fording operations."
+              ],
+              "reason": "The source states that the system prevents venting during deep-water fording.",
+              "statement": "During deep-water fording operations, the vent system prevents venting.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001409"
+              ],
+              "evidence_quotes": [
+                "to\nprevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The source links preventing venting during fording to the consequence of leaving vents open.",
+              "statement": "During deep-water fording operations, preventing venting is intended to avoid water entering the engine and other systems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001409"
+              ],
+              "evidence_quotes": [
+                "If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The source says open vents would allow water to enter those systems and cause damage.",
+              "statement": "During deep-water fording operations, water entering the engine and other systems could cause damage.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001031"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The kit inspection procedure lists bends.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for bends.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001031"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The kit inspection procedure lists cracks.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for cracks.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001031"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The kit inspection procedure lists breaks.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for breaks.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001031"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The kit inspection procedure lists deterioration.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for deterioration.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001031"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: a. Inspect vent tubes for bends,\ncracks, breaks, deterioration, and\nrestrictions."
+              ],
+              "reason": "The kit inspection procedure lists restrictions.",
+              "statement": "During deep-water-fording-kit PMCS, vent tubes are checked for restrictions.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9845759529320042,
+          0.9845759529320042,
+          0.9845759637150764
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9845759565263617,
+        "query_vector_hash": "9dbb51a61960ef7088bb7f75a2a2ba85167a57c887022fb7ffefca7912abf161",
+        "ragas_score": 0.9845759565263615,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "87fc854a99edaf026c1dcad58d78e0ec343096d2d2a6881ec3fa39b54f74778e"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9845759529320042,
+          0.9845759529320042,
+          0.9845759637150764
+        ],
+        "decimal50_cosines": [
+          "0.98457595293200414693513263688368596577573904358100",
+          "0.98457595293200414693513263688368596577573904358100",
+          "0.98457596371507648445429859495702997322461582467536"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9845759565263615
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9845759565263615
+          }
+        },
+        "query_vector_hash": "9dbb51a61960ef7088bb7f75a2a2ba85167a57c887022fb7ffefca7912abf161",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water-fording-kit PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water-fording-kit PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the vent system do during normal operation and deep-water fording, and what vent-tube conditions are checked during deep-water-fording-kit PMCS?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "87fc854a99edaf026c1dcad58d78e0ec343096d2d2a6881ec3fa39b54f74778e",
+        "score": 0.9845759565263617
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "8cd27b218efa36f806e13297951f4b5c36a7f6ddef8f6a3157d6a80375ebf9e3"
+}

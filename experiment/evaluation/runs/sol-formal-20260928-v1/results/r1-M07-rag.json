@@ -1,0 +1,280 @@
+{
+  "at": "2026-09-28T09:06:07.934568+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "f85ecfa7481ca49fdc7547caae018bec0633770dc62a998091362f28120f7e7e",
+  "result": {
+    "attempt_key": "r1-M07-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 43.205571400001645,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.75
+      }
+    },
+    "question_id": "M07",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It does not provide the requested pressure, but gives specific cap-removal precautions."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8145941733315145,
+          0.814594200371029,
+          0.8145942059273472
+        ],
+        "query_vector_hash": "6025446f2bf27d6a9f2aebd2bb54eb716377d6de7b0b874bf2d5882c8e35066e",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "At what pressure does the surge-tank cap valve relieve pressure?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "At what pressure does the surge-tank cap valve relieve pressure?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "At what pressure does the surge-tank cap valve relieve pressure?"
+          }
+        ],
+        "response_vectors_hash": "d9159bb18a203e837d44b8c88643efdcb741fe1ad7522a8d06e513fa9f04f87d",
+        "score": 0.0
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The referenced material does not specify the exact pressure at which the surge-tank cap valve relieves pressure."
+        },
+        {
+          "id": "C002",
+          "text": "After vehicle operation, the cooling-system PMCS warning instructs personnel to use extreme care to avoid burns when removing the radiator cap."
+        },
+        {
+          "id": "C003",
+          "text": "After vehicle operation, the cooling-system PMCS warning instructs personnel to use heavy rags or gloves to protect hands."
+        },
+        {
+          "id": "C004",
+          "text": "After vehicle operation, the cooling-system PMCS warning instructs personnel to turn the radiator cap only one-half turn counterclockwise."
+        },
+        {
+          "id": "C005",
+          "text": "After turning the radiator cap only one-half turn counterclockwise, the cooling-system PMCS warning instructs personnel to allow pressure to be released before fully removing the radiator cap."
+        }
+      ],
+      "claims_raw": [
+        "The referenced material does not specify the exact pressure at which the surge-tank cap valve relieves pressure.",
+        "After vehicle operation, the cooling-system PMCS warning instructs personnel to use extreme care to avoid burns when removing the radiator cap.",
+        "After vehicle operation, the cooling-system PMCS warning instructs personnel to use heavy rags or gloves to protect hands.",
+        "After vehicle operation, the cooling-system PMCS warning instructs personnel to turn the radiator cap only one-half turn counterclockwise.",
+        "After turning the radiator cap only one-half turn counterclockwise, the cooling-system PMCS warning instructs personnel to allow pressure to be released before fully removing the radiator cap."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The referenced material does not specify the exact pressure at which the surge-tank cap valve relieves pressure.",
+            "fulfilled": 0,
+            "id": "M07-A01",
+            "reason": "The answer omits the approximately 15 psi (103 kPa) relief pressure and incorrectly says it is unspecified."
+          },
+          {
+            "answer_quote": "Use extreme care to avoid being burned when removing the radiator cap.  \n- Use heavy rags or gloves to protect hands.",
+            "fulfilled": 1,
+            "id": "M07-A02",
+            "reason": "States both burn avoidance and hand protection."
+          },
+          {
+            "answer_quote": "Turn the radiator cap only one-half turn counterclockwise",
+            "fulfilled": 1,
+            "id": "M07-A03",
+            "reason": "Gives the specified initial turn."
+          },
+          {
+            "answer_quote": "allow pressure to be released before fully removing it.",
+            "fulfilled": 1,
+            "id": "M07-A04",
+            "reason": "Specifies releasing pressure before full removal."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002155",
+                "C000907"
+              ],
+              "evidence_quotes": [
+                "Do not remove surge tank filler\ncap before releasing internal pressure\nwhen engine temperature is above\n190 °F (88°C).",
+                "Turn radiator cap\nonly one-half turn counterclockwise\nand allow pressure to be released\nbefore fully removing cap."
+              ],
+              "reason": "The supplied material mentions releasing pressure but gives no cap-valve relief-pressure value.",
+              "statement": "The referenced material does not specify the exact pressure at which the surge-tank cap valve relieves pressure.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000907"
+              ],
+              "evidence_quotes": [
+                "If vehicle has been operating, use\nextreme care to avoid being burned\nwhen removing cooling system\nradiator cap."
+              ],
+              "reason": "The PMCS warning states this instruction explicitly.",
+              "statement": "After vehicle operation, the cooling-system PMCS warning instructs personnel to use extreme care to avoid burns when removing the radiator cap.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000907"
+              ],
+              "evidence_quotes": [
+                "If vehicle has been operating, use\nextreme care to avoid being burned\nwhen removing cooling system\nradiator cap. Use heavy rags or gloves\nto protect hands."
+              ],
+              "reason": "The PMCS warning explicitly calls for heavy rags or gloves.",
+              "statement": "After vehicle operation, the cooling-system PMCS warning instructs personnel to use heavy rags or gloves to protect hands.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000907"
+              ],
+              "evidence_quotes": [
+                "If vehicle has been operating, use\nextreme care to avoid being burned\nwhen removing cooling system\nradiator cap. Use heavy rags or gloves\nto protect hands. Turn radiator cap\nonly one-half turn counterclockwise"
+              ],
+              "reason": "The PMCS warning gives that instruction explicitly.",
+              "statement": "After vehicle operation, the cooling-system PMCS warning instructs personnel to turn the radiator cap only one-half turn counterclockwise.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000907"
+              ],
+              "evidence_quotes": [
+                "Turn radiator cap\nonly one-half turn counterclockwise\nand allow pressure to be released\nbefore fully removing cap."
+              ],
+              "reason": "The PMCS warning states that sequence explicitly.",
+              "statement": "After turning the radiator cap only one-half turn counterclockwise, the cooling-system PMCS warning instructs personnel to allow pressure to be released before fully removing the radiator cap.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:cap"
+              ],
+              "evidence_quotes": [
+                "When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere."
+              ],
+              "reason": "It gives an approximate pressure, not an exact one.",
+              "statement": "The referenced material does not specify the exact pressure at which the surge-tank cap valve relieves pressure.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:cap_warning"
+              ],
+              "evidence_quotes": [
+                "If vehicle has been operating, use\nextreme care to avoid being burned\nwhen removing cooling system\nradiator cap."
+              ],
+              "reason": "The warning explicitly gives this instruction.",
+              "statement": "After vehicle operation, the cooling-system PMCS warning instructs personnel to use extreme care to avoid burns when removing the radiator cap.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:cap_warning"
+              ],
+              "evidence_quotes": [
+                "If vehicle has been operating, use\nextreme care to avoid being burned\nwhen removing cooling system\nradiator cap. Use heavy rags or gloves\nto protect hands."
+              ],
+              "reason": "The warning explicitly gives this instruction.",
+              "statement": "After vehicle operation, the cooling-system PMCS warning instructs personnel to use heavy rags or gloves to protect hands.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:cap_warning"
+              ],
+              "evidence_quotes": [
+                "If vehicle has been operating, use\nextreme care to avoid being burned\nwhen removing cooling system\nradiator cap. Use heavy rags or gloves\nto protect hands. Turn radiator cap\nonly one-half turn counterclockwise"
+              ],
+              "reason": "The warning explicitly specifies a one-half turn counterclockwise.",
+              "statement": "After vehicle operation, the cooling-system PMCS warning instructs personnel to turn the radiator cap only one-half turn counterclockwise.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:cap_warning"
+              ],
+              "evidence_quotes": [
+                "Turn radiator cap\nonly one-half turn counterclockwise\nand allow pressure to be released\nbefore fully removing cap."
+              ],
+              "reason": "The warning states this sequence directly.",
+              "statement": "After turning the radiator cap only one-half turn counterclockwise, the cooling-system PMCS warning instructs personnel to allow pressure to be released before fully removing the radiator cap.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8145941733315145,
+          0.814594200371029,
+          0.8145942059273472
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "6025446f2bf27d6a9f2aebd2bb54eb716377d6de7b0b874bf2d5882c8e35066e",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d9159bb18a203e837d44b8c88643efdcb741fe1ad7522a8d06e513fa9f04f87d"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "29e006fff705e6b9041e1dde3581e3204c5b92bdd3857aa4a1b0f10ce58df13e"
+}

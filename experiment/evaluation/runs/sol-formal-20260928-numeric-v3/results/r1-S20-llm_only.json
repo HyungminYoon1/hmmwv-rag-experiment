@@ -1,0 +1,227 @@
+{
+  "at": "2026-09-28T09:59:37.702620+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "f09175505c6a3f1b89b55dddb92196092f2a19a3370a7e97d945ecdc59f7d622",
+  "original_result_sha256": "ec62044f5983ff17e0b46952ff7dd280e74ceb568c51789b368d2a22348746f8",
+  "result": {
+    "attempt_key": "r1-S20-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 35.408431500000006,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8337736804207778
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8337736804207778
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S20",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "It gives a concrete voltage of 10.5 volts and makes additional substantive claims about its basis, despite the caveat about missing excerpts."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8373741593754335,
+          0.8431139607842975,
+          0.8208329211026024
+        ],
+        "query_vector_hash": "0cda7591a381585a05ea31ae2c0bba8fe83c18f08cf884839a8ecaeb856cdd29",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What minimum battery voltage is checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage checked while cranking the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          }
+        ],
+        "response_vectors_hash": "e3835c5a9498402b7dfeda3625d8ad35c9e4640cd60915ef741205783a2baf8e",
+        "score": 0.8337736804207779
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "In Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series), the minimum battery voltage checked while attempting to crank the engine is 10.5 volts."
+        },
+        {
+          "id": "C002",
+          "text": "The 10.5-volt minimum is based on standard vehicle electrical system diagnostic practices outlined in typical maintenance manuals for military vehicles of that era, including TM 9-2320-280-20-1."
+        },
+        {
+          "id": "C003",
+          "text": "No specific excerpts from TM 9-2320-280-20-1 were provided in REFERENCE."
+        },
+        {
+          "id": "C004",
+          "text": "The answer is derived from general knowledge of Starter Circuit diagnostic procedures."
+        },
+        {
+          "id": "C005",
+          "text": "No chunk ID is available."
+        }
+      ],
+      "claims_raw": [
+        "In Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series), the minimum battery voltage checked while attempting to crank the engine is 10.5 volts.",
+        "The 10.5-volt minimum is based on standard vehicle electrical system diagnostic practices outlined in typical maintenance manuals for military vehicles of that era, including TM 9-2320-280-20-1.",
+        "No specific excerpts from TM 9-2320-280-20-1 were provided in REFERENCE.",
+        "The answer is derived from general knowledge of Starter Circuit diagnostic procedures.",
+        "No chunk ID is available."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "10.5 volts",
+            "fulfilled": 0,
+            "id": "S20-A01",
+            "reason": "The response gives 10.5 V, but the required minimum is 18 V."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The flowchart asks whether battery voltage is at least 18 volts, not 10.5 volts.",
+              "statement": "In Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series), the minimum battery voltage checked while attempting to crank the engine is 10.5 volts.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives an 18-volt threshold and does not support the claimed basis.",
+              "statement": "The 10.5-volt minimum is based on standard vehicle electrical system diagnostic practices outlined in typical maintenance manuals for military vehicles of that era, including TM 9-2320-280-20-1.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify a REFERENCE section or establish what it contains.",
+              "statement": "No specific excerpts from TM 9-2320-280-20-1 were provided in REFERENCE.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not state how an answer was derived.",
+              "statement": "The answer is derived from general knowledge of Starter Circuit diagnostic procedures.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish whether a chunk ID is available.",
+              "statement": "No chunk ID is available.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.8373741593754335,
+          0.8431139607842975,
+          0.8208329211026024
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8337736804207778,
+        "query_vector_hash": "0cda7591a381585a05ea31ae2c0bba8fe83c18f08cf884839a8ecaeb856cdd29",
+        "ragas_score": 0.8337736804207779,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "e3835c5a9498402b7dfeda3625d8ad35c9e4640cd60915ef741205783a2baf8e"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8373741593754335,
+          0.8431139607842975,
+          0.8208329211026024
+        ],
+        "decimal50_cosines": [
+          "0.83737415937543343179467070114474324268335865127693",
+          "0.84311396078429756936350520788194869227244929876280",
+          "0.82083292110260253102453275422720033428457164223164"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8337736804207779
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8337736804207779
+          }
+        },
+        "query_vector_hash": "0cda7591a381585a05ea31ae2c0bba8fe83c18f08cf884839a8ecaeb856cdd29",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What minimum battery voltage is checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage checked while cranking the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "e3835c5a9498402b7dfeda3625d8ad35c9e4640cd60915ef741205783a2baf8e",
+        "score": 0.8337736804207778
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "6a21a188cdd9db3009cfbe9f0731ea123e668b53b34e1e4723fb16a591d77d69"
+}

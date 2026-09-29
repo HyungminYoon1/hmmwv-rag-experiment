@@ -1,0 +1,107 @@
+{
+  "at": "2026-09-28T06:16:20.805719+00:00",
+  "identity_hash": "1ffcc02864ac8659ff0444897132894d0c2bf9638483d9ecd601782e90aa96c4",
+  "input_hash": "f3e80c92cad00e0a13c6818a3d4526bc0cdfc479a67c296597938d79c6b014f8",
+  "result": {
+    "attempt_key": "synthetic-wrong",
+    "condition": "RAG",
+    "errors": {
+      "answer_relevancy": {
+        "code": "RAGAS_ALGORITHM_MISMATCH",
+        "type": "EvaluationError"
+      }
+    },
+    "evaluation_elapsed_seconds": 20.751158699998996,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "SYN02",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "full_abstention",
+        "reason": "The response provides a specific, technical factual claim (storing the Luma test box at 30 degrees Celsius), which is a substantive factual statement. Even though the Luma test box is fictional, the response gives a concrete technical answer, not a disclaimer or refusal. Therefore, it does not qualify as a full abstention or partial abstention. It is a factual claim, so it should be classified as containing factual claims."
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The Luma test box should be stored at 30 degrees Celsius."
+        }
+      ],
+      "claims_raw": [
+        "The Luma test box should be stored at 30 degrees Celsius."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Store the Luma test box at 30 degrees Celsius.",
+            "fulfilled": 0,
+            "id": "temperature",
+            "reason": "The required storage temperature is explicitly stated as 12 degrees Celsius in the oracle, but the response states 30 degrees Celsius, which contradicts the required value."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies storing the Luma test box at 12 degrees Celsius, not 30 degrees Celsius.",
+              "statement": "The Luma test box should be stored at 30 degrees Celsius.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies storing the Luma test box at 12 degrees Celsius, not 30 degrees Celsius.",
+              "statement": "The Luma test box should be stored at 30 degrees Celsius.",
+              "verdict": 0
+            }
+          ]
+        }
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "80ab2c28fb161e93f6e6c55840073d61cab3f385ae989082f1690f80149cde38"
+}

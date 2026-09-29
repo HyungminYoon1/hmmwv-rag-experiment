@@ -1,0 +1,434 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:22:43.158361+00:00",
+  "evaluation_answer": "The diagnostic connector on the HMMWV (M998-series) serves to allow for the connection of diagnostic equipment to the vehicle's onboard computer system, enabling technicians to monitor and troubleshoot vehicle systems, such as engine performance, transmission function, and other electronic control modules. This facilitates maintenance, fault detection, and system performance evaluation. [No manual excerpts supplied. Answer from existing model knowledge.]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 224,
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nWhat purpose does the diagnostic connector serve among the major interior components?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "purpose": "WARMUP",
+  "question": "What purpose does the diagnostic connector serve among the major interior components?",
+  "question_id": "D02",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:00.014150607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:09:57.787723907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836835328.0,
+    "max_actual_interval_ms": 110.56680000001506,
+    "peak_rss_bytes": 3477667840,
+    "peak_vram_bytes": 4836835328,
+    "pids": [
+      13944,
+      30736,
+      36564,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4647.2070594,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4647.3149579,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4647.407591,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4647.5176618,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4647.6121394,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4647.7223956,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4647.8166256,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4647.9101695,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.0177865,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.1113057,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57782272,
+          "30736": 12607488,
+          "36564": 95789056,
+          "37504": 3219685376,
+          "37564": 7442432
+        },
+        "rss_bytes": 3393306624,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.2218725,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3258478592,
+          "37564": 7442432
+        },
+        "rss_bytes": 3432214528,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.3144996,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.4218356,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.5140309,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.621754,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.7165726,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.8099871,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4648.9189018,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4649.0127305,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4649.1198323,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4649.2124501,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4649.3192057,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57876480,
+          "30736": 12607488,
+          "36564": 95809536,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 3477667840,
+        "vram_bytes": 4836835328
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:22:43.1578498Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 82,
+    "eval_duration": 1071906999,
+    "load_duration": 2649100,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 224,
+    "prompt_eval_duration": 19874000,
+    "response": "The diagnostic connector on the HMMWV (M998-series) serves to allow for the connection of diagnostic equipment to the vehicle's onboard computer system, enabling technicians to monitor and troubleshoot vehicle systems, such as engine performance, transmission function, and other electronic control modules. This facilitates maintenance, fault detection, and system performance evaluation. [No manual excerpts supplied. Answer from existing model knowledge.]",
+    "total_duration": 1131585200
+  },
+  "retrieval": null,
+  "round": 1,
+  "started_at": "2026-09-28T04:22:42.024228+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1134.4060000001264,
+    "retrieval": null,
+    "total": 1134.4060000001264
+  },
+  "unprovided_citations": []
+}

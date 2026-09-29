@@ -1,0 +1,205 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T05:19:11.784893+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "C002106"
+        ],
+        "evidence_quotes": [
+          "When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere."
+        ],
+        "reason": "The source states this opening condition and pressure directly.",
+        "statement": "The surge-tank cap valve opens when cooling-system pressure reaches approximately 15 psi (103 kPa).",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790659154,
+      "conversation": null,
+      "created_at": 1790659151.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_096a9e0db4c56c1b016abb4a4f3dc487d0a432da00e51c7207",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The surge-tank cap valve opens when cooling-system pressure reaches approximately 15 psi (103 kPa).\",\"reason\":\"The source states this opening condition and pressure directly.\",\"verdict\":1,\"evidence_ids\":[\"C002106\"],\"evidence_quotes\":[\"When the cooling\\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\\nopens and lets excess pressure escape to the atmosphere.\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_096a9e0db4c56c1b016abb4a5080a887d08b5426fd4e476c17",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1238,
+        "input_tokens_details": {
+          "cache_write_tokens": 1235,
+          "cached_tokens": 0
+        },
+        "output_tokens": 104,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1342
+      },
+      "user": null
+    },
+    "request_id": "resp_096a9e0db4c56c1b016abb4a4f3dc487d0a432da00e51c7207",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The surge-tank cap valve opens when cooling-system pressure reaches approximately 15 psi (103 kPa).\",\"reason\":\"The source states this opening condition and pressure directly.\",\"verdict\":1,\"evidence_ids\":[\"C002106\"],\"evidence_quotes\":[\"When the cooling\\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\\nopens and lets excess pressure escape to the atmosphere.\"]}]}",
+    "usage": {
+      "input_tokens": 1238,
+      "input_tokens_details": {
+        "cache_write_tokens": 1235,
+        "cached_tokens": 0
+      },
+      "output_tokens": 104,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1342
+    }
+  },
+  "record_hash": "e7005ffe88cb61e89cd5f16b399aa3a6c6942cdbb7516278f9b05e016734e845",
+  "request_hash": "0652c5b280577edf64dae57c7a321a292a537aa0eb2e24d585ee2348bb9db804",
+  "started_at": "2026-09-29T05:19:08.675777+00:00",
+  "status": "OK"
+}

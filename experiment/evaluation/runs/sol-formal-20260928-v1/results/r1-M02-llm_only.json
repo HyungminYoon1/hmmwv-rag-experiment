@@ -1,0 +1,189 @@
+{
+  "at": "2026-09-28T08:59:27.596693+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "de0c1867f30db5d8f7d82c889ce8b6fb5fa66f1eb7b82da252fb5c412f978a92",
+  "result": {
+    "attempt_key": "r1-M02-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {
+      "answer_relevancy": {
+        "code": "RAGAS_ALGORITHM_MISMATCH",
+        "type": "EvaluationError"
+      }
+    },
+    "evaluation_elapsed_seconds": 44.85185229999843,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_EVAL_ERROR",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.25
+      }
+    },
+    "question_id": "M02",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It says it cannot cite the manual, then gives specific cranking-speed and voltage-drop assessments."
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The provided reference contains no manual excerpts."
+        },
+        {
+          "id": "C002",
+          "text": "For HMMWV (M998-series) maintenance, the manual typically recommends a minimum cold-engine cranking speed of 60–80 RPM for proper engine start."
+        },
+        {
+          "id": "C003",
+          "text": "A cold-engine cranking speed of 90 RPM is acceptable and meets or exceeds the manual guidance."
+        },
+        {
+          "id": "C004",
+          "text": "For HMMWV (M998-series) maintenance, the manual generally specifies that a voltage drop of more than 0.20 V at the starter terminal during cranking indicates a problem with the negative cable or connection."
+        },
+        {
+          "id": "C005",
+          "text": "A problem with the starter negative cable or connection suggests poor conductivity or corrosion."
+        },
+        {
+          "id": "C006",
+          "text": "A starter negative-cable drop of 0.30 V is excessive, exceeds the manual guidance, and indicates a potential issue requiring inspection and repair."
+        }
+      ],
+      "claims_raw": [
+        "The provided reference contains no manual excerpts.",
+        "For HMMWV (M998-series) maintenance, the manual typically recommends a minimum cold-engine cranking speed of 60–80 RPM for proper engine start.",
+        "A cold-engine cranking speed of 90 RPM is acceptable and meets or exceeds the manual guidance.",
+        "For HMMWV (M998-series) maintenance, the manual generally specifies that a voltage drop of more than 0.20 V at the starter terminal during cranking indicates a problem with the negative cable or connection.",
+        "A problem with the starter negative cable or connection suggests poor conductivity or corrosion.",
+        "A starter negative-cable drop of 0.30 V is excessive, exceeds the manual guidance, and indicates a potential issue requiring inspection and repair."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M02-A01",
+            "reason": "The answer states a 60–80 RPM minimum, not 100 RPM."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M02-A02",
+            "reason": "The answer calls 90 RPM acceptable, but it is below the 100 RPM cold-weather minimum."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M02-A03",
+            "reason": "The answer gives a 0.20 V threshold, not the manual’s less-than-0.25 V limit."
+          },
+          {
+            "answer_quote": "A drop of 0.30 V exceeds this threshold",
+            "fulfilled": 1,
+            "id": "M02-A04",
+            "reason": "It correctly concludes that 0.30 V exceeds the limit, despite misstating the limit itself."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context contains reference-information excerpts.",
+              "statement": "The provided reference contains no manual excerpts.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated cold-weather minimum is 100 RPM, not 60–80 RPM.",
+              "statement": "For HMMWV (M998-series) maintenance, the manual typically recommends a minimum cold-engine cranking speed of 60–80 RPM for proper engine start.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "90 RPM is below the stated cold-weather minimum of 100 RPM.",
+              "statement": "A cold-engine cranking speed of 90 RPM is acceptable and meets or exceeds the manual guidance.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies a limit below 0.25 V, not a 0.20 V problem threshold.",
+              "statement": "For HMMWV (M998-series) maintenance, the manual generally specifies that a voltage drop of more than 0.20 V at the starter terminal during cranking indicates a problem with the negative cable or connection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not mention conductivity or corrosion.",
+              "statement": "A problem with the starter negative cable or connection suggests poor conductivity or corrosion.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "0.30 V exceeds the specified limit, but the context does not state that inspection and repair are required.",
+              "statement": "A starter negative-cable drop of 0.30 V is excessive, exceeds the manual guidance, and indicates a potential issue requiring inspection and repair.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.018561073504799963,
+        "cosine_similarities": [
+          0.725967269185708,
+          0.6961038309765629,
+          0.7383661249877893
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7201457417166868,
+        "query_vector_hash": "3f34ce87ce28d2b715443ab228e6fc4ed852907e10001a99432607db67c6219c",
+        "ragas_score": 0.7015846682118868,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "7785c6008ee4ead3b1890c4b1d0633f124eb1bb35c7b3593eac36ea3770c1255"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "4b30e6976462c43a256f92093d4eeadfda511e0c6ef5a7fc032f2b025a17c7c8"
+}

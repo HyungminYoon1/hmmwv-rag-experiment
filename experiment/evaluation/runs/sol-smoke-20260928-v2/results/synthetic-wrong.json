@@ -1,0 +1,143 @@
+{
+  "at": "2026-09-28T08:52:35.819756+00:00",
+  "identity_hash": "ff1dbbf5a04fb59e4a43fc8d586a16ac1ee0a4c67871dcef32627f8e4d825f40",
+  "input_hash": "f3e80c92cad00e0a13c6818a3d4526bc0cdfc479a67c296597938d79c6b014f8",
+  "result": {
+    "attempt_key": "synthetic-wrong",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 14.763119000002916,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9717807311468764
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9717807311468764
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "SYN02",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a concrete storage temperature of 30 degrees Celsius."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9717807325907891,
+          0.9717807325907891,
+          0.9717807282590503
+        ],
+        "query_vector_hash": "12cade111df40825be1053873ddd38f7fed384d2c00053648407812a4aec0fee",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          }
+        ],
+        "response_vectors_hash": "b6fa145c148173e24b7fc044b0909c280c9ec0c563dfc13717b4c103145f8353",
+        "score": 0.9717807311468764
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The Luma test box should be stored at 30 degrees Celsius."
+        }
+      ],
+      "claims_raw": [
+        "The Luma test box should be stored at 30 degrees Celsius."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Store the Luma test box at 30 degrees Celsius.",
+            "fulfilled": 0,
+            "id": "temperature",
+            "reason": "The response gives 30 degrees Celsius, contradicting the required 12 degrees Celsius."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 12 degrees Celsius, not 30.",
+              "statement": "The Luma test box should be stored at 30 degrees Celsius.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 12 degrees Celsius, not 30.",
+              "statement": "The Luma test box should be stored at 30 degrees Celsius.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9717807325907891,
+          0.9717807325907891,
+          0.9717807282590503
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9717807311468762,
+        "query_vector_hash": "12cade111df40825be1053873ddd38f7fed384d2c00053648407812a4aec0fee",
+        "ragas_score": 0.9717807311468764,
+        "response_vectors_hash": "b6fa145c148173e24b7fc044b0909c280c9ec0c563dfc13717b4c103145f8353"
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "c1b8a3eebec59543372eb17bfe4a3102afc1f8a6d8822998c292535e9ff33387"
+}

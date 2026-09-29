@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:35:34.190947+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response directly identifies two cooling functions as factual claims."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588134,
+      "conversation": null,
+      "created_at": 1790588132.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0ff7a464106f0214016aba34e4316887d09460f44ea8ccc788",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujTmgwP6hR_CEK6UWZS503huwqufmDo85WezVGjSvyFvMaOoa9agPMoYKmiO3Dkl41N5_IghiqwoK9TA2Xs9i3sjHTg0IaE82-U59Yavh8odjhy6UCh2Ym1ShWkBEWYoyA6YoPRH8OeY3yFtr7Ywthfv_m7COEB-p5GTXjlYgQz3VGFUsFXmpP4MxSEFMpUssxSatizxgRF2YJuSylmnXGELa27aNBAbux-mivD9bcVIqPIB7IjXthxMAwec6AZFYSWqc4A8_mkOpMiBSiAmgHbi2cG3d1UQ_RHxdf2R5uSfZw7ea19HBG09rHQUDRRa8MXszBgOpexI9nXzQB_CIKMVfyunarfAbQ3rJ8QtoVK0NFkmhB_1ZgO-_n78GVs0kpmouhULjgQIsOXxmuOOlqrieoKL0uvEVDqp2OVVwUk5Gp8-Uez9SI_JEDxqOFwIFWyUf9Z4N5hzN9vWXrROH-EwItxJvw3lrJ1d9i1HD03tnsdccXyh1p4N7omgHQi3gv7rc0HUvLWn6F06XY-0A2qkOrfRiGUHxF8cAxTXT0rNXkyeRZHQv35hRzR-ZiYsBVnYghpwsWkYsJnksX3TbmQQWoBw1RLjVOboNTMWLCQ7G8tghVEKJf2l-2g8vPr0wFnW0j4Uog8roF6kXNqDmnFLiCX1aLiCRNyBCPIVWdHwteXzSkWxrZTe556hCxouqmktNtvGrNd73Rbc9zIUH5t5xOOvitMjXVB3dqYTkEVvaPYnHH2rkbSn-7aCPdspCL6s_RVSZTAkfaYRnbLmMUzUU0oJLUaMAFqW8fgOK-9VwEA4iSSkHuVL4AubTflnEhPbNH2xbbqArnDzWXDgKBk6tt2yFqa_W27VMZi8hUsWtq2go39LT3FsWVhthMWtSI6CQuO8L8qPSGTGs-uWfWMyQYxWLc-28-JR42mO2FjpSL8lCQLh24QIgcu_70JK7-z8y2dVtutgdFQYzmAMpT0T79Xr_giIqenbt8dLDEZWJJW6vIfcfzkX9GvC-KKXYKs7Ct_0G_FJYfHO_SRaXGyjRleN5r6B9Tr_3g2fX7QBOuaSD8s7zJg9Hx-EvY3C_NsYgDWDiQojozUg2FUpRSbs7FH9BExE_1mnMZ2t2R0uEYDvHQQl_0GpXX3UENDVMPwuAZ31JemIMNIVNAasGxLTmNgJctOpyp1rktsIRY3gpTcbyNlI3LuoXdeEj0dMACJ5KEInvCqCdABlnNV0tnpgJMui7HYEmgJoEKnk5RltXbc=",
+          "id": "rs_0ff7a464106f0214016aba34e4ead087d0a0462e17c5941af1",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly identifies two cooling functions as factual claims.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0ff7a464106f0214016aba34e5966887d092a2100b777b1498",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 282,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 50,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 332
+      },
+      "user": null
+    },
+    "request_id": "resp_0ff7a464106f0214016aba34e4316887d09460f44ea8ccc788",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly identifies two cooling functions as factual claims.\"}",
+    "usage": {
+      "input_tokens": 282,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 50,
+      "output_tokens_details": {
+        "reasoning_tokens": 13
+      },
+      "total_tokens": 332
+    }
+  },
+  "record_hash": "afea1e3cc68ab594e3d67500c1d3da6c143092ce26cf678219c1b6c7c3865100",
+  "request_hash": "4f7027afa49cf134dd09459ee2d7e24fa8907cf3dca5ca108d072c634b5b2aab",
+  "started_at": "2026-09-28T09:35:32.056182+00:00",
+  "status": "OK"
+}

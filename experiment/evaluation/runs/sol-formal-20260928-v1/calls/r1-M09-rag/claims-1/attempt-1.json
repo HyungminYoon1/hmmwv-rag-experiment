@@ -1,0 +1,154 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:07:53.006831+00:00",
+  "parsed": {
+    "statements": [
+      "The upper half of the separate oil cooler cools transmission oil.",
+      "The lower half of the separate oil cooler cools engine oil.",
+      "The lubrication-test chart shows an engine-oil pressure of 40–45 psi at 2,000 RPM."
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586472,
+      "conversation": null,
+      "created_at": 1790586470.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0bd339711e467e77016aba2e66eb9487d0a080857938afc2ba",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[\"The upper half of the separate oil cooler cools transmission oil.\",\"The lower half of the separate oil cooler cools engine oil.\",\"The lubrication-test chart shows an engine-oil pressure of 40–45 psi at 2,000 RPM.\"]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0bd339711e467e77016aba2e67ee2887d091f40f1ebd3adada",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "StatementGeneratorOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for statement generation.",
+            "properties": {
+              "statements": {
+                "description": "The generated statements from the answer",
+                "items": {
+                  "type": "string"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "StatementGeneratorOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 597,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 64,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 661
+      },
+      "user": null
+    },
+    "request_id": "resp_0bd339711e467e77016aba2e66eb9487d0a080857938afc2ba",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[\"The upper half of the separate oil cooler cools transmission oil.\",\"The lower half of the separate oil cooler cools engine oil.\",\"The lubrication-test chart shows an engine-oil pressure of 40–45 psi at 2,000 RPM.\"]}",
+    "usage": {
+      "input_tokens": 597,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 64,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 661
+    }
+  },
+  "record_hash": "8ec195802fbce81d89e135b9b5aa4978b2c420bb41effbe307cacff67ac7b116",
+  "request_hash": "3e9b551178c1dcb585de11e747526c230914b75cd376c673d5246b527e6af9e0",
+  "started_at": "2026-09-28T09:07:50.786977+00:00",
+  "status": "OK"
+}

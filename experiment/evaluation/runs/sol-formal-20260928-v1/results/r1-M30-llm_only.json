@@ -1,0 +1,258 @@
+{
+  "at": "2026-09-28T09:32:06.361875+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "cbcf55eac3975c009df0b4de509ef3210eb6f0623857c25859676667f006bf55",
+  "result": {
+    "attempt_key": "r1-M30-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 38.973473599999124,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.7967991861377722
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.7967991861377722
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.2222222222222222
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.4
+      }
+    },
+    "question_id": "M30",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It provides a technical explanation and component list but disclaims direct support for the specific reference."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.796799186137772,
+          0.796799186137772,
+          0.796799186137772
+        ],
+        "query_vector_hash": "10b159192824ab9efc3c811ab0827608cf37947e6d8a87f52b40b1a48ba650e5",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the hydro-boost unit do, and which four components are identified as possible influences on its operation?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the hydro-boost unit do, and which four components are identified as possible influences on its operation?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the hydro-boost unit do, and which four components are identified as possible influences on its operation?"
+          }
+        ],
+        "response_vectors_hash": "5cba12026aced96de166803fa58127e0d10c61575c2219c3ae2d8be084d1028e",
+        "score": 0.7967991861377722
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The hydro-boost unit hydraulically amplifies the driver's steering input."
+        },
+        {
+          "id": "C002",
+          "text": "The hydro-boost unit multiplies the force applied to the steering wheel to assist in turning the vehicle's wheels."
+        },
+        {
+          "id": "C003",
+          "text": "In the brake guidance context, the steering gear (steering box) is identified as a possible influence on hydro-booster operation."
+        },
+        {
+          "id": "C004",
+          "text": "In the brake guidance context, the steering column is identified as a possible influence on hydro-booster operation."
+        },
+        {
+          "id": "C005",
+          "text": "In the brake guidance context, the power steering pump is identified as a possible influence on hydro-booster operation."
+        },
+        {
+          "id": "C006",
+          "text": "In the brake guidance context, the brake master cylinder is identified as a possible influence on hydro-booster operation."
+        },
+        {
+          "id": "C007",
+          "text": "The supplied excerpts do not directly support the specific reference to brake guidance and hydro-booster operation in the steering system."
+        },
+        {
+          "id": "C008",
+          "text": "The information is derived from standard HMMWV (M998-series) maintenance knowledge and typical system interdependencies."
+        },
+        {
+          "id": "C009",
+          "text": "The exact component list and function are consistent with general vehicle steering and brake system operation as described in standard technical manuals."
+        }
+      ],
+      "claims_raw": [
+        "The hydro-boost unit hydraulically amplifies the driver's steering input.",
+        "The hydro-boost unit multiplies the force applied to the steering wheel to assist in turning the vehicle's wheels.",
+        "In the brake guidance context, the steering gear (steering box) is identified as a possible influence on hydro-booster operation.",
+        "In the brake guidance context, the steering column is identified as a possible influence on hydro-booster operation.",
+        "In the brake guidance context, the power steering pump is identified as a possible influence on hydro-booster operation.",
+        "In the brake guidance context, the brake master cylinder is identified as a possible influence on hydro-booster operation.",
+        "The supplied excerpts do not directly support the specific reference to brake guidance and hydro-booster operation in the steering system.",
+        "The information is derived from standard HMMWV (M998-series) maintenance knowledge and typical system interdependencies.",
+        "The exact component list and function are consistent with general vehicle steering and brake system operation as described in standard technical manuals."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M30-A01",
+            "reason": "The answer describes assistance with steering, not conversion of steering-pump hydraulic power into mechanical power at the master cylinder for braking."
+          },
+          {
+            "answer_quote": "Power steering pump",
+            "fulfilled": 1,
+            "id": "M30-A02",
+            "reason": "Identifies the pump as a possible influence on hydro-booster operation."
+          },
+          {
+            "answer_quote": "Steering gear (steering box)",
+            "fulfilled": 1,
+            "id": "M30-A03",
+            "reason": "Identifies the steering gear as a possible influence on hydro-booster operation."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M30-A04",
+            "reason": "Hoses are not identified."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M30-A05",
+            "reason": "A control valve is not identified."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.2222222222222222,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt describes power assist during braking, not amplification of steering input.",
+              "statement": "The hydro-boost unit hydraulically amplifies the driver's steering input.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated function is braking assistance, not assistance in turning the wheels.",
+              "statement": "The hydro-boost unit multiplies the force applied to the steering wheel to assist in turning the vehicle's wheels.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:hydro_influence"
+              ],
+              "evidence_quotes": [
+                "REFERENCE INFORMATION\nBRAKES\n\nA defective power steering pump,\ngear, hoses, or control valve could\naffect hydro-booster operation."
+              ],
+              "reason": "The brake reference lists a defective gear as a possible influence on hydro-booster operation.",
+              "statement": "In the brake guidance context, the steering gear (steering box) is identified as a possible influence on hydro-booster operation.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The steering column is not listed.",
+              "statement": "In the brake guidance context, the steering column is identified as a possible influence on hydro-booster operation.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:hydro_influence"
+              ],
+              "evidence_quotes": [
+                "A defective power steering pump,\ngear, hoses, or control valve could\naffect hydro-booster operation."
+              ],
+              "reason": "The brake reference explicitly lists the power steering pump.",
+              "statement": "In the brake guidance context, the power steering pump is identified as a possible influence on hydro-booster operation.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The master cylinder receives power from hydro-boost; it is not identified as an influence on its operation.",
+              "statement": "In the brake guidance context, the brake master cylinder is identified as a possible influence on hydro-booster operation.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpts include a brake reference about hydro-booster operation and a steering-system operation section.",
+              "statement": "The supplied excerpts do not directly support the specific reference to brake guidance and hydro-booster operation in the steering system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpts do not identify that source or basis.",
+              "statement": "The information is derived from standard HMMWV (M998-series) maintenance knowledge and typical system interdependencies.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpts do not establish a comparison with standard technical manuals.",
+              "statement": "The exact component list and function are consistent with general vehicle steering and brake system operation as described in standard technical manuals.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.796799186137772,
+          0.796799186137772,
+          0.796799186137772
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.796799186137772,
+        "query_vector_hash": "10b159192824ab9efc3c811ab0827608cf37947e6d8a87f52b40b1a48ba650e5",
+        "ragas_score": 0.7967991861377722,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "5cba12026aced96de166803fa58127e0d10c61575c2219c3ae2d8be084d1028e"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "cb1fc016f3d995c550d3a990840feecc6f0520be9bf9beffaa59cfe78f84b7d3"
+}

@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:40:30.907220+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response directly answers no and makes a substantive claim about what the document states."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588430,
+      "conversation": null,
+      "created_at": 1790588429.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0e9e5458832edf1d016aba360cfd9887d084149fb8c182f66d",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujYO6smbkpzVwiU7STUwazuR0AzAXQdAqPmne5j-DckfYVZB9H4OTQKUvRBp4VMReLeImh8skQnUkulltxWEPqyNbI8PKMd_u5DrF6bwPPtKWj6Ni80EP5-IwY-Jd4Ueh94eHvHjdkRLNUgCQEGB0Xz7jTLqqvapvy-hSKuETodIrW4XtYKku2IBQDVz9l1aK9WVa_xWrU5QwFoVCezXD1oVuavCdosGhf7am7JSUbu2Gt283dMF4IfTeczVIB8zYg3mY8f3k2XWTQlKnn-SgY7T6pSKTxgLNWLK0mvD68wHS0zoAYZJrFOmHQ1Efn79SE9B1064HW8-DwMKrWHIW6F-Odo658sJfgppSOv5nE321JcsRj1wE0p4r1c8Zjf7PqOuO4JZo0PVNV0TXgh6k4WGCu49EZJ-xIeZvYda1TckftZqGH335l9m0b-5h4aaxxgSXJwW36T3JjFKEjW3jEwFHzFgb9h9_T_huzC_kV2751w35ZkfqTNA2dk_mjEyFPrf2XTC27-VNfhmjQzxVBNiJzrGFFX4lpuhFzrNGkmLJY43NWwZuEJGMR61-YdunJgkVNk0hgVpkC0kMjjy5WmkUXNmV1ugoDmwKhAG50mM6Iav8dbKIm2ca86DE1EfLX0lAD4nf5VR1b5V87r1Oa-k-PWRcoRVVX-MhEkRLkZT9qZclSW1G4qgMiv0P8ONQZ33mRRkuAbI6kFbanEBtTEoTM2S7uyzmxv5p-kM_t9evQAxrNKsYIIU1h2kVeTypSvuAvXy8a-wBaMr5JY5VTIRW8At7M9wDGfv9qM9OcgrAJqLtpM3hph2TBO6-yxtZ-aKrA6vwjjxNwtvldVmkIWmbzvUAe0bCHdzBpipRxxBXSj7rPMmJT_1B1oCadljBwLoXbNRAcmlEV5TcbXGOJFURyB6cCGM797dIhF44l0Kbgc4cyxrPsFA6QUISDDrBFX-Wc66rOmQsniSLf-2NGbjaQmBxyeWfRf_3-ycfHvfLNzvCg8fWMNMprGiJQFWPAWczY1Qz1cUJJx35vcmheR82hqmK0Q82sDA5V2IIz-WQQRGyagCePHl02jOzS8ZGk1Xav-EH9EJlHYvPon2Ap2H0U-xWQzbqaHIlPnmBX2cX8kZQzj0c1cs1M1yjpYkw0hqkWVS6jIbaE-6v2YmDSXEQMPGlPtCTGb4ZJfuw3vpw6oOnAZc_RZvmns1JUS7Of-IoTUCtPIadDBCbUnicoz0pw==",
+          "id": "rs_0e9e5458832edf1d016aba360dacf887d0b3c0699d469d66a6",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly answers no and makes a substantive claim about what the document states.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0e9e5458832edf1d016aba360e197887d09c2eb408514e1aaf",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 304,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 53,
+        "output_tokens_details": {
+          "reasoning_tokens": 11
+        },
+        "total_tokens": 357
+      },
+      "user": null
+    },
+    "request_id": "resp_0e9e5458832edf1d016aba360cfd9887d084149fb8c182f66d",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly answers no and makes a substantive claim about what the document states.\"}",
+    "usage": {
+      "input_tokens": 304,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 53,
+      "output_tokens_details": {
+        "reasoning_tokens": 11
+      },
+      "total_tokens": 357
+    }
+  },
+  "record_hash": "cc82eb47d40ad15e602751a3b81842b634443142b4b4bc800e471bd662bf810d",
+  "request_hash": "a610d20fb6839ee7f4d52690e65b229af49a9ee9534a404dabb4b51c41e73d0a",
+  "started_at": "2026-09-28T09:40:28.833385+00:00",
+  "status": "OK"
+}

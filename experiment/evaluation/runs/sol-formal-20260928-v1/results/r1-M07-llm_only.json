@@ -1,0 +1,208 @@
+{
+  "at": "2026-09-28T09:05:24.290767+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "0bb315f7854b615dc33d6a36a3e771a099e111ab419f879271a24a49821fe976",
+  "result": {
+    "attempt_key": "r1-M07-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 31.100578300000052,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.8036217372760257
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.8036217372760257
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.25
+      }
+    },
+    "question_id": "M07",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "Gives a pressure and cap-removal precautions, but adds a disclaimer that the specific references were not provided."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.784498437437511,
+          0.8403709673955224,
+          0.7859958069950436
+        ],
+        "query_vector_hash": "6025446f2bf27d6a9f2aebd2bb54eb716377d6de7b0b874bf2d5882c8e35066e",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what pressure does the HMMWV M998-series surge-tank cap valve relieve pressure, and what precaution should be taken before removing the cap?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what pressure does the HMMWV (M998-series) surge-tank cap valve relieve pressure, and what cooling-system PMCS precaution should be taken before removing the cap?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what pressure does the HMMWV M998-series surge-tank cap valve relieve pressure, and what precaution should be taken before removing the cap?"
+          }
+        ],
+        "response_vectors_hash": "0d378b95668714414185191991df0028936cb1b7448090168aefd9b71bc374f6",
+        "score": 0.8036217372760257
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The surge-tank cap valve on the HMMWV (M998-series) relieves pressure at approximately 15 psi."
+        },
+        {
+          "id": "C002",
+          "text": "The cooling-system PMCS warning requires allowing the engine to cool to ambient temperature before removing the surge-tank cap after vehicle operation."
+        },
+        {
+          "id": "C003",
+          "text": "Allowing the engine to cool before surge-tank cap removal is intended to prevent burns from hot coolant or steam."
+        },
+        {
+          "id": "C004",
+          "text": "The cap-removal precaution is standard for safety during maintenance operations."
+        },
+        {
+          "id": "C005",
+          "text": "Specific references from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004) were not provided in the REFERENCE."
+        },
+        {
+          "id": "C006",
+          "text": "The answer is based on standard maintenance practices and known HMMWV cooling-system procedures documented in official military maintenance manuals."
+        }
+      ],
+      "claims_raw": [
+        "The surge-tank cap valve on the HMMWV (M998-series) relieves pressure at approximately 15 psi.",
+        "The cooling-system PMCS warning requires allowing the engine to cool to ambient temperature before removing the surge-tank cap after vehicle operation.",
+        "Allowing the engine to cool before surge-tank cap removal is intended to prevent burns from hot coolant or steam.",
+        "The cap-removal precaution is standard for safety during maintenance operations.",
+        "Specific references from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004) were not provided in the REFERENCE.",
+        "The answer is based on standard maintenance practices and known HMMWV cooling-system procedures documented in official military maintenance manuals."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "relieves pressure at approximately 15 psi",
+            "fulfilled": 1,
+            "id": "M07-A01",
+            "reason": "Gives the correct approximate relief pressure."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M07-A02",
+            "reason": "Does not specify using heavy rags or gloves."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M07-A03",
+            "reason": "Does not specify turning the cap one-half turn counterclockwise."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M07-A04",
+            "reason": "Does not specify releasing pressure before fully removing the cap."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The pressure and surge-tank cap valve are stated, but the M998-series designation is not supplied.",
+              "statement": "The surge-tank cap valve on the HMMWV (M998-series) relieves pressure at approximately 15 psi.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The warning specifies precautions for removing the radiator cap, not cooling to ambient temperature or removing the surge-tank cap.",
+              "statement": "The cooling-system PMCS warning requires allowing the engine to cool to ambient temperature before removing the surge-tank cap after vehicle operation.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The warning mentions burns when removing the radiator cap, but does not prescribe cooling the engine or mention steam.",
+              "statement": "Allowing the engine to cool before surge-tank cap removal is intended to prevent burns from hot coolant or steam.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives a specific cap-removal warning but does not characterize it as standard practice.",
+              "statement": "The cap-removal precaution is standard for safety during maintenance operations.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not describe a REFERENCE section or establish which references were provided.",
+              "statement": "Specific references from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004) were not provided in the REFERENCE.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish the basis of an answer or characterize the procedures this way.",
+              "statement": "The answer is based on standard maintenance practices and known HMMWV cooling-system procedures documented in official military maintenance manuals.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.784498437437511,
+          0.8403709673955224,
+          0.7859958069950436
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8036217372760257,
+        "query_vector_hash": "6025446f2bf27d6a9f2aebd2bb54eb716377d6de7b0b874bf2d5882c8e35066e",
+        "ragas_score": 0.8036217372760257,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "0d378b95668714414185191991df0028936cb1b7448090168aefd9b71bc374f6"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "b3c4ecb91f1bde8a103fff9ecea9826fa716feaaea7da95114be72432a628698"
+}

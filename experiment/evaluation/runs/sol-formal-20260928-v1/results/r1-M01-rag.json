@@ -1,0 +1,307 @@
+{
+  "at": "2026-09-28T08:58:42.425597+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "386110f082943657aaa1ee4ec41ed434246800e965b557e3cd58f0c3284ab121",
+  "result": {
+    "attempt_key": "r1-M01-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 47.658912700000656,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.898044367233854
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.898044367233854
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.8333333333333334
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M01",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "Gives a concrete 18 V cranking limit and assesses the 17 V reading, but says it cannot determine the Test 73 limit."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9005793570729033,
+          0.8967768723143291,
+          0.8967768723143291
+        ],
+        "query_vector_hash": "ec1b25c73085a0724d6723cb92759e2c8536ca5e70e4c8724bd0686e0b6462c7",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do the 17 V cranking voltage and 30 milliohm STE/ICE-R Test 73 reading meet their stated limits, and what limits are provided?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do the 17 V cranking voltage and 30 milliohm STE/ICE-R Test 73 readings meet their stated limits, and what limits are provided?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do the 17 V cranking voltage and 30 milliohm STE/ICE-R Test 73 readings meet their stated limits, and what limits are provided?"
+          }
+        ],
+        "response_vectors_hash": "8dc1a0137fac299a4ae54e1d42d61da4c6bd1298e6c1586d09b8e098a7600ca4",
+        "score": 0.898044367233854
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The cranking voltage reading of 17 V does not meet its stated limit."
+        },
+        {
+          "id": "C002",
+          "text": "The STE/ICE-R Test 73 reading of 30 milliohms does not meet its stated limit."
+        },
+        {
+          "id": "C003",
+          "text": "The cranking voltage reading of 17 V is below the required minimum of 18 volts."
+        },
+        {
+          "id": "C004",
+          "text": "The STE/ICE-R Test 73 reading of 30 milliohms is not referenced in the provided excerpts."
+        },
+        {
+          "id": "C005",
+          "text": "No limit for the solenoid resistance test (STE/ICE-R Test 73) is stated in the reference material."
+        },
+        {
+          "id": "C006",
+          "text": "Only the cranking voltage reading fails to meet its stated limit."
+        }
+      ],
+      "claims_raw": [
+        "The cranking voltage reading of 17 V does not meet its stated limit.",
+        "The STE/ICE-R Test 73 reading of 30 milliohms does not meet its stated limit.",
+        "The cranking voltage reading of 17 V is below the required minimum of 18 volts.",
+        "The STE/ICE-R Test 73 reading of 30 milliohms is not referenced in the provided excerpts.",
+        "No limit for the solenoid resistance test (STE/ICE-R Test 73) is stated in the reference material.",
+        "Only the cranking voltage reading fails to meet its stated limit."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "required minimum of 18 volts",
+            "fulfilled": 1,
+            "id": "M01-A01",
+            "reason": "Correctly states the cranking-voltage minimum."
+          },
+          {
+            "answer_quote": "The cranking voltage of 17 V is below the required minimum of 18 volts",
+            "fulfilled": 1,
+            "id": "M01-A02",
+            "reason": "Correctly identifies 17 V as below the minimum."
+          },
+          {
+            "answer_quote": "no limit for this test is stated in the reference material",
+            "fulfilled": 0,
+            "id": "M01-A03",
+            "reason": "The answer omits the 25-milliohm maximum and instead says the limit is unavailable."
+          },
+          {
+            "answer_quote": "Thus, only the cranking voltage fails to meet its stated limit.",
+            "fulfilled": 0,
+            "id": "M01-A04",
+            "reason": "The answer contradicts itself and does not correctly conclude that 30 milliohms exceeds the 25-milliohm maximum."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.8333333333333334,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C003397"
+              ],
+              "evidence_quotes": [
+                "During cranking the starter\nmotor voltage should beat least 18 volts."
+              ],
+              "reason": "The stated cranking minimum is 18 volts.",
+              "statement": "The cranking voltage reading of 17 V does not meet its stated limit.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No Test 73 limit is provided for comparison.",
+              "statement": "The STE/ICE-R Test 73 reading of 30 milliohms does not meet its stated limit.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C003398"
+              ],
+              "evidence_quotes": [
+                "During cranking the starter\nsolenoid voltage should be at least 18 volts."
+              ],
+              "reason": "The stated cranking minimum is 18 volts.",
+              "statement": "The cranking voltage reading of 17 V is below the required minimum of 18 volts.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C003221",
+                "C003397",
+                "C003398"
+              ],
+              "evidence_quotes": [
+                "STE/ICE-R TEST 67",
+                "STE/ICE-R TEST 68",
+                "STE/ICE-R TEST 70"
+              ],
+              "reason": "The excerpts identify Tests 67, 68, and 70, but do not mention that reading.",
+              "statement": "The STE/ICE-R Test 73 reading of 30 milliohms is not referenced in the provided excerpts.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C003221",
+                "C003397",
+                "C003398"
+              ],
+              "evidence_quotes": [
+                "STE/ICE-R TEST 67",
+                "STE/ICE-R TEST 68",
+                "STE/ICE-R TEST 70"
+              ],
+              "reason": "The supplied reference excerpts contain no Test 73 or solenoid resistance limit.",
+              "statement": "No limit for the solenoid resistance test (STE/ICE-R Test 73) is stated in the reference material.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C003397",
+                "C003221",
+                "C003398"
+              ],
+              "evidence_quotes": [
+                "During cranking the starter\nmotor voltage should beat least 18 volts.",
+                "STE/ICE-R TEST 67",
+                "STE/ICE-R TEST 70"
+              ],
+              "reason": "17 V is below the stated 18 V cranking minimum; no limit is stated for the other reading.",
+              "statement": "Only the cranking voltage reading fails to meet its stated limit.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:crank_voltage"
+              ],
+              "evidence_quotes": [
+                "IS\nTHE BATTERY VOLTAGE AT LEAST\n18 VOLTS?"
+              ],
+              "reason": "17 V is below the stated 18 V threshold.",
+              "statement": "The cranking voltage reading of 17 V does not meet its stated limit.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:resistance",
+                "O:resistance"
+              ],
+              "evidence_quotes": [
+                "3. Start Test 73, battery internal resistance.",
+                "Battery\nresistance should be 25 milliohms max."
+              ],
+              "reason": "The stated maximum for the Test 73 battery-resistance measurement is 25 milliohms; 30 exceeds it.",
+              "statement": "The STE/ICE-R Test 73 reading of 30 milliohms does not meet its stated limit.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:crank_voltage"
+              ],
+              "evidence_quotes": [
+                "IS\nTHE BATTERY VOLTAGE AT LEAST\n18 VOLTS?"
+              ],
+              "reason": "The excerpt specifies an 18 V threshold, and 17 V is below it.",
+              "statement": "The cranking voltage reading of 17 V is below the required minimum of 18 volts.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:resistance"
+              ],
+              "evidence_quotes": [
+                "3. Start Test 73, battery internal resistance.\n\nBATTERY CIRCUIT\nREFERENCE INFORMATION\n\n5. Result is displayed in milliohms. Battery\nresistance should be 25 milliohms max."
+              ],
+              "reason": "The excerpts describe Test 73 and its limit but give no 30-milliohm reading.",
+              "statement": "The STE/ICE-R Test 73 reading of 30 milliohms is not referenced in the provided excerpts.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Test 73 is identified as a battery internal-resistance test, with a stated 25-milliohm maximum.",
+              "statement": "No limit for the solenoid resistance test (STE/ICE-R Test 73) is stated in the reference material.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "A 30-milliohm battery-resistance reading also exceeds the stated 25-milliohm maximum.",
+              "statement": "Only the cranking voltage reading fails to meet its stated limit.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.9005793570729033,
+          0.8967768723143291,
+          0.8967768723143291
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.898044367233854,
+        "query_vector_hash": "ec1b25c73085a0724d6723cb92759e2c8536ca5e70e4c8724bd0686e0b6462c7",
+        "ragas_score": 0.898044367233854,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "8dc1a0137fac299a4ae54e1d42d61da4c6bd1298e6c1586d09b8e098a7600ca4"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "733adc117930511e55f908cbc93db24c3d354307a69c69138dcc689f31f77f71"
+}

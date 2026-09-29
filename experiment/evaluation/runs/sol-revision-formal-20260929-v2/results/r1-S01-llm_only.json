@@ -1,0 +1,182 @@
+{
+  "at": "2026-09-29T05:11:39.350359+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "32bdd1ebcbd35c1dd04497c5d8578358b54fcce72a73416917d8a368db9e9fe8",
+  "result": {
+    "attempt_key": "r1-S01-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 6.687276499999825,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "NO_FACTUAL_CLAIM_ZERO",
+        "value": 0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S01",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": false,
+        "kind": "full_abstention",
+        "reason": "The response says it lacks the reference and cannot identify the symptoms; it provides no symptoms or other technical answer."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8946441430969455,
+          0.8946441430969455,
+          0.8946441430969455
+        ],
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          }
+        ],
+        "response_vectors_hash": "d8ea94c36856eee7636648f03c38b54fc87fce79029da36d2bcead54794dfd63",
+        "score": 0.0
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The provided reference contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+          "No information is available to identify the three starting symptoms from the supplied content.",
+          "I cannot provide the specific symptoms."
+        ],
+        "shared_conditions": [],
+        "statements": []
+      },
+      "claims": [],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S01-A01",
+            "reason": "The response does not identify this symptom; it says the symptoms cannot be provided."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S01-A02",
+            "reason": "The response does not identify this symptom; it says the symptoms cannot be provided."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S01-A03",
+            "reason": "The response does not identify this symptom; it says the symptoms cannot be provided."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8946441430969455,
+          0.8946441430969455,
+          0.8946441430969455
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d8ea94c36856eee7636648f03c38b54fc87fce79029da36d2bcead54794dfd63"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8946441430969455,
+          0.8946441430969455,
+          0.8946441430969455
+        ],
+        "decimal50_cosines": [
+          "0.89464414309694540051042685612096187159340388014010",
+          "0.89464414309694540051042685612096187159340388014010",
+          "0.89464414309694540051042685612096187159340388014010"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "d8ea94c36856eee7636648f03c38b54fc87fce79029da36d2bcead54794dfd63",
+        "score": 0.0
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "d657322705e8026815da30b2c9d3504d77f22fcd0d591d2412af44cb24c04ca0"
+}

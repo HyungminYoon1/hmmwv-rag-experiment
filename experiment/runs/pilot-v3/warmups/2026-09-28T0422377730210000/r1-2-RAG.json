@@ -1,0 +1,713 @@
+{
+  "citation_ids": [],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:22:50.726741+00:00",
+  "evaluation_answer": "The front service-brake rotor diameter for the standard configuration is 10.5 in. (267 mm), and for the A2 configuration, it is 12 in. (305 mm).  \n[Reference: C000527, C000528]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 722,
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000528] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n13.\nSERVICE BRAKE ROTOR (FRONT)\nSTANDARD\nMETRIC\n\nITEM: A2 Diameter \nSTANDARD: 12 in.\nMETRIC: 305 mm\n\n[C000530] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n13.\nSERVICE BRAKE ROTOR (FRONT)\nSTANDARD\nMETRIC\n\nITEM: A2 Thickness \nSTANDARD: 1.02 in.\nMETRIC: 26 mm\n\n[C000534] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n14.\nSERVICE/PARKING BRAKE ROTOR (REAR)\nSTANDARD\nMETRIC\n\nITEM: A2 Diameter \nSTANDARD: 12 in.\nMETRIC: 305 mm\n\n[C000526] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n13.\nSERVICE BRAKE ROTOR (FRONT)\nSTANDARD\nMETRIC\n\nITEM: A2 Manufacturer \nSTANDARD: Kelsey-Hayes\nMETRIC: \n\n[C000527] TM 9-2320-280-20-1 | PDF 61,63 | Printed 1-31,1-33\nTable 1-2. Tabulated Data (Cont'd)\n13.\nSERVICE BRAKE ROTOR (FRONT)\nSTANDARD\nMETRIC\n\nITEM: Diameter \nSTANDARD: 10.5 in.\nMETRIC: 267 mm\nQUESTION:\nWhat are the front service-brake rotor diameters for the standard and A2 configurations in Table 1-2?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "purpose": "WARMUP",
+  "question": "What are the front service-brake rotor diameters for the standard and A2 configurations in Table 1-2?",
+  "question_id": "D04",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:07.580993607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:05.389061207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4838342656.0,
+    "max_actual_interval_ms": 109.30229999939911,
+    "peak_rss_bytes": 7523135488,
+    "peak_vram_bytes": 4849156096,
+    "pids": [
+      13944,
+      23268,
+      23364,
+      27988,
+      30736,
+      36564,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4654.7954692,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4835459072
+      },
+      {
+        "monotonic": 4654.9030601,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4835459072
+      },
+      {
+        "monotonic": 4654.9963113,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4835459072
+      },
+      {
+        "monotonic": 4655.1036402,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4835459072
+      },
+      {
+        "monotonic": 4655.1981581,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4835459072
+      },
+      {
+        "monotonic": 4655.3055565,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4841226240
+      },
+      {
+        "monotonic": 4655.3988314,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4845223936
+      },
+      {
+        "monotonic": 4655.5064508,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4853088256
+      },
+      {
+        "monotonic": 4655.6011838,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4853088256
+      },
+      {
+        "monotonic": 4655.7104861,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4035117056,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7525322752,
+        "vram_bytes": 4853088256
+      },
+      {
+        "monotonic": 4655.8040569,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032339968,
+          "30736": 12607488,
+          "36564": 96272384,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7522545664,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4655.8979646,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.0061594,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3302105088,
+          "37564": 7442432
+        },
+        "rss_bytes": 7521308672,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.0980258,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.2054299,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.2988111,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.4068824,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.4992848,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.6079015,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.700178,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.8088948,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4849156096
+      },
+      {
+        "monotonic": 4656.9086228,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57958400,
+          "23268": 7512064,
+          "23364": 4481024,
+          "27988": 4032663552,
+          "30736": 12607488,
+          "36564": 96538624,
+          "37504": 3303931904,
+          "37564": 7442432
+        },
+        "rss_bytes": 7523135488,
+        "vram_bytes": 4845092864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:22:50.7256465Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 66,
+    "eval_duration": 880722000,
+    "load_duration": 12351800,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 722,
+    "prompt_eval_duration": 115713000,
+    "response": "The front service-brake rotor diameter for the standard configuration is 10.5 in. (267 mm), and for the A2 configuration, it is 12 in. (305 mm).  \n[Reference: C000527, C000528]",
+    "total_duration": 1015919400
+  },
+  "retrieval": {
+    "embedding_ms": 76.29159999942203,
+    "items": [
+      {
+        "body_end": 50,
+        "body_start": 0,
+        "id": "C000528",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 84,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.7244342565536499,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 4,
+          "section": 6,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n13.\nSERVICE BRAKE ROTOR (FRONT)\nSTANDARD\nMETRIC\n\nITEM: A2 Diameter \nSTANDARD: 12 in.\nMETRIC: 305 mm",
+        "text_sha256": "6502b3362ca3f7b61d5d09c5343521764fb34febb5628201579afbe8cc51c7e8",
+        "token_count": 53,
+        "unit_id": "U000528",
+        "unit_key": "P0063:spec:6:4"
+      },
+      {
+        "body_end": 52,
+        "body_start": 0,
+        "id": "C000530",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 84,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6947184801101685,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 6,
+          "section": 6,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n13.\nSERVICE BRAKE ROTOR (FRONT)\nSTANDARD\nMETRIC\n\nITEM: A2 Thickness \nSTANDARD: 1.02 in.\nMETRIC: 26 mm",
+        "text_sha256": "4c9ab52ed36e3937803716f165f0b3fd565718e0328636a7a3ec6798f3b8420a",
+        "token_count": 54,
+        "unit_id": "U000530",
+        "unit_key": "P0063:spec:6:6"
+      },
+      {
+        "body_end": 50,
+        "body_start": 0,
+        "id": "C000534",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 91,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6746082305908203,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 4,
+          "section": 7,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n14.\nSERVICE/PARKING BRAKE ROTOR (REAR)\nSTANDARD\nMETRIC\n\nITEM: A2 Diameter \nSTANDARD: 12 in.\nMETRIC: 305 mm",
+        "text_sha256": "fbe9bf572711c5b44f41ff4ee4b27028dba8e298f3538f0312b98a5f4e04918b",
+        "token_count": 56,
+        "unit_id": "U000534",
+        "unit_key": "P0063:spec:7:4"
+      },
+      {
+        "body_end": 54,
+        "body_start": 0,
+        "id": "C000526",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 84,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.668566107749939,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 2,
+          "section": 6,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n13.\nSERVICE BRAKE ROTOR (FRONT)\nSTANDARD\nMETRIC\n\nITEM: A2 Manufacturer \nSTANDARD: Kelsey-Hayes\nMETRIC: ",
+        "text_sha256": "01ae5dcb92d3057888b8563ad6ee85920dae5f480bf21eeaa4fb6fe7150e58f1",
+        "token_count": 50,
+        "unit_id": "U000526",
+        "unit_key": "P0063:spec:6:2"
+      },
+      {
+        "body_end": 49,
+        "body_start": 0,
+        "id": "C000527",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          63
+        ],
+        "prefix_chars": 84,
+        "printed_pages": [
+          "1-31",
+          "1-33"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.652321457862854,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 3,
+          "section": 6,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n13.\nSERVICE BRAKE ROTOR (FRONT)\nSTANDARD\nMETRIC\n\nITEM: Diameter \nSTANDARD: 10.5 in.\nMETRIC: 267 mm",
+        "text_sha256": "558801f34d16bffb983d2c6209e4e30cff3818270534bee950dd33e8035b1293",
+        "token_count": 53,
+        "unit_id": "U000527",
+        "unit_key": "P0063:spec:6:3"
+      }
+    ],
+    "search_ms": 8.885799999916344
+  },
+  "round": 1,
+  "started_at": "2026-09-28T04:22:49.612424+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1027.6727000000392,
+    "retrieval": 86.60620000046038,
+    "total": 1114.2789000004996
+  },
+  "unprovided_citations": []
+}

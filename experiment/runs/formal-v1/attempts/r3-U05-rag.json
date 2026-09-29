@@ -1,0 +1,937 @@
+{
+  "citation_ids": [
+    "[C003672]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:41:54.150121+00:00",
+  "evaluation_answer": "The provided reference material does not contain information on the full sequence for removing vehicle batteries and installing replacement batteries, including disconnection, mounting, and reconnection. While some battery-related procedures (such as disconnecting the negative cable) are mentioned in the context of alternator or control box maintenance , there is no detailed sequence for battery removal and installation as requested. Therefore, based on the available excerpts, this specific procedure cannot be fully answered.\n\nNote: The reference material does not describe the full battery removal and replacement sequence, including mounting and reconnection steps.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 692,
+  "key": "r3-U05-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002628] TM 9-2320-280-20-1 | PDF 294 | Printed 2-211\nREFERENCE INFORMATION\n\n1. Disconnect battery ground cable.\n2. Loosen screws.\n3. Remove clamp pins from slots.\n4. Loosen connector nut.\n5. Remove regulator from alternator.\nSecure regulator out of the way.\n6. Connect battery ground cable.\n\n[C003672] TM 9-2320-280-20-1 | PDF 402 | Printed 2-309\nREFERENCE INFORMATION\n\nDisconnect the negative battery cable. Disconnect the PCB\nconnector harness from the PCB. Reconnect the negative\nbattery cable. Measure the resistance between pin Din the\nengine connector harness of the protective control box and\nground. There should NOT be continuity (resistance reading\noff-the-scale). If there is continuity, repair or replace the\nharness.\n\n[C002695] TM 9-2320-280-20-1 | PDF 300 | Printed 2-217\nREFERENCE INFORMATION\nALTERNATOR\n\n6. Connect battery ground cable.\n7. Start vehicle and run engine to 900 rpm. Run only\nlong enough to obtain a stable output voltage reading.\n8. Stop engine, remove 6 volt battery and leads.\n\n[C002727] TM 9-2320-280-20-1 | PDF 304 | Printed 2-219\nREFERENCE INFORMATION\nALTERNATOR\n\nFUSIBLE LINK REPLACEMENT\n1. Disconnect battery ground cable.\n2. Remove boot from alternator output terminal.\n3. Remove nut, lockwasher, washers, and fusible\nlink from terminal.\n4. Inspect fusible link.\n5. Replace fusible link if damaged or appears\nburned.\n6. Connect battery ground cable.\n\n[C007427] TM 9-2320-280-20-1 | PDF 752 | Printed 2-650\nIS BATTERY IN PROPER\nWORKING ORDER?\nQUESTION:\nHow are the vehicle batteries removed and replacement batteries installed, including the full disconnection, mounting and reconnection sequence?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 691,
+  "question": "How are the vehicle batteries removed and replacement batteries installed, including the full disconnection, mounting and reconnection sequence?",
+  "question_id": "U05",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:29:11.003704207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:29:07.203454907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4924260352.0,
+    "max_actual_interval_ms": 111.17039999953704,
+    "peak_rss_bytes": 13517115392,
+    "peak_vram_bytes": 4924260352,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5796.7915319,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4927471616
+      },
+      {
+        "monotonic": 5796.8980047,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4927471616
+      },
+      {
+        "monotonic": 5797.0042823,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4927471616
+      },
+      {
+        "monotonic": 5797.0960762,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4927471616
+      },
+      {
+        "monotonic": 5797.2032415,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5797.2976225,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5797.4063592,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5797.4992481,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5797.5925232,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5797.7005541,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5797.7929423,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5797.900936,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5797.9967918,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9117532160,
+          "37564": 7958528
+        },
+        "rss_bytes": 13401645056,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5798.1012003,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9207156736,
+          "37564": 7958528
+        },
+        "rss_bytes": 13491269632,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5798.1932908,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9233002496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13517115392,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5798.3003804,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9111724032,
+          "37564": 7958528
+        },
+        "rss_bytes": 13395836928,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5798.3959097,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5798.5042706,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5798.5976715,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5798.6920668,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5798.8032372,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5798.8968717,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.0031497,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.0954156,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.2037459,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.2973749,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.4046629,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.5002515,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.6068967,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.6979838,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.8046942,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5799.8978061,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5800.0051832,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5800.1010777,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5800.1966495,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      },
+      {
+        "monotonic": 5800.303353,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103399424,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046163968,
+          "35444": 8089600,
+          "36040": 101933056,
+          "37504": 9113550848,
+          "37564": 7958528
+        },
+        "rss_bytes": 13397663744,
+        "vram_bytes": 4924260352
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:41:54.1478045Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 119,
+    "eval_duration": 2020131000,
+    "load_duration": 10769500,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 691,
+    "prompt_eval_count": 692,
+    "prompt_eval_duration": 23500000,
+    "response": "The provided reference material does not contain information on the full sequence for removing vehicle batteries and installing replacement batteries, including disconnection, mounting, and reconnection. While some battery-related procedures (such as disconnecting the negative cable) are mentioned in the context of alternator or control box maintenance [C003672], there is no detailed sequence for battery removal and installation as requested. Therefore, based on the available excerpts, this specific procedure cannot be fully answered.\n\nNote: The reference material does not describe the full battery removal and replacement sequence, including mounting and reconnection steps.",
+    "total_duration": 2321769400
+  },
+  "retrieval": {
+    "embedding_ms": 178.24920000020938,
+    "items": [
+      {
+        "body_end": 214,
+        "body_start": 0,
+        "id": "C002628",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          294
+        ],
+        "prefix_chars": 23,
+        "printed_pages": [
+          "2-211"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002900"
+        ],
+        "review_ids": [],
+        "score": 0.620108962059021,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\n\n1. Disconnect battery ground cable.\n2. Loosen screws.\n3. Remove clamp pins from slots.\n4. Loosen connector nut.\n5. Remove regulator from alternator.\nSecure regulator out of the way.\n6. Connect battery ground cable.",
+        "text_sha256": "31aed859eafbf19b0382e7559c61fa77814be729a9a95c550d512ba05bd5b2d7",
+        "token_count": 53,
+        "unit_id": "U002622",
+        "unit_key": "region:294:1:4"
+      },
+      {
+        "body_end": 359,
+        "body_start": 0,
+        "id": "C003672",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          402
+        ],
+        "prefix_chars": 23,
+        "printed_pages": [
+          "2-309"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R003737"
+        ],
+        "review_ids": [],
+        "score": 0.605741024017334,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[5]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\n\nDisconnect the negative battery cable. Disconnect the PCB\nconnector harness from the PCB. Reconnect the negative\nbattery cable. Measure the resistance between pin Din the\nengine connector harness of the protective control box and\nground. There should NOT be continuity (resistance reading\noff-the-scale). If there is continuity, repair or replace the\nharness.",
+        "text_sha256": "e67fbd26831842b4856bb061ce3a7a2d4af2ab3cbabee3674e4313eefa3877c6",
+        "token_count": 74,
+        "unit_id": "U003664",
+        "unit_key": "region:402:1:9"
+      },
+      {
+        "body_end": 189,
+        "body_start": 0,
+        "id": "C002695",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          300
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-217"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R002981"
+        ],
+        "review_ids": [],
+        "score": 0.5945028066635132,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[7]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nALTERNATOR\n\n6. Connect battery ground cable.\n7. Start vehicle and run engine to 900 rpm. Run only\nlong enough to obtain a stable output voltage reading.\n8. Stop engine, remove 6 volt battery and leads.",
+        "text_sha256": "edd3e0fdbc7022299b0f28ccd159d8829d166859f0fc64d31b8cf52ef7ef516b",
+        "token_count": 54,
+        "unit_id": "U002689",
+        "unit_key": "region:300:1:6"
+      },
+      {
+        "body_end": 288,
+        "body_start": 0,
+        "id": "C002727",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          304
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-219"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R002997"
+        ],
+        "review_ids": [],
+        "score": 0.5937268137931824,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nALTERNATOR\n\nFUSIBLE LINK REPLACEMENT\n1. Disconnect battery ground cable.\n2. Remove boot from alternator output terminal.\n3. Remove nut, lockwasher, washers, and fusible\nlink from terminal.\n4. Inspect fusible link.\n5. Replace fusible link if damaged or appears\nburned.\n6. Connect battery ground cable.",
+        "text_sha256": "96a085f9073941947baff018baebf406289877496fc89b6e1ed45c4faba5f674",
+        "token_count": 79,
+        "unit_id": "U002721",
+        "unit_key": "region:304:1:2"
+      },
+      {
+        "body_end": 35,
+        "body_start": 0,
+        "id": "C007427",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          752
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-650"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R008859",
+          "R008860"
+        ],
+        "review_ids": [],
+        "score": 0.5902775526046753,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B005",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "DIAGNOSTIC_PANEL",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "IS BATTERY IN PROPER\nWORKING ORDER?",
+        "text_sha256": "5a8a05bcd7e19be31c72894ea33ca2e55567bc8b6907fe67390d52b213ebca02",
+        "token_count": 11,
+        "unit_id": "U007419",
+        "unit_key": "region:752:1:8"
+      }
+    ],
+    "search_ms": 16.846399999849382
+  },
+  "round": 3,
+  "sequence": 283,
+  "started_at": "2026-09-28T04:41:51.607855+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2345.9923999998864,
+    "retrieval": 196.25819999964733,
+    "total": 2542.2505999995337
+  },
+  "unprovided_citations": []
+}

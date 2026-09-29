@@ -1,0 +1,64 @@
+{
+  "at": "2026-09-28T09:52:55.012367+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "0aa38f8aea674328e3cf42bf58535c2613a4932b080367e60ca424efae90c759",
+  "result": {
+    "attempt_key": "r1-U04-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 8.978919299999689,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U04",
+    "stages": {
+      "abstention": {
+        "answer_quote": "As a result, I cannot provide accurate or detailed steps based on the manual.",
+        "explicitly_withholds_missing": false,
+        "has_partial_answer": true,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "partial_within_allowed": false,
+        "reason": "Despite this disclaimer, the response supplies nine purported replacement steps. The oracle supports only a referral to paragraph 4-7, not those steps; the retrieved source set is empty.",
+        "source_ids": [
+          "O:rotary_reference"
+        ],
+        "supplies_missing_as_fact": true,
+        "unrelated_refusal": false
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "3500fbb63730ffd78cf00b148b473bcad21108fd7e16cb88fdcb8fe189ab058e"
+}

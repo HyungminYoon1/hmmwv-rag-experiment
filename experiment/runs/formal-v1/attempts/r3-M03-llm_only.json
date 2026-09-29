@@ -1,0 +1,526 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:45:45.659267+00:00",
+  "evaluation_answer": "The cold-start circuit excluded from the Glowplugs Circuit Tests is the secondary cold-start circuit. The Fuel System guidance in TM 9-2320-280-20-1 specifies that the timing advance should be set to 0 degrees and the engine temperature should be at ambient temperature (cold) when checking this circuit. [Note: This information is derived from general knowledge of HMMWV maintenance procedures and is not directly supported by supplied excerpts. Specific chunk IDs are not available in REFERENCE.]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 245,
+  "key": "r3-M03-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nWhich cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine-temperature condition does the Fuel System guidance state for checking that circuit?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "Which cold-start circuit is excluded from the Glowplugs Circuit Tests, and what timing advance and engine-temperature condition does the Fuel System guidance state for checking that circuit?",
+  "question_id": "M03",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:33:02.512322807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:32:59.482334907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 110.45939999985421,
+    "peak_rss_bytes": 8891076608,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 6028.9794375,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.0871802,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.179999,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.2887514,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.3826602,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.4922496,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.5841377,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.6931574,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.7846167,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.8933083,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6029.9882647,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.0814726,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.1889118,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.2803348,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.3874687,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.4816381,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.5892123,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.6819059,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.7896688,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.8826621,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6030.9910764,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6031.0832909,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6031.1914183,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6031.2831119,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6031.3908651,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6031.4838839,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6031.5912504,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6031.6857982,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6031.7962576,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103374848,
+          "30736": 11812864,
+          "36040": 101609472,
+          "37504": 8666537984,
+          "37564": 7741440
+        },
+        "rss_bytes": 8891076608,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:45:45.6570045Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 107,
+    "eval_duration": 1803339000,
+    "load_duration": 8346000,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 245,
+    "prompt_eval_duration": 32330000,
+    "response": "The cold-start circuit excluded from the Glowplugs Circuit Tests is the secondary cold-start circuit. The Fuel System guidance in TM 9-2320-280-20-1 specifies that the timing advance should be set to 0 degrees and the engine temperature should be at ambient temperature (cold) when checking this circuit. [Note: This information is derived from general knowledge of HMMWV maintenance procedures and is not directly supported by supplied excerpts. Specific chunk IDs are not available in REFERENCE.]",
+    "total_duration": 1853463900
+  },
+  "retrieval": null,
+  "round": 3,
+  "sequence": 349,
+  "started_at": "2026-09-28T04:45:43.797508+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1861.5721999995003,
+    "retrieval": null,
+    "total": 1861.5721999995003
+  },
+  "unprovided_citations": []
+}

@@ -1,0 +1,217 @@
+{
+  "at": "2026-09-29T05:24:27.026365+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "44d1c8e43494b624f24237fa04263c9da61967d6b019cc749723c091b922caa2",
+  "result": {
+    "attempt_key": "r1-S20-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 17.078444000000673,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9825438067961945
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9825438067961945
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S20",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific minimum battery voltage of 18 volts."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.978422833891309,
+          0.986423078723833,
+          0.9827855077734414
+        ],
+        "query_vector_hash": "0cda7591a381585a05ea31ae2c0bba8fe83c18f08cf884839a8ecaeb856cdd29",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage required while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In Step 2 of the initial Starter Circuit diagnostic test, what is the minimum battery voltage while attempting to crank the engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In Step 2 of the initial Starter Circuit diagnostic test, what minimum battery voltage is required while attempting to crank the engine?"
+          }
+        ],
+        "response_vectors_hash": "d12fb6bb7a6b9e4299ff3fe688311f8eafe816a7d0e8c747d979a3796ab4b190",
+        "score": 0.9825438067961944
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "Step 2 of the initial Starter Circuit diagnostic test, while attempting to crank the engine"
+        ],
+        "statements": [
+          {
+            "answer_quote": "the minimum battery voltage checked while attempting to crank the engine is 18 volts",
+            "statement": "In Step 2 of the initial Starter Circuit diagnostic test, the minimum battery voltage checked while attempting to crank the engine is 18 volts."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "the minimum battery voltage checked while attempting to crank the engine is 18 volts",
+          "id": "C001",
+          "text": "In Step 2 of the initial Starter Circuit diagnostic test, the minimum battery voltage checked while attempting to crank the engine is 18 volts."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "the minimum battery voltage checked while attempting to crank the engine is 18 volts",
+            "fulfilled": 1,
+            "id": "S20-A01",
+            "reason": "States 18 volts as the minimum while attempting to crank."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C003174"
+              ],
+              "evidence_quotes": [
+                "STARTER CIRCUIT\nDIAGNOSTIC FLOWCHART\nSTART\n2\nKNOWN INFO\nCABLES & CONNECTORS\nAPPEAR OK\nPOSSIBLE PROBLEMS\nWIRING\nBATTERIES\nSTARTER/SOLENOID\nROTARY SWITCH\nENGINE LOCK\nPCB/DISTRIBUTION BOX\n\nCHECK BATTERY VOLTAGE WHILE\nTRYING TO CRANK THE ENGINE. IS\nTHE BATTERY VOLTAGE AT LEAST\n18 VOLTS?"
+              ],
+              "reason": "The Starter Circuit flowchart marks this check as step 2 and asks whether battery voltage is at least 18 volts while trying to crank.",
+              "statement": "In Step 2 of the initial Starter Circuit diagnostic test, the minimum battery voltage checked while attempting to crank the engine is 18 volts.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C003174",
+                "O:C003174"
+              ],
+              "evidence_quotes": [
+                "STARTER CIRCUIT\nDIAGNOSTIC FLOWCHART\nSTART\n2",
+                "CHECK BATTERY VOLTAGE WHILE\nTRYING TO CRANK THE ENGINE. IS\nTHE BATTERY VOLTAGE AT LEAST\n18 VOLTS?"
+              ],
+              "reason": "Step 2 of the Starter Circuit flowchart asks whether battery voltage is at least 18 volts while trying to crank the engine.",
+              "statement": "In Step 2 of the initial Starter Circuit diagnostic test, the minimum battery voltage checked while attempting to crank the engine is 18 volts.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.978422833891309,
+          0.986423078723833,
+          0.9827855077734414
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9825438067961945,
+        "query_vector_hash": "0cda7591a381585a05ea31ae2c0bba8fe83c18f08cf884839a8ecaeb856cdd29",
+        "ragas_score": 0.9825438067961944,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d12fb6bb7a6b9e4299ff3fe688311f8eafe816a7d0e8c747d979a3796ab4b190"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.978422833891309,
+          0.986423078723833,
+          0.9827855077734414
+        ],
+        "decimal50_cosines": [
+          "0.97842283389130907418134226537598275890571835499956",
+          "0.98642307872383301966749255405459067928099914374696",
+          "0.98278550777344154509070323851433806951668066091919"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9825438067961944
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9825438067961944
+          }
+        },
+        "query_vector_hash": "0cda7591a381585a05ea31ae2c0bba8fe83c18f08cf884839a8ecaeb856cdd29",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage required while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In Step 2 of the initial Starter Circuit diagnostic test, what is the minimum battery voltage while attempting to crank the engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In Step 2 of the initial Starter Circuit diagnostic test, what minimum battery voltage is required while attempting to crank the engine?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "d12fb6bb7a6b9e4299ff3fe688311f8eafe816a7d0e8c747d979a3796ab4b190",
+        "score": 0.9825438067961945
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "13aeb64c53d11ec0a48bad265552e7e1c03e7da5d7da8f58ae332b2257f48bab"
+}

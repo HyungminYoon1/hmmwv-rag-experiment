@@ -1,0 +1,202 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:33:33.491674+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "Engine does not start",
+        "fulfilled": 1,
+        "id": "S01-A01",
+        "reason": "Matches the listed symptom of an engine that doesn’t start."
+      },
+      {
+        "answer_quote": "Engine starts but immediately stops",
+        "fulfilled": 1,
+        "id": "S01-A02",
+        "reason": "Matches the listed symptom of starting but immediately stopping."
+      },
+      {
+        "answer_quote": "Engine is very hard to start",
+        "fulfilled": 1,
+        "id": "S01-A03",
+        "reason": "Matches the listed symptom of being very hard to start."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588013,
+      "conversation": null,
+      "created_at": 1790588011.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0c0e043030a4e933016aba346b629887d0ad26a196c4b2a048",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S01-A01\",\"fulfilled\":1,\"answer_quote\":\"Engine does not start\",\"reason\":\"Matches the listed symptom of an engine that doesn’t start.\"},{\"id\":\"S01-A02\",\"fulfilled\":1,\"answer_quote\":\"Engine starts but immediately stops\",\"reason\":\"Matches the listed symptom of starting but immediately stopping.\"},{\"id\":\"S01-A03\",\"fulfilled\":1,\"answer_quote\":\"Engine is very hard to start\",\"reason\":\"Matches the listed symptom of being very hard to start.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0c0e043030a4e933016aba346c15bc87d0be148435bc071b04",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 773,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 115,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 888
+      },
+      "user": null
+    },
+    "request_id": "resp_0c0e043030a4e933016aba346b629887d0ad26a196c4b2a048",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S01-A01\",\"fulfilled\":1,\"answer_quote\":\"Engine does not start\",\"reason\":\"Matches the listed symptom of an engine that doesn’t start.\"},{\"id\":\"S01-A02\",\"fulfilled\":1,\"answer_quote\":\"Engine starts but immediately stops\",\"reason\":\"Matches the listed symptom of starting but immediately stopping.\"},{\"id\":\"S01-A03\",\"fulfilled\":1,\"answer_quote\":\"Engine is very hard to start\",\"reason\":\"Matches the listed symptom of being very hard to start.\"}]}",
+    "usage": {
+      "input_tokens": 773,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 115,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 888
+    }
+  },
+  "record_hash": "fc933ade637b1605e490f31ad53781c5a36049e4a72d141d0627995ebc6abeca",
+  "request_hash": "15b28eab65b4ffd6b593ff58fe1af2c236567c9f214207760c95413da9679d72",
+  "started_at": "2026-09-28T09:33:31.250066+00:00",
+  "status": "OK"
+}

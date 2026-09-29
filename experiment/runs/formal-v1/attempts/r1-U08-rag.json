@@ -1,0 +1,875 @@
+{
+  "citation_ids": [
+    "[C002143]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:27:02.550430+00:00",
+  "evaluation_answer": "I do not know the full thermostat removal and installation procedure, including access and reassembly steps, as this information is not provided in the given excerpts. The reference only states that the thermostat shuts off coolant return flow at 190°F (88°C) and that it should be removed and replaced with caution, referring to paragraph 3-75 . However, no detailed procedure for removal, access, or reassembly is included in the provided chunks. Therefore, I cannot provide a complete procedure based on the available information.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 607,
+  "key": "r1-U08-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C006980] TM 9-2320-280-20-1 | PDF 709 | Printed 2-607\n_\nRemove heater compartment panel,\nrefer to (para. 11-214).\nInstallatior/adjustment of fan duct\ndoor linkage, refer to (para. 11-211).\n\n[C007328] TM 9-2320-280-20-1 | PDF 743 | Printed 2-641\nReplace heater assembly,\nrefer to (para. 11-190 or 11-209).\n\n[C007397] TM 9-2320-280-20-1 | PDF 749 | Printed 2-647\nReplace heater assembly, refer to\n(para. 11-190 or 11-209).\n\n[C000597] TM 9-2320-280-20-1 | PDF 68 | Printed 1-38\n1-20. COOLING SYSTEM OPERATION\n\nTHERMOSTAT – Shuts off coolant return flow to radiator until temperature reaches 190°F (88°C).\nD\nCoolant is then directed to the radiator through the radiator inlet hose.\n\n[C002143] TM 9-2320-280-20-1 | PDF 241 | Printed 2-157\nREFERENCE INFORMATION\nENGINE COOLING\n\nAlways use caution when\napproaching a hot engine. Failure\nto do so may result in serious bums.\nRemove and replace the thermostat,\nrefer to (para 3-75).\nQUESTION:\nGive the full thermostat removal and installation procedure, including access and reassembly steps.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 194,
+  "question": "Give the full thermostat removal and installation procedure, including access and reassembly steps.",
+  "question_id": "U08",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:14:19.404172807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:14:16.000640907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 110.85670000011305,
+    "peak_rss_bytes": 9656381440,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4905.5462351,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4905.6539724,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4905.7473601,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4905.8573629,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4905.9496215,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.0604782,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.1538658,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.2615158,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.3557667,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.4480962,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040609792,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568264192,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.5571819,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040663040,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568317440,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.6497329,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109686784,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040663040,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5286027264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9568317440,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.7584887,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109694976,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5333618688,
+          "37564": 7958528
+        },
+        "rss_bytes": 9615933440,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.8523852,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109694976,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5374066688,
+          "37564": 7958528
+        },
+        "rss_bytes": 9656381440,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4906.9627693,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109694976,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5288034304,
+          "37564": 7958528
+        },
+        "rss_bytes": 9570349056,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.0564,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109694976,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572175872,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.1490441,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109694976,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572175872,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.2575942,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109694976,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572175872,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.3501016,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109694976,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572175872,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.4575488,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109703168,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572184064,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.5512332,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109703168,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572184064,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.659983,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109703168,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572184064,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.7517772,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109703168,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572184064,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.8595545,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109703168,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572184064,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4907.9523836,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109703168,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572184064,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4908.0610885,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109703168,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572184064,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4908.1546807,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109703168,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572184064,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4908.2463439,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109703168,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572184064,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4908.3559685,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572200448,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4908.4483416,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572200448,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4908.5547862,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572200448,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4908.6477255,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040679424,
+          "35444": 8007680,
+          "36040": 98381824,
+          "37504": 5289861120,
+          "37564": 7958528
+        },
+        "rss_bytes": 9572200448,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:27:02.5482311Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 116,
+    "eval_duration": 1735165000,
+    "load_duration": 9644000,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 194,
+    "prompt_eval_count": 607,
+    "prompt_eval_duration": 95281000,
+    "response": "I do not know the full thermostat removal and installation procedure, including access and reassembly steps, as this information is not provided in the given excerpts. The reference only states that the thermostat shuts off coolant return flow at 190°F (88°C) and that it should be removed and replaced with caution, referring to paragraph 3-75 [C002143]. However, no detailed procedure for removal, access, or reassembly is included in the provided chunks. Therefore, I cannot provide a complete procedure based on the available information.",
+    "total_duration": 2044437000
+  },
+  "retrieval": {
+    "embedding_ms": 114.6444000005431,
+    "items": [
+      {
+        "body_end": 134,
+        "body_start": 0,
+        "id": "C006980",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          709
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-607"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R008128",
+          "R008129"
+        ],
+        "review_ids": [],
+        "score": 0.5887336134910583,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "_\nRemove heater compartment panel,\nrefer to (para. 11-214).\nInstallatior/adjustment of fan duct\ndoor linkage, refer to (para. 11-211).",
+        "text_sha256": "f1e4d7c3ff1ab0c1981cc3af134c4865651d266c4dab4e99875fbd9da0655611",
+        "token_count": 45,
+        "unit_id": "U006972",
+        "unit_key": "region:709:1:16"
+      },
+      {
+        "body_end": 59,
+        "body_start": 0,
+        "id": "C007328",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          743
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-641"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R008691",
+          "R008692"
+        ],
+        "review_ids": [],
+        "score": 0.5876526832580566,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Replace heater assembly,\nrefer to (para. 11-190 or 11-209).",
+        "text_sha256": "59f64ee042317f295e4b492221033593db59207ae3ea9380f6029f4f0e0d1f5c",
+        "token_count": 25,
+        "unit_id": "U007320",
+        "unit_key": "region:743:1:4"
+      },
+      {
+        "body_end": 59,
+        "body_start": 0,
+        "id": "C007397",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          749
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-647"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R008806",
+          "R008807"
+        ],
+        "review_ids": [],
+        "score": 0.5876526832580566,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Replace heater assembly, refer to\n(para. 11-190 or 11-209).",
+        "text_sha256": "7ca5d030908d99f538d551051b2183cdaa0c08591c13374efa9830dea28af048",
+        "token_count": 25,
+        "unit_id": "U007389",
+        "unit_key": "region:749:1:9"
+      },
+      {
+        "body_end": 170,
+        "body_start": 0,
+        "id": "C000597",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          68
+        ],
+        "prefix_chars": 32,
+        "printed_pages": [
+          "1-38"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R000724"
+        ],
+        "review_ids": [],
+        "score": 0.5802479982376099,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[5]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "1-20",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-20. COOLING SYSTEM OPERATION\n\nTHERMOSTAT – Shuts off coolant return flow to radiator until temperature reaches 190°F (88°C).\nD\nCoolant is then directed to the radiator through the radiator inlet hose.",
+        "text_sha256": "c3af185c08d976c59f20cced17fdc705d1a88fff140d91d76cec2a78ca12cd99",
+        "token_count": 53,
+        "unit_id": "U000597",
+        "unit_key": "region:68:1:5"
+      },
+      {
+        "body_end": 151,
+        "body_start": 0,
+        "id": "C002143",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          241
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-157"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R002397",
+          "R002398"
+        ],
+        "review_ids": [],
+        "score": 0.580011248588562,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\nAlways use caution when\napproaching a hot engine. Failure\nto do so may result in serious bums.\nRemove and replace the thermostat,\nrefer to (para 3-75).",
+        "text_sha256": "3bb3de75388d370599a53fb0b3483140f64c41577b33abbcf11eb36cea6509af",
+        "token_count": 47,
+        "unit_id": "U002137",
+        "unit_key": "region:241:1:7"
+      }
+    ],
+    "search_ms": 15.789399999448506
+  },
+  "round": 1,
+  "sequence": 26,
+  "started_at": "2026-09-28T04:27:00.362922+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2056.1124999994718,
+    "retrieval": 131.55030000052648,
+    "total": 2187.6627999999982
+  },
+  "unprovided_citations": []
+}

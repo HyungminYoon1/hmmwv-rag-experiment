@@ -1,0 +1,617 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:35:19.257242+00:00",
+  "evaluation_answer": "The surge-tank cap valve on the HMMWV (M998-series) relieves pressure at approximately 15 psi. Regarding cap-removal precautions specified in the cooling-system PMCS warning, the procedure requires that the cap be removed only when the engine has cooled to ambient temperature to prevent injury from steam or pressure buildup. Additionally, the cap should be removed slowly and with care to avoid sudden release of pressure. These precautions are standard for maintaining safety during maintenance operations.\n\nNote: While specific references from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004) are not provided in the reference input, this information is based on standard maintenance practices for the HMMWV as documented in official Army maintenance manuals.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 243,
+  "key": "r2-M07-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nAt approximately what pressure does the surge-tank cap valve relieve pressure, and what cap-removal precautions does the cooling-system PMCS warning specify after vehicle operation?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "At approximately what pressure does the surge-tank cap valve relieve pressure, and what cap-removal precautions does the cooling-system PMCS warning specify after vehicle operation?",
+  "question_id": "M07",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:22:36.111515207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:22:32.522287607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4924456960.0,
+    "max_actual_interval_ms": 109.8719000001438,
+    "peak_rss_bytes": 9520521216,
+    "peak_vram_bytes": 4949721088,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5401.9217003,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4927340544
+      },
+      {
+        "monotonic": 5402.0311057,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4924194816
+      },
+      {
+        "monotonic": 5402.1251965,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4924194816
+      },
+      {
+        "monotonic": 5402.2333042,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4924194816
+      },
+      {
+        "monotonic": 5402.3269478,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4924456960
+      },
+      {
+        "monotonic": 5402.4368197,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4924456960
+      },
+      {
+        "monotonic": 5402.5319838,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4924456960
+      },
+      {
+        "monotonic": 5402.626375,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4924456960
+      },
+      {
+        "monotonic": 5402.7358501,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4924456960
+      },
+      {
+        "monotonic": 5402.8290721,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4924850176
+      },
+      {
+        "monotonic": 5402.9241191,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9133752320,
+          "37564": 7958528
+        },
+        "rss_bytes": 9357713408,
+        "vram_bytes": 4916002816
+      },
+      {
+        "monotonic": 5403.0307585,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4916002816
+      },
+      {
+        "monotonic": 5403.1230389,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4916002816
+      },
+      {
+        "monotonic": 5403.2312095,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4916264960
+      },
+      {
+        "monotonic": 5403.3239501,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4916264960
+      },
+      {
+        "monotonic": 5403.4325415,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4917051392
+      },
+      {
+        "monotonic": 5403.5253649,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4917051392
+      },
+      {
+        "monotonic": 5403.6329509,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4917051392
+      },
+      {
+        "monotonic": 5403.7253053,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4917051392
+      },
+      {
+        "monotonic": 5403.8341683,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4917051392
+      },
+      {
+        "monotonic": 5403.9268997,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4922556416
+      },
+      {
+        "monotonic": 5404.0343429,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4926160896
+      },
+      {
+        "monotonic": 5404.1263491,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4930879488
+      },
+      {
+        "monotonic": 5404.2342565,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4930879488
+      },
+      {
+        "monotonic": 5404.3276432,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4930879488
+      },
+      {
+        "monotonic": 5404.4368215,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4930879488
+      },
+      {
+        "monotonic": 5404.5305172,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4930879488
+      },
+      {
+        "monotonic": 5404.6238467,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4931469312
+      },
+      {
+        "monotonic": 5404.7329005,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4931469312
+      },
+      {
+        "monotonic": 5404.8247459,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4933566464
+      },
+      {
+        "monotonic": 5404.9318152,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4935204864
+      },
+      {
+        "monotonic": 5405.0245391,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4940709888
+      },
+      {
+        "monotonic": 5405.132895,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4949262336
+      },
+      {
+        "monotonic": 5405.228183,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4949426176
+      },
+      {
+        "monotonic": 5405.3351012,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4949491712
+      },
+      {
+        "monotonic": 5405.4272879,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9296560128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9520521216,
+        "vram_bytes": 4949721088
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:35:19.2567394Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 173,
+    "eval_duration": 2431453000,
+    "load_duration": 3247600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 243,
+    "prompt_eval_duration": 25534000,
+    "response": "The surge-tank cap valve on the HMMWV (M998-series) relieves pressure at approximately 15 psi. Regarding cap-removal precautions specified in the cooling-system PMCS warning, the procedure requires that the cap be removed only when the engine has cooled to ambient temperature to prevent injury from steam or pressure buildup. Additionally, the cap should be removed slowly and with care to avoid sudden release of pressure. These precautions are standard for maintaining safety during maintenance operations.\n\nNote: While specific references from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004) are not provided in the reference input, this information is based on standard maintenance practices for the HMMWV as documented in official Army maintenance manuals.",
+    "total_duration": 2516501100
+  },
+  "retrieval": null,
+  "round": 2,
+  "sequence": 162,
+  "started_at": "2026-09-28T04:35:16.738669+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2518.6103999994884,
+    "retrieval": null,
+    "total": 2518.6103999994884
+  },
+  "unprovided_citations": []
+}

@@ -1,0 +1,346 @@
+{
+  "at": "2026-09-29T05:14:20.494542+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "58376657b3414e89bc896cbe96e6cc7d0ea3752330c9400bd6805e4863e589ce",
+  "result": {
+    "attempt_key": "r1-S04-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 28.49756040000011,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9999999999997905
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9999999999997905
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S04",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a direct technical explanation of the venting system’s purpose in normal operation and deep-water fording."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9999999999997188,
+          0.9999999999996527,
+          1.0000000000000002
+        ],
+        "query_vector_hash": "f6a3b0c45452d49a9b8d2ea906ae7fd0493641ec25f13170b43cd3fe96ff4be6",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the purpose of the HMMWV venting system during normal operation and deep-water fording?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the purpose of the HMMWV venting system during normal operation and deep-water fording?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the purpose of the HMMWV venting system during normal operation and deep-water fording?"
+          }
+        ],
+        "response_vectors_hash": "70da3981d8bd7c5455663f753bcc55cb19440819d48f2d3884e03cd041b6bd06",
+        "score": 0.9999999999997901
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "During normal operation",
+          "During deep-water fording operations"
+        ],
+        "statements": [
+          {
+            "answer_quote": "during normal operation is to allow vapor to escape to the atmosphere",
+            "statement": "During normal operation, the HMMWV venting system allows vapor to escape to the atmosphere."
+          },
+          {
+            "answer_quote": "by blocking venting",
+            "statement": "During deep-water fording operations, the HMMWV vent system blocks venting."
+          },
+          {
+            "answer_quote": "prevents water from entering the engine",
+            "statement": "During deep-water fording operations, the HMMWV vent system prevents water from entering the engine."
+          },
+          {
+            "answer_quote": "and other systems by blocking venting",
+            "statement": "During deep-water fording operations, the HMMWV vent system prevents water from entering other systems."
+          },
+          {
+            "answer_quote": "by blocking venting, thus avoiding damage",
+            "statement": "During deep-water fording operations, preventing water entry by blocking venting avoids damage."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "during normal operation is to allow vapor to escape to the atmosphere",
+          "id": "C001",
+          "text": "During normal operation, the HMMWV venting system allows vapor to escape to the atmosphere."
+        },
+        {
+          "answer_quote": "by blocking venting",
+          "id": "C002",
+          "text": "During deep-water fording operations, the HMMWV vent system blocks venting."
+        },
+        {
+          "answer_quote": "prevents water from entering the engine",
+          "id": "C003",
+          "text": "During deep-water fording operations, the HMMWV vent system prevents water from entering the engine."
+        },
+        {
+          "answer_quote": "and other systems by blocking venting",
+          "id": "C004",
+          "text": "During deep-water fording operations, the HMMWV vent system prevents water from entering other systems."
+        },
+        {
+          "answer_quote": "by blocking venting, thus avoiding damage",
+          "id": "C005",
+          "text": "During deep-water fording operations, preventing water entry by blocking venting avoids damage."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "during normal operation is to allow vapor to escape to the atmosphere",
+            "fulfilled": 1,
+            "id": "S04-A01",
+            "reason": "States the normal-operation purpose."
+          },
+          {
+            "answer_quote": "During deep-water fording operations, the vent system prevents water from entering the engine and other systems by blocking venting",
+            "fulfilled": 1,
+            "id": "S04-A02",
+            "reason": "States that blocking venting prevents water entry during fording."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "The purpose of\nthe vent system is to allow vapor to escape to the atmosphere under normal operation"
+              ],
+              "reason": "The passage states this purpose under normal operation.",
+              "statement": "During normal operation, the HMMWV venting system allows vapor to escape to the atmosphere.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "and to\nprevent venting during deep water fording operations."
+              ],
+              "reason": "The passage says the vent system prevents venting during deep-water fording.",
+              "statement": "During deep-water fording operations, the HMMWV vent system blocks venting.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "prevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The passage says open vents during fording would let water enter the engine.",
+              "statement": "During deep-water fording operations, the HMMWV vent system prevents water from entering the engine.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "prevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The passage says open vents during fording would let water enter other systems.",
+              "statement": "During deep-water fording operations, the HMMWV vent system prevents water from entering other systems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001409"
+              ],
+              "evidence_quotes": [
+                "prevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The passage links preventing venting during fording with avoiding the water entry and damage that open vents would cause.",
+              "statement": "During deep-water fording operations, preventing water entry by blocking venting avoids damage.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C001409"
+              ],
+              "evidence_quotes": [
+                "The purpose of\nthe vent system is to allow vapor to escape to the atmosphere under normal operation"
+              ],
+              "reason": "The passage states this purpose under normal operation.",
+              "statement": "During normal operation, the HMMWV venting system allows vapor to escape to the atmosphere.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001409"
+              ],
+              "evidence_quotes": [
+                "to\nprevent venting during deep water fording operations."
+              ],
+              "reason": "The passage says the system prevents venting during deep-water fording.",
+              "statement": "During deep-water fording operations, the HMMWV vent system blocks venting.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001409"
+              ],
+              "evidence_quotes": [
+                "to\nprevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The passage links preventing venting during fording with keeping water out of the engine.",
+              "statement": "During deep-water fording operations, the HMMWV vent system prevents water from entering the engine.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001409"
+              ],
+              "evidence_quotes": [
+                "to\nprevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The passage says water would enter other systems if the vents were left open during fording.",
+              "statement": "During deep-water fording operations, the HMMWV vent system prevents water from entering other systems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001409"
+              ],
+              "evidence_quotes": [
+                "to\nprevent venting during deep water fording operations. If the vents were left open, water would\nenter the engine and other systems and cause damage."
+              ],
+              "reason": "The passage says the system prevents venting during fording and that open vents would let in water and cause damage.",
+              "statement": "During deep-water fording operations, preventing water entry by blocking venting avoids damage.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 4.440892098500626e-16,
+        "cosine_similarities": [
+          0.9999999999997188,
+          0.9999999999996527,
+          1.0000000000000002
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9999999999997905,
+        "query_vector_hash": "f6a3b0c45452d49a9b8d2ea906ae7fd0493641ec25f13170b43cd3fe96ff4be6",
+        "ragas_score": 0.9999999999997901,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "70da3981d8bd7c5455663f753bcc55cb19440819d48f2d3884e03cd041b6bd06"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9999999999997188,
+          0.9999999999996527,
+          1.0000000000000002
+        ],
+        "decimal50_cosines": [
+          "0.99999999999971871192072631579736971252986499768267",
+          "0.99999999999965259663967655665629289780094494453296",
+          "1"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9999999999997901
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9999999999997901
+          }
+        },
+        "query_vector_hash": "f6a3b0c45452d49a9b8d2ea906ae7fd0493641ec25f13170b43cd3fe96ff4be6",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the purpose of the HMMWV venting system during normal operation and deep-water fording?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the purpose of the HMMWV venting system during normal operation and deep-water fording?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the purpose of the HMMWV venting system during normal operation and deep-water fording?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "70da3981d8bd7c5455663f753bcc55cb19440819d48f2d3884e03cd041b6bd06",
+        "score": 0.9999999999997905
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "182c640e1da0224707d478a9d1db713a22fc78693edba25a854d3d9b8877a75c"
+}

@@ -1,0 +1,66 @@
+{
+  "at": "2026-09-28T09:56:40.179068+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "e0990cbef14679ed9f08873aa3bf3caa348ff931a38f143177683bec64ec5161",
+  "original_result_sha256": "23d155722bc6bdbd817b992ccc93cf40bdf25c64767e681336c3729015f9a981",
+  "result": {
+    "attempt_key": "r1-U01-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 12.717753700002504,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U01",
+    "stages": {
+      "abstention": {
+        "answer_quote": "the exact torque value and step-by-step instructions cannot be confirmed.",
+        "explicitly_withholds_missing": false,
+        "has_partial_answer": true,
+        "partial_supported_by_oracle": true,
+        "partial_supported_by_retrieved": false,
+        "partial_within_allowed": false,
+        "reason": "Despite the quoted withholding, the response gives an unsupported six-step procedure and a speculative 35–45 ft-lb torque range. The oracle supports referring to §4-8 and gives the mounting-bolt torque as 40 lb-ft (54 N·m); it does not supply the full procedure. The retrieved source set is empty.",
+        "source_ids": [
+          "O:starter_reference",
+          "O:starter_torque"
+        ],
+        "supplies_missing_as_fact": true,
+        "unrelated_refusal": false
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "a22115fe17fbfe3081f205b5e08587b9c1b76962b31e9c2b722f061e01f1072e"
+}

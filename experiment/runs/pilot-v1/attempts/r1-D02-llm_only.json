@@ -1,0 +1,331 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:12:53.025853+00:00",
+  "evaluation_answer": "The purpose of the diagnostic connector among the major interior components cannot be determined with the available information.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 162,
+  "key": "r1-D02-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou are a technical question-answering assistant.\nAnswer in English using concise statements that address every part of the question.\nWhen reference context is provided, use only facts supported by that context.\nWhen no reference context is provided, use your existing model knowledge.\nIf some requested information is unavailable, state which part cannot be determined.\nYou may answer the supported parts, but do not present a partial answer as complete.\nDo not invent specifications, procedures, measurements, causes, or other facts.\nWhen reference context is provided, cite each supporting chunk ID in square brackets, for example [C000123]. Use only supplied chunk IDs.\nREFERENCE CONTEXT:\nNo reference context is available.\nQUESTION:\nWhat purpose does the diagnostic connector serve among the major interior components?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 144,
+  "question": "What purpose does the diagnostic connector serve among the major interior components?",
+  "question_id": "D02",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:00:09.879554707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:00:08.370608707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4808523776.0,
+    "max_actual_interval_ms": 109.66370000005554,
+    "peak_rss_bytes": 1860894720,
+    "peak_vram_bytes": 4808523776,
+    "pids": [
+      13944,
+      30736,
+      37504,
+      37564,
+      37600
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4057.8552526,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4057.9612572,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.0696535,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.1669844,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.2579437,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.3665765,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.4585827,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.5682464,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.6600328,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.767875,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.8608854,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686196224,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860870144,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4058.9671341,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860894720,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4059.0610861,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860894720,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4059.1692934,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57581568,
+          "30736": 12607488,
+          "37504": 1686220800,
+          "37564": 7442432,
+          "37600": 97042432
+        },
+        "rss_bytes": 1860894720,
+        "vram_bytes": 4808523776
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:12:53.0232151Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 20,
+    "eval_duration": 300844000,
+    "load_duration": 2905200,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 144,
+    "prompt_eval_count": 162,
+    "prompt_eval_duration": 21683000,
+    "response": "The purpose of the diagnostic connector among the major interior components cannot be determined with the available information.",
+    "total_duration": 330698000
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 17,
+  "started_at": "2026-09-28T04:12:52.672334+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 353.72789999973975,
+    "retrieval": null,
+    "total": 353.72789999973975
+  },
+  "unprovided_citations": []
+}

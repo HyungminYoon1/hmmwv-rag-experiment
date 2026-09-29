@@ -1,0 +1,295 @@
+{
+  "at": "2026-09-28T09:32:45.958690+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "16fac91e90267d3dfa51b05be24df61dd821713f045248b305dfc482a25cf63e",
+  "result": {
+    "attempt_key": "r1-M30-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 38.63801349999994,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.8844881308215392
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.8844881308215392
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6
+      }
+    },
+    "question_id": "M30",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly states a power conversion and names four steering-system components."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8839763790389343,
+          0.8847440123807944,
+          0.8847440010448883
+        ],
+        "query_vector_hash": "10b159192824ab9efc3c811ab0827608cf37947e6d8a87f52b40b1a48ba650e5",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the hydro-boost unit do, and which four steering-system components can affect its operation?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the hydro-boost unit do, and which four steering-system components can influence its operation?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the hydro-boost unit do, and which four steering-system components can influence its operation?"
+          }
+        ],
+        "response_vectors_hash": "47b5841bb0529834994dca084e90a5614eeeaedca3a60a1bec85c5f4d62efeab",
+        "score": 0.8844881308215392
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The hydro-boost unit converts hydraulic power from the steering pump to mechanical power to the master cylinder."
+        },
+        {
+          "id": "C002",
+          "text": "The hydro-boost unit provides power assist during braking."
+        },
+        {
+          "id": "C003",
+          "text": "The brake guidance identifies the power steering pump as a possible influence on hydro-boost operation."
+        },
+        {
+          "id": "C004",
+          "text": "The brake guidance identifies the power steering gear as a possible influence on hydro-boost operation."
+        },
+        {
+          "id": "C005",
+          "text": "The brake guidance identifies the fan drive as a possible influence on hydro-boost operation."
+        },
+        {
+          "id": "C006",
+          "text": "The brake guidance identifies hydro-boosters as possible influences on hydro-boost operation."
+        }
+      ],
+      "claims_raw": [
+        "The hydro-boost unit converts hydraulic power from the steering pump to mechanical power to the master cylinder.",
+        "The hydro-boost unit provides power assist during braking.",
+        "The brake guidance identifies the power steering pump as a possible influence on hydro-boost operation.",
+        "The brake guidance identifies the power steering gear as a possible influence on hydro-boost operation.",
+        "The brake guidance identifies the fan drive as a possible influence on hydro-boost operation.",
+        "The brake guidance identifies hydro-boosters as possible influences on hydro-boost operation."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "converts hydraulic power from the steering pump to mechanical power to the master cylinder, providing power assist during braking",
+            "fulfilled": 1,
+            "id": "M30-A01",
+            "reason": "Correctly states the conversion and its braking purpose."
+          },
+          {
+            "answer_quote": "Power steering pump",
+            "fulfilled": 1,
+            "id": "M30-A02",
+            "reason": "Identifies the pump as a possible influence on hydro-booster operation."
+          },
+          {
+            "answer_quote": "Power steering gear",
+            "fulfilled": 1,
+            "id": "M30-A03",
+            "reason": "Identifies the steering gear as a possible influence."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M30-A04",
+            "reason": "Hoses are not identified."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M30-A05",
+            "reason": "The control valve is not identified."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C000719"
+              ],
+              "evidence_quotes": [
+                "HYDRO-BOOST - Converts hydraulic power from the steering pump to mechanical power to the\nmaster cylinder, providing power assist during braking."
+              ],
+              "reason": "The service brake description states this function directly.",
+              "statement": "The hydro-boost unit converts hydraulic power from the steering pump to mechanical power to the master cylinder.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000719"
+              ],
+              "evidence_quotes": [
+                "providing power assist during braking."
+              ],
+              "reason": "The service brake description states this directly.",
+              "statement": "The hydro-boost unit provides power assist during braking.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000719"
+              ],
+              "evidence_quotes": [
+                "HYDRO-BOOST - Converts hydraulic power from the steering pump to mechanical power to the\nmaster cylinder, providing power assist during braking."
+              ],
+              "reason": "The brake guidance says hydro-boost uses hydraulic power from the steering pump.",
+              "statement": "The brake guidance identifies the power steering pump as a possible influence on hydro-boost operation.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The gear is listed as a possible cause of abnormal steering, not hydro-boost operation.",
+              "statement": "The brake guidance identifies the power steering gear as a possible influence on hydro-boost operation.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The fan drive is listed as a possible cause of abnormal steering, not hydro-boost operation.",
+              "statement": "The brake guidance identifies the fan drive as a possible influence on hydro-boost operation.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C005590"
+              ],
+              "evidence_quotes": [
+                "KNOWN INFO\nHYDRO-BOOSTER SYSTEM\nNOT WORKING\nPROPERLY\nPOWER STEERING FLUID\nOK\nBELTS OK\nPOSSIBLE PROBLEMS\nHYDRO-BOOSTER"
+              ],
+              "reason": "The brake diagnostic guidance lists the hydro-booster as a possible problem when its system is not working properly.",
+              "statement": "The brake guidance identifies hydro-boosters as possible influences on hydro-boost operation.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:hydroboost"
+              ],
+              "evidence_quotes": [
+                "HYDRO-BOOST –  Converts hydraulic power from the steering pump to mechanical power to the\nmaster cylinder, providing power assist during braking."
+              ],
+              "reason": "The hydro-boost description states this conversion.",
+              "statement": "The hydro-boost unit converts hydraulic power from the steering pump to mechanical power to the master cylinder.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:hydroboost"
+              ],
+              "evidence_quotes": [
+                "providing power assist during braking."
+              ],
+              "reason": "The hydro-boost description states this function.",
+              "statement": "The hydro-boost unit provides power assist during braking.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:hydro_influence"
+              ],
+              "evidence_quotes": [
+                "A defective power steering pump,\ngear, hoses, or control valve could\naffect hydro-booster operation."
+              ],
+              "reason": "It says a defective pump could affect hydro-booster operation.",
+              "statement": "The brake guidance identifies the power steering pump as a possible influence on hydro-boost operation.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:hydro_influence"
+              ],
+              "evidence_quotes": [
+                "A defective power steering pump,\ngear, hoses, or control valve could\naffect hydro-booster operation."
+              ],
+              "reason": "It says a defective gear could affect hydro-booster operation.",
+              "statement": "The brake guidance identifies the power steering gear as a possible influence on hydro-boost operation.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The guidance does not mention a fan drive.",
+              "statement": "The brake guidance identifies the fan drive as a possible influence on hydro-boost operation.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "It identifies hydro-booster operation as what could be affected, not hydro-boosters as an influence.",
+              "statement": "The brake guidance identifies hydro-boosters as possible influences on hydro-boost operation.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.8839763790389343,
+          0.8847440123807944,
+          0.8847440010448883
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.884488130821539,
+        "query_vector_hash": "10b159192824ab9efc3c811ab0827608cf37947e6d8a87f52b40b1a48ba650e5",
+        "ragas_score": 0.8844881308215392,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "47b5841bb0529834994dca084e90a5614eeeaedca3a60a1bec85c5f4d62efeab"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "8a47b600e01543ff6033c8d584f0796c91347037a1246be5e6398c86bbcbdfac"
+}

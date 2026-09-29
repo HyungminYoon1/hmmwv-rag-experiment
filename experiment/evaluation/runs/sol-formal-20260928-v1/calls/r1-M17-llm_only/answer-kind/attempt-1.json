@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:16:22.513048+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives a concrete technical explanation of vent-system operation and lists vent-tube conditions checked during PMCS."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586982,
+      "conversation": null,
+      "created_at": 1790586980.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_01e53a5dd1ed179c016aba3064477087d08ee011780f539c35",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujBm5xGjVh9RFsefTYB7TqGHNPkE7wGSQpueQPQT05DhItUlSOiwgYR2dVttYIUoZbk15rL4BK7iUUHDi8Bu1EWQdYgYhJ6Tt6NiIPQ-4Kj9wC5tkMZIheKge-MZnELc_AN4cnBplGsfymI44w4YEUhkivAEcTuGChUsF2kKsoSPvyC9eHBMY6HdJQ6YY-Kame_G-PKrvMjLpBsfauZ8SK-vmq44nP1wz5ZketYoywub36bME6cWRbUymm04VMEts6h21_oHqU19raS1uQ4UWxAuymKZZp5BqmG7QzNU1r5K3H_z6psJ0we9SQ_LHPEvtNwLRwaq64dfCdtNxt7w0O_HhQsQPHW_3fVjRTPWvKvG0dhp-iQv6odgHPsjY_hSlWAasRYPhPHPUZa88L94FYudCjLlz4exyJ5K0OU3A3nY9Xt8VWNG5CZ_kaQWL6ARSFSFljPLukiXh5W7xUJ0RgCGhRHP7Hc-rf9_Ufo9Hjcwo6OANF0O1rbu8Q7ckUQR2SgbBhI3MYU3jBDrfOMKKtdp6vLFk6bAQap2CmHcwOIlinlJhKXcSGms3CZKlyNccdGBAvYMp2ByAu_wskUTnNPhGV0bOkSOVrFym44tbSFBxleRAswWnNeE0boWOwPop2y33pHfXwkwf78MyrfBdPji48LqraRxO1gO31odjqCSv2RLnJLFYXirtMFK7F8leEhTENWMjcnEchWmaQXiBrcX1ZeyCqDLmbqdRnevq-HBOXYlnmtRFWhkbaPBReR4n-sWA0OMRf83Jhc19UMacGL0FVW5JeFkhJOjK7cmESf46b_3BO-apgK8FdTEuvl-JSbU_l4Jl0G8iUn1mSrSxu5PVaGP84TuQndZzyIPAf98aiLbB6aKNvXBUcIKozee8SgtohvRGKg7KJEG0umM8GrTvrjeUioaqAHHk-ulkz6XGy2l54xRBd4yJ4GFc_PQW0RlmyAlZ1RCQpr4eXF359VvzNQDnUM4EWatxPN0Kgl4w6ViWq-mcIXl9HjD2yB6TBviFndk9gDqx0D1FdKj1DwhE6i_NXEuQV54Vi_2mBhAZeLUMG4nJ4njYrfDn9KIZHxFLLKIX4CJRaYRPsqi2TZZpR0Z0S-SPbz7kds6YNDCGmrqLkIU6N2-a3usdozzuR8ibi9l-IzjB3Vv1rJPancTJjG-SVlOmzBaSaTWo2ryq-GJNAeeWjfw3XX1g7ri-Lpbnksb4nhy96MZqKCwsjRARw==",
+          "id": "rs_01e53a5dd1ed179c016aba3065238c87d0896cca6f7ce934d4",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a concrete technical explanation of vent-system operation and lists vent-tube conditions checked during PMCS.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_01e53a5dd1ed179c016aba306584c487d0aa307b593fd76a28",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 395,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 60,
+        "output_tokens_details": {
+          "reasoning_tokens": 12
+        },
+        "total_tokens": 455
+      },
+      "user": null
+    },
+    "request_id": "resp_01e53a5dd1ed179c016aba3064477087d08ee011780f539c35",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a concrete technical explanation of vent-system operation and lists vent-tube conditions checked during PMCS.\"}",
+    "usage": {
+      "input_tokens": 395,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 60,
+      "output_tokens_details": {
+        "reasoning_tokens": 12
+      },
+      "total_tokens": 455
+    }
+  },
+  "record_hash": "28a87366af127a133bbbf7ca987089ada27fbb3f17abdc48930fc60991742358",
+  "request_hash": "7bdfc9bff831a5846acf47f65cbf31fa17f05c91a22f1f2405d8d67d93fb387f",
+  "started_at": "2026-09-28T09:16:20.141765+00:00",
+  "status": "OK"
+}

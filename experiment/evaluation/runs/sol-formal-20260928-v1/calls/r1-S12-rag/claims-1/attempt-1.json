@@ -1,0 +1,152 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:44:05.254194+00:00",
+  "parsed": {
+    "statements": [
+      "The surge-tank cap valve opens at approximately 15 psi (103 kPa) cooling-system pressure."
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588645,
+      "conversation": null,
+      "created_at": 1790588643.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0fb897095d535533016aba36e3473487d0aea1cc5180390eac",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[\"The surge-tank cap valve opens at approximately 15 psi (103 kPa) cooling-system pressure.\"]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0fb897095d535533016aba36e477b887d0a0fb875df0b451b8",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "StatementGeneratorOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for statement generation.",
+            "properties": {
+              "statements": {
+                "description": "The generated statements from the answer",
+                "items": {
+                  "type": "string"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "StatementGeneratorOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 542,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 36,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 578
+      },
+      "user": null
+    },
+    "request_id": "resp_0fb897095d535533016aba36e3473487d0aea1cc5180390eac",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[\"The surge-tank cap valve opens at approximately 15 psi (103 kPa) cooling-system pressure.\"]}",
+    "usage": {
+      "input_tokens": 542,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 36,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 578
+    }
+  },
+  "record_hash": "a1765dc194cbe1deb2208bbedf1ee661bf368f7eba1b13b1693e56c33cefb0cf",
+  "request_hash": "64bad3799995894c0fbd5abb3893a02ff9968dcfe940cc8aa9312946c8d85492",
+  "started_at": "2026-09-28T09:44:03.143542+00:00",
+  "status": "OK"
+}

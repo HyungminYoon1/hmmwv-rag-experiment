@@ -1,0 +1,305 @@
+{
+  "at": "2026-09-29T05:36:22.772924+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "6cf2230846e5504358c970b2b4e7c346beb507c900eedb37fcb6e737b5b29959",
+  "result": {
+    "attempt_key": "r1-M04-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 25.91896170000018,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7771269296923106
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7771269296923106
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M04",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "The response says it cannot provide a precise citation, but still gives a diagnostic system and two possible causes of rough running."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.825782966208704,
+          0.7796169026611796,
+          0.7259809202070482
+        ],
+        "query_vector_hash": "1cf6e7ec5fa265614abeae22ca1f67b0cb6b0cbe8637e12e51d11738637aa5ff",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What diagnostic system does the HMMWV exhaust-color guidance direct maintainers to, and what two other problem areas can cause rough running?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What diagnostic system and two potential problem areas does the response associate with a rough-running HMMWV engine emitting white smoke?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "According to the response, which diagnostic system addresses rough running in the HMMWV, and what two other problem areas can cause it?"
+          }
+        ],
+        "response_vectors_hash": "30ef1905ea5a997148318c7ee753184b973e3a286def116648fa8d7a4dd51f9f",
+        "score": 0.777126929692311
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer describes its basis as standard vehicle maintenance knowledge, standard maintenance practices, and general knowledge of the manual’s diagnostic approach.",
+          "The answer says specific chunk IDs are unavailable in the provided reference and that it cannot provide a precise citation without manual excerpts."
+        ],
+        "shared_conditions": [
+          "The diagnostic question concerns an engine that runs roughly and emits white smoke."
+        ],
+        "statements": [
+          {
+            "answer_quote": "does not directly specify a diagnostic system for rough-running engines emitting white smoke",
+            "statement": "For an engine that runs roughly and emits white smoke, the HMMWV maintenance manual’s exhaust-color guidance does not directly specify a diagnostic system."
+          },
+          {
+            "answer_quote": "generally directs the maintainer to the **exhaust-color diagnostic system**",
+            "statement": "For an engine that runs roughly and emits white smoke, the exhaust-color guidance generally directs the maintainer to the exhaust-color diagnostic system."
+          },
+          {
+            "answer_quote": "white smoke typically indicates coolant leakage into the combustion chamber",
+            "statement": "For an engine that runs roughly and emits white smoke, white smoke typically indicates coolant leaking into the combustion chamber."
+          },
+          {
+            "answer_quote": "which may be due to a cracked cylinder head",
+            "statement": "For an engine that runs roughly and emits white smoke, coolant leakage into the combustion chamber may be due to a cracked cylinder head."
+          },
+          {
+            "answer_quote": "or a failed head gasket",
+            "statement": "For an engine that runs roughly and emits white smoke, coolant leakage into the combustion chamber may be due to a failed head gasket."
+          },
+          {
+            "answer_quote": "**Fuel system issues** (such as clogged fuel filters or fuel pump failure)",
+            "statement": "In the diagnostic context of a rough-running engine emitting white smoke, fuel-system issues, including clogged fuel filters or fuel-pump failure, are described as common possible causes of rough running."
+          },
+          {
+            "answer_quote": "**Ignition system problems** (such as faulty spark plugs or ignition coils)",
+            "statement": "In the diagnostic context of a rough-running engine emitting white smoke, ignition-system problems, including faulty spark plugs or ignition coils, are described as common possible causes of rough running."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "does not directly specify a diagnostic system for rough-running engines emitting white smoke",
+          "id": "C001",
+          "text": "For an engine that runs roughly and emits white smoke, the HMMWV maintenance manual’s exhaust-color guidance does not directly specify a diagnostic system."
+        },
+        {
+          "answer_quote": "generally directs the maintainer to the **exhaust-color diagnostic system**",
+          "id": "C002",
+          "text": "For an engine that runs roughly and emits white smoke, the exhaust-color guidance generally directs the maintainer to the exhaust-color diagnostic system."
+        },
+        {
+          "answer_quote": "white smoke typically indicates coolant leakage into the combustion chamber",
+          "id": "C003",
+          "text": "For an engine that runs roughly and emits white smoke, white smoke typically indicates coolant leaking into the combustion chamber."
+        },
+        {
+          "answer_quote": "which may be due to a cracked cylinder head",
+          "id": "C004",
+          "text": "For an engine that runs roughly and emits white smoke, coolant leakage into the combustion chamber may be due to a cracked cylinder head."
+        },
+        {
+          "answer_quote": "or a failed head gasket",
+          "id": "C005",
+          "text": "For an engine that runs roughly and emits white smoke, coolant leakage into the combustion chamber may be due to a failed head gasket."
+        },
+        {
+          "answer_quote": "**Fuel system issues** (such as clogged fuel filters or fuel pump failure)",
+          "id": "C006",
+          "text": "In the diagnostic context of a rough-running engine emitting white smoke, fuel-system issues, including clogged fuel filters or fuel-pump failure, are described as common possible causes of rough running."
+        },
+        {
+          "answer_quote": "**Ignition system problems** (such as faulty spark plugs or ignition coils)",
+          "id": "C007",
+          "text": "In the diagnostic context of a rough-running engine emitting white smoke, ignition-system problems, including faulty spark plugs or ignition coils, are described as common possible causes of rough running."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M04-A01",
+            "reason": "The response names the exhaust-color diagnostic system, not Fuel System Tests §2-22."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M04-A02",
+            "reason": "It does not identify air intake or exhaust problems as causes of rough running."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M04-A03",
+            "reason": "It does not identify internal mechanical problems as a cause of rough running."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The WHITE guidance explicitly says to go to fuel system, Paragraph 2-22.",
+              "statement": "For an engine that runs roughly and emits white smoke, the HMMWV maintenance manual’s exhaust-color guidance does not directly specify a diagnostic system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The WHITE guidance directs the maintainer to the fuel system, not an exhaust-color diagnostic system.",
+              "statement": "For an engine that runs roughly and emits white smoke, the exhaust-color guidance generally directs the maintainer to the exhaust-color diagnostic system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied guidance does not mention coolant leakage.",
+              "statement": "For an engine that runs roughly and emits white smoke, white smoke typically indicates coolant leaking into the combustion chamber.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context does not mention coolant leakage or a cracked cylinder head.",
+              "statement": "For an engine that runs roughly and emits white smoke, coolant leakage into the combustion chamber may be due to a cracked cylinder head.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context does not mention coolant leakage or a failed head gasket.",
+              "statement": "For an engine that runs roughly and emits white smoke, coolant leakage into the combustion chamber may be due to a failed head gasket.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context directs the maintainer to fuel-system tests but does not identify clogged filters or fuel-pump failure as causes.",
+              "statement": "In the diagnostic context of a rough-running engine emitting white smoke, fuel-system issues, including clogged fuel filters or fuel-pump failure, are described as common possible causes of rough running.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context does not mention ignition-system problems, spark plugs, or ignition coils.",
+              "statement": "In the diagnostic context of a rough-running engine emitting white smoke, ignition-system problems, including faulty spark plugs or ignition coils, are described as common possible causes of rough running.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 4.440892098500626e-16,
+        "cosine_similarities": [
+          0.825782966208704,
+          0.7796169026611796,
+          0.7259809202070482
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7771269296923106,
+        "query_vector_hash": "1cf6e7ec5fa265614abeae22ca1f67b0cb6b0cbe8637e12e51d11738637aa5ff",
+        "ragas_score": 0.777126929692311,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "30ef1905ea5a997148318c7ee753184b973e3a286def116648fa8d7a4dd51f9f"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.825782966208704,
+          0.7796169026611796,
+          0.7259809202070482
+        ],
+        "decimal50_cosines": [
+          "0.82578296620870401503991809515710295992200284540332",
+          "0.77961690266117968633746544620949458720643362625412",
+          "0.72598092020704823728721972467865587339503720049615"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.777126929692311
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.777126929692311
+          }
+        },
+        "query_vector_hash": "1cf6e7ec5fa265614abeae22ca1f67b0cb6b0cbe8637e12e51d11738637aa5ff",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What diagnostic system does the HMMWV exhaust-color guidance direct maintainers to, and what two other problem areas can cause rough running?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What diagnostic system and two potential problem areas does the response associate with a rough-running HMMWV engine emitting white smoke?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "According to the response, which diagnostic system addresses rough running in the HMMWV, and what two other problem areas can cause it?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "30ef1905ea5a997148318c7ee753184b973e3a286def116648fa8d7a4dd51f9f",
+        "score": 0.7771269296923106
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "e760369dea27a4a82816f77080a577ebcadc110ede297e6480f6e083960c17f7",
+  "source_result_sha256": "a5c039c09aac8809533c6a735bba988ec5e249f95c2a2ab30353508e6a21200d"
+}

@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T08:57:18.910613+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives both numerical limits and directly assesses whether each reading meets its limit."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790585845,
+      "conversation": null,
+      "created_at": 1790585842.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_04a5206c0cd3c9cf016aba2bf25b2c87d0ae721e6fb0716386",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABquiv1LxyZNpF_MgKzmHwei3JaGDXFGXJxDvDrGfqa7xBnxk6BLSwxfaqc_FGWPd7vZXMGGV3FlVRIrt57Sb1yzK1V3O34fV-Da2dJ1SNoAqt4nfgE8Bo6UnKVvFMbVHs5PB4lGdRd5S4I3LCAUzJ8c2SPwSwawJzlEGGBiGDv_penx0DFBjiW3-mLihuUyHw28JQ3OYeOzm8ACwjRufrQ8YGBSsBIQF3CpFtWntQKMv8CcVSv2ZOVRDQw5yXw1-th4NHJMVacHPNkqOSWYE6TkJegb5-iRKMrmxYiikJ7X2gA5QOwdXJTTBia4NUnk9y1SKfCFqnjkJl8LL4ijRFUX4Pk_g3bQMXFvqXr6V7JErpyKFf8YlOg4ueimbsssEJldZ7nG-FYHJd5xvOxx1uA4BOsbz-fAcknJgLlDHdbTOJwZ5MoSczU6iCdr4q80EYg0mhLDje54dBAlz0uNOrv250vkbcxv-YXy1t_qvTytsd9qKgyhHKRRudSDgiG214tYXTq5OfP3Fw0s_d6_6ZpgjA5Acc1FjIH7L1WwUF8xMjBUy6OtgAVuqO2TOLdBd8x9RwO_ePr8HSG4qjT0UOdbARJ3C4sXf9lF2syekN700U_lihzjxJl6L-anCeUMoyLwtmYUOFdcqHk11MKS684VU167xna-NmXPlBTtpbe0pD0TOL6LK4_F0IJTa-okerWwE772dMv_f6gMH6jF0ehkvbJ3i7DvNnodwXM5G4ow5uP_4YmuEKTlMTWBLj5ppCjUAF8gAKC2hvXwiZJksO8Q8hcaAAgv7McNyuV6qJIvn6Jj93mPT5aP4Jxys95qdXjL05wmZW0N29nUgA-7UOjgSYCpkJMYJEc6Sfu0T8CrlhMIsK524WCdlcZ2MXTp8zyV8aIqVO2JPEqgYqFWM-eghSf_pbDjWIgijyTdU6EzsM7udTLVYc3kLTNExrB2GzKgvqcNJ4yG0j9Xq2lRYCEQgqmE5lPwBnI_skcid8Ju6MtWxe9Xn4ksAdzNzT9BRucIr0pzu6IIYHtxrZKTE9PnXchhfAy63PaXcJ9cKxHhh3Y-LutxbW7QuShicqMFLZe-BNY-_4RH3AtHRygnUCWqyTlaZEyAxGGmBZUI9zYFkkdRgE2k30MTKK-2rhaCp0T_VPG9f6yPv3k-HG7gSwIlcLDKasV4EELbkC8fkTcX_WHG-fo3SUw_g_2iuzbn-Wwr2Zod-pJ1_8P0g8vVrqW284BWQ==",
+          "id": "rs_04a5206c0cd3c9cf016aba2bf2f27887d0a525a985c2433ff0",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives both numerical limits and directly assesses whether each reading meets its limit.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_04a5206c0cd3c9cf016aba2bf3664887d0a14473945b194500",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 365,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 55,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 420
+      },
+      "user": null
+    },
+    "request_id": "resp_04a5206c0cd3c9cf016aba2bf25b2c87d0ae721e6fb0716386",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives both numerical limits and directly assesses whether each reading meets its limit.\"}",
+    "usage": {
+      "input_tokens": 365,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 55,
+      "output_tokens_details": {
+        "reasoning_tokens": 13
+      },
+      "total_tokens": 420
+    }
+  },
+  "record_hash": "588460b57bc5a428bdd24ef3c4896b60ddd32e348e2b586199abb123a694ef00",
+  "request_hash": "5b0596f39be4246095cf5cd1aba02520a8043378bed3b192fe348567fc835dd7",
+  "started_at": "2026-09-28T08:57:12.213277+00:00",
+  "status": "OK"
+}

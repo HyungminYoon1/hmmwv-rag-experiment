@@ -1,0 +1,129 @@
+{
+  "at": "2026-09-29T05:36:22.953288+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "eddf19ee450d5a78217da4bc5f8d7239bcd2a69dfe8e5fee5372353ce96a2946",
+  "result": {
+    "attempt_key": "r1-U08-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 25.201448399999208,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U08",
+    "stages": {
+      "abstention": {
+        "answer_quote": "I do not know the full thermostat removal and installation procedure, including access and reassembly steps, as this information is not provided in the given excerpts.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source says flow is shut off until 190°F, not at 190°F.",
+              "statement": "the thermostat shuts off coolant return flow at 190°F (88°C)",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source qualifies its caution as applying when approaching a hot engine; the claim drops that condition.",
+              "statement": "it should be removed and replaced with caution",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C002143"
+              ],
+              "evidence_quotes": [
+                "Remove and replace the thermostat,\nrefer to (para 3-75)."
+              ],
+              "reason": "The thermostat removal-and-replacement reference names paragraph 3-75.",
+              "statement": "referring to paragraph 3-75",
+              "verdict": 1
+            }
+          ]
+        },
+        "partial_claims": [
+          "the thermostat shuts off coolant return flow at 190°F (88°C)",
+          "it should be removed and replaced with caution",
+          "referring to paragraph 3-75"
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer withholds the complete procedure and invents no access, removal, or reassembly steps. Its partial answer is outside the declared scope as phrased: it reverses the temperature condition and omits the hot-engine qualifier. The retrieved heater procedures concern other components and do not supply the thermostat procedure.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source says flow is shut off until 190°F, not at 190°F.",
+              "statement": "the thermostat shuts off coolant return flow at 190°F (88°C)",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved caution is specifically about approaching a hot engine, a qualifier the claim omits.",
+              "statement": "it should be removed and replaced with caution",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C002143"
+              ],
+              "evidence_quotes": [
+                "Remove and replace the thermostat,\nrefer to (para 3-75)."
+              ],
+              "reason": "The retrieved thermostat reference names paragraph 3-75.",
+              "statement": "referring to paragraph 3-75",
+              "verdict": 1
+            }
+          ]
+        },
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 3,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 0,
+        "withholding_only": 1
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "94c1efea85664771b9c04266956b1e017103b8bb90c7af4a55bf258f386450db",
+  "source_result_sha256": "b98d533bd1f45d2f96aa698ee68516fb992912d0ca75579d6d9f2b6a65e8bedf"
+}

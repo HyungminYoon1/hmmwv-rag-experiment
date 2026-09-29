@@ -1,0 +1,201 @@
+{
+  "at": "2026-09-28T09:59:37.650618+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "d11804eae82c59ce4cc440ddfeae81d102c3c6ab2eaa0111fcad6d0a55bae582",
+  "original_result_sha256": "e388bc310f8fcd6e02ed654909b9331caaea18d47bb8a4490d5d6fc4e3f783c1",
+  "result": {
+    "attempt_key": "r1-S11-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 17.396019600000727,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.996907060847105
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.996907060847105
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S11",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific coolant mixture: equal parts water and ethylene glycol antifreeze."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9999999999998261,
+          0.9907211825416631,
+          0.9999999999998261
+        ],
+        "query_vector_hash": "2aaf401dce9536f941606ff3629f5989008ccca08895028e10b44e72793d1467",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the engine cooling system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the normally specified coolant mixture for the engine cooling system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the engine cooling system?"
+          }
+        ],
+        "response_vectors_hash": "2f40cd3faf34b71fabb5df88d1e05a45cd4eb1e94bbb757223595c17609fc8bf",
+        "score": 0.9969070608471053
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The normally specified coolant mixture for the engine cooling system is a 50-50 mixture of water and ethylene glycol base antifreeze."
+        }
+      ],
+      "claims_raw": [
+        "The normally specified coolant mixture for the engine cooling system is a 50-50 mixture of water and ethylene glycol base antifreeze."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "a 50-50 mixture of water and ethylene glycol base antifreeze",
+            "fulfilled": 1,
+            "id": "S11-A01",
+            "reason": "Matches the normally specified 50:50 water and ethylene-glycol-base antifreeze mixture."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used."
+              ],
+              "reason": "The cooling-system description explicitly gives this as the normal mixture.",
+              "statement": "The normally specified coolant mixture for the engine cooling system is a 50-50 mixture of water and ethylene glycol base antifreeze.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:mixture"
+              ],
+              "evidence_quotes": [
+                "Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used."
+              ],
+              "reason": "The context says this mixture is normally used.",
+              "statement": "The normally specified coolant mixture for the engine cooling system is a 50-50 mixture of water and ethylene glycol base antifreeze.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.9999999999998261,
+          0.9907211825416631,
+          0.9999999999998261
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.996907060847105,
+        "query_vector_hash": "2aaf401dce9536f941606ff3629f5989008ccca08895028e10b44e72793d1467",
+        "ragas_score": 0.9969070608471053,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "2f40cd3faf34b71fabb5df88d1e05a45cd4eb1e94bbb757223595c17609fc8bf"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9999999999998261,
+          0.9907211825416631,
+          0.9999999999998261
+        ],
+        "decimal50_cosines": [
+          "0.99999999999982625746277627310664532624623718513958",
+          "0.99072118254166337088966385026140942792468497004866",
+          "0.99999999999982625746277627310664532624623718513958"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 3.3306690738754696e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9969070608471053
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9969070608471053
+          }
+        },
+        "query_vector_hash": "2aaf401dce9536f941606ff3629f5989008ccca08895028e10b44e72793d1467",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the engine cooling system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the normally specified coolant mixture for the engine cooling system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What coolant mixture is normally specified for the engine cooling system?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "2f40cd3faf34b71fabb5df88d1e05a45cd4eb1e94bbb757223595c17609fc8bf",
+        "score": 0.996907060847105
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "3f390171850e33c4daea799c34df1d08b7e6bef1a28c8ed9e2aa1d47c16f1d0e"
+}

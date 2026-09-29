@@ -1,0 +1,190 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T05:23:55.433910+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "The maximum acceptable battery resistance-change value in STE/ICE-R Test 75 is 50 milliohms/second",
+        "fulfilled": 1,
+        "id": "S19-A01",
+        "reason": "States the correct maximum and rate unit for Test 75."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790659437,
+      "conversation": null,
+      "created_at": 1790659435.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_089038f893d56071016abb4b6bce4487d0ab32f647ccc2e902",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S19-A01\",\"fulfilled\":1,\"answer_quote\":\"The maximum acceptable battery resistance-change value in STE/ICE-R Test 75 is 50 milliohms/second\",\"reason\":\"States the correct maximum and rate unit for Test 75.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_089038f893d56071016abb4b6cebb087d0ba040c20c55d0d8e",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1750,
+        "input_tokens_details": {
+          "cache_write_tokens": 1747,
+          "cached_tokens": 0
+        },
+        "output_tokens": 67,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1817
+      },
+      "user": null
+    },
+    "request_id": "resp_089038f893d56071016abb4b6bce4487d0ab32f647ccc2e902",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S19-A01\",\"fulfilled\":1,\"answer_quote\":\"The maximum acceptable battery resistance-change value in STE/ICE-R Test 75 is 50 milliohms/second\",\"reason\":\"States the correct maximum and rate unit for Test 75.\"}]}",
+    "usage": {
+      "input_tokens": 1750,
+      "input_tokens_details": {
+        "cache_write_tokens": 1747,
+        "cached_tokens": 0
+      },
+      "output_tokens": 67,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1817
+    }
+  },
+  "record_hash": "9560f8da0b500e75f8be7e47f5f251c944d85d00f7105da54bb8897002dead3d",
+  "request_hash": "941f0917925bcc3a6f1109ccbc3323ec734bc9b6b2cead299795576bb46459f2",
+  "started_at": "2026-09-29T05:23:53.139873+00:00",
+  "status": "OK"
+}

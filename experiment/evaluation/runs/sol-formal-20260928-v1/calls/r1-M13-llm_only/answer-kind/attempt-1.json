@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:11:33.574584+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "Provides specific threshold values and states whether each measurement falls below its threshold."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586693,
+      "conversation": null,
+      "created_at": 1790586691.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0656989bf7342495016aba2f4315d487d0a8382bd0c71b2983",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqui9F2zUGuhNg3IPwzD3ICczhSDTdWEmeuUb14ENKmHK-oU9fHpDY9ZbBP3VW9vXUd1DnlmhINi92LhVVByEazx7NS5KQD52VW69tlvJyEFE8h6fGo7ycaq11YAK8P570rPvfGE1-409tdN_Lx6eUVudI1ifLph70gq_EayJP3Tpf_-TyO1ZZl8aDNTo2GKEmLZNZ2dQPvDZtDGXNcExZuwVx0XnPM8eNKmzDY1m2ddUrtD99FFw0l3hIIemBQ_4uj_MCJxMTnRqTA5t89ANjnDt2TCf2m8FG7evhlgvHS4L7B6DyA3Ui1oKyr8AM5wPcsH048zZEQRS8Zg4Ul_O2BdPlG5qnSVElZLCuw0N5EYR3WotVMW1M-0Phy4F50FPl71XWyKip1kO_vTiGAEd7WoHg5FmyXqE4E9QkLZOkYXmN6KS7OQTeL9K_typOmPtdz8BFxlfFZ0zrQTxfr4tpbkFlUudp-00N8SnnLAFFOyDSe1TKPJijazSNtUpGh3l-OPBo-IzLvYEkcyrF1qQB7MF6WfU2g_lQVE4RQo7RHOmszVirIJWgRysna0VSVjFu2w352PadFxK9uPABYbuwRx7Ik4g1qfDCEtMRO6nCw2O5aufEVTUiheW0O-fFdGNBl2e12T1Lsmbz6Oh4ItNOfKlvViww0tpTwJTTlFWl4UU8dEegFIGpEqYKuj3WrA0SheeoMnaHOzRz09-6b_kLNuyj4BUhLBrV_KdYZdaPwUbY2k8jrSweY4DI2chjvZHXLUW6GYZYWgDiiK-LU8cg1jhd-K91jc00fBLdvcrEwwhXFf2locvSTjJGCBB-XcsmeOPPpuhbZimEukk8k7qgbCAqStv3dFNljkH_K8ei8ajvDdgp4QsSm9xkyGAHNM70Kd7MCwXsO0f981fFvUKhkSeCpa7VDFs0bj9yvACAlxvFE_fRuGduSdtJxNQ4MzdZXWAgioZwzlEdNCSqchvqq_0EHnsLpIzbIttuZ2HIqoZWhPhnr7GWhEfIzJV2ztsWhK98J8zBshnQEy7nhApLFVg9CTF41fsYdWf94Cbttnj2KPYR_yzQlqrtObgQfGvYUwbO75lCq1r21q3DKDyW1ellV5sx_eDp4Yg9busxDTmSnCqpITiImRzeKpRlaukuzmX25brz2wAfVpHNl2P1XCJAQQjrTNv3cIj2ymq-Ab7369vf9tCb7ibFb_Trq9wvdscOxvD15aAoszSkYr9oVmQFsQ==",
+          "id": "rs_0656989bf7342495016aba2f441c4087d0b065d9fa2bb5b8c2",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"Provides specific threshold values and states whether each measurement falls below its threshold.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0656989bf7342495016aba2f448bf887d0a2f6e43ce8eb8224",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 496,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 53,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 549
+      },
+      "user": null
+    },
+    "request_id": "resp_0656989bf7342495016aba2f4315d487d0a8382bd0c71b2983",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"Provides specific threshold values and states whether each measurement falls below its threshold.\"}",
+    "usage": {
+      "input_tokens": 496,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 53,
+      "output_tokens_details": {
+        "reasoning_tokens": 13
+      },
+      "total_tokens": 549
+    }
+  },
+  "record_hash": "e1e33571070d91dcaf92137e91f4491223293e39590a6732f8baded2cdf260ae",
+  "request_hash": "6266dde7386ca8cdfb799729bef7d82cb7db7aabd7cd9b141fe1d986214dc5ba",
+  "started_at": "2026-09-28T09:11:30.958170+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,287 @@
+{
+  "at": "2026-09-28T09:55:51.733322+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "02cf07499fead89154dc6fabe37ee617d87ed87ad0a430ca27d16e323f2de214",
+  "original_result_sha256": "3e6d8c36418b75553f0af70e625391ea616a75648373974723c62041933dcc45",
+  "result": {
+    "attempt_key": "r1-M10-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 32.66066990000036,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.6835059199285775
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.6835059199285775
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      }
+    },
+    "question_id": "M10",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It gives specific oil-pressure and maintenance claims, but qualifies them by saying no manual excerpts were supplied."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7127970302719278,
+          0.677661312503739,
+          0.6600594170100655
+        ],
+        "query_vector_hash": "4555dd70f565340dd744cdcc75f4c941f16a1661ec14d456775d7e72ca6c3c87",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What should be done if the 6.2L HMMWV engine oil is contaminated despite acceptable oil pressure readings?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For a 6.2L M998-series HMMWV engine, what is the minimum oil pressure at idle, and what should be done if the engine oil is contaminated despite acceptable pressure readings?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What should be done if the engine oil in a 6.2L M998-series HMMWV is contaminated, even when oil pressure is acceptable?"
+          }
+        ],
+        "response_vectors_hash": "0c1faab53c7044d1512adf4b3329bb4980a909844d2b47e9f62dfdbe6ab59ab6",
+        "score": 0.6835059199285772
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The lubrication-test chart for the 6.2L engine in the M998-series HMMWV specifies a minimum oil pressure of 8 psi at idle (650 RPM) for proper lubrication."
+        },
+        {
+          "id": "C002",
+          "text": "Contaminated oil compromises lubrication effectiveness even when oil-pressure readings appear acceptable."
+        },
+        {
+          "id": "C003",
+          "text": "Contaminated oil reduces oil viscosity."
+        },
+        {
+          "id": "C004",
+          "text": "Contaminated oil increases the potential for engine wear."
+        },
+        {
+          "id": "C005",
+          "text": "Standard PMCS (Preventive Maintenance and Condition Standard) procedures for HMMWV engines call for immediate replacement of the engine oil and filter when the oil is known to be contaminated, regardless of oil-pressure readings."
+        },
+        {
+          "id": "C006",
+          "text": "Oil contamination affects oil-film integrity."
+        },
+        {
+          "id": "C007",
+          "text": "Oil contamination can lead to premature engine wear."
+        },
+        {
+          "id": "C008",
+          "text": "No manual excerpts were supplied."
+        },
+        {
+          "id": "C009",
+          "text": "The answer is based on standard PMCS practices for HMMWV engine maintenance."
+        }
+      ],
+      "claims_raw": [
+        "The lubrication-test chart for the 6.2L engine in the M998-series HMMWV specifies a minimum oil pressure of 8 psi at idle (650 RPM) for proper lubrication.",
+        "Contaminated oil compromises lubrication effectiveness even when oil-pressure readings appear acceptable.",
+        "Contaminated oil reduces oil viscosity.",
+        "Contaminated oil increases the potential for engine wear.",
+        "Standard PMCS (Preventive Maintenance and Condition Standard) procedures for HMMWV engines call for immediate replacement of the engine oil and filter when the oil is known to be contaminated, regardless of oil-pressure readings.",
+        "Oil contamination affects oil-film integrity.",
+        "Oil contamination can lead to premature engine wear.",
+        "No manual excerpts were supplied.",
+        "The answer is based on standard PMCS practices for HMMWV engine maintenance."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "oil pressure should be at least 8 psi at idle (650 RPM)",
+            "fulfilled": 0,
+            "id": "M10-A01",
+            "reason": "The chart specifies approximately 10–15 psi, not a minimum of 8 psi."
+          },
+          {
+            "answer_quote": "even if pressure readings appear acceptable",
+            "fulfilled": 0,
+            "id": "M10-A02",
+            "reason": "The answer does not identify 8 psi as below the chart range and instead treats it as acceptable."
+          },
+          {
+            "answer_quote": "replace the engine oil and filter",
+            "fulfilled": 1,
+            "id": "M10-A03",
+            "reason": "This matches the PMCS action for known contamination."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied reference gives approximately 10–15 PSI at idle, not a minimum of 8 PSI.",
+              "statement": "The lubrication-test chart for the 6.2L engine in the M998-series HMMWV specifies a minimum oil pressure of 8 psi at idle (650 RPM) for proper lubrication.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not describe contamination’s effect on lubrication or its relationship to pressure readings.",
+              "statement": "Contaminated oil compromises lubrication effectiveness even when oil-pressure readings appear acceptable.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not state an effect on viscosity.",
+              "statement": "Contaminated oil reduces oil viscosity.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not state an effect on engine wear.",
+              "statement": "Contaminated oil increases the potential for engine wear.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The note calls for changing known-contaminated oil and filter, but does not specify immediate replacement or address oil-pressure readings.",
+              "statement": "Standard PMCS (Preventive Maintenance and Condition Standard) procedures for HMMWV engines call for immediate replacement of the engine oil and filter when the oil is known to be contaminated, regardless of oil-pressure readings.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Oil-film integrity is not discussed.",
+              "statement": "Oil contamination affects oil-film integrity.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Premature engine wear is not discussed.",
+              "statement": "Oil contamination can lead to premature engine wear.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context includes a HMMWV maintenance-table excerpt.",
+              "statement": "No manual excerpts were supplied.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context contains maintenance procedures but does not establish what an answer is based on.",
+              "statement": "The answer is based on standard PMCS practices for HMMWV engine maintenance.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.7127970302719278,
+          0.677661312503739,
+          0.6600594170100655
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.6835059199285775,
+        "query_vector_hash": "4555dd70f565340dd744cdcc75f4c941f16a1661ec14d456775d7e72ca6c3c87",
+        "ragas_score": 0.6835059199285772,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "0c1faab53c7044d1512adf4b3329bb4980a909844d2b47e9f62dfdbe6ab59ab6"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7127970302719278,
+          0.677661312503739,
+          0.6600594170100655
+        ],
+        "decimal50_cosines": [
+          "0.71279703027192757075247914164488689010887556436218",
+          "0.67766131250373874634287791688655252643124918186613",
+          "0.66005941701006541483363764248179334358061493596303"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.6835059199285772
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.6835059199285772
+          }
+        },
+        "query_vector_hash": "4555dd70f565340dd744cdcc75f4c941f16a1661ec14d456775d7e72ca6c3c87",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What should be done if the 6.2L HMMWV engine oil is contaminated despite acceptable oil pressure readings?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For a 6.2L M998-series HMMWV engine, what is the minimum oil pressure at idle, and what should be done if the engine oil is contaminated despite acceptable pressure readings?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What should be done if the engine oil in a 6.2L M998-series HMMWV is contaminated, even when oil pressure is acceptable?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "0c1faab53c7044d1512adf4b3329bb4980a909844d2b47e9f62dfdbe6ab59ab6",
+        "score": 0.6835059199285775
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "685309dafac1c7335fcadefde22ad41d7618b8ce04b0d0c943470fbf311b9512"
+}

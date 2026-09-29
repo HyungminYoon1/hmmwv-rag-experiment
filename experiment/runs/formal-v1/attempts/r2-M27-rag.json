@@ -1,0 +1,810 @@
+{
+  "citation_ids": [
+    "[C000902]",
+    "[C007942]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:36:47.972267+00:00",
+  "evaluation_answer": "No, the general PMCS drivebelt-tension range does not apply to M1123 vehicles. The tension specifications (70 lbs minimum, 110 lbs maximum for new belts) are specified for all models except M1123 and \"A2\" vehicles .\n\nFor replacement of a worn serpentine belt on M1123 vehicles, refer to paragraph 11-202 .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1386,
+  "key": "r2-M27-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C005743] TM 9-2320-280-20-1 | PDF 577 | Printed 2-473\nREFERENCE INFORMATION\nSTEERING SYSTEM\n\nFor adjusting the drivebelt tension, refer to (para. 3-82,\nall except M1123 and \"A2\" vehicles), and replacing\nthe pulley, refer to (para 8-24).\n\n[C000902] TM 9-2320-280-20-1 | PDF 98 | Printed 2-7\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 4\nINTERVAL: Semi-\nAnnual\nBelt\nITEM TO BE INSPECTED: Engine\nAccessory\nDrive and\nSerpentine\n\nINTERVAL: Semi-\nAnnual\nBelt\nITEM NO.: 4\nITEM TO BE INSPECTED: Engine\nAccessory\nDrive and\nSerpentine\nNOT FULLY MISSION CAPABLE IF: a. Any drivebelt is miss-\ning, broken, frayed, or\ndry-rotted. Belt fiber has\nmore than one crack 1/8 in.\n(3.2 mm) in depth or 50% of\nbelt thickness) or has frays\nmore than 2 in. (51 mm)\nlong. Serpentine belt has\nmoved out of place on\np u l l e y s .\nb. Tension below 70 lbs\n(311 N), or greater than\n110 lbs (489 N) new belt\nand 95 lbs (422 N)\nold belts.\nPROCEDURES: a. Check for missing, broken, cracked,\nand frayed drivebelts. Ensure\nserpentine drivebelt has not moved\nout of place on pulley.\nb. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum. If\nbelt tension is not at least 70 lbs (311 N),\nadjust drivebelts (paragraph 3-82). Tension\nshould not be greater than 110 lbs (489 N)\nfor new belts; old belts 95 lbs (422 N).\n\n[C000025] TM 9-2320-280-20-1 | PDF 35 | Printed 1-5\nM1123\n\n[C007942] TM 9-2320-280-20-1 | PDF 811 | Printed 2-711\nAdjust drivebelt, refer to (para. 11-202).\n\n[C000978] TM 9-2320-280-20-1 | PDF 108,109,110 | Printed 2-17,2-18,2-19\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 16\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n\nd\nor to plug level when hot.\ng. U-joint is damaged,\nunserviceable, or missing\nlubrication fitting.\nh. Loose, missing, or\nbroken capscrews.\ni. Rubber block or center\nsupport bearing is worn or\npropeller shaft wobbles.\nPROCEDURES: f. M998, M998A1, and M1121 series\nvehicles – Check differential lubricant\nlevel semiannually or every (3,000 miles)\n(4,830 km). M998A2 and M1123 series\nvehicles – Change differential lubricant\nsemiannually or every 3,000 miles\n(4,830 km). Differential level should be\nwithin 1/4 inch (6.4 mm) of fill plug\nopening when lubricant is cold or to plug\nlevel when hot.\ng. Inspect U-joints for damage, free\nplay, and missing or unserviceable\nlubrication fittings.\nh. Tighten front prop shaft mounting\ncapscrews to 13-18 lb-ft (18-24 N•m)\nand center support capscrews to 60 lb-ft\n(81 N•m). Tighten rear prop shaft\ncapscrews to 13-18 lb-ft (18-24 N•m)\nand tighten U-bolt nuts to 21 lb-ft\n(29 N•m).\ni. Inspect rubber block and center\nsupport bearing for wear and wobble in\npropeller shaft.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents (Cont’d)\nNOT FULLY MISSION CAPABLE IF: j. Loose, missing, or\nbroken bolts.\nPROCEDURES: j. Tighten halfshaft mounting bolts to\n48 lb-ft (65 N•m).\nQUESTION:\nDoes the general PMCS drivebelt-tension range apply to M1123 vehicles, and which paragraph is cited for replacement of their worn serpentine belt?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 1385,
+  "question": "Does the general PMCS drivebelt-tension range apply to M1123 vehicles, and which paragraph is cited for replacement of their worn serpentine belt?",
+  "question_id": "M27",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:24:04.826537407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:24:02.061231907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4869734400.0,
+    "max_actual_interval_ms": 110.52579999977752,
+    "peak_rss_bytes": 13344882688,
+    "peak_vram_bytes": 4869734400,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5491.4285681,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5491.5364127,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5491.6326723,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5491.7431981,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5491.8368955,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5491.9304956,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.0388497,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.132542,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.2406613,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.3365345,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.4295735,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.5390141,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9045417984,
+          "37564": 7958528
+        },
+        "rss_bytes": 13328265216,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.6300687,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 9062035456,
+          "37564": 7958528
+        },
+        "rss_bytes": 13344882688,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.7379455,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.8309358,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5492.9380735,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.0305704,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.1388372,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.2301532,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.3388997,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.433048,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.541506,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.633918,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.7441201,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.8380813,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5493.9312369,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5494.0383129,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      },
+      {
+        "monotonic": 5494.1294984,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103251968,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045852672,
+          "35444": 8089600,
+          "36040": 101093376,
+          "37504": 8887332864,
+          "37564": 7958528
+        },
+        "rss_bytes": 13170180096,
+        "vram_bytes": 4869734400
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:36:47.9717616Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 104,
+    "eval_duration": 1496884000,
+    "load_duration": 1047900,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 1385,
+    "prompt_eval_count": 1386,
+    "prompt_eval_duration": 15205000,
+    "response": "No, the general PMCS drivebelt-tension range does not apply to M1123 vehicles. The tension specifications (70 lbs minimum, 110 lbs maximum for new belts) are specified for all models except M1123 and \"A2\" vehicles [C000902].\n\nFor replacement of a worn serpentine belt on M1123 vehicles, refer to paragraph 11-202 [C007942].",
+    "total_duration": 1597453300
+  },
+  "retrieval": {
+    "embedding_ms": 116.74999999922875,
+    "items": [
+      {
+        "body_end": 143,
+        "body_start": 0,
+        "id": "C005743",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          577
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-473"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R006193"
+        ],
+        "review_ids": [],
+        "score": 0.5950091481208801,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[4]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nSTEERING SYSTEM\n\nFor adjusting the drivebelt tension, refer to (para. 3-82,\nall except M1123 and \"A2\" vehicles), and replacing\nthe pulley, refer to (para 8-24).",
+        "text_sha256": "a9a80f3ab4baf236c99a023835692325a63737d1c35988b502799a5a17e2c60a",
+        "token_count": 56,
+        "unit_id": "U005735",
+        "unit_key": "region:577:1:3"
+      },
+      {
+        "body_end": 949,
+        "body_start": 0,
+        "id": "C000902",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          98
+        ],
+        "prefix_chars": 181,
+        "printed_pages": [
+          "2-7"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5823514461517334,
+        "source_issues": [
+          {
+            "description": "Belt가 원문에서 INTERVAL 열에 배치되어 있음. 내부 공백만 보정하고 열 이동은 하지 않음.",
+            "id": "MISPLACED_BELT",
+            "pdf_page": 98,
+            "status": "SOURCE_LAYOUT_ANOMALY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "4",
+          "row_ids": [
+            "P0098-T2_1-R02"
+          ],
+          "source_issues": [
+            "MISPLACED_BELT"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 4\nINTERVAL: Semi-\nAnnual\nBelt\nITEM TO BE INSPECTED: Engine\nAccessory\nDrive and\nSerpentine\n\nINTERVAL: Semi-\nAnnual\nBelt\nITEM NO.: 4\nITEM TO BE INSPECTED: Engine\nAccessory\nDrive and\nSerpentine\nNOT FULLY MISSION CAPABLE IF: a. Any drivebelt is miss-\ning, broken, frayed, or\ndry-rotted. Belt fiber has\nmore than one crack 1/8 in.\n(3.2 mm) in depth or 50% of\nbelt thickness) or has frays\nmore than 2 in. (51 mm)\nlong. Serpentine belt has\nmoved out of place on\np u l l e y s .\nb. Tension below 70 lbs\n(311 N), or greater than\n110 lbs (489 N) new belt\nand 95 lbs (422 N)\nold belts.\nPROCEDURES: a. Check for missing, broken, cracked,\nand frayed drivebelts. Ensure\nserpentine drivebelt has not moved\nout of place on pulley.\nb. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum. If\nbelt tension is not at least 70 lbs (311 N),\nadjust drivebelts (paragraph 3-82). Tension\nshould not be greater than 110 lbs (489 N)\nfor new belts; old belts 95 lbs (422 N).",
+        "text_sha256": "3d8a8d490c063380c2586b45d727981cbbb8b176837196ae433abd729b307ea6",
+        "token_count": 389,
+        "unit_id": "U000901",
+        "unit_key": "pmcs:4"
+      },
+      {
+        "body_end": 5,
+        "body_start": 0,
+        "id": "C000025",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          35
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "1-5"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R000539"
+        ],
+        "review_ids": [],
+        "score": 0.5636702179908752,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "M1123",
+        "text_sha256": "a152ce791e9e4713582f774f4c74268d8a19fab12a9d86eb1bdebfe64d05f277",
+        "token_count": 5,
+        "unit_id": "U000025",
+        "unit_key": "region:35:1:4"
+      },
+      {
+        "body_end": 42,
+        "body_start": 0,
+        "id": "C007942",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          811
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-711"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R009701",
+          "R009702"
+        ],
+        "review_ids": [],
+        "score": 0.5500141382217407,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Adjust drivebelt, refer to (para. 11-202).",
+        "text_sha256": "9d5ec376dfe70fa00cb5f1056449e0da5ba7c152d815bce2c59bc6771d3283ba",
+        "token_count": 17,
+        "unit_id": "U007934",
+        "unit_key": "region:811:1:4"
+      },
+      {
+        "body_end": 2391,
+        "body_start": 1155,
+        "id": "C000978",
+        "kind": "pmcs_item",
+        "overlap_chars": 321,
+        "overlap_tokens": 100,
+        "pdf_pages": [
+          108,
+          109,
+          110
+        ],
+        "prefix_chars": 162,
+        "printed_pages": [
+          "2-17",
+          "2-18",
+          "2-19"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5391911268234253,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "16",
+          "row_ids": [
+            "P0108-T2_1-R02",
+            "P0109-T2_1-R01",
+            "P0110-T2_1-R01"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 16\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents\n\nd\nor to plug level when hot.\ng. U-joint is damaged,\nunserviceable, or missing\nlubrication fitting.\nh. Loose, missing, or\nbroken capscrews.\ni. Rubber block or center\nsupport bearing is worn or\npropeller shaft wobbles.\nPROCEDURES: f. M998, M998A1, and M1121 series\nvehicles – Check differential lubricant\nlevel semiannually or every (3,000 miles)\n(4,830 km). M998A2 and M1123 series\nvehicles – Change differential lubricant\nsemiannually or every 3,000 miles\n(4,830 km). Differential level should be\nwithin 1/4 inch (6.4 mm) of fill plug\nopening when lubricant is cold or to plug\nlevel when hot.\ng. Inspect U-joints for damage, free\nplay, and missing or unserviceable\nlubrication fittings.\nh. Tighten front prop shaft mounting\ncapscrews to 13-18 lb-ft (18-24 N•m)\nand center support capscrews to 60 lb-ft\n(81 N•m). Tighten rear prop shaft\ncapscrews to 13-18 lb-ft (18-24 N•m)\nand tighten U-bolt nuts to 21 lb-ft\n(29 N•m).\ni. Inspect rubber block and center\nsupport bearing for wear and wobble in\npropeller shaft.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 16\nITEM TO BE INSPECTED: Driveline\nCompo-\nnents (Cont’d)\nNOT FULLY MISSION CAPABLE IF: j. Loose, missing, or\nbroken bolts.\nPROCEDURES: j. Tighten halfshaft mounting bolts to\n48 lb-ft (65 N•m).",
+        "text_sha256": "15c7cd3853195e0ee991374c5324e96fd55ef8b96083b9ee725928dd09d4b9b9",
+        "token_count": 475,
+        "unit_id": "U000974",
+        "unit_key": "pmcs:16"
+      }
+    ],
+    "search_ms": 8.919100000639446
+  },
+  "round": 2,
+  "sequence": 192,
+  "started_at": "2026-09-28T04:36:46.245509+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1600.5496000007042,
+    "retrieval": 126.21839999974327,
+    "total": 1726.7680000004475
+  },
+  "unprovided_citations": []
+}

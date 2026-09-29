@@ -1,0 +1,310 @@
+{
+  "at": "2026-09-29T05:36:22.815657+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "b88ecaf97f64ccbc26640d06796611a5716283b841c38f95bc13ef5029c9223c",
+  "result": {
+    "attempt_key": "r1-M16-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 27.521258699999635,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8431601434965382
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8431601434965382
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.14285714285714285
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      }
+    },
+    "question_id": "M16",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "Provides cleaning instructions and specific refill quantities, but qualifies them with a disclaimer that the values were not drawn from supplied excerpts and need verification."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8697633821156754,
+          0.8682044406366027,
+          0.7915126077373366
+        ],
+        "query_vector_hash": "1b8999fdb40a9c3039f0e7f4d392b54b6d47d1b936b0334dd133eaac51942e48",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "How should contaminated components be handled after fording, and what gear oil refill quantities are given for each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How should contaminated components be handled after fording, and what are the stated gear oil refill quantities for each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "After fording contamination in an HMMWV, how should contaminated components be handled, and how much gear oil is recommended to refill each axle differential and geared hub?"
+          }
+        ],
+        "response_vectors_hash": "0889189b1c326b9e4d15d0b1172113322b596f460379b39f34bc964534e291a6",
+        "score": 0.8431601434965379
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says the quantities are based on standard maintenance procedures outlined in TM 9-2320-280-20-1, Volume 1; this describes its claimed provenance.",
+          "The answer says no actual excerpts were provided in REFERENCE and that the values were derived from general knowledge.",
+          "The answer says the values may require verification in the original document if the exact values were absent from the supplied reference."
+        ],
+        "shared_conditions": [
+          "The instructions and refill quantities concern items found contaminated after fording."
+        ],
+        "statements": [
+          {
+            "answer_quote": "After fording, any items found contaminated should be cleaned",
+            "statement": "After fording, items found contaminated should be cleaned."
+          },
+          {
+            "answer_quote": "inspected for damage or corrosion",
+            "statement": "After fording, items found contaminated should be inspected for damage or corrosion."
+          },
+          {
+            "answer_quote": "Contaminated components, such as differentials and geared hubs, must be cleaned thoroughly using appropriate solvents and then dried before reassembly",
+            "statement": "After fording, contaminated components such as differentials and geared hubs must be cleaned thoroughly with appropriate solvents and then dried before reassembly."
+          },
+          {
+            "answer_quote": "before reassembly to prevent internal damage or premature wear",
+            "statement": "After fording, cleaning and drying contaminated components before reassembly is intended to prevent internal damage or premature wear."
+          },
+          {
+            "answer_quote": "For each axle differential: 1.5 quarts of gear oil are typically recommended for refill after fording contamination",
+            "statement": "After fording contamination, 1.5 quarts of gear oil are typically recommended to refill each axle differential."
+          },
+          {
+            "answer_quote": "For each geared hub: 0.5 quarts of gear oil are recommended for refill",
+            "statement": "After fording contamination, 0.5 quarts of gear oil are recommended to refill each geared hub."
+          },
+          {
+            "answer_quote": "are consistent with typical HMMWV (M998-series) maintenance practices",
+            "statement": "The stated refill quantities are consistent with typical HMMWV (M998-series) maintenance practices."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "After fording, any items found contaminated should be cleaned",
+          "id": "C001",
+          "text": "After fording, items found contaminated should be cleaned."
+        },
+        {
+          "answer_quote": "inspected for damage or corrosion",
+          "id": "C002",
+          "text": "After fording, items found contaminated should be inspected for damage or corrosion."
+        },
+        {
+          "answer_quote": "Contaminated components, such as differentials and geared hubs, must be cleaned thoroughly using appropriate solvents and then dried before reassembly",
+          "id": "C003",
+          "text": "After fording, contaminated components such as differentials and geared hubs must be cleaned thoroughly with appropriate solvents and then dried before reassembly."
+        },
+        {
+          "answer_quote": "before reassembly to prevent internal damage or premature wear",
+          "id": "C004",
+          "text": "After fording, cleaning and drying contaminated components before reassembly is intended to prevent internal damage or premature wear."
+        },
+        {
+          "answer_quote": "For each axle differential: 1.5 quarts of gear oil are typically recommended for refill after fording contamination",
+          "id": "C005",
+          "text": "After fording contamination, 1.5 quarts of gear oil are typically recommended to refill each axle differential."
+        },
+        {
+          "answer_quote": "For each geared hub: 0.5 quarts of gear oil are recommended for refill",
+          "id": "C006",
+          "text": "After fording contamination, 0.5 quarts of gear oil are recommended to refill each geared hub."
+        },
+        {
+          "answer_quote": "are consistent with typical HMMWV (M998-series) maintenance practices",
+          "id": "C007",
+          "text": "The stated refill quantities are consistent with typical HMMWV (M998-series) maintenance practices."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M16-A01",
+            "reason": "The answer says to clean, inspect, and dry contaminated items, but does not instruct relubrication."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M16-A02",
+            "reason": "The answer gives 1.5 quarts per axle differential, not 2 quarts."
+          },
+          {
+            "answer_quote": "For each geared hub: 0.5 quarts of gear oil are recommended for refill .",
+            "fulfilled": 1,
+            "id": "M16-A03",
+            "reason": "0.5 quart equals 1 pint; the later verification caveat does not negate the concrete quantity."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.14285714285714285,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000832"
+              ],
+              "evidence_quotes": [
+                "(3) Clean fittings before lubrication. Clean parts with drycleaning solvent (SD), type II, or equivalent.\nDry before lubricating. Relubricate all items found contaminated after fording."
+              ],
+              "reason": "The passage instructs cleaning parts and addresses all items found contaminated after fording.",
+              "statement": "After fording, items found contaminated should be cleaned.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied after-fording instruction does not require inspection for damage or corrosion.",
+              "statement": "After fording, items found contaminated should be inspected for damage or corrosion.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source says to dry before lubricating, not before reassembly, and does not specify thorough cleaning of those components.",
+              "statement": "After fording, contaminated components such as differentials and geared hubs must be cleaned thoroughly with appropriate solvents and then dried before reassembly.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source does not state this purpose or a before-reassembly requirement.",
+              "statement": "After fording, cleaning and drying contaminated components before reassembly is intended to prevent internal damage or premature wear.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied refill instruction specifies 2 quarts per axle differential, not 1.5.",
+              "statement": "After fording contamination, 1.5 quarts of gear oil are typically recommended to refill each axle differential.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied refill instruction specifies 1 pint (0.5 L) per geared hub, not 0.5 quarts.",
+              "statement": "After fording contamination, 0.5 quarts of gear oil are recommended to refill each geared hub.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied quantities differ from the stated quantities; the context does not establish the claimed consistency.",
+              "statement": "The stated refill quantities are consistent with typical HMMWV (M998-series) maintenance practices.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.8697633821156754,
+          0.8682044406366027,
+          0.7915126077373366
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8431601434965382,
+        "query_vector_hash": "1b8999fdb40a9c3039f0e7f4d392b54b6d47d1b936b0334dd133eaac51942e48",
+        "ragas_score": 0.8431601434965379,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "0889189b1c326b9e4d15d0b1172113322b596f460379b39f34bc964534e291a6"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8697633821156754,
+          0.8682044406366027,
+          0.7915126077373366
+        ],
+        "decimal50_cosines": [
+          "0.86976338211567540287331286047590940547947972532541",
+          "0.86820444063660281144120423549541381995012547730984",
+          "0.79151260773733666425637658330445010902629389300225"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8431601434965379
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8431601434965379
+          }
+        },
+        "query_vector_hash": "1b8999fdb40a9c3039f0e7f4d392b54b6d47d1b936b0334dd133eaac51942e48",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "How should contaminated components be handled after fording, and what gear oil refill quantities are given for each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How should contaminated components be handled after fording, and what are the stated gear oil refill quantities for each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "After fording contamination in an HMMWV, how should contaminated components be handled, and how much gear oil is recommended to refill each axle differential and geared hub?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "0889189b1c326b9e4d15d0b1172113322b596f460379b39f34bc964534e291a6",
+        "score": 0.8431601434965382
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "b0f7beaa918dd472edc03dae38f0a2eb61310b80f2aa15e6f76e7f8a19db424e",
+  "source_result_sha256": "b779b3ec0f504ec92431afab5dadb325e9bc33fb39336032e0e0b6deacc74529"
+}

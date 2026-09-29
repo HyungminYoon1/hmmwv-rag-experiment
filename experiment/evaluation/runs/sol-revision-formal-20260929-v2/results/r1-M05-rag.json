@@ -1,0 +1,383 @@
+{
+  "at": "2026-09-29T04:49:28.123714+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "7409f6b7cf22cfd14b0c2be44ce802836994768332fb869b6988f7cec8fdc34c",
+  "result": {
+    "attempt_key": "r1-M05-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 32.485986000000594,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9222745997561344
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9222745997561344
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.75
+      }
+    },
+    "question_id": "M05",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly answers both questions with specific diagnostic, test, and cleaning details."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9171192251315005,
+          0.9248523021445705,
+          0.9248522719923322
+        ],
+        "query_vector_hash": "74ac6da833d5b0a4c6f67942cbc505084962ffaaf5900449a7648cf9473514d6",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What system should be checked for black exhaust smoke, and how should CDR-valve function be tested and the valve cleaned during air-intake PMCS checks?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which system should be diagnosed for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which system should be diagnosed for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          }
+        ],
+        "response_vectors_hash": "9a8c9b42748bc10e0985c24ea0a444329a32881b8548c8d3ed295235394e664f",
+        "score": 0.9222745997561347
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "For black exhaust smoke",
+          "During air-intake PMCS checks"
+        ],
+        "statements": [
+          {
+            "answer_quote": "For black exhaust smoke, the diagnostic system indicated is the fuel system",
+            "statement": "For black exhaust smoke, the indicated diagnostic system is the fuel system."
+          },
+          {
+            "answer_quote": "black smoke may indicate excessive fuel entering the cylinders",
+            "statement": "For black exhaust smoke, excessive fuel entering the cylinders may be indicated."
+          },
+          {
+            "answer_quote": "correct CDR-valve function is determined by checking vacuum with a water manometer",
+            "statement": "During air-intake PMCS checks, correct CDR-valve function is determined by checking vacuum with a water manometer."
+          },
+          {
+            "answer_quote": "The authorized cleaning method is wiping the CDR valve and hoses with a rag",
+            "statement": "During air-intake PMCS checks, the authorized cleaning method is wiping the CDR valve and hoses with a rag."
+          },
+          {
+            "answer_quote": "solvent cleaning is prohibited",
+            "statement": "During air-intake PMCS checks, solvent cleaning of the CDR valve is prohibited."
+          },
+          {
+            "answer_quote": "it will damage the diaphragm inside the CDR valve",
+            "statement": "During air-intake PMCS checks, solvent cleaning will damage the diaphragm inside the CDR valve."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "For black exhaust smoke, the diagnostic system indicated is the fuel system",
+          "id": "C001",
+          "text": "For black exhaust smoke, the indicated diagnostic system is the fuel system."
+        },
+        {
+          "answer_quote": "black smoke may indicate excessive fuel entering the cylinders",
+          "id": "C002",
+          "text": "For black exhaust smoke, excessive fuel entering the cylinders may be indicated."
+        },
+        {
+          "answer_quote": "correct CDR-valve function is determined by checking vacuum with a water manometer",
+          "id": "C003",
+          "text": "During air-intake PMCS checks, correct CDR-valve function is determined by checking vacuum with a water manometer."
+        },
+        {
+          "answer_quote": "The authorized cleaning method is wiping the CDR valve and hoses with a rag",
+          "id": "C004",
+          "text": "During air-intake PMCS checks, the authorized cleaning method is wiping the CDR valve and hoses with a rag."
+        },
+        {
+          "answer_quote": "solvent cleaning is prohibited",
+          "id": "C005",
+          "text": "During air-intake PMCS checks, solvent cleaning of the CDR valve is prohibited."
+        },
+        {
+          "answer_quote": "it will damage the diaphragm inside the CDR valve",
+          "id": "C006",
+          "text": "During air-intake PMCS checks, solvent cleaning will damage the diaphragm inside the CDR valve."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M05-A01",
+            "reason": "The answer identifies the fuel system, not air intake/exhaust tests."
+          },
+          {
+            "answer_quote": "correct CDR-valve function is determined by checking vacuum with a water manometer",
+            "fulfilled": 1,
+            "id": "M05-A02",
+            "reason": "States the required vacuum check."
+          },
+          {
+            "answer_quote": "wiping the CDR valve and hoses with a rag",
+            "fulfilled": 1,
+            "id": "M05-A03",
+            "reason": "States the authorized wiping method."
+          },
+          {
+            "answer_quote": "solvent cleaning is prohibited",
+            "fulfilled": 1,
+            "id": "M05-A04",
+            "reason": "Explicitly prohibits solvent cleaning."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001638"
+              ],
+              "evidence_quotes": [
+                "FUEL SYSTEM\nKNOWN INFO\nINJECTION PUMP OK\nPOSSIBLE PROBLEMS\nINJECTORS\nAIR CLEANER\nPUMP TIMING\nCDR VALVE\nRETURN CHECK VALVE\n\nIS THE EXHAUST COLORLESS?"
+              ],
+              "reason": "The fuel-system diagnostic asks whether the exhaust is colorless, which applies when the exhaust is black.",
+              "statement": "For black exhaust smoke, the indicated diagnostic system is the fuel system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001638"
+              ],
+              "evidence_quotes": [
+                "Exhaust smoke may indicate conditions such as oil, water or excessive fuel entering the cylinders."
+              ],
+              "reason": "The passage says exhaust smoke may indicate excessive fuel entering the cylinders; black exhaust smoke is within that condition.",
+              "statement": "For black exhaust smoke, excessive fuel entering the cylinders may be indicated.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer."
+              ],
+              "reason": "The air-intake PMCS procedure states this test for correct CDR function.",
+              "statement": "During air-intake PMCS checks, correct CDR-valve function is determined by checking vacuum with a water manometer.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914",
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Wiping with a rag\nis the only authorized method of\ncleaning.",
+                "c. Remove and wipe off the CDR valve\nand hoses with a rag."
+              ],
+              "reason": "The procedure directs wiping the CDR valve and hoses with a rag and identifies wiping as the only authorized cleaning method.",
+              "statement": "During air-intake PMCS checks, the authorized cleaning method is wiping the CDR valve and hoses with a rag.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent."
+              ],
+              "reason": "The air-intake PMCS caution expressly prohibits cleaning the CDR valve with solvent.",
+              "statement": "During air-intake PMCS checks, solvent cleaning of the CDR valve is prohibited.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve."
+              ],
+              "reason": "The caution states that solvent cleaning will damage the diaphragm inside the CDR valve.",
+              "statement": "During air-intake PMCS checks, solvent cleaning will damage the diaphragm inside the CDR valve.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The fuel-system reference directs BLACK to air intake/exhaust; it does not identify the fuel system as the indicated diagnostic system.",
+              "statement": "For black exhaust smoke, the indicated diagnostic system is the fuel system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied passage links black exhaust smoke to excessive fuel entering the cylinders.",
+              "statement": "For black exhaust smoke, excessive fuel entering the cylinders may be indicated.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer."
+              ],
+              "reason": "The air-intake PMCS procedure states this test for correct CDR function.",
+              "statement": "During air-intake PMCS checks, correct CDR-valve function is determined by checking vacuum with a water manometer.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag."
+              ],
+              "reason": "The procedure specifies wiping the valve and hoses with a rag, and identifies wiping as the only authorized cleaning method.",
+              "statement": "During air-intake PMCS checks, the authorized cleaning method is wiping the CDR valve and hoses with a rag.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent."
+              ],
+              "reason": "The air-intake PMCS caution explicitly prohibits it.",
+              "statement": "During air-intake PMCS checks, solvent cleaning of the CDR valve is prohibited.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve."
+              ],
+              "reason": "The caution states that solvent cleaning will cause this damage.",
+              "statement": "During air-intake PMCS checks, solvent cleaning will damage the diaphragm inside the CDR valve.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.9171192251315005,
+          0.9248523021445705,
+          0.9248522719923322
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9222745997561344,
+        "query_vector_hash": "74ac6da833d5b0a4c6f67942cbc505084962ffaaf5900449a7648cf9473514d6",
+        "ragas_score": 0.9222745997561347,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "9a8c9b42748bc10e0985c24ea0a444329a32881b8548c8d3ed295235394e664f"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9171192251315005,
+          0.9248523021445705,
+          0.9248522719923322
+        ],
+        "decimal50_cosines": [
+          "0.91711922513150026625651478234669376573550021110809",
+          "0.92485230214457039440045185684102502628767419566070",
+          "0.92485227199233216019001404593372584777809347554390"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9222745997561347
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9222745997561347
+          }
+        },
+        "query_vector_hash": "74ac6da833d5b0a4c6f67942cbc505084962ffaaf5900449a7648cf9473514d6",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What system should be checked for black exhaust smoke, and how should CDR-valve function be tested and the valve cleaned during air-intake PMCS checks?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which system should be diagnosed for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which system should be diagnosed for black exhaust smoke, and how should the CDR valve be checked and cleaned during air-intake PMCS?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "9a8c9b42748bc10e0985c24ea0a444329a32881b8548c8d3ed295235394e664f",
+        "score": 0.9222745997561344
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "3daa7ad7cbf19d0aaba6020b2db6c39542e5e3728fb6a26daf56da2bd29538f1"
+}

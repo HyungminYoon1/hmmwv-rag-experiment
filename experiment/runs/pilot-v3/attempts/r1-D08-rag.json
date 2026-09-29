@@ -1,0 +1,716 @@
+{
+  "citation_ids": [],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:23:09.787885+00:00",
+  "evaluation_answer": "The referenced material does not specify the output voltages for the 60-ampere and 200-ampere alternators in Table 1-2. Therefore, based on the provided excerpts, this information is not available.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1158,
+  "key": "r1-D08-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002552] TM 9-2320-280-20-1 | PDF 284 | Printed 2-201\nREFERENCE INFORMATION\nALTERNATOR\n\nTo replace 60 and 200 amp alternators,\n(refer to chapter 4).  To replace 100 amp\nalternator, (refer to chapter 12).\nTo replace 100, 200, and 400 amp dual\nvoltage alternators, (refer to chapter 4).\n\n[C002708] TM 9-2320-280-20-1 | PDF 302 | Printed 2-218.1\nREFERENCE INFORMATION\nALTERNATOR\n\nNOTE\nFor 60 amp Prestolite alternator, go to B,\npage 2-204.\nFor 100 amp Prestolite alternator, go to C,\npage 2-208.\nFor 200 amp Prestolite alternator, go to D,\npage 2-212.\nFor 200 amp single voltage Niehoff alternator,\ncontinue with E.\nFor 100 amp single voltage Niehoff alternator, go\nto F, page 2-222.\n\n[C002758] TM 9-2320-280-20-1 | PDF 308 | Printed 2-223\nREFERENCE INFORMATION\nALTERNATOR\n\nNOTE\nFor 60 amp Prestolite alternator, go to B,\npage 2-204.\nFor 100 amp Prestolite alternator, go to C,\npage 2-208.\nFor 200 amp Prestolite alternator, go to D,\npage 2-212.\nFor 200 amp single voltage Niehoff\nalternator, continue with E.\nFor 100 amp single voltage Niehoff\nalternator, continue with F.\n\n[C002649] TM 9-2320-280-20-1 | PDF 296 | Printed 2-213\nREFERENCE INFORMATION\nALTERNATOR\n\nFor 60 amp Prestolite alternator, go to B, page 2-204.\nFor 100 amp Prestolite alternator, go to C, page 2-208.\nFor 200 amp Prestolite alternator, continue D.\nFor 200 amp single voltage Niehoff alternator, go to E, page\n2-218.\nFor 100 amp single voltage Niehoff alternator, go to F, page\n2-222.\nFor 100 amp dual voltage Niehoff alternator, go to F.1,\npage 2-224.2.\nFor 200 amp dual voltage Niehoff alternator, go to G,\npage 2-224.6.\nFor 400 amp dual voltage Niehoff alternator, go to H,\npage 2-224.10.\n\n[C002611] TM 9-2320-280-20-1 | PDF 292 | Printed 2-209\nREFERENCE INFORMATION\nALTERNATOR\n\nNOTE\nFor 60 amp Prestolite alternator, go to B, page 2-204.\nFor 100 amp Prestolite alternator, continue C.\nFor 200 amp Prestolite alternator, go to D, page 2-212.\nFor 200 amp single voltage Niehoff alternator, go to E,\npage 2-218.\nFor 100 amp single voltage Niehoff alternator, go to F,\npage 2-222.\nFor 100 amp dual voltage Niehoff alternator, go to F.1,\npage 2-224.2.\nFor 200 amp dual voltage Niehoff alternator, go to G,\npage 2-224.6.\nFor 400 amp dual voltage Niehoff alternator, go to H,\npage 2-224.10.\nQUESTION:\nWhat output voltages are specified for the 60-ampere and 200-ampere alternators in Table 1-2?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 1157,
+  "question": "What output voltages are specified for the 60-ampere and 200-ampere alternators in Table 1-2?",
+  "question_id": "D08",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:26.642115407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:24.373504707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4838146048.0,
+    "max_actual_interval_ms": 109.9884999994174,
+    "peak_rss_bytes": 7643549696,
+    "peak_vram_bytes": 4836835328,
+    "pids": [
+      13944,
+      23268,
+      23364,
+      27988,
+      30736,
+      36564,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4673.8198003,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4838146048
+      },
+      {
+        "monotonic": 4673.9263678,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4838146048
+      },
+      {
+        "monotonic": 4674.0210688,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4838146048
+      },
+      {
+        "monotonic": 4674.128799,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4838146048
+      },
+      {
+        "monotonic": 4674.2224337,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4838146048
+      },
+      {
+        "monotonic": 4674.3302615,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4838146048
+      },
+      {
+        "monotonic": 4674.4227908,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4838146048
+      },
+      {
+        "monotonic": 4674.5308008,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4838146048
+      },
+      {
+        "monotonic": 4674.6237005,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4674.733689,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035366912,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642693632,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4674.82916,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035522560,
+          "30736": 12607488,
+          "36564": 96952320,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7642849280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4674.9263948,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3419992064,
+          "37564": 7442432
+        },
+        "rss_bytes": 7643529216,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.0323156,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3420012544,
+          "37564": 7442432
+        },
+        "rss_bytes": 7643549696,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.126436,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3286028288,
+          "37564": 7442432
+        },
+        "rss_bytes": 7509565440,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.2225747,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3242016768,
+          "37564": 7442432
+        },
+        "rss_bytes": 7465553920,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.3285272,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3242016768,
+          "37564": 7442432
+        },
+        "rss_bytes": 7465553920,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.4216837,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3242016768,
+          "37564": 7442432
+        },
+        "rss_bytes": 7465553920,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.529961,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3242016768,
+          "37564": 7442432
+        },
+        "rss_bytes": 7465553920,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.6231676,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3242016768,
+          "37564": 7442432
+        },
+        "rss_bytes": 7465553920,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.7308558,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3242016768,
+          "37564": 7442432
+        },
+        "rss_bytes": 7465553920,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.8248279,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3242016768,
+          "37564": 7442432
+        },
+        "rss_bytes": 7465553920,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4675.9333896,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58388480,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4035805184,
+          "30736": 12607488,
+          "36564": 97349632,
+          "37504": 3242016768,
+          "37564": 7442432
+        },
+        "rss_bytes": 7465553920,
+        "vram_bytes": 4836835328
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:23:09.7860575Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 50,
+    "eval_duration": 800344000,
+    "load_duration": 9181300,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 1157,
+    "prompt_eval_count": 1158,
+    "prompt_eval_duration": 23463000,
+    "response": "The referenced material does not specify the output voltages for the 60-ampere and 200-ampere alternators in Table 1-2. Therefore, based on the provided excerpts, this information is not available.",
+    "total_duration": 1039736500
+  },
+  "retrieval": {
+    "embedding_ms": 83.4672999999384,
+    "items": [
+      {
+        "body_end": 196,
+        "body_start": 0,
+        "id": "C002552",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          284
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-201"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002855"
+        ],
+        "review_ids": [],
+        "score": 0.6966478824615479,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[8]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nALTERNATOR\n\nTo replace 60 and 200 amp alternators,\n(refer to chapter 4).  To replace 100 amp\nalternator, (refer to chapter 12).\nTo replace 100, 200, and 400 amp dual\nvoltage alternators, (refer to chapter 4).",
+        "text_sha256": "ce47218abe582dc14c42ddf9a694b8045b36281db5149757dc3ca24e458339b7",
+        "token_count": 80,
+        "unit_id": "U002546",
+        "unit_key": "region:284:1:7"
+      },
+      {
+        "body_end": 303,
+        "body_start": 0,
+        "id": "C002708",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          302
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-218.1"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R002986"
+        ],
+        "review_ids": [],
+        "score": 0.6827799081802368,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[1]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nALTERNATOR\n\nNOTE\nFor 60 amp Prestolite alternator, go to B,\npage 2-204.\nFor 100 amp Prestolite alternator, go to C,\npage 2-208.\nFor 200 amp Prestolite alternator, go to D,\npage 2-212.\nFor 200 amp single voltage Niehoff alternator,\ncontinue with E.\nFor 100 amp single voltage Niehoff alternator, go\nto F, page 2-222.",
+        "text_sha256": "709478b3d59da2d426855db5ce4fc57bf8dab5eb9c70ac9836a8fa9b2a6dbb3e",
+        "token_count": 123,
+        "unit_id": "U002702",
+        "unit_key": "region:302:1:1"
+      },
+      {
+        "body_end": 299,
+        "body_start": 0,
+        "id": "C002758",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          308
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-223"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R003008"
+        ],
+        "review_ids": [],
+        "score": 0.6819857954978943,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[1]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nALTERNATOR\n\nNOTE\nFor 60 amp Prestolite alternator, go to B,\npage 2-204.\nFor 100 amp Prestolite alternator, go to C,\npage 2-208.\nFor 200 amp Prestolite alternator, go to D,\npage 2-212.\nFor 200 amp single voltage Niehoff\nalternator, continue with E.\nFor 100 amp single voltage Niehoff\nalternator, continue with F.",
+        "text_sha256": "f68c6074c067e50761cbd6e41df140ae1de25e1f72ccbbc98ee7b66f2155492f",
+        "token_count": 116,
+        "unit_id": "U002752",
+        "unit_key": "region:308:1:1"
+      },
+      {
+        "body_end": 500,
+        "body_start": 0,
+        "id": "C002649",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          296
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-213"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R002927"
+        ],
+        "review_ids": [],
+        "score": 0.678840160369873,
+        "source_issues": [
+          {
+            "description": "10-15 lb-in. (14-20 N•m)는 원문 표기. Ib-in OCR만 기존 batch-001에서 보정.",
+            "id": "TORQUE_UNIT_INCONSISTENCY",
+            "pdf_page": 296,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nALTERNATOR\n\nFor 60 amp Prestolite alternator, go to B, page 2-204.\nFor 100 amp Prestolite alternator, go to C, page 2-208.\nFor 200 amp Prestolite alternator, continue D.\nFor 200 amp single voltage Niehoff alternator, go to E, page\n2-218.\nFor 100 amp single voltage Niehoff alternator, go to F, page\n2-222.\nFor 100 amp dual voltage Niehoff alternator, go to F.1,\npage 2-224.2.\nFor 200 amp dual voltage Niehoff alternator, go to G,\npage 2-224.6.\nFor 400 amp dual voltage Niehoff alternator, go to H,\npage 2-224.10.",
+        "text_sha256": "01a883d5963519fe6c76e9da4b25d695f7e104b777429d093a76e0170c8f3b9d",
+        "token_count": 203,
+        "unit_id": "U002643",
+        "unit_key": "region:296:1:2"
+      },
+      {
+        "body_end": 505,
+        "body_start": 0,
+        "id": "C002611",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          292
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-209"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R002885"
+        ],
+        "review_ids": [],
+        "score": 0.6759387254714966,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[1]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nALTERNATOR\n\nNOTE\nFor 60 amp Prestolite alternator, go to B, page 2-204.\nFor 100 amp Prestolite alternator, continue C.\nFor 200 amp Prestolite alternator, go to D, page 2-212.\nFor 200 amp single voltage Niehoff alternator, go to E,\npage 2-218.\nFor 100 amp single voltage Niehoff alternator, go to F,\npage 2-222.\nFor 100 amp dual voltage Niehoff alternator, go to F.1,\npage 2-224.2.\nFor 200 amp dual voltage Niehoff alternator, go to G,\npage 2-224.6.\nFor 400 amp dual voltage Niehoff alternator, go to H,\npage 2-224.10.",
+        "text_sha256": "d2737c1f766695ecca01eb7db9e4bce1a7029135dff7be05e85a65b793fd8e26",
+        "token_count": 205,
+        "unit_id": "U002605",
+        "unit_key": "region:292:1:1"
+      }
+    ],
+    "search_ms": 10.08579999961512
+  },
+  "round": 1,
+  "sequence": 7,
+  "started_at": "2026-09-28T04:23:08.636664+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1056.740200000604,
+    "retrieval": 94.90579999965121,
+    "total": 1151.6460000002553
+  },
+  "unprovided_citations": []
+}

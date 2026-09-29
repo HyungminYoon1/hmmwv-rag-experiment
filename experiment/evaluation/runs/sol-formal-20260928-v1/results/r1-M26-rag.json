@@ -1,0 +1,251 @@
+{
+  "at": "2026-09-28T09:27:54.935840+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "8fdcbf07e947110cb425bc429f3b45bc12fd403ea607f341a27f4104148a66ce",
+  "result": {
+    "attempt_key": "r1-M26-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 29.82694199999969,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9751290878171454
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9751290878171454
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M26",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives specific oil-and-filter change intervals and a crankcase capacity."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9752134114819798,
+          0.9752134088913852,
+          0.9749604430780715
+        ],
+        "query_vector_hash": "cc92b62a3d16d7b40bd7924cc16270ffbb8a4f4c527e61729d2f2ab182674573",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "If AOAP is unavailable, what are the engine oil-and-filter change intervals and the crankcase capacity including the filter?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "If AOAP is unavailable, what are the engine oil-and-filter change intervals and the crankcase capacity including the filter?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "If AOAP is unavailable, what are the engine oil-and-filter change intervals and crankcase capacity including the filter?"
+          }
+        ],
+        "response_vectors_hash": "d90c30c1d45ba8d6d66353f503793c97cc5e14de169d701766dc53a3496c0db3",
+        "score": 0.9751290878171454
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "If AOAP is unavailable, the engine oil-and-filter change interval is every 3,000 miles (4,800 km)."
+        },
+        {
+          "id": "C002",
+          "text": "If AOAP is unavailable and an hour meter is installed, the engine oil-and-filter change interval is every 100 hours."
+        },
+        {
+          "id": "C003",
+          "text": "If AOAP is unavailable, the engine oil-and-filter change interval is every six months."
+        },
+        {
+          "id": "C004",
+          "text": "The listed engine crankcase capacity including the filter is 8 quarts (7.6 L)."
+        }
+      ],
+      "claims_raw": [
+        "If AOAP is unavailable, the engine oil-and-filter change interval is every 3,000 miles (4,800 km).",
+        "If AOAP is unavailable and an hour meter is installed, the engine oil-and-filter change interval is every 100 hours.",
+        "If AOAP is unavailable, the engine oil-and-filter change interval is every six months.",
+        "The listed engine crankcase capacity including the filter is 8 quarts (7.6 L)."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "every 3,000 miles (4,800 km)",
+            "fulfilled": 1,
+            "id": "M26-A01",
+            "reason": "Matches the stated mileage interval without AOAP."
+          },
+          {
+            "answer_quote": "or 100 hours (if hour meter is installed)",
+            "fulfilled": 1,
+            "id": "M26-A02",
+            "reason": "Gives the alternative operating-hours interval and its condition."
+          },
+          {
+            "answer_quote": "or every six months",
+            "fulfilled": 1,
+            "id": "M26-A03",
+            "reason": "Gives six months as an alternative interval."
+          },
+          {
+            "answer_quote": "8 quarts (7.6 L)",
+            "fulfilled": 1,
+            "id": "M26-A04",
+            "reason": "Matches the listed crankcase-and-filter capacity."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001012"
+              ],
+              "evidence_quotes": [
+                "If AOAP is not\navailable, change oil and oil filter at\n3,000 miles (4,800 km), or 100 hours (if\nhour meter is installed), or every six\nmonths."
+              ],
+              "reason": "The engine procedure specifies this interval when AOAP is unavailable.",
+              "statement": "If AOAP is unavailable, the engine oil-and-filter change interval is every 3,000 miles (4,800 km).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001012"
+              ],
+              "evidence_quotes": [
+                "If AOAP is not\navailable, change oil and oil filter at\n3,000 miles (4,800 km), or 100 hours (if\nhour meter is installed), or every six\nmonths."
+              ],
+              "reason": "The engine procedure lists 100 hours when an hour meter is installed.",
+              "statement": "If AOAP is unavailable and an hour meter is installed, the engine oil-and-filter change interval is every 100 hours.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001012"
+              ],
+              "evidence_quotes": [
+                "If AOAP is not\navailable, change oil and oil filter at\n3,000 miles (4,800 km), or 100 hours (if\nhour meter is installed), or every six\nmonths."
+              ],
+              "reason": "The engine procedure lists every six months when AOAP is unavailable.",
+              "statement": "If AOAP is unavailable, the engine oil-and-filter change interval is every six months.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000456"
+              ],
+              "evidence_quotes": [
+                "Engine\n*ALL HYDRAULIC SYSTEMS AND ALL FUEL CAPACITIES\nARE CALCULATED APPROXIMATIONS\n\nITEM: Crankcase and Filter\nSTANDARD: 8 qt\nMETRIC: 7.6 L"
+              ],
+              "reason": "The engine capacity table lists 8 qt (7.6 L) for the crankcase and filter.",
+              "statement": "The listed engine crankcase capacity including the filter is 8 quarts (7.6 L).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:oil_change"
+              ],
+              "evidence_quotes": [
+                "If AOAP is not\navailable, change oil and oil filter at\n3,000 miles (4,800 km), or 100 hours (if\nhour meter is installed), or every six\nmonths."
+              ],
+              "reason": "The procedure gives this mileage interval when AOAP is unavailable.",
+              "statement": "If AOAP is unavailable, the engine oil-and-filter change interval is every 3,000 miles (4,800 km).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:oil_change"
+              ],
+              "evidence_quotes": [
+                "If AOAP is not\navailable, change oil and oil filter at\n3,000 miles (4,800 km), or 100 hours (if\nhour meter is installed), or every six\nmonths."
+              ],
+              "reason": "The 100-hour interval applies when AOAP is unavailable and an hour meter is installed.",
+              "statement": "If AOAP is unavailable and an hour meter is installed, the engine oil-and-filter change interval is every 100 hours.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:oil_change"
+              ],
+              "evidence_quotes": [
+                "If AOAP is not\navailable, change oil and oil filter at\n3,000 miles (4,800 km), or 100 hours (if\nhour meter is installed), or every six\nmonths."
+              ],
+              "reason": "The procedure lists every six months as an interval when AOAP is unavailable.",
+              "statement": "If AOAP is unavailable, the engine oil-and-filter change interval is every six months.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:crankcase"
+              ],
+              "evidence_quotes": [
+                "ITEM: Crankcase and Filter\nSTANDARD: 8 qt\nMETRIC: 7.6 L"
+              ],
+              "reason": "The crankcase-and-filter capacity is listed as 8 qt and 7.6 L.",
+              "statement": "The listed engine crankcase capacity including the filter is 8 quarts (7.6 L).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9752134114819798,
+          0.9752134088913852,
+          0.9749604430780715
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9751290878171455,
+        "query_vector_hash": "cc92b62a3d16d7b40bd7924cc16270ffbb8a4f4c527e61729d2f2ab182674573",
+        "ragas_score": 0.9751290878171454,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d90c30c1d45ba8d6d66353f503793c97cc5e14de169d701766dc53a3496c0db3"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "02dbda8095aba214f5a63034ebddbecc457500f14031474f2940e3c33d085240"
+}

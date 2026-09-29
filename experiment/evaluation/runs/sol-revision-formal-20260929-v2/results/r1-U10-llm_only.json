@@ -1,0 +1,158 @@
+{
+  "at": "2026-09-29T05:35:18.230966+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "ea2abbbe39576d3e9deb7f9707e69ba3f56b2c1f20d702589824d562e6d109ec",
+  "result": {
+    "attempt_key": "r1-U10-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 49.041287199999715,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U10",
+    "stages": {
+      "abstention": {
+        "answer_quote": "I do not know the full removal, routing, and installation procedure for the serpentine belt on an M1123 vehicle based on the provided reference.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000004"
+              ],
+              "evidence_quotes": [
+                "(3) M1097, M1097A1, M1097A2, and M1123 Heavy Variant"
+              ],
+              "reason": "The oracle lists M1123 within its HMMWV vehicle scope; it does not support excluding it as a HMMWV model.",
+              "statement": "The M1123 is not a standard HMMWV (M998-series) model",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle does not support these asserted HMMWV models.",
+              "statement": "the HMMWV is typically the M151, M159, or M159 variants.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000004"
+              ],
+              "evidence_quotes": [
+                "(3) M1097, M1097A1, M1097A2, and M1123 Heavy Variant"
+              ],
+              "reason": "In context, this distinguishes M1123 from the HMMWV, but the oracle includes M1123 in its HMMWV scope.",
+              "statement": "The M1123 is a different vehicle",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle identifies M1123 as a Heavy Variant but does not support the asserted series relationship.",
+              "statement": "a variant of the M1116 or M1123 series",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle does not establish this usage claim.",
+              "statement": "often used in specialized roles",
+              "verdict": 0
+            }
+          ]
+        },
+        "partial_claims": [
+          "The M1123 is not a standard HMMWV (M998-series) model",
+          "the HMMWV is typically the M151, M159, or M159 variants.",
+          "The M1123 is a different vehicle",
+          "a variant of the M1116 or M1123 series",
+          "often used in specialized roles"
+        ],
+        "partial_within_allowed": true,
+        "reason": "The response expressly withholds the complete procedure and invents no removal, routing, or installation steps. Its technical partial claims concern model identity, which is within the declared partial topic, but they are not supported by the retrieved context and conflict with or exceed the oracle.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved source supports this claim.",
+              "statement": "The M1123 is not a standard HMMWV (M998-series) model",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved source supports this claim.",
+              "statement": "the HMMWV is typically the M151, M159, or M159 variants.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved source supports this claim.",
+              "statement": "The M1123 is a different vehicle",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved source supports this claim.",
+              "statement": "a variant of the M1116 or M1123 series",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved source supports this claim.",
+              "statement": "often used in specialized roles",
+              "verdict": 0
+            }
+          ]
+        },
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 5,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 1,
+        "withholding_only": 1
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "4a4e3e1e4e54ca40f082feedb64c1bfc36faa552bc9896d99c03c69dc297b666"
+}

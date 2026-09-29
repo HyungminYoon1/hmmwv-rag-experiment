@@ -1,0 +1,914 @@
+{
+  "citation_ids": [
+    "[C005108]",
+    "[C004935]",
+    "[C004955]",
+    "[C005248]",
+    "[C005266]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:12:39.248141+00:00",
+  "evaluation_answer": "The reference context provided does not specify oil types for the 3L80 or 4L80-E transmissions. , , , , and  discuss the transmission system for the 4L80-E but do not mention oil types for either the 3L80 or 4L80-E. Therefore, the oil types for the 3L80 and 4L80-E cannot be determined from the given context.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 425,
+  "key": "r1-D04-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou are a technical question-answering assistant.\nAnswer in English using concise statements that address every part of the question.\nWhen reference context is provided, use only facts supported by that context.\nWhen no reference context is provided, use your existing model knowledge.\nIf some requested information is unavailable, state which part cannot be determined.\nYou may answer the supported parts, but do not present a partial answer as complete.\nDo not invent specifications, procedures, measurements, causes, or other facts.\nWhen reference context is provided, cite each supporting chunk ID in square brackets, for example [C000123]. Use only supplied chunk IDs.\nREFERENCE CONTEXT:\n[C005108] TM 9-2320-280-20-1 | PDF 529 | Printed 2-425\n(4L80-E)\n\n[C004935] TM 9-2320-280-20-1 | PDF 523 | Printed 2-419\nTRANSMISSION SYSTEM\n(4L80-E)\n\n[C004955] TM 9-2320-280-20-1 | PDF 524 | Printed 2-420\nTRANSMISSION SYSTEM\n(4L80-E)\n\n[C005248] TM 9-2320-280-20-1 | PDF 535 | Printed 2-431\nTRANSMISSION SYSTEM\n(4L80-E)\n\n[C005266] TM 9-2320-280-20-1 | PDF 536 | Printed 2-432\nTRANSMISSION SYSTEM\n(4L80-E)\nQUESTION:\nWhich oil types are specified for the 3L80 and 4L80-E transmissions, respectively?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 136,
+  "question": "Which oil types are specified for the 3L80 and 4L80-E transmissions, respectively?",
+  "question_id": "D04",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T12:59:56.102582207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T12:59:52.559177507+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4808523776.0,
+    "max_actual_interval_ms": 108.60120000006646,
+    "peak_rss_bytes": 5659848704,
+    "peak_vram_bytes": 4808523776,
+    "pids": [
+      11036,
+      13944,
+      30736,
+      33100,
+      36592,
+      37504,
+      37564,
+      37600
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4042.0636869,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4042.1700478,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4042.2779125,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4042.3685505,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4042.4771517,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4042.569782,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4042.6776436,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4042.771935,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4042.8652372,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4042.97242,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.0655355,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96972800
+        },
+        "rss_bytes": 5659480064,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.1715978,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57147392,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439760384,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659484160,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.2642776,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1437958144,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5658021888,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.3715571,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.4655537,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.573169,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.6658596,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.7743303,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.8673656,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4043.9741729,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.0673286,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.1758287,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.2675202,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.3755784,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.4684449,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.5754456,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.668376,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.7753938,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.868508,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4044.9764034,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4045.0685923,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4045.1757999,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4045.2709001,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4045.3789717,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4033560576,
+          "13944": 57487360,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1439784960,
+          "37564": 7487488,
+          "37600": 96976896
+        },
+        "rss_bytes": 5659848704,
+        "vram_bytes": 4808523776
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:12:39.2461535Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 133,
+    "eval_duration": 2161052000,
+    "load_duration": 9219000,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 136,
+    "prompt_eval_count": 425,
+    "prompt_eval_duration": 79051000,
+    "response": "The reference context provided does not specify oil types for the 3L80 or 4L80-E transmissions. [C005108], [C004935], [C004955], [C005248], and [C005266] discuss the transmission system for the 4L80-E but do not mention oil types for either the 3L80 or 4L80-E. Therefore, the oil types for the 3L80 and 4L80-E cannot be determined from the given context.",
+    "total_duration": 2257878700
+  },
+  "retrieval": {
+    "embedding_ms": 79.64429999992717,
+    "items": [
+      {
+        "body_end": 8,
+        "body_start": 0,
+        "id": "C005108",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          529
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-425"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R005421"
+        ],
+        "review_ids": [],
+        "score": 0.6789624691009521,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[1]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reviewed_two_column",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "(4L80-E)",
+        "text_sha256": "f1eaed40ca6fcb4b917cd5bb7e237f178d1e2c5c472f79f307e3153530898416",
+        "token_count": 7,
+        "unit_id": "U005100",
+        "unit_key": "region:529:1:3"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C004935",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          523
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-419"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R005219",
+          "R005220"
+        ],
+        "review_ids": [],
+        "score": 0.6783696413040161,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U004927",
+        "unit_key": "region:523:1:1"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C004955",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          524
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-420"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R005259",
+          "R005260"
+        ],
+        "review_ids": [],
+        "score": 0.6783696413040161,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "DIAGNOSTIC_PANEL",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U004947",
+        "unit_key": "region:524:1:2"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C005248",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          535
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-431"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R005556",
+          "R005557"
+        ],
+        "review_ids": [],
+        "score": 0.6783696413040161,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U005240",
+        "unit_key": "region:535:1:2"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C005266",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          536
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-432"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R005590",
+          "R005591"
+        ],
+        "review_ids": [],
+        "score": 0.6783696413040161,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U005258",
+        "unit_key": "region:536:1:1"
+      }
+    ],
+    "search_ms": 8.983100000023114
+  },
+  "round": 1,
+  "sequence": 10,
+  "started_at": "2026-09-28T04:12:36.880160+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2278.4802000001037,
+    "retrieval": 89.45749999975305,
+    "total": 2367.9376999998567
+  },
+  "unprovided_citations": []
+}

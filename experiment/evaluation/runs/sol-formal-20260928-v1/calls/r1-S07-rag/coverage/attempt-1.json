@@ -1,0 +1,196 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:40:02.081086+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "determine if the engine has internal compression or mechanical problems",
+        "fulfilled": 1,
+        "id": "S07-A01",
+        "reason": "Directly states the diagnostic purpose."
+      },
+      {
+        "answer_quote": "fix everything possible without having to notify DS maintenance",
+        "fulfilled": 1,
+        "id": "S07-A02",
+        "reason": "Directly states the repair purpose and notification condition."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588401,
+      "conversation": null,
+      "created_at": 1790588399.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_09b5dc4341daea91016aba35efc36c87d0bd2f0487351b3cea",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S07-A01\",\"fulfilled\":1,\"answer_quote\":\"determine if the engine has internal compression or mechanical problems\",\"reason\":\"Directly states the diagnostic purpose.\"},{\"id\":\"S07-A02\",\"fulfilled\":1,\"answer_quote\":\"fix everything possible without having to notify DS maintenance\",\"reason\":\"Directly states the repair purpose and notification condition.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_09b5dc4341daea91016aba35f0cbc087d0adbbc5c3b251ac8e",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 745,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 86,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 831
+      },
+      "user": null
+    },
+    "request_id": "resp_09b5dc4341daea91016aba35efc36c87d0bd2f0487351b3cea",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S07-A01\",\"fulfilled\":1,\"answer_quote\":\"determine if the engine has internal compression or mechanical problems\",\"reason\":\"Directly states the diagnostic purpose.\"},{\"id\":\"S07-A02\",\"fulfilled\":1,\"answer_quote\":\"fix everything possible without having to notify DS maintenance\",\"reason\":\"Directly states the repair purpose and notification condition.\"}]}",
+    "usage": {
+      "input_tokens": 745,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 86,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 831
+    }
+  },
+  "record_hash": "9faed2a3e2ada4d97201864f405c6b588f41a3b0b9998d72a29b7e7325f9d63c",
+  "request_hash": "859820c354bff73eda253e5d5436f26989c3792f177e0e0a37d729114965976c",
+  "started_at": "2026-09-28T09:39:59.629705+00:00",
+  "status": "OK"
+}

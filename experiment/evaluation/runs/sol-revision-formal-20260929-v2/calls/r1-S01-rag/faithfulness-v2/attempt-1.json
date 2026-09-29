@@ -1,0 +1,227 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T05:11:53.680303+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "C001290"
+        ],
+        "evidence_quotes": [
+          "This is a top level test for problems with an engine that doesn’t start, or starts\nbut immediately stops, or is very hard to start."
+        ],
+        "reason": "The introductory description lists an engine that doesn’t start.",
+        "statement": "In the introductory description of the Startability Tests, a listed starting symptom is that the engine does not start.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "C001290"
+        ],
+        "evidence_quotes": [
+          "This is a top level test for problems with an engine that doesn’t start, or starts\nbut immediately stops, or is very hard to start."
+        ],
+        "reason": "The introductory description lists an engine that starts but immediately stops.",
+        "statement": "In the introductory description of the Startability Tests, a listed starting symptom is that the engine starts but immediately stops.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "C001290"
+        ],
+        "evidence_quotes": [
+          "This is a top level test for problems with an engine that doesn’t start, or starts\nbut immediately stops, or is very hard to start."
+        ],
+        "reason": "The introductory description lists an engine that is very hard to start.",
+        "statement": "In the introductory description of the Startability Tests, a listed starting symptom is that the engine is very hard to start.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790658715,
+      "conversation": null,
+      "created_at": 1790658711.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_03f36b045e696626016abb4897c2a087d0b3133f9788406d43",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"In the introductory description of the Startability Tests, a listed starting symptom is that the engine does not start.\",\"reason\":\"The introductory description lists an engine that doesn’t start.\",\"verdict\":1,\"evidence_ids\":[\"C001290\"],\"evidence_quotes\":[\"This is a top level test for problems with an engine that doesn’t start, or starts\\nbut immediately stops, or is very hard to start.\"]},{\"statement\":\"In the introductory description of the Startability Tests, a listed starting symptom is that the engine starts but immediately stops.\",\"reason\":\"The introductory description lists an engine that starts but immediately stops.\",\"verdict\":1,\"evidence_ids\":[\"C001290\"],\"evidence_quotes\":[\"This is a top level test for problems with an engine that doesn’t start, or starts\\nbut immediately stops, or is very hard to start.\"]},{\"statement\":\"In the introductory description of the Startability Tests, a listed starting symptom is that the engine is very hard to start.\",\"reason\":\"The introductory description lists an engine that is very hard to start.\",\"verdict\":1,\"evidence_ids\":[\"C001290\"],\"evidence_quotes\":[\"This is a top level test for problems with an engine that doesn’t start, or starts\\nbut immediately stops, or is very hard to start.\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_03f36b045e696626016abb4898ded887d0a92640608500542b",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1088,
+        "input_tokens_details": {
+          "cache_write_tokens": 1085,
+          "cached_tokens": 0
+        },
+        "output_tokens": 281,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1369
+      },
+      "user": null
+    },
+    "request_id": "resp_03f36b045e696626016abb4897c2a087d0b3133f9788406d43",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"In the introductory description of the Startability Tests, a listed starting symptom is that the engine does not start.\",\"reason\":\"The introductory description lists an engine that doesn’t start.\",\"verdict\":1,\"evidence_ids\":[\"C001290\"],\"evidence_quotes\":[\"This is a top level test for problems with an engine that doesn’t start, or starts\\nbut immediately stops, or is very hard to start.\"]},{\"statement\":\"In the introductory description of the Startability Tests, a listed starting symptom is that the engine starts but immediately stops.\",\"reason\":\"The introductory description lists an engine that starts but immediately stops.\",\"verdict\":1,\"evidence_ids\":[\"C001290\"],\"evidence_quotes\":[\"This is a top level test for problems with an engine that doesn’t start, or starts\\nbut immediately stops, or is very hard to start.\"]},{\"statement\":\"In the introductory description of the Startability Tests, a listed starting symptom is that the engine is very hard to start.\",\"reason\":\"The introductory description lists an engine that is very hard to start.\",\"verdict\":1,\"evidence_ids\":[\"C001290\"],\"evidence_quotes\":[\"This is a top level test for problems with an engine that doesn’t start, or starts\\nbut immediately stops, or is very hard to start.\"]}]}",
+    "usage": {
+      "input_tokens": 1088,
+      "input_tokens_details": {
+        "cache_write_tokens": 1085,
+        "cached_tokens": 0
+      },
+      "output_tokens": 281,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1369
+    }
+  },
+  "record_hash": "2891a4db61446d581539c760dfe5d71548c71fc4402eecf096ba11bb05c04c3c",
+  "request_hash": "06f4756a674235a945e068d2979ef11d0935bcfb92e6398c18b2437da2e85f46",
+  "started_at": "2026-09-29T05:11:49.226201+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,216 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T05:13:24.076655+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "O:C001375"
+        ],
+        "evidence_quotes": [
+          "This paragraph is a top level test for problems with either the watercooling\nsystem or the oil cooling system."
+        ],
+        "reason": "The passage identifies the top-level test as addressing problems with the watercooling system.",
+        "statement": "At the top level of Cooling System Tests, the water cooling system is covered as a major cooling function.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "O:C001375"
+        ],
+        "evidence_quotes": [
+          "This paragraph is a top level test for problems with either the watercooling\nsystem or the oil cooling system."
+        ],
+        "reason": "The passage identifies the top-level test as addressing problems with the oil cooling system.",
+        "statement": "At the top level of Cooling System Tests, the oil cooling system is covered as a major cooling function.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790658806,
+      "conversation": null,
+      "created_at": 1790658802.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0e353a36e9e310af016abb48f28c2087d098f8f04258ac43bb",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"At the top level of Cooling System Tests, the water cooling system is covered as a major cooling function.\",\"reason\":\"The passage identifies the top-level test as addressing problems with the watercooling system.\",\"verdict\":1,\"evidence_ids\":[\"O:C001375\"],\"evidence_quotes\":[\"This paragraph is a top level test for problems with either the watercooling\\nsystem or the oil cooling system.\"]},{\"statement\":\"At the top level of Cooling System Tests, the oil cooling system is covered as a major cooling function.\",\"reason\":\"The passage identifies the top-level test as addressing problems with the oil cooling system.\",\"verdict\":1,\"evidence_ids\":[\"O:C001375\"],\"evidence_quotes\":[\"This paragraph is a top level test for problems with either the watercooling\\nsystem or the oil cooling system.\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0e353a36e9e310af016abb48f3bfd087d08f095df55bd90b37",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 832,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 185,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1017
+      },
+      "user": null
+    },
+    "request_id": "resp_0e353a36e9e310af016abb48f28c2087d098f8f04258ac43bb",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"At the top level of Cooling System Tests, the water cooling system is covered as a major cooling function.\",\"reason\":\"The passage identifies the top-level test as addressing problems with the watercooling system.\",\"verdict\":1,\"evidence_ids\":[\"O:C001375\"],\"evidence_quotes\":[\"This paragraph is a top level test for problems with either the watercooling\\nsystem or the oil cooling system.\"]},{\"statement\":\"At the top level of Cooling System Tests, the oil cooling system is covered as a major cooling function.\",\"reason\":\"The passage identifies the top-level test as addressing problems with the oil cooling system.\",\"verdict\":1,\"evidence_ids\":[\"O:C001375\"],\"evidence_quotes\":[\"This paragraph is a top level test for problems with either the watercooling\\nsystem or the oil cooling system.\"]}]}",
+    "usage": {
+      "input_tokens": 832,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 185,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1017
+    }
+  },
+  "record_hash": "467a351448191fabdc95a1986f68e4533ccdd78eb701c401e0272ae764e0e37b",
+  "request_hash": "139054428a7a2deeb0469f719d4cb4267120b3917ff519c3639c5b1675e3dab0",
+  "started_at": "2026-09-29T05:13:20.003870+00:00",
+  "status": "OK"
+}

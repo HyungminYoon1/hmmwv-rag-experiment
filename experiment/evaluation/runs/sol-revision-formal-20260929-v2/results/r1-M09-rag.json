@@ -1,0 +1,286 @@
+{
+  "at": "2026-09-29T04:52:20.288958+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "d63632d9f7128772a9c61459c8edda62610006b405f51c8f47d2667d760c6c88",
+  "result": {
+    "attempt_key": "r1-M09-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 18.677559400000064,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9466646571241425
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9466646571241425
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      }
+    },
+    "question_id": "M09",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly identifies the fluids cooled in each half and gives an approximate oil pressure at 2,000 RPM."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9466646593937877,
+          0.9466646570975108,
+          0.946664654881129
+        ],
+        "query_vector_hash": "c21b8eb625e76ea4ab9f755aba4928cc7eaa4dcee379b3ab3a2d4d2ed9305148",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          }
+        ],
+        "response_vectors_hash": "b4f90c10f3babd2bb62f71603438712cc6121cbf95fa4393d432d2fe6ab5fa34",
+        "score": 0.9466646571241428
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "For the separate oil cooler",
+          "At 2,000 RPM in the lubrication-test chart"
+        ],
+        "statements": [
+          {
+            "answer_quote": "The upper half of the separate oil cooler cools transmission oil",
+            "statement": "In the separate oil cooler, the upper half cools transmission oil."
+          },
+          {
+            "answer_quote": "the lower half cools engine oil",
+            "statement": "In the separate oil cooler, the lower half cools engine oil."
+          },
+          {
+            "answer_quote": "The lubrication-test chart shows an engine oil pressure of 40–45 psi at 2,000 RPM.",
+            "statement": "At 2,000 RPM, the lubrication-test chart shows an engine-oil pressure of approximately 40–45 psi."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The upper half of the separate oil cooler cools transmission oil",
+          "id": "C001",
+          "text": "In the separate oil cooler, the upper half cools transmission oil."
+        },
+        {
+          "answer_quote": "the lower half cools engine oil",
+          "id": "C002",
+          "text": "In the separate oil cooler, the lower half cools engine oil."
+        },
+        {
+          "answer_quote": "The lubrication-test chart shows an engine oil pressure of 40–45 psi at 2,000 RPM.",
+          "id": "C003",
+          "text": "At 2,000 RPM, the lubrication-test chart shows an engine-oil pressure of approximately 40–45 psi."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The upper half of the separate oil cooler cools transmission oil",
+            "fulfilled": 1,
+            "id": "M09-A01",
+            "reason": "Correctly identifies transmission oil in the upper half."
+          },
+          {
+            "answer_quote": "the lower half cools engine oil",
+            "fulfilled": 1,
+            "id": "M09-A02",
+            "reason": "Correctly identifies engine oil in the lower half."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M09-A03",
+            "reason": "The answer gives 40–45 psi, but the specified chart gives 40–50 psi."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "A separate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil."
+              ],
+              "reason": "The separate cooler’s top half is designated for transmission oil.",
+              "statement": "In the separate oil cooler, the upper half cools transmission oil.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "A separate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil."
+              ],
+              "reason": "The separate cooler’s bottom half is designated for engine oil.",
+              "statement": "In the separate oil cooler, the lower half cools engine oil.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002019"
+              ],
+              "evidence_quotes": [
+                "1S THE ENGINE OIL PRESSURE 40-45 PSI AT 2000 RPM AND THE ENGINE WARM ? TEST OPTIONS 1. OIL PRESSURE GAUGE 2. STE/ICE-R TEST 50 (Page 2-739)"
+              ],
+              "reason": "The lubrication-test chart gives 40–45 psi at 2000 RPM as the engine-oil-pressure test value.",
+              "statement": "At 2,000 RPM, the lubrication-test chart shows an engine-oil pressure of approximately 40–45 psi.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002106"
+              ],
+              "evidence_quotes": [
+                "A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil."
+              ],
+              "reason": "The separate cooler’s top half is for transmission oil.",
+              "statement": "In the separate oil cooler, the upper half cools transmission oil.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002106"
+              ],
+              "evidence_quotes": [
+                "A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil."
+              ],
+              "reason": "The separate cooler’s bottom half is for engine oil.",
+              "statement": "In the separate oil cooler, the lower half cools engine oil.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied lubrication references give 40–50 PSI at 2,000 RPM, not 40–45 psi.",
+              "statement": "At 2,000 RPM, the lubrication-test chart shows an engine-oil pressure of approximately 40–45 psi.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.9466646593937877,
+          0.9466646570975108,
+          0.946664654881129
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9466646571241425,
+        "query_vector_hash": "c21b8eb625e76ea4ab9f755aba4928cc7eaa4dcee379b3ab3a2d4d2ed9305148",
+        "ragas_score": 0.9466646571241428,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "b4f90c10f3babd2bb62f71603438712cc6121cbf95fa4393d432d2fe6ab5fa34"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9466646593937877,
+          0.9466646570975108,
+          0.946664654881129
+        ],
+        "decimal50_cosines": [
+          "0.94666465939378778560109670668069573248859285854077",
+          "0.94666465709751085304631590922288850155875373507401",
+          "0.94666465488112901979039443376280214542340011334803"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 0.0,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9466646571241428
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9466646571241428
+          }
+        },
+        "query_vector_hash": "c21b8eb625e76ea4ab9f755aba4928cc7eaa4dcee379b3ab3a2d4d2ed9305148",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "b4f90c10f3babd2bb62f71603438712cc6121cbf95fa4393d432d2fe6ab5fa34",
+        "score": 0.9466646571241425
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "d20d6d3b72ddd7b95d628236ba60d4b97b79754f8c22f52efd4677199e33b1a7"
+}

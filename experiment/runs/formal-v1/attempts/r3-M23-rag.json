@@ -1,0 +1,979 @@
+{
+  "citation_ids": [
+    "[C000865]",
+    "[C000832]",
+    "[C000914]",
+    "[C000914]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:44:39.539325+00:00",
+  "evaluation_answer": "The cleaning agent generally specified for grease or oil on metal parts is drycleaning solvent (SD), type II, or equivalent . This agent is used to clean grease or oil from metal parts as per the procedure .\n\nHowever, this general choice must not be applied to the CDR valve because cleaning the CDR valve with solvent will damage the diaphragm inside the valve . The authorized method for cleaning the CDR valve is to wipe it and its hoses with a rag only .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1006,
+  "key": "r3-M23-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000914] TM 9-2320-280-20-1 | PDF 100 | Printed 2-9\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 7\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Air-Intake\nSystem\nWARNING\nIf NBC exposure is suspected, all air\nfilter media should be handled by\npersonnel wearing protective\nequipment. Consult your unit NBC\nofficer or NBC NCO for appropriate\nhandling or disposal instructions.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 7\nITEM TO BE INSPECTED: Air-Intake\nSystem\nNOT FULLY MISSION CAPABLE IF: b. CDR fails water\nmanometer vacuum test.\nPROCEDURES: a. Inspect and clean air cleaner\nelement and housing\n(para. 3-13).\nb. Check CDR valve oil saturation.\nDisconnect CDR valve oil fill tube hose\nfrom CDR valve and inspect. Some oil\naccumulation in the CDR valve is\nacceptable. Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a).\nCAUTION\nDo not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve. Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag.\n\n[C001421] TM 9-2320-280-20-1 | PDF 155 | Printed 2-67\nREFERENCE INFORMATION\nLUBRICATION SYSTEM\n\nThe tests in para. 2-26\ntest the oil level, cleanliness,\nleaks in the system, and the\nCDR valve.  Return here when you've\nfixed everything you can or if no\nfaults were found.\n\n[C002414] TM 9-2320-280-20-1 | PDF 272 | Printed 2-189\nREFERENCE INFORMATION\nENGINE LUBRICATION\n\nInspect the oil cooler, oil cooler supply\nreturn lines, CDR valve hoses, oil pan, and\noil filter. Test CDR valve, (para. 3-9). See\nthe location on parts page to find these\nparts.\n\n[C000865] TM 9-2320-280-20-1 | PDF 94 | Printed 2-3\nDrycleaning solvent is flammable and will not be used near an open\nflame. A fire extinguisher will be kept nearby when the solvent is\nused. Use only in well-ventilated places. Failure to do this may\nresult in injury to personnel, and/or damage to equipment.\nc.\nWhere the instruction “clean” appears in a procedure, you must use drycleaning solvent (Appendix C,\nItem 18) to clean grease or oil from metal parts. After the item is cleaned, rinsed, and dried, apply a light\ngrade of oil to unprotected surfaces to prevent rusting.\n\n[C000832] TM 9-2320-280-20-1 | PDF 93 | Printed 2-2\n(3) Clean fittings before lubrication. Clean parts with drycleaning solvent (SD), type II, or equivalent.\nDry before lubricating. Relubricate all items found contaminated after fording.\nQUESTION:\nWhat cleaning agent is generally specified for grease or oil on metal parts, and why must that general choice not be applied to the CDR valve? Give the authorized CDR method.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 525,
+  "question": "What cleaning agent is generally specified for grease or oil on metal parts, and why must that general choice not be applied to the CDR valve? Give the authorized CDR method.",
+  "question_id": "M23",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:31:56.392724907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:31:52.271726007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 110.18190000049799,
+    "peak_rss_bytes": 13022769152,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5961.8142202,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5961.9221064,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.014976,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.1206435,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.2142936,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.3218185,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.4150886,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.5252705,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.6165257,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.7229937,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.8172316,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5962.9246867,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.0178191,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8670322688,
+          "37564": 7741440
+        },
+        "rss_bytes": 12953161728,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.1248515,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8739930112,
+          "37564": 7741440
+        },
+        "rss_bytes": 13022769152,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.2182417,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8581857280,
+          "37564": 7741440
+        },
+        "rss_bytes": 12864696320,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.3259809,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8572051456,
+          "37564": 7741440
+        },
+        "rss_bytes": 12854890496,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.4174154,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.5264844,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.6183106,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.7272576,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.8209931,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5963.9280185,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.0206301,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.1283491,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.2226997,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.3173241,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.4249343,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.5177881,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.6251632,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.717441,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.8259563,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5964.9184205,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5965.0282599,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5965.1224481,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5965.2147682,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5965.3246965,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5965.4174689,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5965.5245107,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5965.6163066,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102502400,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8573878272,
+          "37564": 7741440
+        },
+        "rss_bytes": 12856717312,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:44:39.5367483Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 129,
+    "eval_duration": 2381758000,
+    "load_duration": 8685500,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 525,
+    "prompt_eval_count": 1006,
+    "prompt_eval_duration": 115034000,
+    "response": "The cleaning agent generally specified for grease or oil on metal parts is drycleaning solvent (SD), type II, or equivalent [C000865]. This agent is used to clean grease or oil from metal parts as per the procedure [C000832].\n\nHowever, this general choice must not be applied to the CDR valve because cleaning the CDR valve with solvent will damage the diaphragm inside the valve [C000914]. The authorized method for cleaning the CDR valve is to wipe it and its hoses with a rag only [C000914].",
+    "total_duration": 2703236100
+  },
+  "retrieval": {
+    "embedding_ms": 150.33390000007785,
+    "items": [
+      {
+        "body_end": 694,
+        "body_start": 0,
+        "id": "C000914",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          100
+        ],
+        "prefix_chars": 368,
+        "printed_pages": [
+          "2-9"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5890956521034241,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "7",
+          "row_ids": [
+            "P0100-T2_1-R02"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 7\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Air-Intake\nSystem\nWARNING\nIf NBC exposure is suspected, all air\nfilter media should be handled by\npersonnel wearing protective\nequipment. Consult your unit NBC\nofficer or NBC NCO for appropriate\nhandling or disposal instructions.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 7\nITEM TO BE INSPECTED: Air-Intake\nSystem\nNOT FULLY MISSION CAPABLE IF: b. CDR fails water\nmanometer vacuum test.\nPROCEDURES: a. Inspect and clean air cleaner\nelement and housing\n(para. 3-13).\nb. Check CDR valve oil saturation.\nDisconnect CDR valve oil fill tube hose\nfrom CDR valve and inspect. Some oil\naccumulation in the CDR valve is\nacceptable. Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a).\nCAUTION\nDo not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve. Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag.",
+        "text_sha256": "d2274c18c100c37f86c1d42b2290c01c2d3fe33f59f7bf24394d068f9f5b3997",
+        "token_count": 292,
+        "unit_id": "U000913",
+        "unit_key": "pmcs:7"
+      },
+      {
+        "body_end": 174,
+        "body_start": 0,
+        "id": "C001421",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          155
+        ],
+        "prefix_chars": 42,
+        "printed_pages": [
+          "2-67"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R001504"
+        ],
+        "review_ids": [],
+        "score": 0.5888034105300903,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nLUBRICATION SYSTEM\n\nThe tests in para. 2-26\ntest the oil level, cleanliness,\nleaks in the system, and the\nCDR valve.  Return here when you've\nfixed everything you can or if no\nfaults were found.",
+        "text_sha256": "55c4778e323176790b815664a7dd046cf086907507a7541586f25979ce81a63a",
+        "token_count": 60,
+        "unit_id": "U001415",
+        "unit_key": "region:155:1:1"
+      },
+      {
+        "body_end": 178,
+        "body_start": 0,
+        "id": "C002414",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          272
+        ],
+        "prefix_chars": 42,
+        "printed_pages": [
+          "2-189"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R002739"
+        ],
+        "review_ids": [],
+        "score": 0.5843572020530701,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE LUBRICATION\n\nInspect the oil cooler, oil cooler supply\nreturn lines, CDR valve hoses, oil pan, and\noil filter. Test CDR valve, (para. 3-9). See\nthe location on parts page to find these\nparts.",
+        "text_sha256": "5e43d33fd536e2703b186bd1008d91ad46aba81549211b15f80f63a11c540a3b",
+        "token_count": 60,
+        "unit_id": "U002408",
+        "unit_key": "region:272:1:2"
+      },
+      {
+        "body_end": 527,
+        "body_start": 0,
+        "id": "C000865",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          94
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-3"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R001017"
+        ],
+        "review_ids": [],
+        "score": 0.56816565990448,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[14]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "Drycleaning solvent is flammable and will not be used near an open\nflame. A fire extinguisher will be kept nearby when the solvent is\nused. Use only in well-ventilated places. Failure to do this may\nresult in injury to personnel, and/or damage to equipment.\nc.\nWhere the instruction “clean” appears in a procedure, you must use drycleaning solvent (Appendix C,\nItem 18) to clean grease or oil from metal parts. After the item is cleaned, rinsed, and dried, apply a light\ngrade of oil to unprotected surfaces to prevent rusting.",
+        "text_sha256": "84ff677142b40246f5a53ea6030555cfaea74f9a00a66167eff80863cd7f4b15",
+        "token_count": 127,
+        "unit_id": "U000865",
+        "unit_key": "region:94:1:15"
+      },
+      {
+        "body_end": 185,
+        "body_start": 0,
+        "id": "C000832",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          93
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-2"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R000984"
+        ],
+        "review_ids": [],
+        "score": 0.5414004325866699,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[0]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "(3) Clean fittings before lubrication. Clean parts with drycleaning solvent (SD), type II, or equivalent.\nDry before lubricating. Relubricate all items found contaminated after fording.",
+        "text_sha256": "9ffc48ce7aac9ee0dc567504ee482699f90d708749cf5994af532d70e965416a",
+        "token_count": 42,
+        "unit_id": "U000832",
+        "unit_key": "region:93:1:1"
+      }
+    ],
+    "search_ms": 15.599999999722058
+  },
+  "round": 3,
+  "sequence": 330,
+  "started_at": "2026-09-28T04:44:36.630782+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2741.380399999798,
+    "retrieval": 167.06489999978658,
+    "total": 2908.4452999995847
+  },
+  "unprovided_citations": []
+}

@@ -1,0 +1,1037 @@
+{
+  "citation_ids": [
+    "[C000914]",
+    "[C000914]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:32:04.308665+00:00",
+  "evaluation_answer": "The complete water-manometer test setup, numerical acceptance limits, and test procedure for the CDR valve as specified in paragraph 3-9a are not fully provided in the referenced excerpts. While the text mentions that \"Correct CDR function is determined by checking vacuum with a water manometer\" , it does not specify the exact setup, numerical acceptance limits, or a step-by-step test procedure. Therefore, based on the available information, the required details cannot be fully reconstructed or cited. \n\nNote: The reference to paragraph 3-9a is present in , but no explicit test setup, numerical limits, or detailed procedure is included. Hence, the requested information is not available in the provided excerpts.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 866,
+  "key": "r1-U09-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000914] TM 9-2320-280-20-1 | PDF 100 | Printed 2-9\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 7\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Air-Intake\nSystem\nWARNING\nIf NBC exposure is suspected, all air\nfilter media should be handled by\npersonnel wearing protective\nequipment. Consult your unit NBC\nofficer or NBC NCO for appropriate\nhandling or disposal instructions.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 7\nITEM TO BE INSPECTED: Air-Intake\nSystem\nNOT FULLY MISSION CAPABLE IF: b. CDR fails water\nmanometer vacuum test.\nPROCEDURES: a. Inspect and clean air cleaner\nelement and housing\n(para. 3-13).\nb. Check CDR valve oil saturation.\nDisconnect CDR valve oil fill tube hose\nfrom CDR valve and inspect. Some oil\naccumulation in the CDR valve is\nacceptable. Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a).\nCAUTION\nDo not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve. Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag.\n\n[C002391] TM 9-2320-280-20-1 | PDF 267 | Printed 2-183\nCONTROL VALVE\n\n[C001421] TM 9-2320-280-20-1 | PDF 155 | Printed 2-67\nREFERENCE INFORMATION\nLUBRICATION SYSTEM\n\nThe tests in para. 2-26\ntest the oil level, cleanliness,\nleaks in the system, and the\nCDR valve.  Return here when you've\nfixed everything you can or if no\nfaults were found.\n\n[C004374] TM 9-2320-280-20-1 | PDF 451 | Printed 2-344\nINSTRUMENTS CIRCUIT\nDIAGNOSTIC FLOWCHART\nFROM 3,\n\nVALVE\n\n[C002414] TM 9-2320-280-20-1 | PDF 272 | Printed 2-189\nREFERENCE INFORMATION\nENGINE LUBRICATION\n\nInspect the oil cooler, oil cooler supply\nreturn lines, CDR valve hoses, oil pan, and\noil filter. Test CDR valve, (para. 3-9). See\nthe location on parts page to find these\nparts.\nQUESTION:\nGive the complete water-manometer test setup, numerical acceptance limits and test procedure for the CDR valve specified in paragraph 3-9a.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 524,
+  "question": "Give the complete water-manometer test setup, numerical acceptance limits and test procedure for the CDR valve specified in paragraph 3-9a.",
+  "question_id": "U09",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:19:21.162321907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:19:16.928494607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836835328.0,
+    "max_actual_interval_ms": 110.20439999992959,
+    "peak_rss_bytes": 13641986048,
+    "peak_vram_bytes": 4836835328,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5206.3432804,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5206.4496309,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5206.5585868,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5206.6516307,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5206.7450859,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5206.8522109,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5206.9475041,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.0560789,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.1492111,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.243903,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046438400,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573435392,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.3520702,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046508032,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573505024,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.4451008,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046516224,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9290735616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13573513216,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.5528978,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9205743616,
+          "37564": 7958528
+        },
+        "rss_bytes": 13488566272,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.6456265,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9194115072,
+          "37564": 7958528
+        },
+        "rss_bytes": 13476937728,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.7544784,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9343537152,
+          "37564": 7958528
+        },
+        "rss_bytes": 13626359808,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.8477331,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9359163392,
+          "37564": 7958528
+        },
+        "rss_bytes": 13641986048,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5207.9565619,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9190105088,
+          "37564": 7958528
+        },
+        "rss_bytes": 13472927744,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.0494764,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.1577275,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.2505571,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.344334,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.4513122,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.5585878,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.651223,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.7440697,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.8528691,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5208.9463064,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.0565108,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.1493717,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.2578351,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.3512535,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.4588297,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.5529107,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.64676,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.7547575,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.8471905,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5209.9554824,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5210.0484706,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5210.1551077,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5210.2462132,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5210.3546606,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5210.4468563,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102825984,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4046561280,
+          "35444": 8089600,
+          "36040": 100786176,
+          "37504": 9191931904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13474754560,
+        "vram_bytes": 4836835328
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:32:04.3063978Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 159,
+    "eval_duration": 2489003000,
+    "load_duration": 9562400,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 524,
+    "prompt_eval_count": 866,
+    "prompt_eval_duration": 83648000,
+    "response": "The complete water-manometer test setup, numerical acceptance limits, and test procedure for the CDR valve as specified in paragraph 3-9a are not fully provided in the referenced excerpts. While the text mentions that \"Correct CDR function is determined by checking vacuum with a water manometer\" [C000914], it does not specify the exact setup, numerical acceptance limits, or a step-by-step test procedure. Therefore, based on the available information, the required details cannot be fully reconstructed or cited. \n\nNote: The reference to paragraph 3-9a is present in [C000914], but no explicit test setup, numerical limits, or detailed procedure is included. Hence, the requested information is not available in the provided excerpts.",
+    "total_duration": 2986913900
+  },
+  "retrieval": {
+    "embedding_ms": 135.8553000000029,
+    "items": [
+      {
+        "body_end": 694,
+        "body_start": 0,
+        "id": "C000914",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          100
+        ],
+        "prefix_chars": 368,
+        "printed_pages": [
+          "2-9"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5868701338768005,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "7",
+          "row_ids": [
+            "P0100-T2_1-R02"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 7\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Air-Intake\nSystem\nWARNING\nIf NBC exposure is suspected, all air\nfilter media should be handled by\npersonnel wearing protective\nequipment. Consult your unit NBC\nofficer or NBC NCO for appropriate\nhandling or disposal instructions.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 7\nITEM TO BE INSPECTED: Air-Intake\nSystem\nNOT FULLY MISSION CAPABLE IF: b. CDR fails water\nmanometer vacuum test.\nPROCEDURES: a. Inspect and clean air cleaner\nelement and housing\n(para. 3-13).\nb. Check CDR valve oil saturation.\nDisconnect CDR valve oil fill tube hose\nfrom CDR valve and inspect. Some oil\naccumulation in the CDR valve is\nacceptable. Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a).\nCAUTION\nDo not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve. Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag.",
+        "text_sha256": "d2274c18c100c37f86c1d42b2290c01c2d3fe33f59f7bf24394d068f9f5b3997",
+        "token_count": 292,
+        "unit_id": "U000913",
+        "unit_key": "pmcs:7"
+      },
+      {
+        "body_end": 13,
+        "body_start": 0,
+        "id": "C002391",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          267
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-183"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R002711",
+          "R002712"
+        ],
+        "review_ids": [],
+        "score": 0.5832597017288208,
+        "source_issues": [
+          {
+            "description": "Teat가 PDF 화면에도 인쇄됨.",
+            "id": "TEAT",
+            "pdf_page": 267,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "CONTROL VALVE",
+        "text_sha256": "7bccbda2b7be205d2aa67f8c3471a6f700689c81c0e5a7b99a18046e6997e65c",
+        "token_count": 3,
+        "unit_id": "U002385",
+        "unit_key": "region:267:1:12"
+      },
+      {
+        "body_end": 174,
+        "body_start": 0,
+        "id": "C001421",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          155
+        ],
+        "prefix_chars": 42,
+        "printed_pages": [
+          "2-67"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R001504"
+        ],
+        "review_ids": [],
+        "score": 0.5818005800247192,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nLUBRICATION SYSTEM\n\nThe tests in para. 2-26\ntest the oil level, cleanliness,\nleaks in the system, and the\nCDR valve.  Return here when you've\nfixed everything you can or if no\nfaults were found.",
+        "text_sha256": "55c4778e323176790b815664a7dd046cf086907507a7541586f25979ce81a63a",
+        "token_count": 60,
+        "unit_id": "U001415",
+        "unit_key": "region:155:1:1"
+      },
+      {
+        "body_end": 5,
+        "body_start": 0,
+        "id": "C004374",
+        "kind": "flow_annotation",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          451
+        ],
+        "prefix_chars": 50,
+        "printed_pages": [
+          "2-344"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R000458"
+        ],
+        "review_ids": [],
+        "score": 0.5607640147209167,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "recorded_pdf_region",
+          "branch_relation": "PDF_ONLY",
+          "cross_page_join": false,
+          "cross_page_reference_policy": "DO_NOT_INHERIT_UNLESS_EXPLICIT_REVIEWED_CONTRACT",
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v3-work/page-0451.png",
+            "sha256": "a01e4a86efe5531e35988c4a89d71836b158ee8d4d06fe03a0b94070550f49b3"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "BOUNDED_NATIVE_PROFILE_ACCEPTED_FOR_TEXT_SCOPE",
+          "previous_layout_review": "NATIVE_GEOMETRY_PROFILE_WITH_REMAINING_CONTEXT_REVIEW",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "INSTRUMENTS CIRCUIT\nDIAGNOSTIC FLOWCHART\nFROM 3,\n\nVALVE",
+        "text_sha256": "094a2cf7ac966e00191ab97f8e0ed557dff54e8ae4e15d985722a474fd4bff3d",
+        "token_count": 25,
+        "unit_id": "U004366",
+        "unit_key": "P0451:annotation:5"
+      },
+      {
+        "body_end": 178,
+        "body_start": 0,
+        "id": "C002414",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          272
+        ],
+        "prefix_chars": 42,
+        "printed_pages": [
+          "2-189"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R002739"
+        ],
+        "review_ids": [],
+        "score": 0.5512201189994812,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE LUBRICATION\n\nInspect the oil cooler, oil cooler supply\nreturn lines, CDR valve hoses, oil pan, and\noil filter. Test CDR valve, (para. 3-9). See\nthe location on parts page to find these\nparts.",
+        "text_sha256": "5e43d33fd536e2703b186bd1008d91ad46aba81549211b15f80f63a11c540a3b",
+        "token_count": 60,
+        "unit_id": "U002408",
+        "unit_key": "region:272:1:2"
+      }
+    ],
+    "search_ms": 10.607299999719544
+  },
+  "round": 1,
+  "sequence": 107,
+  "started_at": "2026-09-28T04:32:01.160608+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 3000.517299999956,
+    "retrieval": 147.56889999989653,
+    "total": 3148.0861999998524
+  },
+  "unprovided_citations": []
+}

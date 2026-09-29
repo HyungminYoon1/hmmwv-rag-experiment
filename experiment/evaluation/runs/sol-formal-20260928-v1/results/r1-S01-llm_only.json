@@ -1,0 +1,142 @@
+{
+  "at": "2026-09-28T09:33:09.109285+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "bc2c499ca95bea5e7e83375ed15eb5b0dd44df4ce9ee459836d7a5f52869de42",
+  "result": {
+    "attempt_key": "r1-S01-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 22.155279500002507,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S01",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": false,
+        "kind": "full_abstention",
+        "reason": "The response says it lacks the reference and cannot identify the symptoms; it provides no symptoms or other technical answer."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8946441430969455,
+          0.8946441430969455,
+          0.8946441430969455
+        ],
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          }
+        ],
+        "response_vectors_hash": "d8ea94c36856eee7636648f03c38b54fc87fce79029da36d2bcead54794dfd63",
+        "score": 0.0
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The provided reference contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        }
+      ],
+      "claims_raw": [
+        "The provided reference contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S01-A01",
+            "reason": "The response does not name the symptom that the engine does not start."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S01-A02",
+            "reason": "The response does not name the symptom that the engine starts but immediately stops."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S01-A03",
+            "reason": "The response does not name the symptom that the engine is very hard to start."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt does not identify its source, so this absence cannot be established.",
+              "statement": "The provided reference contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8946441430969455,
+          0.8946441430969455,
+          0.8946441430969455
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d8ea94c36856eee7636648f03c38b54fc87fce79029da36d2bcead54794dfd63"
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "2be59ef60829abeaaee39e43abaedb0fd493700377245ad114e169f6a1038999"
+}

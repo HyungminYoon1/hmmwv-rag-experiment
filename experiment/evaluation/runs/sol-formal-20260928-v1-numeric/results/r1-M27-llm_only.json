@@ -1,0 +1,228 @@
+{
+  "at": "2026-09-28T09:55:51.826754+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "c4790f37184237bc591e272d3ce01302970165cbba3ea03426a3397e4bd38e38",
+  "original_result_sha256": "068d8ecd9226e78ac85cd25c51a15c22de2cfcf29fc51dc0c21827371402600b",
+  "result": {
+    "attempt_key": "r1-M27-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 38.25439940000069,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9039028466336791
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9039028466336791
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.16666666666666666
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M27",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It gives a concrete answer about the PMCS range and makes claims about the manual, but says it cannot cite a replacement paragraph."
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The general PMCS drivebelt-tension range specified in TM 9-2320-280-20-1, Volume 1, does not apply to the M1123 vehicle."
+        },
+        {
+          "id": "C002",
+          "text": "The M1123 vehicle is not covered by the referenced M998-series HMMWV maintenance manual."
+        },
+        {
+          "id": "C003",
+          "text": "The provided reference does not contain excerpts about replacing a serpentine belt on the M1123 vehicle."
+        },
+        {
+          "id": "C004",
+          "text": "The M1123 is not a standard HMMWV (M998-series) variant."
+        },
+        {
+          "id": "C005",
+          "text": "The M1123 is a different vehicle model."
+        },
+        {
+          "id": "C006",
+          "text": "Maintenance procedures for the M1123 are not included in TM 9-2320-280-20-1."
+        }
+      ],
+      "claims_raw": [
+        "The general PMCS drivebelt-tension range specified in TM 9-2320-280-20-1, Volume 1, does not apply to the M1123 vehicle.",
+        "The M1123 vehicle is not covered by the referenced M998-series HMMWV maintenance manual.",
+        "The provided reference does not contain excerpts about replacing a serpentine belt on the M1123 vehicle.",
+        "The M1123 is not a standard HMMWV (M998-series) variant.",
+        "The M1123 is a different vehicle model.",
+        "Maintenance procedures for the M1123 are not included in TM 9-2320-280-20-1."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The general PMCS drivebelt-tension range specified in TM 9-2320-280-20-1, Volume 1, does not apply to the M1123 vehicle",
+            "fulfilled": 1,
+            "id": "M27-A01",
+            "reason": "Correctly states the range does not apply to M1123, though its explanation for why is incorrect."
+          },
+          {
+            "answer_quote": "no specific paragraph for serpentine belt replacement can be cited",
+            "fulfilled": 0,
+            "id": "M27-A02",
+            "reason": "The reference cites paragraph 3-83 for M1123 serpentine-belt replacement."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.16666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The tension-check procedure explicitly excludes M1123, though the supplied excerpt does not identify the manual by number.",
+              "statement": "The general PMCS drivebelt-tension range specified in TM 9-2320-280-20-1, Volume 1, does not apply to the M1123 vehicle.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The reference mentions maintenance guidance for M1123 vehicles; it does not establish that they are excluded from the manual.",
+              "statement": "The M1123 vehicle is not covered by the referenced M998-series HMMWV maintenance manual.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:belt_reference"
+              ],
+              "evidence_quotes": [
+                "Cracks, glaze, and frays indicate worn belts, which should\nbe replaced (para.  3-81, all except M1123 and \"A2\"\nvehicles) (para. 3-83, M1123 and \"A2\" vehicles)."
+              ],
+              "reason": "It cites a replacement paragraph for M1123 vehicles but does not provide that procedure or identify it as a serpentine-belt procedure.",
+              "statement": "The provided reference does not contain excerpts about replacing a serpentine belt on the M1123 vehicle.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not classify M1123 as standard or nonstandard.",
+              "statement": "The M1123 is not a standard HMMWV (M998-series) variant.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The statement does not specify what M1123 is different from, and the context does not establish that comparison.",
+              "statement": "The M1123 is a different vehicle model.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The reference cites a maintenance paragraph for M1123 vehicles; the supplied text does not identify the manual by number.",
+              "statement": "Maintenance procedures for the M1123 are not included in TM 9-2320-280-20-1.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.008977296773926557,
+        "cosine_similarities": [
+          0.9082342034584829,
+          0.8980095878075591,
+          0.9054647486349954
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9039028466336791,
+        "query_vector_hash": "25f30fb2c33ad584a80e49536c9b8c88a8bc8cad2ce0da8f52f63cf9ed934e00",
+        "ragas_score": 0.8949255498597526,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "e3965285bf18c45ef9c70e31b9bc48daf9567924e97c9ce59d721ec8d45e06f8"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9082342034584829,
+          0.8980095878075591,
+          0.9054647486349954
+        ],
+        "decimal50_cosines": [
+          "0.90823420345848295016596231042461021317479030996484",
+          "0.89800958780755919784392402259196805687434605922725",
+          "0.90546474863499531727695865174120628310252863710771"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": {
+          "code": "RAGAS_ALGORITHM_MISMATCH",
+          "type": "EvaluationError"
+        },
+        "original_metrics": {
+          "ar_raw": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          },
+          "ar_report": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          }
+        },
+        "query_vector_hash": "25f30fb2c33ad584a80e49536c9b8c88a8bc8cad2ce0da8f52f63cf9ed934e00",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Does the PMCS drivebelt-tension range in TM 9-2320-280-20-1 apply to the M1123, and does the provided reference identify a paragraph for replacing its serpentine belt?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Does the PMCS drivebelt-tension range in TM 9-2320-280-20-1 apply to the M1123, and does the reference provide a paragraph for M1123 serpentine belt replacement?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Does the PMCS drivebelt-tension range in TM 9-2320-280-20-1 apply to the M1123, and does the reference provide a paragraph for replacing its serpentine belt?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "e3965285bf18c45ef9c70e31b9bc48daf9567924e97c9ce59d721ec8d45e06f8",
+        "score": 0.9039028466336791
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "c8953c97b4fff414997e720ca40481535f9d2cb217de20b15508daca415bb3b8"
+}

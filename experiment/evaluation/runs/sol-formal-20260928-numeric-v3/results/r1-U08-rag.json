@@ -1,0 +1,67 @@
+{
+  "at": "2026-09-28T09:59:37.743113+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "a8e88e49669be69d58c7db58e7fde7360d3b8cea33a43f9bcaf50d0fd0d15c9e",
+  "original_result_sha256": "27365487868a055df9b22494522bdcc344fc8cb7e2e82ccb694f3ad2b45deae7",
+  "result": {
+    "attempt_key": "r1-U08-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 7.149672400002601,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U08",
+    "stages": {
+      "abstention": {
+        "answer_quote": "I do not know the full thermostat removal and installation procedure, including access and reassembly steps, as this information is not provided in the given excerpts.",
+        "explicitly_withholds_missing": true,
+        "has_partial_answer": true,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": true,
+        "partial_within_allowed": true,
+        "reason": "The response explicitly withholds the full procedure and gives no invented steps. Its partial facts are supported by the retrieved excerpts: C000597 gives the 190°F thermostat behavior, and C002143 gives the §3-75 reference and hot-engine warning. The oracle supports the reference and warning, but not the 190°F claim.",
+        "source_ids": [
+          "O:thermostat_reference",
+          "C000597",
+          "C002143"
+        ],
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "d8eaccf205fa18611e7f062a9ea540a2be0630572e17ce75bf26925047e1d417"
+}

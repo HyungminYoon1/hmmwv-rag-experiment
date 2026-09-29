@@ -1,0 +1,152 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T08:52:13.594947+00:00",
+  "parsed": {
+    "statements": [
+      "The Luma test box should be stored at 12 degrees Celsius."
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790585540,
+      "conversation": null,
+      "created_at": 1790585537.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0208d0616a47e543016aba2ac1ca7487d09a962a49029f8fd2",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[\"The Luma test box should be stored at 12 degrees Celsius.\"]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0208d0616a47e543016aba2ac3c6e087d0a2b71190ca4faf3a",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "StatementGeneratorOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for statement generation.",
+            "properties": {
+              "statements": {
+                "description": "The generated statements from the answer",
+                "items": {
+                  "type": "string"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "StatementGeneratorOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 534,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 29,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 563
+      },
+      "user": null
+    },
+    "request_id": "resp_0208d0616a47e543016aba2ac1ca7487d09a962a49029f8fd2",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[\"The Luma test box should be stored at 12 degrees Celsius.\"]}",
+    "usage": {
+      "input_tokens": 534,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 29,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 563
+    }
+  },
+  "record_hash": "6ff57b88b6d96eef9aa96a4c3326e8d7f86172536ac567e302c993a666471002",
+  "request_hash": "6871b11d2a544ac8f08b0072b22625a42bec2f92842afc10142f8ae895d55fb6",
+  "started_at": "2026-09-28T08:52:11.019416+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,250 @@
+{
+  "at": "2026-09-29T04:51:34.263478+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "a18fe094850fde0f2ef77173048a4e34ade803fccdb773547bbb817073f7f763",
+  "result": {
+    "attempt_key": "r1-M08-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 14.101660999999694,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9774500447711892
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9774500447711892
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M08",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific activation temperature and names the pump supplying hydraulic pressure."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9766740532415319,
+          0.9790020278305039,
+          0.9766740532415319
+        ],
+        "query_vector_hash": "32b6d9b393c58a4e55e9447d0d02e8d2324fb81ec3dbae9760b2014911eb64fd",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the cooling fan activate, and what supplies hydraulic pressure to the fan-clutch system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the cooling fan activated, and what supplies hydraulic pressure to the fan-clutch system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the cooling fan activate, and what supplies hydraulic pressure to the fan-clutch system?"
+          }
+        ],
+        "response_vectors_hash": "2849fb2e751fb188f60d23a82a23b4f793c559ebaeb6565a20ffdbb87801266a",
+        "score": 0.9774500447711895
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [],
+        "statements": [
+          {
+            "answer_quote": "The cooling fan is activated when coolant temperature reaches 215°F (102°C).",
+            "statement": "The cooling fan is activated when coolant temperature reaches 215°F (102°C)."
+          },
+          {
+            "answer_quote": "The power steering pump supplies hydraulic pressure to the fan-clutch system.",
+            "statement": "The power steering pump supplies hydraulic pressure to the fan-clutch system."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The cooling fan is activated when coolant temperature reaches 215°F (102°C).",
+          "id": "C001",
+          "text": "The cooling fan is activated when coolant temperature reaches 215°F (102°C)."
+        },
+        {
+          "answer_quote": "The power steering pump supplies hydraulic pressure to the fan-clutch system.",
+          "id": "C002",
+          "text": "The power steering pump supplies hydraulic pressure to the fan-clutch system."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The cooling fan is activated when coolant temperature reaches 215°F (102°C).",
+            "fulfilled": 1,
+            "id": "M08-A01",
+            "reason": "States the specified fan-activation temperature."
+          },
+          {
+            "answer_quote": "The power steering pump supplies hydraulic pressure to the fan-clutch system.",
+            "fulfilled": 1,
+            "id": "M08-A02",
+            "reason": "Identifies the specified pump."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "The fan is activated when coolant temperature reaches 215°F (102°C)."
+              ],
+              "reason": "The cooling-system passage gives this activation temperature for the fan.",
+              "statement": "The cooling fan is activated when coolant temperature reaches 215°F (102°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000614"
+              ],
+              "evidence_quotes": [
+                "FAN CLUTCH - Hydraulically actuated by pressure from hydraulic control valve to control\noperation of fan. Hydraulic pressure supplied by power steering pump."
+              ],
+              "reason": "The fan-clutch passage identifies the power steering pump as the hydraulic-pressure source.",
+              "statement": "The power steering pump supplies hydraulic pressure to the fan-clutch system.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002106"
+              ],
+              "evidence_quotes": [
+                "The fan is activated when coolant temperature reaches 215°F (102°C)."
+              ],
+              "reason": "The source states this activation temperature directly.",
+              "statement": "The cooling fan is activated when coolant temperature reaches 215°F (102°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000614"
+              ],
+              "evidence_quotes": [
+                "FAN CLUTCH - Hydraulically actuated by pressure from hydraulic control valve to control\noperation of fan. Hydraulic pressure supplied by power steering pump."
+              ],
+              "reason": "The fan-clutch description identifies the power steering pump as the hydraulic-pressure source.",
+              "statement": "The power steering pump supplies hydraulic pressure to the fan-clutch system.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.9766740532415319,
+          0.9790020278305039,
+          0.9766740532415319
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9774500447711892,
+        "query_vector_hash": "32b6d9b393c58a4e55e9447d0d02e8d2324fb81ec3dbae9760b2014911eb64fd",
+        "ragas_score": 0.9774500447711895,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "2849fb2e751fb188f60d23a82a23b4f793c559ebaeb6565a20ffdbb87801266a"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9766740532415319,
+          0.9790020278305039,
+          0.9766740532415319
+        ],
+        "decimal50_cosines": [
+          "0.97667405324153195650002156461669327327138906493530",
+          "0.97900202783050406616159530456429653938501747868905",
+          "0.97667405324153195650002156461669327327138906493530"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9774500447711895
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9774500447711895
+          }
+        },
+        "query_vector_hash": "32b6d9b393c58a4e55e9447d0d02e8d2324fb81ec3dbae9760b2014911eb64fd",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the cooling fan activate, and what supplies hydraulic pressure to the fan-clutch system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the cooling fan activated, and what supplies hydraulic pressure to the fan-clutch system?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the cooling fan activate, and what supplies hydraulic pressure to the fan-clutch system?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "2849fb2e751fb188f60d23a82a23b4f793c559ebaeb6565a20ffdbb87801266a",
+        "score": 0.9774500447711892
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "8271b165c05133cf225dd3b514e43813e318c81fc13b013833955b23d79b6e21"
+}

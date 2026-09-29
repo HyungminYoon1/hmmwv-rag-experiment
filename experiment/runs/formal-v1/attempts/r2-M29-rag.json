@@ -1,0 +1,890 @@
+{
+  "citation_ids": [
+    "[C002086]",
+    "[C002007]",
+    "[C001997]",
+    "[C001042]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:39:10.348274+00:00",
+  "evaluation_answer": "Yes, failure to develop full engine power is a stated reason to check the air-intake/exhaust system. , , \n\nA dust-unloader center opening of 0.20 inch (5.08 mm) exceeds the preventive maintenance check standard of 1/8 inch (3.175 mm), making the unit not fully mission capable. ",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1068,
+  "key": "r2-M29-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002086] TM 9-2320-280-20-1 | PDF 237 | Printed 2-152\nCOMPRESSION/MECHANICAL\nKNOWN INFO\nBATTERY AND\nSTARTER CIRCUITS OK\nPOSSIBLE PROBLEMS\nENGINE\nDRIVETRAIN\nFUEL SYSTEM\nINTAKE/EXHAUST\n\nRUN A POWER TEST WITH THE AIR FILTER REMOVED. DOES THE TEST STILL FAIL? TEST OPTIONS AIR INTAKE/EXHAUST TESTS PAGE 2-137 REASON FOR QUESTION Intake or exhaust restrictions will prevent the engine from producing full power. A NO answer means the test passed with no air filter. TEST OPTIONS FUEL SYSTEM TESTS PAGE 2-95 REASON FOR QUESTION Many fuel system faults will allow the engine to start and run but prevent it from producing full power.\n\n[C002007] TM 9-2320-280-20-1 | PDF 226 | Printed 2-140\nINTAKE AIR/EXHAUST\nKNOWN INFO\nAIR FILTER OK\nINDUCTION SYSTEM OK\nEXHAUST PIPE OK\nPOSSIBLE PROBLEMS\nMUFFLER\n\nIS THE MUFFLER INTACT AND NOT BLOCKED ? TEST OPTIONS VISUAL INSPECTION REASON FOR QUESTION If the muffier is damaged or blocked, the engine will not develop full power or it may not start,\n\n[C001042] TM 9-2320-280-20-1 | PDF 116 | Printed 2-25\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 29.1\nINTERVAL: Annually\nITEM TO BE INSPECTED: Dust\nUnloader\n\nINTERVAL: Annually\nITEM NO.: 29.1\nITEM TO BE INSPECTED: Dust\nUnloader\nNOT FULLY MISSION CAPABLE IF: Dust unloader missing or\nhas cuts, tears, obstruc-\ntions, worn areas,\nenlarged gap, or if center\nopening exceeds 1/8 in.\n(3.175 mm).\nPROCEDURES: Visually inspect dust unloader for\npresence and for cuts, tears,\nobstructions, worn areas, enlarged\ngap, or if center opening exceeds\n1/8 in. (3.175 mm).\n\n[C001997] TM 9-2320-280-20-1 | PDF 224 | Printed 2-138\nINTAKE AIR/EXHAUST\n3\nKNOWN INFO\nAIR FILTER OK\nINDUCTION SYSTEM OK\nPOSSIBLE PROBLEMS\nEXHAUST\nMUFFLER\n\nIS THE EXHAUST PIPE INTACT AND NOT BLOCKED ?\nTEST OPTIONS\n1. VISUAL INSPECTION\n2. CHECK FOR BENT OR DENTED EXHAUST PIPES/MUFFLER.\nREASON FOR QUESTION\nIf the exhaust is broken or blocked, the engine will not develop full power or it may not start.\n\n[C001993] TM 9-2320-280-20-1 | PDF 224 | Printed 2-138\nINTAKE AIR/EXHAUST\n1\nKNOWN INFO\nNOTHING\nPOSSIBLE PROBLEMS\nAIR FILTER\nINDUCTION SYSTEM\nEXHAUST PIPE\nMUFFLER\n\nIS THE AIR FILTER ELEMENT OK ?\nTEST OPTIONS\n1. VISUAL INSPECTION\n2. DASHBOARD INDICATOR\n3. REMOVE AND INSPECT ELEMENT\nREASON FOR QUESTION\nIf the air filter is clogged, the engine will not develop full power. Engine may exhaust black smoke or it may not start at all.\nQUESTION:\nIs failure to develop full engine power a stated reason to check the air-intake/exhaust system, and how does a dust-unloader center opening of 0.20 inch compare with its PMCS limit?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "Is failure to develop full engine power a stated reason to check the air-intake/exhaust system, and how does a dust-unloader center opening of 0.20 inch compare with its PMCS limit?",
+  "question_id": "M29",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:26:27.201538407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:26:24.215465807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4898308096.0,
+    "max_actual_interval_ms": 110.28149999947345,
+    "peak_rss_bytes": 13605994496,
+    "peak_vram_bytes": 4898308096,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5633.6298226,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5633.7375659,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5633.8306916,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5633.9409731,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.035682,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.1448204,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.2370081,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.3304758,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.438754,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.5311284,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045242368,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605621760,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.63969,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4044697600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605076992,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.7333324,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103624704,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9322762240,
+          "37564": 7958528
+        },
+        "rss_bytes": 13605994496,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.8411155,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103645184,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9268731904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13551984640,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5634.9348116,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103645184,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9268731904,
+          "37564": 7958528
+        },
+        "rss_bytes": 13551984640,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.0433384,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103645184,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553811456,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.1353022,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103645184,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553811456,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.2423673,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.3356773,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.4439099,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.5400773,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.6345587,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.7430951,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.8350785,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5635.9451886,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4898308096
+      },
+      {
+        "monotonic": 5636.0363643,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4897390592
+      },
+      {
+        "monotonic": 5636.1455467,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4897390592
+      },
+      {
+        "monotonic": 5636.2382263,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4897390592
+      },
+      {
+        "monotonic": 5636.3310276,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103653376,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553819648,
+        "vram_bytes": 4897390592
+      },
+      {
+        "monotonic": 5636.440477,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103661568,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4045615104,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9270558720,
+          "37564": 7958528
+        },
+        "rss_bytes": 13553827840,
+        "vram_bytes": 4897390592
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:39:10.3467626Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 107,
+    "eval_duration": 1503320000,
+    "load_duration": 1248300,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 1068,
+    "prompt_eval_duration": 196592000,
+    "response": "Yes, failure to develop full engine power is a stated reason to check the air-intake/exhaust system. [C002086], [C002007], [C001997]\n\nA dust-unloader center opening of 0.20 inch (5.08 mm) exceeds the preventive maintenance check standard of 1/8 inch (3.175 mm), making the unit not fully mission capable. [C001042]",
+    "total_duration": 1734759200
+  },
+  "retrieval": {
+    "embedding_ms": 142.71850000022823,
+    "items": [
+      {
+        "body_end": 442,
+        "body_start": 0,
+        "id": "C002086",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          237
+        ],
+        "prefix_chars": 130,
+        "printed_pages": [
+          "2-152"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6213542222976685,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            140.8617,
+            537.2902
+          ],
+          "condition_box": [
+            48.0,
+            136.0,
+            159.5,
+            299.5
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0237.json",
+            "sha256": "f75bf8f6b6436b2aa088f85542321bd264a873f263af17b7f4c720966cb62091"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            182.1363,
+            162.4589,
+            340.5158,
+            195.8146
+          ],
+          "source_component_keys": [
+            "region:237:1:4",
+            "region:237:1:2",
+            "region:237:1:5",
+            "region:237:1:7",
+            "region:237:1:3",
+            "region:237:1:6",
+            "region:237:1:10",
+            "region:237:1:14"
+          ]
+        },
+        "text": "COMPRESSION/MECHANICAL\nKNOWN INFO\nBATTERY AND\nSTARTER CIRCUITS OK\nPOSSIBLE PROBLEMS\nENGINE\nDRIVETRAIN\nFUEL SYSTEM\nINTAKE/EXHAUST\n\nRUN A POWER TEST WITH THE AIR FILTER REMOVED. DOES THE TEST STILL FAIL? TEST OPTIONS AIR INTAKE/EXHAUST TESTS PAGE 2-137 REASON FOR QUESTION Intake or exhaust restrictions will prevent the engine from producing full power. A NO answer means the test passed with no air filter. TEST OPTIONS FUEL SYSTEM TESTS PAGE 2-95 REASON FOR QUESTION Many fuel system faults will allow the engine to start and run but prevent it from producing full power.",
+        "text_sha256": "01a859f717901c51019f79da3e91e965e6d0706252c14c7d2282b99399d6331c",
+        "token_count": 150,
+        "unit_id": "U002080",
+        "unit_key": "V6:P0237:node:1"
+      },
+      {
+        "body_end": 188,
+        "body_start": 0,
+        "id": "C002007",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          226
+        ],
+        "prefix_chars": 107,
+        "printed_pages": [
+          "2-140"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6108043193817139,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            148.2716,
+            755
+          ],
+          "condition_box": [
+            48.0,
+            142.5,
+            158.5,
+            305.0
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0226.json",
+            "sha256": "39fa9b1b87d9ba5e272482a128f88003a8349b2bdbe6c81a6027c870a6b7cfad"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            183.5401,
+            171.0642,
+            310.6986,
+            192.1773
+          ],
+          "source_component_keys": [
+            "region:226:1:5",
+            "region:226:1:3",
+            "region:226:1:6",
+            "region:226:1:8",
+            "region:226:1:9",
+            "region:226:1:4",
+            "region:226:1:7"
+          ]
+        },
+        "text": "INTAKE AIR/EXHAUST\nKNOWN INFO\nAIR FILTER OK\nINDUCTION SYSTEM OK\nEXHAUST PIPE OK\nPOSSIBLE PROBLEMS\nMUFFLER\n\nIS THE MUFFLER INTACT AND NOT BLOCKED ? TEST OPTIONS VISUAL INSPECTION REASON FOR QUESTION If the muffier is damaged or blocked, the engine will not develop full power or it may not start,",
+        "text_sha256": "c0f47c798bc5f248d9122a2a216ece50d64cee7a6ad9c44c409c044b7320a0e7",
+        "token_count": 83,
+        "unit_id": "U002001",
+        "unit_key": "V6:P0226:node:1"
+      },
+      {
+        "body_end": 398,
+        "body_start": 0,
+        "id": "C001042",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          116
+        ],
+        "prefix_chars": 151,
+        "printed_pages": [
+          "2-25"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6094282269477844,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "29.1",
+          "row_ids": [
+            "P0116-T2_1-R05"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 29.1\nINTERVAL: Annually\nITEM TO BE INSPECTED: Dust\nUnloader\n\nINTERVAL: Annually\nITEM NO.: 29.1\nITEM TO BE INSPECTED: Dust\nUnloader\nNOT FULLY MISSION CAPABLE IF: Dust unloader missing or\nhas cuts, tears, obstruc-\ntions, worn areas,\nenlarged gap, or if center\nopening exceeds 1/8 in.\n(3.175 mm).\nPROCEDURES: Visually inspect dust unloader for\npresence and for cuts, tears,\nobstructions, worn areas, enlarged\ngap, or if center opening exceeds\n1/8 in. (3.175 mm).",
+        "text_sha256": "a47e941dc55e2983f6554830a5f99d8fef59fbaa2bd5067f6e1d98f00d26012e",
+        "token_count": 179,
+        "unit_id": "U001036",
+        "unit_key": "pmcs:29.1"
+      },
+      {
+        "body_end": 246,
+        "body_start": 0,
+        "id": "C001997",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          224
+        ],
+        "prefix_chars": 101,
+        "printed_pages": [
+          "2-138"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5901527404785156,
+        "source_issues": [
+          {
+            "detail": "3번 배기계통 질문의 NO 조치도 INDUCTION SYSTEM COMPONENTS로 인쇄되어 있다. EXHAUST로 추정 교정하지 않았다.",
+            "evidence": {
+              "file": "preprocessing/corrections/batch-019/evidence/V19-P0224.png",
+              "sha256": "475b0b8471cbe26ac08df2dd98c604f027ea9f9d9426cb6546b69fe639a8b653"
+            },
+            "id": "P0224_PRINTED_INDUCTION_WORDING",
+            "pdf_page": 224,
+            "status": "SOURCE_WORDING_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "individually_reviewed_question_panels",
+          "condition_link_basis": "PDF_VISUAL_SAME_NODE_BOXES",
+          "evidence": {
+            "file": "preprocessing/corrections/batch-019/evidence/V19-P0224.png",
+            "sha256": "475b0b8471cbe26ac08df2dd98c604f027ea9f9d9426cb6546b69fe639a8b653"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "step": "3"
+        },
+        "text": "INTAKE AIR/EXHAUST\n3\nKNOWN INFO\nAIR FILTER OK\nINDUCTION SYSTEM OK\nPOSSIBLE PROBLEMS\nEXHAUST\nMUFFLER\n\nIS THE EXHAUST PIPE INTACT AND NOT BLOCKED ?\nTEST OPTIONS\n1. VISUAL INSPECTION\n2. CHECK FOR BENT OR DENTED EXHAUST PIPES/MUFFLER.\nREASON FOR QUESTION\nIf the exhaust is broken or blocked, the engine will not develop full power or it may not start.",
+        "text_sha256": "606513608be17003174bf38c4317bc32ee49c27cc46fbf8a952e079a3f8fbd2e",
+        "token_count": 108,
+        "unit_id": "U001991",
+        "unit_key": "V19:P0224:3"
+      },
+      {
+        "body_end": 266,
+        "body_start": 0,
+        "id": "C001993",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          224
+        ],
+        "prefix_chars": 108,
+        "printed_pages": [
+          "2-138"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5897926092147827,
+        "source_issues": [
+          {
+            "detail": "3번 배기계통 질문의 NO 조치도 INDUCTION SYSTEM COMPONENTS로 인쇄되어 있다. EXHAUST로 추정 교정하지 않았다.",
+            "evidence": {
+              "file": "preprocessing/corrections/batch-019/evidence/V19-P0224.png",
+              "sha256": "475b0b8471cbe26ac08df2dd98c604f027ea9f9d9426cb6546b69fe639a8b653"
+            },
+            "id": "P0224_PRINTED_INDUCTION_WORDING",
+            "pdf_page": 224,
+            "status": "SOURCE_WORDING_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "individually_reviewed_question_panels",
+          "condition_link_basis": "PDF_VISUAL_SAME_NODE_BOXES",
+          "evidence": {
+            "file": "preprocessing/corrections/batch-019/evidence/V19-P0224.png",
+            "sha256": "475b0b8471cbe26ac08df2dd98c604f027ea9f9d9426cb6546b69fe639a8b653"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "step": "1"
+        },
+        "text": "INTAKE AIR/EXHAUST\n1\nKNOWN INFO\nNOTHING\nPOSSIBLE PROBLEMS\nAIR FILTER\nINDUCTION SYSTEM\nEXHAUST PIPE\nMUFFLER\n\nIS THE AIR FILTER ELEMENT OK ?\nTEST OPTIONS\n1. VISUAL INSPECTION\n2. DASHBOARD INDICATOR\n3. REMOVE AND INSPECT ELEMENT\nREASON FOR QUESTION\nIf the air filter is clogged, the engine will not develop full power. Engine may exhaust black smoke or it may not start at all.",
+        "text_sha256": "8b8af408a4df11d251414bf62374b3825e9f34d9595e99644324750ea44f723a",
+        "token_count": 108,
+        "unit_id": "U001987",
+        "unit_key": "V19:P0224:1"
+      }
+    ],
+    "search_ms": 9.432599999854574
+  },
+  "round": 2,
+  "sequence": 240,
+  "started_at": "2026-09-28T04:39:08.447132+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1748.4660999998596,
+    "retrieval": 152.5752999996257,
+    "total": 1901.0413999994853
+  },
+  "unprovided_citations": []
+}

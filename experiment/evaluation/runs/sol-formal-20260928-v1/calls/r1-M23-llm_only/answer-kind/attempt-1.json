@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:23:51.250896+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives specific cleaning agents, a reason not to use them on the CDR valve, and an asserted authorized cleaning method."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587431,
+      "conversation": null,
+      "created_at": 1790587429.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_020172c125aa593e016aba32250d3087d0858eec37c624a17b",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujInJZhKw2B_l6Bo56ArQJTap6wnoWkZqN_MTuAFaaxCvcXi4G0Qp4QNz7e6BcKN1kmHIfphO_KcKPrJzxOtEz2w6iEn44baPehy5G0MsfYQEFR-Z_LgwWOgpxC67UwPRyes6fBEulkMFPOc1HH_2dKjUfFbcJbIaJagKCERs7wckzQM5k76JWx7aHP6b0gn7BBZuSoGaiNKAobJmnD096AmNTpy2lQiEPqoj6l0v4CxDwdfCYmwnmXw4plArGDu7MTmSt1z4r9G9Sr-zgUMIeODtdPjFKdL218KnLwKL6QO-Y3fMB7ShT7dK4hRflsOBQf4LBCmPfkTigroNANY6AMi_mH6GE1ZuLFgmaI_3vsSDAbmVG3d1WoOcoBNjA9WkeN7z-2SccPeDtsa08thDpYpsrbirLvSnSFh_cFCd1vkMd75KkHUQHeaMTb6FK1vHxqjLE_yGjZKgUlfessD7Q7CWDj1hUdC6q5oDhcXoMvZwulDuxchtbxAGGL98lykknr17Ns9Qze1uJTE-iBUJ-TtLRb8ebSLGVKPX_a4_5aT3tiRnEh-LPrfpNdg__48NDjWG5cdZYQ5SsWpXGgR6c2sfswXhFnsoHFKY6uhF4XEPeNgN7pmh0lbVfRfe9nYDlC302ljRVKgHwjJQGgUQffd2QfIO0ABg4JFFJiEAJTt638drNpvBxZn_jZrlFV8mkRYZsPCRBJ7dqcBxG3EKEGZdsenwDV92UKqpFqDpNds6SSOBnv3XU4i50O7dIPJJjD9fuGwpHDGxgTx7VSTCAE_IXL_72wfng0EsUdVuWFFBQLskYz5gV-OTNQn32uRIPrHTlXXkpoYhN0IYU0KCxs9XahngMIH0Bn3FjKpxLidkNIVODIg27-VnzZ5LxXl6PGGLpEB6o50ZiNeqlwAQVsIqlT8duWQgNr4r-EC5fUONUMQq3bTCXFYDRjeQrKW6HYCzFjX5u2jPHhVm9wYN1o_LB84y3XzBtaTfRRxWLpnYJDygH8cUd0fXHhCfuRvIrWtoX_Z_Z6LO5fRbg5HjDfoY60bx8Um-zXeKhfd3WTUqHcGDBPqwf3fFLeEtb1xaNnRpruX_1Tjn3ZHM6NgtGS_lRM7Jasa8DzeaGUbAmEPIuk8m-ctXRye_DLufJa6AegbP6KplKHs_YVT-wawuaSZQNWZIhmSIEAyCpTmNkQWR5TG9rMKphfz4NDXwTBnwL3_GlgcuMj53sHy15DYZt6e4Q==",
+          "id": "rs_020172c125aa593e016aba3225c46c87d09a3cbe104cba894f",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives specific cleaning agents, a reason not to use them on the CDR valve, and an asserted authorized cleaning method.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_020172c125aa593e016aba32265af087d0854da932d37b4659",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 496,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 65,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 561
+      },
+      "user": null
+    },
+    "request_id": "resp_020172c125aa593e016aba32250d3087d0858eec37c624a17b",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives specific cleaning agents, a reason not to use them on the CDR valve, and an asserted authorized cleaning method.\"}",
+    "usage": {
+      "input_tokens": 496,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 65,
+      "output_tokens_details": {
+        "reasoning_tokens": 13
+      },
+      "total_tokens": 561
+    }
+  },
+  "record_hash": "009747820146f4685cd2958fc0df86ecfaa46702df6dfd42a8d9dae161a30d60",
+  "request_hash": "022c42d3f968aefe1564f16d0d1bd605e9e3ccb33d628598473c5cf22b8e6ac0",
+  "started_at": "2026-09-28T09:23:48.928539+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,172 @@
+{
+  "at": "2026-09-29T05:23:39.991038+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "9b7dbe8650f8f379e32852b4fa47a6a123318d85f886238d5725591c0031d46d",
+  "result": {
+    "attempt_key": "r1-S19-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 6.016614199999822,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "NO_FACTUAL_CLAIM_ZERO",
+        "value": 0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S19",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": false,
+        "kind": "full_abstention",
+        "reason": "The response says it cannot determine the value and provides no technical answer."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "query_vector_hash": "a55a37d3a6bc3be9da18220ac55c5c895d9ccb3829083b204a5560cb9017986e",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What is the maximum acceptable battery resistance-change value in STE/ICE-R Test 75?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What is the maximum acceptable battery resistance-change value in STE/ICE-R Test 75?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What is the maximum acceptable battery resistance-change value in STE/ICE-R Test 75?"
+          }
+        ],
+        "response_vectors_hash": "3329708d5eefdfbc3330e8920a59fd3f1ae945613ba847cc06503fb31da18424",
+        "score": 0.0
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "Inability: “I do not know the maximum acceptable battery resistance-change value in STE/ICE-R Test 75”",
+          "Input availability: “no manual excerpts were supplied”",
+          "Knowledge provenance: “no specific information is available in the knowledge base for this exact test parameter”"
+        ],
+        "shared_conditions": [
+          "STE/ICE-R Test 75"
+        ],
+        "statements": []
+      },
+      "claims": [],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S19-A01",
+            "reason": "The response does not give the maximum value of 50 milliohms/second; it states that it does not know."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "a55a37d3a6bc3be9da18220ac55c5c895d9ccb3829083b204a5560cb9017986e",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "3329708d5eefdfbc3330e8920a59fd3f1ae945613ba847cc06503fb31da18424"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "decimal50_cosines": [
+          "1",
+          "1",
+          "1"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 0.0,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "a55a37d3a6bc3be9da18220ac55c5c895d9ccb3829083b204a5560cb9017986e",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What is the maximum acceptable battery resistance-change value in STE/ICE-R Test 75?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What is the maximum acceptable battery resistance-change value in STE/ICE-R Test 75?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What is the maximum acceptable battery resistance-change value in STE/ICE-R Test 75?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "3329708d5eefdfbc3330e8920a59fd3f1ae945613ba847cc06503fb31da18424",
+        "score": 0.0
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "5d6350e624a916cc87209eecc4aacc3b277b96d5a42db783b5ce402d3a3058bb"
+}

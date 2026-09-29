@@ -1,0 +1,552 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:18:16.584217+00:00",
+  "evaluation_answer": "The specified output voltages for the 60-ampere and 200-ampere alternators in Table 1-2 of TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), are not available in the provided reference material. Therefore, based on the absence of excerpts, this information cannot be confirmed or retrieved from the reference. \n\nNote: Without specific excerpts from the manual, the exact output voltages cannot be determined from the given data. Existing model knowledge does not provide the specific values for these alternators in Table 1-2.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 242,
+  "key": "r1-D08-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nWhat output voltages are specified for the 60-ampere and 200-ampere alternators in Table 1-2?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "What output voltages are specified for the 60-ampere and 200-ampere alternators in Table 1-2?",
+  "question_id": "D08",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:33.438489707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:30.260043107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4845748224.0,
+    "max_actual_interval_ms": 110.38449999978184,
+    "peak_rss_bytes": 2972229632,
+    "peak_vram_bytes": 4867342336,
+    "pids": [
+      13944,
+      30736,
+      37504,
+      37552,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4379.6823161,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4379.7927006,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4379.8859578,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4379.9956878,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.0869843,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.1944138,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.2862832,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.3938204,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.4866593,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.5951959,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.6888942,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2619244544,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2793971712,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.797325,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.8906962,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4380.9828206,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4381.0900989,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4381.197031,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4381.290713,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4381.3834501,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4381.4913833,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4845748224
+      },
+      {
+        "monotonic": 4381.5836964,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4855939072
+      },
+      {
+        "monotonic": 4381.6932059,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4856004608
+      },
+      {
+        "monotonic": 4381.7850179,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4856004608
+      },
+      {
+        "monotonic": 4381.8903407,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4856004608
+      },
+      {
+        "monotonic": 4381.9970506,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4856135680
+      },
+      {
+        "monotonic": 4382.0895518,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4856135680
+      },
+      {
+        "monotonic": 4382.1833134,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4856201216
+      },
+      {
+        "monotonic": 4382.2905606,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4856332288
+      },
+      {
+        "monotonic": 4382.3972763,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4856332288
+      },
+      {
+        "monotonic": 4382.4887724,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4856856576
+      },
+      {
+        "monotonic": 4382.5951885,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4867342336
+      },
+      {
+        "monotonic": 4382.6862386,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57974784,
+          "30736": 12607488,
+          "37504": 2797502464,
+          "37552": 96702464,
+          "37564": 7442432
+        },
+        "rss_bytes": 2972229632,
+        "vram_bytes": 4860526592
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:18:16.5837139Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 141,
+    "eval_duration": 1970180000,
+    "load_duration": 1785600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 242,
+    "prompt_eval_duration": 22722000,
+    "response": "The specified output voltages for the 60-ampere and 200-ampere alternators in Table 1-2 of TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), are not available in the provided reference material. Therefore, based on the absence of excerpts, this information cannot be confirmed or retrieved from the reference. \n\nNote: Without specific excerpts from the manual, the exact output voltages cannot be determined from the given data. Existing model knowledge does not provide the specific values for these alternators in Table 1-2.",
+    "total_duration": 2063028800
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 8,
+  "started_at": "2026-09-28T04:18:14.499625+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2084.758700000748,
+    "retrieval": null,
+    "total": 2084.758700000748
+  },
+  "unprovided_citations": []
+}

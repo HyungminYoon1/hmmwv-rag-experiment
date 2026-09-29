@@ -1,0 +1,245 @@
+{
+  "at": "2026-09-28T09:56:40.155339+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "dcfb398b70a3dbae7b81247143772c2ad7a9b0bf0f3e62333ea0c3d60e719b63",
+  "original_result_sha256": "e78754f4234c21c2ffd0523d3cf19d43a9b9b13c2fa7b845cbb564e25106c2b8",
+  "result": {
+    "attempt_key": "r1-S16-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 31.69112150000001,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7450738538969376
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7450738538969376
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "S16",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It gives a technical explanation of blue exhaust smoke but says the referenced manual excerpts are unavailable."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7206881618882051,
+          0.7938452379144024,
+          0.7206881618882051
+        ],
+        "query_vector_hash": "8140768b2630bf55161fbd0071b2f3d4d553060fa9bbd65dd20cb04da4a8e45d",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate in an HMMWV (M998-series), and what might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke generally indicate in an HMMWV, and what problems might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate in an HMMWV (M998-series), and what might cause it?"
+          }
+        ],
+        "response_vectors_hash": "2567f503e02a919668e5229f7c7f79c0c7914bab52918c28da3c625f69bbd78c",
+        "score": 0.7450738538969377
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "Blue exhaust smoke generally indicates that oil is burning."
+        },
+        {
+          "id": "C002",
+          "text": "Oil burning indicated by blue exhaust smoke may point to a leak in the engine's oil system."
+        },
+        {
+          "id": "C003",
+          "text": "Oil burning indicated by blue exhaust smoke may point to a problem with the piston rings."
+        },
+        {
+          "id": "C004",
+          "text": "Oil burning indicated by blue exhaust smoke may point to a problem with the valve seals."
+        },
+        {
+          "id": "C005",
+          "text": "The information about blue exhaust smoke is derived from general maintenance knowledge applicable to HMMWV (M998-series) operations."
+        }
+      ],
+      "claims_raw": [
+        "Blue exhaust smoke generally indicates that oil is burning.",
+        "Oil burning indicated by blue exhaust smoke may point to a leak in the engine's oil system.",
+        "Oil burning indicated by blue exhaust smoke may point to a problem with the piston rings.",
+        "Oil burning indicated by blue exhaust smoke may point to a problem with the valve seals.",
+        "The information about blue exhaust smoke is derived from general maintenance knowledge applicable to HMMWV (M998-series) operations."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Blue exhaust smoke generally indicates that oil is burning",
+            "fulfilled": 1,
+            "id": "S16-A01",
+            "reason": "Oil burning conveys that oil has entered the combustion chambers."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S16-A02",
+            "reason": "The answer mentions possible piston-ring or valve-seal problems but does not say oil usually passes the rings or intake-valve stem seals."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.6,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:blue"
+              ],
+              "evidence_quotes": [
+                "Blue smoke is a sign of oil entering the combustion chambers. It usually"
+              ],
+              "reason": "The context says blue smoke usually means oil is entering the combustion chambers.",
+              "statement": "Blue exhaust smoke generally indicates that oil is burning.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify a leak in the engine's oil system.",
+              "statement": "Oil burning indicated by blue exhaust smoke may point to a leak in the engine's oil system.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:blue"
+              ],
+              "evidence_quotes": [
+                "enters past the piston rings or intake valve stem seals. This is an internal"
+              ],
+              "reason": "The context identifies piston rings as a usual route for oil to enter the combustion chambers.",
+              "statement": "Oil burning indicated by blue exhaust smoke may point to a problem with the piston rings.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:blue"
+              ],
+              "evidence_quotes": [
+                "enters past the piston rings or intake valve stem seals. This is an internal"
+              ],
+              "reason": "The context identifies intake valve stem seals as a usual route for oil to enter the combustion chambers.",
+              "statement": "Oil burning indicated by blue exhaust smoke may point to a problem with the valve seals.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not state that source or mention HMMWV operations.",
+              "statement": "The information about blue exhaust smoke is derived from general maintenance knowledge applicable to HMMWV (M998-series) operations.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.7206881618882051,
+          0.7938452379144024,
+          0.7206881618882051
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7450738538969376,
+        "query_vector_hash": "8140768b2630bf55161fbd0071b2f3d4d553060fa9bbd65dd20cb04da4a8e45d",
+        "ragas_score": 0.7450738538969377,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "2567f503e02a919668e5229f7c7f79c0c7914bab52918c28da3c625f69bbd78c"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7206881618882051,
+          0.7938452379144024,
+          0.7206881618882051
+        ],
+        "decimal50_cosines": [
+          "0.72068816188820503419462867921346417342106943668398",
+          "0.79384523791440232782933697193136566427530890501070",
+          "0.72068816188820503419462867921346417342106943668398"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.7450738538969377
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.7450738538969377
+          }
+        },
+        "query_vector_hash": "8140768b2630bf55161fbd0071b2f3d4d553060fa9bbd65dd20cb04da4a8e45d",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate in an HMMWV (M998-series), and what might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke generally indicate in an HMMWV, and what problems might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate in an HMMWV (M998-series), and what might cause it?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "2567f503e02a919668e5229f7c7f79c0c7914bab52918c28da3c625f69bbd78c",
+        "score": 0.7450738538969376
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "8fd9036b3ff81785eb779544f69b3d73c6b9bbd224dda4850f23e24e698b2a31"
+}

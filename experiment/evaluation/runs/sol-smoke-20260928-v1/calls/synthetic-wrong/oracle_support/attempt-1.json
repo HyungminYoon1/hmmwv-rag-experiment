@@ -1,0 +1,201 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T08:44:02.397751+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [],
+        "evidence_quotes": [],
+        "reason": "The context specifies 12 degrees Celsius, not 30.",
+        "statement": "The Luma test box should be stored at 30 degrees Celsius.",
+        "verdict": 0
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790585048,
+      "conversation": null,
+      "created_at": 1790585046.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_06e5ed0786de5422016aba28d6e12887d0ad82698637d30332",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The Luma test box should be stored at 30 degrees Celsius.\",\"reason\":\"The context specifies 12 degrees Celsius, not 30.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_06e5ed0786de5422016aba28d7fcbc87d0adfea2741862c68e",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 526,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 59,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 585
+      },
+      "user": null
+    },
+    "request_id": "resp_06e5ed0786de5422016aba28d6e12887d0ad82698637d30332",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The Luma test box should be stored at 30 degrees Celsius.\",\"reason\":\"The context specifies 12 degrees Celsius, not 30.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]}]}",
+    "usage": {
+      "input_tokens": 526,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 59,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 585
+    }
+  },
+  "record_hash": "3c78112072fb654c0d4de457f253ab4fafb42d57846f6df8b96102a301ad288d",
+  "request_hash": "39040b8582cba12428ecf4c324ebfc3121d5c08d92e3e7a95d706b42fbc9ea81",
+  "started_at": "2026-09-28T08:44:00.134798+00:00",
+  "status": "OK"
+}

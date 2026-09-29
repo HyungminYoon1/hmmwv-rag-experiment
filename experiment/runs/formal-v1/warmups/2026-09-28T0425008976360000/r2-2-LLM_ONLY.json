@@ -1,0 +1,616 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:32:56.238718+00:00",
+  "evaluation_answer": "The front service-brake rotor diameters for the standard and A2 configurations in Table 1-2 of TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), are not available in the provided reference material. Therefore, based on the absence of excerpts, this specific detail cannot be confirmed or retrieved from the reference. \n\nNote: Without actual excerpts from the manual, the exact values for the rotor diameters cannot be provided. This information may be found in the original document's Table 1-2, but it is not included in the supplied reference.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 235,
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nWhat are the front service-brake rotor diameters for the standard and A2 configurations in Table 1-2?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "purpose": "WARMUP",
+  "question": "What are the front service-brake rotor diameters for the standard and A2 configurations in Table 1-2?",
+  "question_id": "D04",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:20:13.092371707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:20:09.379341207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4850204672.0,
+    "max_actual_interval_ms": 108.92949999924895,
+    "peak_rss_bytes": 9499004928,
+    "peak_vram_bytes": 4850204672,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5258.8496429,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5258.9568825,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.0506787,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.1596082,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.2525501,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.3599014,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.4521589,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.5605617,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.6533624,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.7611343,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.8555827,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9275117568,
+          "37564": 7958528
+        },
+        "rss_bytes": 9499004928,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5259.9508432,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9272020992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9495908352,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.0594193,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.1508532,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.2584016,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.3499683,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.4573124,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.5645951,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.6577685,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.7657418,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.8577418,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5260.9507782,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.0594381,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.1534067,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.2622568,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.35493,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.4632098,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.5558179,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.6645863,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.7574075,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.8646269,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5261.958689,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5262.0509532,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5262.1595983,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5262.2527934,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      },
+      {
+        "monotonic": 5262.3616113,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "30736": 12054528,
+          "36040": 100786176,
+          "37504": 9198432256,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422319616,
+        "vram_bytes": 4850204672
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:32:56.2355021Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 139,
+    "eval_duration": 2430279000,
+    "load_duration": 4229700,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 235,
+    "prompt_eval_duration": 20914000,
+    "response": "The front service-brake rotor diameters for the standard and A2 configurations in Table 1-2 of TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), are not available in the provided reference material. Therefore, based on the absence of excerpts, this specific detail cannot be confirmed or retrieved from the reference. \n\nNote: Without actual excerpts from the manual, the exact values for the rotor diameters cannot be provided. This information may be found in the original document's Table 1-2, but it is not included in the supplied reference.",
+    "total_duration": 2546532900
+  },
+  "retrieval": null,
+  "round": 2,
+  "started_at": "2026-09-28T04:32:53.666528+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2572.1551999995427,
+    "retrieval": null,
+    "total": 2572.1551999995427
+  },
+  "unprovided_citations": []
+}

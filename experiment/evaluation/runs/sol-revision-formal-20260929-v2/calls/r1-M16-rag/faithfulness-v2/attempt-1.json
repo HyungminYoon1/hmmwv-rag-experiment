@@ -1,0 +1,227 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T04:58:24.699278+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "C000832"
+        ],
+        "evidence_quotes": [
+          "Relubricate all items found contaminated after fording."
+        ],
+        "reason": "The source explicitly directs relubrication of all items found contaminated after fording.",
+        "statement": "After fording, items found contaminated should be relubricated.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "C000977"
+        ],
+        "evidence_quotes": [
+          "•Fill each axle differential with 2\nquarts (1.9 L) of GO."
+        ],
+        "reason": "The note specifies this GO fill quantity for each axle differential.",
+        "statement": "The listed GO refill quantity is 2 quarts (1.9 L) per axle differential.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "C000977"
+        ],
+        "evidence_quotes": [
+          "•Fill each geared hub with 1 pint\n(0.5 L) of GO."
+        ],
+        "reason": "The note specifies this GO fill quantity for each geared hub.",
+        "statement": "The listed GO refill quantity is 1 pint (0.5 L) per geared hub.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790657906,
+      "conversation": null,
+      "created_at": 1790657902.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_038e1127ebb7170b016abb456edf4087d091d895341731a91d",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"After fording, items found contaminated should be relubricated.\",\"reason\":\"The source explicitly directs relubrication of all items found contaminated after fording.\",\"verdict\":1,\"evidence_ids\":[\"C000832\"],\"evidence_quotes\":[\"Relubricate all items found contaminated after fording.\"]},{\"statement\":\"The listed GO refill quantity is 2 quarts (1.9 L) per axle differential.\",\"reason\":\"The note specifies this GO fill quantity for each axle differential.\",\"verdict\":1,\"evidence_ids\":[\"C000977\"],\"evidence_quotes\":[\"•Fill each axle differential with 2\\nquarts (1.9 L) of GO.\"]},{\"statement\":\"The listed GO refill quantity is 1 pint (0.5 L) per geared hub.\",\"reason\":\"The note specifies this GO fill quantity for each geared hub.\",\"verdict\":1,\"evidence_ids\":[\"C000977\"],\"evidence_quotes\":[\"•Fill each geared hub with 1 pint\\n(0.5 L) of GO.\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_038e1127ebb7170b016abb457007dc87d0b3b11c00af62646c",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1684,
+        "input_tokens_details": {
+          "cache_write_tokens": 1681,
+          "cached_tokens": 0
+        },
+        "output_tokens": 231,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1915
+      },
+      "user": null
+    },
+    "request_id": "resp_038e1127ebb7170b016abb456edf4087d091d895341731a91d",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"After fording, items found contaminated should be relubricated.\",\"reason\":\"The source explicitly directs relubrication of all items found contaminated after fording.\",\"verdict\":1,\"evidence_ids\":[\"C000832\"],\"evidence_quotes\":[\"Relubricate all items found contaminated after fording.\"]},{\"statement\":\"The listed GO refill quantity is 2 quarts (1.9 L) per axle differential.\",\"reason\":\"The note specifies this GO fill quantity for each axle differential.\",\"verdict\":1,\"evidence_ids\":[\"C000977\"],\"evidence_quotes\":[\"•Fill each axle differential with 2\\nquarts (1.9 L) of GO.\"]},{\"statement\":\"The listed GO refill quantity is 1 pint (0.5 L) per geared hub.\",\"reason\":\"The note specifies this GO fill quantity for each geared hub.\",\"verdict\":1,\"evidence_ids\":[\"C000977\"],\"evidence_quotes\":[\"•Fill each geared hub with 1 pint\\n(0.5 L) of GO.\"]}]}",
+    "usage": {
+      "input_tokens": 1684,
+      "input_tokens_details": {
+        "cache_write_tokens": 1681,
+        "cached_tokens": 0
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1915
+    }
+  },
+  "record_hash": "51fc03d60f220e4fcd1eada14519a7379d0d507cb2d0371c5655a17713bcabaa",
+  "request_hash": "ff9361a1290b4135db06d0d4ef1f44602abfc6f9edb97ca1894148a9dbb77ca4",
+  "started_at": "2026-09-29T04:58:20.329890+00:00",
+  "status": "OK"
+}

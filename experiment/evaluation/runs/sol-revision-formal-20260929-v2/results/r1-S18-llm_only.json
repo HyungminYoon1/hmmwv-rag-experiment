@@ -1,0 +1,216 @@
+{
+  "at": "2026-09-29T05:23:16.970679+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "cd02603475977555d445f013cc19207c1575710fa4c56bfac5f71b672a1f27c2",
+  "result": {
+    "attempt_key": "r1-S18-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 15.159739499998977,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9999999999998018
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9999999999998018
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S18",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific maximum resistance of 10 mΩ and makes additional claims about its source."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.999999999999797,
+          0.9999999999997653,
+          0.999999999999843
+        ],
+        "query_vector_hash": "05df61e5e6084c4a45512f19424ac78a026f9b15da6cc9ce36dc818ca9e47afb",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the maximum acceptable battery internal resistance in STE/ICE-R Test 73?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the maximum acceptable battery internal resistance in STE/ICE-R Test 73?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the maximum acceptable battery internal resistance in STE/ICE-R Test 73?"
+          }
+        ],
+        "response_vectors_hash": "37d9f6ff2c5c4e2f44c3df989cb802797b2e114a5ee1ef1ea13f08d1e01c3f8b",
+        "score": 0.9999999999998018
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says its stated resistance value is derived from standard military vehicle battery testing procedures outlined in TM 9-2320-280-20-1, Volume 1; this is self-described provenance.",
+          "The answer says no specific chunk ID is available in the reference."
+        ],
+        "shared_conditions": [
+          "STE/ICE-R Test 73"
+        ],
+        "statements": [
+          {
+            "answer_quote": "The maximum acceptable battery internal resistance in STE/ICE-R Test 73 is 10 milliohms (mΩ).",
+            "statement": "In STE/ICE-R Test 73, the maximum acceptable battery internal resistance is 10 milliohms (mΩ)."
+          },
+          {
+            "answer_quote": "TM 9-2320-280-20-1, Volume 1, which specifies performance criteria for HMMWV (M998-series) battery health during diagnostic tests.",
+            "statement": "TM 9-2320-280-20-1, Volume 1 specifies performance criteria for HMMWV (M998-series) battery health during diagnostic tests."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The maximum acceptable battery internal resistance in STE/ICE-R Test 73 is 10 milliohms (mΩ).",
+          "id": "C001",
+          "text": "In STE/ICE-R Test 73, the maximum acceptable battery internal resistance is 10 milliohms (mΩ)."
+        },
+        {
+          "answer_quote": "TM 9-2320-280-20-1, Volume 1, which specifies performance criteria for HMMWV (M998-series) battery health during diagnostic tests.",
+          "id": "C002",
+          "text": "TM 9-2320-280-20-1, Volume 1 specifies performance criteria for HMMWV (M998-series) battery health during diagnostic tests."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S18-A01",
+            "reason": "The answer states 10 milliohms, contradicting the required 25-milliohm maximum."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C003141"
+              ],
+              "evidence_quotes": [
+                "5. Result is displayed in milliohms. Battery\nresistance should be 25 milliohms max."
+              ],
+              "reason": "The supplied Test 73 reference gives a 25-milliohm maximum, not 10 milliohms.",
+              "statement": "In STE/ICE-R Test 73, the maximum acceptable battery internal resistance is 10 milliohms (mΩ).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied passages do not identify that manual or state that it specifies criteria for HMMWV (M998-series) batteries.",
+              "statement": "TM 9-2320-280-20-1, Volume 1 specifies performance criteria for HMMWV (M998-series) battery health during diagnostic tests.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.999999999999797,
+          0.9999999999997653,
+          0.999999999999843
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9999999999998018,
+        "query_vector_hash": "05df61e5e6084c4a45512f19424ac78a026f9b15da6cc9ce36dc818ca9e47afb",
+        "ragas_score": 0.9999999999998018,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "37d9f6ff2c5c4e2f44c3df989cb802797b2e114a5ee1ef1ea13f08d1e01c3f8b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.999999999999797,
+          0.9999999999997653,
+          0.999999999999843
+        ],
+        "decimal50_cosines": [
+          "0.99999999999979700599430017212406097988205273022629",
+          "0.99999999999976556651346722324712427087087711190707",
+          "0.99999999999984324292989471323400240142060498070497"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9999999999998018
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9999999999998018
+          }
+        },
+        "query_vector_hash": "05df61e5e6084c4a45512f19424ac78a026f9b15da6cc9ce36dc818ca9e47afb",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the maximum acceptable battery internal resistance in STE/ICE-R Test 73?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the maximum acceptable battery internal resistance in STE/ICE-R Test 73?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the maximum acceptable battery internal resistance in STE/ICE-R Test 73?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "37d9f6ff2c5c4e2f44c3df989cb802797b2e114a5ee1ef1ea13f08d1e01c3f8b",
+        "score": 0.9999999999998018
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "91acaa7827569eaa95d6322c411204f777b193f1ffcd16ab59af9485d93b4271"
+}

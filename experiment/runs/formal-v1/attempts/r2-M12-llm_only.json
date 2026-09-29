@@ -1,0 +1,487 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:35:07.411191+00:00",
+  "evaluation_answer": "Loose starter mounting bolts found during PMCS are reported using Form 300 (Vehicle Maintenance Report) and must be reported immediately during the inspection. The specified tightening torque for starter mounting bolts is 15 ft-lbs [TM9-2320-280-20-1, C000123].",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 243,
+  "key": "r2-M12-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nLoose starter mounting bolts are found during PMCS. Which forms and reporting timing apply to the shortcoming, and what tightening torque is specified for those bolts?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "Loose starter mounting bolts are found during PMCS. Which forms and reporting timing apply to the shortcoming, and what tightening torque is specified for those bolts?",
+  "question_id": "M12",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:22:24.264877107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:22:21.536955007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4862001152.0,
+    "max_actual_interval_ms": 110.63000000012835,
+    "peak_rss_bytes": 9576960000,
+    "peak_vram_bytes": 4862001152,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5391.0891072,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5391.1963897,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5391.3045054,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5391.3971428,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5391.4909224,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5391.6007678,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5391.6945681,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5391.7896086,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5391.8999281,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5391.9938374,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5392.1044674,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 9297063936,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5392.1971819,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9202864128,
+          "37564": 7958528
+        },
+        "rss_bytes": 9426817024,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5392.2909107,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9353007104,
+          "37564": 7958528
+        },
+        "rss_bytes": 9576960000,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5392.3994172,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9353007104,
+          "37564": 7958528
+        },
+        "rss_bytes": 9576960000,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5392.492067,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5392.6014186,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5392.6940023,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5392.8019555,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5392.8948904,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5393.0037904,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5393.0960237,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5393.2029645,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5393.2961723,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5393.4029861,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5393.4955545,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5393.5894585,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "30736": 12054528,
+          "36040": 101122048,
+          "37504": 9278091264,
+          "37564": 7958528
+        },
+        "rss_bytes": 9502044160,
+        "vram_bytes": 4862001152
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:35:07.4089255Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 73,
+    "eval_duration": 1129545000,
+    "load_duration": 9905300,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 243,
+    "prompt_eval_duration": 29387000,
+    "response": "Loose starter mounting bolts found during PMCS are reported using Form 300 (Vehicle Maintenance Report) and must be reported immediately during the inspection. The specified tightening torque for starter mounting bolts is 15 ft-lbs [TM9-2320-280-20-1, C000123].",
+    "total_duration": 1492733500
+  },
+  "retrieval": null,
+  "round": 2,
+  "sequence": 158,
+  "started_at": "2026-09-28T04:35:05.907444+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1503.75300000087,
+    "retrieval": null,
+    "total": 1503.75300000087
+  },
+  "unprovided_citations": []
+}

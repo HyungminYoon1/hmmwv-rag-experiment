@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:18:51.061704+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives specific lubricant-change and transmission-fluid recommendations rather than abstaining."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587130,
+      "conversation": null,
+      "created_at": 1790587128.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_05d7e463d98944f3016aba30f8d4e487d096290274b7631886",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujD6m9msVluWaot9CGR-_VTtOvPHLnL-QxadNAxBuIT9x0e2R_VZN8H5tw4fU_orYByOxr2vULn-ZL5VoeLMKuSR0aDpA-lEnw-Kum9sAsRVcxutVh3E-Oy8L-1oQkYLaSGn9p8BwEywzXNE0trJjtNNtIjft-bE6bDvIkSASANymj0ZUKigb2rSzQwaAAyHRN9ifUTj9Ayoc1FIHX8R-b1tefRIBSbuMJygoq2OKbhKMpFW0ncbXD2H1IQpH0nDE8BB49MKlbuBmGMXxPLcYVdLDxMpt3vhTQzJG7lylO4kfZ0020yY7GQmUSNV4KFgPcoasoeOrOQIF2kLVxS547GlwJiaKC_4-P8hG9qigJnmEy0vf62osH2fcTYf9DsL0f7j_XzZGjk6iaHKxoCM6RImf3DBKmgABhsgkNQmbrEY8Cw1Lv_aPce4h6IEkVdNX9PqixTATJiiOUuvG_dIAEe7bERttZAfnEtu9T0QG89_rqDHlJe1D2PSKw4kd5Bp6hgOZ9Y0yrI1eu5KClSfUfL4Zb7Oyv-FONaSVHAwfxEAmfATovMVcoyBbtKwLQJpeKMP989388l6YeIdArbLyHFGVvO-2sjtTEZsptU6KnWbS8BuBFarxFfQFRBbn1MufuNmTBxBqnRssLe-FTt59epo8oPiUpzKdSQ1HBoRtfNuGdvppmO-DEJrqUjGvMqvRruXd97XaBL-UYy6Bcn01ApTOf0-jDxpbzCahC0uz3gNnld3TGsv15SIEUOS0LcIXkB0sW1xFH4KRLaJm2r76OatycV5BYG48kXaU5lZjRykfHCShb5TpbMrIxQ79MJUFKAEjoeVQcczSfYN43wEUXUl0rrugzc3BZ9d29nghPDHYPiZh6oSgInj-BU-C1X5g4Osi2BHg4Gi52mphFU216LgXM4WNpkV7WomDvcdggw2dAxviIGbehQBb-IIt9-POmsryC_1mqhgDaeDBbdnYJJYl9oLFaCZd_XUBnsFgbWehmcOI_m0u7SDRyUvzARcACeGnUBJC6LL3ONFm0P7YE3-2OXHNzjnCGj5ctAW1cFIf93qFtGmFbniCkLCaIsGDG9dOXwI4uiZ4NHyCT26PWc2qmFowNYnkuuphU-cVSwtUXxDLy3f9U8aQyR2QayKUzG8nTRC4DupOuk-o5LBufa4ckUhpKK06d4QsLyI1GcM-ZnMlUPKE7gQnbxjrrvrObRFJD35QIVGvQ_PAmhy_-purGnuM7c7aNWHoUdXib3VGYU=",
+          "id": "rs_05d7e463d98944f3016aba30f9879487d0b0533882f0152bcc",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives specific lubricant-change and transmission-fluid recommendations rather than abstaining.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_05d7e463d98944f3016aba30fa41c087d09bd1529206a8a400",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 426,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 55,
+        "output_tokens_details": {
+          "reasoning_tokens": 14
+        },
+        "total_tokens": 481
+      },
+      "user": null
+    },
+    "request_id": "resp_05d7e463d98944f3016aba30f8d4e487d096290274b7631886",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives specific lubricant-change and transmission-fluid recommendations rather than abstaining.\"}",
+    "usage": {
+      "input_tokens": 426,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 55,
+      "output_tokens_details": {
+        "reasoning_tokens": 14
+      },
+      "total_tokens": 481
+    }
+  },
+  "record_hash": "53c9443382889d5c3a2d05c6b2999e12029334853c63490e339328a8f860e76c",
+  "request_hash": "df41be02843569a37f33a7165bb4044de40f4c0af856854f585479cbfad48bfb",
+  "started_at": "2026-09-28T09:18:48.694594+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,245 @@
+{
+  "at": "2026-09-28T09:56:40.032362+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "423be3e33d2ae67bec2be876561e3133cdaed6d5fbb074d2d54c4093ab6700dc",
+  "original_result_sha256": "6b4fb6881733c37ccee3406324b75cfd094cf48357702e6804a7cdc7b28b7434",
+  "result": {
+    "attempt_key": "r1-M21-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 31.25646720000077,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8367177928898272
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8367177928898272
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M21",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific PMCS interval and Final Road Test deadline. Its note about the source does not withhold the answer."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8523810822084316,
+          0.8288861556544073,
+          0.8288861408066424
+        ],
+        "query_vector_hash": "a38c0cf8f4fa9ea2072f5996e795b3899fa764760ae054ca08296a6bc54f6860",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "For an M998-series HMMWV, what time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test take place afterward?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For the HMMWV (M998-series), what interval triggers biennial PMCS, and when must the Final Road Test occur afterward?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For the HMMWV (M998-series), what interval triggers biennial PMCS, and when must the Final Road Test occur afterward?"
+          }
+        ],
+        "response_vectors_hash": "30cbe95e0d89491978899553b8b0d7cdfed680e4778185fff6b258f1331dfc38",
+        "score": 0.836717792889827
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "Biennial PMCS for the HMMWV (M998-series) is triggered every 24 months or 15,000 miles, whichever comes first."
+        },
+        {
+          "id": "C002",
+          "text": "The Final Road Test must occur within the first 30 days after completion of biennial PMCS."
+        },
+        {
+          "id": "C003",
+          "text": "The biennial PMCS information is derived from standard maintenance practices outlined in TM 9-2320-280-20-1, Volume 1."
+        },
+        {
+          "id": "C004",
+          "text": "TM 9-2320-280-20-1, Volume 1, is dated 1996 and includes Change 2 dated 2004."
+        },
+        {
+          "id": "C005",
+          "text": "No specific excerpts were provided in REFERENCE."
+        },
+        {
+          "id": "C006",
+          "text": "The answer is based on established U.S. Army maintenance guidelines for the HMMWV."
+        }
+      ],
+      "claims_raw": [
+        "Biennial PMCS for the HMMWV (M998-series) is triggered every 24 months or 15,000 miles, whichever comes first.",
+        "The Final Road Test must occur within the first 30 days after completion of biennial PMCS.",
+        "The biennial PMCS information is derived from standard maintenance practices outlined in TM 9-2320-280-20-1, Volume 1.",
+        "TM 9-2320-280-20-1, Volume 1, is dated 1996 and includes Change 2 dated 2004.",
+        "No specific excerpts were provided in REFERENCE.",
+        "The answer is based on established U.S. Army maintenance guidelines for the HMMWV."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "every 24 months or 15,000 miles, whichever comes first",
+            "fulfilled": 0,
+            "id": "M21-A01",
+            "reason": "The mileage is incorrect; the specified interval is 12,000 miles."
+          },
+          {
+            "answer_quote": "within the first 30 days after the completion of the biennial PMCS",
+            "fulfilled": 1,
+            "id": "M21-A02",
+            "reason": "This places the road test after completion of the biennial tasks, although the 30-day limit is unsupported."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 12,000 miles, not 15,000 miles.",
+              "statement": "Biennial PMCS for the HMMWV (M998-series) is triggered every 24 months or 15,000 miles, whichever comes first.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context says the test follows the last biennial task but gives no 30-day deadline.",
+              "statement": "The Final Road Test must occur within the first 30 days after completion of biennial PMCS.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify that manual as the source.",
+              "statement": "The biennial PMCS information is derived from standard maintenance practices outlined in TM 9-2320-280-20-1, Volume 1.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context provides no manual dates or change information.",
+              "statement": "TM 9-2320-280-20-1, Volume 1, is dated 1996 and includes Change 2 dated 2004.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify a REFERENCE section or establish what it contained.",
+              "statement": "No specific excerpts were provided in REFERENCE.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish the answer’s source or identify U.S. Army guidelines.",
+              "statement": "The answer is based on established U.S. Army maintenance guidelines for the HMMWV.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.8523810822084316,
+          0.8288861556544073,
+          0.8288861408066424
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8367177928898272,
+        "query_vector_hash": "a38c0cf8f4fa9ea2072f5996e795b3899fa764760ae054ca08296a6bc54f6860",
+        "ragas_score": 0.836717792889827,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "30cbe95e0d89491978899553b8b0d7cdfed680e4778185fff6b258f1331dfc38"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8523810822084316,
+          0.8288861556544073,
+          0.8288861408066424
+        ],
+        "decimal50_cosines": [
+          "0.85238108220843153573012176365538052386727895118921",
+          "0.82888615565440732324058162312130819243948177582659",
+          "0.82888614080664244021042106266526234998959398783243"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.836717792889827
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.836717792889827
+          }
+        },
+        "query_vector_hash": "a38c0cf8f4fa9ea2072f5996e795b3899fa764760ae054ca08296a6bc54f6860",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "For an M998-series HMMWV, what time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test take place afterward?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For the HMMWV (M998-series), what interval triggers biennial PMCS, and when must the Final Road Test occur afterward?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For the HMMWV (M998-series), what interval triggers biennial PMCS, and when must the Final Road Test occur afterward?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "30cbe95e0d89491978899553b8b0d7cdfed680e4778185fff6b258f1331dfc38",
+        "score": 0.8367177928898272
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "c1f976766b8b23da04889b3dd9c3ba0f1c7e684ca1e6ac0e1c4fb05cd654a4e2"
+}

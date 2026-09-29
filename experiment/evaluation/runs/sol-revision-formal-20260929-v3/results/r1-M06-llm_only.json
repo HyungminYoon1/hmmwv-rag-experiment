@@ -1,0 +1,382 @@
+{
+  "at": "2026-09-29T05:36:22.781490+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "bbd4e52a703b73064e8834e8a0beb652193692a4ef183631e53af3ba46c70325",
+  "result": {
+    "attempt_key": "r1-M06-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 36.00795939999989,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8518942964297702
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8518942964297702
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.2727272727272727
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      }
+    },
+    "question_id": "M06",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "The response gives technical claims about blue smoke and compression tests but also disclaims that the requested manual excerpts were not supplied."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.872225361877751,
+          0.8417287637057799,
+          0.8417287637057799
+        ],
+        "query_vector_hash": "6197d91872a8e93e6b4f3a20c22003eb3de8dee1ed8b34bce5d0d0745cdca119",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests in diagnosing an engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests in diagnosing an engine?"
+          }
+        ],
+        "response_vectors_hash": "fcbca43e21c5d866467176ec9da057df377be972ee23b742f00fa1cd18f93e0e",
+        "score": 0.8518942964297703
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says the specific manual excerpts were not supplied.",
+          "The answer describes its information as derived from standard HMMWV maintenance knowledge and general engine diagnostics principles."
+        ],
+        "shared_conditions": [
+          "The smoke claims concern blue exhaust smoke.",
+          "The test-purpose claims concern the Compression/Mechanical Tests."
+        ],
+        "statements": [
+          {
+            "answer_quote": "Blue exhaust smoke indicates that oil is burning in the engine",
+            "statement": "Blue exhaust smoke indicates that oil is burning in the engine."
+          },
+          {
+            "answer_quote": "may point to excessive oil consumption",
+            "statement": "Blue exhaust smoke may point to excessive oil consumption."
+          },
+          {
+            "answer_quote": "or internal engine wear",
+            "statement": "Blue exhaust smoke may point to internal engine wear."
+          },
+          {
+            "answer_quote": "to determine the engine's compression",
+            "statement": "The stated purpose of the Compression/Mechanical Tests is to determine the engine's compression."
+          },
+          {
+            "answer_quote": "and mechanical condition",
+            "statement": "The stated purpose of the Compression/Mechanical Tests is to determine the engine's mechanical condition."
+          },
+          {
+            "answer_quote": "identify potential issues such as worn piston rings",
+            "statement": "The Compression/Mechanical Tests are intended to identify potential issues such as worn piston rings."
+          },
+          {
+            "answer_quote": "worn piston rings, cylinder walls",
+            "statement": "The Compression/Mechanical Tests are intended to identify potential issues such as worn cylinder walls."
+          },
+          {
+            "answer_quote": "or valve problems",
+            "statement": "The Compression/Mechanical Tests are intended to identify potential valve problems."
+          },
+          {
+            "answer_quote": "ensuring engine performance",
+            "statement": "The Compression/Mechanical Tests are intended to ensure engine performance."
+          },
+          {
+            "answer_quote": "and reliability",
+            "statement": "The Compression/Mechanical Tests are intended to ensure engine reliability."
+          },
+          {
+            "answer_quote": "this information is derived from standard HMMWV maintenance knowledge and general engine diagnostics principles applicable to the TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)",
+            "statement": "The answer's blue-smoke and Compression/Mechanical Tests information is applicable to TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "Blue exhaust smoke indicates that oil is burning in the engine",
+          "id": "C001",
+          "text": "Blue exhaust smoke indicates that oil is burning in the engine."
+        },
+        {
+          "answer_quote": "may point to excessive oil consumption",
+          "id": "C002",
+          "text": "Blue exhaust smoke may point to excessive oil consumption."
+        },
+        {
+          "answer_quote": "or internal engine wear",
+          "id": "C003",
+          "text": "Blue exhaust smoke may point to internal engine wear."
+        },
+        {
+          "answer_quote": "to determine the engine's compression",
+          "id": "C004",
+          "text": "The stated purpose of the Compression/Mechanical Tests is to determine the engine's compression."
+        },
+        {
+          "answer_quote": "and mechanical condition",
+          "id": "C005",
+          "text": "The stated purpose of the Compression/Mechanical Tests is to determine the engine's mechanical condition."
+        },
+        {
+          "answer_quote": "identify potential issues such as worn piston rings",
+          "id": "C006",
+          "text": "The Compression/Mechanical Tests are intended to identify potential issues such as worn piston rings."
+        },
+        {
+          "answer_quote": "worn piston rings, cylinder walls",
+          "id": "C007",
+          "text": "The Compression/Mechanical Tests are intended to identify potential issues such as worn cylinder walls."
+        },
+        {
+          "answer_quote": "or valve problems",
+          "id": "C008",
+          "text": "The Compression/Mechanical Tests are intended to identify potential valve problems."
+        },
+        {
+          "answer_quote": "ensuring engine performance",
+          "id": "C009",
+          "text": "The Compression/Mechanical Tests are intended to ensure engine performance."
+        },
+        {
+          "answer_quote": "and reliability",
+          "id": "C010",
+          "text": "The Compression/Mechanical Tests are intended to ensure engine reliability."
+        },
+        {
+          "answer_quote": "this information is derived from standard HMMWV maintenance knowledge and general engine diagnostics principles applicable to the TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)",
+          "id": "C011",
+          "text": "The answer's blue-smoke and Compression/Mechanical Tests information is applicable to TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Blue exhaust smoke indicates that oil is burning in the engine",
+            "fulfilled": 1,
+            "id": "M06-A01",
+            "reason": "Oil burning in the engine conveys oil entering the combustion chambers."
+          },
+          {
+            "answer_quote": "determine the engine's compression and mechanical condition to identify potential issues such as worn piston rings, cylinder walls, or valve problems",
+            "fulfilled": 1,
+            "id": "M06-A02",
+            "reason": "Describes identifying internal compression or mechanical problems."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M06-A03",
+            "reason": "The response does not mention fixing what is possible without notifying DS maintenance."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.2727272727272727,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002436"
+              ],
+              "evidence_quotes": [
+                "BLUE. . . . . . . . . . . .Blue smoke is a sign of oil entering the combustion chambers. It usually"
+              ],
+              "reason": "The smoke explanation identifies oil entering the combustion chambers as the cause of blue smoke.",
+              "statement": "Blue exhaust smoke indicates that oil is burning in the engine.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passages do not state that blue smoke indicates excessive oil consumption.",
+              "statement": "Blue exhaust smoke may point to excessive oil consumption.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passages call it an internal engine problem but do not identify wear.",
+              "statement": "Blue exhaust smoke may point to internal engine wear.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C002013"
+              ],
+              "evidence_quotes": [
+                "The main intent of this paragraph is to determine if the engine has internal\ncompression or mechanical problems and to fix everything possible without having\nto notify DS maintenance."
+              ],
+              "reason": "The introduction says the tests determine whether the engine has internal compression problems.",
+              "statement": "The stated purpose of the Compression/Mechanical Tests is to determine the engine's compression.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002013"
+              ],
+              "evidence_quotes": [
+                "The main intent of this paragraph is to determine if the engine has internal\ncompression or mechanical problems and to fix everything possible without having\nto notify DS maintenance."
+              ],
+              "reason": "The introduction says the tests determine whether the engine has internal mechanical problems.",
+              "statement": "The stated purpose of the Compression/Mechanical Tests is to determine the engine's mechanical condition.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passages mention oil entering past piston rings, but do not state that the tests identify worn rings.",
+              "statement": "The Compression/Mechanical Tests are intended to identify potential issues such as worn piston rings.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passages do not mention worn cylinder walls.",
+              "statement": "The Compression/Mechanical Tests are intended to identify potential issues such as worn cylinder walls.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The smoke explanation mentions intake valve stem seals, but does not state that the tests identify valve problems.",
+              "statement": "The Compression/Mechanical Tests are intended to identify potential valve problems.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated intent does not include ensuring engine performance.",
+              "statement": "The Compression/Mechanical Tests are intended to ensure engine performance.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated intent does not include ensuring engine reliability.",
+              "statement": "The Compression/Mechanical Tests are intended to ensure engine reliability.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied passages do not establish that publication, volume, or edition.",
+              "statement": "The answer's blue-smoke and Compression/Mechanical Tests information is applicable to TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.872225361877751,
+          0.8417287637057799,
+          0.8417287637057799
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8518942964297702,
+        "query_vector_hash": "6197d91872a8e93e6b4f3a20c22003eb3de8dee1ed8b34bce5d0d0745cdca119",
+        "ragas_score": 0.8518942964297703,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "fcbca43e21c5d866467176ec9da057df377be972ee23b742f00fa1cd18f93e0e"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.872225361877751,
+          0.8417287637057799,
+          0.8417287637057799
+        ],
+        "decimal50_cosines": [
+          "0.87222536187775111226787204309523836018716076373604",
+          "0.84172876370577986727668077344924414589077204038498",
+          "0.84172876370577986727668077344924414589077204038498"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8518942964297703
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8518942964297703
+          }
+        },
+        "query_vector_hash": "6197d91872a8e93e6b4f3a20c22003eb3de8dee1ed8b34bce5d0d0745cdca119",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests in diagnosing an engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does blue exhaust smoke indicate, and what is the purpose of Compression/Mechanical Tests in diagnosing an engine?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "fcbca43e21c5d866467176ec9da057df377be972ee23b742f00fa1cd18f93e0e",
+        "score": 0.8518942964297702
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "3cd6f324f472bc62c2063d7ea9fff6525cdb8ffcff5c34cd92895c8028d8a363",
+  "source_result_sha256": "4f5475c4828388ee13282af5f94a40d0492a640987b50cfd58f3cbeb3eed49fa"
+}

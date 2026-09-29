@@ -1,0 +1,158 @@
+{
+  "policy": {
+    "answer_language": "English",
+    "answer_relevancy": {
+      "embedding": "same pinned BGE-M3 dense vectors",
+      "framework": "RAGAS",
+      "rule": "Use raw mean of 3 cosine similarities unless all three noncommittal flags are 1, then 0. Validate 3 nonempty reconstructed questions and flags. Do not clamp cosine scores.",
+      "strictness": 3
+    },
+    "automatic_quality_status": "NOT_RUN",
+    "claims": "Extract atomic factual claims once from question and evaluation answer only. Preserve negation, units, subject, constraints, and procedure order; remove duplicate claims. Reuse the same claims for actual-context and oracle support judgments.",
+    "conversion_factors": {
+      "fahrenheit_to_celsius": "(F - 32) * 5 / 9",
+      "foot_lbf_to_N_m": 1.3558179483314003,
+      "inch_to_cm": 2.54,
+      "inch_to_mm": 25.4,
+      "mile_to_km": 1.609344,
+      "psi_to_kPa": 6.894757293168361
+    },
+    "faithfulness": "Judge the same claims against the actual Top-5 context. Apply to answerable RAG answers only.",
+    "final_release": "Researcher source review and evaluator validation must be completed before final quality claims. Stored generation results remain usable for subsequent scoring under the declared rules. Any later evaluator choice or rubric revision is versioned and reported.",
+    "judge_model": "PENDING_API_CONFIGURATION",
+    "manual_review": "PCG64(seed42): 4 single + 6 multi questions, both first-round answers; plus all 10 unanswerable, both answers. 40 answers total. Hide condition and automatic scores. Do not mix manual scores into automatic means.",
+    "missing_evaluation_policy": "Retry same evaluator input at most twice, retaining all attempts; first valid result wins. Unresolved evaluator failure is missing, never a model error zero.",
+    "numeric_policy": "Allow source units and printed source conversions. Otherwise use the fixed conversion factors and round to the decimal precision explicitly used in the answer. No extra engineering tolerances.",
+    "oracle_support": "A claim is supported only if the frozen oracle evidence supports it. Unsupported by the oracle is not equivalent to false in the world.",
+    "quality_round": 1,
+    "ragas_version": "PENDING_SEPARATE_EVALUATION_ENVIRONMENT",
+    "required_coverage": "Score each predeclared required element as 0 or 1. Contradictory values score 0. Conditions already explicit in the question are shared. Do not infer missing conditions not in the question.",
+    "unanswerable": "Some facts may be answerable. Require explicit abstention for the frozen missing information; later invented specifics invalidate that abstention. LLM Only corpus-unanswerable abstention is not a real-world factual accuracy score.",
+    "unit_aliases": {
+      "degree_C": [
+        "°C",
+        "degrees Celsius"
+      ],
+      "degree_F": [
+        "°F",
+        "degrees Fahrenheit"
+      ],
+      "foot_lbf": [
+        "lb-ft",
+        "ft-lb",
+        "ft·lbf",
+        "pound-feet"
+      ],
+      "milliohm": [
+        "mOhm",
+        "mΩ",
+        "milliohms"
+      ],
+      "psi": [
+        "lb/in2",
+        "lbf/in2",
+        "pounds per square inch"
+      ],
+      "rpm": [
+        "r/min",
+        "revolutions per minute"
+      ],
+      "second": [
+        "s",
+        "sec",
+        "seconds"
+      ]
+    },
+    "version": "pre-outcome-v1"
+  },
+  "rows": [
+    {
+      "allowed_partial_answer": "",
+      "attempt_key": "synthetic-correct",
+      "condition": "RAG",
+      "generation_status": "OK",
+      "missing_information": "",
+      "oracle_evidence": [
+        {
+          "id": "fixture-1",
+          "sources": [],
+          "text": "Store the Luma test box at 12 degrees Celsius."
+        }
+      ],
+      "predeclared_note": "Fictional test fixture.",
+      "question_id": "SYN01",
+      "required_elements": [
+        {
+          "id": "temperature",
+          "text": "Storage temperature is 12 degrees Celsius."
+        }
+      ],
+      "response": "Store the Luma test box at 12 degrees Celsius.",
+      "retrieved_chunk_ids": [
+        "fixture-chunk"
+      ],
+      "retrieved_contexts": [
+        "Store the Luma test box at 12 degrees Celsius."
+      ],
+      "type": "single-evidence",
+      "user_input": "At what temperature should the fictional Luma test box be stored?"
+    },
+    {
+      "allowed_partial_answer": "",
+      "attempt_key": "synthetic-wrong",
+      "condition": "RAG",
+      "generation_status": "OK",
+      "missing_information": "",
+      "oracle_evidence": [
+        {
+          "id": "fixture-1",
+          "sources": [],
+          "text": "Store the Luma test box at 12 degrees Celsius."
+        }
+      ],
+      "predeclared_note": "Fictional test fixture.",
+      "question_id": "SYN02",
+      "required_elements": [
+        {
+          "id": "temperature",
+          "text": "Storage temperature is 12 degrees Celsius."
+        }
+      ],
+      "response": "Store the Luma test box at 30 degrees Celsius.",
+      "retrieved_chunk_ids": [
+        "fixture-chunk"
+      ],
+      "retrieved_contexts": [
+        "Store the Luma test box at 12 degrees Celsius."
+      ],
+      "type": "single-evidence",
+      "user_input": "At what temperature should the fictional Luma test box be stored?"
+    },
+    {
+      "allowed_partial_answer": "Storage temperature may be stated if supported by the supplied source.",
+      "attempt_key": "synthetic-abstain",
+      "condition": "RAG",
+      "generation_status": "OK",
+      "missing_information": "The warranty period is not provided.",
+      "oracle_evidence": [
+        {
+          "id": "fixture-1",
+          "sources": [],
+          "text": "Store the Luma test box at 12 degrees Celsius."
+        }
+      ],
+      "predeclared_note": "Fictional test fixture.",
+      "question_id": "SYN03",
+      "required_elements": [],
+      "response": "The provided document does not specify the warranty period, so I cannot determine it.",
+      "retrieved_chunk_ids": [
+        "fixture-chunk"
+      ],
+      "retrieved_contexts": [
+        "Store the Luma test box at 12 degrees Celsius."
+      ],
+      "type": "unanswerable",
+      "user_input": "What is the warranty period of the fictional Luma test box?"
+    }
+  ]
+}

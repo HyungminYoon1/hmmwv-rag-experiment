@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-09-29T04:43:34.938179+00:00",
+  "evaluator_configured_after_generation": true,
+  "gold_version": "gold-v2",
+  "human_evaluator_validation": "PENDING",
+  "id": "sol-revision-smoke-20260929-v2",
+  "identity": {
+    "code": {
+      "files": {
+        "experiment/evaluation/__init__.py": "d60168cc78b0690329988499136a304be1c00adaee384a428c58603bd443c8b3",
+        "experiment/evaluation/common.py": "eca9f01e25da9580d6b4f97bcebf897f8cf126b0216290b8cce56d52b02990e5",
+        "experiment/evaluation/embedding_worker.py": "d66950a936e89799cd3dadf1619b43d2f27286b47f29b076b147964a8bba5dfd",
+        "experiment/evaluation/embeddings.py": "e81ff140e62b72c613d2051834e5d38d14171ae52fbf2994fde2416dd8f09429",
+        "experiment/evaluation/engine.py": "2ac29c8b4c8fb72546b20f0284a123b1e7053ae8087d8fdf4de65083199693db",
+        "experiment/evaluation/fixtures.py": "2f228f1b22f06697f82f5b58cc48f90ae5a6946ef289cccf08510091084c9d30",
+        "experiment/evaluation/inputs.py": "62da9826147692e02a71c621cdd127d8769c6c58b8a85bd722fee3317106e67e",
+        "experiment/evaluation/judge.py": "1c62b590963c3e65254709a8c5075daefbedf8af77dcb83859b5e03356006977",
+        "experiment/evaluation/providers.py": "1d3a37f99c78a1dda281fad149e15873a7d238a87aa2757a43658c7f1de757ff",
+        "experiment/evaluation/report.py": "7a49c17fcc3267b54b6c8d39906556c36d8a005f490de1e6af2645d9618b0925",
+        "experiment/evaluation/requirements.lock.txt": "5e9174b07c39051f14b8025d9df0153eded64f6b33ecb1fba432da592352be3b",
+        "experiment/evaluation/revision_engine.py": "c5533ad4b21c55bf5983965428802cbd1520fe18d395684effcebbfaebf607ab",
+        "experiment/evaluation/revision_runner.py": "82797988af38ab7da36f716d2a5f02842c15fbc2a810bd26b216fd88be102e38",
+        "experiment/evaluation/runner.py": "ce64f5b281af02fea4d34001b01e2b6d65ca0c601f74c26d70afac51f9da3cb9",
+        "experiment/evaluation/schemas.py": "468d845ab60fd73d1db751df3c19a318f9da8c9f1c38da6cf57996387d8c6746",
+        "experiment/evaluation/view.py": "d821d02591dd1722b143347b64d7950b57796bd29c07b6bc00dd82a194b4a104",
+        "experiment/revision_gold.py": "65e06b259540b5f84102577962b286977b81641097482882bd4bab8633f0de18",
+        "experiment/revisions/20260929-v2/DECISIONS.md": "d1b8a7810701e98a3dd3772bd84ce8c539e80430681486b67730f3c8f4e441fa",
+        "retrieval/config.json": "e4a01c0deda884483c3b171977cc2bfa2321653ebc250b5b75f983dd2ba7dfec",
+        "retrieval/model.py": "f0b5b38351af7a11a3774d924d9c430dd1ea63bcf59be3bbca2b0d8806cf8cac"
+      },
+      "sha256": "08241b00c46e4db202a63966debfde46adad4f1c4b53ba64875a678bdf33a956"
+    },
+    "concurrency": 1,
+    "environment": {
+      "packages": {
+        "httpx": "0.28.1",
+        "instructor": "1.3.2",
+        "langchain-community": "0.3.31",
+        "numpy": "2.4.6",
+        "openai": "1.109.1",
+        "pydantic": "2.13.5",
+        "ragas": "0.4.3"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9"
+    },
+    "inputs_hash": "7e527372b4bab1f577b183b61f40f21a64ef43e443e9e1d3c93b754d01f51930",
+    "maximum_attempts_per_stage": 3,
+    "parent_evaluation": null,
+    "previous_hash": "d1715b8d90d649b6365a0a52b34905c4f9f88905a6ca9819ec2eca2751b1d2a0",
+    "profile": {
+      "api_key_env": "OPENAI_API_KEY",
+      "base_url": "https://api.openai.com/v1",
+      "description": "Lower-cost commercial judge candidate; use one fixed model across both conditions.",
+      "max_output_tokens": 8192,
+      "model": "gpt-6-sol",
+      "provider": "openai",
+      "reasoning_effort": "medium",
+      "timeout_seconds": 300
+    },
+    "source_hashes": {
+      "experiment/gold-v2/alternative-audit.json": "f6e6897d910f1452dd2ece274e228b7656881df54461b8efc60fff4be4e23f2d",
+      "experiment/gold-v2/changes.json": "2fcfd09aad16082196f32c095f128f8aeeefbb2911795791904ecf589e01e345",
+      "experiment/gold-v2/evaluation-policy.json": "66582d53f5bff3d06e5fed5dafd5f71bec6a130eba31671caa9f60cd02f4a95d",
+      "experiment/gold-v2/manifest.json": "7428a028a081b72a9e9d32cea9496bb05462e1d0425581d380cfa306e2514e05",
+      "experiment/gold-v2/questions.json": "f87084b972c2612cff9aa390d19297660176cc17304150db8c9f64b5af5a2045",
+      "experiment/gold-v2/review-attestation.json": "0dbc1571c633b888c5235e4e8a568c7299d86d837f6f89d62243f31933e00a39",
+      "experiment/gold-v2/source-captures.json": "f7797c93495d4e9cf69f64e81da0fb87ae739224465203e28229bc4b498f38dc",
+      "experiment/gold-v2/대응표.md": "a8d3ccaa95b1d340fbc964e5801e8689c7bcf5905a17c78ed42dbda9b47cf0f0"
+    }
+  },
+  "identity_hash": "e90d39ab24141196d60555cbd7664a3368a072b895ef4fa43839db37e5c547ae",
+  "mode": "smoke",
+  "post_review_revision": true,
+  "profile": {
+    "api_key_env": "OPENAI_API_KEY",
+    "base_url": "https://api.openai.com/v1",
+    "description": "Lower-cost commercial judge candidate; use one fixed model across both conditions.",
+    "max_output_tokens": 8192,
+    "model": "gpt-6-sol",
+    "provider": "openai",
+    "reasoning_effort": "medium",
+    "timeout_seconds": 300
+  },
+  "researcher_source_review": "PENDING",
+  "source_evaluation": null,
+  "source_run": null
+}

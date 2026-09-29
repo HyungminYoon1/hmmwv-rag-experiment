@@ -1,0 +1,237 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:26:47.526846+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "C000494"
+        ],
+        "evidence_quotes": [
+          "Thermostat:\n\nITEM: Fully Open \nSTANDARD: 212°F\nMETRIC: 100°C"
+        ],
+        "reason": "The table lists 212°F (100°C) for a fully open thermostat.",
+        "statement": "The thermostat fully-open temperature is 212°F (100°C).",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "C002165"
+        ],
+        "evidence_quotes": [
+          "As the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\nvalve closes. This engages the fan."
+        ],
+        "reason": "The fan engages when the engine reaches 215°F (102°C).",
+        "statement": "The fan-activation temperature is 215°F (102°C).",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "C000494",
+          "C002165"
+        ],
+        "evidence_quotes": [
+          "Thermostat:\n\nITEM: Fully Open \nSTANDARD: 212°F\nMETRIC: 100°C",
+          "As the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\nvalve closes. This engages the fan."
+        ],
+        "reason": "The thermostat's fully-open temperature, 212°F, is below the fan-engagement temperature, 215°F.",
+        "statement": "As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587607,
+      "conversation": null,
+      "created_at": 1790587601.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0e8b1528559e3e6e016aba32d1aef087d0abed2a6b068f2923",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujLXIvpMQoB1rX22LWbIxFepBm-85zDd6JbBU_6KRsRcge0y6K9iwF7oe6zqI0FvjdAwxK62KD4oD7zmenPXGtNMWRCqFTsEKJ-vKLdpc7GtTBqzbDEcugVbXpnJWD9Q3z_zHyh58aJbcogtwmyfCaKD7YBFZI4NvNXrRKfMTDkKgGVV-1HR4IML3JY6SBzV9DMy3Gp0CNfIEjUTFgCjczxLdoCik0oaB8BdTe-68OPcvPwoGGOfgJuKys7e9GwPrzZyPwOTNiPPYMD9jOOKWrlbNQ5FtZWzHTgU6bBob_mXIyUXRA-aAf-cPeGSTsFOFPv26lMmFykE7JRJdMrrTkksgwtWV_yk1wD7feGP8RUAXAWdQml7BLwx4mBwq1gQERghqgQl4YLB1qUarlNsyQIaDPbdotkD1wRCU_FrYVrOQw9jT17nmDBLOoZMRbp0V9SoGiLm5mvQbNfrwYx4LtTg_oRLZUe6IsSkgShLE-kkfR3zNmS_e9PkzL-6iWGJYR2uDilGxEaoaEU8PTzXHtBegO0rOSbqWlHNedv6w3jwlGOjElZeoqw670vKPRqY0Kl37uKAv5DpFeIl5onGNHuyhZIfzzsHAlJ7hVcECk5UXCuojnH6SfIqpzPM_fN0TB-q9oiPD_9opEadWf3CGGs1GZsquecFIdgv7Lh-BygUjYQxiqytVid_WCC3HDvrZXPjHnDCjA9Kzq-C6LzVIypEHZOQzu-CHeIUSU4ol4JL5QC4_rhRBKDAAnbl0xlmRl2Yy7m3gwsuzqAD6powZvkq8skY4VmGp5G7UaokmZ8qibDj1hfdqie1OgivRemPAANX1tAD4zhtl11NnSep7KsUT5qbNefHWI262s4OmG65EZSaSoU6np5A2N8gVwYa2ytyDxIPm95S_Z_s-ceGYjL5FFCtmKA0fcy3tE4X33-S5sv6UzFO4VjJeu5U1LhlDTmCBEXVVUO2OAvJaZOaT8Mt1jnj3s0-pJL0wAfSMTOAOOhBqejRxGB_WpWG-iqO54iIEqIZHw0YhEaJmLTIT1iUTIlX9TS5dugzjc9TYkiellH4G-ZkdBK-ylnQv79rkCoi7tqj8pY6qme6yLxOhfYrgt6RDTOR_N2v-VzTr-fWu2n9988qnM1-5J9mBNMOIoF0PtVb6Qhbm-Y0wYIZhvBJsb57YjGhYmRecDAwNd5Qcz0h8cjqIdqpIAW4yEM-c1vhOhIEzHkJe1wWE85odk0YYmhE44Xi1GjZ2wnNDLVhr9rmmUGRWtwp52DnXbo29dH_mHOC_7fiOuWpcMJP3eKWo1zRVMDcBtCUurLo5dBP3dL7WZegIZdIJmks9FvRwBWUU3s-x1LdElbbMWaBHlcxd6kjtwSD09XU7wb1cltx-ZWkw7MHpo4ZPsQf9cflGDFZIcGFcOVjQNDbpwN7tQWTupk1M1eOwd_0HvwqVcVuS4H8WZ60C0Sm25E53qkMN07lFjl9IreFkle6NQez7Q5g-Hf1tG15P0nd8xdWd0lMuA4B_6LHbnA8NVdbxDx78vfy",
+          "id": "rs_0e8b1528559e3e6e016aba32d276a487d0bfd025bb7e852066",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The thermostat fully-open temperature is 212°F (100°C).\",\"reason\":\"The table lists 212°F (100°C) for a fully open thermostat.\",\"verdict\":1,\"evidence_ids\":[\"C000494\"],\"evidence_quotes\":[\"Thermostat:\\n\\nITEM: Fully Open \\nSTANDARD: 212°F\\nMETRIC: 100°C\"]},{\"statement\":\"The fan-activation temperature is 215°F (102°C).\",\"reason\":\"The fan engages when the engine reaches 215°F (102°C).\",\"verdict\":1,\"evidence_ids\":[\"C002165\"],\"evidence_quotes\":[\"As the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\\nvalve closes. This engages the fan.\"]},{\"statement\":\"As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature.\",\"reason\":\"The thermostat's fully-open temperature, 212°F, is below the fan-engagement temperature, 215°F.\",\"verdict\":1,\"evidence_ids\":[\"C000494\",\"C002165\"],\"evidence_quotes\":[\"Thermostat:\\n\\nITEM: Fully Open \\nSTANDARD: 212°F\\nMETRIC: 100°C\",\"As the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\\nvalve closes. This engages the fan.\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0e8b1528559e3e6e016aba32d3c27c87d0a7580cc98556f862",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 892,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 367,
+        "output_tokens_details": {
+          "reasoning_tokens": 64
+        },
+        "total_tokens": 1259
+      },
+      "user": null
+    },
+    "request_id": "resp_0e8b1528559e3e6e016aba32d1aef087d0abed2a6b068f2923",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The thermostat fully-open temperature is 212°F (100°C).\",\"reason\":\"The table lists 212°F (100°C) for a fully open thermostat.\",\"verdict\":1,\"evidence_ids\":[\"C000494\"],\"evidence_quotes\":[\"Thermostat:\\n\\nITEM: Fully Open \\nSTANDARD: 212°F\\nMETRIC: 100°C\"]},{\"statement\":\"The fan-activation temperature is 215°F (102°C).\",\"reason\":\"The fan engages when the engine reaches 215°F (102°C).\",\"verdict\":1,\"evidence_ids\":[\"C002165\"],\"evidence_quotes\":[\"As the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\\nvalve closes. This engages the fan.\"]},{\"statement\":\"As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature.\",\"reason\":\"The thermostat's fully-open temperature, 212°F, is below the fan-engagement temperature, 215°F.\",\"verdict\":1,\"evidence_ids\":[\"C000494\",\"C002165\"],\"evidence_quotes\":[\"Thermostat:\\n\\nITEM: Fully Open \\nSTANDARD: 212°F\\nMETRIC: 100°C\",\"As the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\\nvalve closes. This engages the fan.\"]}]}",
+    "usage": {
+      "input_tokens": 892,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 367,
+      "output_tokens_details": {
+        "reasoning_tokens": 64
+      },
+      "total_tokens": 1259
+    }
+  },
+  "record_hash": "1787f8d4a3f532553ca6d94dc84a5d73459d80730b6902f14be77c2cd598a834",
+  "request_hash": "b0f6420b3a971b1f61f84e7225ffa5de604d0839b49f0d74b0b382bfac90c50b",
+  "started_at": "2026-09-28T09:26:41.548138+00:00",
+  "status": "OK"
+}

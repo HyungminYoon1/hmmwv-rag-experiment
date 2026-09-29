@@ -1,0 +1,201 @@
+{
+  "at": "2026-09-29T05:24:09.809389+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "2e135fe21f1c3a21de9d221cd0d0b8c17c36a5f0cb2ad0245e1241a60f31a456",
+  "result": {
+    "attempt_key": "r1-S20-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 14.250784500000009,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8337736804207778
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8337736804207778
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S20",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "It gives a concrete voltage of 10.5 volts and makes additional substantive claims about its basis, despite the caveat about missing excerpts."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8373741593754335,
+          0.8431139607842975,
+          0.8208329211026024
+        ],
+        "query_vector_hash": "0cda7591a381585a05ea31ae2c0bba8fe83c18f08cf884839a8ecaeb856cdd29",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What minimum battery voltage is checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage checked while cranking the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          }
+        ],
+        "response_vectors_hash": "e3835c5a9498402b7dfeda3625d8ad35c9e4640cd60915ef741205783a2baf8e",
+        "score": 0.8337736804207779
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer describes the value as based on general knowledge and typical maintenance-manual practices; this is self-described provenance.",
+          "The answer says no specific manual excerpts were provided in REFERENCE; this concerns input availability.",
+          "The answer says '[No chunk ID available]'; this concerns citation availability."
+        ],
+        "shared_conditions": [
+          "While attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)."
+        ],
+        "statements": [
+          {
+            "answer_quote": "The minimum battery voltage checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series) is 10.5 volts.",
+            "statement": "While attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series), the minimum battery voltage checked is 10.5 volts."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The minimum battery voltage checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series) is 10.5 volts.",
+          "id": "C001",
+          "text": "While attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series), the minimum battery voltage checked is 10.5 volts."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S20-A01",
+            "reason": "The answer states 10.5 volts, but the required threshold is at least 18 volts."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C003174"
+              ],
+              "evidence_quotes": [
+                "CHECK BATTERY VOLTAGE WHILE\nTRYING TO CRANK THE ENGINE. IS\nTHE BATTERY VOLTAGE AT LEAST\n18 VOLTS?"
+              ],
+              "reason": "The Step 2 chart checks whether battery voltage is at least 18 volts, not 10.5 volts.",
+              "statement": "While attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series), the minimum battery voltage checked is 10.5 volts.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.8373741593754335,
+          0.8431139607842975,
+          0.8208329211026024
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8337736804207778,
+        "query_vector_hash": "0cda7591a381585a05ea31ae2c0bba8fe83c18f08cf884839a8ecaeb856cdd29",
+        "ragas_score": 0.8337736804207779,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "e3835c5a9498402b7dfeda3625d8ad35c9e4640cd60915ef741205783a2baf8e"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8373741593754335,
+          0.8431139607842975,
+          0.8208329211026024
+        ],
+        "decimal50_cosines": [
+          "0.83737415937543343179467070114474324268335865127693",
+          "0.84311396078429756936350520788194869227244929876280",
+          "0.82083292110260253102453275422720033428457164223164"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8337736804207779
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8337736804207779
+          }
+        },
+        "query_vector_hash": "0cda7591a381585a05ea31ae2c0bba8fe83c18f08cf884839a8ecaeb856cdd29",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What minimum battery voltage is checked while attempting to crank the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the minimum battery voltage checked while cranking the engine in Step 2 of the initial Starter Circuit diagnostic test for the HMMWV (M998-series)?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "e3835c5a9498402b7dfeda3625d8ad35c9e4640cd60915ef741205783a2baf8e",
+        "score": 0.8337736804207778
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "237db7197a95e53ac27df09ff08aee91ff09a1560fdedca2429a05bcaada2c06"
+}

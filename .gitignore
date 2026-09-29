@@ -1,0 +1,65 @@
+# Local installation, credentials, caches and validation outputs
+**/.venv/
+/.venv-view/
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+.env
+.env.*
+!.env.example
+/.artifact-cache/
+/.artifact-staging/
+/validation/local/
+/retrieval/models/bge-m3-5617a9f/
+/experiment/models/*.gguf
+/experiment/models/ollama/
+/experiment/reports/ollama-pid.txt
+/experiment/reports/ollama-stdout.log
+/experiment/reports/ollama-stderr.log
+/retrieval/reports/server-*.log
+*.part
+
+# Original large inputs: restored from the three release assets.
+# Derived from artifacts/manifest.json; original Git records stay included.
+/backups/
+/experiment/astra-review/
+/experiment/evidence-review/
+/preprocessing/assets/
+/preprocessing/corpus/reports/
+/preprocessing/corpus/rules/
+/preprocessing/corrections/
+/preprocessing/ocr-structure-review-20260924/
+/preprocessing/output/
+/preprocessing/review-557/
+/retrieval/indexes/
+/제출 논문 초안/논문참고자료/
+
+# Private credentials and browser network exports; keep research JSON/logs visible.
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+*.pem
+*.key
+*.p12
+*.pfx
+**/.ssh/
+**/.aws/
+**/.azure/
+**/.config/gcloud/
+credentials.json
+oauth-client*.json
+client_secret*.json
+accessTokens.json
+*.har
+*.tmp
+
+# Empty historical worker logs are recorded as publication exclusions.
+/experiment/evaluation/runs/local-smoke-20260928-v1/embeddings/worker.log
+/experiment/evaluation/runs/local-smoke-20260928-v2/embeddings/worker.log
+/experiment/evaluation/runs/sol-formal-20260928-v1/embeddings/worker.log
+/experiment/evaluation/runs/sol-smoke-20260928-v1/embeddings/worker.log
+/experiment/evaluation/runs/sol-smoke-20260928-v2/embeddings/worker.log
+/experiment/evaluation/runs/sol-smoke-20260928-v3/embeddings/worker.log
+/experiment/evaluation/verification/sol-fresh-embedding-diagnostic/worker.log
+/experiment/evaluation/verification/sol-v2-fresh-diagnostic/worker.log

@@ -1,0 +1,273 @@
+{
+  "at": "2026-09-28T09:56:40.071732+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "f2ac8a31d5b0b7ac6711a2797d4a41c41664e0e0237b7985ff77643fdb043f58",
+  "original_result_sha256": "e689cbb836762d7264f1cd857b0708fbcc3d8f991c3771a808fda6f5cc8c4a39",
+  "result": {
+    "attempt_key": "r1-M28-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 40.85720120000042,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.14285714285714285
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M28",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It declines to determine whether the readings meet the ranges, but makes substantive claims about the M997 and the referenced manual."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8929588784465767,
+          0.7982298499184051,
+          0.8930869369391861
+        ],
+        "query_vector_hash": "a2e64db0d61945dbcd9a7bce8f29461335739bb3e62feb7f683915781b956259",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "Do a 26 V DC outlet reading and a 28 V alternator reading at 1,200–1,500 RPM meet the specified voltage ranges for an M997 HMMWV?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "Do a 26 V DC outlet reading and a 28 V alternator reading at 1,200–1,500 RPM meet the specified voltage ranges for the HMMWV?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "Do a 26 V DC outlet reading and a 28 V alternator reading at 1,200–1,500 RPM meet the specified voltage ranges for the M997 HMMWV?"
+          }
+        ],
+        "response_vectors_hash": "0b41654550756ebdc7aaa1ded78595872196646495184e388ce57c0f891a75e1",
+        "score": 0.0
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The M997 is not a model in the HMMWV (M998-series) family."
+        },
+        {
+          "id": "C002",
+          "text": "The M997 is a variant of the HMMWV (Humvee)."
+        },
+        {
+          "id": "C003",
+          "text": "The M997 DC outlet reads 26 V with the engine running."
+        },
+        {
+          "id": "C004",
+          "text": "The M997 alternator reads 28 V at 1,200–1,500 RPM."
+        },
+        {
+          "id": "C005",
+          "text": "The specified DC outlet and alternator voltage ranges are not defined in the provided reference material."
+        },
+        {
+          "id": "C006",
+          "text": "No excerpts from TM 9-2320-280-20-1, Volume 1, 1996, including Change 2 dated 2004, were supplied."
+        },
+        {
+          "id": "C007",
+          "text": "The referenced manual does not contain the required DC outlet and alternator voltage range specifications."
+        }
+      ],
+      "claims_raw": [
+        "The M997 is not a model in the HMMWV (M998-series) family.",
+        "The M997 is a variant of the HMMWV (Humvee).",
+        "The M997 DC outlet reads 26 V with the engine running.",
+        "The M997 alternator reads 28 V at 1,200–1,500 RPM.",
+        "The specified DC outlet and alternator voltage ranges are not defined in the provided reference material.",
+        "No excerpts from TM 9-2320-280-20-1, Volume 1, 1996, including Change 2 dated 2004, were supplied.",
+        "The referenced manual does not contain the required DC outlet and alternator voltage range specifications."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M28-A01",
+            "reason": "The answer does not give the running-engine DC outlet range of 27–28 V."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M28-A02",
+            "reason": "The answer does not state that 26 V is below the DC outlet range."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M28-A03",
+            "reason": "The answer does not give the alternator range of 27–29 V at 1,200–1,500 RPM."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M28-A04",
+            "reason": "The answer does not state that 28 V is within the alternator range."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.14285714285714285,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The HMMWV maintenance table lists the M997 ambulance.",
+              "statement": "The M997 is not a model in the HMMWV (M998-series) family.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:ambulance"
+              ],
+              "evidence_quotes": [
+                "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 24\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Ambulance\n(M996,\nM996A1,\nM997,\nM997A1, and\nM997A2)"
+              ],
+              "reason": "The HMMWV maintenance table lists M997 among its ambulance models.",
+              "statement": "The M997 is a variant of the HMMWV (Humvee).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The specified running-engine range is 27–28 V; no 26 V reading is reported.",
+              "statement": "The M997 DC outlet reads 26 V with the engine running.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The flowchart gives a 27–29 V test range, not an observed reading of 28 V.",
+              "statement": "The M997 alternator reads 28 V at 1,200–1,500 RPM.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Both voltage ranges are specified in the supplied context.",
+              "statement": "The specified DC outlet and alternator voltage ranges are not defined in the provided reference material.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied excerpts are not identified by manual, volume, or edition.",
+              "statement": "No excerpts from TM 9-2320-280-20-1, Volume 1, 1996, including Change 2 dated 2004, were supplied.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied material contains both ranges, and the manual is not identified.",
+              "statement": "The referenced manual does not contain the required DC outlet and alternator voltage range specifications.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8929588784465767,
+          0.7982298499184051,
+          0.8930869369391861
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "a2e64db0d61945dbcd9a7bce8f29461335739bb3e62feb7f683915781b956259",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "0b41654550756ebdc7aaa1ded78595872196646495184e388ce57c0f891a75e1"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8929588784465767,
+          0.7982298499184051,
+          0.8930869369391861
+        ],
+        "decimal50_cosines": [
+          "0.89295887844657657336140369527883309153905896145046",
+          "0.79822984991840510415563815282477395171797171675452",
+          "0.89308693693918602824589470899580489157677452019705"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "a2e64db0d61945dbcd9a7bce8f29461335739bb3e62feb7f683915781b956259",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "Do a 26 V DC outlet reading and a 28 V alternator reading at 1,200–1,500 RPM meet the specified voltage ranges for an M997 HMMWV?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "Do a 26 V DC outlet reading and a 28 V alternator reading at 1,200–1,500 RPM meet the specified voltage ranges for the HMMWV?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "Do a 26 V DC outlet reading and a 28 V alternator reading at 1,200–1,500 RPM meet the specified voltage ranges for the M997 HMMWV?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "0b41654550756ebdc7aaa1ded78595872196646495184e388ce57c0f891a75e1",
+        "score": 0.0
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "f55344afba521baccbbf52279a185156a02f42a7625d9dc046dfb6be29b62870"
+}

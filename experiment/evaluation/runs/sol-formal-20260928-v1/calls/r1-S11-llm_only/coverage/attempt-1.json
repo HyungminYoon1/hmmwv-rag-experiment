@@ -1,0 +1,190 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:43:02.154270+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "a 50/50 mixture of antifreeze (ethylene glycol) and distilled water",
+        "fulfilled": 1,
+        "id": "S11-A01",
+        "reason": "Specifies equal parts water and ethylene-glycol antifreeze; distilled water is a compatible specification."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588581,
+      "conversation": null,
+      "created_at": 1790588579.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_066dbdef64407e94016aba36a3597887d0bd75283a01ca1773",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"S11-A01\",\"fulfilled\":1,\"answer_quote\":\"a 50/50 mixture of antifreeze (ethylene glycol) and distilled water\",\"reason\":\"Specifies equal parts water and ethylene-glycol antifreeze; distilled water is a compatible specification.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_066dbdef64407e94016aba36a4d30087d0928e4bb080604536",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1018,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1086
+      },
+      "user": null
+    },
+    "request_id": "resp_066dbdef64407e94016aba36a3597887d0bd75283a01ca1773",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"S11-A01\",\"fulfilled\":1,\"answer_quote\":\"a 50/50 mixture of antifreeze (ethylene glycol) and distilled water\",\"reason\":\"Specifies equal parts water and ethylene-glycol antifreeze; distilled water is a compatible specification.\"}]}",
+    "usage": {
+      "input_tokens": 1018,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 68,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1086
+    }
+  },
+  "record_hash": "031f7c4464392b6fbca85f71ad5e487b3fe474995e8041794f9f620f688ca4e5",
+  "request_hash": "387cbf8601db8cdd51c4ebe5785fc966da5e0fc0319803f65db64e9bcf4be0d7",
+  "started_at": "2026-09-28T09:42:59.224464+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,221 @@
+{
+  "at": "2026-09-28T09:56:40.117460+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "59280f19801eb4deb5d8cb070cc5cd93adec10643a29227713e8746d10a5154d",
+  "original_result_sha256": "823bc705ae362bafcb100b3fdb53087c4d7984b67bee0d2b411242e21d745d44",
+  "result": {
+    "attempt_key": "r1-S07-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 30.763191599999118,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9733075787151586
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9733075787151586
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S07",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a concrete technical purpose and describes specific measurements; the note about missing excerpts does not withhold the answer."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9999999999997853,
+          1.0,
+          0.9199227361456908
+        ],
+        "query_vector_hash": "c75e18b644c0630b476d7f543a71c38b35d4449df6895efc35b37002116baa83",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests on an engine?"
+          }
+        ],
+        "response_vectors_hash": "c8888c2a58728539c55f56deee195f2afb0ad1214c1afa09d3e9193c2aedbcee",
+        "score": 0.9733075787151586
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The primary purpose of the Compression/Mechanical Tests is to verify the proper functioning and integrity of the engine's valve train and cylinder head components."
+        },
+        {
+          "id": "C002",
+          "text": "The Compression/Mechanical Tests verify the engine's valve train and cylinder head components by measuring valve spring tension, valve clearance, and mechanical alignment."
+        },
+        {
+          "id": "C003",
+          "text": "The Compression/Mechanical Tests are intended to ensure optimal engine performance."
+        },
+        {
+          "id": "C004",
+          "text": "The Compression/Mechanical Tests are intended to prevent mechanical failure."
+        }
+      ],
+      "claims_raw": [
+        "The primary purpose of the Compression/Mechanical Tests is to verify the proper functioning and integrity of the engine's valve train and cylinder head components.",
+        "The Compression/Mechanical Tests verify the engine's valve train and cylinder head components by measuring valve spring tension, valve clearance, and mechanical alignment.",
+        "The Compression/Mechanical Tests are intended to ensure optimal engine performance.",
+        "The Compression/Mechanical Tests are intended to prevent mechanical failure."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S07-A01",
+            "reason": "The answer describes checking valve-train components but does not state that the tests determine whether the engine has internal compression or mechanical problems."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S07-A02",
+            "reason": "The answer does not mention fixing what is possible without notifying DS maintenance."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify those components as the tests’ primary focus.",
+              "statement": "The primary purpose of the Compression/Mechanical Tests is to verify the proper functioning and integrity of the engine's valve train and cylinder head components.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not mention those components or measurements.",
+              "statement": "The Compression/Mechanical Tests verify the engine's valve train and cylinder head components by measuring valve spring tension, valve clearance, and mechanical alignment.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Ensuring optimal performance is not stated as an intent.",
+              "statement": "The Compression/Mechanical Tests are intended to ensure optimal engine performance.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated intent is to identify and fix problems, not specifically to prevent mechanical failure.",
+              "statement": "The Compression/Mechanical Tests are intended to prevent mechanical failure.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.9999999999997853,
+          1.0,
+          0.9199227361456908
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9733075787151586,
+        "query_vector_hash": "c75e18b644c0630b476d7f543a71c38b35d4449df6895efc35b37002116baa83",
+        "ragas_score": 0.9733075787151586,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "c8888c2a58728539c55f56deee195f2afb0ad1214c1afa09d3e9193c2aedbcee"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9999999999997853,
+          1.0,
+          0.9199227361456908
+        ],
+        "decimal50_cosines": [
+          "0.99999999999978549852047773531681448673086196679806",
+          "0.99999999999999999999999999999999999999999999999990",
+          "0.91992273614569079064836025034934150193274216975260"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9733075787151586
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9733075787151586
+          }
+        },
+        "query_vector_hash": "c75e18b644c0630b476d7f543a71c38b35d4449df6895efc35b37002116baa83",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests on an engine?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "c8888c2a58728539c55f56deee195f2afb0ad1214c1afa09d3e9193c2aedbcee",
+        "score": 0.9733075787151586
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "7e9eca028143d1370168481f4e2f147f0ca09ea2b11859ed097b0dd72c6b1165"
+}

@@ -1,0 +1,153 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:25:43.733076+00:00",
+  "parsed": {
+    "statements": [
+      "The specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm).",
+      "The maximum output pressure listed for the power-steering pump is 1,450 psi."
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587543,
+      "conversation": null,
+      "created_at": 1790587541.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_03cecc3e2c82ffe5016aba3295ab9887d08d3d3945c1075200",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[\"The specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm).\",\"The maximum output pressure listed for the power-steering pump is 1,450 psi.\"]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_03cecc3e2c82ffe5016aba3296dc9487d099182fc8a74f3757",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "StatementGeneratorOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for statement generation.",
+            "properties": {
+              "statements": {
+                "description": "The generated statements from the answer",
+                "items": {
+                  "type": "string"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "StatementGeneratorOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 583,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 637
+      },
+      "user": null
+    },
+    "request_id": "resp_03cecc3e2c82ffe5016aba3295ab9887d08d3d3945c1075200",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[\"The specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm).\",\"The maximum output pressure listed for the power-steering pump is 1,450 psi.\"]}",
+    "usage": {
+      "input_tokens": 583,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 54,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 637
+    }
+  },
+  "record_hash": "5edab6a604ad68be1258ff54ca6ff0b9ad55022204985dd86175fa11f456c26a",
+  "request_hash": "256cc3ad5d83a79725716d7f5ccfa02996bbfe137b49630a31dbe1d723c20d77",
+  "started_at": "2026-09-28T09:25:41.533978+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,226 @@
+{
+  "at": "2026-09-29T05:36:22.932497+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "0d28b3cc4c1453c38e50a5484826ccbe300552fbbe17e38af86fb9ad6da81db7",
+  "result": {
+    "attempt_key": "r1-U01-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 51.9614916999999,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U01",
+    "stages": {
+      "abstention": {
+        "answer_quote": "Without direct excerpts from the manual, the exact torque value and step-by-step instructions cannot be confirmed.",
+        "explicitly_withholds_missing": false,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle identifies an HMMWV starter but does not establish M998-series applicability for the described procedure.",
+              "statement": "The starter motor procedure described applies to an HMMWV (M998-series).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The negative-cable caution belongs to a preventive-maintenance inspection, not the removal-and-installation procedure.",
+              "statement": "HMMWV starter motor removal and installation typically involves disconnecting the negative battery cable.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle gives no socket-wrench removal step.",
+              "statement": "HMMWV starter motor removal typically involves removing the mounting bolts using a socket wrench.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle gives no lifting step.",
+              "statement": "HMMWV starter motor removal typically involves carefully lifting the motor from the engine block.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle gives no such detachment instruction.",
+              "statement": "When removing the HMMWV starter motor, ensure it is fully detached from the transmission and solenoid.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle's diagnostic inspections concern other parts, not replacement mounting surfaces.",
+              "statement": "HMMWV starter motor replacement typically involves inspecting the mounting surfaces for damage or wear.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle gives no installation-alignment step.",
+              "statement": "Installing a new HMMWV starter motor typically involves aligning it with the mounting holes.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle gives a mounting-bolt torque for preventive maintenance, not a replacement installation step.",
+              "statement": "Installing a new HMMWV starter motor typically involves reinstalling the mounting bolts and tightening them to the manufacturer's specified torque.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle specifies 40 lb-ft for preventive-maintenance mounting security; it does not establish this range as the replacement torque.",
+              "statement": "The specified torque is typically 35–45 ft-lbs for HMMWV starters, though this value should be confirmed in the official service manual.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle refers to paragraph 4-8 but does not substantiate this manual, volume, edition, or claim about its contents.",
+              "statement": "For precise torque specifications and detailed steps, refer to TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            }
+          ]
+        },
+        "partial_claims": [
+          "The starter motor procedure described applies to an HMMWV (M998-series).",
+          "HMMWV starter motor removal and installation typically involves disconnecting the negative battery cable.",
+          "HMMWV starter motor removal typically involves removing the mounting bolts using a socket wrench.",
+          "HMMWV starter motor removal typically involves carefully lifting the motor from the engine block.",
+          "When removing the HMMWV starter motor, ensure it is fully detached from the transmission and solenoid.",
+          "HMMWV starter motor replacement typically involves inspecting the mounting surfaces for damage or wear.",
+          "Installing a new HMMWV starter motor typically involves aligning it with the mounting holes.",
+          "Installing a new HMMWV starter motor typically involves reinstalling the mounting bolts and tightening them to the manufacturer's specified torque.",
+          "The specified torque is typically 35–45 ft-lbs for HMMWV starters, though this value should be confirmed in the official service manual.",
+          "For precise torque specifications and detailed steps, refer to TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        ],
+        "partial_within_allowed": false,
+        "reason": "The response says the complete procedure cannot be confirmed, then supplies a numbered, unsourced removal-and-installation sequence and a torque range. That disclaimer does not withhold the missing procedure. The oracle supports limited preventive-maintenance and diagnostic facts, not those replacement steps; the retrieved source set is empty.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "The starter motor procedure described applies to an HMMWV (M998-series).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "HMMWV starter motor removal and installation typically involves disconnecting the negative battery cable.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "HMMWV starter motor removal typically involves removing the mounting bolts using a socket wrench.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "HMMWV starter motor removal typically involves carefully lifting the motor from the engine block.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "When removing the HMMWV starter motor, ensure it is fully detached from the transmission and solenoid.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "HMMWV starter motor replacement typically involves inspecting the mounting surfaces for damage or wear.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "Installing a new HMMWV starter motor typically involves aligning it with the mounting holes.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "Installing a new HMMWV starter motor typically involves reinstalling the mounting bolts and tightening them to the manufacturer's specified torque.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "The specified torque is typically 35–45 ft-lbs for HMMWV starters, though this value should be confirmed in the official service manual.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No retrieved sources were supplied.",
+              "statement": "For precise torque specifications and detailed steps, refer to TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            }
+          ]
+        },
+        "supplies_missing_as_fact": true,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 10,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 0,
+        "withholding_only": 0
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "2c957dffc2d1d33bca7eabe7a55ec0e87a1a604f2a883ef60765489635381277",
+  "source_result_sha256": "fb5da89e6a35af1775150b9eee03b35246d3a976af6ce7ea0726b7836e3110f9"
+}

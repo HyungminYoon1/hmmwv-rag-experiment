@@ -1,0 +1,271 @@
+{
+  "at": "2026-09-28T09:59:37.543420+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "9797f5181a7520ac0891bdddb2fe38014db3f3f33484e9cd5f64f166ab271e0e",
+  "original_result_sha256": "6bdcbd5da852c3e8a72274e527d2873e1d3c8bf7b048697d52beddb11002be16",
+  "result": {
+    "attempt_key": "r1-M25-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 23.670550799997727,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9297368795104882
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9297368795104882
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M25",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives both temperatures and states which is reached first."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9307731528448007,
+          0.9301515800444383,
+          0.9282859056422259
+        ],
+        "query_vector_hash": "70b5d6dd2d10bef7b1d818269d7c7df9721468b4f2457794b357652bb8c16331",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which temperature is reached first, the thermostat fully-open temperature or the fan-activation temperature?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which temperature is reached first: the thermostat fully-open temperature or the fan-activation temperature?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which temperature is reached first, the thermostat fully-open temperature or the fan-activation temperature, and what are their respective temperatures?"
+          }
+        ],
+        "response_vectors_hash": "034109e7a53cc2653e32e7f83b4a0086765e409899dbc0c69367d20995572356",
+        "score": 0.9297368795104886
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The thermostat fully-open temperature is 212°F (100°C)."
+        },
+        {
+          "id": "C002",
+          "text": "The fan-activation temperature is 215°F (102°C)."
+        },
+        {
+          "id": "C003",
+          "text": "As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature."
+        }
+      ],
+      "claims_raw": [
+        "The thermostat fully-open temperature is 212°F (100°C).",
+        "The fan-activation temperature is 215°F (102°C).",
+        "As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The thermostat fully-open temperature is 212°F (100°C)",
+            "fulfilled": 1,
+            "id": "M25-A01",
+            "reason": "Matches the tabulated fully-open thermostat temperature."
+          },
+          {
+            "answer_quote": "the fan-activation temperature is 215°F (102°C)",
+            "fulfilled": 1,
+            "id": "M25-A02",
+            "reason": "Matches the stated fan-activation temperature."
+          },
+          {
+            "answer_quote": "Therefore, the thermostat fully-open temperature is reached first.",
+            "fulfilled": 1,
+            "id": "M25-A03",
+            "reason": "212°F is lower than 215°F, so it is reached first as coolant warms."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C000494"
+              ],
+              "evidence_quotes": [
+                "Thermostat:\n\nITEM: Fully Open \nSTANDARD: 212°F\nMETRIC: 100°C"
+              ],
+              "reason": "The table lists 212°F (100°C) for a fully open thermostat.",
+              "statement": "The thermostat fully-open temperature is 212°F (100°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002165"
+              ],
+              "evidence_quotes": [
+                "As the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\nvalve closes. This engages the fan."
+              ],
+              "reason": "The fan engages when the engine reaches 215°F (102°C).",
+              "statement": "The fan-activation temperature is 215°F (102°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000494",
+                "C002165"
+              ],
+              "evidence_quotes": [
+                "Thermostat:\n\nITEM: Fully Open \nSTANDARD: 212°F\nMETRIC: 100°C",
+                "As the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\nvalve closes. This engages the fan."
+              ],
+              "reason": "The thermostat's fully-open temperature, 212°F, is below the fan-engagement temperature, 215°F.",
+              "statement": "As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:thermostat_full"
+              ],
+              "evidence_quotes": [
+                "ITEM: Fully Open \nSTANDARD: 212°F\nMETRIC: 100°C"
+              ],
+              "reason": "The table lists 212°F and 100°C for the fully open thermostat.",
+              "statement": "The thermostat fully-open temperature is 212°F (100°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:fan"
+              ],
+              "evidence_quotes": [
+                "The fan is activated when coolant temperature reaches 215°F (102°C)."
+              ],
+              "reason": "The context states the fan activates at this temperature.",
+              "statement": "The fan-activation temperature is 215°F (102°C).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:thermostat_full",
+                "O:fan"
+              ],
+              "evidence_quotes": [
+                "ITEM: Fully Open \nSTANDARD: 212°F\nMETRIC: 100°C",
+                "The fan is activated when coolant temperature reaches 215°F (102°C)."
+              ],
+              "reason": "On warming, coolant reaches 212°F before 215°F.",
+              "statement": "As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.9307731528448007,
+          0.9301515800444383,
+          0.9282859056422259
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9297368795104882,
+        "query_vector_hash": "70b5d6dd2d10bef7b1d818269d7c7df9721468b4f2457794b357652bb8c16331",
+        "ragas_score": 0.9297368795104886,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "034109e7a53cc2653e32e7f83b4a0086765e409899dbc0c69367d20995572356"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9307731528448007,
+          0.9301515800444383,
+          0.9282859056422259
+        ],
+        "decimal50_cosines": [
+          "0.93077315284480067761463812656606500787729201362556",
+          "0.93015158004443827912989402982110681105635887845544",
+          "0.92828590564222591514967404202717640396251027656479"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 0.0,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9297368795104886
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9297368795104886
+          }
+        },
+        "query_vector_hash": "70b5d6dd2d10bef7b1d818269d7c7df9721468b4f2457794b357652bb8c16331",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which temperature is reached first, the thermostat fully-open temperature or the fan-activation temperature?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which temperature is reached first: the thermostat fully-open temperature or the fan-activation temperature?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which temperature is reached first, the thermostat fully-open temperature or the fan-activation temperature, and what are their respective temperatures?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "034109e7a53cc2653e32e7f83b4a0086765e409899dbc0c69367d20995572356",
+        "score": 0.9297368795104882
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "572555d53924c48ea627fd4caa8cd5214f3b73ec34a634f15d3e5cd5a22890cf"
+}

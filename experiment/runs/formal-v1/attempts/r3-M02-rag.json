@@ -1,0 +1,791 @@
+{
+  "citation_ids": [
+    "[C003257]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:46:02.419375+00:00",
+  "evaluation_answer": "The starter negative-cable voltage drop of 0.30 V exceeds the manual guidance of less than 0.25 volts max .  \nThe engine cranking speed of 90 RPM is not directly compared to manual guidance in the provided excerpts, so no evaluation can be made regarding this value.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 670,
+  "key": "r3-M02-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C003257] TM 9-2320-280-20-1 | PDF 365 | Printed 2-271\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nSTARTER NEG. CABLE VOLTAGE DROP\nSTE/ICE-R TEST 69\n1. Start Test 69, starter negative cable voltage\ndrop.\n2. Displayed reading is in volts. The cable\nvoltage drop should be less than 0.25 volts\nmax.\n\n[C003098] TM 9-2320-280-20-1 | PDF 350 | Printed 2-255\nBATTERY CIRCUIT\nREFERENCE INFORMATION\n\nSTE/ICE-R TEST 69\n1. Start Test 69, starter negative cable voltage\ndrop.\n\n[C003383] TM 9-2320-280-20-1 | PDF 377 | Printed 2-283\nREFERENCE INFORMATION\nSTARTER CIRCUIT\n\nSTE/ICE-R TEST 69\n1. Start Test 69, starter negative cable voltage\ndrop.\n\n[C003260] TM 9-2320-280-20-1 | PDF 365 | Printed 2-271\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nStarter negative cable - STE/ICE-R test 69\n\n[C002397] TM 9-2320-280-20-1 | PDF 269 | Printed 2-185\nREFERENCE INFORMATION\nENGINE COOLING\n\n0-45 DC VOLTS\nSTE/ICE-R TEST 89\n1. Connect RED clip to the indicated test point,\nBLACK clip to negative or ground.\n2. Start Test 89, DC volts.\n3. Displayed reading is in volts.\nQUESTION:\nA cold engine cranks at 90 RPM and STE/ICE-R Test 69 measures a starter negative-cable drop of 0.30 V. How does each reading compare with the manual guidance?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 669,
+  "question": "A cold engine cranks at 90 RPM and STE/ICE-R Test 69 measures a starter negative-cable drop of 0.30 V. How does each reading compare with the manual guidance?",
+  "question_id": "M02",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:33:19.273539507+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:33:16.373638807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 109.12040000039269,
+    "peak_rss_bytes": 13099741184,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 6045.9609236,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.067545,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.1761875,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.270902,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.3640814,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.4732018,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.5673142,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.6749335,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.7659341,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.8736048,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043550720,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12946739200,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6046.9671267,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4043870208,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12947058688,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.0755746,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8666542080,
+          "37564": 7741440
+        },
+        "rss_bytes": 12948287488,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.1679425,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8725454848,
+          "37564": 7741440
+        },
+        "rss_bytes": 13007200256,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.2763559,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8817995776,
+          "37564": 7741440
+        },
+        "rss_bytes": 13099741184,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.3699953,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8817995776,
+          "37564": 7741440
+        },
+        "rss_bytes": 13099741184,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.4616329,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.5675371,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.6763114,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.7694259,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.8623574,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6047.9691476,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6048.0626437,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6048.1697513,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6048.2634483,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6048.3700009,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6048.4620858,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6048.5708064,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102846464,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4045099008,
+          "35444": 8089600,
+          "36040": 101609472,
+          "37504": 8708866048,
+          "37564": 7741440
+        },
+        "rss_bytes": 12990611456,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:46:02.4173826Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 71,
+    "eval_duration": 1176525000,
+    "load_duration": 9085200,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 669,
+    "prompt_eval_count": 670,
+    "prompt_eval_duration": 23247000,
+    "response": "The starter negative-cable voltage drop of 0.30 V exceeds the manual guidance of less than 0.25 volts max [C003257].  \nThe engine cranking speed of 90 RPM is not directly compared to manual guidance in the provided excerpts, so no evaluation can be made regarding this value.",
+    "total_duration": 1491736900
+  },
+  "retrieval": {
+    "embedding_ms": 126.83329999981652,
+    "items": [
+      {
+        "body_end": 197,
+        "body_start": 0,
+        "id": "C003257",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          365
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-271"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R003344"
+        ],
+        "review_ids": [],
+        "score": 0.7688390016555786,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B006",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nSTARTER NEG. CABLE VOLTAGE DROP\nSTE/ICE-R TEST 69\n1. Start Test 69, starter negative cable voltage\ndrop.\n2. Displayed reading is in volts. The cable\nvoltage drop should be less than 0.25 volts\nmax.",
+        "text_sha256": "4df0da7c4e8e1dc7584ddd1c959ca69b548e92111b65538d7f3a6554f1c5bfbf",
+        "token_count": 73,
+        "unit_id": "U003249",
+        "unit_key": "region:365:1:2"
+      },
+      {
+        "body_end": 72,
+        "body_start": 0,
+        "id": "C003098",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          350
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-255"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R003195"
+        ],
+        "review_ids": [],
+        "score": 0.7628878355026245,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[18]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "BATTERY CIRCUIT\nREFERENCE INFORMATION\n\nSTE/ICE-R TEST 69\n1. Start Test 69, starter negative cable voltage\ndrop.",
+        "text_sha256": "347b2aa9af17b463a9c0eab914d5a60b68da2bd216df2e3e0c9126f764da92cf",
+        "token_count": 34,
+        "unit_id": "U003090",
+        "unit_key": "region:350:1:13"
+      },
+      {
+        "body_end": 72,
+        "body_start": 0,
+        "id": "C003383",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          377
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-283"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R003448"
+        ],
+        "review_ids": [],
+        "score": 0.7600908875465393,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[37]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nSTARTER CIRCUIT\n\nSTE/ICE-R TEST 69\n1. Start Test 69, starter negative cable voltage\ndrop.",
+        "text_sha256": "98ed56056e68c71971c0d121513233d90a1cffb2ac28398944197fedee0a6934",
+        "token_count": 34,
+        "unit_id": "U003375",
+        "unit_key": "region:377:1:14"
+      },
+      {
+        "body_end": 42,
+        "body_start": 0,
+        "id": "C003260",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          365
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-271"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R003347"
+        ],
+        "review_ids": [],
+        "score": 0.7059513330459595,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[12]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nStarter negative cable - STE/ICE-R test 69",
+        "text_sha256": "3284d4d04da55c1b2b87860579dcabef6ae41820c5767f8013b83f9d838806d8",
+        "token_count": 23,
+        "unit_id": "U003252",
+        "unit_key": "region:365:1:5"
+      },
+      {
+        "body_end": 176,
+        "body_start": 0,
+        "id": "C002397",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          269
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-185"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R002720"
+        ],
+        "review_ids": [],
+        "score": 0.7036607265472412,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B003",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\n0-45 DC VOLTS\nSTE/ICE-R TEST 89\n1. Connect RED clip to the indicated test point,\nBLACK clip to negative or ground.\n2. Start Test 89, DC volts.\n3. Displayed reading is in volts.",
+        "text_sha256": "11e47ac49d937a454aba4ad9b3154c7427d939c82f907cafebc2564035e2c757",
+        "token_count": 63,
+        "unit_id": "U002391",
+        "unit_key": "region:269:1:1"
+      }
+    ],
+    "search_ms": 10.795799999868905
+  },
+  "round": 3,
+  "sequence": 355,
+  "started_at": "2026-09-28T04:46:00.777721+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1503.2581999994363,
+    "retrieval": 138.66990000042279,
+    "total": 1641.9280999998591
+  },
+  "unprovided_citations": []
+}

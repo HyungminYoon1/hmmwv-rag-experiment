@@ -1,0 +1,126 @@
+{
+  "at": "2026-09-28T06:22:19.470005+00:00",
+  "identity_hash": "541490917fdcd901f3cb04f2638f3eb0b34a835ecff8df927ae5b6806fa99615",
+  "input_hash": "f3e80c92cad00e0a13c6818a3d4526bc0cdfc479a67c296597938d79c6b014f8",
+  "result": {
+    "attempt_key": "synthetic-wrong",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 21.89314430000013,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9515693760527145
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9515693760527145
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "SYN02",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response provides a concrete temperature (30 degrees Celsius) as a technical answer, even though the item (Luma test box) is fictional. It contains a factual claim about temperature, which is a substantive factual claim. Since the question is about a fictional object, the claim is not factually correct in reality, but the classification is based on the presence of a factual claim, not its truth. The response does not contain a disclaimer or express inability to answer, so it is not a partial_abstention or full_abstention."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9515693812979128,
+          0.9515693812979128,
+          0.9515693655623187
+        ],
+        "query_vector_hash": "12cade111df40825be1053873ddd38f7fed384d2c00053648407812a4aec0fee",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the recommended storage temperature for the Luma test box?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the recommended storage temperature for the Luma test box?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the recommended storage temperature for the Luma test box?"
+          }
+        ],
+        "response_vectors_hash": "824a22e700e8da09a7e687c79ea4bafe017bb07fad6b24d2eb6cd989e9074b31",
+        "score": 0.9515693760527145
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The Luma test box should be stored at 30 degrees Celsius."
+        }
+      ],
+      "claims_raw": [
+        "The Luma test box should be stored at 30 degrees Celsius."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Store the Luma test box at 30 degrees Celsius.",
+            "fulfilled": 0,
+            "id": "temperature",
+            "reason": "The required storage temperature is explicitly stated as 12 degrees Celsius in the oracle, but the response states 30 degrees Celsius, which contradicts the required element."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 12 degrees Celsius, not 30 degrees Celsius. No direct inference supports the statement.",
+              "statement": "The Luma test box should be stored at 30 degrees Celsius.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 12 degrees Celsius, not 30 degrees Celsius. No direct inference supports the statement.",
+              "statement": "The Luma test box should be stored at 30 degrees Celsius.",
+              "verdict": 0
+            }
+          ]
+        }
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "dc9d48855f902811722f6f530b92739d9cc587c3765875104f9f62aea972e51b"
+}

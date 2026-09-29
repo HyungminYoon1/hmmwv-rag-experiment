@@ -1,0 +1,487 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:25:35.749964+00:00",
+  "evaluation_answer": "I do not know the complete wiring-harness repair procedure specified in paragraph 4-85 of TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), as no manual excerpts were supplied for reference. Answering from general model knowledge would not provide the specific procedure requested. Therefore, I cannot provide the complete procedure without direct reference material.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 228,
+  "key": "r1-U06-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nGive the complete wiring-harness repair procedure specified in paragraph 4-85.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "Give the complete wiring-harness repair procedure specified in paragraph 4-85.",
+  "question_id": "U06",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:52.603478307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:12:49.819199707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 109.8904999998922,
+    "peak_rss_bytes": 3858186240,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4819.3745764,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4819.4820997,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4819.5747882,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4819.6823604,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4819.7760345,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4819.885925,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4819.9804658,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.0892991,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.1856482,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.2805465,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.3892186,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3559985152,
+          "37564": 7958528
+        },
+        "rss_bytes": 3787157504,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.4824002,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108822528,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3631013888,
+          "37564": 7958528
+        },
+        "rss_bytes": 3858186240,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.5757932,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3595173888,
+          "37564": 7958528
+        },
+        "rss_bytes": 3822411776,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.6847324,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.7786787,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.88751,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4820.9803472,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4821.0894483,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4821.1813619,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4821.2887864,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4821.3823937,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4821.4902164,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4821.5837633,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4821.6789712,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4821.786524,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4821.8799535,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 108888064,
+          "30736": 13123584,
+          "36040": 97267712,
+          "37504": 3597000704,
+          "37564": 7958528
+        },
+        "rss_bytes": 3824238592,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:25:35.7473178Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 95,
+    "eval_duration": 1342576000,
+    "load_duration": 10225000,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 228,
+    "prompt_eval_duration": 27520000,
+    "response": "I do not know the complete wiring-harness repair procedure specified in paragraph 4-85 of TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), as no manual excerpts were supplied for reference. Answering from general model knowledge would not provide the specific procedure requested. Therefore, I cannot provide the complete procedure without direct reference material.",
+    "total_duration": 1525557100
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 4,
+  "started_at": "2026-09-28T04:25:34.191526+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1558.4194999992178,
+    "retrieval": null,
+    "total": 1558.4194999992178
+  },
+  "unprovided_citations": []
+}

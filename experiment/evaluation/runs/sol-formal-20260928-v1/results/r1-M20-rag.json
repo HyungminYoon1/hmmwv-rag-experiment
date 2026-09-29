@@ -1,0 +1,272 @@
+{
+  "at": "2026-09-28T09:21:13.577576+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "1d40b1d79823958182690d4f5b7da9132be2a8b4ed3a4d4e6495e7cea24c5be0",
+  "result": {
+    "attempt_key": "r1-M20-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 37.202822999999626,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9319874456747345
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9319874456747345
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      }
+    },
+    "question_id": "M20",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly answers both questions and states specific maintenance intervals and inspection requirements."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9339453677719927,
+          0.9298060211948915,
+          0.9322109480573195
+        ],
+        "query_vector_hash": "401aed461df5d95f577379ea9763876ca53ce019ec8208e866ff6d927c3ec689",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At 6,500 miles, is the fuel-filter element due for replacement under PMCS, and what additional inspection must accompany the annual inspections?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Under PMCS, is fuel-filter element replacement due after 6,500 miles, and what additional inspection must accompany the annual inspections?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Is fuel-filter element replacement due under PMCS at 6,500 miles, and what additional inspection must accompany the annual inspections?"
+          }
+        ],
+        "response_vectors_hash": "af462b378795a2e28b7534a1299c7462386ea8abdc01e0c5de810c7e4dab5259",
+        "score": 0.9319874456747345
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "Fuel-filter element replacement is due under PMCS after 6,500 miles in ten months."
+        },
+        {
+          "id": "C002",
+          "text": "The fuel-filter element must be replaced at the earlier of 6,000 miles or one year."
+        },
+        {
+          "id": "C003",
+          "text": "6,500 miles exceeds the 6,000-mile replacement interval."
+        },
+        {
+          "id": "C004",
+          "text": "The fuel system inspection must accompany the annual inspections."
+        },
+        {
+          "id": "C005",
+          "text": "Item No. 28 requires annual inspection of the fuel system."
+        }
+      ],
+      "claims_raw": [
+        "Fuel-filter element replacement is due under PMCS after 6,500 miles in ten months.",
+        "The fuel-filter element must be replaced at the earlier of 6,000 miles or one year.",
+        "6,500 miles exceeds the 6,000-mile replacement interval.",
+        "The fuel system inspection must accompany the annual inspections.",
+        "Item No. 28 requires annual inspection of the fuel system."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "the filter element must be replaced every 6,000 miles or annually, whichever occurs first",
+            "fulfilled": 1,
+            "id": "M20-A01",
+            "reason": "States the correct replacement interval."
+          },
+          {
+            "answer_quote": "Since 6,500 miles exceeds 6,000 miles, replacement is required.",
+            "fulfilled": 1,
+            "id": "M20-A02",
+            "reason": "Correctly identifies that replacement is due on mileage despite only ten months having elapsed."
+          },
+          {
+            "answer_quote": "The additional inspection set that must accompany the annual inspections is the fuel system inspection",
+            "fulfilled": 0,
+            "id": "M20-A03",
+            "reason": "The required additional set is all semiannual inspections, not a fuel-system inspection."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001040"
+              ],
+              "evidence_quotes": [
+                "Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first."
+              ],
+              "reason": "The 6,000-mile threshold is reached before the annual deadline.",
+              "statement": "Fuel-filter element replacement is due under PMCS after 6,500 miles in ten months.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001040"
+              ],
+              "evidence_quotes": [
+                "Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first."
+              ],
+              "reason": "The procedure specifies 6,000 miles or annually, whichever occurs first.",
+              "statement": "The fuel-filter element must be replaced at the earlier of 6,000 miles or one year.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001040"
+              ],
+              "evidence_quotes": [
+                "Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first."
+              ],
+              "reason": "The stated interval is 6,000 miles, which is less than 6,500 miles.",
+              "statement": "6,500 miles exceeds the 6,000-mile replacement interval.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001040"
+              ],
+              "evidence_quotes": [
+                "INTERVAL: Annually\nITEM NO.: 28\nITEM TO BE INSPECTED: Fuel\nSystem"
+              ],
+              "reason": "The fuel system is listed as an annually inspected item.",
+              "statement": "The fuel system inspection must accompany the annual inspections.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001040"
+              ],
+              "evidence_quotes": [
+                "INTERVAL: Annually\nITEM NO.: 28\nITEM TO BE INSPECTED: Fuel\nSystem"
+              ],
+              "reason": "Item 28 lists the fuel system with an annual interval.",
+              "statement": "Item No. 28 requires annual inspection of the fuel system.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:fuel_interval"
+              ],
+              "evidence_quotes": [
+                "Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first."
+              ],
+              "reason": "The 6,000-mile limit has been exceeded, even though a year has not passed.",
+              "statement": "Fuel-filter element replacement is due under PMCS after 6,500 miles in ten months.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:fuel_interval"
+              ],
+              "evidence_quotes": [
+                "Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first."
+              ],
+              "reason": "The procedure specifies 6,000 miles or annually, whichever occurs first.",
+              "statement": "The fuel-filter element must be replaced at the earlier of 6,000 miles or one year.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:fuel_interval"
+              ],
+              "evidence_quotes": [
+                "Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first."
+              ],
+              "reason": "The stated interval is 6,000 miles.",
+              "statement": "6,500 miles exceeds the 6,000-mile replacement interval.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:fuel_interval"
+              ],
+              "evidence_quotes": [
+                "INTERVAL: Annually\nITEM NO.: 28\nITEM TO BE INSPECTED: Fuel\nSystem"
+              ],
+              "reason": "The fuel system is listed for annual inspection.",
+              "statement": "The fuel system inspection must accompany the annual inspections.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:fuel_interval"
+              ],
+              "evidence_quotes": [
+                "INTERVAL: Annually\nITEM NO.: 28\nITEM TO BE INSPECTED: Fuel\nSystem"
+              ],
+              "reason": "Item 28 lists the fuel system with an annual interval.",
+              "statement": "Item No. 28 requires annual inspection of the fuel system.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.9339453677719927,
+          0.9298060211948915,
+          0.9322109480573195
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9319874456747345,
+        "query_vector_hash": "401aed461df5d95f577379ea9763876ca53ce019ec8208e866ff6d927c3ec689",
+        "ragas_score": 0.9319874456747345,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "af462b378795a2e28b7534a1299c7462386ea8abdc01e0c5de810c7e4dab5259"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "04e43ff9e2f043a8838b70b2e85dd2cec511796b7834028d3687168904bec83f"
+}

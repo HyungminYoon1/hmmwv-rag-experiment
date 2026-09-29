@@ -1,0 +1,747 @@
+{
+  "citation_ids": [
+    "[C002019]",
+    "[C001106]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:33:08.442951+00:00",
+  "evaluation_answer": "The upper half of the separate oil cooler cools transmission oil, and the lower half cools engine oil.  \nThe lubrication-test chart shows an engine oil pressure of 40–45 psi at 2,000 RPM.  \n\n ",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1213,
+  "key": "r2-M09-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002106] TM 9-2320-280-20-1 | PDF 239 | Printed 2-155\n2-25.  ENGINE COOLING TESTS\n\nThe engine cooling system is a pressure type cooling system with thermostatic control of\ncoolant circulation.  The cooling system dissipates heat generated from combustion and\nmaintains the engine operating temperature at its most efficient level.  When the engine is\ncold and the thermostat is closed, coolant is recirculated through the water pump and\nengine.  As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine.  Any air\nor vapor in the cooling system will be forced to the surge tank under the liquid level and\nleave through a vent tube.  As the system cools, the extra coolant in the tank will be drawn\nback to the radiator.  Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used.  The fan is activated when coolant temperature reaches 215°F (102°C).  A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil.  When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere.\n\n[C002019] TM 9-2320-280-20-1 | PDF 229 | Printed 2-144\nCOMPRESSION/MECHANICAL\nKNOWN INFO\nBATTERY\nCIRCUIT\nOK\nSTARTER\nCIRCUIT\nOK\nENGINE\nNOT\nSEIZED\nAIR\n&\nFUEL\nTO\nCYLINDERS\nPOSSIBLE PROBLEMS\nLUBRICATION\nENGINE\nFUEL SYSTEM\nINTAKE/EXHAUST\n\n1S THE ENGINE OIL PRESSURE 40-45 PSI AT 2000 RPM AND THE ENGINE WARM ? TEST OPTIONS 1. OIL PRESSURE GAUGE 2. STE/ICE-R TEST 50 (Page 2-739) REASON FOR QUESTION Without proper oil pressure the engine won't be lubricated property.\n\n[C001106] TM 9-2320-280-20-1 | PDF 120 | Printed 2-29\nLUBRICATION TABLE\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\n\nUSAGE: Engine\nCoolant\nFLUID/LUBRICANT: Ethylene Glycol\nand Water\n1/4 Ethylene Glycol/\n3/4 Water\nCAPACITIES: Radiator: 5 qt (4.7 L)\nComplete System: 26 qt (24.6 L)\nEXPECTED TEMPERATURE: 15°F (-9°C) and above\n\n[C001107] TM 9-2320-280-20-1 | PDF 120 | Printed 2-29\nLUBRICATION TABLE\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\n\nUSAGE: Engine\nCoolant\nFLUID/LUBRICANT: Ethylene Glycol\nand Water\n2/5 Ethylene Glycol/\n3/5 Water\nCAPACITIES: Radiator: 5 qt (4.7 L)\nComplete System: 26 qt (24.6 L)\nEXPECTED TEMPERATURE: 40° to -15°F (4° to -26°C)\n\n[C001108] TM 9-2320-280-20-1 | PDF 120 | Printed 2-29\nLUBRICATION TABLE\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\n\nUSAGE: Engine\nCoolant\nFLUID/LUBRICANT: Ethylene Glycol\nand Water\n3/5 Ethylene Glycol/\n2/5 Water\nCAPACITIES: Radiator: 5 qt (4.7 L)\nComplete System: 26 qt (24.6 L)\nEXPECTED TEMPERATURE: 40° to -65°F (4° to -54°C)\nQUESTION:\nWhich fluids are cooled in the upper and lower halves of the separate oil cooler, and what approximate engine-oil pressure does the lubrication-test chart show at 2,000 RPM?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 1212,
+  "question": "Which fluids are cooled in the upper and lower halves of the separate oil cooler, and what approximate engine-oil pressure does the lubrication-test chart show at 2,000 RPM?",
+  "question_id": "M09",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:20:25.297169207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:20:22.728896607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4860690432.0,
+    "max_actual_interval_ms": 110.76630000025034,
+    "peak_rss_bytes": 13592526848,
+    "peak_vram_bytes": 4860690432,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5272.2821087,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5272.3879146,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5272.4963562,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5272.5888903,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5272.6974247,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5272.7889205,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5272.8958649,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5272.9894294,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.084026,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.1921803,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.2857045,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.3945866,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103088128,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9231470592,
+          "37564": 7958528
+        },
+        "rss_bytes": 13515067392,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.4872776,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9263550464,
+          "37564": 7958528
+        },
+        "rss_bytes": 13547184128,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.5959143,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9308893184,
+          "37564": 7958528
+        },
+        "rss_bytes": 13592526848,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.687415,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.7951211,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.8894111,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5273.9818758,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5274.0926421,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5274.185474,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5274.2944674,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5274.387847,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5274.4961188,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5274.5892092,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103124992,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047060992,
+          "35444": 8089600,
+          "36040": 100798464,
+          "37504": 9119985664,
+          "37564": 7958528
+        },
+        "rss_bytes": 13403619328,
+        "vram_bytes": 4860690432
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:33:08.4417501Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 69,
+    "eval_duration": 984060000,
+    "load_duration": 13603500,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 1212,
+    "prompt_eval_count": 1213,
+    "prompt_eval_duration": 18695000,
+    "response": "The upper half of the separate oil cooler cools transmission oil, and the lower half cools engine oil.  \nThe lubrication-test chart shows an engine oil pressure of 40–45 psi at 2,000 RPM.  \n\n[C002019] [C001106]",
+    "total_duration": 1184801400
+  },
+  "retrieval": {
+    "embedding_ms": 117.95270000038727,
+    "items": [
+      {
+        "body_end": 1227,
+        "body_start": 0,
+        "id": "C002106",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          239
+        ],
+        "prefix_chars": 29,
+        "printed_pages": [
+          "2-155"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002365"
+        ],
+        "review_ids": [],
+        "score": 0.6614364385604858,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[4]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "numbered_section",
+          "section": "2-25",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-25.  ENGINE COOLING TESTS\n\nThe engine cooling system is a pressure type cooling system with thermostatic control of\ncoolant circulation.  The cooling system dissipates heat generated from combustion and\nmaintains the engine operating temperature at its most efficient level.  When the engine is\ncold and the thermostat is closed, coolant is recirculated through the water pump and\nengine.  As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine.  Any air\nor vapor in the cooling system will be forced to the surge tank under the liquid level and\nleave through a vent tube.  As the system cools, the extra coolant in the tank will be drawn\nback to the radiator.  Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used.  The fan is activated when coolant temperature reaches 215°F (102°C).  A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil.  When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere.",
+        "text_sha256": "921babdead3ce5bbc76433831e26d563148362005b4b17843149041ab971b06a",
+        "token_count": 299,
+        "unit_id": "U002100",
+        "unit_key": "region:239:1:4"
+      },
+      {
+        "body_end": 228,
+        "body_start": 0,
+        "id": "C002019",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          229
+        ],
+        "prefix_chars": 179,
+        "printed_pages": [
+          "2-144"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6568570137023926,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            540.4453,
+            755
+          ],
+          "condition_box": [
+            52.5,
+            534.5,
+            167.0,
+            698.0
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v6-work/box-ocr-candidates/P0229-B020.png",
+            "sha256": "2494e7039df64a4cf10ca239e8cb4d2f741118a66cb59f326441b13d12f627a9"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            186.948,
+            561.084,
+            344.6179,
+            594.4418
+          ],
+          "source_component_keys": [
+            "region:229:1:17",
+            "region:229:1:16",
+            "P0229-B020:reviewed",
+            "region:229:1:19",
+            "P0229-B019:reviewed",
+            "region:229:1:18"
+          ]
+        },
+        "text": "COMPRESSION/MECHANICAL\nKNOWN INFO\nBATTERY\nCIRCUIT\nOK\nSTARTER\nCIRCUIT\nOK\nENGINE\nNOT\nSEIZED\nAIR\n&\nFUEL\nTO\nCYLINDERS\nPOSSIBLE PROBLEMS\nLUBRICATION\nENGINE\nFUEL SYSTEM\nINTAKE/EXHAUST\n\n1S THE ENGINE OIL PRESSURE 40-45 PSI AT 2000 RPM AND THE ENGINE WARM ? TEST OPTIONS 1. OIL PRESSURE GAUGE 2. STE/ICE-R TEST 50 (Page 2-739) REASON FOR QUESTION Without proper oil pressure the engine won't be lubricated property.",
+        "text_sha256": "3ebe853945752c18f6c71ab8273fc84760963eef79a1c8dc2ffd0d08323f27d4",
+        "token_count": 151,
+        "unit_id": "U002013",
+        "unit_key": "V6:P0229:node:3"
+      },
+      {
+        "body_end": 206,
+        "body_start": 0,
+        "id": "C001106",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          120
+        ],
+        "prefix_chars": 73,
+        "printed_pages": [
+          "2-29"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.646855354309082,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "group": "coolant",
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 1,
+          "shared_capacity": true,
+          "table_id": "P0120:lubrication"
+        },
+        "text": "LUBRICATION TABLE\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\n\nUSAGE: Engine\nCoolant\nFLUID/LUBRICANT: Ethylene Glycol\nand Water\n1/4 Ethylene Glycol/\n3/4 Water\nCAPACITIES: Radiator: 5 qt (4.7 L)\nComplete System: 26 qt (24.6 L)\nEXPECTED TEMPERATURE: 15°F (-9°C) and above",
+        "text_sha256": "e5f88c7262dad088c8aff27565c7dfb52f1db8a0f8ae2cb13d2af589eae2cdbe",
+        "token_count": 104,
+        "unit_id": "U001100",
+        "unit_key": "P0120:coolant:1"
+      },
+      {
+        "body_end": 211,
+        "body_start": 0,
+        "id": "C001107",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          120
+        ],
+        "prefix_chars": 73,
+        "printed_pages": [
+          "2-29"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6460913419723511,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "group": "coolant",
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 2,
+          "shared_capacity": true,
+          "table_id": "P0120:lubrication"
+        },
+        "text": "LUBRICATION TABLE\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\n\nUSAGE: Engine\nCoolant\nFLUID/LUBRICANT: Ethylene Glycol\nand Water\n2/5 Ethylene Glycol/\n3/5 Water\nCAPACITIES: Radiator: 5 qt (4.7 L)\nComplete System: 26 qt (24.6 L)\nEXPECTED TEMPERATURE: 40° to -15°F (4° to -26°C)",
+        "text_sha256": "e20653dcc9ae3c4e9cbea543abaafab84dd96879f95c26879e9c377531e7d122",
+        "token_count": 112,
+        "unit_id": "U001101",
+        "unit_key": "P0120:coolant:2"
+      },
+      {
+        "body_end": 211,
+        "body_start": 0,
+        "id": "C001108",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          120
+        ],
+        "prefix_chars": 73,
+        "printed_pages": [
+          "2-29"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6437757611274719,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "group": "coolant",
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 3,
+          "shared_capacity": true,
+          "table_id": "P0120:lubrication"
+        },
+        "text": "LUBRICATION TABLE\nEXPECTED\nUSAGE\nFLUID/LUBRICANT\nCAPACITIES\nTEMPERATURE\n\nUSAGE: Engine\nCoolant\nFLUID/LUBRICANT: Ethylene Glycol\nand Water\n3/5 Ethylene Glycol/\n2/5 Water\nCAPACITIES: Radiator: 5 qt (4.7 L)\nComplete System: 26 qt (24.6 L)\nEXPECTED TEMPERATURE: 40° to -65°F (4° to -54°C)",
+        "text_sha256": "2a1f58a637a5bcd3974f11d3db4dc8b6c60f4b73860b9ff5419435c56d564f79",
+        "token_count": 112,
+        "unit_id": "U001102",
+        "unit_key": "P0120:coolant:3"
+      }
+    ],
+    "search_ms": 9.614300000066578
+  },
+  "round": 2,
+  "sequence": 121,
+  "started_at": "2026-09-28T04:33:07.098523+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1215.9170000004451,
+    "retrieval": 128.49949999963428,
+    "total": 1344.4165000000794
+  },
+  "unprovided_citations": []
+}

@@ -1,0 +1,813 @@
+{
+  "citation_ids": [],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:29:27.279510+00:00",
+  "evaluation_answer": "The provided reference material does not contain information about specific gravity of a battery cell (1.200) or a STE/ICE-R Test 73 reporting 20 milliohms. Therefore, it is not possible to compare these values with their respective PMCS or diagnostic criteria based on the given excerpts.\n\n[No applicable chunk IDs]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 777,
+  "key": "r1-M22-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002061] TM 9-2320-280-20-1 | PDF 234 | Printed 2-149\nBATTERY VOLTAGE STE/ICE-R TEST 67\n\n[C003108] TM 9-2320-280-20-1 | PDF 351 | Printed 2-256\nBATTERY CIRCUIT\nKNOWN INFO\nBATTERY VOLTAGE\nIS NOT CORRECT\nPOSSIBLE PROBLEMS\nBATTERY OR BATTERIES\nCABLES\nALTERNATOR\n\nDOES EACH BATTERY MEASURE 11-13 VOLTS? TEST OPTIONS 1. STE/ICE-R TEST 89 (Page 2-750) 2. MULTIMETER REASON FOR QUESTION A good battery has 12 volts at 70° F (22° C).\n\n[C003903] TM 9-2320-280-20-1 | PDF 419 | Printed 2-318.9\nGLOWPLUGS\nREFERENCE INFORMATION\n\nBATTERY CURRENT\nSTE/ICE-R TEST 80\n1. Start Test 80, battery current.\n2. Displayed reading is in amps.  The reading\nwill be greater then 30 amps, depending on\nhow many accessories you have on.\n\n[C001486] TM 9-2320-280-20-1 | PDF 164 | Printed 2-77\nREFERENCE INFORMATION\nELECTRICAL\n\nBATTERY VOLTAGE\nSTEACE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should be\n23-25.5 volts. Batteries voltage will drop when\nglowplugs tum on.\n\n[C003221] TM 9-2320-280-20-1 | PDF 361 | Printed 2-267\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY VOLTAGE\nSTE/ICE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should\nbe 23-25.5 volts. Batteries voltage will drop when\nglowplugs turn on.\nQUESTION:\nA battery cell has specific gravity 1.200, while STE/ICE-R Test 73 reports 20 milliohms. How does each compare with its respective PMCS or diagnostic criterion?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 194,
+  "question": "A battery cell has specific gravity 1.200, while STE/ICE-R Test 73 reports 20 milliohms. How does each compare with its respective PMCS or diagnostic criterion?",
+  "question_id": "M22",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:16:44.132994407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:16:41.273442007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 110.3211999998166,
+    "peak_rss_bytes": 11763802112,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5050.8647052,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5050.9725879,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.0659617,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.1737126,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.2681405,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.3767576,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.4683758,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.5770872,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.6699678,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.7783707,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043673600,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11635974144,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.8729024,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11636088832,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5051.9658036,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100077568,
+          "37504": 7356669952,
+          "37564": 7958528
+        },
+        "rss_bytes": 11636088832,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.0736881,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7381708800,
+          "37564": 7958528
+        },
+        "rss_bytes": 11661131776,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.1668382,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7475163136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11754586112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.2747079,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7482552320,
+          "37564": 7958528
+        },
+        "rss_bytes": 11761975296,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.3677397,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.4780609,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.5705717,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.6781255,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.7727679,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.8663155,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5052.9746062,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5053.0684895,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5053.1762147,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5053.2684692,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 5053.3767169,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103063552,
+          "17284": 4468736,
+          "30736": 12054528,
+          "34324": 4043788288,
+          "35444": 8007680,
+          "36040": 100081664,
+          "37504": 7484379136,
+          "37564": 7958528
+        },
+        "rss_bytes": 11763802112,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:29:27.2770997Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 72,
+    "eval_duration": 1100103000,
+    "load_duration": 10357400,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 194,
+    "prompt_eval_count": 777,
+    "prompt_eval_duration": 134207000,
+    "response": "The provided reference material does not contain information about specific gravity of a battery cell (1.200) or a STE/ICE-R Test 73 reporting 20 milliohms. Therefore, it is not possible to compare these values with their respective PMCS or diagnostic criteria based on the given excerpts.\n\n[No applicable chunk IDs]",
+    "total_duration": 1433161700
+  },
+  "retrieval": {
+    "embedding_ms": 116.43929999991087,
+    "items": [
+      {
+        "body_end": 33,
+        "body_start": 0,
+        "id": "C002061",
+        "kind": "reviewed_text_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          234
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-149"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6084089279174805,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "individually_reviewed_pdf_box",
+          "box": [
+            153.0,
+            136.5,
+            341.0,
+            168.0
+          ],
+          "condition_link_basis": "LOCAL_BOX_ONLY_PENDING_PROFILE",
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v6-work/box-ocr-candidates/P0234-B004.png",
+            "sha256": "e637ad0e0a2ee231cf48a2537d281d03d7c24882853cc0890de7a63923ff31b9"
+          },
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "literal_box": "P0234-B004",
+          "literal_transcription": "BATTERY VOLTAGE\nSTE/ICE-R TEST 67",
+          "text_structure": null
+        },
+        "text": "BATTERY VOLTAGE STE/ICE-R TEST 67",
+        "text_sha256": "1df965e79a1b530a91ae2a86f06adb090ff47a32c9e55a40a08aa9617cde94a3",
+        "token_count": 13,
+        "unit_id": "U002055",
+        "unit_key": "P0234-B004:reviewed"
+      },
+      {
+        "body_end": 165,
+        "body_start": 0,
+        "id": "C003108",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          351
+        ],
+        "prefix_chars": 116,
+        "printed_pages": [
+          "2-256"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5854096412658691,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            130.0629,
+            327.557
+          ],
+          "condition_box": [
+            52.5,
+            124.0,
+            164.0,
+            288.0
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0351.json",
+            "sha256": "05b824b317eb8275276b9b8c22f1a8da0bfc3ae3e0e9c65056dc0ac77a9b3b9b"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            185.0157,
+            149.7404,
+            352.7537,
+            170.8576
+          ],
+          "source_component_keys": [
+            "region:351:1:5",
+            "region:351:1:3",
+            "region:351:1:6",
+            "region:351:1:4",
+            "region:351:1:7"
+          ]
+        },
+        "text": "BATTERY CIRCUIT\nKNOWN INFO\nBATTERY VOLTAGE\nIS NOT CORRECT\nPOSSIBLE PROBLEMS\nBATTERY OR BATTERIES\nCABLES\nALTERNATOR\n\nDOES EACH BATTERY MEASURE 11-13 VOLTS? TEST OPTIONS 1. STE/ICE-R TEST 89 (Page 2-750) 2. MULTIMETER REASON FOR QUESTION A good battery has 12 volts at 70° F (22° C).",
+        "text_sha256": "79bf3c673a1e0f3f25c3100290b2463500caedf1c91cf6705614098e2b8c3ab4",
+        "token_count": 111,
+        "unit_id": "U003100",
+        "unit_key": "V6:P0351:node:1"
+      },
+      {
+        "body_end": 191,
+        "body_start": 0,
+        "id": "C003903",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          419
+        ],
+        "prefix_chars": 33,
+        "printed_pages": [
+          "2-318.9"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R003968"
+        ],
+        "review_ids": [],
+        "score": 0.5818167328834534,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B003",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "GLOWPLUGS\nREFERENCE INFORMATION\n\nBATTERY CURRENT\nSTE/ICE-R TEST 80\n1. Start Test 80, battery current.\n2. Displayed reading is in amps.  The reading\nwill be greater then 30 amps, depending on\nhow many accessories you have on.",
+        "text_sha256": "25c98adcbd1f089ed3f9a37b5b358af3292447cc335a8b0e8754ebf2dfcf5574",
+        "token_count": 65,
+        "unit_id": "U003895",
+        "unit_key": "region:419:1:5"
+      },
+      {
+        "body_end": 187,
+        "body_start": 0,
+        "id": "C001486",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          164
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-77"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R001587",
+          "R001588"
+        ],
+        "review_ids": [],
+        "score": 0.5818078517913818,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B003",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nELECTRICAL\n\nBATTERY VOLTAGE\nSTEACE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should be\n23-25.5 volts. Batteries voltage will drop when\nglowplugs tum on.",
+        "text_sha256": "80f5bbf885b9a3cfffb3d8fa72b59984c84846ff3b8ed259e6c3a148fe9760a9",
+        "token_count": 70,
+        "unit_id": "U001480",
+        "unit_key": "region:164:1:1"
+      },
+      {
+        "body_end": 189,
+        "body_start": 0,
+        "id": "C003221",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          361
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-267"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R003306"
+        ],
+        "review_ids": [],
+        "score": 0.5815852880477905,
+        "source_issues": [
+          {
+            "detail": "원문 Be sure to reed the correct scale. 문구를 유지했다.",
+            "evidence": {
+              "file": "preprocessing/corpus/reports/rules-v6-work/final-samples/p0361.png",
+              "sha256": "b41867d4c2bd79984fffad2ecc75fc14a64eaeaf07ead50844bc019f2f458ffb"
+            },
+            "id": "P0361_PRINTED_REED",
+            "pdf_page": 361,
+            "status": "SOURCE_WORDING_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "B005",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nBATTERY VOLTAGE\nSTE/ICE-R TEST 67\n1. Start Test 67, battery voltage.\n2. Displayed reading is in volts. Batteries should\nbe 23-25.5 volts. Batteries voltage will drop when\nglowplugs turn on.",
+        "text_sha256": "5a2be4943705918b34317ed1f71b47b59bfef07a79635e8cf27f1c454f301d4f",
+        "token_count": 74,
+        "unit_id": "U003213",
+        "unit_key": "region:361:1:3"
+      }
+    ],
+    "search_ms": 10.620600000038394
+  },
+  "round": 1,
+  "sequence": 63,
+  "started_at": "2026-09-28T04:29:25.681470+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1469.3064999992203,
+    "retrieval": 128.39210000038292,
+    "total": 1597.6985999996032
+  },
+  "unprovided_citations": []
+}

@@ -1,0 +1,891 @@
+{
+  "citation_ids": [
+    "[C001512]",
+    "[C003306]",
+    "[C003310]",
+    "[C003529]",
+    "[C003449]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:43:55.294171+00:00",
+  "evaluation_answer": "The provided reference material does not contain any details on the specific removal and installation steps needed to replace the rotary switch. It only states that the rotary switch should be replaced and refers to paragraph 4-7 for further instructions , , , , . However, no actual procedural steps are included in the excerpts. Therefore, based on the available information, the removal and installation steps cannot be described.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 527,
+  "key": "r3-U04-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C001512] TM 9-2320-280-20-1 | PDF 168 | Printed 2-81\nREFERENCE INFORMATION\nELECTRICAL\n\nReplace rotary switch.  Refer\nto (para. 4-7).\n\n[C003306] TM 9-2320-280-20-1 | PDF 371 | Printed 2-277\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nReplace rotary switch, refer to (pare 4-7).\n\n[C003310] TM 9-2320-280-20-1 | PDF 371 | Printed 2-277\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nReplace rotary switch, refer to (para 4-7).\n\n[C003529] TM 9-2320-280-20-1 | PDF 393 | Printed 2-299\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nReplace rotary switch, refer to\n(para 4-7).\n\n[C003449] TM 9-2320-280-20-1 | PDF 385 | Printed 2-291\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nReplace rotary switch, refer to (para. 4-7).\nQUESTION:\nDescribe all removal and installation steps needed to replace the rotary switch.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 194,
+  "question": "Describe all removal and installation steps needed to replace the rotary switch.",
+  "question_id": "U04",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:31:12.148947307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:31:08.610593007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 110.46299999998155,
+    "peak_rss_bytes": 13092282368,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5918.1707193,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5918.2722783,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5918.3814584,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5918.4736624,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5918.58219,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5918.6752942,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5918.7835003,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5918.8752479,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5918.9845154,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.0762827,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.1844175,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101191680,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010128896,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.2796404,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102842368,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8727347200,
+          "37564": 7741440
+        },
+        "rss_bytes": 13010132992,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.3859207,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102850560,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8809488384,
+          "37564": 7741440
+        },
+        "rss_bytes": 13092282368,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.4778315,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8730238976,
+          "37564": 7741440
+        },
+        "rss_bytes": 13013037056,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.5859612,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.6774683,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.7864123,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.8792998,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5919.9722958,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.0827588,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.1771664,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.2704706,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.3801049,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.4721353,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.5813478,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.6731244,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.782657,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.8741917,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5920.9813462,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5921.0743058,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5921.1827752,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5921.2754883,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5921.3848848,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102854656,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101195776,
+          "37504": 8732065792,
+          "37564": 7741440
+        },
+        "rss_bytes": 13014863872,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:43:55.2889456Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 119,
+    "eval_duration": 1920822000,
+    "load_duration": 9629900,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 194,
+    "prompt_eval_count": 527,
+    "prompt_eval_duration": 88911000,
+    "response": "The provided reference material does not contain any details on the specific removal and installation steps needed to replace the rotary switch. It only states that the rotary switch should be replaced and refers to paragraph 4-7 for further instructions [C001512], [C003306], [C003310], [C003529], [C003449]. However, no actual procedural steps are included in the excerpts. Therefore, based on the available information, the removal and installation steps cannot be described.",
+    "total_duration": 2193120800
+  },
+  "retrieval": {
+    "embedding_ms": 75.48249999945256,
+    "items": [
+      {
+        "body_end": 45,
+        "body_start": 0,
+        "id": "C001512",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          168
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-81"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R001598"
+        ],
+        "review_ids": [],
+        "score": 0.6882860660552979,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[4]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nELECTRICAL\n\nReplace rotary switch.  Refer\nto (para. 4-7).",
+        "text_sha256": "04b42b595d07820f50e482dea693417c6b8d763c423919bae186b48aed024b60",
+        "token_count": 24,
+        "unit_id": "U001506",
+        "unit_key": "region:168:1:2"
+      },
+      {
+        "body_end": 43,
+        "body_start": 0,
+        "id": "C003306",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          371
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-277"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R003380"
+        ],
+        "review_ids": [],
+        "score": 0.6863709688186646,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[4]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nReplace rotary switch, refer to (pare 4-7).",
+        "text_sha256": "aa98778fba6b5b55b6781937485e0d7498009aa5bb43e53de32f0205e44cd224",
+        "token_count": 23,
+        "unit_id": "U003298",
+        "unit_key": "region:371:1:5"
+      },
+      {
+        "body_end": 43,
+        "body_start": 0,
+        "id": "C003310",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          371
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-277"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R003385"
+        ],
+        "review_ids": [],
+        "score": 0.6857658624649048,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[7]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nReplace rotary switch, refer to (para 4-7).",
+        "text_sha256": "c5e21d148024e576fae44ceb3f2cad7b181171fbe2e35c6e5d52b8e025f81ec6",
+        "token_count": 23,
+        "unit_id": "U003302",
+        "unit_key": "region:371:1:9"
+      },
+      {
+        "body_end": 43,
+        "body_start": 0,
+        "id": "C003529",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          393
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-299"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R003574"
+        ],
+        "review_ids": [],
+        "score": 0.6857658624649048,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[12]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nReplace rotary switch, refer to\n(para 4-7).",
+        "text_sha256": "d1af797afe02132d742181b64a9fba6e930789c8cc44933838bc8c01a26f9f4e",
+        "token_count": 23,
+        "unit_id": "U003521",
+        "unit_key": "region:393:1:5"
+      },
+      {
+        "body_end": 44,
+        "body_start": 0,
+        "id": "C003449",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          385
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-291"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R003521"
+        ],
+        "review_ids": [],
+        "score": 0.6794868111610413,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[12]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nReplace rotary switch, refer to (para. 4-7).",
+        "text_sha256": "53bb797b40dd4b8756652cd95663fcc9613e0ff8b7f19005dadeed134bc1ccdd",
+        "token_count": 24,
+        "unit_id": "U003441",
+        "unit_key": "region:385:1:10"
+      }
+    ],
+    "search_ms": 8.940599999732513
+  },
+  "round": 3,
+  "sequence": 318,
+  "started_at": "2026-09-28T04:43:52.987395+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2221.6662000000724,
+    "retrieval": 85.22369999991497,
+    "total": 2306.8898999999874
+  },
+  "unprovided_citations": []
+}

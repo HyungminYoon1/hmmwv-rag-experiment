@@ -1,0 +1,289 @@
+{
+  "at": "2026-09-28T09:59:37.583335+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "0d01f6a2988d38263fe4d014732995397ba093181869524fe81059d88f772813",
+  "original_result_sha256": "46dd457e8bdebdaeb4de26d45602d0d788c63f8e00ab57adff793deb652ae9ab",
+  "result": {
+    "attempt_key": "r1-S02-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 36.54263520000313,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.2222222222222222
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S02",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "The response says it lacks the referenced manual, but still gives substantive symptom lists and assigns starting symptoms to the Startability Tests."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8905323242467205,
+          0.8827630778919491,
+          0.9070213622784996
+        ],
+        "query_vector_hash": "b007e3304a6c236849e2f426313ac08bffcdb63ed33122953c79c106149a94bb",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "According to TM 9-2320-280-20-1, which symptoms call for engine running tests, and which are directed to Startability Tests?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "According to TM 9-2320-280-20-1, which symptoms call for engine running tests, and which call for Startability Tests?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "According to TM 9-2320-280-20-1, which symptoms call for Engine Running Tests, and which are directed to Startability Tests?"
+          }
+        ],
+        "response_vectors_hash": "018bf951f30907e58e9643038230561a93ad8533e5548e3f21e0c81b8760208c",
+        "score": 0.0
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The provided reference does not contain excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        },
+        {
+          "id": "C002",
+          "text": "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when rough idling is observed."
+        },
+        {
+          "id": "C003",
+          "text": "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when loss of power is observed."
+        },
+        {
+          "id": "C004",
+          "text": "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when overheating is observed."
+        },
+        {
+          "id": "C005",
+          "text": "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when misfiring is observed."
+        },
+        {
+          "id": "C006",
+          "text": "Starting symptoms such as difficulty starting are directed to the Startability Tests."
+        },
+        {
+          "id": "C007",
+          "text": "Starting symptoms such as slow cranking are directed to the Startability Tests."
+        },
+        {
+          "id": "C008",
+          "text": "Starting symptoms such as failure to start are directed to the Startability Tests."
+        },
+        {
+          "id": "C009",
+          "text": "The answer is based on standard maintenance practices rather than the specific content of TM 9-2320-280-20-1, Volume 1."
+        }
+      ],
+      "claims_raw": [
+        "The provided reference does not contain excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+        "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when rough idling is observed.",
+        "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when loss of power is observed.",
+        "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when overheating is observed.",
+        "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when misfiring is observed.",
+        "Starting symptoms such as difficulty starting are directed to the Startability Tests.",
+        "Starting symptoms such as slow cranking are directed to the Startability Tests.",
+        "Starting symptoms such as failure to start are directed to the Startability Tests.",
+        "The answer is based on standard maintenance practices rather than the specific content of TM 9-2320-280-20-1, Volume 1."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "rough idling, loss of power, overheating, or misfiring",
+            "fulfilled": 0,
+            "id": "S02-A01",
+            "reason": "The answer gives examples of poor running but omits an engine that starts and then does not remain running."
+          },
+          {
+            "answer_quote": "difficulty starting, slow cranking, or failure to start",
+            "fulfilled": 0,
+            "id": "S02-A02",
+            "reason": "The answer covers difficulty or failure to start but omits an engine that starts and immediately stops."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.2222222222222222,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt does not identify its source, so this cannot be determined.",
+              "statement": "The provided reference does not contain excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Rough idling is not mentioned.",
+              "statement": "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when rough idling is observed.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Loss of power is not mentioned.",
+              "statement": "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when loss of power is observed.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Overheating is not mentioned.",
+              "statement": "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when overheating is observed.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Misfiring is not mentioned.",
+              "statement": "Based on general knowledge of vehicle maintenance procedures, engine running tests are typically conducted when misfiring is observed.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:running"
+              ],
+              "evidence_quotes": [
+                "If the engine doesn’t start, or starts but immediately stops, or is\nvery hard to start, try the \"STARTABILITY\" tests first."
+              ],
+              "reason": "The excerpt directs very hard starting to the Startability tests.",
+              "statement": "Starting symptoms such as difficulty starting are directed to the Startability Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Slow cranking is not mentioned.",
+              "statement": "Starting symptoms such as slow cranking are directed to the Startability Tests.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:running"
+              ],
+              "evidence_quotes": [
+                "If the engine doesn’t start, or starts but immediately stops, or is\nvery hard to start, try the \"STARTABILITY\" tests first."
+              ],
+              "reason": "The excerpt directs engines that do not start to the Startability tests.",
+              "statement": "Starting symptoms such as failure to start are directed to the Startability Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt does not establish the answer’s basis or identify the manual.",
+              "statement": "The answer is based on standard maintenance practices rather than the specific content of TM 9-2320-280-20-1, Volume 1.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8905323242467205,
+          0.8827630778919491,
+          0.9070213622784996
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "b007e3304a6c236849e2f426313ac08bffcdb63ed33122953c79c106149a94bb",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "018bf951f30907e58e9643038230561a93ad8533e5548e3f21e0c81b8760208c"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8905323242467205,
+          0.8827630778919491,
+          0.9070213622784996
+        ],
+        "decimal50_cosines": [
+          "0.89053232424672053887709454399410253605330832413630",
+          "0.88276307789194918666726263196046872785964358342160",
+          "0.90702136227849954792135695094905269432488705002139"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "b007e3304a6c236849e2f426313ac08bffcdb63ed33122953c79c106149a94bb",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "According to TM 9-2320-280-20-1, which symptoms call for engine running tests, and which are directed to Startability Tests?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "According to TM 9-2320-280-20-1, which symptoms call for engine running tests, and which call for Startability Tests?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "According to TM 9-2320-280-20-1, which symptoms call for Engine Running Tests, and which are directed to Startability Tests?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "018bf951f30907e58e9643038230561a93ad8533e5548e3f21e0c81b8760208c",
+        "score": 0.0
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "fb0e732e07792969e5db00920cb40d1f7632a43efc18d251360116e8ffbbd09e"
+}

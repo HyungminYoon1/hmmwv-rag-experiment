@@ -1,0 +1,786 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:33:53.325303+00:00",
+  "evaluation_answer": "In non-arctic service, Dexron II may be used in the 4L80-E transmission. The transmission requires Dexron II fluid at the proper viscosity and temperature specifications, typically 10W-30 or equivalent, with a recommended level of 1.5 quarts (1.4 liters) when the engine is warm and the transmission is at operating temperature.\n\nFor the transfer case, Dexron II is not recommended; the transfer case should use a specific gear oil such as 75W-90 or a transfer case-specific fluid (e.g., M998-series transfer case fluid). The transfer case fluid level should be checked on level ground and should be at the \"full\" mark when the transfer case is cold and the vehicle is stationary.\n\nNote: While Dexron II is acceptable for the 4L80-E transmission, it is not approved for the transfer case per standard maintenance procedures. The transfer case requires a different fluid type, and using Dexron II may cause damage. The transfer-case level on level ground should be at the \"full\" mark when cold. [No manual excerpts supplied. Answer from existing model knowledge.]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 252,
+  "key": "r2-M15-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nIn non-arctic service, may Dexron II be used in both a 4L80-E transmission and the transfer case? State each fluid requirement and the transfer-case level criterion on level ground.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "In non-arctic service, may Dexron II be used in both a 4L80-E transmission and the transfer case? State each fluid requirement and the transfer-case level criterion on level ground.",
+  "question_id": "M15",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:21:10.178993307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:21:05.178637307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4860690432.0,
+    "max_actual_interval_ms": 111.64150000058726,
+    "peak_rss_bytes": 9439764480,
+    "peak_vram_bytes": 4860887040,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5314.682256,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5314.7890562,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5314.8977022,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5314.9915331,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.0844934,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.1957653,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.2896893,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.3831941,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.4948356,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.5877828,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.6952779,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.7865779,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.895788,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5315.9886262,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.0831348,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.1913185,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.2857551,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.3919374,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.4859909,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.5952093,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.6880805,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.7961071,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.8898422,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5316.983184,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5317.0923132,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5317.1843677,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5317.29272,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5317.386365,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5317.4947435,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5317.5879046,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860690432
+      },
+      {
+        "monotonic": 5317.6960273,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5317.7879004,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5317.8959804,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5317.9886079,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.0952342,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.187968,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.2825615,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.3905274,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.4830612,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.5903292,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.6852103,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.795476,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.8892582,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5318.9979186,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5319.0915563,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5319.1861274,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5319.2945816,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5319.3874808,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5319.4965216,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103202816,
+          "30736": 12054528,
+          "36040": 100802560,
+          "37504": 9215746048,
+          "37564": 7958528
+        },
+        "rss_bytes": 9439764480,
+        "vram_bytes": 4860887040
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:33:53.3208199Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 239,
+    "eval_duration": 3768073000,
+    "load_duration": 8839300,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 252,
+    "prompt_eval_duration": 28856000,
+    "response": "In non-arctic service, Dexron II may be used in the 4L80-E transmission. The transmission requires Dexron II fluid at the proper viscosity and temperature specifications, typically 10W-30 or equivalent, with a recommended level of 1.5 quarts (1.4 liters) when the engine is warm and the transmission is at operating temperature.\n\nFor the transfer case, Dexron II is not recommended; the transfer case should use a specific gear oil such as 75W-90 or a transfer case-specific fluid (e.g., M998-series transfer case fluid). The transfer case fluid level should be checked on level ground and should be at the \"full\" mark when the transfer case is cold and the vehicle is stationary.\n\nNote: While Dexron II is acceptable for the 4L80-E transmission, it is not approved for the transfer case per standard maintenance procedures. The transfer case requires a different fluid type, and using Dexron II may cause damage. The transfer-case level on level ground should be at the \"full\" mark when cold. [No manual excerpts supplied. Answer from existing model knowledge.]",
+    "total_duration": 3815808700
+  },
+  "retrieval": null,
+  "round": 2,
+  "sequence": 135,
+  "started_at": "2026-09-28T04:33:49.499084+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 3826.4312999999675,
+    "retrieval": null,
+    "total": 3826.4312999999675
+  },
+  "unprovided_citations": []
+}

@@ -1,0 +1,796 @@
+{
+  "citation_ids": [
+    "[C003280]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:38:20.311629+00:00",
+  "evaluation_answer": "The requested procedure for removing and installing the starter motor, including mounting-bolt tightening torque, is not provided in the referenced excerpts. While some general checks of the starter (e.g., pinion gear, armature) are mentioned in , there is no information on the step-by-step removal and installation process or the specified torque for mounting bolts. Therefore, based on the available reference material, this detail cannot be determined.\n\n[No applicable chunk IDs]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1002,
+  "key": "r2-U01-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002596] TM 9-2320-280-20-1 | PDF 290 | Printed 2-207\nREFERENCE INFORMATION\nALTERNATOR\n\n1. Turn engine off.\n2. Remove protective cover from alternator wiring.\n3. Remove the potting material.\n4. Remove hex head plug to expose adjustment screw.\n5. Start engine and lock throttle at 1200-1500 RPM by\nusing STE/ICE-R test 10.\n6. Connect the Red test lead to wire 5A and the Black\nlead to engine ground.\n7. Monitor alternator output voltage with STE/ICE-R\ntest 89.\n8. Use a cross tip screwdriver to adjust the alternator\noutput voltage 28.0 ± 0.5 Volts.\n9. Unlock throttle, replace hex head plug, repot the area\nwith silicon caulk, and replace the protective cover.\n\n[C002628] TM 9-2320-280-20-1 | PDF 294 | Printed 2-211\nREFERENCE INFORMATION\n\n1. Disconnect battery ground cable.\n2. Loosen screws.\n3. Remove clamp pins from slots.\n4. Loosen connector nut.\n5. Remove regulator from alternator.\nSecure regulator out of the way.\n6. Connect battery ground cable.\n\n[C002071] TM 9-2320-280-20-1 | PDF 234 | Printed 2-149\n1. Disconnect wire 54A at injection pump to prevent starting. 2. Disconnect glowplugs controller and fan solenoid 3. Start Test 74, Starter Circuit Resistance. 4. Wait for the GO message. Crank the engine. 5. Result is displayed in milliohms. Starter circuit resistance should be 25 milliohms max.\n\n[C002913] TM 9-2320-280-20-1 | PDF 325 | Printed 2-229\nREFERENCE INFORMATION\nPROTECTIVE CONTROL BOX/DISTRIBUTION BOX\n\n1.  Remove instrument panel, refer to (para. 4-12).\n2.  Remove nut and lockwasher assembly and\nengine harness ground lead 3C from body.\nRemove nut and lockwasher assembly ,\ncapscrew, and harness ground leads 57A\nand 79A from body. Discard nut and\nlockwasher assemblies.\n3.  Inspect and clean wires and connection points.\n4.  Apply antiseize compound to harness ground\nleads 57A and 79A and install on body with\ncapscrew and nut and lockwasher assembly.\nApply antiseize compound to engine harness\nground lead 3C and install on body with nut\nand lockwasher assembly.\n5.  Cover leads 3C, 57A, and 79A with RTV.\n6.  Install instrument panel, refer to (para. 4-12).\n\n[C003280] TM 9-2320-280-20-1 | PDF 367 | Printed 2-273\nSTARTER CIRCUIT\nREFERENCE INFORMATION\n\nRemove Starter motor.\nCheck the pinion and gear for missing\nor broken teeth, unusual wear, bent\npieces, etc.\nCheck the pinion by fuming it on the\nscrew shaft.\nCheck the armature by prying the pinion\nwith a screwdriver. The armature\nshould turn freely.\nQUESTION:\nWhat is the complete step-by-step procedure for removing and installing the starter motor, including the mounting-bolt tightening torque?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 1001,
+  "question": "What is the complete step-by-step procedure for removing and installing the starter motor, including the mounting-bolt tightening torque?",
+  "question_id": "U01",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:25:37.166405307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:25:34.472161907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4883759104.0,
+    "max_actual_interval_ms": 110.4512000001705,
+    "peak_rss_bytes": 13567709184,
+    "peak_vram_bytes": 4883759104,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5583.8554814,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5583.9638383,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.0712249,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.1642628,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.2576919,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.3666031,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.4591369,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.5695881,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.6645972,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.7564577,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.8659227,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5584.9595485,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103419904,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9128103936,
+          "37564": 7958528
+        },
+        "rss_bytes": 13412261888,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.0681407,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103432192,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9283538944,
+          "37564": 7958528
+        },
+        "rss_bytes": 13567709184,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.1598739,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.2679626,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.3603684,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.4677451,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.5617061,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.6710541,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.7633596,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.8555706,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5585.9631232,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5586.0566149,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5586.1650252,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5586.2601866,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5586.3672989,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      },
+      {
+        "monotonic": 5586.4601239,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103436288,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4046745600,
+          "35444": 8089600,
+          "36040": 101376000,
+          "37504": 9121320960,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405495296,
+        "vram_bytes": 4883759104
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:38:20.3111103Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 99,
+    "eval_duration": 1347961000,
+    "load_duration": 2894300,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 1001,
+    "prompt_eval_count": 1002,
+    "prompt_eval_duration": 17801000,
+    "response": "The requested procedure for removing and installing the starter motor, including mounting-bolt tightening torque, is not provided in the referenced excerpts. While some general checks of the starter (e.g., pinion gear, armature) are mentioned in [C003280], there is no information on the step-by-step removal and installation process or the specified torque for mounting bolts. Therefore, based on the available reference material, this detail cannot be determined.\n\n[No applicable chunk IDs]",
+    "total_duration": 1488847400
+  },
+  "retrieval": {
+    "embedding_ms": 120.09800000032556,
+    "items": [
+      {
+        "body_end": 572,
+        "body_start": 0,
+        "id": "C002596",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          290
+        ],
+        "prefix_chars": 34,
+        "printed_pages": [
+          "2-207"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002873"
+        ],
+        "review_ids": [],
+        "score": 0.5845420360565186,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[1]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nALTERNATOR\n\n1. Turn engine off.\n2. Remove protective cover from alternator wiring.\n3. Remove the potting material.\n4. Remove hex head plug to expose adjustment screw.\n5. Start engine and lock throttle at 1200-1500 RPM by\nusing STE/ICE-R test 10.\n6. Connect the Red test lead to wire 5A and the Black\nlead to engine ground.\n7. Monitor alternator output voltage with STE/ICE-R\ntest 89.\n8. Use a cross tip screwdriver to adjust the alternator\noutput voltage 28.0 ± 0.5 Volts.\n9. Unlock throttle, replace hex head plug, repot the area\nwith silicon caulk, and replace the protective cover.",
+        "text_sha256": "87d1b65bce6283caabba5ac7c994f889b089b05ab1242462486e66ef276b07c3",
+        "token_count": 167,
+        "unit_id": "U002590",
+        "unit_key": "region:290:1:1"
+      },
+      {
+        "body_end": 214,
+        "body_start": 0,
+        "id": "C002628",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          294
+        ],
+        "prefix_chars": 23,
+        "printed_pages": [
+          "2-211"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R002900"
+        ],
+        "review_ids": [],
+        "score": 0.5558546781539917,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\n\n1. Disconnect battery ground cable.\n2. Loosen screws.\n3. Remove clamp pins from slots.\n4. Loosen connector nut.\n5. Remove regulator from alternator.\nSecure regulator out of the way.\n6. Connect battery ground cable.",
+        "text_sha256": "31aed859eafbf19b0382e7559c61fa77814be729a9a95c550d512ba05bd5b2d7",
+        "token_count": 53,
+        "unit_id": "U002622",
+        "unit_key": "region:294:1:4"
+      },
+      {
+        "body_end": 297,
+        "body_start": 0,
+        "id": "C002071",
+        "kind": "reviewed_text_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          234
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-149"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5511446595191956,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "individually_reviewed_pdf_box",
+          "box": [
+            374.5,
+            505.0,
+            563.5,
+            645.5
+          ],
+          "condition_link_basis": "LOCAL_BOX_ONLY_PENDING_PROFILE",
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v6-work/box-ocr-candidates/P0234-B015.png",
+            "sha256": "23bb7ecd0185688963e72b67973f357916b08461086224d9eba28463d42e7903"
+          },
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "literal_box": "P0234-B015",
+          "literal_transcription": "1. Disconnect wire 54A at injection pump to prevent\nstarting.\n2. Disconnect glowplugs controller and fan solenoid\n3. Start Test 74, Starter Circuit Resistance.\n4. Wait for the GO message. Crank the engine.\n5. Result is displayed in milliohms. Starter circuit\nresistance should be 25 milliohms max.",
+          "text_structure": null
+        },
+        "text": "1. Disconnect wire 54A at injection pump to prevent starting. 2. Disconnect glowplugs controller and fan solenoid 3. Start Test 74, Starter Circuit Resistance. 4. Wait for the GO message. Crank the engine. 5. Result is displayed in milliohms. Starter circuit resistance should be 25 milliohms max.",
+        "text_sha256": "99ad85904159fd70ef231ddcc5303c94ec9ada90b1c14578f6f177cf6928fa6f",
+        "token_count": 81,
+        "unit_id": "U002065",
+        "unit_key": "P0234-B015:reviewed"
+      },
+      {
+        "body_end": 660,
+        "body_start": 0,
+        "id": "C002913",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          325
+        ],
+        "prefix_chars": 63,
+        "printed_pages": [
+          "2-229"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R003096"
+        ],
+        "review_ids": [],
+        "score": 0.5511171817779541,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[1]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nPROTECTIVE CONTROL BOX/DISTRIBUTION BOX\n\n1.  Remove instrument panel, refer to (para. 4-12).\n2.  Remove nut and lockwasher assembly and\nengine harness ground lead 3C from body.\nRemove nut and lockwasher assembly ,\ncapscrew, and harness ground leads 57A\nand 79A from body. Discard nut and\nlockwasher assemblies.\n3.  Inspect and clean wires and connection points.\n4.  Apply antiseize compound to harness ground\nleads 57A and 79A and install on body with\ncapscrew and nut and lockwasher assembly.\nApply antiseize compound to engine harness\nground lead 3C and install on body with nut\nand lockwasher assembly.\n5.  Cover leads 3C, 57A, and 79A with RTV.\n6.  Install instrument panel, refer to (para. 4-12).",
+        "text_sha256": "a5faee3546d30f1ff666e55f8d88b5eeec5e3ee59ad51debe5b08317a623c808",
+        "token_count": 204,
+        "unit_id": "U002907",
+        "unit_key": "region:325:1:1"
+      },
+      {
+        "body_end": 251,
+        "body_start": 0,
+        "id": "C003280",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          367
+        ],
+        "prefix_chars": 39,
+        "printed_pages": [
+          "2-273"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R003361"
+        ],
+        "review_ids": [],
+        "score": 0.5504128932952881,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTER CIRCUIT\nREFERENCE INFORMATION\n\nRemove Starter motor.\nCheck the pinion and gear for missing\nor broken teeth, unusual wear, bent\npieces, etc.\nCheck the pinion by fuming it on the\nscrew shaft.\nCheck the armature by prying the pinion\nwith a screwdriver. The armature\nshould turn freely.",
+        "text_sha256": "73e412a4971378db70e88c8e484dd69aa85c26d3b3ec0038329ae31065f19f6a",
+        "token_count": 75,
+        "unit_id": "U003272",
+        "unit_key": "region:367:1:1"
+      }
+    ],
+    "search_ms": 11.860300000080315
+  },
+  "round": 2,
+  "sequence": 225,
+  "started_at": "2026-09-28T04:38:18.672630+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1507.0239999995465,
+    "retrieval": 132.41759999982605,
+    "total": 1639.4415999993726
+  },
+  "unprovided_citations": []
+}

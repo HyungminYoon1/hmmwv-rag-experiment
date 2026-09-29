@@ -1,0 +1,253 @@
+{
+  "at": "2026-09-28T09:59:37.557457+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "328658ee7bd1c8cf11b1e056d0144b0be95776cb9bb8ec792f3d3d2415cf7725",
+  "original_result_sha256": "b52fb1d483f0c9483a138baf3bcd5f25d54c09595f03f928fbe2f58313166a6e",
+  "result": {
+    "attempt_key": "r1-M27-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 31.873348299999634,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.986942783715667
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.986942783715667
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M27",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly answers both questions with a vehicle-specific applicability claim and a replacement paragraph citation."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9872960096162523,
+          0.9872960096162523,
+          0.9862363319144963
+        ],
+        "query_vector_hash": "25f30fb2c33ad584a80e49536c9b8c88a8bc8cad2ce0da8f52f63cf9ed934e00",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Does the general PMCS drivebelt-tension range apply to M1123 vehicles, and which paragraph covers replacement of a worn serpentine belt on those vehicles?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Does the general PMCS drivebelt-tension range apply to M1123 vehicles, and which paragraph covers replacement of a worn serpentine belt on those vehicles?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Does the general PMCS drivebelt-tension range apply to M1123 vehicles, and which paragraph covers replacing a worn serpentine belt on those vehicles?"
+          }
+        ],
+        "response_vectors_hash": "a73043130201a959fbf9fa6c3aa11e196e48c1779f5a84e4122cd3cf80977d70",
+        "score": 0.9869427837156666
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The general PMCS drivebelt-tension range does not apply to M1123 vehicles."
+        },
+        {
+          "id": "C002",
+          "text": "The tension checks and adjustments specified in paragraph 3-82 apply to all models except M1123 and \"A2\" vehicles."
+        },
+        {
+          "id": "C003",
+          "text": "Paragraph 11-202 is cited for replacement of a worn serpentine belt on M1123 vehicles."
+        }
+      ],
+      "claims_raw": [
+        "The general PMCS drivebelt-tension range does not apply to M1123 vehicles.",
+        "The tension checks and adjustments specified in paragraph 3-82 apply to all models except M1123 and \"A2\" vehicles.",
+        "Paragraph 11-202 is cited for replacement of a worn serpentine belt on M1123 vehicles."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "No, the general PMCS drivebelt-tension range does not apply to M1123 vehicles. The tension checks and adjustments specified in paragraph 3-82 (for all models except M1123 and \"A2\" vehicles) are excluded for M1123 vehicles.",
+            "fulfilled": 1,
+            "id": "M27-A01",
+            "reason": "Correctly states that the tension-range check excludes M1123 and A2 vehicles."
+          },
+          {
+            "answer_quote": "refer to paragraph 11-202",
+            "fulfilled": 0,
+            "id": "M27-A02",
+            "reason": "The answer cites 11-202, but the supplied reference cites paragraph 3-83 for M1123 and A2 serpentine-belt replacement."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C000902"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge."
+              ],
+              "reason": "The PMCS tension-check procedure explicitly excludes M1123 vehicles.",
+              "statement": "The general PMCS drivebelt-tension range does not apply to M1123 vehicles.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000902"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum. If\nbelt tension is not at least 70 lbs (311 N),\nadjust drivebelts (paragraph 3-82)."
+              ],
+              "reason": "The PMCS procedure names those exclusions and directs adjustment under paragraph 3-82.",
+              "statement": "The tension checks and adjustments specified in paragraph 3-82 apply to all models except M1123 and \"A2\" vehicles.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Paragraph 11-202 is cited for drivebelt adjustment, not belt replacement.",
+              "statement": "Paragraph 11-202 is cited for replacement of a worn serpentine belt on M1123 vehicles.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:belt_tension"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum. If\nbelt tension is not at least 70 lbs (311 N),\nadjust drivebelts (paragraph 3-82). Tension\nshould not be greater than 110 lbs (489 N)\nfor new belts; old belts 95 lbs (422 N)."
+              ],
+              "reason": "The PMCS tension procedure expressly excludes M1123 vehicles.",
+              "statement": "The general PMCS drivebelt-tension range does not apply to M1123 vehicles.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:belt_tension"
+              ],
+              "evidence_quotes": [
+                "b. (All models except M1123 and “A2”\nvehicles). Check all drivebelts tension\nusing belt tension gauge. Belt tension\nshould be 70 lbs (311 N) minimum. If\nbelt tension is not at least 70 lbs (311 N),\nadjust drivebelts (paragraph 3-82)."
+              ],
+              "reason": "The PMCS procedure limits the checks to those models and cites paragraph 3-82 for adjustment.",
+              "statement": "The tension checks and adjustments specified in paragraph 3-82 apply to all models except M1123 and \"A2\" vehicles.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied reference cites paragraph 3-83 for worn-belt replacement on M1123 vehicles, not paragraph 11-202.",
+              "statement": "Paragraph 11-202 is cited for replacement of a worn serpentine belt on M1123 vehicles.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 4.440892098500626e-16,
+        "cosine_similarities": [
+          0.9872960096162523,
+          0.9872960096162523,
+          0.9862363319144963
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.986942783715667,
+        "query_vector_hash": "25f30fb2c33ad584a80e49536c9b8c88a8bc8cad2ce0da8f52f63cf9ed934e00",
+        "ragas_score": 0.9869427837156666,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "a73043130201a959fbf9fa6c3aa11e196e48c1779f5a84e4122cd3cf80977d70"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9872960096162523,
+          0.9872960096162523,
+          0.9862363319144963
+        ],
+        "decimal50_cosines": [
+          "0.98729600961625230657325199671412421277757307293679",
+          "0.98729600961625230657325199671412421277757307293679",
+          "0.98623633191449631039961520691142411313010247635122"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 0.0,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9869427837156666
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9869427837156666
+          }
+        },
+        "query_vector_hash": "25f30fb2c33ad584a80e49536c9b8c88a8bc8cad2ce0da8f52f63cf9ed934e00",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Does the general PMCS drivebelt-tension range apply to M1123 vehicles, and which paragraph covers replacement of a worn serpentine belt on those vehicles?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Does the general PMCS drivebelt-tension range apply to M1123 vehicles, and which paragraph covers replacement of a worn serpentine belt on those vehicles?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Does the general PMCS drivebelt-tension range apply to M1123 vehicles, and which paragraph covers replacing a worn serpentine belt on those vehicles?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "a73043130201a959fbf9fa6c3aa11e196e48c1779f5a84e4122cd3cf80977d70",
+        "score": 0.986942783715667
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "49669803acb880efcad8490bc3673f16a07ad15a01eae6d19cf7ff153b58d2a7"
+}

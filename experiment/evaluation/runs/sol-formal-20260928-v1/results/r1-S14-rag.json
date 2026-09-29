@@ -1,0 +1,148 @@
+{
+  "at": "2026-09-28T09:45:59.220147+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "6246551c647dc25d84eb9d132ebfb0cbc249287563c5e361a666affecc6393cc",
+  "result": {
+    "attempt_key": "r1-S14-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 25.25104139999894,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9270984659585304
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9270984659585304
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S14",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific idle-speed range of 625–675 RPM and cites sources."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9270984659585303,
+          0.9270984659585303,
+          0.9270984659585303
+        ],
+        "query_vector_hash": "e51875b235741d74042b8f0c73eb7faf4bc1f8edfe439e0f6e3d09e35e281fc5",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine?"
+          }
+        ],
+        "response_vectors_hash": "dd41243c4c6292998270340651e5ac848bb43f9fa796102205e15ce7bae7a344",
+        "score": 0.9270984659585304
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The idle-speed range specified for the 6.2-liter engine in the Engine Lubrication Tests is 625–675 RPM."
+        }
+      ],
+      "claims_raw": [
+        "The idle-speed range specified for the 6.2-liter engine in the Engine Lubrication Tests is 625–675 RPM."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The idle-speed range specified for the 6.2-liter engine is 625–675 RPM.",
+            "fulfilled": 1,
+            "id": "S14-A01",
+            "reason": "625–675 RPM is equivalent to 650 ± 25 RPM."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The range is documented, but the context does not identify it as part of Engine Lubrication Tests.",
+              "statement": "The idle-speed range specified for the 6.2-liter engine in the Engine Lubrication Tests is 625–675 RPM.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:idle62"
+              ],
+              "evidence_quotes": [
+                "ENGINE RPM: 6.2L IDLE (650 ± 25)"
+              ],
+              "reason": "The listed idle speed is 650 ± 25 RPM, which gives a range of 625–675 RPM.",
+              "statement": "The idle-speed range specified for the 6.2-liter engine in the Engine Lubrication Tests is 625–675 RPM.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9270984659585303,
+          0.9270984659585303,
+          0.9270984659585303
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9270984659585303,
+        "query_vector_hash": "e51875b235741d74042b8f0c73eb7faf4bc1f8edfe439e0f6e3d09e35e281fc5",
+        "ragas_score": 0.9270984659585304,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "dd41243c4c6292998270340651e5ac848bb43f9fa796102205e15ce7bae7a344"
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "fc5dc834c15b81d4b56fa6e74ad46fcb1679e1a8c734f1c9cd7d5807a67254fc"
+}

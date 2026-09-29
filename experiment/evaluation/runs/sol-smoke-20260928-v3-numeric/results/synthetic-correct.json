@@ -1,0 +1,201 @@
+{
+  "at": "2026-09-28T09:11:18.492253+00:00",
+  "identity_hash": "648c842204fc95d75e0edda0ddbc2c40cc04720ee7d3fa731f69cfd2b2369dad",
+  "input_hash": "48aaf688b10a81f9f2bd65c9ed2265ce5030aff558ad55a37daf0e6a6a975932",
+  "original_result_sha256": "73f35c61f5bdd5fdef0715db4481b3e2bbfb4021cbb6c32b433c8abdb216b216",
+  "result": {
+    "attempt_key": "synthetic-correct",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 26.476640299999417,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9717807311468762
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9717807311468762
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "SYN01",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "Gives a concrete storage temperature of 12 degrees Celsius."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9717807325907891,
+          0.9717807325907891,
+          0.9717807282590503
+        ],
+        "query_vector_hash": "12cade111df40825be1053873ddd38f7fed384d2c00053648407812a4aec0fee",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          }
+        ],
+        "response_vectors_hash": "b6fa145c148173e24b7fc044b0909c280c9ec0c563dfc13717b4c103145f8353",
+        "score": 0.9717807311468764
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The Luma test box should be stored at 12 degrees Celsius."
+        }
+      ],
+      "claims_raw": [
+        "The Luma test box should be stored at 12 degrees Celsius."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Store the Luma test box at 12 degrees Celsius.",
+            "fulfilled": 1,
+            "id": "temperature",
+            "reason": "The response states the required storage temperature."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "fixture-chunk"
+              ],
+              "evidence_quotes": [
+                "Store the Luma test box at 12 degrees Celsius."
+              ],
+              "reason": "The context gives the same storage temperature.",
+              "statement": "The Luma test box should be stored at 12 degrees Celsius.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:fixture-1"
+              ],
+              "evidence_quotes": [
+                "Store the Luma test box at 12 degrees Celsius."
+              ],
+              "reason": "The context directs storage at 12 degrees Celsius.",
+              "statement": "The Luma test box should be stored at 12 degrees Celsius.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9717807325907891,
+          0.9717807325907891,
+          0.9717807282590503
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9717807311468762,
+        "query_vector_hash": "12cade111df40825be1053873ddd38f7fed384d2c00053648407812a4aec0fee",
+        "ragas_score": 0.9717807311468764,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "b6fa145c148173e24b7fc044b0909c280c9ec0c563dfc13717b4c103145f8353"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9717807325907891,
+          0.9717807325907891,
+          0.9717807282590503
+        ],
+        "decimal50_cosines": [
+          "0.97178073259078888602341646575907328401071953959250",
+          "0.97178073259078888602341646575907328401071953959250",
+          "0.97178072825905017137948818468439597392560461883218"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9717807311468764
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9717807311468764
+          }
+        },
+        "query_vector_hash": "12cade111df40825be1053873ddd38f7fed384d2c00053648407812a4aec0fee",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature should the Luma test box be stored?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "b6fa145c148173e24b7fc044b0909c280c9ec0c563dfc13717b4c103145f8353",
+        "score": 0.9717807311468762
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "98580cd4f7ba872beeff2b41733fb972e86baffc32333ec2e85706ca272e2fe1"
+}

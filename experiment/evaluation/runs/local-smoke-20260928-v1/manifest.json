@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-09-28T06:14:22.878544+00:00",
+  "evaluator_configured_after_generation": true,
+  "human_evaluator_validation": "PENDING",
+  "id": "local-smoke-20260928-v1",
+  "identity": {
+    "code": {
+      "files": {
+        "experiment/evaluation/__init__.py": "d60168cc78b0690329988499136a304be1c00adaee384a428c58603bd443c8b3",
+        "experiment/evaluation/common.py": "5cba632a96614ade4c519c2766cf14184b0cf3d87538a811c98ed8796060ba8a",
+        "experiment/evaluation/embedding_worker.py": "d66950a936e89799cd3dadf1619b43d2f27286b47f29b076b147964a8bba5dfd",
+        "experiment/evaluation/embeddings.py": "4562e829df740ddd42c1d79dd6145c4888cd088f804d62e5609ca13f5cb2cdf6",
+        "experiment/evaluation/engine.py": "b0fcfc333cb28a3064eda8bd41bcb448841760f1257300d22149eb4dc605946a",
+        "experiment/evaluation/fixtures.py": "2f228f1b22f06697f82f5b58cc48f90ae5a6946ef289cccf08510091084c9d30",
+        "experiment/evaluation/inputs.py": "62da9826147692e02a71c621cdd127d8769c6c58b8a85bd722fee3317106e67e",
+        "experiment/evaluation/judge.py": "8b0ed5e2938a2259e08a48d4af2b51c756a4258c7f699cf97a80d71c4d3eb55b",
+        "experiment/evaluation/providers.py": "1d3a37f99c78a1dda281fad149e15873a7d238a87aa2757a43658c7f1de757ff",
+        "experiment/evaluation/report.py": "7a49c17fcc3267b54b6c8d39906556c36d8a005f490de1e6af2645d9618b0925",
+        "experiment/evaluation/requirements.lock.txt": "5e9174b07c39051f14b8025d9df0153eded64f6b33ecb1fba432da592352be3b",
+        "experiment/evaluation/runner.py": "09855134dc3e5c89217b715aba24a94f5559b923eac4ef2c5c7e65f5406732ef",
+        "experiment/evaluation/schemas.py": "468d845ab60fd73d1db751df3c19a318f9da8c9f1c38da6cf57996387d8c6746",
+        "experiment/evaluation/view.py": "d821d02591dd1722b143347b64d7950b57796bd29c07b6bc00dd82a194b4a104",
+        "retrieval/config.json": "e4a01c0deda884483c3b171977cc2bfa2321653ebc250b5b75f983dd2ba7dfec",
+        "retrieval/model.py": "f0b5b38351af7a11a3774d924d9c430dd1ea63bcf59be3bbca2b0d8806cf8cac"
+      },
+      "sha256": "ec50733f737b94a57d6d67d832dad9057ab2ae1046c4ba50b7e6be650b556d6c"
+    },
+    "concurrency": 1,
+    "environment": {
+      "packages": {
+        "httpx": "0.28.1",
+        "instructor": "1.3.2",
+        "langchain-community": "0.3.31",
+        "numpy": "2.4.6",
+        "openai": "1.109.1",
+        "pydantic": "2.13.5",
+        "ragas": "0.4.3"
+      },
+      "platform": "Windows-10-10.0.26200-SP0",
+      "python": "3.11.9"
+    },
+    "inputs_hash": "489711263d7ffcc8040ca6bd67b08d7e156111e9d7eb7979d0b9a822c0b2ddfa",
+    "local_model": {
+      "details": {
+        "context_length": 262144,
+        "embedding_length": 2560,
+        "families": [
+          "qwen3"
+        ],
+        "family": "qwen3",
+        "format": "gguf",
+        "parameter_size": "4.0B",
+        "parent_model": "Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+        "quantization_level": "Q4_K_M"
+      },
+      "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+      "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+      "ollama_version": "0.34.1",
+      "size": 2497280989
+    },
+    "maximum_attempts_per_stage": 3,
+    "profile": {
+      "base_url": "http://127.0.0.1:11435",
+      "description": "Installed generation model; synthetic connection tests only, not benchmark scoring.",
+      "max_output_tokens": 2048,
+      "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+      "num_ctx": 32768,
+      "provider": "ollama",
+      "seed": 42,
+      "smoke_only": true,
+      "temperature": 0,
+      "think": null,
+      "timeout_seconds": 300
+    },
+    "source_hashes": {
+      "experiment/evaluation-policy.json": "1a42312057d311472e6d0365f8cc3b1f8269889b8a5fc112ee021053ceb406bc"
+    }
+  },
+  "identity_hash": "1ffcc02864ac8659ff0444897132894d0c2bf9638483d9ecd601782e90aa96c4",
+  "mode": "smoke",
+  "profile": {
+    "base_url": "http://127.0.0.1:11435",
+    "description": "Installed generation model; synthetic connection tests only, not benchmark scoring.",
+    "max_output_tokens": 2048,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "num_ctx": 32768,
+    "provider": "ollama",
+    "seed": 42,
+    "smoke_only": true,
+    "temperature": 0,
+    "think": null,
+    "timeout_seconds": 300
+  },
+  "researcher_source_review": "PENDING",
+  "source_run": null
+}

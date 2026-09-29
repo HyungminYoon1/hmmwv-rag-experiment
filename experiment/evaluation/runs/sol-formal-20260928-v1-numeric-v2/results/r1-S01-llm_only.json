@@ -1,0 +1,191 @@
+{
+  "at": "2026-09-28T09:56:40.084481+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "bc2c499ca95bea5e7e83375ed15eb5b0dd44df4ce9ee459836d7a5f52869de42",
+  "original_result_sha256": "8c78eeec7552773aac365e4051f78044a4171a4a80e04bbce88c69e158229a87",
+  "result": {
+    "attempt_key": "r1-S01-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 22.155279500002507,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S01",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": false,
+        "kind": "full_abstention",
+        "reason": "The response says it lacks the reference and cannot identify the symptoms; it provides no symptoms or other technical answer."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8946441430969455,
+          0.8946441430969455,
+          0.8946441430969455
+        ],
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          }
+        ],
+        "response_vectors_hash": "d8ea94c36856eee7636648f03c38b54fc87fce79029da36d2bcead54794dfd63",
+        "score": 0.0
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The provided reference contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        }
+      ],
+      "claims_raw": [
+        "The provided reference contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S01-A01",
+            "reason": "The response does not name the symptom that the engine does not start."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S01-A02",
+            "reason": "The response does not name the symptom that the engine starts but immediately stops."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S01-A03",
+            "reason": "The response does not name the symptom that the engine is very hard to start."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt does not identify its source, so this absence cannot be established.",
+              "statement": "The provided reference contains no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8946441430969455,
+          0.8946441430969455,
+          0.8946441430969455
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d8ea94c36856eee7636648f03c38b54fc87fce79029da36d2bcead54794dfd63"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8946441430969455,
+          0.8946441430969455,
+          0.8946441430969455
+        ],
+        "decimal50_cosines": [
+          "0.89464414309694540051042685612096187159340388014010",
+          "0.89464414309694540051042685612096187159340388014010",
+          "0.89464414309694540051042685612096187159340388014010"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests in TM 9-2320-280-20-1, Volume 1?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "d8ea94c36856eee7636648f03c38b54fc87fce79029da36d2bcead54794dfd63",
+        "score": 0.0
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "b46b39ec0f224b50560c08963165044f3a5450c33a70ec8944012b71f221cc86"
+}

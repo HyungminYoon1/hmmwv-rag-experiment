@@ -1,0 +1,198 @@
+{
+  "at": "2026-09-29T05:36:22.874935+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "00498b27fd546f66ddd8ed27ae128da24669c6c57cf0aa04176ba061522f2bb5",
+  "result": {
+    "attempt_key": "r1-S03-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 12.957450299999437,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7456127312828894
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7456127312828894
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S03",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It gives two specific cooling functions but also disclaims access to the specific test details."
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says specific test details are not available in the provided reference.",
+          "The answer describes its basis as standard maintenance practices and system design principles and cites TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        ],
+        "shared_conditions": [
+          "For the HMMWV (M998-series) top-level Cooling System Tests"
+        ],
+        "statements": [
+          {
+            "answer_quote": "Cooling system circulation and flow verification",
+            "statement": "For the HMMWV (M998-series) top-level Cooling System Tests, one major function is cooling-system circulation and flow verification."
+          },
+          {
+            "answer_quote": "Engine cooling performance under load and ambient temperature conditions",
+            "statement": "For the HMMWV (M998-series) top-level Cooling System Tests, one major function is engine cooling performance under load and ambient temperature conditions."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "Cooling system circulation and flow verification",
+          "id": "C001",
+          "text": "For the HMMWV (M998-series) top-level Cooling System Tests, one major function is cooling-system circulation and flow verification."
+        },
+        {
+          "answer_quote": "Engine cooling performance under load and ambient temperature conditions",
+          "id": "C002",
+          "text": "For the HMMWV (M998-series) top-level Cooling System Tests, one major function is engine cooling performance under load and ambient temperature conditions."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S03-A01",
+            "reason": "The response describes circulation and engine cooling performance but does not identify the water-cooling system."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S03-A02",
+            "reason": "The response does not identify the oil-cooling system."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage identifies problems with the water-cooling or oil-cooling system, but does not identify circulation and flow verification as a major function.",
+              "statement": "For the HMMWV (M998-series) top-level Cooling System Tests, one major function is cooling-system circulation and flow verification.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not identify performance under load or ambient temperature conditions as a major function.",
+              "statement": "For the HMMWV (M998-series) top-level Cooling System Tests, one major function is engine cooling performance under load and ambient temperature conditions.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.011670774321902666,
+        "cosine_similarities": [
+          0.7440199198216682,
+          0.7487983286111474,
+          0.7440199454158528
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7456127312828894,
+        "query_vector_hash": "d41614ead9b1c8fbedc8fdb61f290245ce6adf1f458ef59814d571bdf7bc58b4",
+        "ragas_score": 0.7339419569609867,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "c1dcb96bb10297654f2367a05b17e2448f691520168a76d7b454d7e7b211a06b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7440199198216682,
+          0.7487983286111474,
+          0.7440199454158528
+        ],
+        "decimal50_cosines": [
+          "0.74401991982166811445936281648410737308321181440305",
+          "0.74879832861114726671045372991237990786846765997046",
+          "0.74401994541585272197426027398471587846160582863071"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": {
+          "code": "RAGAS_ALGORITHM_MISMATCH",
+          "type": "EvaluationError"
+        },
+        "original_metrics": {
+          "ar_raw": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          },
+          "ar_report": {
+            "status": "N/A_EVAL_ERROR",
+            "value": null
+          }
+        },
+        "query_vector_hash": "d41614ead9b1c8fbedc8fdb61f290245ce6adf1f458ef59814d571bdf7bc58b4",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What two major cooling functions are covered by the top-level Cooling System Tests for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the two major cooling functions covered by the top-level Cooling System Tests for the HMMWV (M998-series)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What two major cooling functions are covered by the top-level Cooling System Tests for the HMMWV (M998-series)?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "c1dcb96bb10297654f2367a05b17e2448f691520168a76d7b454d7e7b211a06b",
+        "score": 0.7456127312828894
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "e0ec7335da947c3be5775f30a250925ec3383919f156c6a77170ac70fa594ecb",
+  "source_result_sha256": "80e1bcd068b9b7794ac8b6266df5882ce8f75a21afe25c3d1acc1b6a16dd3dc9"
+}

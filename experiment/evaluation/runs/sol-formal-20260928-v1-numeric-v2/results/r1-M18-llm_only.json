@@ -1,0 +1,267 @@
+{
+  "at": "2026-09-28T09:56:40.019378+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "927ade69ef339ce46eeb45c41eae6ffd9ba4f87f645b0eec89ea62fd2e30171b",
+  "original_result_sha256": "1de2e032335e8e2b38248b6a1a0bc95f6c80553bc20590356d72587ee35c6c99",
+  "result": {
+    "attempt_key": "r1-M18-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 37.3642286999966,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.929061116056193
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.929061116056193
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.14285714285714285
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M18",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives concrete answers about semiannual checks and required and prohibited cleaning methods, despite noting a lack of specific citations."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9454127058098976,
+          0.9587017331732326,
+          0.8830689091854489
+        ],
+        "query_vector_hash": "111c1bc970ed0727697149fa879dd211542010ec7df3e5930b11c193f9beca11",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and how should the air-intake CDR valve be cleaned?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and what method should be used to clean the air-intake CDR valve?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and how should the HMMWV air-intake CDR valve be cleaned?"
+          }
+        ],
+        "response_vectors_hash": "867195f8450d45e2cc469ad48c93a3978eded6983a7657410e478ede9eafa287",
+        "score": 0.929061116056193
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "At an annual inspection, semiannual checks are not required."
+        },
+        {
+          "id": "C002",
+          "text": "Annual inspections are conducted separately from semiannual checks."
+        },
+        {
+          "id": "C003",
+          "text": "Semiannual checks are not explicitly mandated in the provided reference material."
+        },
+        {
+          "id": "C004",
+          "text": "A soft brush or compressed air must be used to remove debris from the air-intake CDR valve."
+        },
+        {
+          "id": "C005",
+          "text": "Solvents or abrasive materials must not be used to clean the air-intake CDR valve."
+        },
+        {
+          "id": "C006",
+          "text": "The annual-inspection and air-intake CDR valve information is based on standard maintenance practices for HMMWV (M998-series) as outlined in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        },
+        {
+          "id": "C007",
+          "text": "Specific chunk IDs are not available in the reference."
+        }
+      ],
+      "claims_raw": [
+        "At an annual inspection, semiannual checks are not required.",
+        "Annual inspections are conducted separately from semiannual checks.",
+        "Semiannual checks are not explicitly mandated in the provided reference material.",
+        "A soft brush or compressed air must be used to remove debris from the air-intake CDR valve.",
+        "Solvents or abrasive materials must not be used to clean the air-intake CDR valve.",
+        "The annual-inspection and air-intake CDR valve information is based on standard maintenance practices for HMMWV (M998-series) as outlined in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+        "Specific chunk IDs are not available in the reference."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "semiannual checks are not required",
+            "fulfilled": 0,
+            "id": "M18-A01",
+            "reason": "Contradicts the requirement to perform semiannual inspections at the annual inspection."
+          },
+          {
+            "answer_quote": "a soft brush or compressed air",
+            "fulfilled": 0,
+            "id": "M18-A02",
+            "reason": "The authorized method is wiping the CDR valve with a rag."
+          },
+          {
+            "answer_quote": "the use of solvents or abrasive materials is prohibited",
+            "fulfilled": 0,
+            "id": "M18-A03",
+            "reason": "It prohibits solvent but omits that solvent damages the diaphragm."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.14285714285714285,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The annual inspection requires all (S) inspections.",
+              "statement": "At an annual inspection, semiannual checks are not required.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Annual inspections include all (S) inspections.",
+              "statement": "Annual inspections are conducted separately from semiannual checks.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The reference explicitly requires (S) inspections at the annual inspection.",
+              "statement": "Semiannual checks are not explicitly mandated in the provided reference material.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Only wiping with a rag is authorized for cleaning the CDR valve.",
+              "statement": "A soft brush or compressed air must be used to remove debris from the air-intake CDR valve.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:cdr"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve. Wiping with a rag\nis the only authorized method of\ncleaning."
+              ],
+              "reason": "Solvent is prohibited, and wiping with a rag is the only authorized cleaning method.",
+              "statement": "Solvents or abrasive materials must not be used to clean the air-intake CDR valve.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context does not identify that manual, volume, or edition.",
+              "statement": "The annual-inspection and air-intake CDR valve information is based on standard maintenance practices for HMMWV (M998-series) as outlined in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not state whether specific chunk IDs are available.",
+              "statement": "Specific chunk IDs are not available in the reference.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.9454127058098976,
+          0.9587017331732326,
+          0.8830689091854489
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.929061116056193,
+        "query_vector_hash": "111c1bc970ed0727697149fa879dd211542010ec7df3e5930b11c193f9beca11",
+        "ragas_score": 0.929061116056193,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "867195f8450d45e2cc469ad48c93a3978eded6983a7657410e478ede9eafa287"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9454127058098976,
+          0.9587017331732326,
+          0.8830689091854489
+        ],
+        "decimal50_cosines": [
+          "0.94541270580989756089726342206540890452620722213098",
+          "0.95870173317323235943236180455338251770297576942402",
+          "0.88306890918544862356534440390048817598826535224505"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.929061116056193
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.929061116056193
+          }
+        },
+        "query_vector_hash": "111c1bc970ed0727697149fa879dd211542010ec7df3e5930b11c193f9beca11",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and how should the air-intake CDR valve be cleaned?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and what method should be used to clean the air-intake CDR valve?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and how should the HMMWV air-intake CDR valve be cleaned?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "867195f8450d45e2cc469ad48c93a3978eded6983a7657410e478ede9eafa287",
+        "score": 0.929061116056193
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "d3c88f94fd8991f35cd7b72263f2cf587b65f4a1e0d2953ce65681814ce7d800"
+}

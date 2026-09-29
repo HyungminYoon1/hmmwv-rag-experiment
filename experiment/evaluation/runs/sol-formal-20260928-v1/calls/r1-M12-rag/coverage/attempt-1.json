@@ -1,0 +1,202 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:11:30.567640+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated)",
+        "fulfilled": 1,
+        "id": "M12-A01",
+        "reason": "Names both applicable forms."
+      },
+      {
+        "answer_quote": "immediately after the PMCS, before corrective action is taken",
+        "fulfilled": 1,
+        "id": "M12-A02",
+        "reason": "Gives both required timing conditions."
+      },
+      {
+        "answer_quote": "40 lb-ft (54 N•m)",
+        "fulfilled": 1,
+        "id": "M12-A03",
+        "reason": "Matches the specified starter mounting bolt torque."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586690,
+      "conversation": null,
+      "created_at": 1790586687.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_00f772ffaa0410aa016aba2f3fe08887d08d5a3fc5ec082e1f",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"M12-A01\",\"fulfilled\":1,\"answer_quote\":\"DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated)\",\"reason\":\"Names both applicable forms.\"},{\"id\":\"M12-A02\",\"fulfilled\":1,\"answer_quote\":\"immediately after the PMCS, before corrective action is taken\",\"reason\":\"Gives both required timing conditions.\"},{\"id\":\"M12-A03\",\"fulfilled\":1,\"answer_quote\":\"40 lb-ft (54 N•m)\",\"reason\":\"Matches the specified starter mounting bolt torque.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_00f772ffaa0410aa016aba2f40c55087d09334e84970919383",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 989,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 129,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1118
+      },
+      "user": null
+    },
+    "request_id": "resp_00f772ffaa0410aa016aba2f3fe08887d08d5a3fc5ec082e1f",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"M12-A01\",\"fulfilled\":1,\"answer_quote\":\"DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated)\",\"reason\":\"Names both applicable forms.\"},{\"id\":\"M12-A02\",\"fulfilled\":1,\"answer_quote\":\"immediately after the PMCS, before corrective action is taken\",\"reason\":\"Gives both required timing conditions.\"},{\"id\":\"M12-A03\",\"fulfilled\":1,\"answer_quote\":\"40 lb-ft (54 N•m)\",\"reason\":\"Matches the specified starter mounting bolt torque.\"}]}",
+    "usage": {
+      "input_tokens": 989,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 129,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1118
+    }
+  },
+  "record_hash": "f20aea73fbd7d6d7156b72f27a8fd54a51a6ce61bf6dee17d07f44a93dab33f6",
+  "request_hash": "50f5acfd561e5c380607872987fb687f2defb189a448fdf399e57568ed827cd4",
+  "started_at": "2026-09-28T09:11:27.731432+00:00",
+  "status": "OK"
+}

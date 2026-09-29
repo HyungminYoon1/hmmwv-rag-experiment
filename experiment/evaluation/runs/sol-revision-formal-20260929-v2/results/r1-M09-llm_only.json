@@ -1,0 +1,290 @@
+{
+  "at": "2026-09-29T04:52:01.570961+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "dfaf462b0488daa7c470204b017429b26847b63aa7d5882e9abfa96503b94dcc",
+  "result": {
+    "attempt_key": "r1-M09-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 27.260597399999824,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7204786141703067
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7204786141703067
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.4
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      }
+    },
+    "question_id": "M09",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "The response says the exact fluid routing is unspecified, but provides technical claims about the cooler and an approximate oil pressure of 40–50 psi at 2,000 RPM."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7221037407910604,
+          0.719042719019345,
+          0.7202893827005146
+        ],
+        "query_vector_hash": "c21b8eb625e76ea4ab9f755aba4928cc7eaa4dcee379b3ab3a2d4d2ed9305148",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the HMMWV M998-series separate oil cooler do, and what is the approximate engine-oil pressure at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the purpose of the HMMWV M998-series separate oil cooler, and what is the approximate engine-oil pressure at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the M998-series HMMWV separate oil cooler do, and what is the approximate engine-oil pressure at 2,000 RPM?"
+          }
+        ],
+        "response_vectors_hash": "f5b8f8b977833bba8835705ba6f9e7a8b55f4a487d9fb8a92eca89c764fc7fb1",
+        "score": 0.7204786141703067
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer says specific upper- and lower-half fluid routing is not explicitly detailed in the available reference material.",
+          "The answer attributes the pressure value to TM 9-2320-280-20-1 (Volume 1, 1996, including Change 2, 2004).",
+          "The answer says the exact fluid distribution is not specified in the provided reference and recommends consulting the full manual."
+        ],
+        "shared_conditions": [
+          "The cooler claims concern the separate oil cooler on an M998-series HMMWV.",
+          "The pressure claim concerns the M998-series HMMWV lubrication-test chart at 2,000 RPM under standard operating conditions."
+        ],
+        "statements": [
+          {
+            "answer_quote": "The HMMWV (M998-series) separate oil cooler is designed to cool engine oil",
+            "statement": "The M998-series HMMWV separate oil cooler is designed to cool engine oil."
+          },
+          {
+            "answer_quote": "the upper half typically cooling the oil as it passes through the cooler",
+            "statement": "In the M998-series HMMWV separate oil cooler, the upper half typically cools engine oil as it passes through."
+          },
+          {
+            "answer_quote": "the lower half providing additional cooling or recirculation depending on operating conditions",
+            "statement": "In the M998-series HMMWV separate oil cooler, the lower half provides additional cooling or recirculation, depending on operating conditions."
+          },
+          {
+            "answer_quote": "standard maintenance practices suggest that engine oil is cooled throughout the cooler, with the upper and lower sections contributing to overall cooling efficiency",
+            "statement": "For the M998-series HMMWV separate oil cooler, standard maintenance practices suggest that engine oil is cooled throughout it and that both halves contribute to cooling efficiency."
+          },
+          {
+            "answer_quote": "the approximate engine-oil pressure at 2,000 RPM is 40 to 50 psi. This value is based on standard operating conditions and typical performance for the M998-series HMMWV.",
+            "statement": "For the M998-series HMMWV under standard operating conditions, the lubrication-test chart shows approximately 40 to 50 psi engine-oil pressure at 2,000 RPM."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The HMMWV (M998-series) separate oil cooler is designed to cool engine oil",
+          "id": "C001",
+          "text": "The M998-series HMMWV separate oil cooler is designed to cool engine oil."
+        },
+        {
+          "answer_quote": "the upper half typically cooling the oil as it passes through the cooler",
+          "id": "C002",
+          "text": "In the M998-series HMMWV separate oil cooler, the upper half typically cools engine oil as it passes through."
+        },
+        {
+          "answer_quote": "the lower half providing additional cooling or recirculation depending on operating conditions",
+          "id": "C003",
+          "text": "In the M998-series HMMWV separate oil cooler, the lower half provides additional cooling or recirculation, depending on operating conditions."
+        },
+        {
+          "answer_quote": "standard maintenance practices suggest that engine oil is cooled throughout the cooler, with the upper and lower sections contributing to overall cooling efficiency",
+          "id": "C004",
+          "text": "For the M998-series HMMWV separate oil cooler, standard maintenance practices suggest that engine oil is cooled throughout it and that both halves contribute to cooling efficiency."
+        },
+        {
+          "answer_quote": "the approximate engine-oil pressure at 2,000 RPM is 40 to 50 psi. This value is based on standard operating conditions and typical performance for the M998-series HMMWV.",
+          "id": "C005",
+          "text": "For the M998-series HMMWV under standard operating conditions, the lubrication-test chart shows approximately 40 to 50 psi engine-oil pressure at 2,000 RPM."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M09-A01",
+            "reason": "The answer says the upper half cools engine oil, not transmission oil."
+          },
+          {
+            "answer_quote": "engine oil is cooled throughout the cooler, with the upper and lower sections contributing to overall cooling efficiency",
+            "fulfilled": 1,
+            "id": "M09-A02",
+            "reason": "This includes engine oil being cooled in the lower section."
+          },
+          {
+            "answer_quote": "the approximate engine-oil pressure at 2,000 RPM is 40 to 50 psi",
+            "fulfilled": 1,
+            "id": "M09-A03",
+            "reason": "Matches the chart value."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.4,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002106"
+              ],
+              "evidence_quotes": [
+                "A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil."
+              ],
+              "reason": "The separate cooler has a section for engine oil.",
+              "statement": "The M998-series HMMWV separate oil cooler is designed to cool engine oil.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000599"
+              ],
+              "evidence_quotes": [
+                "OIL COOLER – Directs engine oil (lower half of cooler) and transmission oil (upper half of cooler)\nthrough a series of fins or baffles so outside air can remove heat from oil."
+              ],
+              "reason": "The source assigns transmission oil, not engine oil, to the upper half.",
+              "statement": "In the M998-series HMMWV separate oil cooler, the upper half typically cools engine oil as it passes through.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source says the lower half cools engine oil; it does not describe additional cooling or recirculation that varies with operating conditions.",
+              "statement": "In the M998-series HMMWV separate oil cooler, the lower half provides additional cooling or recirculation, depending on operating conditions.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C002106"
+              ],
+              "evidence_quotes": [
+                "The top half is for transmission oil.  The bottom half is for engine oil."
+              ],
+              "reason": "The source assigns the upper half to transmission oil and the lower half to engine oil; it gives no maintenance-practice basis for the claim.",
+              "statement": "For the M998-series HMMWV separate oil cooler, standard maintenance practices suggest that engine oil is cooled throughout it and that both halves contribute to cooling efficiency.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C002424"
+              ],
+              "evidence_quotes": [
+                "REFERENCE INFORMATION\nENGINE LUBRICATION\n\nENGINE RPM: 2000\nAPPROXIMATE OIL PRESSURE: 40-50 PSI"
+              ],
+              "reason": "The supplied engine-lubrication reference gives that RPM and approximate pressure.",
+              "statement": "For the M998-series HMMWV under standard operating conditions, the lubrication-test chart shows approximately 40 to 50 psi engine-oil pressure at 2,000 RPM.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.7221037407910604,
+          0.719042719019345,
+          0.7202893827005146
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7204786141703067,
+        "query_vector_hash": "c21b8eb625e76ea4ab9f755aba4928cc7eaa4dcee379b3ab3a2d4d2ed9305148",
+        "ragas_score": 0.7204786141703067,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "f5b8f8b977833bba8835705ba6f9e7a8b55f4a487d9fb8a92eca89c764fc7fb1"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7221037407910604,
+          0.719042719019345,
+          0.7202893827005146
+        ],
+        "decimal50_cosines": [
+          "0.72210374079106046158082536650936247016561499084875",
+          "0.71904271901934491722081510098236191859255386751191",
+          "0.72028938270051469371323419024101623600553680305729"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.7204786141703067
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.7204786141703067
+          }
+        },
+        "query_vector_hash": "c21b8eb625e76ea4ab9f755aba4928cc7eaa4dcee379b3ab3a2d4d2ed9305148",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does the HMMWV M998-series separate oil cooler do, and what is the approximate engine-oil pressure at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the purpose of the HMMWV M998-series separate oil cooler, and what is the approximate engine-oil pressure at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does the M998-series HMMWV separate oil cooler do, and what is the approximate engine-oil pressure at 2,000 RPM?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "f5b8f8b977833bba8835705ba6f9e7a8b55f4a487d9fb8a92eca89c764fc7fb1",
+        "score": 0.7204786141703067
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "9689454ebefa7b1a93feeaba09b0ae3946581e29677c69ab06729b235ab86f11"
+}

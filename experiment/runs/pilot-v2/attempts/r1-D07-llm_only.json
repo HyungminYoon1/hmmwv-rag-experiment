@@ -1,0 +1,396 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:18:08.317992+00:00",
+  "evaluation_answer": "The first and fourth gear ratios of the 4L80-E transmission in Table 1-2 are not available in the provided reference material. No excerpts were supplied to support this specific query. Therefore, based on the available information, this fact cannot be confirmed or stated.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 235,
+  "key": "r1-D07-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nWhat are the first and fourth gear ratios of the 4L80-E transmission in Table 1-2?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "What are the first and fourth gear ratios of the 4L80-E transmission in Table 1-2?",
+  "question_id": "D07",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:25.172188307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:23.195716807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4824842240.0,
+    "max_actual_interval_ms": 109.61689999930968,
+    "peak_rss_bytes": 2870972416,
+    "peak_vram_bytes": 4836179968,
+    "pids": [
+      13944,
+      30736,
+      37504,
+      37552,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4372.5935751,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4372.7008857,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4372.7957162,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4372.9028774,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4372.9953887,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4373.1018322,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4373.1951211,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4373.3039189,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4373.3966458,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4373.5037118,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4373.5961908,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57675776,
+          "30736": 12607488,
+          "37504": 2616135680,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2790408192,
+        "vram_bytes": 4824842240
+      },
+      {
+        "monotonic": 4373.7053007,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57720832,
+          "30736": 12607488,
+          "37504": 2696654848,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2870972416,
+        "vram_bytes": 4824514560
+      },
+      {
+        "monotonic": 4373.7980366,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57720832,
+          "30736": 12607488,
+          "37504": 2696654848,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2870972416,
+        "vram_bytes": 4824514560
+      },
+      {
+        "monotonic": 4373.9038565,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57720832,
+          "30736": 12607488,
+          "37504": 2696654848,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2870972416,
+        "vram_bytes": 4835459072
+      },
+      {
+        "monotonic": 4373.9954033,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57720832,
+          "30736": 12607488,
+          "37504": 2696654848,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2870972416,
+        "vram_bytes": 4835524608
+      },
+      {
+        "monotonic": 4374.1050202,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57720832,
+          "30736": 12607488,
+          "37504": 2696654848,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2870972416,
+        "vram_bytes": 4835524608
+      },
+      {
+        "monotonic": 4374.199458,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57720832,
+          "30736": 12607488,
+          "37504": 2696654848,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2870972416,
+        "vram_bytes": 4835524608
+      },
+      {
+        "monotonic": 4374.3064392,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57720832,
+          "30736": 12607488,
+          "37504": 2696654848,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2870972416,
+        "vram_bytes": 4836179968
+      },
+      {
+        "monotonic": 4374.399828,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 57720832,
+          "30736": 12607488,
+          "37504": 2696654848,
+          "37552": 96546816,
+          "37564": 7442432
+        },
+        "rss_bytes": 2870972416,
+        "vram_bytes": 4836179968
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:18:08.3174125Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 57,
+    "eval_duration": 806618000,
+    "load_duration": 1280800,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 235,
+    "prompt_eval_duration": 49152000,
+    "response": "The first and fourth gear ratios of the 4L80-E transmission in Table 1-2 are not available in the provided reference material. No excerpts were supplied to support this specific query. Therefore, based on the available information, this fact cannot be confirmed or stated.",
+    "total_duration": 889392800
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 4,
+  "started_at": "2026-09-28T04:18:07.410395+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 907.8196999998909,
+    "retrieval": null,
+    "total": 907.8196999998909
+  },
+  "unprovided_citations": []
+}

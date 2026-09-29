@@ -1,0 +1,152 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:41:31.034632+00:00",
+  "parsed": {
+    "statements": [
+      "The thermostat starts to open at a coolant temperature of 190°F (87.7°C)."
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588490,
+      "conversation": null,
+      "created_at": 1790588489.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0692de5deefdbf09016aba3649044887d09f711ef277dadf74",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[\"The thermostat starts to open at a coolant temperature of 190°F (87.7°C).\"]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0692de5deefdbf09016aba364a43cc87d096cffbb174e8c3c0",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "StatementGeneratorOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for statement generation.",
+            "properties": {
+              "statements": {
+                "description": "The generated statements from the answer",
+                "items": {
+                  "type": "string"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "StatementGeneratorOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 545,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 34,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 579
+      },
+      "user": null
+    },
+    "request_id": "resp_0692de5deefdbf09016aba3649044887d09f711ef277dadf74",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[\"The thermostat starts to open at a coolant temperature of 190°F (87.7°C).\"]}",
+    "usage": {
+      "input_tokens": 545,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 34,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 579
+    }
+  },
+  "record_hash": "9ba9d08c61dfcf497ab234241668d7cd1134b31de8285b2f819da784cd70d836",
+  "request_hash": "7e88c46402ba76acce0cd391e54ba559f9be1bfa21f737488fbbba92beb268ee",
+  "started_at": "2026-09-28T09:41:28.876843+00:00",
+  "status": "OK"
+}

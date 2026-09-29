@@ -1,0 +1,832 @@
+{
+  "citation_ids": [
+    "[C001085]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:37:23.995044+00:00",
+  "evaluation_answer": "The reference material does not specify the time-or-mileage interval that triggers biennial PMCS. It only outlines semi-annual, annual, and biennial checks in general terms , but no specific interval (in miles or time) is provided for biennial PMCS. Additionally, the timing of the Final Road Test during biennial service is not specified in the given excerpts.\n\nTherefore, based on the provided reference, I do not know the exact time-or-mileage interval that triggers biennial PMCS or when the Final Road Test must occur during that service.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1621,
+  "key": "r2-M21-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C001039] TM 9-2320-280-20-1 | PDF 116 | Printed 2-25\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 27\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Final Road\nTest\nNOTE\nIf Annual/Biennial Service is being\nperformed, then Final Road Test will\nbe completed after last Annual/\nBiennial task is complete.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 27\nITEM TO BE INSPECTED: Final Road\nTest\nNOT FULLY MISSION CAPABLE IF: Vehicle fails to operate\nproperly.\nPROCEDURES: Check vehicle for proper operation\nand performance.\n\n[C000883] TM 9-2320-280-20-1 | PDF 96,97 | Printed 2-5,2-6\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV\nITEM NO.: 1\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Pre-Service\nChecks\nPRIOR TO ROAD TEST\nEnsure Operator/Crew has\nperformed PMCS listed in TM 9-\n2320-280-10.\nROAD TEST\nMaintenance personnel will be with\nvehicle operator to assist in perform-\ning PMCS checks and verify pre-\nservice checks.\n\nsual noises and difficulty\nin shifting in any gear range.\ne. Test for response to accelerator\nfeed. Observe for sticking pedal.\nf. With vehicle speed approximately 5\nmph (8 kph) turn steering wheel to\nleft, then right, to detect hard steering,\nsteering backlash, or shimmy. Vehicle\nshould respond instantly. With vehicle\nmoving on straight, level terrain, lightly\nhold steering wheel to check for pull\nand wandering.\ng. Apply brake pedal with steady force.\nVehicle should slow and stop without\npulling to one side or jerking. Release\nbrake pedal. The brakes should release\nimmediately and without difficulty.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 1\nITEM TO BE INSPECTED: Pre-Service\nChecks\n(Cont'd)\nNOT FULLY MISSION CAPABLE IF: h. Parking brake\ndoesn't hold vehicle\nstationary.\nPROCEDURES: h. Bring vehicle to full stop. Engage\nparking brake while transmission is\nstill in “D’ (drive) or “Ⓓ” (overdrive)\nfor A2 series vehicles. Vehicle should\nremain stationary.\n\ni. Observe vehicle response to road\nshock. Side sway or continuous bouncing\nindicates a malfunction.\n\n[C000882] TM 9-2320-280-20-1 | PDF 96 | Printed 2-5\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV\nITEM NO.: 1\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Pre-Service\nChecks\nPRIOR TO ROAD TEST\nEnsure Operator/Crew has\nperformed PMCS listed in TM 9-\n2320-280-10.\nROAD TEST\nMaintenance personnel will be with\nvehicle operator to assist in perform-\ning PMCS checks and verify pre-\nservice checks.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 1\nITEM TO BE INSPECTED: Pre-Service\nChecks\nNOT FULLY MISSION CAPABLE IF: a. Starter inoperative or\nmakes excessive grinding\nsound.\nb. Engine knocks, rattles,\nor smokes excessively.\nc. Transmission shifts\nimproperly, does not shift,\nor makes excessive noises.\nd. Lever inoperable or\ndoes not engage in all\nranges with engine not\nrunning.\ne. Pedal sticking or\nbinding.\nf. Steering binds, grabs,\nwanders, or has excessive\nfreeplay.\ng. Brakes chatter, pull\nto one side, or inoperative.\nBrakes will not release.\nPROCEDURES: a. Notice if starter engages smoothly\nand turns the engine at normal\ncranking speed.\nb. Listen for unusual noise at idle,\nat operating speed, and under\nacceleration. Be alert for excessive\nvibration and the smell of oil, fuel,\nand exhaust.\nc. Check for transmission response to\nshifting and for smoothness of\noperation in all gear ranges. Be alert\nfor unusual noises and difficulty in\nshifting in any speed range.\nNOTE\nIf desired range cannot be selected,\nturn engine off, select range, and re-\nstart engine.\nd. Check for transfer response to\nshifting and for smoothness of\noperation in all gear ranges. Be\nalert for unusual noises and difficulty\nin shifting in any gear range.\ne. Test for response to accelerator\nfeed. Observe for sticking pedal.\nf. With vehicle speed approximately 5\nmph (8 kph) turn steering wheel to\nleft, then right, to detect hard steering,\nsteering backlash, or shimmy. Vehicle\nshould respond instantly. With vehicle\nmoving on straight, level terrain, lightly\nhold steering wheel to check for pull\nand wandering.\ng. Apply brake\n\n[C000871] TM 9-2320-280-20-1 | PDF 95 | Printed 2-4\n2-11. SPECIFIC PMCS PROCEDURES\n\n(a) Semiannual (six month) checks;\n(b) Annual (yearly) checks; and\n(c) Biennial (every two years) checks.\n(3) Item To Be Inspected. Lists the system, common name, or location of the item to be inspected.\n(4) Procedures. Provides instructions for servicing, inspection, lubrication, replacement, or\nadjustment, and in some cases, having item repaired at a higher level.\n\n[C001085] TM 9-2320-280-20-1 | PDF 119 | Printed 2-28\nANNUAL (6,000 MILE) PMCS PARTS LIST\nPART\nITEM\nNSN\nNOMENCLATURE\nQTY\nNUMBER\nNO.\n\nITEM NO.: 11.\nPART NUMBER: PH13\nNSN: 2940-00-082-6034\nNOMENCLATURE: Filter, Fluid, Engine Oil\nQTY: 1\nQUESTION:\nWhat time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 1620,
+  "question": "What time-or-mileage interval triggers biennial PMCS, and when must the Final Road Test occur during that service?",
+  "question_id": "M21",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:24:40.849820307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:24:37.735180207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4870914048.0,
+    "max_actual_interval_ms": 109.90980000042327,
+    "peak_rss_bytes": 13440536576,
+    "peak_vram_bytes": 4870914048,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5527.1666154,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5527.2745648,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5527.3674211,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5527.4772382,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5527.5717478,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5527.6808757,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5527.7748102,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5527.8671013,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5527.9754814,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.0701153,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.1800251,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.2736189,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103297024,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9053528064,
+          "37564": 7958528
+        },
+        "rss_bytes": 13336408064,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.3670821,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103301120,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 9157652480,
+          "37564": 7958528
+        },
+        "rss_bytes": 13440536576,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.4754167,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.5678817,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.6765011,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.7706583,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.8788084,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5528.9713173,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4870914048
+      },
+      {
+        "monotonic": 5529.079145,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869537792
+      },
+      {
+        "monotonic": 5529.1716315,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869537792
+      },
+      {
+        "monotonic": 5529.2804469,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869537792
+      },
+      {
+        "monotonic": 5529.3726854,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869537792
+      },
+      {
+        "monotonic": 5529.4814278,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869537792
+      },
+      {
+        "monotonic": 5529.5736928,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869996544
+      },
+      {
+        "monotonic": 5529.6678884,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869996544
+      },
+      {
+        "monotonic": 5529.7754535,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869996544
+      },
+      {
+        "monotonic": 5529.8820725,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869996544
+      },
+      {
+        "monotonic": 5529.9770009,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869996544
+      },
+      {
+        "monotonic": 5530.0715607,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103305216,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4045832192,
+          "35444": 8089600,
+          "36040": 101101568,
+          "37504": 8900907008,
+          "37564": 7958528
+        },
+        "rss_bytes": 13183795200,
+        "vram_bytes": 4869996544
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:37:23.9943723Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 121,
+    "eval_duration": 1771816000,
+    "load_duration": 2023900,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 1620,
+    "prompt_eval_count": 1621,
+    "prompt_eval_duration": 15933000,
+    "response": "The reference material does not specify the time-or-mileage interval that triggers biennial PMCS. It only outlines semi-annual, annual, and biennial checks in general terms [C001085], but no specific interval (in miles or time) is provided for biennial PMCS. Additionally, the timing of the Final Road Test during biennial service is not specified in the given excerpts.\n\nTherefore, based on the provided reference, I do not know the exact time-or-mileage interval that triggers biennial PMCS or when the Final Road Test must occur during that service.",
+    "total_duration": 1906523700
+  },
+  "retrieval": {
+    "embedding_ms": 90.77609999985725,
+    "items": [
+      {
+        "body_end": 202,
+        "body_start": 0,
+        "id": "C001039",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          116
+        ],
+        "prefix_chars": 292,
+        "printed_pages": [
+          "2-25"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6074975728988647,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "27",
+          "row_ids": [
+            "P0116-T2_1-R02"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 27\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Final Road\nTest\nNOTE\nIf Annual/Biennial Service is being\nperformed, then Final Road Test will\nbe completed after last Annual/\nBiennial task is complete.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 27\nITEM TO BE INSPECTED: Final Road\nTest\nNOT FULLY MISSION CAPABLE IF: Vehicle fails to operate\nproperly.\nPROCEDURES: Check vehicle for proper operation\nand performance.",
+        "text_sha256": "5c34db4a81683ac13dbd3438ca325327d48cee8fcf3e9b2267976e4c1f35af96",
+        "token_count": 136,
+        "unit_id": "U001033",
+        "unit_key": "pmcs:27"
+      },
+      {
+        "body_end": 2232,
+        "body_start": 1172,
+        "id": "C000883",
+        "kind": "pmcs_item",
+        "overlap_chars": 431,
+        "overlap_tokens": 100,
+        "pdf_pages": [
+          96,
+          97
+        ],
+        "prefix_chars": 368,
+        "printed_pages": [
+          "2-5",
+          "2-6"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5938963890075684,
+        "source_issues": [
+          {
+            "description": "PDF의 원형 D를 Ⓓ로 복원했다. batch-006의 전후 문자·원문 이미지 기록을 참조한다.",
+            "id": "OD_SYMBOL",
+            "pdf_page": 97,
+            "status": "SYMBOL_RECOVERED_BY_BATCH006"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "1",
+          "row_ids": [
+            "P0096-T2_1-R02",
+            "P0097-T2_1-R01"
+          ],
+          "source_issues": [
+            "OD_SYMBOL"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV\nITEM NO.: 1\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Pre-Service\nChecks\nPRIOR TO ROAD TEST\nEnsure Operator/Crew has\nperformed PMCS listed in TM 9-\n2320-280-10.\nROAD TEST\nMaintenance personnel will be with\nvehicle operator to assist in perform-\ning PMCS checks and verify pre-\nservice checks.\n\nsual noises and difficulty\nin shifting in any gear range.\ne. Test for response to accelerator\nfeed. Observe for sticking pedal.\nf. With vehicle speed approximately 5\nmph (8 kph) turn steering wheel to\nleft, then right, to detect hard steering,\nsteering backlash, or shimmy. Vehicle\nshould respond instantly. With vehicle\nmoving on straight, level terrain, lightly\nhold steering wheel to check for pull\nand wandering.\ng. Apply brake pedal with steady force.\nVehicle should slow and stop without\npulling to one side or jerking. Release\nbrake pedal. The brakes should release\nimmediately and without difficulty.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 1\nITEM TO BE INSPECTED: Pre-Service\nChecks\n(Cont'd)\nNOT FULLY MISSION CAPABLE IF: h. Parking brake\ndoesn't hold vehicle\nstationary.\nPROCEDURES: h. Bring vehicle to full stop. Engage\nparking brake while transmission is\nstill in “D’ (drive) or “Ⓓ” (overdrive)\nfor A2 series vehicles. Vehicle should\nremain stationary.\n\ni. Observe vehicle response to road\nshock. Side sway or continuous bouncing\nindicates a malfunction.",
+        "text_sha256": "6649618b4fceaf4fc37d4bee028be6c9618089e9159f7199688bc6cccdc4ad5d",
+        "token_count": 369,
+        "unit_id": "U000882",
+        "unit_key": "pmcs:1"
+      },
+      {
+        "body_end": 1603,
+        "body_start": 0,
+        "id": "C000882",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          96
+        ],
+        "prefix_chars": 368,
+        "printed_pages": [
+          "2-5"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5921491980552673,
+        "source_issues": [
+          {
+            "description": "PDF의 원형 D를 Ⓓ로 복원했다. batch-006의 전후 문자·원문 이미지 기록을 참조한다.",
+            "id": "OD_SYMBOL",
+            "pdf_page": 97,
+            "status": "SYMBOL_RECOVERED_BY_BATCH006"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "1",
+          "row_ids": [
+            "P0096-T2_1-R02",
+            "P0097-T2_1-R01"
+          ],
+          "source_issues": [
+            "OD_SYMBOL"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV\nITEM NO.: 1\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Pre-Service\nChecks\nPRIOR TO ROAD TEST\nEnsure Operator/Crew has\nperformed PMCS listed in TM 9-\n2320-280-10.\nROAD TEST\nMaintenance personnel will be with\nvehicle operator to assist in perform-\ning PMCS checks and verify pre-\nservice checks.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 1\nITEM TO BE INSPECTED: Pre-Service\nChecks\nNOT FULLY MISSION CAPABLE IF: a. Starter inoperative or\nmakes excessive grinding\nsound.\nb. Engine knocks, rattles,\nor smokes excessively.\nc. Transmission shifts\nimproperly, does not shift,\nor makes excessive noises.\nd. Lever inoperable or\ndoes not engage in all\nranges with engine not\nrunning.\ne. Pedal sticking or\nbinding.\nf. Steering binds, grabs,\nwanders, or has excessive\nfreeplay.\ng. Brakes chatter, pull\nto one side, or inoperative.\nBrakes will not release.\nPROCEDURES: a. Notice if starter engages smoothly\nand turns the engine at normal\ncranking speed.\nb. Listen for unusual noise at idle,\nat operating speed, and under\nacceleration. Be alert for excessive\nvibration and the smell of oil, fuel,\nand exhaust.\nc. Check for transmission response to\nshifting and for smoothness of\noperation in all gear ranges. Be alert\nfor unusual noises and difficulty in\nshifting in any speed range.\nNOTE\nIf desired range cannot be selected,\nturn engine off, select range, and re-\nstart engine.\nd. Check for transfer response to\nshifting and for smoothness of\noperation in all gear ranges. Be\nalert for unusual noises and difficulty\nin shifting in any gear range.\ne. Test for response to accelerator\nfeed. Observe for sticking pedal.\nf. With vehicle speed approximately 5\nmph (8 kph) turn steering wheel to\nleft, then right, to detect hard steering,\nsteering backlash, or shimmy. Vehicle\nshould respond instantly. With vehicle\nmoving on straight, level terrain, lightly\nhold steering wheel to check for pull\nand wandering.\ng. Apply brake",
+        "text_sha256": "c9d9999cbf954f89cd88db1556d3a47b9e0d4acb6a3e476e1ccf2861f3d3b08d",
+        "token_count": 500,
+        "unit_id": "U000882",
+        "unit_key": "pmcs:1"
+      },
+      {
+        "body_end": 368,
+        "body_start": 0,
+        "id": "C000871",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          95
+        ],
+        "prefix_chars": 32,
+        "printed_pages": [
+          "2-4"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R001023"
+        ],
+        "review_ids": [],
+        "score": 0.5908263325691223,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[5]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "PMCS_OR_MAINTENANCE",
+          "page_layout": "numbered_section",
+          "section": "2-11",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-11. SPECIFIC PMCS PROCEDURES\n\n(a) Semiannual (six month) checks;\n(b) Annual (yearly) checks; and\n(c) Biennial (every two years) checks.\n(3) Item To Be Inspected. Lists the system, common name, or location of the item to be inspected.\n(4) Procedures. Provides instructions for servicing, inspection, lubrication, replacement, or\nadjustment, and in some cases, having item repaired at a higher level.",
+        "text_sha256": "a8b5a70a12ebada9f46b2cbea1bfa5f463f095c0054e78b590aa026f58351a6f",
+        "token_count": 105,
+        "unit_id": "U000871",
+        "unit_key": "region:95:1:5"
+      },
+      {
+        "body_end": 100,
+        "body_start": 0,
+        "id": "C001085",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          119
+        ],
+        "prefix_chars": 79,
+        "printed_pages": [
+          "2-28"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5479795932769775,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "expected_rows": 12,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 11,
+          "table_id": "P0119:annual"
+        },
+        "text": "ANNUAL (6,000 MILE) PMCS PARTS LIST\nPART\nITEM\nNSN\nNOMENCLATURE\nQTY\nNUMBER\nNO.\n\nITEM NO.: 11.\nPART NUMBER: PH13\nNSN: 2940-00-082-6034\nNOMENCLATURE: Filter, Fluid, Engine Oil\nQTY: 1",
+        "text_sha256": "785733c4c1519588729d8889e5cdbd4aa5e7d9cae577a3291e57ed202913427c",
+        "token_count": 91,
+        "unit_id": "U001079",
+        "unit_key": "P0119:annual:row:11"
+      }
+    ],
+    "search_ms": 10.111399999914283
+  },
+  "round": 2,
+  "sequence": 205,
+  "started_at": "2026-09-28T04:37:21.983781+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1910.251100000096,
+    "retrieval": 101.36360000069544,
+    "total": 2011.6147000007913
+  },
+  "unprovided_citations": []
+}

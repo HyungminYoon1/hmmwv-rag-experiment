@@ -1,0 +1,906 @@
+{
+  "citation_ids": [
+    "[C000856]",
+    "[C000961]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:35:04.682722+00:00",
+  "evaluation_answer": "Loose starter mounting bolts are found during PMCS. The shortcoming must be reported on DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated) immediately after the PMCS, before corrective action is taken, and will be recorded in the equipment record . The specified tightening torque for the starter mounting bolts is 40 lb-ft (54 N•m) .",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1795,
+  "key": "r2-M12-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000961] TM 9-2320-280-20-1 | PDF 106 | Printed 2-15\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 13\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Starter\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 13\nITEM TO BE INSPECTED: Starter\nNOT FULLY MISSION CAPABLE IF: a. Mounting bolt\nmissing or will not\ntorque.\nb. Stud nut loose.\nPROCEDURES: CAUTION\nDisconnect negative cable.\na. Inspect starter for mounting\nsecurity. Tighten mounting bolts to\n40 lb-ft (54 N•m).\nb. Inspect cables and studs for loose\nnuts and damage.\n\n[C000846] TM 9-2320-280-20-1 | PDF 93 | Printed 2-2\nThe best way to maintain vehicles covered by this manual is to inspect them on a regular basis so minor\nfaults can be discovered and corrected before they result in serious damage, failure, or injury. All intervals\nare based on normal operation. Hard time intervals may be shortened if your lubricants are contaminated or\nif you are operating the equipment under adverse conditions, including longer-than-usual operating hours.\nHard time intervals may be extended during periods of low activity, though adequate preservation\nprecautions must be taken. This section contains systematic instructions of inspection, adjustment,\nlubrication, and correction of vehicle components to avoid costly repairs or major breakdowns. This is\nPreventive Maintenance Checks and Services (PMCS).\n\n[C000856] TM 9-2320-280-20-1 | PDF 94 | Printed 2-3\nAll vehicle shortcomings will be reported on DA Form 2404 Equipment Inspection and Maintenance\nWorksheet or DA Form 5988-E (automated) (DA Pam 738-750) immediately after the PMCS, and before\ntaking corrective action. All vehicle deficiencies will be reported in the equipment record.\n\n[C000882] TM 9-2320-280-20-1 | PDF 96 | Printed 2-5\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV\nITEM NO.: 1\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Pre-Service\nChecks\nPRIOR TO ROAD TEST\nEnsure Operator/Crew has\nperformed PMCS listed in TM 9-\n2320-280-10.\nROAD TEST\nMaintenance personnel will be with\nvehicle operator to assist in perform-\ning PMCS checks and verify pre-\nservice checks.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 1\nITEM TO BE INSPECTED: Pre-Service\nChecks\nNOT FULLY MISSION CAPABLE IF: a. Starter inoperative or\nmakes excessive grinding\nsound.\nb. Engine knocks, rattles,\nor smokes excessively.\nc. Transmission shifts\nimproperly, does not shift,\nor makes excessive noises.\nd. Lever inoperable or\ndoes not engage in all\nranges with engine not\nrunning.\ne. Pedal sticking or\nbinding.\nf. Steering binds, grabs,\nwanders, or has excessive\nfreeplay.\ng. Brakes chatter, pull\nto one side, or inoperative.\nBrakes will not release.\nPROCEDURES: a. Notice if starter engages smoothly\nand turns the engine at normal\ncranking speed.\nb. Listen for unusual noise at idle,\nat operating speed, and under\nacceleration. Be alert for excessive\nvibration and the smell of oil, fuel,\nand exhaust.\nc. Check for transmission response to\nshifting and for smoothness of\noperation in all gear ranges. Be alert\nfor unusual noises and difficulty in\nshifting in any speed range.\nNOTE\nIf desired range cannot be selected,\nturn engine off, select range, and re-\nstart engine.\nd. Check for transfer response to\nshifting and for smoothness of\noperation in all gear ranges. Be\nalert for unusual noises and difficulty\nin shifting in any gear range.\ne. Test for response to accelerator\nfeed. Observe for sticking pedal.\nf. With vehicle speed approximately 5\nmph (8 kph) turn steering wheel to\nleft, then right, to detect hard steering,\nsteering backlash, or shimmy. Vehicle\nshould respond instantly. With vehicle\nmoving on straight, level terrain, lightly\nhold steering wheel to check for pull\nand wandering.\ng. Apply brake\n\n[C000925] TM 9-2320-280-20-1 | PDF 101,102 | Printed 2-10,2-11\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 10\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Suspension\nand\nSteering\nSystem\nNOTE\nDo not lubricate shock absorber\nbushings, radius rod bushings,\nstabilizer bar bushing, or suspension\narm pivot bushing.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 10\nITEM TO BE INSPECTED: Suspension\nand\nSteering\nSystem\nNOT FULLY MISSION CAPABLE IF: a. Capscrews or locknuts\nare finger or hand\nturnable.\nb. Capscrews or locknuts\nare finger or hand\nturnable.\nPROCEDURES: NOTE\nIf access to locknut is a problem,\nremove geared hub from control arm\n(para. 6-11 ) .\na. Remove wheel and tire assembly\n(para. 8-3). Check front and rear\nlower ball joint mounting. For M996,\nM997, M1042, M1037, M1097, M1123,\nand “A1” and “A2” series vehicles,\ntighten rear lower ball joint to lower\ncontrol arm locknuts to 60 lb-ft (81 N•m)\nand front to 35 lb-ft (48 N•m). All other\nmodels, tighten front and rear lower\nball joint to lower control arm locknuts\nto 35 lb-ft (48 N•m) and ensure cotter\npin is present. Tighten ball joint slotted\nnut to 73 lb-ft (99 N•m) and ensure\ncotter pin is present.\nb. Check front and rear upper ball joint\nmounting. Tighten upper ball joint to\nupper control arm locknuts to 21 lb-ft\n29 (N•m). Tighten upper control arm to\ncontrol arm bracket locknuts to 260 lb-ft\n(353 N•m) . Tighten ball joint slotted\nnut to 65 lb-ft (88 N•m) and ensure cotter\npin is present.\nNOTE\nDo not over lubricate ball joints, one\nor two shots is adequate.\nc. Lubricate front and rear\nQUESTION:\nLoose starter mounting bolts are found during PMCS. Which forms and reporting timing apply to the shortcoming, and what tightening torque is specified for those bolts?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 1794,
+  "question": "Loose starter mounting bolts are found during PMCS. Which forms and reporting timing apply to the shortcoming, and what tightening torque is specified for those bolts?",
+  "question_id": "M12",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:22:21.536955007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:22:18.043002007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4862001152.0,
+    "max_actual_interval_ms": 110.22670000056678,
+    "peak_rss_bytes": 13636915200,
+    "peak_vram_bytes": 4862001152,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5387.6175503,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5387.7256771,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5387.8191582,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5387.9291164,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.0221841,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.129935,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.2220954,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.3298922,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.4232026,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.5179882,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.6269069,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.7209843,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215606784,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499510784,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.8298903,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9215643648,
+          "37564": 7958528
+        },
+        "rss_bytes": 13499547648,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5388.9225197,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102813696,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9323540480,
+          "37564": 7958528
+        },
+        "rss_bytes": 13607444480,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.0299202,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9353007104,
+          "37564": 7958528
+        },
+        "rss_bytes": 13636915200,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.1229505,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9254309888,
+          "37564": 7958528
+        },
+        "rss_bytes": 13538217984,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.2305898,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.3233642,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.4335909,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.526238,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.6193368,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.727312,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.8187693,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5389.9276994,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5390.0199296,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5390.1293949,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5390.2221094,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5390.3309199,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5390.4230203,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5390.5323917,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5390.6240067,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5390.7315851,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      },
+      {
+        "monotonic": 5390.8250238,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102817792,
+          "17284": 4567040,
+          "30736": 12054528,
+          "34324": 4047278080,
+          "35444": 8110080,
+          "36040": 101122048,
+          "37504": 9073111040,
+          "37564": 7958528
+        },
+        "rss_bytes": 13357019136,
+        "vram_bytes": 4862001152
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:35:04.6815803Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 104,
+    "eval_duration": 1659793000,
+    "load_duration": 8979200,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 1794,
+    "prompt_eval_count": 1795,
+    "prompt_eval_duration": 23636000,
+    "response": "Loose starter mounting bolts are found during PMCS. The shortcoming must be reported on DA Form 2404 Equipment Inspection and Maintenance Worksheet or DA Form 5988-E (automated) immediately after the PMCS, before corrective action is taken, and will be recorded in the equipment record [C000856]. The specified tightening torque for the starter mounting bolts is 40 lb-ft (54 N•m) [C000961].",
+    "total_duration": 2053372200
+  },
+  "retrieval": {
+    "embedding_ms": 160.0068999996438,
+    "items": [
+      {
+        "body_end": 348,
+        "body_start": 0,
+        "id": "C000961",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          106
+        ],
+        "prefix_chars": 147,
+        "printed_pages": [
+          "2-15"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5717066526412964,
+        "source_issues": [
+          {
+            "description": "reefer to Appendix B는 원문 표기임.",
+            "id": "REEFER",
+            "pdf_page": 106,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "13",
+          "row_ids": [
+            "P0106-T2_1-R02"
+          ],
+          "source_issues": [
+            "REEFER"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 13\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Starter\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 13\nITEM TO BE INSPECTED: Starter\nNOT FULLY MISSION CAPABLE IF: a. Mounting bolt\nmissing or will not\ntorque.\nb. Stud nut loose.\nPROCEDURES: CAUTION\nDisconnect negative cable.\na. Inspect starter for mounting\nsecurity. Tighten mounting bolts to\n40 lb-ft (54 N•m).\nb. Inspect cables and studs for loose\nnuts and damage.",
+        "text_sha256": "da9dfd74a540b1c14f91ed5e2f68d7e6cd2a188475a7a506b6d9c29870d5442f",
+        "token_count": 149,
+        "unit_id": "U000958",
+        "unit_key": "pmcs:13"
+      },
+      {
+        "body_end": 778,
+        "body_start": 0,
+        "id": "C000846",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          93
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-2"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R000998"
+        ],
+        "review_ids": [],
+        "score": 0.5333502292633057,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[14]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "The best way to maintain vehicles covered by this manual is to inspect them on a regular basis so minor\nfaults can be discovered and corrected before they result in serious damage, failure, or injury. All intervals\nare based on normal operation. Hard time intervals may be shortened if your lubricants are contaminated or\nif you are operating the equipment under adverse conditions, including longer-than-usual operating hours.\nHard time intervals may be extended during periods of low activity, though adequate preservation\nprecautions must be taken. This section contains systematic instructions of inspection, adjustment,\nlubrication, and correction of vehicle components to avoid costly repairs or major breakdowns. This is\nPreventive Maintenance Checks and Services (PMCS).",
+        "text_sha256": "ab161c472f451f32e26fb0786d2fb69cfe05f8e5a7943dc8c5d06a72ed8b8f6f",
+        "token_count": 147,
+        "unit_id": "U000846",
+        "unit_key": "region:93:1:15"
+      },
+      {
+        "body_end": 283,
+        "body_start": 0,
+        "id": "C000856",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          94
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-3"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R001008"
+        ],
+        "review_ids": [],
+        "score": 0.5193746089935303,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[5]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "other",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "All vehicle shortcomings will be reported on DA Form 2404 Equipment Inspection and Maintenance\nWorksheet or DA Form 5988-E (automated) (DA Pam 738-750) immediately after the PMCS, and before\ntaking corrective action. All vehicle deficiencies will be reported in the equipment record.",
+        "text_sha256": "9fd8a129d1f066bdbc225f439afd8c622cd129196566a1fc79436f764acbb907",
+        "token_count": 69,
+        "unit_id": "U000856",
+        "unit_key": "region:94:1:6"
+      },
+      {
+        "body_end": 1603,
+        "body_start": 0,
+        "id": "C000882",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          96
+        ],
+        "prefix_chars": 368,
+        "printed_pages": [
+          "2-5"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5187972187995911,
+        "source_issues": [
+          {
+            "description": "PDF의 원형 D를 Ⓓ로 복원했다. batch-006의 전후 문자·원문 이미지 기록을 참조한다.",
+            "id": "OD_SYMBOL",
+            "pdf_page": 97,
+            "status": "SYMBOL_RECOVERED_BY_BATCH006"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "1",
+          "row_ids": [
+            "P0096-T2_1-R02",
+            "P0097-T2_1-R01"
+          ],
+          "source_issues": [
+            "OD_SYMBOL"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV\nITEM NO.: 1\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Pre-Service\nChecks\nPRIOR TO ROAD TEST\nEnsure Operator/Crew has\nperformed PMCS listed in TM 9-\n2320-280-10.\nROAD TEST\nMaintenance personnel will be with\nvehicle operator to assist in perform-\ning PMCS checks and verify pre-\nservice checks.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 1\nITEM TO BE INSPECTED: Pre-Service\nChecks\nNOT FULLY MISSION CAPABLE IF: a. Starter inoperative or\nmakes excessive grinding\nsound.\nb. Engine knocks, rattles,\nor smokes excessively.\nc. Transmission shifts\nimproperly, does not shift,\nor makes excessive noises.\nd. Lever inoperable or\ndoes not engage in all\nranges with engine not\nrunning.\ne. Pedal sticking or\nbinding.\nf. Steering binds, grabs,\nwanders, or has excessive\nfreeplay.\ng. Brakes chatter, pull\nto one side, or inoperative.\nBrakes will not release.\nPROCEDURES: a. Notice if starter engages smoothly\nand turns the engine at normal\ncranking speed.\nb. Listen for unusual noise at idle,\nat operating speed, and under\nacceleration. Be alert for excessive\nvibration and the smell of oil, fuel,\nand exhaust.\nc. Check for transmission response to\nshifting and for smoothness of\noperation in all gear ranges. Be alert\nfor unusual noises and difficulty in\nshifting in any speed range.\nNOTE\nIf desired range cannot be selected,\nturn engine off, select range, and re-\nstart engine.\nd. Check for transfer response to\nshifting and for smoothness of\noperation in all gear ranges. Be\nalert for unusual noises and difficulty\nin shifting in any gear range.\ne. Test for response to accelerator\nfeed. Observe for sticking pedal.\nf. With vehicle speed approximately 5\nmph (8 kph) turn steering wheel to\nleft, then right, to detect hard steering,\nsteering backlash, or shimmy. Vehicle\nshould respond instantly. With vehicle\nmoving on straight, level terrain, lightly\nhold steering wheel to check for pull\nand wandering.\ng. Apply brake",
+        "text_sha256": "c9d9999cbf954f89cd88db1556d3a47b9e0d4acb6a3e476e1ccf2861f3d3b08d",
+        "token_count": 500,
+        "unit_id": "U000882",
+        "unit_key": "pmcs:1"
+      },
+      {
+        "body_end": 1240,
+        "body_start": 0,
+        "id": "C000925",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          101,
+          102
+        ],
+        "prefix_chars": 295,
+        "printed_pages": [
+          "2-10",
+          "2-11"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5155333280563354,
+        "source_issues": [
+          {
+            "description": "21 lb-ft 29 (N•m)의 괄호 배치는 원문 그대로임.",
+            "id": "TORQUE_PUNCTUATION",
+            "pdf_page": 101,
+            "status": "SOURCE_TEXT_PRESERVED"
+          },
+          {
+            "description": "Throughly는 원문 오탈자. 추출 오류 보정 범위에서 철자를 고치지 않음.",
+            "id": "THROUGHLY",
+            "pdf_page": 103,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "10",
+          "row_ids": [
+            "P0101-T2_1-R03",
+            "P0102-T2_1-R02",
+            "P0103-T2_1-R01"
+          ],
+          "source_issues": [
+            "THROUGHLY",
+            "TORQUE_PUNCTUATION"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 10\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Suspension\nand\nSteering\nSystem\nNOTE\nDo not lubricate shock absorber\nbushings, radius rod bushings,\nstabilizer bar bushing, or suspension\narm pivot bushing.\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 10\nITEM TO BE INSPECTED: Suspension\nand\nSteering\nSystem\nNOT FULLY MISSION CAPABLE IF: a. Capscrews or locknuts\nare finger or hand\nturnable.\nb. Capscrews or locknuts\nare finger or hand\nturnable.\nPROCEDURES: NOTE\nIf access to locknut is a problem,\nremove geared hub from control arm\n(para. 6-11 ) .\na. Remove wheel and tire assembly\n(para. 8-3). Check front and rear\nlower ball joint mounting. For M996,\nM997, M1042, M1037, M1097, M1123,\nand “A1” and “A2” series vehicles,\ntighten rear lower ball joint to lower\ncontrol arm locknuts to 60 lb-ft (81 N•m)\nand front to 35 lb-ft (48 N•m). All other\nmodels, tighten front and rear lower\nball joint to lower control arm locknuts\nto 35 lb-ft (48 N•m) and ensure cotter\npin is present. Tighten ball joint slotted\nnut to 73 lb-ft (99 N•m) and ensure\ncotter pin is present.\nb. Check front and rear upper ball joint\nmounting. Tighten upper ball joint to\nupper control arm locknuts to 21 lb-ft\n29 (N•m). Tighten upper control arm to\ncontrol arm bracket locknuts to 260 lb-ft\n(353 N•m) . Tighten ball joint slotted\nnut to 65 lb-ft (88 N•m) and ensure cotter\npin is present.\nNOTE\nDo not over lubricate ball joints, one\nor two shots is adequate.\nc. Lubricate front and rear",
+        "text_sha256": "eaf5495157430e37f1714f4adee36a22cb039e1b98700aa5e62c3d4bd9d7ac6d",
+        "token_count": 500,
+        "unit_id": "U000924",
+        "unit_key": "pmcs:10"
+      }
+    ],
+    "search_ms": 12.90789999984554
+  },
+  "round": 2,
+  "sequence": 157,
+  "started_at": "2026-09-28T04:35:02.434138+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2074.9188999998296,
+    "retrieval": 174.30550000062794,
+    "total": 2249.2244000004575
+  },
+  "unprovided_citations": []
+}

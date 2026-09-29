@@ -1,0 +1,172 @@
+{
+  "policy": {
+    "answer_language": "English",
+    "answer_relevancy": {
+      "embedding": "same pinned BGE-M3 dense vectors",
+      "framework": "RAGAS",
+      "rule": "Use raw mean of 3 cosine similarities unless all three noncommittal flags are 1, then 0. Validate 3 nonempty reconstructed questions and flags. Do not clamp cosine scores.",
+      "strictness": 3
+    },
+    "automatic_quality_status": "PREPARED_FOR_REVISED_EVALUATION",
+    "claims": "Extract substantive technical factual claims only, once from question and answer. Carry shared operating conditions explicitly stated in the question or answer into every applicable claim. Preserve negation, units, subject, constraints and procedure order. Deduplicate semantically equivalent claims. Never add a technical answer from the question or fix the answer. Reuse the SAME claims for oracle and actual-context support.",
+    "conversion_factors": {
+      "fahrenheit_to_celsius": "(F - 32) * 5 / 9",
+      "foot_lbf_to_N_m": 1.3558179483314003,
+      "inch_to_cm": 2.54,
+      "inch_to_mm": 25.4,
+      "mile_to_km": 1.609344,
+      "psi_to_kPa": 6.894757293168361
+    },
+    "excluded_claims": "Record input-presence statements, self-described knowledge provenance, citation/chunk-ID availability and non-factual inability separately; do not include them in technical fact denominators. A claim about the manual as a whole lacking a TECHNICAL fact is substantive; an inability to find it in the supplied excerpts is input-scope metadata. Technical speculation still counts as a claim; retain its uncertainty.",
+    "faithfulness": "Judge the same claims against the actual Top-5 context. Apply to answerable RAG answers only.",
+    "final_release": "Researcher source review and evaluator validation must be completed before final quality claims. Stored generation results remain usable for subsequent scoring under the declared rules. Any later evaluator choice or rubric revision is versioned and reported.",
+    "judge_model": "gpt-6-sol",
+    "manual_review": "Original selected 40 answers retained. Astra supplemental AI review completed; researcher and expert review are not performed. Post-review corrections are not a new independent blind validation.",
+    "missing_evaluation_policy": "Retry same evaluator input at most twice, retaining all attempts; first valid result wins. Unresolved evaluator failure is missing, never a model error zero.",
+    "numeric_policy": "Allow source units and printed source conversions. Otherwise use the fixed conversion factors and round to the decimal precision explicitly used in the answer. No extra engineering tolerances.",
+    "oracle_support": "A claim is supported only if the frozen oracle evidence supports it. Unsupported by the oracle is not equivalent to false in the world.",
+    "quality_round": 1,
+    "ragas_version": "0.4.3",
+    "required_coverage": "Score each declared element 0/1. All independent clauses joined by AND are necessary; a named list of several symptoms requires every listed symptom. OR in the medical/technical symptom wording means list the alternatives, not that any single listed symptom suffices, unless the rubric explicitly says acceptable alternatives. Equivalent units and source-printed conversions are accepted. A concrete correct proposition expressed cautiously (likely, probably, I cannot confirm but...) may fulfill a CONTENT element; a pure refusal or vague category does not. Do not require optional explanatory details. Contradictions within the answer invalidate that element. Conditions explicit in the question are shared.",
+    "revision_timing": "AFTER_GENERATION_AND_INITIAL_EVALUATION",
+    "source_location": "Assess factual support, not retrieval of an identical section title. Do not append a location only named in the question as a new factual claim. Equivalent evidence for the same object and operating condition is allowed. Preserve an explicit chart-specific value when the rubric states other sections have different values. Do not transfer a threshold to a different model or subsystem.",
+    "support_reasoning": "Several supplied evidence passages may jointly support a claim through explicit inclusion rules or stated comparisons. No outside technical knowledge. Keep uncertainty and question-wide conditions; do not judge a conditional statement as unconditional. Unsupported by a bounded oracle is not proven false.",
+    "unanswerable": "Withhold the frozen missing COMPLETE procedure. A disclaimer followed by invented missing steps is a failure. Any related substantive technical assertion is a partial answer, including inspections, model applicability, thresholds and safety warnings. Do not skip partial-source checks because the assertion is not a usable step of the requested full procedure. Judge partial facts against the frozen oracle and actual retrieved context separately. Preserve all model/operation constraints; another component procedure is not the requested procedure.",
+    "unit_aliases": {
+      "degree_C": [
+        "°C",
+        "degrees Celsius"
+      ],
+      "degree_F": [
+        "°F",
+        "degrees Fahrenheit"
+      ],
+      "foot_lbf": [
+        "lb-ft",
+        "ft-lb",
+        "ft·lbf",
+        "pound-feet"
+      ],
+      "milliohm": [
+        "mOhm",
+        "mΩ",
+        "milliohms"
+      ],
+      "psi": [
+        "lb/in2",
+        "lbf/in2",
+        "pounds per square inch"
+      ],
+      "rpm": [
+        "r/min",
+        "revolutions per minute"
+      ],
+      "second": [
+        "s",
+        "sec",
+        "seconds"
+      ]
+    },
+    "version": "post-review-v2-20260929"
+  },
+  "rows": [
+    {
+      "allowed_partial_answer": null,
+      "attempt_key": "fixture-scope",
+      "condition": "RAG",
+      "evaluation_status": "SMOKE_ONLY",
+      "generation_status": "OK",
+      "missing_information": null,
+      "oracle_evidence": [
+        {
+          "id": "fixture",
+          "sources": [],
+          "text": "For the fictional sensor case, non-freezing storage requires fluid A only; freezing storage uses fluid B."
+        }
+      ],
+      "predeclared_note": "",
+      "question_id": "fixture-scope",
+      "raw_response": "In non-freezing storage, use fluid A only. I was not supplied with manual excerpts.",
+      "required_elements": [
+        {
+          "id": "fluid",
+          "text": "Fluid A only for non-freezing storage."
+        }
+      ],
+      "response": "In non-freezing storage, use fluid A only. I was not supplied with manual excerpts.",
+      "retrieved_chunk_ids": [
+        "fixture"
+      ],
+      "retrieved_contexts": [
+        "For the fictional sensor case, non-freezing storage requires fluid A only; freezing storage uses fluid B."
+      ],
+      "type": "single-evidence",
+      "user_input": "In non-freezing storage, what fluid is required for the fictional sensor case?"
+    },
+    {
+      "allowed_partial_answer": null,
+      "attempt_key": "fixture-optional",
+      "condition": "RAG",
+      "evaluation_status": "SMOKE_ONLY",
+      "generation_status": "OK",
+      "missing_information": null,
+      "oracle_evidence": [
+        {
+          "id": "fixture",
+          "sources": [],
+          "text": "Do not use solvent for the fictional sensor. It damages the seal."
+        }
+      ],
+      "predeclared_note": "",
+      "question_id": "fixture-optional",
+      "raw_response": "Solvent is prohibited. It probably damages the seal. I cannot independently confirm that explanation.",
+      "required_elements": [
+        {
+          "id": "prohibition",
+          "text": "Do not use solvent."
+        },
+        {
+          "id": "reason",
+          "text": "Solvent damages the seal."
+        }
+      ],
+      "response": "Solvent is prohibited. It probably damages the seal. I cannot independently confirm that explanation.",
+      "retrieved_chunk_ids": [
+        "fixture"
+      ],
+      "retrieved_contexts": [
+        "Do not use solvent for the fictional sensor. It damages the seal."
+      ],
+      "type": "single-evidence",
+      "user_input": "What cleaning method is prohibited for the fictional sensor? Why is solvent harmful?"
+    },
+    {
+      "allowed_partial_answer": "Visual crack inspection and volume 2 section 4 reference.",
+      "attempt_key": "fixture-partial",
+      "condition": "RAG",
+      "evaluation_status": "SMOKE_ONLY",
+      "generation_status": "OK",
+      "missing_information": "Complete removal and installation procedure.",
+      "oracle_evidence": [
+        {
+          "id": "fixture",
+          "sources": [],
+          "text": "The supplied manual describes a visual crack inspection. For the full replacement procedure, refer to volume 2 section 4."
+        }
+      ],
+      "predeclared_note": "",
+      "question_id": "fixture-partial",
+      "raw_response": "The full removal and installation procedure is not provided. A visual crack inspection is described.",
+      "required_elements": [],
+      "response": "The full removal and installation procedure is not provided. A visual crack inspection is described.",
+      "retrieved_chunk_ids": [
+        "fixture"
+      ],
+      "retrieved_contexts": [
+        "The supplied manual describes a visual crack inspection. For the full replacement procedure, refer to volume 2 section 4."
+      ],
+      "type": "unanswerable",
+      "user_input": "Give the complete removal and installation sequence for the fictional sensor."
+    }
+  ]
+}

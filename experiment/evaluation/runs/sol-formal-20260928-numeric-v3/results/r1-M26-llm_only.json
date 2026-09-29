@@ -1,0 +1,257 @@
+{
+  "at": "2026-09-28T09:59:37.547108+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "98772b777b5938dc845e04114907eaae1ca3f66b2d30ed15bd966501a19895c0",
+  "original_result_sha256": "09d0e5a4dfe52f687b41c04e4136d61094f13587604552b56ac408fd1500d9e5",
+  "result": {
+    "attempt_key": "r1-M26-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 32.62326630000098,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8195389952780708
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8195389952780708
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M26",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "It gives specific oil-change intervals and crankcase capacity, but also disclaims confirmation from the referenced manual."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8309655681393827,
+          0.8138256653004254,
+          0.8138257523944045
+        ],
+        "query_vector_hash": "cc92b62a3d16d7b40bd7924cc16270ffbb8a4f4c527e61729d2f2ab182674573",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "When AOAP is unavailable, what is the HMMWV (M998-series) engine oil-and-filter change interval, and what is the crankcase capacity including the filter?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "When AOAP is unavailable, what is the HMMWV M998-series engine oil-and-filter change interval, and what is its crankcase capacity including the filter?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "When AOAP is unavailable, what is the HMMWV M998-series engine oil-and-filter change interval, and what is its crankcase capacity including the filter?"
+          }
+        ],
+        "response_vectors_hash": "6dc10b5635e3d3ba2c3bea411a6e3d3d5eeced76f09d58e8e863304071b39c44",
+        "score": 0.8195389952780703
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "When AOAP (Aircraft Oil and Parts) is unavailable, the HMMWV (M998-series) engine oil-and-filter change interval is typically stated as every 150 hours of operation or 12 months, based on the earlier limit."
+        },
+        {
+          "id": "C002",
+          "text": "The stated HMMWV (M998-series) engine oil-and-filter change interval is based on standard maintenance procedures for the 6.2L V8 engine in the HMMWV."
+        },
+        {
+          "id": "C003",
+          "text": "The engine crankcase capacity, including the filter, is listed as 6.5 quarts (6.17 liters)."
+        },
+        {
+          "id": "C004",
+          "text": "TM 9-2320-280-20-1, Volume 1 governs the HMMWV engine oil-and-filter change procedures."
+        },
+        {
+          "id": "C005",
+          "text": "No specific excerpts were provided in REFERENCE to confirm the exact wording or capacity."
+        },
+        {
+          "id": "C006",
+          "text": "The answer is derived from standard HMMWV maintenance practices and known technical data."
+        }
+      ],
+      "claims_raw": [
+        "When AOAP (Aircraft Oil and Parts) is unavailable, the HMMWV (M998-series) engine oil-and-filter change interval is typically stated as every 150 hours of operation or 12 months, based on the earlier limit.",
+        "The stated HMMWV (M998-series) engine oil-and-filter change interval is based on standard maintenance procedures for the 6.2L V8 engine in the HMMWV.",
+        "The engine crankcase capacity, including the filter, is listed as 6.5 quarts (6.17 liters).",
+        "TM 9-2320-280-20-1, Volume 1 governs the HMMWV engine oil-and-filter change procedures.",
+        "No specific excerpts were provided in REFERENCE to confirm the exact wording or capacity.",
+        "The answer is derived from standard HMMWV maintenance practices and known technical data."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "every 150 hours of operation or 12 months",
+            "fulfilled": 0,
+            "id": "M26-A01",
+            "reason": "The answer omits the 3,000-mile (4,800-km) interval."
+          },
+          {
+            "answer_quote": "every 150 hours of operation",
+            "fulfilled": 0,
+            "id": "M26-A02",
+            "reason": "The stated hours conflict with 100 hours, and the hour-meter condition is omitted."
+          },
+          {
+            "answer_quote": "or 12 months",
+            "fulfilled": 0,
+            "id": "M26-A03",
+            "reason": "The stated time interval conflicts with six months."
+          },
+          {
+            "answer_quote": "6.5 quarts (6.17 liters)",
+            "fulfilled": 0,
+            "id": "M26-A04",
+            "reason": "The stated capacity conflicts with 8 quarts (7.6 L)."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context states 100 hours or six months when AOAP is unavailable, not 150 hours or 12 months.",
+              "statement": "When AOAP (Aircraft Oil and Parts) is unavailable, the HMMWV (M998-series) engine oil-and-filter change interval is typically stated as every 150 hours of operation or 12 months, based on the earlier limit.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify the engine as a 6.2L V8 or give that basis for the interval.",
+              "statement": "The stated HMMWV (M998-series) engine oil-and-filter change interval is based on standard maintenance procedures for the 6.2L V8 engine in the HMMWV.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The listed crankcase-and-filter capacity is 8 qt (7.6 L).",
+              "statement": "The engine crankcase capacity, including the filter, is listed as 6.5 quarts (6.17 liters).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not identify that manual.",
+              "statement": "TM 9-2320-280-20-1, Volume 1 governs the HMMWV engine oil-and-filter change procedures.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Specific maintenance and capacity excerpts were provided.",
+              "statement": "No specific excerpts were provided in REFERENCE to confirm the exact wording or capacity.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish the source of an answer.",
+              "statement": "The answer is derived from standard HMMWV maintenance practices and known technical data.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 5.551115123125783e-16,
+        "cosine_similarities": [
+          0.8309655681393827,
+          0.8138256653004254,
+          0.8138257523944045
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8195389952780708,
+        "query_vector_hash": "cc92b62a3d16d7b40bd7924cc16270ffbb8a4f4c527e61729d2f2ab182674573",
+        "ragas_score": 0.8195389952780703,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "6dc10b5635e3d3ba2c3bea411a6e3d3d5eeced76f09d58e8e863304071b39c44"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8309655681393827,
+          0.8138256653004254,
+          0.8138257523944045
+        ],
+        "decimal50_cosines": [
+          "0.83096556813938269627100151556642037467351175529397",
+          "0.81382566530042540466931928693610662217339632955746",
+          "0.81382575239440444643678683033595498719462521671792"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 0.0,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8195389952780703
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8195389952780703
+          }
+        },
+        "query_vector_hash": "cc92b62a3d16d7b40bd7924cc16270ffbb8a4f4c527e61729d2f2ab182674573",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "When AOAP is unavailable, what is the HMMWV (M998-series) engine oil-and-filter change interval, and what is the crankcase capacity including the filter?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "When AOAP is unavailable, what is the HMMWV M998-series engine oil-and-filter change interval, and what is its crankcase capacity including the filter?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "When AOAP is unavailable, what is the HMMWV M998-series engine oil-and-filter change interval, and what is its crankcase capacity including the filter?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "6dc10b5635e3d3ba2c3bea411a6e3d3d5eeced76f09d58e8e863304071b39c44",
+        "score": 0.8195389952780708
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "b89f1cac47ce014bb1cdf83f245c5f544f05c1de1c5aaaf4ac2bc32236341753"
+}

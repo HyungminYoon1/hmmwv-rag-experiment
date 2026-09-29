@@ -1,0 +1,166 @@
+{
+  "at": "2026-09-28T09:10:51.522651+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "4c99e88f8d8e3646b7f8954884f06676984cfc0087b695ea304933eeec275e4c",
+  "result": {
+    "attempt_key": "r1-M12-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 20.042724300001282,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.8912700339967449
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.8912700339967449
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M12",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives specific forms, reporting timing, and a tightening torque."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.880885071004047,
+          0.8964624968490447,
+          0.8964625341371432
+        ],
+        "query_vector_hash": "48537b9772685f10ff3d67ab4dfc4e2e50160d9bf39271096b7742613c4c6410",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "How should loose starter mounting bolts found during PMCS be reported, by when, and to what torque should they be tightened?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How should loose starter mounting bolts found during PMCS be reported, when must they be reported, and what is their specified tightening torque?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How should loose starter mounting bolts found during PMCS be reported, when must they be reported, and what is their specified tightening torque?"
+          }
+        ],
+        "response_vectors_hash": "1fcef8be82a68db686f46f4281f86a1d432d722f98f27e89eefd665cae901a42",
+        "score": 0.8912700339967449
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "Loose starter mounting bolts found during PMCS are reported using Form 300 (Maintenance Report)."
+        },
+        {
+          "id": "C002",
+          "text": "Loose starter mounting bolts found during PMCS must be reported within 24 hours of detection."
+        },
+        {
+          "id": "C003",
+          "text": "The specified tightening torque for starter mounting bolts is 15 ft-lbs [TM9-2320-280-20-1, C000123]."
+        }
+      ],
+      "claims_raw": [
+        "Loose starter mounting bolts found during PMCS are reported using Form 300 (Maintenance Report).",
+        "Loose starter mounting bolts found during PMCS must be reported within 24 hours of detection.",
+        "The specified tightening torque for starter mounting bolts is 15 ft-lbs [TM9-2320-280-20-1, C000123]."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Form 300 (Maintenance Report)",
+            "fulfilled": 0,
+            "id": "M12-A01",
+            "reason": "The required forms are DA Form 2404 or DA Form 5988-E, not Form 300."
+          },
+          {
+            "answer_quote": "within 24 hours of detection",
+            "fulfilled": 0,
+            "id": "M12-A02",
+            "reason": "Reporting is required immediately after PMCS and before corrective action."
+          },
+          {
+            "answer_quote": "15 ft-lbs",
+            "fulfilled": 0,
+            "id": "M12-A03",
+            "reason": "The specified starter mounting bolt torque is 40 lb-ft (54 N·m)."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies DA Form 2404 or DA Form 5988-E, not Form 300.",
+              "statement": "Loose starter mounting bolts found during PMCS are reported using Form 300 (Maintenance Report).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context requires reporting immediately after PMCS, but gives no 24-hour deadline from detection.",
+              "statement": "Loose starter mounting bolts found during PMCS must be reported within 24 hours of detection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The specified torque is 40 lb-ft, not 15 ft-lbs.",
+              "statement": "The specified tightening torque for starter mounting bolts is 15 ft-lbs [TM9-2320-280-20-1, C000123].",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.880885071004047,
+          0.8964624968490447,
+          0.8964625341371432
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.891270033996745,
+        "query_vector_hash": "48537b9772685f10ff3d67ab4dfc4e2e50160d9bf39271096b7742613c4c6410",
+        "ragas_score": 0.8912700339967449,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "1fcef8be82a68db686f46f4281f86a1d432d722f98f27e89eefd665cae901a42"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "f1caa40f8a7bbf23e9f4ab111913e7df6235565801b0585935b5ea0a7d4fdf40"
+}

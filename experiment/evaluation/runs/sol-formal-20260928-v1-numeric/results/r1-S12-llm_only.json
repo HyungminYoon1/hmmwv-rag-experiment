@@ -1,0 +1,203 @@
+{
+  "at": "2026-09-28T09:55:51.915065+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "a92a1897682dd67432d5d84b38a5475f1a391074da76094ab6dc98baf1137636",
+  "original_result_sha256": "4a8457c7eb313f5de0366f1baa92059b8253fcdf74bd1d9f47d0044cdaff310b",
+  "result": {
+    "attempt_key": "r1-S12-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 29.61170160000256,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8463350606312715
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8463350606312715
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S12",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific opening pressure of approximately 15 psi and makes additional claims about its source and purpose."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8464077108319219,
+          0.8461897350884581,
+          0.8464077359734347
+        ],
+        "query_vector_hash": "4589a7145c98defccc442e269568c4b4c1b42e8aa756c58d6b74bf43d1cf962b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At approximately what cooling-system pressure does the surge-tank cap valve on an HMMWV (M998-series) open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what cooling system pressure does the surge-tank cap valve on an HMMWV M998-series open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what cooling-system pressure does the surge-tank cap valve on an HMMWV (M998-series) open?"
+          }
+        ],
+        "response_vectors_hash": "9458e1534f344bab357a086e4d822f691bc5daed68f975082d5c61b727de5da9",
+        "score": 0.8463350606312715
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The surge-tank cap valve on the HMMWV (M998-series) typically opens at a cooling-system pressure of approximately 15 psi (pounds per square inch)."
+        },
+        {
+          "id": "C002",
+          "text": "TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), specifies the pressure at which the HMMWV surge-tank cap vent opens."
+        },
+        {
+          "id": "C003",
+          "text": "The HMMWV surge-tank cap vent opens to release excess pressure and prevent over-pressurization of the cooling system."
+        }
+      ],
+      "claims_raw": [
+        "The surge-tank cap valve on the HMMWV (M998-series) typically opens at a cooling-system pressure of approximately 15 psi (pounds per square inch).",
+        "TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), specifies the pressure at which the HMMWV surge-tank cap vent opens.",
+        "The HMMWV surge-tank cap vent opens to release excess pressure and prevent over-pressurization of the cooling system."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "approximately 15 psi (pounds per square inch)",
+            "fulfilled": 1,
+            "id": "S12-A01",
+            "reason": "Gives the specified approximate opening pressure in psi; the kPa conversion is not required when the source unit is given."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The pressure is stated, but the context does not identify the vehicle as an HMMWV (M998-series).",
+              "statement": "The surge-tank cap valve on the HMMWV (M998-series) typically opens at a cooling-system pressure of approximately 15 psi (pounds per square inch).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives no manual title, volume, or publication dates.",
+              "statement": "TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), specifies the pressure at which the HMMWV surge-tank cap vent opens.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context says the cap releases excess pressure but does not identify the system as an HMMWV's.",
+              "statement": "The HMMWV surge-tank cap vent opens to release excess pressure and prevent over-pressurization of the cooling system.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8464077108319219,
+          0.8461897350884581,
+          0.8464077359734347
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8463350606312715,
+        "query_vector_hash": "4589a7145c98defccc442e269568c4b4c1b42e8aa756c58d6b74bf43d1cf962b",
+        "ragas_score": 0.8463350606312715,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "9458e1534f344bab357a086e4d822f691bc5daed68f975082d5c61b727de5da9"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8464077108319219,
+          0.8461897350884581,
+          0.8464077359734347
+        ],
+        "decimal50_cosines": [
+          "0.84640771083192195491519848718873891551280660724822",
+          "0.84618973508845814384167772434261758517516704572584",
+          "0.84640773597343473850666131005371652416500202625548"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8463350606312715
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8463350606312715
+          }
+        },
+        "query_vector_hash": "4589a7145c98defccc442e269568c4b4c1b42e8aa756c58d6b74bf43d1cf962b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At approximately what cooling-system pressure does the surge-tank cap valve on an HMMWV (M998-series) open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what cooling system pressure does the surge-tank cap valve on an HMMWV M998-series open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At approximately what cooling-system pressure does the surge-tank cap valve on an HMMWV (M998-series) open?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "9458e1534f344bab357a086e4d822f691bc5daed68f975082d5c61b727de5da9",
+        "score": 0.8463350606312715
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "2df183b533342c0a7e1d61c3f854a9412e7c3d55acbb8304e1d7f4a02929ad62"
+}

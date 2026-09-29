@@ -1,0 +1,202 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-29T04:58:27.505418+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "After fording, items found contaminated should be relubricated.",
+        "fulfilled": 1,
+        "id": "M16-A01",
+        "reason": "States the required instruction for contaminated items after fording."
+      },
+      {
+        "answer_quote": "2 quarts (1.9 L) per axle differential",
+        "fulfilled": 1,
+        "id": "M16-A02",
+        "reason": "Matches the listed GO refill quantity for each axle differential."
+      },
+      {
+        "answer_quote": "1 pint (0.5 L) per geared hub",
+        "fulfilled": 1,
+        "id": "M16-A03",
+        "reason": "Matches the listed GO refill quantity for each geared hub."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790657909,
+      "conversation": null,
+      "created_at": 1790657907.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0f59f1a92caabdd6016abb45733c1087d08391c97547e819dd",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"M16-A01\",\"fulfilled\":1,\"answer_quote\":\"After fording, items found contaminated should be relubricated.\",\"reason\":\"States the required instruction for contaminated items after fording.\"},{\"id\":\"M16-A02\",\"fulfilled\":1,\"answer_quote\":\"2 quarts (1.9 L) per axle differential\",\"reason\":\"Matches the listed GO refill quantity for each axle differential.\"},{\"id\":\"M16-A03\",\"fulfilled\":1,\"answer_quote\":\"1 pint (0.5 L) per geared hub\",\"reason\":\"Matches the listed GO refill quantity for each geared hub.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0f59f1a92caabdd6016abb4574442c87d085b6ba210cc85aef",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1507,
+        "input_tokens_details": {
+          "cache_write_tokens": 1504,
+          "cached_tokens": 0
+        },
+        "output_tokens": 136,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1643
+      },
+      "user": null
+    },
+    "request_id": "resp_0f59f1a92caabdd6016abb45733c1087d08391c97547e819dd",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"M16-A01\",\"fulfilled\":1,\"answer_quote\":\"After fording, items found contaminated should be relubricated.\",\"reason\":\"States the required instruction for contaminated items after fording.\"},{\"id\":\"M16-A02\",\"fulfilled\":1,\"answer_quote\":\"2 quarts (1.9 L) per axle differential\",\"reason\":\"Matches the listed GO refill quantity for each axle differential.\"},{\"id\":\"M16-A03\",\"fulfilled\":1,\"answer_quote\":\"1 pint (0.5 L) per geared hub\",\"reason\":\"Matches the listed GO refill quantity for each geared hub.\"}]}",
+    "usage": {
+      "input_tokens": 1507,
+      "input_tokens_details": {
+        "cache_write_tokens": 1504,
+        "cached_tokens": 0
+      },
+      "output_tokens": 136,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1643
+    }
+  },
+  "record_hash": "4dd295e3c793ae1401fd914f771bedff471f2c6f6981d3cbd60b8a5535962731",
+  "request_hash": "6d3d9e6c2e5b2285a29bfe686d677356d5ca4c8a0b782ca181e1aa43421a8644",
+  "started_at": "2026-09-29T04:58:24.701814+00:00",
+  "status": "OK"
+}

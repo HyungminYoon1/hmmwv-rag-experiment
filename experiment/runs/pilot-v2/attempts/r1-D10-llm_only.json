@@ -1,0 +1,435 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:18:34.475104+00:00",
+  "evaluation_answer": "I do not know a requested fact. The question pertains to a specific vehicle serial number and a future date (January 2026), which falls outside the scope of available maintenance records or data in the referenced manual. No information is provided about transmission replacement history for any vehicle, including serial number 123456. Therefore, this fact cannot be determined.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 238,
+  "key": "r1-D10-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nHow many times has the transmission of vehicle serial number 123456 been replaced since January 2026?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "How many times has the transmission of vehicle serial number 123456 been replaced since January 2026?",
+  "question_id": "D10",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:51.329376407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:05:49.101980407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4835360768.0,
+    "max_actual_interval_ms": 110.67749999983789,
+    "peak_rss_bytes": 3317374976,
+    "peak_vram_bytes": 4835360768,
+    "pids": [
+      13944,
+      30736,
+      37504,
+      37552,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4398.4981477,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4853743616
+      },
+      {
+        "monotonic": 4398.6065499,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4853743616
+      },
+      {
+        "monotonic": 4398.6999706,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4853121024
+      },
+      {
+        "monotonic": 4398.8070184,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4845912064
+      },
+      {
+        "monotonic": 4398.9004807,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4835360768
+      },
+      {
+        "monotonic": 4399.0096356,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4835360768
+      },
+      {
+        "monotonic": 4399.1032786,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4835360768
+      },
+      {
+        "monotonic": 4399.2099638,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4835360768
+      },
+      {
+        "monotonic": 4399.3021092,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4835360768
+      },
+      {
+        "monotonic": 4399.4098393,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4835360768
+      },
+      {
+        "monotonic": 4399.5027088,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 2989301760,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3164446720,
+        "vram_bytes": 4835360768
+      },
+      {
+        "monotonic": 4399.6100053,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3140403200,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3315548160,
+        "vram_bytes": 4835360768
+      },
+      {
+        "monotonic": 4399.7008538,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4834770944
+      },
+      {
+        "monotonic": 4399.8083757,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4834770944
+      },
+      {
+        "monotonic": 4399.900099,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4830576640
+      },
+      {
+        "monotonic": 4400.0084662,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4830576640
+      },
+      {
+        "monotonic": 4400.1006884,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4830576640
+      },
+      {
+        "monotonic": 4400.2113659,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4830576640
+      },
+      {
+        "monotonic": 4400.3032062,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4830576640
+      },
+      {
+        "monotonic": 4400.4104206,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4830576640
+      },
+      {
+        "monotonic": 4400.5035295,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4830576640
+      },
+      {
+        "monotonic": 4400.613256,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58204160,
+          "30736": 12607488,
+          "37504": 3142230016,
+          "37552": 96890880,
+          "37564": 7442432
+        },
+        "rss_bytes": 3317374976,
+        "vram_bytes": 4830576640
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:18:34.4746006Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 78,
+    "eval_duration": 1041598999,
+    "load_duration": 1225500,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 238,
+    "prompt_eval_duration": 20842000,
+    "response": "I do not know a requested fact. The question pertains to a specific vehicle serial number and a future date (January 2026), which falls outside the scope of available maintenance records or data in the referenced manual. No information is provided about transmission replacement history for any vehicle, including serial number 123456. Therefore, this fact cannot be determined.",
+    "total_duration": 1139938000
+  },
+  "retrieval": null,
+  "round": 1,
+  "sequence": 16,
+  "started_at": "2026-09-28T04:18:33.315605+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1159.4056000003548,
+    "retrieval": null,
+    "total": 1159.4056000003548
+  },
+  "unprovided_citations": []
+}

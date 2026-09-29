@@ -1,0 +1,233 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:01:03.927151+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "O:glow_exclusion"
+        ],
+        "evidence_quotes": [
+          "there is also a cold start advance circuit (part of the fuel system) which is not checked\nhere."
+        ],
+        "reason": "The Glowplugs test text says the circuit is not checked there.",
+        "statement": "The cold start advance circuit is excluded from the Glowplugs Circuit Tests.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "O:glow_exclusion",
+          "O:cold_advance"
+        ],
+        "evidence_quotes": [
+          "a cold start advance circuit (part of the fuel system)",
+          "FUEL SYSTEM\nREFERENCE INFORMATION\n\nThe cold advance circuit"
+        ],
+        "reason": "The context identifies it as part of the fuel system.",
+        "statement": "The Fuel System guidance states that the cold start advance circuit is part of the fuel system.",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [],
+        "evidence_quotes": [],
+        "reason": "It says operation may be checked below 90°F, not that proper timing advance is checked.",
+        "statement": "The Fuel System guidance states that the cold start advance circuit is checked for proper timing advance under cold start conditions, when the engine is cold.",
+        "verdict": 0
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586063,
+      "conversation": null,
+      "created_at": 1790586054.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0d6b4b13d047e696016aba2cc6618487d09a90b518a0ed95ec",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABquizPT4Hf2wZ4ngyieOPJrE4QA-74cljLZHbxAD3wAJlzfLyE2dapXStGs1PQLk9-4P8Y1sWTaZaQ-oB4zFgk_aUZOBvdQMGI1AnKgAHfw8IL_ucjkOSoQA1t75HtqLy_1ESyqFVDeAyCwxMvzKS1LwVFPlCCxHme1QnyieSDAuEZiMjHkzfJdeYVzugXc6_I8jfIKKhAPXjQaD1vSkJBVXrA0u7Dq_2AxWfolENhXChMDmKSOdX6ZtJ6hQ7YkF4x93xhmf73MPyxyedQk8Spf9thWLekT-_zoQ3s9ZwGMGJFYUTKGoxRu6CWB1IyUy93LMgYs2OTUZ8-8ApG2fYQ03G39c_hmYQE6Ym8Zc9lFWyCjkltSu-qRcRo_kj9saCA95jGg6nLsVEQBXGQWY5YMC3Q6G_khlVr3D8R1vaBWy2Lw0eKlQFVJUmYPfiVraLft8qfMI07eC1sayofnt-0UWt88_ZesX7KyMytwRYeI4Ir8wz0iL7HjmOsacnWV-rLo73a-gWDihKAFYI3iXhTjrKPGbZTX8ArQiCPh7AngAvpQ300EZXr4dPwJr1mSnISrlCGxhSe_4ER2Cq1_Ppp9IKTcouMljgBBY4Tzj-JXXx-Owf3ylXcjhzVQ9Ey2bxkIIsZ_s0EBsA_0Eo1jiPJcjxWaKjvoIqoNU7fmJaTe76igf6cMhEkxFjA6jcyVQLXwjBmpC2s3L3vhunImWqCWx6FD5askE7dljxD6eC42Ohc0BGvRie_WXX1CQw6bR5aB5o5fTPmJy8S5QTpBqE7QNw8SGRvM1sWCQ2P_VVuXp5qpT4QnzlS8ufxOf6OVOVb3VOeKfWPuwInNmb-gOd3HbAHDJkyPy7eHiXyLImdcPQKaMYxX4imIxQtheotsBruvsGmbL2fKc-4IWGqdbHC9FSSsMqcimeu2deIooPvC82WjqbICZbUb4GKPPXkWZwmcUhlizGX7lgOsds6Jm_14wRO-zOUY3Gc9DsvdZMfvIvAGxAxxMUPmuINt-mod1xLddl4NeH8iKBhcbWKg4eC1LuCut-cSNFajU9_2sNE-CfQ-0csAJmNvFpBp-AbVpX3y4E6OHzSNxC0FbMD3YEKOMB5Y9pj_4tFxqk5-NIWPvdIFKToYFWMFsOnPrEAZyAPKCGNZxyHiPlluOPBJ-gLO1uJG3YgogrXxT8fgSRH4dD66xjoNSYHAiAlntS7NefEVQboVqAsKawMVSRs9noV0-yZZfghdiOSvcM243yXVKPl_ZKVwxUMWI6MDQPOdSS78WHLoL1dOMNtJXrDEQwrcvSbvzW_2dfzOU31MXBiZwhEP8aLMsQLhx2exOJlJxy5KXmYSskonG84nOx1202ZxJc7M7W3gJIQwu8LPIsP_tHLWEBrxAaE3W49i6D4f5rfn4CsdoHliW4ZUyTNbn9izif7S0kaYwYimVZNdY6gAtmlh8Hpn4U27dhliYkkMcGjV8bozsXTelHrXpiQVWJ69x5x-Q_8Z85bvX4nDEOVuHtotJqdI1M_CYXOqvTasg9W0Q8UmgkEgxb1CXKSOEKQPTyPHk41JVhV0pxhoY5amJOCwodzXuH8MvSq_xU0fXbWLpTifn3X_95twmYU--ImWU25NVo-054pH8FKBmt9NdLYxOY7J1pHcKNkCdvslLZPKJZPOS7fCCo7o6BJUYvWYL7qgy5M6loyyKDzHdhLiDHwTWD5eHUq5qCDHuT24ws9YovOpK4WIlnBGdTlfrM-aUuoPP7n1egvGxo6kLy4nggX1_mn_ajv7qNSdCo0iXOyqp9G_V63FtxOdX0YWbPSx6dBco_05DZH109eFOZi2JvieA7XVxoL5x4IrbzsNAiH7MjlEbxVB4R_WYtvOs5_tD0WlQRP7vjprFivu72OefddC-jAaU38OaOZz4zpkwU0ckL7o2RJ5b68erHHoQnSSBPHJIFMJz3Ac0rK43wMk5NBoslRcEB-yOrzp4S86rR7ENkWf_gwp_wULR0Rxxt4eEpiWqDC1FDN4UOwmXyw7YoCjIZnmmckz8hnhXvRfW5ULygjoi5INAZlkCSa4my64_vQTeXuzqedlNSlRuCP0Q_wKxew3eQPd3oI5kmDLb0OD-1a5l4WWIt4oIiWHmxaWqwnHjhDwUL3Fa06RiBZZXqIJD9qYAKNXeXtLr7FhSLEOGAF9auJuhl9XvWo4Mrin4YaQJ6ttgRf8ZPxlKHP5LehRz36Iiacj3b1N_s36J_4ZUqGg4D2KehP68SsqLa5AaLnMvczQAj0jQB7288qlfGDpy4Xzi3-oLFTj8OENg8eg5c5JXi_ipwKLctBebd3xSJcFCWZSkDzCD1bxqZThlmSDaqFPo7_n1a4iyULSjLrcyeK4H7cPZseMda7VXosoVXAr2hJFoHr1oBbwSqK5Gauj5roO8rPaONFkb2vbXBTFhwkDN9fch63JyNl0NPnLf4OMjw3wdv5yDFL4vV6mLXUVeY8l4D7kITOqOAivlC-oItF-zvtVV6EfR8HE-d031iLLqcnfKSt7Iir_e1-csxs6qBCv-Jw2QFtO5qNjquVWvUljzIxvompVhhhHskrj_058XzESTvuJ1ReJ9pi6uQNUkxN4qNxKTuxKRy-YSCaUHauX495i27Wx47d54Woqm_MMwN9pAUCO0o-7dZUMmZypRAIB_iv0tAhxKyJlC1HOAJvRa4_Bz9yz3Q1sLWX8J0MeAJiK6V5b79bmTLBnqb6CiarThJV54L9E-8_mcZyGW_ERg0G29Rcy50u39RB74Vmc2ytLjlmHhkPLBW-7YaGzQTX97gYDsisYtI7EebLVs_xA-RTbZnAJz7Ge0pO9Bc5dNB4aMECMEgdRXBbPiaO7PA=",
+          "id": "rs_0d6b4b13d047e696016aba2cc72b1087d0afd732b2278815fb",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The cold start advance circuit is excluded from the Glowplugs Circuit Tests.\",\"reason\":\"The Glowplugs test text says the circuit is not checked there.\",\"verdict\":1,\"evidence_ids\":[\"O:glow_exclusion\"],\"evidence_quotes\":[\"there is also a cold start advance circuit (part of the fuel system) which is not checked\\nhere.\"]},{\"statement\":\"The Fuel System guidance states that the cold start advance circuit is part of the fuel system.\",\"reason\":\"The context identifies it as part of the fuel system.\",\"verdict\":1,\"evidence_ids\":[\"O:glow_exclusion\",\"O:cold_advance\"],\"evidence_quotes\":[\"a cold start advance circuit (part of the fuel system)\",\"FUEL SYSTEM\\nREFERENCE INFORMATION\\n\\nThe cold advance circuit\"]},{\"statement\":\"The Fuel System guidance states that the cold start advance circuit is checked for proper timing advance under cold start conditions, when the engine is cold.\",\"reason\":\"It says operation may be checked below 90°F, not that proper timing advance is checked.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0d6b4b13d047e696016aba2ccc9b2487d0a4322553e6d12afe",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 692,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 504,
+        "output_tokens_details": {
+          "reasoning_tokens": 257
+        },
+        "total_tokens": 1196
+      },
+      "user": null
+    },
+    "request_id": "resp_0d6b4b13d047e696016aba2cc6618487d09a90b518a0ed95ec",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The cold start advance circuit is excluded from the Glowplugs Circuit Tests.\",\"reason\":\"The Glowplugs test text says the circuit is not checked there.\",\"verdict\":1,\"evidence_ids\":[\"O:glow_exclusion\"],\"evidence_quotes\":[\"there is also a cold start advance circuit (part of the fuel system) which is not checked\\nhere.\"]},{\"statement\":\"The Fuel System guidance states that the cold start advance circuit is part of the fuel system.\",\"reason\":\"The context identifies it as part of the fuel system.\",\"verdict\":1,\"evidence_ids\":[\"O:glow_exclusion\",\"O:cold_advance\"],\"evidence_quotes\":[\"a cold start advance circuit (part of the fuel system)\",\"FUEL SYSTEM\\nREFERENCE INFORMATION\\n\\nThe cold advance circuit\"]},{\"statement\":\"The Fuel System guidance states that the cold start advance circuit is checked for proper timing advance under cold start conditions, when the engine is cold.\",\"reason\":\"It says operation may be checked below 90°F, not that proper timing advance is checked.\",\"verdict\":0,\"evidence_ids\":[],\"evidence_quotes\":[]}]}",
+    "usage": {
+      "input_tokens": 692,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 504,
+      "output_tokens_details": {
+        "reasoning_tokens": 257
+      },
+      "total_tokens": 1196
+    }
+  },
+  "record_hash": "6495947bab5d48ada88138f8b4f7d1db285c54c79de6aa4cc5dfbc95d17f16fa",
+  "request_hash": "0e9628fd577450fc1c88c4ab34cca4b1352f749fdb54cd26e4564e2f1c2438d3",
+  "started_at": "2026-09-28T09:00:54.228639+00:00",
+  "status": "OK"
+}

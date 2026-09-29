@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:48:14.905558+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response identifies the fuel system and gives factual explanations for black exhaust smoke."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588894,
+      "conversation": null,
+      "created_at": 1790588892.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0a352f4623ef136c016aba37dc8cbc87d087558a814ffcc970",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujfeqTs5tXaBJ5Qv5_ZACjFB_MSEvB-5zYuXbqr7YM14giyGF2PxgjF8dXF_PF6pCtIostqkz84kUnHW03-KPtfLt02ykzQUqqis0EFLzzRDClf4J-XoPJHo9jiGdBnvYLj1dr-Vs6gNAgD9WwhVLbth1adRB2hJfI1cwraRkf0Svwy12n1kQpHjkViqDeuMKzm4RO6VoA6VDonZqL76sVdOvQYc2kKHCfSnjiOuLRb7GsZgtqqI5ZBcfAqHSfdprjUJpbfjU7IL_M9VrpnBAgfh05vcfGKTOA5YBzPYDmVmd1L3HuKfZ8BOINEnR49Rg_W6alEwvy11xrLH_u_F2KRZKFva3SVRp6xo16BQ0ux70PkbrTu2LCABNUQZJ8qgv0zaDo4UaET4M_J3j9S_aNvpob0GzwuN19DNfC7B0tABm7pQ4Wv_BAblelckbLFx8QcHdjUEiydpx4xTKy2DB6Ts8XrVUOwDT-0RHs68dD5WTTOOuZuut4ORjrrhLey0iG7YOrGNN1FYhofPA0vGQoI-asH9eTu_c942BFPwpEs_mOlphpkLHPY8g6H1pIG06d7MT2YtuM_y967oxpgYrKZM_Kp0sB07r613PfRyBE9-jqDutqlrE11gw_QxJmDS0mtuQ6T5N3_wTPIWH-aKg6ia6tLJUBhMo39tYMte_kICswMCb8Ba_eL15PQS7sKEEzNru16mLSslH-wNQg4HwUkF2-D4UNZ43kl9LdUpBksOaTYbgthHZRh8dZlO28TuAYKASSruLCRyq_svX9Dxbti-y7xQ-FxKXBY3PUY-Bfj6hFAKFaKsm7mKOAJkQMsKZ9W2v_BsN36w5o3TLjn2YP8jjsKzEN976eaVum9qzxr49bhapemDyEx9HTGXDVID7SPI4OP37Iw0riVPwIUgjgUMLrtxntvsuP_h5YY5X8H5Wi6TJ4Y2rVi41apbh7JeWafbVRUWhgngvo1g_19G-vQtNdGm4Bsb4ik8MrKRJZr11vYul-D-VPN4nhUD56l799GBMHqzKMvVSMxrtYLeDVYwWxZ4e8Tj-udMNhzjEzgPWN21TpLQCzcoL206pJhCykp7-hTqj18bcGLZjXpdWDNunKHch4A971TGGgLXGm-TwwmjEUFYHqK9Htn1feQNou6NuB8OXdueR5JqE0NgrS84s_XvpyYCJfVsjfXdGg6Zf_StwdTtimbIVBwhvsfQhvkw-fZTETRptfnDEQNFjFqGyw==",
+          "id": "rs_0a352f4623ef136c016aba37dd380087d0ab93af4691b73126",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response identifies the fuel system and gives factual explanations for black exhaust smoke.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0a352f4623ef136c016aba37ddc1f487d0848ec734045ae2c8",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 321,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 54,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 375
+      },
+      "user": null
+    },
+    "request_id": "resp_0a352f4623ef136c016aba37dc8cbc87d087558a814ffcc970",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response identifies the fuel system and gives factual explanations for black exhaust smoke.\"}",
+    "usage": {
+      "input_tokens": 321,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 54,
+      "output_tokens_details": {
+        "reasoning_tokens": 13
+      },
+      "total_tokens": 375
+    }
+  },
+  "record_hash": "e1d31b085c31dedf9bbba2c50e47eff86842daa12f9a837e66ebcf2e77db6944",
+  "request_hash": "7b9aece74b94bb046c6e9b89c747f880dcec4ce211c4d4a31b299b7ad24819ed",
+  "started_at": "2026-09-28T09:48:12.414647+00:00",
+  "status": "OK"
+}

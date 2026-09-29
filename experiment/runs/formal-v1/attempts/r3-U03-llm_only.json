@@ -1,0 +1,526 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:41:34.656771+00:00",
+  "evaluation_answer": "The removal and installation sequence for replacing the HMMWV (M998-series) distribution box, including mounting and harness reconnection, is not available in the provided reference material. As no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004) were supplied, and based on the absence of specific technical details in the reference, this information cannot be confirmed or provided. For accurate procedures, consult the official technical manual.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 232,
+  "key": "r3-U03-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nProvide the removal and installation sequence for replacing the distribution box, including its mounting and harness reconnection steps.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "Provide the removal and installation sequence for replacing the distribution box, including its mounting and harness reconnection steps.",
+  "question_id": "U03",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:28:51.510399407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:28:48.494384507+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4889624576.0,
+    "max_actual_interval_ms": 110.09220000050846,
+    "peak_rss_bytes": 9285009408,
+    "peak_vram_bytes": 4889624576,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5777.9788548,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.086671,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.1789558,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.286466,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.3799573,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.4895264,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.5822395,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.6923317,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.7848486,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.8938816,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5778.9854907,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.0939574,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.1871413,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.2800023,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.386281,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.4934868,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.5853326,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.6788537,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.7848187,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.8931675,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5779.9866358,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5780.0802439,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889624576
+      },
+      {
+        "monotonic": 5780.1892806,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889133056
+      },
+      {
+        "monotonic": 5780.2824926,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889133056
+      },
+      {
+        "monotonic": 5780.3885628,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889133056
+      },
+      {
+        "monotonic": 5780.4820184,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889133056
+      },
+      {
+        "monotonic": 5780.5903792,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889133056
+      },
+      {
+        "monotonic": 5780.6840589,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889133056
+      },
+      {
+        "monotonic": 5780.7935837,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103227392,
+          "30736": 12021760,
+          "36040": 101933056,
+          "37504": 9059868672,
+          "37564": 7958528
+        },
+        "rss_bytes": 9285009408,
+        "vram_bytes": 4889133056
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:41:34.6544766Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 115,
+    "eval_duration": 1805394000,
+    "load_duration": 8714000,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 232,
+    "prompt_eval_duration": 29271000,
+    "response": "The removal and installation sequence for replacing the HMMWV (M998-series) distribution box, including mounting and harness reconnection, is not available in the provided reference material. As no excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004) were supplied, and based on the absence of specific technical details in the reference, this information cannot be confirmed or provided. For accurate procedures, consult the official technical manual.",
+    "total_duration": 1852517100
+  },
+  "retrieval": null,
+  "round": 3,
+  "sequence": 277,
+  "started_at": "2026-09-28T04:41:32.795629+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1861.286399999699,
+    "retrieval": null,
+    "total": 1861.286399999699
+  },
+  "unprovided_citations": []
+}

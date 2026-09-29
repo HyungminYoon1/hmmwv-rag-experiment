@@ -1,0 +1,314 @@
+{
+  "at": "2026-09-29T05:36:22.893630+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "74966008c978371fa7eb07b1859e1c370756c11921aec070dba0be8d1337438a",
+  "result": {
+    "attempt_key": "r1-S08-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 19.780446400000073,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9876689818338087
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9876689818338087
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.25
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S08",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly answers the question and makes substantive claims about what the tests diagnose, despite noting that no excerpt is available."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9876689827382109,
+          0.9876689760667344,
+          0.9876689866964806
+        ],
+        "query_vector_hash": "49fed75b07aa4aeddfdd5f9e9e1a948e4498506f129b169b7f4aef80a6fb174b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Are Engine Cooling Tests specifically designed to diagnose a faulty temperature sending unit or gauge?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are Engine Cooling Tests specifically designed to diagnose a faulty temperature sending unit or gauge?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are Engine Cooling Tests specifically designed to diagnose a faulty temperature sending unit or gauge?"
+          }
+        ],
+        "response_vectors_hash": "e12d8931b4137506bba54e6973d9ce6be25273b037ae196a44375b41c6fd77a8",
+        "score": 0.9876689818338091
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "[No specific excerpt available]"
+        ],
+        "shared_conditions": [],
+        "statements": [
+          {
+            "answer_quote": "intended to diagnose issues with the engine cooling system, such as coolant level",
+            "statement": "The Engine Cooling Tests are intended to diagnose engine coolant-level issues."
+          },
+          {
+            "answer_quote": "such as coolant level, flow, and temperature",
+            "statement": "The Engine Cooling Tests are intended to diagnose engine coolant-flow issues."
+          },
+          {
+            "answer_quote": "such as coolant level, flow, and temperature",
+            "statement": "The Engine Cooling Tests are intended to diagnose engine cooling-temperature issues."
+          },
+          {
+            "answer_quote": "not specifically designed to diagnose a faulty temperature sending unit or gauge",
+            "statement": "The Engine Cooling Tests are not specifically designed to diagnose a faulty temperature sending unit."
+          },
+          {
+            "answer_quote": "not specifically designed to diagnose a faulty temperature sending unit or gauge",
+            "statement": "The Engine Cooling Tests are not specifically designed to diagnose a faulty temperature gauge."
+          },
+          {
+            "answer_quote": "a malfunctioning sending unit or gauge could affect temperature readings",
+            "statement": "A malfunctioning temperature sending unit could affect temperature readings."
+          },
+          {
+            "answer_quote": "a malfunctioning sending unit or gauge could affect temperature readings",
+            "statement": "A malfunctioning temperature gauge could affect temperature readings."
+          },
+          {
+            "answer_quote": "the tests primarily evaluate the cooling system's performance rather than the accuracy of the temperature sensor or gauge",
+            "statement": "The Engine Cooling Tests primarily evaluate cooling-system performance rather than the accuracy of the temperature sensor or gauge."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "intended to diagnose issues with the engine cooling system, such as coolant level",
+          "id": "C001",
+          "text": "The Engine Cooling Tests are intended to diagnose engine coolant-level issues."
+        },
+        {
+          "answer_quote": "such as coolant level, flow, and temperature",
+          "id": "C002",
+          "text": "The Engine Cooling Tests are intended to diagnose engine coolant-flow issues."
+        },
+        {
+          "answer_quote": "such as coolant level, flow, and temperature",
+          "id": "C003",
+          "text": "The Engine Cooling Tests are intended to diagnose engine cooling-temperature issues."
+        },
+        {
+          "answer_quote": "not specifically designed to diagnose a faulty temperature sending unit or gauge",
+          "id": "C004",
+          "text": "The Engine Cooling Tests are not specifically designed to diagnose a faulty temperature sending unit."
+        },
+        {
+          "answer_quote": "not specifically designed to diagnose a faulty temperature sending unit or gauge",
+          "id": "C005",
+          "text": "The Engine Cooling Tests are not specifically designed to diagnose a faulty temperature gauge."
+        },
+        {
+          "answer_quote": "a malfunctioning sending unit or gauge could affect temperature readings",
+          "id": "C006",
+          "text": "A malfunctioning temperature sending unit could affect temperature readings."
+        },
+        {
+          "answer_quote": "a malfunctioning sending unit or gauge could affect temperature readings",
+          "id": "C007",
+          "text": "A malfunctioning temperature gauge could affect temperature readings."
+        },
+        {
+          "answer_quote": "the tests primarily evaluate the cooling system's performance rather than the accuracy of the temperature sensor or gauge",
+          "id": "C008",
+          "text": "The Engine Cooling Tests primarily evaluate cooling-system performance rather than the accuracy of the temperature sensor or gauge."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "they are not specifically designed to diagnose a faulty temperature sending unit or gauge.",
+            "fulfilled": 1,
+            "id": "S08-A01",
+            "reason": "The answer excludes sending-unit and gauge diagnosis, matching the stated limitation."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.25,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage mentions engine cooling problems but does not specify coolant-level issues.",
+              "statement": "The Engine Cooling Tests are intended to diagnose engine coolant-level issues.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not specify coolant-flow issues.",
+              "statement": "The Engine Cooling Tests are intended to diagnose engine coolant-flow issues.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not specify cooling-temperature issues.",
+              "statement": "The Engine Cooling Tests are intended to diagnose engine cooling-temperature issues.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C002103"
+              ],
+              "evidence_quotes": [
+                "Please note that this paragraph is NOT for diagnoses of problems with the temperature\nsending unit or the gauge."
+              ],
+              "reason": "The passage expressly excludes diagnosing problems with the temperature sending unit.",
+              "statement": "The Engine Cooling Tests are not specifically designed to diagnose a faulty temperature sending unit.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002103"
+              ],
+              "evidence_quotes": [
+                "Please note that this paragraph is NOT for diagnoses of problems with the temperature\nsending unit or the gauge."
+              ],
+              "reason": "The passage expressly excludes diagnosing problems with the gauge.",
+              "statement": "The Engine Cooling Tests are not specifically designed to diagnose a faulty temperature gauge.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not describe how a malfunctioning sending unit affects readings.",
+              "statement": "A malfunctioning temperature sending unit could affect temperature readings.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage does not describe how a malfunctioning gauge affects readings.",
+              "statement": "A malfunctioning temperature gauge could affect temperature readings.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passage excludes sending-unit and gauge diagnoses but does not specify performance evaluation or accuracy as the basis for comparison.",
+              "statement": "The Engine Cooling Tests primarily evaluate cooling-system performance rather than the accuracy of the temperature sensor or gauge.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 4.440892098500626e-16,
+        "cosine_similarities": [
+          0.9876689827382109,
+          0.9876689760667344,
+          0.9876689866964806
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9876689818338087,
+        "query_vector_hash": "49fed75b07aa4aeddfdd5f9e9e1a948e4498506f129b169b7f4aef80a6fb174b",
+        "ragas_score": 0.9876689818338091,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "e12d8931b4137506bba54e6973d9ce6be25273b037ae196a44375b41c6fd77a8"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9876689827382109,
+          0.9876689760667344,
+          0.9876689866964806
+        ],
+        "decimal50_cosines": [
+          "0.98766898273821084661851241626368073866605210653675",
+          "0.98766897606673434340869477891269256756478956185813",
+          "0.98766898669648045712611429372283565358085037180511"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9876689818338091
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9876689818338091
+          }
+        },
+        "query_vector_hash": "49fed75b07aa4aeddfdd5f9e9e1a948e4498506f129b169b7f4aef80a6fb174b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Are Engine Cooling Tests specifically designed to diagnose a faulty temperature sending unit or gauge?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are Engine Cooling Tests specifically designed to diagnose a faulty temperature sending unit or gauge?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are Engine Cooling Tests specifically designed to diagnose a faulty temperature sending unit or gauge?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "e12d8931b4137506bba54e6973d9ce6be25273b037ae196a44375b41c6fd77a8",
+        "score": 0.9876689818338087
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "310318cf66d3c0ad524e1157f9a964fb9a22ccec0e8254b26d46be7a47671e20",
+  "source_result_sha256": "0971d2c1f25674a58c13558054a6f0be36c77e60ca955793ab27fa446e5ff695"
+}

@@ -1,0 +1,793 @@
+{
+  "citation_ids": [
+    "[C001040]",
+    "[C001040]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:34:35.230433+00:00",
+  "evaluation_answer": "Yes, the fuel-filter element replacement is due under PMCS. According to , the filter element must be replaced every 6,000 miles or annually, whichever occurs first. Since 6,500 miles exceeds 6,000 miles, replacement is required.\n\nThe additional inspection set that must accompany the annual inspections is the fuel system inspection, as specified in  under Item No. 28, which requires annual inspection of the fuel system.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 939,
+  "key": "r2-M20-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C001086] TM 9-2320-280-20-1 | PDF 119 | Printed 2-28\nANNUAL (6,000 MILE) PMCS PARTS LIST\nPART\nITEM\nNSN\nNOMENCLATURE\nQTY\nNUMBER\nNO.\n\nITEM NO.: 12.\nPART NUMBER: 5589121\nNSN: 4330-01-190-3579\nNOMENCLATURE: Filter Element Kit, Fuel\nQTY: 1\n\n[C001040] TM 9-2320-280-20-1 | PDF 116 | Printed 2-25\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 28\nINTERVAL: Annually\nITEM TO BE INSPECTED: Fuel\nSystem\n\nINTERVAL: Annually\nITEM NO.: 28\nITEM TO BE INSPECTED: Fuel\nSystem\nPROCEDURES: Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first. Replace water sepa-\nrator element if unserviceable (para.\n3-33).\n\n[C001085] TM 9-2320-280-20-1 | PDF 119 | Printed 2-28\nANNUAL (6,000 MILE) PMCS PARTS LIST\nPART\nITEM\nNSN\nNOMENCLATURE\nQTY\nNUMBER\nNO.\n\nITEM NO.: 11.\nPART NUMBER: PH13\nNSN: 2940-00-082-6034\nNOMENCLATURE: Filter, Fluid, Engine Oil\nQTY: 1\n\n[C001074] TM 9-2320-280-20-1 | PDF 119 | Printed 2-28\nSEMI-ANNUAL (3,000 MILE) PMCS PARTS LIST\nITEM\nPART\nNSN\nQTY\nNOMENCLATURE\nNO.\nNUMBER\n\nITEM NO.: 11.\nPART NUMBER: PH13\nNSN: 2940-00-082-6034\nNOMENCLATURE: Filter, Fluid, Engine Oil\nQTY: 1\n\n[C000871] TM 9-2320-280-20-1 | PDF 95 | Printed 2-4\n2-11. SPECIFIC PMCS PROCEDURES\n\n(a) Semiannual (six month) checks;\n(b) Annual (yearly) checks; and\n(c) Biennial (every two years) checks.\n(3) Item To Be Inspected. Lists the system, common name, or location of the item to be inspected.\n(4) Procedures. Provides instructions for servicing, inspection, lubrication, replacement, or\nadjustment, and in some cases, having item repaired at a higher level.\nQUESTION:\nA fuel-filter element has covered 6,500 miles in ten months. Is its replacement due under PMCS, and which additional inspection set must accompany the annual inspections?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 938,
+  "question": "A fuel-filter element has covered 6,500 miles in ten months. Is its replacement due under PMCS, and which additional inspection set must accompany the annual inspections?",
+  "question_id": "M20",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:21:52.084237207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:21:49.095343207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4860887040.0,
+    "max_actual_interval_ms": 113.52600000009261,
+    "peak_rss_bytes": 13545963520,
+    "peak_vram_bytes": 4860887040,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5358.5372105,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5358.6459408,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5358.7391105,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5358.8475859,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5358.9417952,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.0494448,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.1419222,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.2494528,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.3425708,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.4510618,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.5447403,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.6582663,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9262059520,
+          "37564": 7958528
+        },
+        "rss_bytes": 13545963520,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.7476689,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102940672,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9241591808,
+          "37564": 7958528
+        },
+        "rss_bytes": 13525495808,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.8391578,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5359.9478187,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.0405383,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.1502409,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.2423378,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.3512689,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.4455581,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.5390436,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.6471226,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.7428984,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.8529124,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5360.9453049,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5361.0393019,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5361.1481184,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5361.2401358,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      },
+      {
+        "monotonic": 5361.3475656,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102944768,
+          "17284": 4546560,
+          "30736": 12054528,
+          "34324": 4047237120,
+          "35444": 8089600,
+          "36040": 101076992,
+          "37504": 9107214336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13391122432,
+        "vram_bytes": 4860887040
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:34:35.2294614Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 112,
+    "eval_duration": 1616033000,
+    "load_duration": 8774800,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 938,
+    "prompt_eval_count": 939,
+    "prompt_eval_duration": 15566000,
+    "response": "Yes, the fuel-filter element replacement is due under PMCS. According to [C001040], the filter element must be replaced every 6,000 miles or annually, whichever occurs first. Since 6,500 miles exceeds 6,000 miles, replacement is required.\n\nThe additional inspection set that must accompany the annual inspections is the fuel system inspection, as specified in [C001040] under Item No. 28, which requires annual inspection of the fuel system.",
+    "total_duration": 1751759500
+  },
+  "retrieval": {
+    "embedding_ms": 101.76279999996041,
+    "items": [
+      {
+        "body_end": 102,
+        "body_start": 0,
+        "id": "C001086",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          119
+        ],
+        "prefix_chars": 79,
+        "printed_pages": [
+          "2-28"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.693166196346283,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "expected_rows": 12,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 12,
+          "table_id": "P0119:annual"
+        },
+        "text": "ANNUAL (6,000 MILE) PMCS PARTS LIST\nPART\nITEM\nNSN\nNOMENCLATURE\nQTY\nNUMBER\nNO.\n\nITEM NO.: 12.\nPART NUMBER: 5589121\nNSN: 4330-01-190-3579\nNOMENCLATURE: Filter Element Kit, Fuel\nQTY: 1",
+        "text_sha256": "0de68c0af2605c0e5985d97e102f46d75a3f7f5ee12621bef42fdee8893fd93d",
+        "token_count": 95,
+        "unit_id": "U001080",
+        "unit_key": "P0119:annual:row:12"
+      },
+      {
+        "body_end": 233,
+        "body_start": 0,
+        "id": "C001040",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          116
+        ],
+        "prefix_chars": 147,
+        "printed_pages": [
+          "2-25"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6893393993377686,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "28",
+          "row_ids": [
+            "P0116-T2_1-R03"
+          ],
+          "source_issues": []
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 28\nINTERVAL: Annually\nITEM TO BE INSPECTED: Fuel\nSystem\n\nINTERVAL: Annually\nITEM NO.: 28\nITEM TO BE INSPECTED: Fuel\nSystem\nPROCEDURES: Replace filter element every 6,000\nmiles (9,600 km) or annually, which-\never occurs first. Replace water sepa-\nrator element if unserviceable (para.\n3-33).",
+        "text_sha256": "9719c396caeaf8a5c25407b2bac46451056702952bee98acf3fbc9829cfee920",
+        "token_count": 124,
+        "unit_id": "U001034",
+        "unit_key": "pmcs:28"
+      },
+      {
+        "body_end": 100,
+        "body_start": 0,
+        "id": "C001085",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          119
+        ],
+        "prefix_chars": 79,
+        "printed_pages": [
+          "2-28"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.671640932559967,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "expected_rows": 12,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 11,
+          "table_id": "P0119:annual"
+        },
+        "text": "ANNUAL (6,000 MILE) PMCS PARTS LIST\nPART\nITEM\nNSN\nNOMENCLATURE\nQTY\nNUMBER\nNO.\n\nITEM NO.: 11.\nPART NUMBER: PH13\nNSN: 2940-00-082-6034\nNOMENCLATURE: Filter, Fluid, Engine Oil\nQTY: 1",
+        "text_sha256": "785733c4c1519588729d8889e5cdbd4aa5e7d9cae577a3291e57ed202913427c",
+        "token_count": 91,
+        "unit_id": "U001079",
+        "unit_key": "P0119:annual:row:11"
+      },
+      {
+        "body_end": 100,
+        "body_start": 0,
+        "id": "C001074",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          119
+        ],
+        "prefix_chars": 84,
+        "printed_pages": [
+          "2-28"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6687605381011963,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "expected_rows": 11,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 11,
+          "table_id": "P0119:semiannual"
+        },
+        "text": "SEMI-ANNUAL (3,000 MILE) PMCS PARTS LIST\nITEM\nPART\nNSN\nQTY\nNOMENCLATURE\nNO.\nNUMBER\n\nITEM NO.: 11.\nPART NUMBER: PH13\nNSN: 2940-00-082-6034\nNOMENCLATURE: Filter, Fluid, Engine Oil\nQTY: 1",
+        "text_sha256": "238b528d9fafb2509d491b4e4f2238a7c6f973029289c931d52cd51648a261e0",
+        "token_count": 94,
+        "unit_id": "U001068",
+        "unit_key": "P0119:semiannual:row:11"
+      },
+      {
+        "body_end": 368,
+        "body_start": 0,
+        "id": "C000871",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          95
+        ],
+        "prefix_chars": 32,
+        "printed_pages": [
+          "2-4"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R001023"
+        ],
+        "review_ids": [],
+        "score": 0.6352787017822266,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[5]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "PMCS_OR_MAINTENANCE",
+          "page_layout": "numbered_section",
+          "section": "2-11",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-11. SPECIFIC PMCS PROCEDURES\n\n(a) Semiannual (six month) checks;\n(b) Annual (yearly) checks; and\n(c) Biennial (every two years) checks.\n(3) Item To Be Inspected. Lists the system, common name, or location of the item to be inspected.\n(4) Procedures. Provides instructions for servicing, inspection, lubrication, replacement, or\nadjustment, and in some cases, having item repaired at a higher level.",
+        "text_sha256": "a8b5a70a12ebada9f46b2cbea1bfa5f463f095c0054e78b590aa026f58351a6f",
+        "token_count": 105,
+        "unit_id": "U000871",
+        "unit_key": "region:95:1:5"
+      }
+    ],
+    "search_ms": 8.870899999237736
+  },
+  "round": 2,
+  "sequence": 149,
+  "started_at": "2026-09-28T04:34:33.354358+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1764.4061000000875,
+    "retrieval": 111.4834999998493,
+    "total": 1875.8895999999368
+  },
+  "unprovided_citations": []
+}

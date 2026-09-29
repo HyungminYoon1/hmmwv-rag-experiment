@@ -1,0 +1,152 @@
+{
+  "at": "2026-09-28T09:42:34.242555+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "7ebc5d7da1b0291eb004a13f25fdeeacaed5ef5653a1aac2681bf320651cf1db",
+  "result": {
+    "attempt_key": "r1-S10-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 16.500975599999947,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9768439992588963
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9768439992588963
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S10",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific coolant temperature at which the fan activates."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.976843999258896,
+          0.976843999258896,
+          0.976843999258896
+        ],
+        "query_vector_hash": "beda623784aa1969dda9635390366912417eb0e004b6bb1fcd2b4b649eafd40e",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the engine fan activated?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the engine fan activated?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the engine fan activated?"
+          }
+        ],
+        "response_vectors_hash": "ba3c4db12dc3b3891da6199bf62cc576867912cd6e5ffe517aaa34a4dbf4872b",
+        "score": 0.9768439992588963
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The engine fan is activated when the coolant temperature reaches 215°F (102°C)."
+        }
+      ],
+      "claims_raw": [
+        "The engine fan is activated when the coolant temperature reaches 215°F (102°C)."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The engine fan is activated when the coolant temperature reaches 215°F (102°C).",
+            "fulfilled": 1,
+            "id": "S10-A01",
+            "reason": "The stated activation temperature matches the source."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "The fan is activated when coolant temperature reaches 215°F (102°C)."
+              ],
+              "reason": "The context explicitly states the fan activates at this coolant temperature.",
+              "statement": "The engine fan is activated when the coolant temperature reaches 215°F (102°C).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:fan"
+              ],
+              "evidence_quotes": [
+                "The fan is activated when coolant temperature reaches 215°F (102°C)."
+              ],
+              "reason": "The context states the fan activates at that coolant temperature.",
+              "statement": "The engine fan is activated when the coolant temperature reaches 215°F (102°C).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.976843999258896,
+          0.976843999258896,
+          0.976843999258896
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9768439992588961,
+        "query_vector_hash": "beda623784aa1969dda9635390366912417eb0e004b6bb1fcd2b4b649eafd40e",
+        "ragas_score": 0.9768439992588963,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "ba3c4db12dc3b3891da6199bf62cc576867912cd6e5ffe517aaa34a4dbf4872b"
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "8694a7f8be4c6216ecb5bd0d4fad9d79518fd3589910ec78ac2fb3c3552260c6"
+}

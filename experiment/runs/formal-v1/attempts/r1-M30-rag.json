@@ -1,0 +1,828 @@
+{
+  "citation_ids": [
+    "[C005718]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:27:16.487853+00:00",
+  "evaluation_answer": "The hydro-boost unit converts hydraulic power from the steering pump to mechanical power to the master cylinder, providing power assist during braking.  \n\nThe four steering-system components identified as possible influences on hydro-boost operation in the brake guidance are:  \n1. Power steering pump  \n2. Power steering gear  \n3. Fan drive  \n4. Hydro-boosters ",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 906,
+  "key": "r1-M30-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000719] TM 9-2320-280-20-1 | PDF 80 | Printed 1-47\n1-28. SERVICE BRAKE SYSTEM OPERATION\n\nHYDRO-BOOST - Converts hydraulic power from the steering pump to mechanical power to the\nmaster cylinder, providing power assist during braking.\n\n[C000733] TM 9-2320-280-20-1 | PDF 82 | Printed 1-49\n1-29. STEERING CONTROL SYSTEM OPERATION\n\nB\nHYDRO-BOOST –  Converts hydraulic power from the steering pump to mechanical power to the\nmaster cylinder, providing power assist during braking.\n\n[C005718] TM 9-2320-280-20-1 | PDF 574,575 | Printed 2-470,2-471\nSTEERING SYSTEM\nDIAGNOSTIC FLOWCHART\nB7\nKNOWN INFO\nHARD OR ABNORMAL\nSTEERING\nPOSSIBLE PROBLEMS\nPOWER STEERING PUMP\nPOWER STEERING GEAR\nFAN DRIVE\nHYDRO-BOOSTER\n\nIS THE HYDRO-BOOSTER\nWORKING PROPERLY?\nTEST OPTIONS\nSEE INSTRUCTIONS AT RIGHT.\nREASON FOR QUESTION\nThe hydro-booster will affect the\noperation of the steering system.\nMethod for checking hydro-booster. Depress brake pedal several times to\nexhaust accumulator. Depress brake pedal and start engine. Brake pedal\nshould fall, then push back against operator's foot.\n\n[C005590] TM 9-2320-280-20-1 | PDF 559 | Printed 2-456\nBRAKES\nKNOWN INFO\nHYDRO-BOOSTER SYSTEM\nNOT WORKING\nPROPERLY\nPOWER STEERING FLUID\nOK\nBELTS OK\nPOSSIBLE PROBLEMS\nHYDRO-BOOSTER\nPOWER\nSTEERING\nSYSTEM\n\nARE ALL THE POWER STEERING HYDRAULIC COMPONENTS KNOWN TO BE OK? TEST OPTIONS CHECK COMPONENTS. YOU CAN RUN THE TESTS IN PARAGRAPH PARAGRAPH 2-37 2-37 TO TEST THE STEERING. REASON FOR QUESTION Power steering system and brake system share some of the same hydraulic components to run the hydro-booster.\n\n[C005560] TM 9-2320-280-20-1 | PDF 557 | Printed 2-454\nBRAKES\nKNOWN INFO\nPARKING BRAKE OK\nMASTER CYLINDER OK\nBRAKE PADS OK\nROTORS OK\nCALIPERS OK\nPROPORTIONING VALVE\nOK\nPOSSIBLE PROBLEMS\nHYDRO-BOOSTER\nMECHANICAL\nCOMPONENTS\n\nIS THE HYDRO-BOOSTER WORKING PROPERLY? TEST OPTIONS SEE INSTRUCTIONS AT RIGHT. REASON FOR QUESTION The hydro-booster is an integral part of the braking system.\nQUESTION:\nWhat conversion does the hydro-boost unit perform in the steering-system description, and which four steering-system components are identified as possible influences on hydro-booster operation in the brake guidance?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 191,
+  "question": "What conversion does the hydro-boost unit perform in the steering-system description, and which four steering-system components are identified as possible influences on hydro-booster operation in the brake guidance?",
+  "question_id": "M30",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:14:33.341331107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:14:30.540686707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836900864.0,
+    "max_actual_interval_ms": 110.298700000385,
+    "peak_rss_bytes": 9903017984,
+    "peak_vram_bytes": 4836900864,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4920.077698,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4920.1838106,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4920.2922049,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4920.3854315,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4920.4777445,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4920.5880432,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4920.6812856,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4920.7898729,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4920.8808441,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4920.9893316,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4040843264,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842049024,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.084163,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041007104,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842212864,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.1782964,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98631680,
+          "37504": 5559296000,
+          "37564": 7958528
+        },
+        "rss_bytes": 9842524160,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.2860179,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.3791965,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5617934336,
+          "37564": 7958528
+        },
+        "rss_bytes": 9901191168,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.4881371,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.5806598,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.6893012,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.7825159,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.8906824,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4921.9836956,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4922.0924238,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4922.1868019,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4922.2796067,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4922.3881873,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4922.4811905,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      },
+      {
+        "monotonic": 4922.5911289,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 109719552,
+          "17284": 4468736,
+          "30736": 13123584,
+          "34324": 4041318400,
+          "35444": 8007680,
+          "36040": 98660352,
+          "37504": 5619761152,
+          "37564": 7958528
+        },
+        "rss_bytes": 9903017984,
+        "vram_bytes": 4836900864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:27:16.4852947Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 81,
+    "eval_duration": 1218825000,
+    "load_duration": 9046100,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 191,
+    "prompt_eval_count": 906,
+    "prompt_eval_duration": 154904000,
+    "response": "The hydro-boost unit converts hydraulic power from the steering pump to mechanical power to the master cylinder, providing power assist during braking.  \n\nThe four steering-system components identified as possible influences on hydro-boost operation in the brake guidance are:  \n1. Power steering pump  \n2. Power steering gear  \n3. Fan drive  \n4. Hydro-boosters [C005718]",
+    "total_duration": 1462132500
+  },
+  "retrieval": {
+    "embedding_ms": 106.28679999990709,
+    "items": [
+      {
+        "body_end": 144,
+        "body_start": 0,
+        "id": "C000719",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          80
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "1-47"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R000860"
+        ],
+        "review_ids": [],
+        "score": 0.7191908955574036,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[2]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "1-28",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-28. SERVICE BRAKE SYSTEM OPERATION\n\nHYDRO-BOOST - Converts hydraulic power from the steering pump to mechanical power to the\nmaster cylinder, providing power assist during braking.",
+        "text_sha256": "c1221c97cfc9c995dd4bce4ec700664065e383c035e386bda98d9a382d040471",
+        "token_count": 39,
+        "unit_id": "U000719",
+        "unit_key": "region:80:1:2"
+      },
+      {
+        "body_end": 147,
+        "body_start": 0,
+        "id": "C000733",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          82
+        ],
+        "prefix_chars": 41,
+        "printed_pages": [
+          "1-49"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R000875"
+        ],
+        "review_ids": [],
+        "score": 0.7105966806411743,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "1-29",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-29. STEERING CONTROL SYSTEM OPERATION\n\nB\nHYDRO-BOOST –  Converts hydraulic power from the steering pump to mechanical power to the\nmaster cylinder, providing power assist during braking.",
+        "text_sha256": "e63a1b47bfd2cc9d64c25973cfd86e5a9a3ab9b6e73fa5da9beb14c6a5f38326",
+        "token_count": 42,
+        "unit_id": "U000733",
+        "unit_key": "region:82:1:3"
+      },
+      {
+        "body_end": 362,
+        "body_start": 0,
+        "id": "C005718",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          574,
+          575
+        ],
+        "prefix_chars": 160,
+        "printed_pages": [
+          "2-470",
+          "2-471"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6685119271278381,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "recorded_pdf_region",
+          "condition_link_basis": "PDF_REVIEWED_EXPLICIT_BOX_RELATION",
+          "condition_roles": [
+            "KNOWN INFO",
+            "POSSIBLE PROBLEMS"
+          ],
+          "cross_page_join": true,
+          "evidence": {
+            "file": "preprocessing/corrections/batch-009/evidence/FIX-V8-0574.png",
+            "sha256": "bf0241fa7e45386bae7105568cc7e04b4c8761496a7c985df5df3560c17d47ee"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "step": "B7"
+        },
+        "text": "STEERING SYSTEM\nDIAGNOSTIC FLOWCHART\nB7\nKNOWN INFO\nHARD OR ABNORMAL\nSTEERING\nPOSSIBLE PROBLEMS\nPOWER STEERING PUMP\nPOWER STEERING GEAR\nFAN DRIVE\nHYDRO-BOOSTER\n\nIS THE HYDRO-BOOSTER\nWORKING PROPERLY?\nTEST OPTIONS\nSEE INSTRUCTIONS AT RIGHT.\nREASON FOR QUESTION\nThe hydro-booster will affect the\noperation of the steering system.\nMethod for checking hydro-booster. Depress brake pedal several times to\nexhaust accumulator. Depress brake pedal and start engine. Brake pedal\nshould fall, then push back against operator's foot.",
+        "text_sha256": "ac97eac8bc4c3c2d0c33cef46ba943894b22b29f2d887af0674f82e83fe7d0e4",
+        "token_count": 143,
+        "unit_id": "U005710",
+        "unit_key": "P0574:question:B7"
+      },
+      {
+        "body_end": 300,
+        "body_start": 0,
+        "id": "C005590",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          559
+        ],
+        "prefix_chars": 148,
+        "printed_pages": [
+          "2-456"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6592984199523926,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            542.16,
+            755
+          ],
+          "condition_box": [
+            38.5,
+            536.0,
+            156.0,
+            699.5
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v6-work/box-ocr-candidates/P0559-B024.png",
+            "sha256": "2348b9ff11279709e470b5df503e944bfa773bfb878ca11ef69b092566282eb1"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            176.88,
+            564.0,
+            312.0,
+            609.6
+          ],
+          "source_component_keys": [
+            "region:559:1:19",
+            "region:559:1:18",
+            "region:559:1:21",
+            "P0559-B024:reviewed",
+            "region:559:1:17",
+            "region:559:1:20"
+          ]
+        },
+        "text": "BRAKES\nKNOWN INFO\nHYDRO-BOOSTER SYSTEM\nNOT WORKING\nPROPERLY\nPOWER STEERING FLUID\nOK\nBELTS OK\nPOSSIBLE PROBLEMS\nHYDRO-BOOSTER\nPOWER\nSTEERING\nSYSTEM\n\nARE ALL THE POWER STEERING HYDRAULIC COMPONENTS KNOWN TO BE OK? TEST OPTIONS CHECK COMPONENTS. YOU CAN RUN THE TESTS IN PARAGRAPH PARAGRAPH 2-37 2-37 TO TEST THE STEERING. REASON FOR QUESTION Power steering system and brake system share some of the same hydraulic components to run the hydro-booster.",
+        "text_sha256": "3ae7d40808cd15369ed4cd5dc6ce2f29c3cdefacc75bed8b1055347f4e56c550",
+        "token_count": 135,
+        "unit_id": "U005582",
+        "unit_key": "V6:P0559:node:3"
+      },
+      {
+        "body_end": 159,
+        "body_start": 0,
+        "id": "C005560",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          557
+        ],
+        "prefix_chars": 168,
+        "printed_pages": [
+          "2-454"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6441035270690918,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            337.2,
+            537.12
+          ],
+          "condition_box": [
+            37.5,
+            331.5,
+            154.0,
+            504.5
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0557.json",
+            "sha256": "1264115a5bbdf2b611aaa634acd92ce84409a047f24adc6631a895d66d3c9de7"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            173.52,
+            358.56,
+            302.64,
+            378.96
+          ],
+          "source_component_keys": [
+            "region:557:1:13",
+            "region:557:1:12",
+            "region:557:1:15",
+            "region:557:1:11",
+            "region:557:1:14"
+          ]
+        },
+        "text": "BRAKES\nKNOWN INFO\nPARKING BRAKE OK\nMASTER CYLINDER OK\nBRAKE PADS OK\nROTORS OK\nCALIPERS OK\nPROPORTIONING VALVE\nOK\nPOSSIBLE PROBLEMS\nHYDRO-BOOSTER\nMECHANICAL\nCOMPONENTS\n\nIS THE HYDRO-BOOSTER WORKING PROPERLY? TEST OPTIONS SEE INSTRUCTIONS AT RIGHT. REASON FOR QUESTION The hydro-booster is an integral part of the braking system.",
+        "text_sha256": "f33095482040ab22e0bd75563222fa055a48594461c78962f310f53679be83be",
+        "token_count": 107,
+        "unit_id": "U005552",
+        "unit_key": "V6:P0557:node:2"
+      }
+    ],
+    "search_ms": 9.930700000040815
+  },
+  "round": 1,
+  "sequence": 30,
+  "started_at": "2026-09-28T04:27:14.894242+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1475.9867000002487,
+    "retrieval": 117.49539999982517,
+    "total": 1593.4821000000738
+  },
+  "unprovided_citations": []
+}

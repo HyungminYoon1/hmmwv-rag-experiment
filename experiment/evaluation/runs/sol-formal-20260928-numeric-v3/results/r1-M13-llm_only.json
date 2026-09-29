@@ -1,0 +1,265 @@
+{
+  "at": "2026-09-28T09:59:37.468042+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "59b6cd6e59f8c83c268961d2bdd0fa9c23025758a3cdd1e2164c942a6a04b187",
+  "original_result_sha256": "289707ccb03ba3ffe161769445425857b50823685825058b1c8473875df8c119",
+  "result": {
+    "attempt_key": "r1-M13-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 34.99018330000035,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8091791278395347
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8091791278395347
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M13",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "Provides specific threshold values and states whether each measurement falls below its threshold."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8199953488221532,
+          0.8199953488221532,
+          0.7875466858742977
+        ],
+        "query_vector_hash": "bb1008e572a0ddcb5c2048079d8b2b758d777e914323e68384ba48a02646065b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm and tire tread measuring 1.0 mm fall below their respective NFMC thresholds?"
+          }
+        ],
+        "response_vectors_hash": "dc23c162c45dd21b20476dc923e8bf680459f49a269a801dbb5a46a505f3583b",
+        "score": 0.8091791278395348
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The Not Fully Mission Capable (NFMC) threshold for service-brake pad thickness is 2.5 mm."
+        },
+        {
+          "id": "C002",
+          "text": "A service-brake pad thickness of 2.5 mm is at the NFMC threshold and is not below the NFMC threshold."
+        },
+        {
+          "id": "C003",
+          "text": "A service-brake pad thickness exactly at the limit may be considered marginally acceptable depending on operational policy."
+        },
+        {
+          "id": "C004",
+          "text": "According to standard maintenance guidelines, 2.5 mm is generally the minimum acceptable service-brake pad thickness."
+        },
+        {
+          "id": "C005",
+          "text": "The NFMC threshold for tire tread depth is 1.6 mm."
+        },
+        {
+          "id": "C006",
+          "text": "A tire tread depth of 1.0 mm is below the NFMC threshold of 1.6 mm."
+        }
+      ],
+      "claims_raw": [
+        "The Not Fully Mission Capable (NFMC) threshold for service-brake pad thickness is 2.5 mm.",
+        "A service-brake pad thickness of 2.5 mm is at the NFMC threshold and is not below the NFMC threshold.",
+        "A service-brake pad thickness exactly at the limit may be considered marginally acceptable depending on operational policy.",
+        "According to standard maintenance guidelines, 2.5 mm is generally the minimum acceptable service-brake pad thickness.",
+        "The NFMC threshold for tire tread depth is 1.6 mm.",
+        "A tire tread depth of 1.0 mm is below the NFMC threshold of 1.6 mm."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M13-A01",
+            "reason": "The answer gives 2.5 mm, but the service-brake pad threshold is below 3.2 mm."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M13-A02",
+            "reason": "The answer says 2.5 mm does not fall below the threshold; it is below the actual 3.2 mm limit."
+          },
+          {
+            "answer_quote": "The NFMC threshold for tire tread depth is 1.6 mm.",
+            "fulfilled": 1,
+            "id": "M13-A03",
+            "reason": "The source limit of 1.59 mm rounds to 1.6 mm at the answer’s precision."
+          },
+          {
+            "answer_quote": "1.0 mm depth **is** below the NFMC threshold",
+            "fulfilled": 1,
+            "id": "M13-A04",
+            "reason": "1.0 mm is below the tire-tread limit."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.3333333333333333,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated NFMC condition is service brake pads less than 3.2 mm, not 2.5 mm.",
+              "statement": "The Not Fully Mission Capable (NFMC) threshold for service-brake pad thickness is 2.5 mm.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "2.5 mm is below the stated 3.2 mm threshold.",
+              "statement": "A service-brake pad thickness of 2.5 mm is at the NFMC threshold and is not below the NFMC threshold.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context gives no operational policy for pads exactly at the limit.",
+              "statement": "A service-brake pad thickness exactly at the limit may be considered marginally acceptable depending on operational policy.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not give a 2.5 mm minimum or general maintenance guidelines.",
+              "statement": "According to standard maintenance guidelines, 2.5 mm is generally the minimum acceptable service-brake pad thickness.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:tread"
+              ],
+              "evidence_quotes": [
+                "NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\nthan 1/16 in. (1.59 mm)."
+              ],
+              "reason": "The stated threshold is 1.59 mm, which rounds to 1.6 mm.",
+              "statement": "The NFMC threshold for tire tread depth is 1.6 mm.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:tread"
+              ],
+              "evidence_quotes": [
+                "NOT FULLY MISSION CAPABLE IF: a. Tread depth is less\nthan 1/16 in. (1.59 mm)."
+              ],
+              "reason": "1.0 mm is below the stated 1.59 mm threshold, rounded here to 1.6 mm.",
+              "statement": "A tire tread depth of 1.0 mm is below the NFMC threshold of 1.6 mm.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.8199953488221532,
+          0.8199953488221532,
+          0.7875466858742977
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8091791278395347,
+        "query_vector_hash": "bb1008e572a0ddcb5c2048079d8b2b758d777e914323e68384ba48a02646065b",
+        "ragas_score": 0.8091791278395348,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "dc23c162c45dd21b20476dc923e8bf680459f49a269a801dbb5a46a505f3583b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8199953488221532,
+          0.8199953488221532,
+          0.7875466858742977
+        ],
+        "decimal50_cosines": [
+          "0.81999534882215324201893531097931331062429360674448",
+          "0.81999534882215324201893531097931331062429360674448",
+          "0.78754668587429775809141325390584575135700869577820"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8091791278395348
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8091791278395348
+          }
+        },
+        "query_vector_hash": "bb1008e572a0ddcb5c2048079d8b2b758d777e914323e68384ba48a02646065b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm thick and tire tread measuring 1.0 mm deep fall below their respective NFMC thresholds?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do service-brake pads measuring 2.5 mm and tire tread measuring 1.0 mm fall below their respective NFMC thresholds?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "dc23c162c45dd21b20476dc923e8bf680459f49a269a801dbb5a46a505f3583b",
+        "score": 0.8091791278395347
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "51f8e064a5aa5c5da7f827a68676ebfd07976d061b1e9a4a8a7910734802d6ee"
+}

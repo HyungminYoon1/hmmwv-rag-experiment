@@ -1,0 +1,698 @@
+{
+  "citation_ids": [
+    "[C000492]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:44:26.794149+00:00",
+  "evaluation_answer": "The surge-tank cap valve opens at approximately 15 psi (103 kPa). ",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 951,
+  "key": "r3-S12-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002155] TM 9-2320-280-20-1 | PDF 243 | Printed 2-159\nREFERENCE INFORMATION\nENGINE COOLING\n\nDo not remove surge tank filler\ncap before releasing internal pressure\nwhen engine temperature is above\n190 °F (88°C). Steam or hot coolant\nunder pressure will cause injury.\n\n[C002138] TM 9-2320-280-20-1 | PDF 241 | Printed 2-157\nREFERENCE INFORMATION\nENGINE COOLING\n\n—___\nDo not remove surge tank filler\ncap before releasing intemal pressure\nwhen engine temperature is above\n190 °F (88°C). Steam or hot coolant\nunder pressure will cause injury.\nDrain and refill coolant, refer to\n(para 3-60).\n\n[C002141] TM 9-2320-280-20-1 | PDF 241 | Printed 2-157\nREFERENCE INFORMATION\nENGINE COOLING\n\nDo not remove surge tank filler\ncap before releasing intemal pressure\nwhen engine temperature is above\n190 °F (88°C). Steam or hot coolant\nunder pressure will cause injury.\nFill coolant to proper level , refer to\n(para 3-60).\n\n[C000492] TM 9-2320-280-20-1 | PDF 61,62 | Printed 1-31,1-32\nTable 1-2. Tabulated Data (Cont'd)\n6.\nCOOLING SYSTEM\nSTANDARD\nMETRIC\n\nITEM: Surge Tank Cap Pressure \nSTANDARD: 15 psi\nMETRIC: 103 kPa\n\n[C002106] TM 9-2320-280-20-1 | PDF 239 | Printed 2-155\n2-25.  ENGINE COOLING TESTS\n\nThe engine cooling system is a pressure type cooling system with thermostatic control of\ncoolant circulation.  The cooling system dissipates heat generated from combustion and\nmaintains the engine operating temperature at its most efficient level.  When the engine is\ncold and the thermostat is closed, coolant is recirculated through the water pump and\nengine.  As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine.  Any air\nor vapor in the cooling system will be forced to the surge tank under the liquid level and\nleave through a vent tube.  As the system cools, the extra coolant in the tank will be drawn\nback to the radiator.  Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used.  The fan is activated when coolant temperature reaches 215°F (102°C).  A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil.  When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere.\nQUESTION:\nAt approximately what cooling-system pressure does the surge-tank cap valve open?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 497,
+  "question": "At approximately what cooling-system pressure does the surge-tank cap valve open?",
+  "question_id": "S12",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:31:43.647856007+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:31:41.488130707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 110.033700000713,
+    "peak_rss_bytes": 13047173120,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5950.9692293,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.0708684,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.178823,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.2724608,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.3801855,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.4733016,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.5825112,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.6743913,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.7814051,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.8739466,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5951.9829198,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101556224,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909850624,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.0771872,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8626671616,
+          "37564": 7741440
+        },
+        "rss_bytes": 12909879296,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.171014,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8752369664,
+          "37564": 7741440
+        },
+        "rss_bytes": 13035577344,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.2810477,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8763965440,
+          "37564": 7741440
+        },
+        "rss_bytes": 13047173120,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.3745316,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8599035904,
+          "37564": 7741440
+        },
+        "rss_bytes": 12882243584,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.4813583,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8600862720,
+          "37564": 7741440
+        },
+        "rss_bytes": 12884070400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.5748948,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8600862720,
+          "37564": 7741440
+        },
+        "rss_bytes": 12884070400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.6825659,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8600862720,
+          "37564": 7741440
+        },
+        "rss_bytes": 12884070400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.7757901,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8600862720,
+          "37564": 7741440
+        },
+        "rss_bytes": 12884070400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.8837599,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8600862720,
+          "37564": 7741440
+        },
+        "rss_bytes": 12884070400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5952.9757518,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102875136,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101584896,
+          "37504": 8600862720,
+          "37564": 7741440
+        },
+        "rss_bytes": 12884070400,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:44:26.7898779Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 29,
+    "eval_duration": 526032000,
+    "load_duration": 9170600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 497,
+    "prompt_eval_count": 951,
+    "prompt_eval_duration": 128854000,
+    "response": "The surge-tank cap valve opens at approximately 15 psi (103 kPa). [C000492]",
+    "total_duration": 897496200
+  },
+  "retrieval": {
+    "embedding_ms": 83.57069999965461,
+    "items": [
+      {
+        "body_end": 173,
+        "body_start": 0,
+        "id": "C002155",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          243
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-159"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002411"
+        ],
+        "review_ids": [],
+        "score": 0.6921401619911194,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\nDo not remove surge tank filler\ncap before releasing internal pressure\nwhen engine temperature is above\n190 °F (88°C). Steam or hot coolant\nunder pressure will cause injury.",
+        "text_sha256": "bdc816b4af0975bcbcbd7b50885ed6e6f7bbd2042acc44be95a53742c81fc4e5",
+        "token_count": 48,
+        "unit_id": "U002149",
+        "unit_key": "region:243:1:2"
+      },
+      {
+        "body_end": 225,
+        "body_start": 0,
+        "id": "C002138",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          241
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-157"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R002390",
+          "R002391"
+        ],
+        "review_ids": [],
+        "score": 0.6900339126586914,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\n—___\nDo not remove surge tank filler\ncap before releasing intemal pressure\nwhen engine temperature is above\n190 °F (88°C). Steam or hot coolant\nunder pressure will cause injury.\nDrain and refill coolant, refer to\n(para 3-60).",
+        "text_sha256": "46f20301f2e4adedaa323205e1362e0d5101d79c116a75f21a8f2f26527e8c70",
+        "token_count": 69,
+        "unit_id": "U002132",
+        "unit_key": "region:241:1:2"
+      },
+      {
+        "body_end": 225,
+        "body_start": 0,
+        "id": "C002141",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          241
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-157"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R002394",
+          "R002395"
+        ],
+        "review_ids": [],
+        "score": 0.6837987899780273,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\nDo not remove surge tank filler\ncap before releasing intemal pressure\nwhen engine temperature is above\n190 °F (88°C). Steam or hot coolant\nunder pressure will cause injury.\nFill coolant to proper level , refer to\n(para 3-60).",
+        "text_sha256": "aedc2b5cb099165f0c1492b7c1b8e61e80516fb85268e1dbdec9f64ac4ca503d",
+        "token_count": 66,
+        "unit_id": "U002135",
+        "unit_key": "region:241:1:5"
+      },
+      {
+        "body_end": 63,
+        "body_start": 0,
+        "id": "C000492",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          62
+        ],
+        "prefix_chars": 70,
+        "printed_pages": [
+          "1-31",
+          "1-32"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6477563381195068,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 1,
+          "section": 4,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n6.\nCOOLING SYSTEM\nSTANDARD\nMETRIC\n\nITEM: Surge Tank Cap Pressure \nSTANDARD: 15 psi\nMETRIC: 103 kPa",
+        "text_sha256": "396a82da4b2156be4422be1cb7256eed974b6ddb4f33eeb19af62d40f4d9abfb",
+        "token_count": 50,
+        "unit_id": "U000492",
+        "unit_key": "P0062:spec:4:1"
+      },
+      {
+        "body_end": 1227,
+        "body_start": 0,
+        "id": "C002106",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          239
+        ],
+        "prefix_chars": 29,
+        "printed_pages": [
+          "2-155"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R002365"
+        ],
+        "review_ids": [],
+        "score": 0.6152087450027466,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[4]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "numbered_section",
+          "section": "2-25",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-25.  ENGINE COOLING TESTS\n\nThe engine cooling system is a pressure type cooling system with thermostatic control of\ncoolant circulation.  The cooling system dissipates heat generated from combustion and\nmaintains the engine operating temperature at its most efficient level.  When the engine is\ncold and the thermostat is closed, coolant is recirculated through the water pump and\nengine.  As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine.  Any air\nor vapor in the cooling system will be forced to the surge tank under the liquid level and\nleave through a vent tube.  As the system cools, the extra coolant in the tank will be drawn\nback to the radiator.  Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used.  The fan is activated when coolant temperature reaches 215°F (102°C).  A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil.  When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere.",
+        "text_sha256": "921babdead3ce5bbc76433831e26d563148362005b4b17843149041ab971b06a",
+        "token_count": 299,
+        "unit_id": "U002100",
+        "unit_key": "region:239:1:4"
+      }
+    ],
+    "search_ms": 9.892199999740114
+  },
+  "round": 3,
+  "sequence": 327,
+  "started_at": "2026-09-28T04:44:25.785885+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 914.1000999998141,
+    "retrieval": 94.54640000058134,
+    "total": 1008.6465000003955
+  },
+  "unprovided_citations": []
+}

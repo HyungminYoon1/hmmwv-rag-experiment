@@ -1,0 +1,214 @@
+{
+  "at": "2026-09-29T05:36:22.901195+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "04eddbce40f7cd92da645a7f5f392518c93da510f1761d8ecd869873b511ca74",
+  "result": {
+    "attempt_key": "r1-S10-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 10.077385999999933,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9768439992588961
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9768439992588961
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S10",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific coolant temperature at which the fan activates."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.976843999258896,
+          0.976843999258896,
+          0.976843999258896
+        ],
+        "query_vector_hash": "beda623784aa1969dda9635390366912417eb0e004b6bb1fcd2b4b649eafd40e",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the engine fan activated?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the engine fan activated?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the engine fan activated?"
+          }
+        ],
+        "response_vectors_hash": "ba3c4db12dc3b3891da6199bf62cc576867912cd6e5ffe517aaa34a4dbf4872b",
+        "score": 0.9768439992588963
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [],
+        "statements": [
+          {
+            "answer_quote": "The engine fan is activated when the coolant temperature reaches 215°F (102°C).",
+            "statement": "The engine fan is activated when the coolant temperature reaches 215°F (102°C)."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The engine fan is activated when the coolant temperature reaches 215°F (102°C).",
+          "id": "C001",
+          "text": "The engine fan is activated when the coolant temperature reaches 215°F (102°C)."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The engine fan is activated when the coolant temperature reaches 215°F (102°C).",
+            "fulfilled": 1,
+            "id": "S10-A01",
+            "reason": "The response gives the required fan-activation temperature."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "The fan is activated when coolant temperature reaches 215°F (102°C)."
+              ],
+              "reason": "The cooling-system passage states this activation threshold directly.",
+              "statement": "The engine fan is activated when the coolant temperature reaches 215°F (102°C).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002106"
+              ],
+              "evidence_quotes": [
+                "The fan is activated when coolant temperature reaches 215°F (102°C)."
+              ],
+              "reason": "The cooling-system passage explicitly states this activation temperature.",
+              "statement": "The engine fan is activated when the coolant temperature reaches 215°F (102°C).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.976843999258896,
+          0.976843999258896,
+          0.976843999258896
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9768439992588961,
+        "query_vector_hash": "beda623784aa1969dda9635390366912417eb0e004b6bb1fcd2b4b649eafd40e",
+        "ragas_score": 0.9768439992588963,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "ba3c4db12dc3b3891da6199bf62cc576867912cd6e5ffe517aaa34a4dbf4872b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.976843999258896,
+          0.976843999258896,
+          0.976843999258896
+        ],
+        "decimal50_cosines": [
+          "0.97684399925889581707249432992285555406042656982711",
+          "0.97684399925889581707249432992285555406042656982711",
+          "0.97684399925889581707249432992285555406042656982711"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9768439992588963
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9768439992588963
+          }
+        },
+        "query_vector_hash": "beda623784aa1969dda9635390366912417eb0e004b6bb1fcd2b4b649eafd40e",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the engine fan activated?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the engine fan activated?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature is the engine fan activated?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "ba3c4db12dc3b3891da6199bf62cc576867912cd6e5ffe517aaa34a4dbf4872b",
+        "score": 0.9768439992588961
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "f885fbfb555590b6d4a9f1c736ce41c00309b5e859a5c294ff5229b3def55b5e",
+  "source_result_sha256": "aad2ae55b524441c2c471610977bc85fe1f74e7fcda5db39025a16d2f7904668"
+}

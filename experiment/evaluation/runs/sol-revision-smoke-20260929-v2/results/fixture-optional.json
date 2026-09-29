@@ -1,0 +1,164 @@
+{
+  "at": "2026-09-29T04:44:18.139458+00:00",
+  "identity_hash": "e90d39ab24141196d60555cbd7664a3368a072b895ef4fa43839db37e5c547ae",
+  "input_hash": "db41027afabc02fb611996715aeb1f967b53d87f012fbcc4d7ab54eeebea9b06",
+  "result": {
+    "attempt_key": "fixture-optional",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 17.957517400000143,
+    "metrics": {
+      "ar_raw": {
+        "status": "SYNTHETIC_FIXED",
+        "value": 1
+      },
+      "ar_report": {
+        "status": "SYNTHETIC_FIXED",
+        "value": 1
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "SYNTHETIC_FIXED",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "fixture-optional",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "synthetic fixture"
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "I cannot independently confirm that explanation."
+        ],
+        "shared_conditions": [
+          "For the fictional sensor."
+        ],
+        "statements": [
+          {
+            "answer_quote": "Solvent is prohibited.",
+            "statement": "For the fictional sensor, cleaning with solvent is prohibited."
+          },
+          {
+            "answer_quote": "It probably damages the seal.",
+            "statement": "For the fictional sensor, solvent probably damages the seal."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "Solvent is prohibited.",
+          "id": "C001",
+          "text": "For the fictional sensor, cleaning with solvent is prohibited."
+        },
+        {
+          "answer_quote": "It probably damages the seal.",
+          "id": "C002",
+          "text": "For the fictional sensor, solvent probably damages the seal."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Solvent is prohibited.",
+            "fulfilled": 1,
+            "id": "prohibition",
+            "reason": "States the prohibited cleaning method."
+          },
+          {
+            "answer_quote": "It probably damages the seal.",
+            "fulfilled": 1,
+            "id": "reason",
+            "reason": "Gives the seal damage explanation cautiously; the stated uncertainty does not negate it."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "fixture"
+              ],
+              "evidence_quotes": [
+                "Do not use solvent for the fictional sensor."
+              ],
+              "reason": "The source explicitly prohibits using solvent for the fictional sensor.",
+              "statement": "For the fictional sensor, cleaning with solvent is prohibited.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "fixture"
+              ],
+              "evidence_quotes": [
+                "It damages the seal."
+              ],
+              "reason": "The source states that solvent damages the seal, supporting the weaker claim.",
+              "statement": "For the fictional sensor, solvent probably damages the seal.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:fixture"
+              ],
+              "evidence_quotes": [
+                "Do not use solvent for the fictional sensor."
+              ],
+              "reason": "The source explicitly prohibits solvent use for the fictional sensor.",
+              "statement": "For the fictional sensor, cleaning with solvent is prohibited.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:fixture"
+              ],
+              "evidence_quotes": [
+                "Do not use solvent for the fictional sensor. It damages the seal."
+              ],
+              "reason": "The source states that solvent damages the seal for this sensor, supporting the qualified claim.",
+              "statement": "For the fictional sensor, solvent probably damages the seal.",
+              "verdict": 1
+            }
+          ]
+        }
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "c12a0a59e68bcbe6c6a0d45c20f78dd9dcd7b439092bdff9d10300aef397ad8a"
+}

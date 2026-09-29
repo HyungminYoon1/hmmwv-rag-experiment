@@ -1,0 +1,237 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:26:41.523179+00:00",
+  "parsed": {
+    "statements": [
+      {
+        "evidence_ids": [
+          "O:thermostat_full"
+        ],
+        "evidence_quotes": [
+          "ITEM: Fully Open \nSTANDARD: 212°F\nMETRIC: 100°C"
+        ],
+        "reason": "The table lists 212°F and 100°C for the fully open thermostat.",
+        "statement": "The thermostat fully-open temperature is 212°F (100°C).",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "O:fan"
+        ],
+        "evidence_quotes": [
+          "The fan is activated when coolant temperature reaches 215°F (102°C)."
+        ],
+        "reason": "The context states the fan activates at this temperature.",
+        "statement": "The fan-activation temperature is 215°F (102°C).",
+        "verdict": 1
+      },
+      {
+        "evidence_ids": [
+          "O:thermostat_full",
+          "O:fan"
+        ],
+        "evidence_quotes": [
+          "ITEM: Fully Open \nSTANDARD: 212°F\nMETRIC: 100°C",
+          "The fan is activated when coolant temperature reaches 215°F (102°C)."
+        ],
+        "reason": "On warming, coolant reaches 212°F before 215°F.",
+        "statement": "As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature.",
+        "verdict": 1
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587601,
+      "conversation": null,
+      "created_at": 1790587596.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_07e3423c35265754016aba32ccac2c87d0a1d54f8571076c22",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujLRo7DEdBcoETW6uVCb40UpqN69eOvWesHIoVz7pQTpRtTZqTNXo8upWQF9v09SrVeEdLz2E3C6_GgSL_UyLl-mV-IaGN7mP1eY1V4wkbUUJdyfFH_m_-7MChiapFTSNZ-WtZ4lcW_ToXyaaLfLpX4akBQdOnXS07oV1BDD9Mc1bk9j6_5AD758quybIrohnE7LAH1BK-YQgJItQMCsjEg1rT43LyDBt1eiqH7kndtPPYbfUBsci64keujuL4j7aWoRvfy4-tl-1QejbtGRjkQ2V6b0pjpJiGGjvN8_nsrew7XwfysqAk4qSQR8IzFKvVm3XAxbYAfEJ4V5l26UgNLK2d14evRM5vqgJ5q6jTH_334ovvOL7Nv9FLGFAgw8ycE4Zg0xg7cA-bzGnUJrHDcjRAjA5VeKCI0w6rXFAW0x7DSzrnzIXpDomGv_C-rXeR8h5mojHe5lWYsY14rNop-YmbqF-LNNV6EiwH5i1IlqhNV1cHHwJx19gYfza2px_w8CEofIFOT3AtneHLQLr7S4tgqet4OVO2uI52oNQ3b7Z_a-1a1jb12mhubP0BYfFnYKGvA0HDQjbsxMftdlgs4Vpc7_7lHY2PudhZbil8rVP4yQjEiVFUcM5LvPfW6auJd7ZuCXdE5rY0AzmMkMidvskUievWw5nRI0C7FB3vj5tNWRQDglLCm5_n1sNW-VEb0kKCgPdvCojp7d4MzgGdn6Y23M7qohyF_UA2CfS89CVYuPVOHGjoGbyleiRiaL1AuifDopRxiEcblKqilU4FUoF56YYV5koX-jf-MHB2pDJuTg4qaHHL61wThUZ-AaaS5ZG7FC_z3eWQ1H8sMGv8QE8LVzWL-wplMrxa3LF7n6d6sDRh13exl-Czr4j5epJtvJfXqLLUgsT79BvWgxQQy7R8X7mmoK0tAMrOp6yDXoktUwGYZsJ9GQTtLziGwBqmBC2cTbzc-0BNYBW8ovfrr9KnAObFZUlwh2HCGwnW10UlWA3POAIO5XvcaUytHwZ4rLHjXG09OdJE7JsrsKInjx0zZLbWijJgY7DSnnUJ2UVDMsQ4SYkEylvVX8dTSpCEBca6HJ0jNmjGpVJOTD8iez3hskXezYNP35KYW33xwNRmzQFL7K3hWb4LkzL-pHgJBIPWhWYYwijoN7O9BoQPZPu9iKBtuJtaBo3WEnvp1-k43q4-0bRThB13FZ-KudHvGmRiLnchzS0yPafssJNC7spGZC1B1Y_cAU-2zhiTaY6v3dJdtqjVoCa4OLk4NQmgtm3bQMkd4rJvadbLof6nyVOO1YtsL4hEjNcXMmMbkWnT65U7ztkGeIJ-NOrz4O0Jlj",
+          "id": "rs_07e3423c35265754016aba32cd4d7887d0a8e5b1de4b6f0182",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[{\"statement\":\"The thermostat fully-open temperature is 212°F (100°C).\",\"reason\":\"The table lists 212°F and 100°C for the fully open thermostat.\",\"verdict\":1,\"evidence_ids\":[\"O:thermostat_full\"],\"evidence_quotes\":[\"ITEM: Fully Open \\nSTANDARD: 212°F\\nMETRIC: 100°C\"]},{\"statement\":\"The fan-activation temperature is 215°F (102°C).\",\"reason\":\"The context states the fan activates at this temperature.\",\"verdict\":1,\"evidence_ids\":[\"O:fan\"],\"evidence_quotes\":[\"The fan is activated when coolant temperature reaches 215°F (102°C).\"]},{\"statement\":\"As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature.\",\"reason\":\"On warming, coolant reaches 212°F before 215°F.\",\"verdict\":1,\"evidence_ids\":[\"O:thermostat_full\",\"O:fan\"],\"evidence_quotes\":[\"ITEM: Fully Open \\nSTANDARD: 212°F\\nMETRIC: 100°C\",\"The fan is activated when coolant temperature reaches 215°F (102°C).\"]}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_07e3423c35265754016aba32ce878c87d08614c01e95637f07",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "SupportOutput",
+          "schema_": {
+            "$defs": {
+              "LocatedStatement": {
+                "additionalProperties": false,
+                "properties": {
+                  "evidence_ids": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Ids",
+                    "type": "array"
+                  },
+                  "evidence_quotes": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "title": "Evidence Quotes",
+                    "type": "array"
+                  },
+                  "reason": {
+                    "description": "the reason of the verdict",
+                    "title": "Reason",
+                    "type": "string"
+                  },
+                  "statement": {
+                    "description": "the original statement, word-by-word",
+                    "title": "Statement",
+                    "type": "string"
+                  },
+                  "verdict": {
+                    "description": "the verdict(0/1) of the faithfulness",
+                    "title": "Verdict",
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "statement",
+                  "reason",
+                  "verdict",
+                  "evidence_ids",
+                  "evidence_quotes"
+                ],
+                "title": "LocatedStatement",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "statements": {
+                "items": {
+                  "$ref": "#/$defs/LocatedStatement"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "SupportOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 891,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 280,
+        "output_tokens_details": {
+          "reasoning_tokens": 30
+        },
+        "total_tokens": 1171
+      },
+      "user": null
+    },
+    "request_id": "resp_07e3423c35265754016aba32ccac2c87d0a1d54f8571076c22",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[{\"statement\":\"The thermostat fully-open temperature is 212°F (100°C).\",\"reason\":\"The table lists 212°F and 100°C for the fully open thermostat.\",\"verdict\":1,\"evidence_ids\":[\"O:thermostat_full\"],\"evidence_quotes\":[\"ITEM: Fully Open \\nSTANDARD: 212°F\\nMETRIC: 100°C\"]},{\"statement\":\"The fan-activation temperature is 215°F (102°C).\",\"reason\":\"The context states the fan activates at this temperature.\",\"verdict\":1,\"evidence_ids\":[\"O:fan\"],\"evidence_quotes\":[\"The fan is activated when coolant temperature reaches 215°F (102°C).\"]},{\"statement\":\"As coolant warms, the thermostat fully-open temperature is reached before the fan-activation temperature.\",\"reason\":\"On warming, coolant reaches 212°F before 215°F.\",\"verdict\":1,\"evidence_ids\":[\"O:thermostat_full\",\"O:fan\"],\"evidence_quotes\":[\"ITEM: Fully Open \\nSTANDARD: 212°F\\nMETRIC: 100°C\",\"The fan is activated when coolant temperature reaches 215°F (102°C).\"]}]}",
+    "usage": {
+      "input_tokens": 891,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 280,
+      "output_tokens_details": {
+        "reasoning_tokens": 30
+      },
+      "total_tokens": 1171
+    }
+  },
+  "record_hash": "2fa184304d76277be7307b9356075063ff975b0f8d5a7cf3b00f47266c4a5562",
+  "request_hash": "db15d66b7f97d36d7ead345ba96ede1d2723a4b84acc0fb0be94c375fc27bce3",
+  "started_at": "2026-09-28T09:26:36.518954+00:00",
+  "status": "OK"
+}

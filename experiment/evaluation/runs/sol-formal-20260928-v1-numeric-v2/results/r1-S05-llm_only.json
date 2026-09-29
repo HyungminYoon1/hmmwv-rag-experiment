@@ -1,0 +1,239 @@
+{
+  "at": "2026-09-28T09:56:40.107661+00:00",
+  "identity_hash": "c657f2f533bf4735aaf06bdffd0b58a3b4e8c50c70ba3dfcb8b8e66d236142b5",
+  "input_hash": "ae881eebc4ef34357d1ec03dfacadde4dfeb4c2fa8870335ab6bb2e035965662",
+  "original_result_sha256": "0c88d1c40f2735b733163abf29e5e0dbdf9700dd6d2f2a9951c19bc6a7ef9231",
+  "result": {
+    "attempt_key": "r1-S05-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 38.02409699999771,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7237053667177382
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7237053667177382
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S05",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "The response says the manual excerpts are unavailable but still lists three specific engine symptoms."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7277266602499776,
+          0.7057938241946776,
+          0.7375956157085595
+        ],
+        "query_vector_hash": "3ab968d8a7ca023f0a21e20e9d37549d7a40ced0ae97c564db4a9f38cc07a895",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What three general engine symptoms typically prompt fuel system tests on M998-series HMMWVs?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What three engine symptoms typically prompt fuel system tests on an M998-series HMMWV?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What three general engine symptoms typically prompt fuel system tests in HMMWV (M998-series) maintenance?"
+          }
+        ],
+        "response_vectors_hash": "071884d3c12c707d2b58754b18c37d7e74603803b9e788d382a58f9ab5dc12db",
+        "score": 0.7237053667177382
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The provided reference does not contain excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        },
+        {
+          "id": "C002",
+          "text": "Based on general knowledge of HMMWV (M998-series) maintenance, fuel system tests are typically recommended for poor engine performance or lack of power."
+        },
+        {
+          "id": "C003",
+          "text": "Based on general knowledge of HMMWV (M998-series) maintenance, fuel system tests are typically recommended for difficulty starting the engine."
+        },
+        {
+          "id": "C004",
+          "text": "Based on general knowledge of HMMWV (M998-series) maintenance, fuel system tests are typically recommended for rough idling or misfiring."
+        },
+        {
+          "id": "C005",
+          "text": "The listed engine symptoms are inferred from standard maintenance practices and are not directly cited from the referenced manual excerpts."
+        }
+      ],
+      "claims_raw": [
+        "The provided reference does not contain excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+        "Based on general knowledge of HMMWV (M998-series) maintenance, fuel system tests are typically recommended for poor engine performance or lack of power.",
+        "Based on general knowledge of HMMWV (M998-series) maintenance, fuel system tests are typically recommended for difficulty starting the engine.",
+        "Based on general knowledge of HMMWV (M998-series) maintenance, fuel system tests are typically recommended for rough idling or misfiring.",
+        "The listed engine symptoms are inferred from standard maintenance practices and are not directly cited from the referenced manual excerpts."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Difficulty starting the engine",
+            "fulfilled": 1,
+            "id": "S05-A01",
+            "reason": "Equivalent to hard starting."
+          },
+          {
+            "answer_quote": "lack of power",
+            "fulfilled": 1,
+            "id": "S05-A02",
+            "reason": "Equivalent to low power."
+          },
+          {
+            "answer_quote": "Rough idling or misfiring",
+            "fulfilled": 1,
+            "id": "S05-A03",
+            "reason": "Describes the engine running roughly."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt does not identify its source, so this cannot be determined.",
+              "statement": "The provided reference does not contain excerpts from TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt mentions low power but does not identify HMMWV maintenance or establish a claim based on general knowledge.",
+              "statement": "Based on general knowledge of HMMWV (M998-series) maintenance, fuel system tests are typically recommended for poor engine performance or lack of power.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt mentions hard starting but does not identify HMMWV maintenance or establish a claim based on general knowledge.",
+              "statement": "Based on general knowledge of HMMWV (M998-series) maintenance, fuel system tests are typically recommended for difficulty starting the engine.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt says the engine may run rough; it does not specify rough idling, misfiring, or HMMWV maintenance.",
+              "statement": "Based on general knowledge of HMMWV (M998-series) maintenance, fuel system tests are typically recommended for rough idling or misfiring.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The excerpt directly lists hard starting, low power, and running rough.",
+              "statement": "The listed engine symptoms are inferred from standard maintenance practices and are not directly cited from the referenced manual excerpts.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.7277266602499776,
+          0.7057938241946776,
+          0.7375956157085595
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7237053667177382,
+        "query_vector_hash": "3ab968d8a7ca023f0a21e20e9d37549d7a40ced0ae97c564db4a9f38cc07a895",
+        "ragas_score": 0.7237053667177382,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "071884d3c12c707d2b58754b18c37d7e74603803b9e788d382a58f9ab5dc12db"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7277266602499776,
+          0.7057938241946776,
+          0.7375956157085595
+        ],
+        "decimal50_cosines": [
+          "0.72772666024997747920999674194298141205182102120483",
+          "0.70579382419467745435935426529741714459297970447208",
+          "0.73759561570855934911866460133190387842365719137768"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.7237053667177382
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.7237053667177382
+          }
+        },
+        "query_vector_hash": "3ab968d8a7ca023f0a21e20e9d37549d7a40ced0ae97c564db4a9f38cc07a895",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What three general engine symptoms typically prompt fuel system tests on M998-series HMMWVs?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What three engine symptoms typically prompt fuel system tests on an M998-series HMMWV?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What three general engine symptoms typically prompt fuel system tests in HMMWV (M998-series) maintenance?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "071884d3c12c707d2b58754b18c37d7e74603803b9e788d382a58f9ab5dc12db",
+        "score": 0.7237053667177382
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "eabfa9f0a59a0058f4a0a08786ce66c768791a80c4cea040ff2916ba994ea344"
+}

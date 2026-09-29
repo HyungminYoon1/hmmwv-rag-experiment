@@ -1,0 +1,263 @@
+{
+  "at": "2026-09-28T09:55:51.731136+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "6fc95d1368147f15d44f277ee9f44b694c94a2499bc00dac67d1142ee3018091",
+  "original_result_sha256": "5a494038fb94859f89cdd02e759c78d57a46a420928edcb1a6bdd9c023a4cd54",
+  "result": {
+    "attempt_key": "r1-M09-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 29.161584599998605,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9466646571241425
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9466646571241425
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      }
+    },
+    "question_id": "M09",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly identifies the fluids cooled in each half and gives an approximate oil pressure at 2,000 RPM."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9466646593937877,
+          0.9466646570975108,
+          0.946664654881129
+        ],
+        "query_vector_hash": "c21b8eb625e76ea4ab9f755aba4928cc7eaa4dcee379b3ab3a2d4d2ed9305148",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          }
+        ],
+        "response_vectors_hash": "b4f90c10f3babd2bb62f71603438712cc6121cbf95fa4393d432d2fe6ab5fa34",
+        "score": 0.9466646571241428
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The upper half of the separate oil cooler cools transmission oil."
+        },
+        {
+          "id": "C002",
+          "text": "The lower half of the separate oil cooler cools engine oil."
+        },
+        {
+          "id": "C003",
+          "text": "The lubrication-test chart shows an engine-oil pressure of 40–45 psi at 2,000 RPM."
+        }
+      ],
+      "claims_raw": [
+        "The upper half of the separate oil cooler cools transmission oil.",
+        "The lower half of the separate oil cooler cools engine oil.",
+        "The lubrication-test chart shows an engine-oil pressure of 40–45 psi at 2,000 RPM."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The upper half of the separate oil cooler cools transmission oil",
+            "fulfilled": 1,
+            "id": "M09-A01",
+            "reason": "Correctly identifies the fluid cooled in the upper half."
+          },
+          {
+            "answer_quote": "the lower half cools engine oil",
+            "fulfilled": 1,
+            "id": "M09-A02",
+            "reason": "Correctly identifies the fluid cooled in the lower half."
+          },
+          {
+            "answer_quote": "40–45 psi at 2,000 RPM",
+            "fulfilled": 0,
+            "id": "M09-A03",
+            "reason": "The specified lubrication chart gives 40–50 psi, not 40–45 psi."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "A separate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil."
+              ],
+              "reason": "The text assigns transmission oil to the cooler’s top half.",
+              "statement": "The upper half of the separate oil cooler cools transmission oil.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "The bottom half is for engine oil."
+              ],
+              "reason": "The text assigns engine oil to the cooler’s bottom half.",
+              "statement": "The lower half of the separate oil cooler cools engine oil.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002019"
+              ],
+              "evidence_quotes": [
+                "1S THE ENGINE OIL PRESSURE 40-45 PSI AT 2000 RPM AND THE ENGINE WARM ?"
+              ],
+              "reason": "The chart asks whether engine-oil pressure is 40–45 psi at 2,000 RPM when warm.",
+              "statement": "The lubrication-test chart shows an engine-oil pressure of 40–45 psi at 2,000 RPM.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.6666666666666666,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:cooler_halves"
+              ],
+              "evidence_quotes": [
+                "The top half is for transmission oil."
+              ],
+              "reason": "The cooler’s top half is for transmission oil.",
+              "statement": "The upper half of the separate oil cooler cools transmission oil.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:cooler_halves"
+              ],
+              "evidence_quotes": [
+                "The bottom half is for engine oil."
+              ],
+              "reason": "The cooler’s bottom half is for engine oil.",
+              "statement": "The lower half of the separate oil cooler cools engine oil.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The chart gives 40–50 PSI, not 40–45 psi.",
+              "statement": "The lubrication-test chart shows an engine-oil pressure of 40–45 psi at 2,000 RPM.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.9466646593937877,
+          0.9466646570975108,
+          0.946664654881129
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9466646571241425,
+        "query_vector_hash": "c21b8eb625e76ea4ab9f755aba4928cc7eaa4dcee379b3ab3a2d4d2ed9305148",
+        "ragas_score": 0.9466646571241428,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "b4f90c10f3babd2bb62f71603438712cc6121cbf95fa4393d432d2fe6ab5fa34"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9466646593937877,
+          0.9466646570975108,
+          0.946664654881129
+        ],
+        "decimal50_cosines": [
+          "0.94666465939378778560109670668069573248859285854077",
+          "0.94666465709751085304631590922288850155875373507401",
+          "0.94666465488112901979039443376280214542340011334803"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 0.0,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9466646571241428
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9466646571241428
+          }
+        },
+        "query_vector_hash": "c21b8eb625e76ea4ab9f755aba4928cc7eaa4dcee379b3ab3a2d4d2ed9305148",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What does each half of the separate oil cooler cool, and what engine oil pressure does the lubrication-test chart show at 2,000 RPM?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "b4f90c10f3babd2bb62f71603438712cc6121cbf95fa4393d432d2fe6ab5fa34",
+        "score": 0.9466646571241425
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "6bd4f0138dcfdb185f45ee72c401e929f43af987853f06c7b60faf7fc256c45e"
+}

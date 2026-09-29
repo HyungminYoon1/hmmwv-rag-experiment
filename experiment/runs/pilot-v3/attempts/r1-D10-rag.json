@@ -1,0 +1,661 @@
+{
+  "citation_ids": [],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:23:28.738324+00:00",
+  "evaluation_answer": "I do not know a requested fact. The provided reference material does not contain any information about the replacement history of the transmission for a specific vehicle serial number or date. Therefore, I cannot determine how many times the transmission has been replaced since January 2026.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 983,
+  "key": "r1-D10-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002167] TM 9-2320-280-20-1 | PDF 243 | Printed 2-159\nREFERENCE INFORMATION\nENGINE COOLING\n\nIf the vehicle's serial number is 68555 through 72541 or 100000 through 112867, and you see ADCO\nstamped on top of the time delay module, replace the module with part NSN 5945-01-193-7175, refer to\n(para. 4-31).\n\n[C001098] TM 9-2320-280-20-1 | PDF 120 | Printed 2-29\nBIENNIALLY (12,000 MILE) PMCS PARTS LIST\nITEM\nPART\nNOMENCLATURE\nNSN\nQTY\nNO.\nNUMBER\n\nITEM NO.: 12.\nPART NUMBER: 12337210\nNSN: 4330-01-121-6350\nNOMENCLATURE: Parts Kit, Fluid, Transmission (3L80)\nQTY: 1\n\n[C000576] TM 9-2320-280-20-1 | PDF 66 | Printed 1-36\n1-18. DRIVETRAIN OPERATION\n\nTRANSMISSION (3L80) - Adapts engine power to meet different driving conditions. The automatic\ntransmission has three forward speeds, a reverse and a neutral. A neutral safety switch prevents the\nvehicle from being started with the transmission in any selector lever position except neutral.\nTRANSMISSION (4L80E) - Adapts engine power to meet different driving conditions. The\nautomotic transmission has four forward speeds, a reverse, a neutral and a park. A neutral safety\nswitch prevents the vehicle from being started with the transmission in any selector lever position\nexcept park and neutral.\nTRANSFER CASE - Directs engine-to-transmission power to front and rear differentials\nsimultaneously. This condition means the vehicle is always in four-wheel drive. The transfer case\nallows for selection of three drive ranges and a neutral position. A complete description of these\ndriving ranges and the recommended driving conditions during which they are used can be found in\nTM 9-2320-280-10.\n\n[C001102] TM 9-2320-280-20-1 | PDF 120 | Printed 2-29\nBIENNIALLY (12,000 MILE) PMCS PARTS LIST\nITEM\nPART\nNOMENCLATURE\nNSN\nQTY\nNO.\nNUMBER\n\nITEM NO.: 16.\nPART NUMBER: 12354864\nNSN: 4330-01-438-3813\nNOMENCLATURE: Parts Kit, Fluid, Transmission (4L80-E)\n(1997, 1998)\nQTY: 1\n\n[C004300] TM 9-2320-280-20-1 | PDF 448 | Printed 2-341\nINSTRUMENTS CIRCUIT\nREFERENCE INFORMATION\n\nSWITCH\nQUESTION:\nHow many times has the transmission of vehicle serial number 123456 been replaced since January 2026?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 982,
+  "question": "How many times has the transmission of vehicle serial number 123456 been replaced since January 2026?",
+  "question_id": "D10",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:45.593099807+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:10:43.542014107+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836835328.0,
+    "max_actual_interval_ms": 110.657799999899,
+    "peak_rss_bytes": 7645708288,
+    "peak_vram_bytes": 4836835328,
+    "pids": [
+      13944,
+      23268,
+      23364,
+      27988,
+      30736,
+      36564,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4692.9551863,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97697792,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645540352,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.0630918,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97697792,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645540352,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.1562073,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97697792,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645540352,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.2649593,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97697792,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645540352,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.358782,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97697792,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645540352,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.4683026,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97697792,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645540352,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.5618816,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97697792,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645540352,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.6725394,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97697792,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645540352,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.7625605,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97697792,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645540352,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.8711495,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037160960,
+          "30736": 12607488,
+          "36564": 97632256,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645474816,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4693.9633681,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58667008,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037324800,
+          "30736": 12607488,
+          "36564": 97632256,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645638656,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4694.0561342,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58679296,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037324800,
+          "30736": 12607488,
+          "36564": 97689600,
+          "37504": 3420020736,
+          "37564": 7442432
+        },
+        "rss_bytes": 7645708288,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4694.1637978,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58683392,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037324800,
+          "30736": 12607488,
+          "36564": 97689600,
+          "37504": 3295592448,
+          "37564": 7442432
+        },
+        "rss_bytes": 7521284096,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4694.2568533,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58748928,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037324800,
+          "30736": 12607488,
+          "36564": 97689600,
+          "37504": 3267092480,
+          "37564": 7442432
+        },
+        "rss_bytes": 7492849664,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4694.3644812,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58748928,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037324800,
+          "30736": 12607488,
+          "36564": 97689600,
+          "37504": 3267092480,
+          "37564": 7442432
+        },
+        "rss_bytes": 7492849664,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4694.4588012,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58748928,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037255168,
+          "30736": 12607488,
+          "36564": 97689600,
+          "37504": 3267092480,
+          "37564": 7442432
+        },
+        "rss_bytes": 7492780032,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4694.5675464,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58748928,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037255168,
+          "30736": 12607488,
+          "36564": 97689600,
+          "37504": 3267092480,
+          "37564": 7442432
+        },
+        "rss_bytes": 7492780032,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4694.6599465,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58748928,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037255168,
+          "30736": 12607488,
+          "36564": 97689600,
+          "37504": 3267092480,
+          "37564": 7442432
+        },
+        "rss_bytes": 7492780032,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4694.7692692,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58757120,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037255168,
+          "30736": 12607488,
+          "36564": 97689600,
+          "37504": 3267092480,
+          "37564": 7442432
+        },
+        "rss_bytes": 7492788224,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 4694.8623529,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 58757120,
+          "23268": 7491584,
+          "23364": 4452352,
+          "27988": 4037255168,
+          "30736": 12607488,
+          "36564": 97689600,
+          "37504": 3267092480,
+          "37564": 7442432
+        },
+        "rss_bytes": 7492788224,
+        "vram_bytes": 4836835328
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:23:28.738324Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 55,
+    "eval_duration": 737755000,
+    "load_duration": 10478100,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 982,
+    "prompt_eval_count": 983,
+    "prompt_eval_duration": 16857000,
+    "response": "I do not know a requested fact. The provided reference material does not contain any information about the replacement history of the transmission for a specific vehicle serial number or date. Therefore, I cannot determine how many times the transmission has been replaced since January 2026.",
+    "total_duration": 878520900
+  },
+  "retrieval": {
+    "embedding_ms": 64.2848999996204,
+    "items": [
+      {
+        "body_end": 211,
+        "body_start": 0,
+        "id": "C002167",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          243
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-159"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002423"
+        ],
+        "review_ids": [],
+        "score": 0.5174840092658997,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[15]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\nIf the vehicle's serial number is 68555 through 72541 or 100000 through 112867, and you see ADCO\nstamped on top of the time delay module, replace the module with part NSN 5945-01-193-7175, refer to\n(para. 4-31).",
+        "text_sha256": "a5c0a823f74757c165f99a723c77bf65ad59b9ec264b62af96b072bccbf33088",
+        "token_count": 97,
+        "unit_id": "U002161",
+        "unit_key": "region:243:1:14"
+      },
+      {
+        "body_end": 116,
+        "body_start": 0,
+        "id": "C001098",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          120
+        ],
+        "prefix_chars": 84,
+        "printed_pages": [
+          "2-29"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5134689211845398,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "expected_rows": 16,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 12,
+          "table_id": "P0120:biennial"
+        },
+        "text": "BIENNIALLY (12,000 MILE) PMCS PARTS LIST\nITEM\nPART\nNOMENCLATURE\nNSN\nQTY\nNO.\nNUMBER\n\nITEM NO.: 12.\nPART NUMBER: 12337210\nNSN: 4330-01-121-6350\nNOMENCLATURE: Parts Kit, Fluid, Transmission (3L80)\nQTY: 1",
+        "text_sha256": "46797d706bfdfe1af10f33b654864f7fd1160a3097adc83922a3ebc5f5c40a18",
+        "token_count": 104,
+        "unit_id": "U001092",
+        "unit_key": "P0120:biennial:row:12"
+      },
+      {
+        "body_end": 995,
+        "body_start": 0,
+        "id": "C000576",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          66
+        ],
+        "prefix_chars": 28,
+        "printed_pages": [
+          "1-36"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R000700"
+        ],
+        "review_ids": [],
+        "score": 0.505403995513916,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "1-18",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-18. DRIVETRAIN OPERATION\n\nTRANSMISSION (3L80) - Adapts engine power to meet different driving conditions. The automatic\ntransmission has three forward speeds, a reverse and a neutral. A neutral safety switch prevents the\nvehicle from being started with the transmission in any selector lever position except neutral.\nTRANSMISSION (4L80E) - Adapts engine power to meet different driving conditions. The\nautomotic transmission has four forward speeds, a reverse, a neutral and a park. A neutral safety\nswitch prevents the vehicle from being started with the transmission in any selector lever position\nexcept park and neutral.\nTRANSFER CASE - Directs engine-to-transmission power to front and rear differentials\nsimultaneously. This condition means the vehicle is always in four-wheel drive. The transfer case\nallows for selection of three drive ranges and a neutral position. A complete description of these\ndriving ranges and the recommended driving conditions during which they are used can be found in\nTM 9-2320-280-10.",
+        "text_sha256": "bf4188a6c3f086e38999aeae6b51802d6954e610ccbcd692fade7d4a5a25c18b",
+        "token_count": 227,
+        "unit_id": "U000576",
+        "unit_key": "region:66:1:3"
+      },
+      {
+        "body_end": 131,
+        "body_start": 0,
+        "id": "C001102",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          120
+        ],
+        "prefix_chars": 84,
+        "printed_pages": [
+          "2-29"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5027725100517273,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "expected_rows": 16,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 16,
+          "table_id": "P0120:biennial"
+        },
+        "text": "BIENNIALLY (12,000 MILE) PMCS PARTS LIST\nITEM\nPART\nNOMENCLATURE\nNSN\nQTY\nNO.\nNUMBER\n\nITEM NO.: 16.\nPART NUMBER: 12354864\nNSN: 4330-01-438-3813\nNOMENCLATURE: Parts Kit, Fluid, Transmission (4L80-E)\n(1997, 1998)\nQTY: 1",
+        "text_sha256": "cdd7a9830cfa31d8c393040c9e93682eba725ba8b6a9f4ce3a7e830149194bb9",
+        "token_count": 117,
+        "unit_id": "U001096",
+        "unit_key": "P0120:biennial:row:16"
+      },
+      {
+        "body_end": 6,
+        "body_start": 0,
+        "id": "C004300",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          448
+        ],
+        "prefix_chars": 43,
+        "printed_pages": [
+          "2-341"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R004368"
+        ],
+        "review_ids": [],
+        "score": 0.5002015233039856,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[13]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "INSTRUMENTS CIRCUIT\nREFERENCE INFORMATION\n\nSWITCH",
+        "text_sha256": "ea496de55d70c05eccfdc0c5c6d3e9bda21e5fdd018c2c7e7856f75b6e0edec8",
+        "token_count": 14,
+        "unit_id": "U004292",
+        "unit_key": "region:448:1:11"
+      }
+    ],
+    "search_ms": 8.93770000038785
+  },
+  "round": 1,
+  "sequence": 15,
+  "started_at": "2026-09-28T04:23:27.771741+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 894.2925000001196,
+    "retrieval": 74.07909999983531,
+    "total": 968.3715999999549
+  },
+  "unprovided_citations": []
+}

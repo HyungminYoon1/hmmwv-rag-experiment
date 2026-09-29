@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:21:17.248772+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives a specific PMCS interval and Final Road Test deadline. Its note about the source does not withhold the answer."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587277,
+      "conversation": null,
+      "created_at": 1790587274.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0ca0fc6407906714016aba318acc8c87d0b3418868afb7d863",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujGNPY4KCasNaJipsLddszq_a1id7jIM6TjneEb6wQ5l86ea_xUIco2iHZS0v509PA3ts1iriQmkdW5_YV7fgQCqb0ke7TwbCNTvLc6Wif9fz86oTcGPEtPJXO1Jot2lBqz1lIDJgxuwV0LIhP7tPr9z2cLcxCmhI0KOc5CrdmlRmRnOaXMxE-Z98QQgofPuQtioPk1PnnLQhgjL_Pv-RUyG1FVM1Rc1fdygG6PrG21WG-rKbA6vgjedOf6HKZAyUy-iJV24F5Gj_UdylsyWbr1UkHr2vsxj6A_EgIgoHeG-s3rnRUBtKgHB-qRKdzkn28PRDxThA94LRM9c6wT97HuZlutG2qihiQ29CS12ANbR23ppqRWjQmxsAqgPO4RpLUWAE82VsvUcBoeTm80pbVB2wkMsW1Zw2zIJaCUbtCrDD-1AalmdFWZ0XlYizbpMp-zfnin5IosoYYBgZWiLcOG2JTxvEfGeUyg7FMGi_LvtUbfhEXpH8CdB1KceSSMOO2XHeB4QyEquwHmvzhn0PeK-2HvymycGBljbEUi_-Yr0345YAdfe49sXqRozJj18D1ZhVoAaQN3FX0IgexsTzhod_B_9eWJ3iq62Rfc2hWfDNLUAisQkdjZE7agpQWRyNaVT6Jgdl3ak57VPo13HcL-hRXXmVIJBB6Na12_ijvp5FGwFQu--aUiSgILPQQDrRIKFNGhgd34brMxMjhuPP9sp3Ao8JhBh8HL9jHE8XLeQcBUVn1MkoblfHnUq4vljKHv-GOgJVUCItNWeJK6QAD8CezlP4jAj0Ou_g4Oj_1Tbd03L5PcU6HcvBlb0JqAbwh7u4bXqyR12L2EjJ--9rMQCQd2BW4P8e9fvfFres4Tde6zZG7OLsUdXtHpK_nmW6vI1RCx65t0b76bp-583W5u2j03xyMGg3OK-siGHM-V7FQtcL6fai1S9gxO1XIrlEE-DhKXLyk0rxgyTrefy_zAoQZ2KB7zzEmd15ClAP9liZjnHcAjVuHOeS0restryPuuZ2bo2zmqFDj7BAFLPa3FAsHoB1h-xP70IZ3GDvGkNLooZZs6Gou-McWLMAFyVpgBAso3yzBRbgxA7Kn2zRvRDKY42_exjw8w-uiBz3wJKkI8M-QlgUg5g9J1JTtxrp4ljHOBTuzQOkTlKVviixPQFrCdYAjyJSrsd4DPcDDAOz685Q2PThj5LdyBl5icY7-nYw7xJ0zM9SzmK0GpJevCmHw==",
+          "id": "rs_0ca0fc6407906714016aba318b87c487d0be2c54873475a40b",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a specific PMCS interval and Final Road Test deadline. Its note about the source does not withhold the answer.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0ca0fc6407906714016aba318c36d887d0b111d0008c93ec13",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 403,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 65,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 468
+      },
+      "user": null
+    },
+    "request_id": "resp_0ca0fc6407906714016aba318acc8c87d0b3418868afb7d863",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a specific PMCS interval and Final Road Test deadline. Its note about the source does not withhold the answer.\"}",
+    "usage": {
+      "input_tokens": 403,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 65,
+      "output_tokens_details": {
+        "reasoning_tokens": 13
+      },
+      "total_tokens": 468
+    }
+  },
+  "record_hash": "119771e75f9a83bdd494f171d97e6f45cee13747bdc2f5d0c71e3f00bb3566a6",
+  "request_hash": "e62a299632a472efb2fd4a5c98eace9fa886fe5dee819653f6275c22d2baa544",
+  "started_at": "2026-09-28T09:21:14.658406+00:00",
+  "status": "OK"
+}

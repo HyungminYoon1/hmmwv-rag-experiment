@@ -1,0 +1,903 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:36:10.953030+00:00",
+  "evaluation_answer": "After a glowplug controller is judged defective, the full removal and installation procedure involves the following steps:\n\n1. **Removal:**\n   - Disconnect the negative battery terminal to ensure no electrical charge remains.\n   - Remove the engine cover or access panel to expose the glowplug assembly.\n   - Locate the glowplug controller, typically mounted near the engine or in the engine compartment.\n   - Disconnect the electrical connectors from the glowplug controller, noting their positions for reinstallation.\n   - Loosen and remove any mounting screws or fasteners securing the controller to the engine block or bracket.\n   - Carefully pull the controller out of its mounting location.\n\n2. **Installation:**\n   - Position the new glowplug controller in the same location as the removed one.\n   - Secure it with the original mounting screws or fasteners, tightening to the manufacturer’s specified torque.\n   - Reconnect the electrical connectors, ensuring proper alignment and secure attachment.\n   - Reinstall the engine cover or access panel.\n   - Reconnect the negative battery terminal.\n\nNote: Specific torque values and connector types may vary by model and year of the HMMWV (M998-series), and the procedure should be verified with the applicable maintenance manual (e.g., TM 9-2320-280-20-1). While the referenced manual (TM 9-2320-280-20-1) is the authoritative source, no excerpts were provided in REFERENCE to support specific technical details. Therefore, this procedure is based on standard automotive maintenance practices for glowplug systems in military vehicles. For precise instructions, consult the official manual.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 228,
+  "key": "r2-U07-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nAfter a glowplug controller is judged defective, describe its full removal and installation procedure.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 206,
+  "question": "After a glowplug controller is judged defective, describe its full removal and installation procedure.",
+  "question_id": "U07",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:27.806806507+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:21.926696207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4871700480.0,
+    "max_actual_interval_ms": 110.34199999994598,
+    "peak_rss_bytes": 9422131200,
+    "peak_vram_bytes": 4870455296,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5451.3261823,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4871700480
+      },
+      {
+        "monotonic": 5451.430107,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4871700480
+      },
+      {
+        "monotonic": 5451.5383195,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4871700480
+      },
+      {
+        "monotonic": 5451.6307421,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4871700480
+      },
+      {
+        "monotonic": 5451.7375162,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4871700480
+      },
+      {
+        "monotonic": 5451.8309886,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4871700480
+      },
+      {
+        "monotonic": 5451.93904,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.0311501,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.1405225,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.2342008,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.3269174,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.4337016,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.5268181,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.635584,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.7309014,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.8377524,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4869210112
+      },
+      {
+        "monotonic": 5452.9306463,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.0406654,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.1339091,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.2270571,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.3354789,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.4292536,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.5385345,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.6299824,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.7376328,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.8279911,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870324224
+      },
+      {
+        "monotonic": 5453.9378,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.0296003,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.1370873,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.2283625,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.337879,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.4320798,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.5267228,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.6347559,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.7284135,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.8366312,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5454.9297988,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.0401408,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.1305512,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.2387571,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.3307243,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422053376,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.4405457,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.5339656,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.6274435,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.7345815,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.827222,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870455296
+      },
+      {
+        "monotonic": 5455.9351147,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.0265282,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.1335748,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.2406616,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.3335892,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.4270524,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.534824,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.6278452,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.7366464,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.8298304,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4870389760
+      },
+      {
+        "monotonic": 5456.9373234,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4869668864
+      },
+      {
+        "monotonic": 5457.0316831,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102686720,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9198346240,
+          "37564": 7958528
+        },
+        "rss_bytes": 9422131200,
+        "vram_bytes": 4869668864
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:36:10.9520307Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 339,
+    "eval_duration": 4749369000,
+    "load_duration": 1473600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 206,
+    "prompt_eval_count": 228,
+    "prompt_eval_duration": 17792000,
+    "response": "After a glowplug controller is judged defective, the full removal and installation procedure involves the following steps:\n\n1. **Removal:**\n   - Disconnect the negative battery terminal to ensure no electrical charge remains.\n   - Remove the engine cover or access panel to expose the glowplug assembly.\n   - Locate the glowplug controller, typically mounted near the engine or in the engine compartment.\n   - Disconnect the electrical connectors from the glowplug controller, noting their positions for reinstallation.\n   - Loosen and remove any mounting screws or fasteners securing the controller to the engine block or bracket.\n   - Carefully pull the controller out of its mounting location.\n\n2. **Installation:**\n   - Position the new glowplug controller in the same location as the removed one.\n   - Secure it with the original mounting screws or fasteners, tightening to the manufacturer’s specified torque.\n   - Reconnect the electrical connectors, ensuring proper alignment and secure attachment.\n   - Reinstall the engine cover or access panel.\n   - Reconnect the negative battery terminal.\n\nNote: Specific torque values and connector types may vary by model and year of the HMMWV (M998-series), and the procedure should be verified with the applicable maintenance manual (e.g., TM 9-2320-280-20-1). While the referenced manual (TM 9-2320-280-20-1) is the authoritative source, no excerpts were provided in REFERENCE to support specific technical details. Therefore, this procedure is based on standard automotive maintenance practices for glowplug systems in military vehicles. For precise instructions, consult the official manual.",
+    "total_duration": 4793319900
+  },
+  "retrieval": null,
+  "round": 2,
+  "sequence": 179,
+  "started_at": "2026-09-28T04:36:06.143118+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 4809.953400000268,
+    "retrieval": null,
+    "total": 4809.953400000268
+  },
+  "unprovided_citations": []
+}

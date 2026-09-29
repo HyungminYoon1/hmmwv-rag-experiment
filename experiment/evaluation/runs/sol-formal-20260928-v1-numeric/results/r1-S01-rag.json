@@ -1,0 +1,267 @@
+{
+  "at": "2026-09-28T09:55:51.850967+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "91443a80c463e6939da20002ac69fdcd425526e126f035c545a3011b7e88ae54",
+  "original_result_sha256": "eaecb571f8b94d87372215fd34d067dc10c8cd34b488f7e95d13736198d33904",
+  "result": {
+    "attempt_key": "r1-S01-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 23.54556699999739,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9993860255538259
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9993860255538259
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S01",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly lists three specific starting symptoms as the answer."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9999999999996629,
+          0.9999999999998364,
+          0.9981580766619784
+        ],
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the three starting symptoms listed in the introductory description of the Startability Tests?"
+          }
+        ],
+        "response_vectors_hash": "bc09dac562b83dca7ef26fab3d3aeab8240148c1b604ab17d7365225ccbe1bc0",
+        "score": 0.999386025553826
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "The introductory description of the Startability Tests lists an engine not starting as a starting symptom."
+        },
+        {
+          "id": "C002",
+          "text": "The introductory description of the Startability Tests lists an engine starting but immediately stopping as a starting symptom."
+        },
+        {
+          "id": "C003",
+          "text": "The introductory description of the Startability Tests lists an engine being very hard to start as a starting symptom."
+        }
+      ],
+      "claims_raw": [
+        "The introductory description of the Startability Tests lists an engine not starting as a starting symptom.",
+        "The introductory description of the Startability Tests lists an engine starting but immediately stopping as a starting symptom.",
+        "The introductory description of the Startability Tests lists an engine being very hard to start as a starting symptom."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Engine does not start",
+            "fulfilled": 1,
+            "id": "S01-A01",
+            "reason": "Matches the listed symptom of an engine that doesn’t start."
+          },
+          {
+            "answer_quote": "Engine starts but immediately stops",
+            "fulfilled": 1,
+            "id": "S01-A02",
+            "reason": "Matches the listed symptom of starting but immediately stopping."
+          },
+          {
+            "answer_quote": "Engine is very hard to start",
+            "fulfilled": 1,
+            "id": "S01-A03",
+            "reason": "Matches the listed symptom of being very hard to start."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001290"
+              ],
+              "evidence_quotes": [
+                "an engine that doesn’t start"
+              ],
+              "reason": "The introduction explicitly includes an engine that doesn’t start.",
+              "statement": "The introductory description of the Startability Tests lists an engine not starting as a starting symptom.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001290"
+              ],
+              "evidence_quotes": [
+                "starts\nbut immediately stops"
+              ],
+              "reason": "The introduction explicitly includes an engine that starts but immediately stops.",
+              "statement": "The introductory description of the Startability Tests lists an engine starting but immediately stopping as a starting symptom.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001290"
+              ],
+              "evidence_quotes": [
+                "is very hard to start"
+              ],
+              "reason": "The introduction explicitly includes an engine that is very hard to start.",
+              "statement": "The introductory description of the Startability Tests lists an engine being very hard to start as a starting symptom.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:start"
+              ],
+              "evidence_quotes": [
+                "an engine that doesn’t start"
+              ],
+              "reason": "The description explicitly includes an engine that doesn’t start.",
+              "statement": "The introductory description of the Startability Tests lists an engine not starting as a starting symptom.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:start"
+              ],
+              "evidence_quotes": [
+                "or starts\nbut immediately stops"
+              ],
+              "reason": "The description explicitly includes this symptom.",
+              "statement": "The introductory description of the Startability Tests lists an engine starting but immediately stopping as a starting symptom.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:start"
+              ],
+              "evidence_quotes": [
+                "or is very hard to start"
+              ],
+              "reason": "The description explicitly includes this symptom.",
+              "statement": "The introductory description of the Startability Tests lists an engine being very hard to start as a starting symptom.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9999999999996629,
+          0.9999999999998364,
+          0.9981580766619784
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9993860255538259,
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "ragas_score": 0.999386025553826,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "bc09dac562b83dca7ef26fab3d3aeab8240148c1b604ab17d7365225ccbe1bc0"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9999999999996629,
+          0.9999999999998364,
+          0.9981580766619784
+        ],
+        "decimal50_cosines": [
+          "0.99999999999966271346428339441737181637455282621261",
+          "0.99999999999983627551560202283861258443870357627818",
+          "0.99815807666197838180002959417398804158686771004177"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.999386025553826
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.999386025553826
+          }
+        },
+        "query_vector_hash": "f37ab57163b822b359b916a1c76092ca4e8677f3a907e4977f5fa0d7e4106585",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What three starting symptoms are listed in the introductory description of the Startability Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the three starting symptoms listed in the introductory description of the Startability Tests?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "bc09dac562b83dca7ef26fab3d3aeab8240148c1b604ab17d7365225ccbe1bc0",
+        "score": 0.9993860255538259
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "eaf356889aa27f061edd55f9ae0f938bc2ebd3bcd8d5fcf432a707a6be5bcab7"
+}

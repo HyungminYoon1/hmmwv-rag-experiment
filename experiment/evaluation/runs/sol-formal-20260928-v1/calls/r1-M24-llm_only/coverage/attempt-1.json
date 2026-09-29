@@ -1,0 +1,196 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:25:32.253593+00:00",
+  "parsed": {
+    "elements": [
+      {
+        "answer_quote": "",
+        "fulfilled": 0,
+        "id": "M24-A01",
+        "reason": "The response does not provide the steering-gear mounting-bolt torque."
+      },
+      {
+        "answer_quote": "",
+        "fulfilled": 0,
+        "id": "M24-A02",
+        "reason": "The response does not provide the power-steering pump maximum output pressure."
+      }
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790587532,
+      "conversation": null,
+      "created_at": 1790587530.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_02a1d7454bdd1c32016aba328a3c7887d0839d00eab19268bb",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"elements\":[{\"id\":\"M24-A01\",\"fulfilled\":0,\"answer_quote\":\"\",\"reason\":\"The response does not provide the steering-gear mounting-bolt torque.\"},{\"id\":\"M24-A02\",\"fulfilled\":0,\"answer_quote\":\"\",\"reason\":\"The response does not provide the power-steering pump maximum output pressure.\"}]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_02a1d7454bdd1c32016aba328b102887d0a7a92c76e920740b",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "CoverageOutput",
+          "schema_": {
+            "$defs": {
+              "ElementJudgment": {
+                "additionalProperties": false,
+                "properties": {
+                  "answer_quote": {
+                    "title": "Answer Quote",
+                    "type": "string"
+                  },
+                  "fulfilled": {
+                    "enum": [
+                      0,
+                      1
+                    ],
+                    "title": "Fulfilled",
+                    "type": "integer"
+                  },
+                  "id": {
+                    "title": "Id",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "title": "Reason",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "fulfilled",
+                  "answer_quote",
+                  "reason"
+                ],
+                "title": "ElementJudgment",
+                "type": "object"
+              }
+            },
+            "additionalProperties": false,
+            "properties": {
+              "elements": {
+                "items": {
+                  "$ref": "#/$defs/ElementJudgment"
+                },
+                "title": "Elements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "elements"
+            ],
+            "title": "CoverageOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1333,
+        "input_tokens_details": {
+          "cache_write_tokens": 1330,
+          "cached_tokens": 0
+        },
+        "output_tokens": 75,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1408
+      },
+      "user": null
+    },
+    "request_id": "resp_02a1d7454bdd1c32016aba328a3c7887d0839d00eab19268bb",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"elements\":[{\"id\":\"M24-A01\",\"fulfilled\":0,\"answer_quote\":\"\",\"reason\":\"The response does not provide the steering-gear mounting-bolt torque.\"},{\"id\":\"M24-A02\",\"fulfilled\":0,\"answer_quote\":\"\",\"reason\":\"The response does not provide the power-steering pump maximum output pressure.\"}]}",
+    "usage": {
+      "input_tokens": 1333,
+      "input_tokens_details": {
+        "cache_write_tokens": 1330,
+        "cached_tokens": 0
+      },
+      "output_tokens": 75,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1408
+    }
+  },
+  "record_hash": "1a8f75f94d6f8d92305289e0e8dc6151d5a72d1d9349fff11f7d0c4f74fd82c2",
+  "request_hash": "82a573e406ee021f4d21839f0c39303e058519b3a57d14bb35cb3009d965787c",
+  "started_at": "2026-09-28T09:25:30.092199+00:00",
+  "status": "OK"
+}

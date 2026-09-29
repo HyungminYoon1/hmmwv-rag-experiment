@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:10:54.429602+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives specific reporting forms, timing, and a tightening torque."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586654,
+      "conversation": null,
+      "created_at": 1790586652.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_087598e82680100c016aba2f1c3c3487d0a2b661e06f647c2d",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqui8ejF1SX-0MPQWfeguK61hmuDP120WY9Q_e-TX9vY_1xDE0aa2t-WCXIwLO9VACSRUhIZd2cUEHGjs4eCIdTlcG7q5ZoKDtOSDsr1srurCupoPuu_yt6KxOvFTlYzj6u3nWv_ydFD5KjqYVmaTdH4--X47paK1SsGHt80RYDLyhcQegUzye2w-zsjsnu1ASWCgqXHrcc5HUhE2kzieC9sEje_5YJIlfWSXujXMc4N-e5IxxsGfTuuD-4tIcy-wJN-kSKiggAcuqlx6y3AE_Dbc6iDk5ldE8plGDEJkUCDpDIULyFMFsDdoZL6v7EsdpEWUeVN28YW41usaggzVqpVYLTvq0KHTlxmVZzcTSY--8OM0kD8Uly8dGtlqtFWZ6NFDmdMrlcwOk6Kt-3beRvibCi09egyg2zaa-7wB_H9VR6yHmGEFFIZc9KyUsarsFXDoxbyuMsxGhHAh7jy753mwTBPl8T74ZP-TOeMIzfwou-AHyDVnz4s0j8qWCeow8ZavA7cU9-NkHJRFAgvDm1auTSQgYvwx8O-RMlgQ2PQrDyV02Qd78LTzByX5PLG0EhK-7VgFFIBEgcB6h4SBl0QrPeemkfKnUx-7l-YROOI9kEgThaT3r5NVlsuSc70-r44bjUYXJxOAsl4hHBVWyA3WQ_FydOZYb5V7h4UhzMN5-q-DnUhpOpzzom4bbJG6c7LaeeutUSSIp_b9wGqOyAMHfEyyg7-rY0phZqeR3NcxI2T_gtzs5l-yYcEd96KqWY0q89etJ9bz2cVBlaW2F8JAiGWefPZ2HmDXu24SBPeE6gEoTBiuuMePUcr1r15zumOgMyftGSlBy752RicJTYqKMpUYB9m_rkCIGH11_GddaKU29_GQB2ryVNgizL6OMar5xGkHLKMZ3rRPRAXyXVvpX0XHfJumO75SsXHaZTHgmvLAJzZ6L181HKan61ew-u0-jCK2I-FtlybNsVBVb6aOkd9tkwUWGM6yv52evziNTo03kBNvBXkG70djDrP0uAfefxohVyu0pHuguZ0AFsMI-aBYpwXJ7k6pEas8e1Nzzoxl6P3pvyfjTvKhppfLaHYufn-canC-IuTBFsWRljCaS5tz1WCjn5R4adrRPXfOjFqqJUTAHtLyt-BTmjqVodyoFc_kobjW1KW_cynBWyysjdp5yEjSOZi94DNxxfI4N6-6UuBogKbtDhUL-5z05a-qQNizVN_n6WemegVHglhDSQpNA9QGZar1dakJAxw2MC0c=",
+          "id": "rs_087598e82680100c016aba2f1cff1487d08db79f397a83ccfc",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives specific reporting forms, timing, and a tightening torque.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_087598e82680100c016aba2f1d97ec87d090432b979d676775",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 354,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 53,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 407
+      },
+      "user": null
+    },
+    "request_id": "resp_087598e82680100c016aba2f1c3c3487d0a2b661e06f647c2d",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives specific reporting forms, timing, and a tightening torque.\"}",
+    "usage": {
+      "input_tokens": 354,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 53,
+      "output_tokens_details": {
+        "reasoning_tokens": 13
+      },
+      "total_tokens": 407
+    }
+  },
+  "record_hash": "20054775f616e60282e9bace244833ffe8a4cdbd980e13b95971b5fbca7424e6",
+  "request_hash": "e2c30f7ec4ccbcc8fa997c6e0f3652b62ab8477d2cc0418e28a90e296d48f8c8",
+  "started_at": "2026-09-28T09:10:52.083681+00:00",
+  "status": "OK"
+}

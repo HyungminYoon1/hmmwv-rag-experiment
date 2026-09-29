@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:06:10.374840+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response gives a specific activation temperature and identifies the pump supplying hydraulic pressure."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790586370,
+      "conversation": null,
+      "created_at": 1790586368.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0bb217a80518ac16016aba2e0052e487d093e8edf32797763f",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqui4CDfhsEZTdIjWqXVu21RuJiU3jRxAq6wYkKCQVKSM24xdBriugglRpfOmRd_PZRzhyGocHt6a5r-3SaaJ6cRds9eJbG8-9bpgIeIOmkY-g1OyFKAW9sLJvrMQi-GgVg7lUvsdLUBPuX7Apc-QuDrEIjJWUePMssRW5fnLQy6iaczQcLaLM7NtREqwxL-JlX1KbulDWHMsOcrtyqAI_i_bRbaXa7xUgH-IY4m6514o2cYwkkL8STTRMBgtu9xEJA1T84bbX2mw021ElgR9MNJrCl13zvzsS6_VVMw45IaXSWieTFDeuC-0ra821eP_wLRmykUkR5N2_ATs6AU3q58qup4rFZWN2XWpBcANri63DdM7Xhcg_CoSDBRN1ORS_a1zzbW8CdqYBJ43RkNclI4s-fIL_M9C4oAEXVVB0E8EAIKB7eI7vqweDb662Kai6nyh1JVCLqxqVx6sUGTUNFGXMBimnmn8_OvEF0tuDeEPz0AtYhY_xlhkVOOLMKriaMCFJCqD2zbweOgsCTX271I8m7rmwkO_f5DOZCuA6yQ8T4X4mcyszbK2wct3dY4-LcVNpvR_bHVoKSzXBqKEPUZYZtZ320Jb8GC5X6WKCKDEprXNo1YhQTd0Q8t4PJCMD-bnao3LLr0CO8B7ZaJxJNNID6lcl3qtpDlm1tydtH9xdwCS6E6F1anwfBvCqC9wIiJyCWjHxTqVAp_l9iDsDatqkS5mwamF2dfNh8n1xA04EyK5fBkBy76sf-gr-H-TiKxyLy3ad5PkYagdMjFQj2HQlRfAuVK5ygjElFnx7QBHIDic_IF58oV6Nf3z8_jGWNO6Nzv8q73GDeKeBtbc7aWM_vsrYjez6Nu3RHpR1C1rtbP9SAl4msVdMZQ8a3Vn_92Q839_P7JxFB_68g8R6jriCyG-Lkh6uos08B7MlkUjk5VJuLuIJL_nQe-Pfhv-3YdEaekiwj4lmAM_ZEcqt61cNaTMCbFS42TiagftFhkpssN0ruwtLyvPP9L8dFF1KhhaEn1JhfTKZ7fgf8IwbM4-Sa2BQC1au2ROQIqwi_HLHvxML5xAzixP4hM3E9IIwd8cvtHn-KvstQhMUuscj1L3exCj6yyUm6rmToJHKBZT4yh33qLrTEoYLZZOE_L1j58g1BA6kaLUAYEOw3RI8nWWMyLuJaEqk0yLWU6ztWuifzoz2s9BmJCEaWposBwiFtyltIJ60-5Mji51GOBKMEN0_XkRHPUcZdwwAi6Ojeqpb2l0=",
+          "id": "rs_0bb217a80518ac16016aba2e0102c887d08ab5a9284e7c03e0",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a specific activation temperature and identifies the pump supplying hydraulic pressure.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0bb217a80518ac16016aba2e019b5487d084590aee4c551d16",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 359,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 55,
+        "output_tokens_details": {
+          "reasoning_tokens": 14
+        },
+        "total_tokens": 414
+      },
+      "user": null
+    },
+    "request_id": "resp_0bb217a80518ac16016aba2e0052e487d093e8edf32797763f",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response gives a specific activation temperature and identifies the pump supplying hydraulic pressure.\"}",
+    "usage": {
+      "input_tokens": 359,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 55,
+      "output_tokens_details": {
+        "reasoning_tokens": 14
+      },
+      "total_tokens": 414
+    }
+  },
+  "record_hash": "2c24aec8ecbb0116db7fd14fadf6094e89395e1d798d1db47941d82341c42705",
+  "request_hash": "e6110e2b72e4c62f1b5219564306ef2fcc7e973e7153ee24c287236f92b1d482",
+  "started_at": "2026-09-28T09:06:08.196746+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,238 @@
+{
+  "at": "2026-09-28T09:15:53.062503+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "62fffb1458e5896849c3a7257e15a70294ada8ac592fa9623dd29c4e85f7fe97",
+  "result": {
+    "attempt_key": "r1-M16-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 41.067767399999866,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.8431601434965379
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.8431601434965379
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      }
+    },
+    "question_id": "M16",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "partial_abstention",
+        "reason": "Provides cleaning instructions and specific refill quantities, but qualifies them with a disclaimer that the values were not drawn from supplied excerpts and need verification."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8697633821156754,
+          0.8682044406366027,
+          0.7915126077373366
+        ],
+        "query_vector_hash": "1b8999fdb40a9c3039f0e7f4d392b54b6d47d1b936b0334dd133eaac51942e48",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "How should contaminated components be handled after fording, and what gear oil refill quantities are given for each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "How should contaminated components be handled after fording, and what are the stated gear oil refill quantities for each axle differential and geared hub?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "After fording contamination in an HMMWV, how should contaminated components be handled, and how much gear oil is recommended to refill each axle differential and geared hub?"
+          }
+        ],
+        "response_vectors_hash": "0889189b1c326b9e4d15d0b1172113322b596f460379b39f34bc964534e291a6",
+        "score": 0.8431601434965379
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "After fording, contaminated items should be cleaned and inspected for damage or corrosion."
+        },
+        {
+          "id": "C002",
+          "text": "Contaminated components, including differentials and geared hubs, must be cleaned thoroughly using appropriate solvents and then dried before reassembly to prevent internal damage or premature wear."
+        },
+        {
+          "id": "C003",
+          "text": "After fording contamination, the typically recommended GO refill quantity for each axle differential is 1.5 quarts of gear oil."
+        },
+        {
+          "id": "C004",
+          "text": "The recommended GO refill quantity for each geared hub is 0.5 quarts of gear oil."
+        },
+        {
+          "id": "C005",
+          "text": "The stated refill quantities are based on standard maintenance procedures outlined in TM 9-2320-280-20-1, Volume 1."
+        },
+        {
+          "id": "C006",
+          "text": "The stated refill quantities are consistent with typical HMMWV (M998-series) maintenance practices."
+        },
+        {
+          "id": "C007",
+          "text": "No actual excerpts were provided in REFERENCE."
+        },
+        {
+          "id": "C008",
+          "text": "The stated refill quantities are derived from general knowledge of the manual's content."
+        },
+        {
+          "id": "C009",
+          "text": "If the exact refill quantities were not present in the supplied reference, the stated refill quantities may require verification in the original document."
+        }
+      ],
+      "claims_raw": [
+        "After fording, contaminated items should be cleaned and inspected for damage or corrosion.",
+        "Contaminated components, including differentials and geared hubs, must be cleaned thoroughly using appropriate solvents and then dried before reassembly to prevent internal damage or premature wear.",
+        "After fording contamination, the typically recommended GO refill quantity for each axle differential is 1.5 quarts of gear oil.",
+        "The recommended GO refill quantity for each geared hub is 0.5 quarts of gear oil.",
+        "The stated refill quantities are based on standard maintenance procedures outlined in TM 9-2320-280-20-1, Volume 1.",
+        "The stated refill quantities are consistent with typical HMMWV (M998-series) maintenance practices.",
+        "No actual excerpts were provided in REFERENCE.",
+        "The stated refill quantities are derived from general knowledge of the manual's content.",
+        "If the exact refill quantities were not present in the supplied reference, the stated refill quantities may require verification in the original document."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "any items found contaminated should be cleaned and inspected for damage or corrosion",
+            "fulfilled": 0,
+            "id": "M16-A01",
+            "reason": "The answer does not instruct relubricating contaminated items."
+          },
+          {
+            "answer_quote": "For each axle differential: 1.5 quarts of gear oil",
+            "fulfilled": 0,
+            "id": "M16-A02",
+            "reason": "The listed quantity is 2 quarts of GO, not 1.5 quarts."
+          },
+          {
+            "answer_quote": "For each geared hub: 0.5 quarts of gear oil",
+            "fulfilled": 1,
+            "id": "M16-A03",
+            "reason": "Half a quart equals 1 pint."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context calls for relubricating contaminated items after fording, but does not require inspecting them for damage or corrosion.",
+              "statement": "After fording, contaminated items should be cleaned and inspected for damage or corrosion.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context says to clean parts and dry them before lubricating, not before reassembly; it does not state the claimed purpose.",
+              "statement": "Contaminated components, including differentials and geared hubs, must be cleaned thoroughly using appropriate solvents and then dried before reassembly to prevent internal damage or premature wear.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated quantity is 2 quarts per axle differential, not 1.5.",
+              "statement": "After fording contamination, the typically recommended GO refill quantity for each axle differential is 1.5 quarts of gear oil.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context specifies 1 pint (0.5 L), not 0.5 quarts.",
+              "statement": "The recommended GO refill quantity for each geared hub is 0.5 quarts of gear oil.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context does not identify that manual or volume.",
+              "statement": "The stated refill quantities are based on standard maintenance procedures outlined in TM 9-2320-280-20-1, Volume 1.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish what is typical, and the quantities claimed above differ from those it states.",
+              "statement": "The stated refill quantities are consistent with typical HMMWV (M998-series) maintenance practices.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context contains excerpts, and it does not identify a separate REFERENCE.",
+              "statement": "No actual excerpts were provided in REFERENCE.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context does not establish the source of those claims.",
+              "statement": "The stated refill quantities are derived from general knowledge of the manual's content.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context states refill quantities; it does not make this conditional recommendation.",
+              "statement": "If the exact refill quantities were not present in the supplied reference, the stated refill quantities may require verification in the original document.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.8697633821156754,
+          0.8682044406366027,
+          0.7915126077373366
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8431601434965382,
+        "query_vector_hash": "1b8999fdb40a9c3039f0e7f4d392b54b6d47d1b936b0334dd133eaac51942e48",
+        "ragas_score": 0.8431601434965379,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "0889189b1c326b9e4d15d0b1172113322b596f460379b39f34bc964534e291a6"
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "74c45e24befb68c5d83e54cf9486c53f4db6832de7c4ca5b81189b0ace7a2d77"
+}

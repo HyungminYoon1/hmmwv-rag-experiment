@@ -1,0 +1,673 @@
+{
+  "citation_ids": [
+    "[C002436]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:31:32.619739+00:00",
+  "evaluation_answer": "Blue exhaust smoke generally indicates that oil is entering the combustion chambers. ",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 763,
+  "key": "r1-S16-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002430] TM 9-2320-280-20-1 | PDF 273 | Printed 2-190\nENGINE LUBRICATION\nDIAGNOSTIC FLOWCHART\n4\nKNOWN INFO\nOIL GAUGE OK\nNO OIL LEAKS\nOIL OK\nFILTER OK\nPRESSURE OK\nPOSSIBLE PROBLEMS\nINTERNAL ENGINE\nPROBLEMS\n\nIs the exhaust colorless?\n(especially no blue smoke)\nTEST OPTIONS\nLook\nREASON FOR QUESTION\nBlue smoke indicates oil in\nthe exhaust.\n\n[C002436] TM 9-2320-280-20-1 | PDF 274 | Printed 2-191\nENGINE LUBRICATION\nREFERENCE INFORMATION\n\nBLUE. . . . . . . . . . . .Blue smoke is a sign of oil entering the combustion chambers. It usually\n\n[C001647] TM 9-2320-280-20-1 | PDF 188 | Printed 2-101\nREFERENCE INFORMATION\nFUEL SYSTEM\n\nBLUE . . . . . . . . . . . . Blue smoke is a sign of oil entering the combustion\n\n[C001638] TM 9-2320-280-20-1 | PDF 187 | Printed 2-100\nFUEL SYSTEM\nKNOWN INFO\nINJECTION PUMP OK\nPOSSIBLE PROBLEMS\nINJECTORS\nAIR CLEANER\nPUMP TIMING\nCDR VALVE\nRETURN CHECK VALVE\n\nIS THE EXHAUST COLORLESS? TEST OPTIONS VISUAL IN TION SUAL INSPEC REASON FOR QUESTION Exhaust smoke may indicate conditions such as oil, water or excessive fuel entering the cylinders.\n\n[C001357] TM 9-2320-280-20-1 | PDF 143 | Printed 2-53\nENGINE RUNNING\nREFERENCE INFORMATION\n\nIt is normal for the engine to emit some black smoke\nwhen accelerating after idling for a while. Under most\nother conditions, exhaust smoke is usually from one of\nthree sources;\nBLUE smoke is usually oll.\nBLACK smoke is too much fuel or too little air. (Often\ncaused by advanced injection timing).\nWHITE smoke is usually water. (Often caused by\nretarded injection timing).\nif the smoking is continuous or appears under a particular\ncondition, the smoke probably indicates a problem and\nshould be investigated.\nQUESTION:\nWhat does blue exhaust smoke generally indicate according to the manual?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 194,
+  "question": "What does blue exhaust smoke generally indicate according to the manual?",
+  "question_id": "S16",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:18:49.474515607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:18:47.702820607+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4836835328.0,
+    "max_actual_interval_ms": 109.68669999965641,
+    "peak_rss_bytes": 13578158080,
+    "peak_vram_bytes": 4836835328,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5177.1802231,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5177.2875154,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5177.3811605,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5177.4899775,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5177.5827202,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5177.6916191,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5177.7844073,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5177.8922938,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5177.986094,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5178.0947335,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044406784,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468385280,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5178.1897071,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044414976,
+          "35444": 8130560,
+          "36040": 100536320,
+          "37504": 9187946496,
+          "37564": 7958528
+        },
+        "rss_bytes": 13468393472,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5178.2845957,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044455936,
+          "35444": 8130560,
+          "36040": 100540416,
+          "37504": 9210982400,
+          "37564": 7958528
+        },
+        "rss_bytes": 13491474432,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5178.3929667,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044455936,
+          "35444": 8130560,
+          "36040": 100540416,
+          "37504": 9295839232,
+          "37564": 7958528
+        },
+        "rss_bytes": 13576331264,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5178.4849506,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044455936,
+          "35444": 8130560,
+          "36040": 100540416,
+          "37504": 9297666048,
+          "37564": 7958528
+        },
+        "rss_bytes": 13578158080,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5178.5946373,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044455936,
+          "35444": 8130560,
+          "36040": 100540416,
+          "37504": 9297666048,
+          "37564": 7958528
+        },
+        "rss_bytes": 13578158080,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5178.6871777,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044455936,
+          "35444": 8130560,
+          "36040": 100540416,
+          "37504": 9297666048,
+          "37564": 7958528
+        },
+        "rss_bytes": 13578158080,
+        "vram_bytes": 4836835328
+      },
+      {
+        "monotonic": 5178.7810509,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102764544,
+          "17284": 4587520,
+          "30736": 12054528,
+          "34324": 4044455936,
+          "35444": 8130560,
+          "36040": 100540416,
+          "37504": 9297666048,
+          "37564": 7958528
+        },
+        "rss_bytes": 13578158080,
+        "vram_bytes": 4836835328
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:31:32.6192314Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 23,
+    "eval_duration": 342493000,
+    "load_duration": 4611600,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 194,
+    "prompt_eval_count": 763,
+    "prompt_eval_duration": 124087000,
+    "response": "Blue exhaust smoke generally indicates that oil is entering the combustion chambers. [C002436]",
+    "total_duration": 532725300
+  },
+  "retrieval": {
+    "embedding_ms": 56.699000000662636,
+    "items": [
+      {
+        "body_end": 131,
+        "body_start": 0,
+        "id": "C002430",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          273
+        ],
+        "prefix_chars": 152,
+        "printed_pages": [
+          "2-190"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R000076"
+        ],
+        "review_ids": [],
+        "score": 0.7061566710472107,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "recorded_pdf_region",
+          "condition_box": [
+            54.5,
+            135.0,
+            161.5,
+            313.0
+          ],
+          "condition_link_basis": "PRINTED_RECTANGLE_BOUNDED_NATIVE_PROFILE",
+          "cross_page_join": false,
+          "cross_page_reference_policy": "DO_NOT_INHERIT_UNLESS_EXPLICIT_REVIEWED_CONTRACT",
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v3-work/page-0273.png",
+            "sha256": "77ba54c3c3db092f5180796bb2ddf8b809f4d539d67fa3ff88181e044fa06ace"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "BOUNDED_NATIVE_PROFILE_ACCEPTED_FOR_TEXT_SCOPE",
+          "pdf_box": [
+            181.0,
+            153.5,
+            364.0,
+            244.0
+          ],
+          "previous_layout_review": "NATIVE_GEOMETRY_PROFILE_WITH_REMAINING_CONTEXT_REVIEW",
+          "reference_page_reviewed": false,
+          "step": "4",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "ENGINE LUBRICATION\nDIAGNOSTIC FLOWCHART\n4\nKNOWN INFO\nOIL GAUGE OK\nNO OIL LEAKS\nOIL OK\nFILTER OK\nPRESSURE OK\nPOSSIBLE PROBLEMS\nINTERNAL ENGINE\nPROBLEMS\n\nIs the exhaust colorless?\n(especially no blue smoke)\nTEST OPTIONS\nLook\nREASON FOR QUESTION\nBlue smoke indicates oil in\nthe exhaust.",
+        "text_sha256": "fec86298598156a4c31f3e10b281994f669c667137712ca22fd8d0108221c13e",
+        "token_count": 90,
+        "unit_id": "U002424",
+        "unit_key": "P0273:question:4"
+      },
+      {
+        "body_end": 99,
+        "body_start": 0,
+        "id": "C002436",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          274
+        ],
+        "prefix_chars": 42,
+        "printed_pages": [
+          "2-191"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R002753"
+        ],
+        "review_ids": [],
+        "score": 0.6926897764205933,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[4]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "ENGINE LUBRICATION\nREFERENCE INFORMATION\n\nBLUE. . . . . . . . . . . .Blue smoke is a sign of oil entering the combustion chambers. It usually",
+        "text_sha256": "21aba6b1f6183f82b1b320d3567976eb1eab487c5e8db16f37f8f94186ec6649",
+        "token_count": 36,
+        "unit_id": "U002430",
+        "unit_key": "region:274:1:3"
+      },
+      {
+        "body_end": 80,
+        "body_start": 0,
+        "id": "C001647",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          188
+        ],
+        "prefix_chars": 35,
+        "printed_pages": [
+          "2-101"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R001775"
+        ],
+        "review_ids": [],
+        "score": 0.6602576375007629,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[6]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nFUEL SYSTEM\n\nBLUE . . . . . . . . . . . . Blue smoke is a sign of oil entering the combustion",
+        "text_sha256": "6b5410680ce80774ce600a4f7d5796cee50f9791ea010e58f96912334b60863c",
+        "token_count": 30,
+        "unit_id": "U001641",
+        "unit_key": "region:188:1:7"
+      },
+      {
+        "body_end": 184,
+        "body_start": 0,
+        "id": "C001638",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          187
+        ],
+        "prefix_chars": 123,
+        "printed_pages": [
+          "2-100"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6498607397079468,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "bounded_same_node_panels",
+          "branch_interpretation": "PDF_ONLY_UNLESS_SEPARATE_VERIFIED_EDGE",
+          "condition_band": [
+            531.84,
+            755
+          ],
+          "condition_box": [
+            43.0,
+            526.0,
+            157.0,
+            690.5
+          ],
+          "condition_link_basis": "UNIQUE_LEFT_HEADER_AND_BOUNDED_SAME_NODE_TEST_PANEL",
+          "evidence": {
+            "file": "preprocessing/ocr-structure-review-20260924/full-audit-e/page-0187.json",
+            "sha256": "dc7fc998ad45f46e0b314dde7c2023502e64e1c6de97b2129963c278a544232a"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "SAMPLED_PDF_PROFILE_WITH_BOUNDED_GEOMETRY",
+          "profile": "V6_OCR_DIAGNOSTIC_TEXT",
+          "question_bbox": [
+            180.24,
+            556.8,
+            338.16,
+            565.68
+          ],
+          "source_component_keys": [
+            "region:187:1:18",
+            "region:187:1:16",
+            "region:187:1:20",
+            "region:187:1:17",
+            "region:187:1:19"
+          ]
+        },
+        "text": "FUEL SYSTEM\nKNOWN INFO\nINJECTION PUMP OK\nPOSSIBLE PROBLEMS\nINJECTORS\nAIR CLEANER\nPUMP TIMING\nCDR VALVE\nRETURN CHECK VALVE\n\nIS THE EXHAUST COLORLESS? TEST OPTIONS VISUAL IN TION SUAL INSPEC REASON FOR QUESTION Exhaust smoke may indicate conditions such as oil, water or excessive fuel entering the cylinders.",
+        "text_sha256": "db074caab0f2f788a078bbc6b4ee04f83054dda23cb34ffeaac5f95e21f73e4d",
+        "token_count": 83,
+        "unit_id": "U001632",
+        "unit_key": "V6:P0187:node:3"
+      },
+      {
+        "body_end": 509,
+        "body_start": 0,
+        "id": "C001357",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          143
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-53"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R001420",
+          "R001421"
+        ],
+        "review_ids": [],
+        "score": 0.6497142910957336,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "unboxed-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "ENGINE RUNNING\nREFERENCE INFORMATION\n\nIt is normal for the engine to emit some black smoke\nwhen accelerating after idling for a while. Under most\nother conditions, exhaust smoke is usually from one of\nthree sources;\nBLUE smoke is usually oll.\nBLACK smoke is too much fuel or too little air. (Often\ncaused by advanced injection timing).\nWHITE smoke is usually water. (Often caused by\nretarded injection timing).\nif the smoking is continuous or appears under a particular\ncondition, the smoke probably indicates a problem and\nshould be investigated.",
+        "text_sha256": "4b965f4fd14a979fc15af55d81e95c7aeab2f1f8ee46ae11ef4de87639ec93cc",
+        "token_count": 113,
+        "unit_id": "U001351",
+        "unit_key": "region:143:1:4"
+      }
+    ],
+    "search_ms": 7.838599999558937
+  },
+  "round": 1,
+  "sequence": 99,
+  "started_at": "2026-09-28T04:31:31.997258+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 557.5962000002619,
+    "retrieval": 65.3111000001445,
+    "total": 622.9073000004064
+  },
+  "unprovided_citations": []
+}

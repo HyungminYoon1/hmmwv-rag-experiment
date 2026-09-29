@@ -1,0 +1,152 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:44:58.852543+00:00",
+  "parsed": {
+    "statements": [
+      "The approximate cranking speed stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10 is 200 RPM."
+    ]
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588698,
+      "conversation": null,
+      "created_at": 1790588696.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_08b3f1711bdeb8c0016aba3718e09487d0a16d3c9198ffacce",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"statements\":[\"The approximate cranking speed stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10 is 200 RPM.\"]}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_08b3f1711bdeb8c0016aba371a25e087d0a3583488610de1fa",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "StatementGeneratorOutput",
+          "schema_": {
+            "additionalProperties": false,
+            "description": "Structured output for statement generation.",
+            "properties": {
+              "statements": {
+                "description": "The generated statements from the answer",
+                "items": {
+                  "type": "string"
+                },
+                "title": "Statements",
+                "type": "array"
+              }
+            },
+            "required": [
+              "statements"
+            ],
+            "title": "StatementGeneratorOutput",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 562,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 42,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 604
+      },
+      "user": null
+    },
+    "request_id": "resp_08b3f1711bdeb8c0016aba3718e09487d0a16d3c9198ffacce",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"statements\":[\"The approximate cranking speed stated in the Engine Lubrication Tests reference for STE/ICE-R Test 10 is 200 RPM.\"]}",
+    "usage": {
+      "input_tokens": 562,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 42,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 604
+    }
+  },
+  "record_hash": "d4044f27b5a616288d6f5f2c7de9156afa2e9a4331adcef6da1ce9da56050a8b",
+  "request_hash": "0f82a97f719e7a618b9e8f0288eda7b75f9e37aadf0b0e10e55657d54ef8b854",
+  "started_at": "2026-09-28T09:44:56.725464+00:00",
+  "status": "OK"
+}

@@ -1,0 +1,64 @@
+{
+  "at": "2026-09-28T09:54:29.261895+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "eeba6941288c607468c1205055dd18056cd6ac308da9908b69f59eb45b3842c3",
+  "result": {
+    "attempt_key": "r1-U09-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 7.625849600000947,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U09",
+    "stages": {
+      "abstention": {
+        "answer_quote": "I do not know the complete water-manometer test setup, numerical acceptance limits, and test procedure for the CDR valve specified in paragraph 3-9a of TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), as no manual excerpts were supplied for reference.",
+        "explicitly_withholds_missing": true,
+        "has_partial_answer": false,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "partial_within_allowed": false,
+        "reason": "The response expressly withholds the requested setup, limits, and procedure without inventing them. It gives no partial test facts. The oracle only refers to a water-manometer vacuum check and §3-9a; the retrieved set is empty.",
+        "source_ids": [
+          "O:cdr"
+        ],
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "5dac3abcb581b44503aea6e4c286975839601ce3b76df1841ee7d9c12eb80261"
+}

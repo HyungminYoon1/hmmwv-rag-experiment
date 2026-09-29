@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:34:14.677533+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response directly lists symptoms for both test categories and makes substantive factual claims."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588054,
+      "conversation": null,
+      "created_at": 1790588052.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_03501adab79a96d8016aba34946cdc87d0b5c3431b7f8cf267",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujSWnFkf2TwyoFuy3psstlTE8CM9dhE2I5m7ts4bdVLdlb9OyaA_ssH0sJx6eihxDpMZ-w20necqEkB3XYzU75Gvjq5nEG2Ky1YH760bqNU9BlUfhpPXEVdznlRhEKFHA-nuCxzYI0SYp4bMB1yArIagFy3joGOmF3nkkOFNWcMfNCYHMne2wke-pzqgA7uPYbqEtw-eT5uloIiqJOV35lUfhUizmNz89HQQ0IoCkklkG4kiJ1vVtHxPJCLwuA_zmVCP4f4S9KGEFN3hSzrRcPoTksqTAAL5Gw34hqj2aYAA6ZmFAiA0WZWbpi1FG3naxYyAFgSD11AkRzaSxthskjw2ZIxW9yj16V5ScGfpqhgMQlQccYOFVJlBwiFiwqz9-FShyul7odSJdQqUbdTeA9E608EPan4P30Zr3VDtDE52nY28rs0SWJ4yy--jwV0dzWCGJokTP9plQjI7Sp5BiKbwHT0ZdPmUpXaMFeCjcv371uM1yAd4ySk-pCI9iK6XSxe659lVHxeVybvM-rexAWx3G53Aeo1m-0N5XpaVYISSbOi9-q4cI1K0EFLFtfaNnkmoK4JUl2p7iIN_HTIiC3Sx3jgl9iUcN929Ym33pCfTVrVVm03gK0dA9tRhnzh_q9qjE7JES0yuIj3TE1nBr4Mvx1vsJ4cy2u0OodGIWy0rTan-CKFXbOT0dxaqLPEVuDtAdnymzwQfK8oMbHWYMedWlmImat2Rj0WPmMWIpxro4xGobx-3BanUsy-CTKh1D2sRJa2C2cgUBf-jcN5qLdFgZYZCgGLoaFFkmmdnsP3-kGIj8w7qn3CFsUxSoIcjspKjE3Sqv8jKZtTba8xesvDk5NLeFN3-zQRxzQSXilLgp_cxAblV8-RHloVbcjRmfLnnf5wuOZDT_-14__VCkLDZgXtiBqoXhAGquY3FTKhsL5B1Y8OjhvbKFee-fNvUQCY4pEhuB1C6tPRNEJLjC_ODyDCjLftCKc12pqG7k1OSYVNawkMzkGIcEdt__ywUFSN_vrVKCHW1kASh3TFywyGAKE5yImmd8crbdPpKMEPdc5vCsbcVrex2kqG-3cDNwbi3kk0WWMH4uQxWZIdo_CQp_M6SpNN-084-fQkkQJQf6za26MPPDn_cHFmf0CP-0q9C0JhY2X9MZZfjRx2Cn7hN9Kzi0j0zuSmCERAuJ8SKdZ1revavVyDpvJgOWbCF0aWxctCwOUW-MpwPLuEwLy2jLg==",
+          "id": "rs_03501adab79a96d8016aba34955cd087d0ab6a80a911bfd11b",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly lists symptoms for both test categories and makes substantive factual claims.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_03501adab79a96d8016aba3495f30887d0857f561a877ebbeb",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 333,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 53,
+        "output_tokens_details": {
+          "reasoning_tokens": 12
+        },
+        "total_tokens": 386
+      },
+      "user": null
+    },
+    "request_id": "resp_03501adab79a96d8016aba34946cdc87d0b5c3431b7f8cf267",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly lists symptoms for both test categories and makes substantive factual claims.\"}",
+    "usage": {
+      "input_tokens": 333,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 53,
+      "output_tokens_details": {
+        "reasoning_tokens": 12
+      },
+      "total_tokens": 386
+    }
+  },
+  "record_hash": "44a0b51722ca90339454cfa41cb67e8b568de1ffd2f008ca14fbe3d86ece5cc1",
+  "request_hash": "d6a50a2595766aad7f46cc29ad58f0eb23dc54ed2c2d5a69d977adada1b42a9d",
+  "started_at": "2026-09-28T09:34:12.278861+00:00",
+  "status": "OK"
+}

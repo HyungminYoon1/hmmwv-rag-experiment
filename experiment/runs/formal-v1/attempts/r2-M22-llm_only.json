@@ -1,0 +1,695 @@
+{
+  "citation_ids": [],
+  "condition": "LLM_ONLY",
+  "ended_at": "2026-09-28T04:36:05.072463+00:00",
+  "evaluation_answer": "The specific gravity of 1.200 for a battery cell is within the acceptable range for a healthy lead-acid battery, typically indicating a sufficient state of charge (normal range is approximately 1.200 to 1.250). This value meets the PMCS (Preventive Maintenance and Condition Standard) criterion for battery health as defined in standard maintenance practices.\n\nHowever, the STE/ICE-R Test 73 reporting 20 milliohms is outside the acceptable range. The STE/ICE-R test measures battery internal resistance, and a value of 20 milliohms is significantly high. According to standard diagnostic criteria, internal resistance should be below 10 milliohms for a healthy battery. A value of 20 milliohms indicates poor battery condition and likely failure, which would fail the diagnostic criterion.\n\nTherefore:\n- Specific gravity of 1.200: meets PMCS criterion.\n- STE/ICE-R Test 73 result of 20 milliohms: does not meet diagnostic criterion.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 255,
+  "key": "r2-M22-llm_only",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[No manual excerpts supplied. Answer from existing model knowledge.]\nQUESTION:\nA battery cell has specific gravity 1.200, while STE/ICE-R Test 73 reports 20 milliohms. How does each compare with its respective PMCS or diagnostic criterion?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 207,
+  "question": "A battery cell has specific gravity 1.200, while STE/ICE-R Test 73 reports 20 milliohms. How does each compare with its respective PMCS or diagnostic criterion?",
+  "question_id": "M22",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:21.926696207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:23:17.675354707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4879499264.0,
+    "max_actual_interval_ms": 109.5618999997896,
+    "peak_rss_bytes": 9351897088,
+    "peak_vram_bytes": 4877271040,
+    "pids": [
+      13944,
+      30736,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5447.0823214,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4881989632
+      },
+      {
+        "monotonic": 5447.1896156,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4880678912
+      },
+      {
+        "monotonic": 5447.2965262,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4879499264
+      },
+      {
+        "monotonic": 5447.3887967,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4879499264
+      },
+      {
+        "monotonic": 5447.497549,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4879499264
+      },
+      {
+        "monotonic": 5447.5912991,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4879499264
+      },
+      {
+        "monotonic": 5447.6846102,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4879499264
+      },
+      {
+        "monotonic": 5447.7941721,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4879499264
+      },
+      {
+        "monotonic": 5447.8888205,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4879499264
+      },
+      {
+        "monotonic": 5447.9952232,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4877336576
+      },
+      {
+        "monotonic": 5448.0888108,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9070489600,
+          "37564": 7958528
+        },
+        "rss_bytes": 9294237696,
+        "vram_bytes": 4876812288
+      },
+      {
+        "monotonic": 5448.1967074,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351897088,
+        "vram_bytes": 4875501568
+      },
+      {
+        "monotonic": 5448.2905252,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101126144,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351897088,
+        "vram_bytes": 4875501568
+      },
+      {
+        "monotonic": 5448.3834355,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4876943360
+      },
+      {
+        "monotonic": 5448.4917147,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4876943360
+      },
+      {
+        "monotonic": 5448.5851953,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4876943360
+      },
+      {
+        "monotonic": 5448.6926423,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4876943360
+      },
+      {
+        "monotonic": 5448.7852019,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4876943360
+      },
+      {
+        "monotonic": 5448.8922432,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5448.983743,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5449.0916498,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5449.1844468,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5449.2932801,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5449.3857825,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5449.4944825,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5449.5870596,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5449.6821734,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5449.7910552,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877139968
+      },
+      {
+        "monotonic": 5449.8824872,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5449.9913103,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.0841411,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.192589,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.2864702,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.3944344,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.4883629,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.597081,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.6893943,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.7834745,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.8911501,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4877271040
+      },
+      {
+        "monotonic": 5450.9833439,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4876091392
+      },
+      {
+        "monotonic": 5451.0912491,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4875894784
+      },
+      {
+        "monotonic": 5451.1844163,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102608896,
+          "30736": 12054528,
+          "36040": 101085184,
+          "37504": 9128148992,
+          "37564": 7958528
+        },
+        "rss_bytes": 9351856128,
+        "vram_bytes": 4871700480
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:36:05.0719204Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 222,
+    "eval_duration": 3069865000,
+    "load_duration": 1281500,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 207,
+    "prompt_eval_count": 255,
+    "prompt_eval_duration": 29219000,
+    "response": "The specific gravity of 1.200 for a battery cell is within the acceptable range for a healthy lead-acid battery, typically indicating a sufficient state of charge (normal range is approximately 1.200 to 1.250). This value meets the PMCS (Preventive Maintenance and Condition Standard) criterion for battery health as defined in standard maintenance practices.\n\nHowever, the STE/ICE-R Test 73 reporting 20 milliohms is outside the acceptable range. The STE/ICE-R test measures battery internal resistance, and a value of 20 milliohms is significantly high. According to standard diagnostic criteria, internal resistance should be below 10 milliohms for a healthy battery. A value of 20 milliohms indicates poor battery condition and likely failure, which would fail the diagnostic criterion.\n\nTherefore:\n- Specific gravity of 1.200: meets PMCS criterion.\n- STE/ICE-R Test 73 result of 20 milliohms: does not meet diagnostic criterion.",
+    "total_duration": 3150904600
+  },
+  "retrieval": null,
+  "round": 2,
+  "sequence": 178,
+  "started_at": "2026-09-28T04:36:01.899533+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 3173.073900000418,
+    "retrieval": null,
+    "total": 3173.073900000418
+  },
+  "unprovided_citations": []
+}

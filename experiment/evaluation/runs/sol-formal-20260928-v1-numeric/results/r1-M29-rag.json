@@ -1,0 +1,267 @@
+{
+  "at": "2026-09-28T09:55:51.840670+00:00",
+  "identity_hash": "a7f0effd9f5f250d571c666fe9ed57fe6a0133c3fc88f85eaa1a34605c7887f3",
+  "input_hash": "3da8df39fe6e1fbe6d5dc958b2e284a57b6f60f0056f3c75278276665b739195",
+  "original_result_sha256": "32edbbb82a5fa01c165b0e6f6cf365dad73296fae3fe08c6757f2a50af47f9c5",
+  "result": {
+    "attempt_key": "r1-M29-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 32.53160130000106,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8895701467577442
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8895701467577442
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M29",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly answers both questions and makes specific claims about the stated reason and the opening's PMCS limit."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9011163994727079,
+          0.8751027623600127,
+          0.8924912784405118
+        ],
+        "query_vector_hash": "c13e4d02619dfda5490f790be0740bceab97a086929b5441fec2a2cc8ddead26",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Is failure to develop full engine power a reason to check the air-intake/exhaust system, and does a 0.20-inch dust-unloader center opening exceed the preventive maintenance standard?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "If an engine fails to develop full power and the dust-unloader center opening measures 0.20 inch, should the air-intake/exhaust system be checked, and is the unit fully mission capable?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Is failure to develop full engine power a reason to check the air-intake/exhaust system, and does a dust-unloader center opening of 0.20 inch make the unit not fully mission capable?"
+          }
+        ],
+        "response_vectors_hash": "548be680ea1c7295257f4e7c84f19ed339536d15edd5043d0978792446fae770",
+        "score": 0.8895701467577445
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system."
+        },
+        {
+          "id": "C002",
+          "text": "A dust-unloader center opening of 0.20 inch (5.08 mm) exceeds the preventive maintenance check standard of 1/8 inch (3.175 mm)."
+        },
+        {
+          "id": "C003",
+          "text": "A dust-unloader center opening of 0.20 inch (5.08 mm) makes the unit not fully mission capable."
+        }
+      ],
+      "claims_raw": [
+        "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system.",
+        "A dust-unloader center opening of 0.20 inch (5.08 mm) exceeds the preventive maintenance check standard of 1/8 inch (3.175 mm).",
+        "A dust-unloader center opening of 0.20 inch (5.08 mm) makes the unit not fully mission capable."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Yes, failure to develop full engine power is a stated reason to check the air-intake/exhaust system.",
+            "fulfilled": 1,
+            "id": "M29-A01",
+            "reason": "The source says the system is worth checking when the vehicle never develops full power."
+          },
+          {
+            "answer_quote": "exceeds the preventive maintenance check standard of 1/8 inch (3.175 mm)",
+            "fulfilled": 1,
+            "id": "M29-A02",
+            "reason": "The source specifies a deficiency when the center opening exceeds 1/8 inch (3.175 mm)."
+          },
+          {
+            "answer_quote": "A dust-unloader center opening of 0.20 inch (5.08 mm) exceeds the preventive maintenance check standard of 1/8 inch (3.175 mm)",
+            "fulfilled": 1,
+            "id": "M29-A03",
+            "reason": "0.20 inch is greater than 1/8 inch."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002086"
+              ],
+              "evidence_quotes": [
+                "TEST OPTIONS AIR INTAKE/EXHAUST TESTS PAGE 2-137 REASON FOR QUESTION Intake or exhaust restrictions will prevent the engine from producing full power."
+              ],
+              "reason": "The intake/exhaust test cites restrictions that prevent full engine power.",
+              "statement": "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001042"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: Visually inspect dust unloader for\npresence and for cuts, tears,\nobstructions, worn areas, enlarged\ngap, or if center opening exceeds\n1/8 in. (3.175 mm)."
+              ],
+              "reason": "0.20 inch is greater than the stated 1/8-inch limit.",
+              "statement": "A dust-unloader center opening of 0.20 inch (5.08 mm) exceeds the preventive maintenance check standard of 1/8 inch (3.175 mm).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001042"
+              ],
+              "evidence_quotes": [
+                "NOT FULLY MISSION CAPABLE IF: Dust unloader missing or\nhas cuts, tears, obstruc-\ntions, worn areas,\nenlarged gap, or if center\nopening exceeds 1/8 in.\n(3.175 mm)."
+              ],
+              "reason": "The stated not-fully-mission-capable criterion is an opening exceeding 1/8 inch; 0.20 inch exceeds it.",
+              "statement": "A dust-unloader center opening of 0.20 inch (5.08 mm) makes the unit not fully mission capable.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:intake"
+              ],
+              "evidence_quotes": [
+                "Whether the vehicle is hard to start or runs rough or never develops full power,\nit’s worth the few minutes that it takes to check the components of this system."
+              ],
+              "reason": "The text recommends checking the system when the vehicle never develops full power.",
+              "statement": "Failure to develop full engine power is a stated reason to check the air-intake/exhaust system.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:dust"
+              ],
+              "evidence_quotes": [
+                "PROCEDURES: Visually inspect dust unloader for\npresence and for cuts, tears,\nobstructions, worn areas, enlarged\ngap, or if center opening exceeds\n1/8 in. (3.175 mm)."
+              ],
+              "reason": "The stated threshold is 1/8 inch; 0.20 inch is greater than 0.125 inch.",
+              "statement": "A dust-unloader center opening of 0.20 inch (5.08 mm) exceeds the preventive maintenance check standard of 1/8 inch (3.175 mm).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:dust"
+              ],
+              "evidence_quotes": [
+                "NOT FULLY MISSION CAPABLE IF: Dust unloader missing or\nhas cuts, tears, obstruc-\ntions, worn areas,\nenlarged gap, or if center\nopening exceeds 1/8 in.\n(3.175 mm)."
+              ],
+              "reason": "A 0.20-inch opening exceeds the stated 1/8-inch not-fully-mission-capable threshold.",
+              "statement": "A dust-unloader center opening of 0.20 inch (5.08 mm) makes the unit not fully mission capable.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.9011163994727079,
+          0.8751027623600127,
+          0.8924912784405118
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8895701467577442,
+        "query_vector_hash": "c13e4d02619dfda5490f790be0740bceab97a086929b5441fec2a2cc8ddead26",
+        "ragas_score": 0.8895701467577445,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "548be680ea1c7295257f4e7c84f19ed339536d15edd5043d0978792446fae770"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9011163994727079,
+          0.8751027623600127,
+          0.8924912784405118
+        ],
+        "decimal50_cosines": [
+          "0.90111639947270795000870655733122568091606120277088",
+          "0.87510276236001256927488002441272979343019734283931",
+          "0.89249127844051180102574344767359357169903542058471"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8895701467577445
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8895701467577445
+          }
+        },
+        "query_vector_hash": "c13e4d02619dfda5490f790be0740bceab97a086929b5441fec2a2cc8ddead26",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Is failure to develop full engine power a reason to check the air-intake/exhaust system, and does a 0.20-inch dust-unloader center opening exceed the preventive maintenance standard?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "If an engine fails to develop full power and the dust-unloader center opening measures 0.20 inch, should the air-intake/exhaust system be checked, and is the unit fully mission capable?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Is failure to develop full engine power a reason to check the air-intake/exhaust system, and does a dust-unloader center opening of 0.20 inch make the unit not fully mission capable?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "548be680ea1c7295257f4e7c84f19ed339536d15edd5043d0978792446fae770",
+        "score": 0.8895701467577442
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "b5f3a0343802b741cb30421d6dd1c74747dc7b9706a43fe60d58b5509721cfa4"
+}

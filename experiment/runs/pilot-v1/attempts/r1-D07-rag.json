@@ -1,0 +1,686 @@
+{
+  "citation_ids": [],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:12:24.413004+00:00",
+  "evaluation_answer": "The reference context provided does not contain Table 1-2 or specify the first and fourth gear ratios of the 4L80-E transmission. Therefore, this information cannot be determined from the given context.",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 432,
+  "key": "r1-D07-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou are a technical question-answering assistant.\nAnswer in English using concise statements that address every part of the question.\nWhen reference context is provided, use only facts supported by that context.\nWhen no reference context is provided, use your existing model knowledge.\nIf some requested information is unavailable, state which part cannot be determined.\nYou may answer the supported parts, but do not present a partial answer as complete.\nDo not invent specifications, procedures, measurements, causes, or other facts.\nWhen reference context is provided, cite each supporting chunk ID in square brackets, for example [C000123]. Use only supplied chunk IDs.\nREFERENCE CONTEXT:\n[C004935] TM 9-2320-280-20-1 | PDF 523 | Printed 2-419\nTRANSMISSION SYSTEM\n(4L80-E)\n\n[C004955] TM 9-2320-280-20-1 | PDF 524 | Printed 2-420\nTRANSMISSION SYSTEM\n(4L80-E)\n\n[C005248] TM 9-2320-280-20-1 | PDF 535 | Printed 2-431\nTRANSMISSION SYSTEM\n(4L80-E)\n\n[C005266] TM 9-2320-280-20-1 | PDF 536 | Printed 2-432\nTRANSMISSION SYSTEM\n(4L80-E)\n\n[C005285] TM 9-2320-280-20-1 | PDF 537 | Printed 2-433\nTRANSMISSION SYSTEM\n(4L80-E)\nQUESTION:\nWhat are the first and fourth gear ratios of the 4L80-E transmission in Table 1-2?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 139,
+  "question": "What are the first and fourth gear ratios of the 4L80-E transmission in Table 1-2?",
+  "question_id": "D07",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T12:59:41.266614307+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T12:59:39.085889707+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4808523776.0,
+    "max_actual_interval_ms": 109.45799999990413,
+    "peak_rss_bytes": 5418455040,
+    "peak_vram_bytes": 4808523776,
+    "pids": [
+      11036,
+      13944,
+      30736,
+      33100,
+      36592,
+      37504,
+      37564,
+      37600
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 4028.6442365,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4028.7507758,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4028.8588636,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4028.9503051,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.0585346,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.1528003,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.2584674,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.351169,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.4453717,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.5533551,
+        "phase": "idle",
+        "rss_by_pid": {
+          "11036": 4032536576,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417701376,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.6492494,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032561152,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5417725952,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.7568911,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032933888,
+          "13944": 56733696,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199923200,
+          "37564": 7487488,
+          "37600": 96468992
+        },
+        "rss_bytes": 5418098688,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.849339,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032933888,
+          "13944": 57053184,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1198116864,
+          "37564": 7487488,
+          "37600": 96477184
+        },
+        "rss_bytes": 5416620032,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4029.9567494,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032933888,
+          "13944": 57057280,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199943680,
+          "37564": 7487488,
+          "37600": 96477184
+        },
+        "rss_bytes": 5418450944,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4030.0485054,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032933888,
+          "13944": 57057280,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199943680,
+          "37564": 7487488,
+          "37600": 96477184
+        },
+        "rss_bytes": 5418450944,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4030.1568368,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032933888,
+          "13944": 57057280,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199943680,
+          "37564": 7487488,
+          "37600": 96477184
+        },
+        "rss_bytes": 5418450944,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4030.2505801,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032933888,
+          "13944": 57057280,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199943680,
+          "37564": 7487488,
+          "37600": 96477184
+        },
+        "rss_bytes": 5418450944,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4030.3600381,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032933888,
+          "13944": 57057280,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199943680,
+          "37564": 7487488,
+          "37600": 96477184
+        },
+        "rss_bytes": 5418450944,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4030.4528768,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032933888,
+          "13944": 57057280,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199943680,
+          "37564": 7487488,
+          "37600": 96477184
+        },
+        "rss_bytes": 5418450944,
+        "vram_bytes": 4808523776
+      },
+      {
+        "monotonic": 4030.5459339,
+        "phase": "request",
+        "rss_by_pid": {
+          "11036": 4032933888,
+          "13944": 57061376,
+          "30736": 12607488,
+          "33100": 7495680,
+          "36592": 4448256,
+          "37504": 1199943680,
+          "37564": 7487488,
+          "37600": 96477184
+        },
+        "rss_bytes": 5418455040,
+        "vram_bytes": 4808523776
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:12:24.4094573Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 43,
+    "eval_duration": 706746000,
+    "load_duration": 11133400,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 139,
+    "prompt_eval_count": 432,
+    "prompt_eval_duration": 78515000,
+    "response": "The reference context provided does not contain Table 1-2 or specify the first and fourth gear ratios of the 4L80-E transmission. Therefore, this information cannot be determined from the given context.",
+    "total_duration": 806377500
+  },
+  "retrieval": {
+    "embedding_ms": 104.54939999999624,
+    "items": [
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C004935",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          523
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-419"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R005219",
+          "R005220"
+        ],
+        "review_ids": [],
+        "score": 0.721721351146698,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U004927",
+        "unit_key": "region:523:1:1"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C004955",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          524
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-420"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R005259",
+          "R005260"
+        ],
+        "review_ids": [],
+        "score": 0.721721351146698,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "DIAGNOSTIC_PANEL",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U004947",
+        "unit_key": "region:524:1:2"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C005248",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          535
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-431"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R005556",
+          "R005557"
+        ],
+        "review_ids": [],
+        "score": 0.721721351146698,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U005240",
+        "unit_key": "region:535:1:2"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C005266",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          536
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-432"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R005590",
+          "R005591"
+        ],
+        "review_ids": [],
+        "score": 0.721721351146698,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-left",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U005258",
+        "unit_key": "region:536:1:1"
+      },
+      {
+        "body_end": 28,
+        "body_start": 0,
+        "id": "C005285",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          537
+        ],
+        "prefix_chars": 0,
+        "printed_pages": [
+          "2-433"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R005628",
+          "R005629"
+        ],
+        "review_ids": [],
+        "score": 0.721721351146698,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "header-right",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_family": "FREE_FLOWCHART",
+          "page_layout": "diagnostic_flowchart",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "TRANSMISSION SYSTEM\n(4L80-E)",
+        "text_sha256": "576b54a338309efc03d74d64ed8c3aee5e91ffaf911d508167fabcc650f607aa",
+        "token_count": 13,
+        "unit_id": "U005277",
+        "unit_key": "region:537:1:2"
+      }
+    ],
+    "search_ms": 11.951500000122905
+  },
+  "round": 1,
+  "sequence": 3,
+  "started_at": "2026-09-28T04:12:23.460953+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 834.4050000000607,
+    "retrieval": 117.36410000003161,
+    "total": 951.7691000000923
+  },
+  "unprovided_citations": []
+}

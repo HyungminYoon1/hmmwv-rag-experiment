@@ -1,0 +1,171 @@
+{
+  "attempt": 1,
+  "ended_at": "2026-09-28T09:38:35.584774+00:00",
+  "parsed": {
+    "contains_factual_claims": true,
+    "kind": "normal",
+    "reason": "The response directly lists vehicle symptoms and makes substantive claims about what they may indicate."
+  },
+  "provider": {
+    "complete": true,
+    "model_consistent": true,
+    "raw": {
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1790588315,
+      "conversation": null,
+      "created_at": 1790588313.0,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "id": "resp_0b211a6cf2eba452016aba35994c8887d0abfd773342ee976a",
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": 8192,
+      "max_tool_calls": null,
+      "metadata": {},
+      "model": "gpt-6-sol",
+      "moderation": null,
+      "object": "response",
+      "output": [
+        {
+          "content": [],
+          "encrypted_content": "gAAAAABqujWbVCVn9T3GPQfmSIpPdP4IsvNshjfaMCr24CnA9QGy5_6609RGpC0aPSHl-iaxUdrokm2e94OndI21KirvyEbD0j21UyD6bEWoKxxKKD7l1-oUTQXAgxoXOGubrAYNKQ2-iRmJhgWm-nV0zKfN2g2H9fIOXZf57utrEJuR-KEvDvTOhClgVej04xfx3HKUXmvC7pDrza7CucYGJLf196OEPhZHi0fM5RqcoQ3MZCs__XGQs-4esO1-UG-8P08yy9O51_Nu_QsFHV1A_4STmRcqiB8Qx2imGDkjdWcJkgCRleIIw5VZojeOzQNr6qpbTtz1tcmpqQb4XrrQm9h6Lwotz3ts3G06Y5k55M1WaJc9TjdVKa-rKfHvyFxN1-Q6jnsLX49GIi91iXkmVCOMhNdonT4FYSl4NXdMOuYQtixeldFOGCIICSPm5wQp0pR5mJmx6Z-5NUbGGK2gjOTat_7roZYf6T_U0tu4gfar7QnBfpKdpov1okIYsLxDdduBoC9g9T-0PmXYQaTaduRHCRk8LK8bvGxWr-edRB1SnUqZsJcAbtz2FWEzy_EjjESDix_ftvNJtOOQ0ogyP2bk0qSP-a8VfZClbLZZl2IWA-8Kt93HiJxUqIXEFEJc430R0QXVp_YGQ3yervwFrrXOsePAnlhGEEqY-c7Ewa9iFqh2PoE8KEqGTQSbM5RWxheOglbDZx-FjxS8901vvJS8i6oHo--f-Y7NqpRiLhDBKw2plMxHl-j92U7zJvXxG5ooTB7NA8Ca3KEvA-E-wOaLex5Mev59a2sjLZaiaMFFXDJSYZArO_votQ4jges44m6A14Z4S_nz0TEzTZERj0W7t_G-f0I8QMOfdnjg2xZ4DLrLU-UmQyKs-7ctwf-SNLiwYfURM_-mO_eoNFcG04Z4dIMLkluz-ZVvCyIYJTNtELqCAiOV8ODqk88HWt2hN8nNztLJANh6ci-cK36ziPziKWR0-NlNG2RDkjCv219wzT5sF82S2gPo9IN7vRNjtY2LExjZ05zthrjxcItCma3WsCsgzrNaGUt5WsWhVD3grJ0TA6MwKaAEZVHoeRUwh0m5lHAzNjC9ZCkWkyeHKQdlDj8ZD759k_B_GJRx6lV_egi5CrRBdzD2_KN7evM2n9NMG1HGJ5sfISceJ4BDlpM8JWH40XRzCjvsoalwOiVdNNqX0WSz5_ZAvLrhYlK8r54nCETncYyJH8r6_2tG3bU3lrI6M6NCYuxqrgLEbZgWg0MkTZY=",
+          "id": "rs_0b211a6cf2eba452016aba359a0b9487d0b86ccc53d604b405",
+          "status": null,
+          "summary": [],
+          "type": "reasoning"
+        },
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly lists vehicle symptoms and makes substantive claims about what they may indicate.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_0b211a6cf2eba452016aba359aa15887d0bbe6e087e70d5c91",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "all_turns",
+        "effort": "medium",
+        "generate_summary": null,
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "completed",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "description": null,
+          "name": "AnswerKind",
+          "schema_": {
+            "additionalProperties": false,
+            "properties": {
+              "contains_factual_claims": {
+                "title": "Contains Factual Claims",
+                "type": "boolean"
+              },
+              "kind": {
+                "enum": [
+                  "normal",
+                  "partial_abstention",
+                  "full_abstention",
+                  "irrelevant_refusal"
+                ],
+                "title": "Kind",
+                "type": "string"
+              },
+              "reason": {
+                "title": "Reason",
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "contains_factual_claims",
+              "reason"
+            ],
+            "title": "AnswerKind",
+            "type": "object"
+          },
+          "strict": true,
+          "type": "json_schema"
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 333,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 57,
+        "output_tokens_details": {
+          "reasoning_tokens": 15
+        },
+        "total_tokens": 390
+      },
+      "user": null
+    },
+    "request_id": "resp_0b211a6cf2eba452016aba35994c8887d0abfd773342ee976a",
+    "returned_model": "gpt-6-sol",
+    "text": "{\"kind\":\"normal\",\"contains_factual_claims\":true,\"reason\":\"The response directly lists vehicle symptoms and makes substantive claims about what they may indicate.\"}",
+    "usage": {
+      "input_tokens": 333,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 57,
+      "output_tokens_details": {
+        "reasoning_tokens": 15
+      },
+      "total_tokens": 390
+    }
+  },
+  "record_hash": "57ba4e4b4c20db64eeb506f3a861e342081866e24309a9509bc40cd14849139e",
+  "request_hash": "14be2e75f060807ddb3dbf2faebf72a3c4e5014c19c042db3dcaf040562566d1",
+  "started_at": "2026-09-28T09:38:33.166026+00:00",
+  "status": "OK"
+}

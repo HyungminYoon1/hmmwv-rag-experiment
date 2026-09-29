@@ -1,0 +1,127 @@
+{
+  "at": "2026-09-29T04:44:00.115335+00:00",
+  "identity_hash": "e90d39ab24141196d60555cbd7664a3368a072b895ef4fa43839db37e5c547ae",
+  "input_hash": "4626470202cdba373238a24ef298bc8f94999b9d746281050a8aadb859b89b8a",
+  "result": {
+    "attempt_key": "fixture-scope",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 14.816278500000408,
+    "metrics": {
+      "ar_raw": {
+        "status": "SYNTHETIC_FIXED",
+        "value": 1
+      },
+      "ar_report": {
+        "status": "SYNTHETIC_FIXED",
+        "value": 1
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "SYNTHETIC_FIXED",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "fixture-scope",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "synthetic fixture"
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "I was not supplied with manual excerpts."
+        ],
+        "shared_conditions": [
+          "Non-freezing storage for the fictional sensor case."
+        ],
+        "statements": [
+          {
+            "answer_quote": "In non-freezing storage, use fluid A only.",
+            "statement": "During non-freezing storage, fluid A is the only fluid to use for the fictional sensor case."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "In non-freezing storage, use fluid A only.",
+          "id": "C001",
+          "text": "During non-freezing storage, fluid A is the only fluid to use for the fictional sensor case."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "In non-freezing storage, use fluid A only.",
+            "fulfilled": 1,
+            "id": "fluid",
+            "reason": "The answer states the required fluid for non-freezing storage."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "fixture"
+              ],
+              "evidence_quotes": [
+                "For the fictional sensor case, non-freezing storage requires fluid A only; freezing storage uses fluid B."
+              ],
+              "reason": "The fixture explicitly requires fluid A only under the same storage condition.",
+              "statement": "During non-freezing storage, fluid A is the only fluid to use for the fictional sensor case.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:fixture"
+              ],
+              "evidence_quotes": [
+                "For the fictional sensor case, non-freezing storage requires fluid A only; freezing storage uses fluid B."
+              ],
+              "reason": "The source specifies fluid A only for this case under non-freezing storage.",
+              "statement": "During non-freezing storage, fluid A is the only fluid to use for the fictional sensor case.",
+              "verdict": 1
+            }
+          ]
+        }
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "112b42a734734228aa31256f520e22c2c1d9e575909782694720a22d3d2949d2"
+}

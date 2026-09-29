@@ -1,0 +1,290 @@
+{
+  "at": "2026-09-29T05:36:22.883530+00:00",
+  "identity_hash": "84ce91d5a0be9f6f76a34769c734bcdb757610e20f7c4be4fa5321945fbc9227",
+  "input_hash": "c5314ee53af16a61b0dff0d299804442efb109d71e333a7da3d772b2ea8ac44c",
+  "result": {
+    "attempt_key": "r1-S05-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 21.14014119999956,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9981190623562014
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9981190623562014
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S05",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly names three engine symptoms as the recommended cases for the tests."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9981190563178173,
+          0.9981190683915262,
+          0.9981190623592605
+        ],
+        "query_vector_hash": "3ab968d8a7ca023f0a21e20e9d37549d7a40ced0ae97c564db4a9f38cc07a895",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "For which three general engine symptoms does the manual recommend Fuel System Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For which three general engine symptoms does the manual recommend Fuel System Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For which three general engine symptoms does the manual recommend Fuel System Tests?"
+          }
+        ],
+        "response_vectors_hash": "85f014852d963d906b92ab0fac47924068cf2f2e8edc9c79053cb871f63e7d7d",
+        "score": 0.9981190623562014
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer includes the citation marker [Reference: C001568]."
+        ],
+        "shared_conditions": [],
+        "statements": [
+          {
+            "answer_quote": "1. Hard starting",
+            "statement": "The manual recommends the Fuel System Tests for hard starting."
+          },
+          {
+            "answer_quote": "2. Low power",
+            "statement": "The manual recommends the Fuel System Tests for low power."
+          },
+          {
+            "answer_quote": "3. Runs rough",
+            "statement": "The manual recommends the Fuel System Tests for running rough."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "1. Hard starting",
+          "id": "C001",
+          "text": "The manual recommends the Fuel System Tests for hard starting."
+        },
+        {
+          "answer_quote": "2. Low power",
+          "id": "C002",
+          "text": "The manual recommends the Fuel System Tests for low power."
+        },
+        {
+          "answer_quote": "3. Runs rough",
+          "id": "C003",
+          "text": "The manual recommends the Fuel System Tests for running rough."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Hard starting",
+            "fulfilled": 1,
+            "id": "S05-A01",
+            "reason": "The response names hard starting, matching the manual."
+          },
+          {
+            "answer_quote": "Low power",
+            "fulfilled": 1,
+            "id": "S05-A02",
+            "reason": "The response names low power, matching the manual."
+          },
+          {
+            "answer_quote": "Runs rough",
+            "fulfilled": 1,
+            "id": "S05-A03",
+            "reason": "Runs rough is equivalent to rough running."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001568"
+              ],
+              "evidence_quotes": [
+                "This set of tests maybe used when the engine is hard starting,\nhas low power or runs rough."
+              ],
+              "reason": "The Fuel System Tests are listed for an engine that is hard starting.",
+              "statement": "The manual recommends the Fuel System Tests for hard starting.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001568"
+              ],
+              "evidence_quotes": [
+                "This set of tests maybe used when the engine is hard starting,\nhas low power or runs rough."
+              ],
+              "reason": "The Fuel System Tests are listed for an engine with low power.",
+              "statement": "The manual recommends the Fuel System Tests for low power.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001568"
+              ],
+              "evidence_quotes": [
+                "This set of tests maybe used when the engine is hard starting,\nhas low power or runs rough."
+              ],
+              "reason": "The Fuel System Tests are listed for an engine that runs rough.",
+              "statement": "The manual recommends the Fuel System Tests for running rough.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C001568"
+              ],
+              "evidence_quotes": [
+                "2-22. FUEL SYSTEM TESTS\n\nGeneral information\nI\nThis set of tests maybe used when the engine is hard starting,\nhas low power or runs rough."
+              ],
+              "reason": "The Fuel System Tests section says these tests may be used when the engine is hard starting.",
+              "statement": "The manual recommends the Fuel System Tests for hard starting.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001568"
+              ],
+              "evidence_quotes": [
+                "2-22. FUEL SYSTEM TESTS\n\nGeneral information\nI\nThis set of tests maybe used when the engine is hard starting,\nhas low power or runs rough."
+              ],
+              "reason": "The Fuel System Tests section says these tests may be used when the engine has low power.",
+              "statement": "The manual recommends the Fuel System Tests for low power.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001568"
+              ],
+              "evidence_quotes": [
+                "2-22. FUEL SYSTEM TESTS\n\nGeneral information\nI\nThis set of tests maybe used when the engine is hard starting,\nhas low power or runs rough."
+              ],
+              "reason": "The Fuel System Tests section says these tests may be used when the engine runs rough.",
+              "statement": "The manual recommends the Fuel System Tests for running rough.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.9981190563178173,
+          0.9981190683915262,
+          0.9981190623592605
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9981190623562014,
+        "query_vector_hash": "3ab968d8a7ca023f0a21e20e9d37549d7a40ced0ae97c564db4a9f38cc07a895",
+        "ragas_score": 0.9981190623562014,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "85f014852d963d906b92ab0fac47924068cf2f2e8edc9c79053cb871f63e7d7d"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9981190563178173,
+          0.9981190683915262,
+          0.9981190623592605
+        ],
+        "decimal50_cosines": [
+          "0.99811905631781721023806273494485779809125880248209",
+          "0.99811906839152634370020449943134758593636491709184",
+          "0.99811906235926063301681061042127482047565062767372"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9981190623562014
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9981190623562014
+          }
+        },
+        "query_vector_hash": "3ab968d8a7ca023f0a21e20e9d37549d7a40ced0ae97c564db4a9f38cc07a895",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "For which three general engine symptoms does the manual recommend Fuel System Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For which three general engine symptoms does the manual recommend Fuel System Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "For which three general engine symptoms does the manual recommend Fuel System Tests?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "85f014852d963d906b92ab0fac47924068cf2f2e8edc9c79053cb871f63e7d7d",
+        "score": 0.9981190623562014
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "92f16578d1e221a9476ac2486356cff5ca6682a7e198f74525ac04929a15972b",
+  "source_result_sha256": "07fa53a2b51c2fa61b0869b943182f0162a9e2af4b8cc09967319c24180efea9"
+}

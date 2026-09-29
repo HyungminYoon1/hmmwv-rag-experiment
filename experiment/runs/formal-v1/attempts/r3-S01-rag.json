@@ -1,0 +1,820 @@
+{
+  "citation_ids": [],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:43:31.571050+00:00",
+  "evaluation_answer": "The three starting symptoms listed in the introductory description of the Startability Tests are:\n\n1. Engine does not start  \n2. Engine starts but immediately stops  \n3. Engine is very hard to start  \n\n[Reference: C001290]",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 671,
+  "key": "r3-S01-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C001305] TM 9-2320-280-20-1 | PDF 133 | Printed 2-42\nSTARTABILITY\nDIAGNOSTIC FLOWCHART\n\nSTART\n\n[C001316] TM 9-2320-280-20-1 | PDF 136 | Printed 2-45\nSTARTABILITY\nREFERENCE INFORMATION\n\nWARNING\n\n[C001304] TM 9-2320-280-20-1 | PDF 133 | Printed 2-42\nSTARTABILITY\nDIAGNOSTIC FLOWCHART\n3\nKNOWN INFO\nENGINE NOT LOCKED\nBATTERIES OK\nSTARTING SYSTEM OK\nFUEL SYSTEM OK\nPOSSIBLE PROBLEMS\nFUEL SYSTEM\nINTAKE AIR/EXHAUST\nCOMPRESSION\n\nRUN THE INTAKE AIR/EXHAUST\nTESTS. RETURN HERE.\nTEST OPTIONS\nINTAKE AIR/EXHAUST TESTS,\n(Page 2-137)\nREASON FOR TESTS\nThe intake air/exhaust system\ntests are easy to run and can\ncause starting problems.\n\n[C001290] TM 9-2320-280-20-1 | PDF 132 | Printed 2-41\n2-17. STARTABILITY TESTS\n\nThis is a top level test for problems with an engine that doesn’t start, or starts\nbut immediately stops, or is very hard to start. If the engine starts but doesn’t\nrun well after starting, try the \"STARTABILITY\" tests first.\n\n[C001196] TM 9-2320-280-20-1 | PDF 124 | Printed 2-33\n2-14. HOW TO USE THIS TROUBLESHOOTING GUIDE (Cont’d)\nTHERE ARE 5 TOP LEVEL TESTS.\n\nUSE THESE FOR GENERAL SYMPTOMS\n(HARD-TO-START, RUNS ROUGH, ETC).\nQUESTION:\nWhat three starting symptoms are listed in the introductory description of the Startability Tests?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 195,
+  "question": "What three starting symptoms are listed in the introductory description of the Startability Tests?",
+  "question_id": "S01",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:30:48.424710907+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:30:45.897439207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 111.46860000008019,
+    "peak_rss_bytes": 13183590400,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5895.4655435,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5895.5714913,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5895.6667085,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5895.7781771,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5895.8703649,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5895.978243,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.0715022,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.1808321,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.2742588,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.3671501,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.4756918,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100339712,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173252096,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.5774585,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102535168,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8891629568,
+          "37564": 7741440
+        },
+        "rss_bytes": 13173293056,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.6790709,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102649856,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8840589312,
+          "37564": 7741440
+        },
+        "rss_bytes": 13122367488,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.7723379,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8899977216,
+          "37564": 7741440
+        },
+        "rss_bytes": 13181763584,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.8684973,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8899977216,
+          "37564": 7741440
+        },
+        "rss_bytes": 13181763584,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5896.9774059,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8901804032,
+          "37564": 7741440
+        },
+        "rss_bytes": 13183590400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5897.06963,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8901804032,
+          "37564": 7741440
+        },
+        "rss_bytes": 13183590400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5897.1777409,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8901804032,
+          "37564": 7741440
+        },
+        "rss_bytes": 13183590400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5897.2711423,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8901804032,
+          "37564": 7741440
+        },
+        "rss_bytes": 13183590400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5897.3790837,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8901804032,
+          "37564": 7741440
+        },
+        "rss_bytes": 13183590400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5897.4741844,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8901804032,
+          "37564": 7741440
+        },
+        "rss_bytes": 13183590400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5897.5672315,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8901804032,
+          "37564": 7741440
+        },
+        "rss_bytes": 13183590400,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 5897.6731813,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102658048,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 100380672,
+          "37504": 8901804032,
+          "37564": 7741440
+        },
+        "rss_bytes": 13183590400,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:43:31.569353Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 52,
+    "eval_duration": 860245000,
+    "load_duration": 10793200,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 195,
+    "prompt_eval_count": 671,
+    "prompt_eval_duration": 127401000,
+    "response": "The three starting symptoms listed in the introductory description of the Startability Tests are:\n\n1. Engine does not start  \n2. Engine starts but immediately stops  \n3. Engine is very hard to start  \n\n[Reference: C001290]",
+    "total_duration": 1151584200
+  },
+  "retrieval": {
+    "embedding_ms": 91.67290000004868,
+    "items": [
+      {
+        "body_end": 5,
+        "body_start": 0,
+        "id": "C001305",
+        "kind": "flow_annotation",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          133
+        ],
+        "prefix_chars": 35,
+        "printed_pages": [
+          "2-42"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5693567395210266,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "recorded_pdf_region",
+          "branch_relation": "PDF_ONLY",
+          "cross_page_join": false,
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v3-work/page-0133.png",
+            "sha256": "7069ed24ce4ad2008d94a7223314fbfb69cb46af64ea22dae79b30c58802508e"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW"
+        },
+        "text": "STARTABILITY\nDIAGNOSTIC FLOWCHART\n\nSTART",
+        "text_sha256": "488bd89d0aac03b27964e8e95437e97eb395fa255e30c84ddb4bf2788f3076b8",
+        "token_count": 14,
+        "unit_id": "U001299",
+        "unit_key": "P0133:start"
+      },
+      {
+        "body_end": 7,
+        "body_start": 0,
+        "id": "C001316",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          136
+        ],
+        "prefix_chars": 36,
+        "printed_pages": [
+          "2-45"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R001364"
+        ],
+        "review_ids": [],
+        "score": 0.5669851899147034,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[1]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "STARTABILITY\nREFERENCE INFORMATION\n\nWARNING",
+        "text_sha256": "7e6a7fffba7730f57fa90f57b2bdd67c7e7782aa5bd3e9a6f37b208c839daa08",
+        "token_count": 7,
+        "unit_id": "U001310",
+        "unit_key": "region:136:1:1"
+      },
+      {
+        "body_end": 200,
+        "body_start": 0,
+        "id": "C001304",
+        "kind": "diagnostic_box",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          133
+        ],
+        "prefix_chars": 174,
+        "printed_pages": [
+          "2-42"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5578880310058594,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "recorded_pdf_region",
+          "condition_box": "3-known",
+          "condition_link_basis": "PDF_VISUAL_SAME_NODE_BOXES",
+          "cross_page_join": false,
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v3-work/page-0133.png",
+            "sha256": "7069ed24ce4ad2008d94a7223314fbfb69cb46af64ea22dae79b30c58802508e"
+          },
+          "graphic_dependency": true,
+          "graphic_relations": "PDF_ONLY_UNLESS_EXPLICIT_REVIEWED_LINK",
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "pdf_box": [
+            167,
+            539,
+            361,
+            638
+          ],
+          "pdf_regions": [
+            {
+              "bbox": [
+                165,
+                522,
+                200,
+                539
+              ],
+              "end": 789,
+              "record_id": "P0133:ocr",
+              "role": "id",
+              "start": 788
+            },
+            {
+              "bbox": [
+                42,
+                524,
+                155,
+                606
+              ],
+              "end": 866,
+              "record_id": "P0133:ocr",
+              "role": "known",
+              "start": 791
+            },
+            {
+              "bbox": [
+                42,
+                605,
+                155,
+                688
+              ],
+              "end": 928,
+              "record_id": "P0133:ocr",
+              "role": "possible",
+              "start": 868
+            },
+            {
+              "bbox": [
+                167,
+                539,
+                361,
+                638
+              ],
+              "end": 976,
+              "record_id": "P0133:ocr",
+              "role": "question",
+              "start": 930
+            },
+            {
+              "bbox": [
+                342,
+                523,
+                505,
+                602
+              ],
+              "end": 1029,
+              "record_id": "P0133:ocr",
+              "role": "options",
+              "start": 978
+            },
+            {
+              "bbox": [
+                346,
+                601,
+                504,
+                671
+              ],
+              "end": 1132,
+              "record_id": "P0133:ocr",
+              "role": "reason",
+              "start": 1031
+            }
+          ],
+          "step": "3"
+        },
+        "text": "STARTABILITY\nDIAGNOSTIC FLOWCHART\n3\nKNOWN INFO\nENGINE NOT LOCKED\nBATTERIES OK\nSTARTING SYSTEM OK\nFUEL SYSTEM OK\nPOSSIBLE PROBLEMS\nFUEL SYSTEM\nINTAKE AIR/EXHAUST\nCOMPRESSION\n\nRUN THE INTAKE AIR/EXHAUST\nTESTS. RETURN HERE.\nTEST OPTIONS\nINTAKE AIR/EXHAUST TESTS,\n(Page 2-137)\nREASON FOR TESTS\nThe intake air/exhaust system\ntests are easy to run and can\ncause starting problems.",
+        "text_sha256": "ffe4dfbcf7cb396ebb914fb6bea9bcee902f701fc0c0e3c5259abc970db45217",
+        "token_count": 122,
+        "unit_id": "U001298",
+        "unit_key": "P0133:question:3"
+      },
+      {
+        "body_end": 225,
+        "body_start": 0,
+        "id": "C001290",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          132
+        ],
+        "prefix_chars": 26,
+        "printed_pages": [
+          "2-41"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [
+          "R001341"
+        ],
+        "review_ids": [],
+        "score": 0.5574535727500916,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[1]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "2-17",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-17. STARTABILITY TESTS\n\nThis is a top level test for problems with an engine that doesn’t start, or starts\nbut immediately stops, or is very hard to start. If the engine starts but doesn’t\nrun well after starting, try the \"STARTABILITY\" tests first.",
+        "text_sha256": "41eedb0d0ec2ed1ce2be3cfbea287d6255369241dba03f7a69716d9be6357160",
+        "token_count": 62,
+        "unit_id": "U001284",
+        "unit_key": "region:132:1:1"
+      },
+      {
+        "body_end": 64,
+        "body_start": 0,
+        "id": "C001196",
+        "kind": "reviewed_region",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          124
+        ],
+        "prefix_chars": 83,
+        "printed_pages": [
+          "2-33"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5478771328926086,
+        "source_issues": [
+          {
+            "description": "4L80-E 행의 PAGE는 원문에 2-11로 인쇄되어 있다. 예상 쪽번호로 바꾸지 않았다.",
+            "id": "PRINTED_REFERENCE_2_11",
+            "pdf_page": 124,
+            "status": "SOURCE_IDENTIFIER_PRESERVED"
+          },
+          {
+            "description": "DRIVETRAIN 행의 PAGE는 원문에 2-79로 인쇄되어 있다. 원문값을 복원하고 그대로 보존했다.",
+            "id": "PRINTED_REFERENCE_2_79",
+            "pdf_page": 124,
+            "status": "SOURCE_IDENTIFIER_PRESERVED"
+          },
+          {
+            "description": "설명에는 21 SYSTEM LEVEL TESTS라고 적혀 있으나 표에는 22개 행이 있다. 설명과 표를 모두 원문대로 보존했다.",
+            "id": "SYSTEM_TEST_COUNT",
+            "pdf_page": 124,
+            "status": "SOURCE_COUNT_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "recorded_pdf_region",
+          "cross_page_join": false,
+          "evidence": {
+            "file": "preprocessing/corpus/reports/rules-v3-work/page-0124.png",
+            "sha256": "5808da655333e070aee8bde160dc32954060a2af1a7ca8d06d33b104fea86751"
+          },
+          "graphic_relations_inferred": false,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW"
+        },
+        "text": "2-14. HOW TO USE THIS TROUBLESHOOTING GUIDE (Cont’d)\nTHERE ARE 5 TOP LEVEL TESTS.\n\nUSE THESE FOR GENERAL SYMPTOMS\n(HARD-TO-START, RUNS ROUGH, ETC).",
+        "text_sha256": "116f98f0872d059bd94bed210411560257a76e5b2e27be7b781396bfad0a5ec9",
+        "token_count": 55,
+        "unit_id": "U001190",
+        "unit_key": "P0124:explanation:top"
+      }
+    ],
+    "search_ms": 12.317699999584875
+  },
+  "round": 3,
+  "sequence": 311,
+  "started_at": "2026-09-28T04:43:30.282196+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 1183.7098000005426,
+    "retrieval": 105.30139999991661,
+    "total": 1289.0112000004592
+  },
+  "unprovided_citations": []
+}

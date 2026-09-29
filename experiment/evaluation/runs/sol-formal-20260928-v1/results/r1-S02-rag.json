@@ -1,0 +1,339 @@
+{
+  "at": "2026-09-28T09:34:59.720471+00:00",
+  "identity_hash": "4e058ad7ce1df4d73d99acacd1eec0fdc30e283c29865fa3561843c778a10114",
+  "input_hash": "6d6af303a3dbea514d3a7c27f0c1764c885e77620542f7a15491b17550c9856c",
+  "result": {
+    "attempt_key": "r1-S02-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 47.4522375000015,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK",
+        "value": 0.9382595044032699
+      },
+      "ar_report": {
+        "status": "OK",
+        "value": 0.9382595044032699
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.75
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "S02",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly lists symptoms for both test categories and makes substantive factual claims."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9382594883481045,
+          0.9382595069812344,
+          0.9382595178804709
+        ],
+        "query_vector_hash": "b007e3304a6c236849e2f426313ac08bffcdb63ed33122953c79c106149a94bb",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Which symptoms call for Engine Running Tests, and which call for Startability Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which symptoms call for Engine Running Tests, and which call for Startability Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Which symptoms call for Engine Running Tests, and which call for Startability Tests?"
+          }
+        ],
+        "response_vectors_hash": "2eecc017d6014f3a79b5792f2a80f8bfef8e40e29b911b5fb7dfabf0e6e734a6",
+        "score": 0.9382595044032699
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "According to the Engine Running Tests introduction, rough idle calls for Engine Running Tests."
+        },
+        {
+          "id": "C002",
+          "text": "According to the Engine Running Tests introduction, rough running calls for Engine Running Tests."
+        },
+        {
+          "id": "C003",
+          "text": "According to the Engine Running Tests introduction, lack of power calls for Engine Running Tests."
+        },
+        {
+          "id": "C004",
+          "text": "According to the Engine Running Tests introduction, unusual noise calls for Engine Running Tests."
+        },
+        {
+          "id": "C005",
+          "text": "According to the Engine Running Tests introduction, vibrations call for Engine Running Tests."
+        },
+        {
+          "id": "C006",
+          "text": "According to the Engine Running Tests introduction, an engine that does not start is directed to Startability Tests."
+        },
+        {
+          "id": "C007",
+          "text": "According to the Engine Running Tests introduction, an engine that starts but immediately stops is directed to Startability Tests."
+        },
+        {
+          "id": "C008",
+          "text": "According to the Engine Running Tests introduction, an engine that is very hard to start is directed to Startability Tests."
+        }
+      ],
+      "claims_raw": [
+        "According to the Engine Running Tests introduction, rough idle calls for Engine Running Tests.",
+        "According to the Engine Running Tests introduction, rough running calls for Engine Running Tests.",
+        "According to the Engine Running Tests introduction, lack of power calls for Engine Running Tests.",
+        "According to the Engine Running Tests introduction, unusual noise calls for Engine Running Tests.",
+        "According to the Engine Running Tests introduction, vibrations call for Engine Running Tests.",
+        "According to the Engine Running Tests introduction, an engine that does not start is directed to Startability Tests.",
+        "According to the Engine Running Tests introduction, an engine that starts but immediately stops is directed to Startability Tests.",
+        "According to the Engine Running Tests introduction, an engine that is very hard to start is directed to Startability Tests."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "rough idle, rough running, lack of power, unusual noise, or vibrations",
+            "fulfilled": 0,
+            "id": "S02-A01",
+            "reason": "The answer mentions rough running but omits an engine that starts and then does not remain running."
+          },
+          {
+            "answer_quote": "engine doesn’t start, starts but immediately stops, or is very hard to start",
+            "fulfilled": 1,
+            "id": "S02-A02",
+            "reason": "Correctly identifies all three symptoms directed to Startability Tests."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001329"
+              ],
+              "evidence_quotes": [
+                "THIS SECTION IS FOR PROBLEMS\nSUCH AS ROUGH IDLE, ROUGH\nRUNNING, LACK OF POWER, UN-\nUSUAL NOISE OR VIBRATIONS."
+              ],
+              "reason": "The Engine Running flowchart lists rough idle as a problem for this section.",
+              "statement": "According to the Engine Running Tests introduction, rough idle calls for Engine Running Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001329"
+              ],
+              "evidence_quotes": [
+                "THIS SECTION IS FOR PROBLEMS\nSUCH AS ROUGH IDLE, ROUGH\nRUNNING, LACK OF POWER, UN-\nUSUAL NOISE OR VIBRATIONS."
+              ],
+              "reason": "The Engine Running flowchart lists rough running as a problem for this section.",
+              "statement": "According to the Engine Running Tests introduction, rough running calls for Engine Running Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001329"
+              ],
+              "evidence_quotes": [
+                "THIS SECTION IS FOR PROBLEMS\nSUCH AS ROUGH IDLE, ROUGH\nRUNNING, LACK OF POWER, UN-\nUSUAL NOISE OR VIBRATIONS."
+              ],
+              "reason": "The Engine Running flowchart lists lack of power as a problem for this section.",
+              "statement": "According to the Engine Running Tests introduction, lack of power calls for Engine Running Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001329"
+              ],
+              "evidence_quotes": [
+                "THIS SECTION IS FOR PROBLEMS\nSUCH AS ROUGH IDLE, ROUGH\nRUNNING, LACK OF POWER, UN-\nUSUAL NOISE OR VIBRATIONS."
+              ],
+              "reason": "The Engine Running flowchart lists unusual noise as a problem for this section.",
+              "statement": "According to the Engine Running Tests introduction, unusual noise calls for Engine Running Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001329"
+              ],
+              "evidence_quotes": [
+                "THIS SECTION IS FOR PROBLEMS\nSUCH AS ROUGH IDLE, ROUGH\nRUNNING, LACK OF POWER, UN-\nUSUAL NOISE OR VIBRATIONS."
+              ],
+              "reason": "The Engine Running flowchart lists vibrations as a problem for this section.",
+              "statement": "According to the Engine Running Tests introduction, vibrations call for Engine Running Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001324"
+              ],
+              "evidence_quotes": [
+                "If the engine doesn’t start, or starts but immediately stops, or is\nvery hard to start, try the \"STARTABILITY\" tests first."
+              ],
+              "reason": "The introduction directs engines that do not start to Startability Tests.",
+              "statement": "According to the Engine Running Tests introduction, an engine that does not start is directed to Startability Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001324"
+              ],
+              "evidence_quotes": [
+                "If the engine doesn’t start, or starts but immediately stops, or is\nvery hard to start, try the \"STARTABILITY\" tests first."
+              ],
+              "reason": "The introduction directs engines that start but immediately stop to Startability Tests.",
+              "statement": "According to the Engine Running Tests introduction, an engine that starts but immediately stops is directed to Startability Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001324"
+              ],
+              "evidence_quotes": [
+                "If the engine doesn’t start, or starts but immediately stops, or is\nvery hard to start, try the \"STARTABILITY\" tests first."
+              ],
+              "reason": "The introduction directs engines that are very hard to start to Startability Tests.",
+              "statement": "According to the Engine Running Tests introduction, an engine that is very hard to start is directed to Startability Tests.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "oracle_support": {
+        "score": 0.75,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:running"
+              ],
+              "evidence_quotes": [
+                "This is a top level test for problems with an engine that starts but doesn’t run\nwell after starting."
+              ],
+              "reason": "Rough idle is an engine running poorly after starting.",
+              "statement": "According to the Engine Running Tests introduction, rough idle calls for Engine Running Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:running"
+              ],
+              "evidence_quotes": [
+                "This is a top level test for problems with an engine that starts but doesn’t run\nwell after starting."
+              ],
+              "reason": "Rough running matches the described running problem.",
+              "statement": "According to the Engine Running Tests introduction, rough running calls for Engine Running Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:running"
+              ],
+              "evidence_quotes": [
+                "This is a top level test for problems with an engine that starts but doesn’t run\nwell after starting."
+              ],
+              "reason": "Lack of power is an engine running poorly after starting.",
+              "statement": "According to the Engine Running Tests introduction, lack of power calls for Engine Running Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The introduction does not establish that unusual noise means the engine runs poorly.",
+              "statement": "According to the Engine Running Tests introduction, unusual noise calls for Engine Running Tests.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The introduction does not establish that vibrations mean the engine runs poorly.",
+              "statement": "According to the Engine Running Tests introduction, vibrations call for Engine Running Tests.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:running"
+              ],
+              "evidence_quotes": [
+                "If the engine doesn’t start, or starts but immediately stops, or is\nvery hard to start, try the \"STARTABILITY\" tests first."
+              ],
+              "reason": "The introduction explicitly directs this case to Startability Tests.",
+              "statement": "According to the Engine Running Tests introduction, an engine that does not start is directed to Startability Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:running"
+              ],
+              "evidence_quotes": [
+                "If the engine doesn’t start, or starts but immediately stops, or is\nvery hard to start, try the \"STARTABILITY\" tests first."
+              ],
+              "reason": "The introduction explicitly directs this case to Startability Tests.",
+              "statement": "According to the Engine Running Tests introduction, an engine that starts but immediately stops is directed to Startability Tests.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:running"
+              ],
+              "evidence_quotes": [
+                "If the engine doesn’t start, or starts but immediately stops, or is\nvery hard to start, try the \"STARTABILITY\" tests first."
+              ],
+              "reason": "The introduction explicitly directs this case to Startability Tests.",
+              "statement": "According to the Engine Running Tests introduction, an engine that is very hard to start is directed to Startability Tests.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.9382594883481045,
+          0.9382595069812344,
+          0.9382595178804709
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9382595044032699,
+        "query_vector_hash": "b007e3304a6c236849e2f426313ac08bffcdb63ed33122953c79c106149a94bb",
+        "ragas_score": 0.9382595044032699,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "2eecc017d6014f3a79b5792f2a80f8bfef8e40e29b911b5fb7dfabf0e6e734a6"
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "4aa9f349e2a33c96f7a819658db3ca8c35dd3461e2018fd96daee6c76e008c48"
+}

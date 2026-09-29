@@ -1,0 +1,188 @@
+{
+  "at": "2026-09-29T05:04:01.360265+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "ede2ec1d2be45d2658bb29053f6113d97a548f3aedf3ced1919f0a70d9fecffb",
+  "result": {
+    "attempt_key": "r1-M22-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 7.677450099999987,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.0
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_NO_CLAIM",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "oracle_support": {
+        "status": "NO_FACTUAL_CLAIM_ZERO",
+        "value": 0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M22",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": false,
+        "kind": "full_abstention",
+        "reason": "The response says it cannot compare the values and provides no technical criteria or comparison."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9757736048266137,
+          0.9757736048266137,
+          0.9757736069233898
+        ],
+        "query_vector_hash": "16d1ca71cd621f36292d7cc18f7800938c45f7a17624ee60320669bbfff4e79d",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "How do a battery cell specific gravity of 1.200 and a STE/ICE-R Test 73 reading of 20 milliohms compare with their respective PMCS or diagnostic criteria?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "How do a battery cell specific gravity of 1.200 and a STE/ICE-R Test 73 reading of 20 milliohms compare with their respective PMCS or diagnostic criteria?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "How do a battery cell specific gravity of 1.200 and a STE/ICE-R Test 73 reading of 20 milliohms compare with their respective PMCS or diagnostic criteria?"
+          }
+        ],
+        "response_vectors_hash": "bdcafe955dff66f50d8b32dee4380d3d7f1bf6ef6b0e5890b52ad869bc142e07",
+        "score": 0.0
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The provided reference material does not contain information about the stated battery specific gravity or STE/ICE-R Test 73 reading (input-presence statement).",
+          "It is not possible to compare the values with their criteria based on the given excerpts (inability statement).",
+          "[No applicable chunk IDs] (citation availability)."
+        ],
+        "shared_conditions": [],
+        "statements": []
+      },
+      "claims": [],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M22-A01",
+            "reason": "The response does not state the 1.225 PMCS threshold."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M22-A02",
+            "reason": "The response does not say that 1.200 fails the PMCS criterion."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M22-A03",
+            "reason": "The response does not state the 25-milliohm Test 73 threshold."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M22-A04",
+            "reason": "The response does not say that 20 milliohms meets the diagnostic criterion."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.9757736048266137,
+          0.9757736048266137,
+          0.9757736069233898
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "independent_score": 0.0,
+        "query_vector_hash": "16d1ca71cd621f36292d7cc18f7800938c45f7a17624ee60320669bbfff4e79d",
+        "ragas_score": 0.0,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "bdcafe955dff66f50d8b32dee4380d3d7f1bf6ef6b0e5890b52ad869bc142e07"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9757736048266137,
+          0.9757736048266137,
+          0.9757736069233898
+        ],
+        "decimal50_cosines": [
+          "0.97577360482661363856258475588799148647038908889784",
+          "0.97577360482661363856258475588799148647038908889784",
+          "0.97577360692338968603189229048333223076727279159359"
+        ],
+        "flags": [
+          1,
+          1,
+          1
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.0
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.0
+          }
+        },
+        "query_vector_hash": "16d1ca71cd621f36292d7cc18f7800938c45f7a17624ee60320669bbfff4e79d",
+        "questions": [
+          {
+            "noncommittal": 1,
+            "question": "How do a battery cell specific gravity of 1.200 and a STE/ICE-R Test 73 reading of 20 milliohms compare with their respective PMCS or diagnostic criteria?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "How do a battery cell specific gravity of 1.200 and a STE/ICE-R Test 73 reading of 20 milliohms compare with their respective PMCS or diagnostic criteria?"
+          },
+          {
+            "noncommittal": 1,
+            "question": "How do a battery cell specific gravity of 1.200 and a STE/ICE-R Test 73 reading of 20 milliohms compare with their respective PMCS or diagnostic criteria?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "bdcafe955dff66f50d8b32dee4380d3d7f1bf6ef6b0e5890b52ad869bc142e07",
+        "score": 0.0
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "28c5a1399b3277b9b3b592f861cfa4f29442d7010e6d6ceb59b93ae1039ff8ff"
+}

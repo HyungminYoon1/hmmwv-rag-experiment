@@ -1,0 +1,109 @@
+{
+  "at": "2026-09-29T05:34:13.939122+00:00",
+  "identity_hash": "241d6e51604ffd113f3937c9832f95510d670078e85effbd21390bde9bdfdfc5",
+  "input_hash": "3d54bc334664ea91d2b94e6998d288edbba8f0a146c749d7e624e9e08e17b995",
+  "result": {
+    "attempt_key": "r1-U09-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 27.587288900000203,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U09",
+    "stages": {
+      "abstention": {
+        "answer_quote": "I do not know the complete water-manometer test setup, numerical acceptance limits, and test procedure for the CDR valve specified in paragraph 3-9a of TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004), as no manual excerpts were supplied for reference. Answering from general model knowledge is not possible without specific documentation. Therefore, I cannot provide the requested information.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Correct CDR function is determined by checking vacuum with a water manometer. (para. 3-9a)."
+              ],
+              "reason": "The CDR PMCS entry explicitly identifies the vacuum check and reference.",
+              "statement": "The CDR valve has a water-manometer vacuum check referenced in paragraph 3-9a.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle does not establish that publication identity or edition.",
+              "statement": "The CDR valve paragraph 3-9a is in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            }
+          ]
+        },
+        "partial_claims": [
+          "The CDR valve has a water-manometer vacuum check referenced in paragraph 3-9a.",
+          "The CDR valve paragraph 3-9a is in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004)."
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer withholds the complete setup, limits, and procedure without inventing steps. It also asserts a publication identity outside the declared partial scope; the oracle supports only the CDR water-manometer check and paragraph reference.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "The CDR valve has a water-manometer vacuum check referenced in paragraph 3-9a.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "The CDR valve paragraph 3-9a is in TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).",
+              "verdict": 0
+            }
+          ]
+        },
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 2,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 1,
+        "withholding_only": 1
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "669e3b7f2a45c6ab572cde60e1d42a6743433760d6840389effa746198bea832"
+}

@@ -1,0 +1,968 @@
+{
+  "citation_ids": [
+    "[C000941]",
+    "[C000993]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:45:17.781213+00:00",
+  "evaluation_answer": "Service-brake pads: 2.5 mm is above the Not Fully Mission Capable threshold of 3.2 mm.  \nTire tread: 1.0 mm is above the Not Fully Mission Capable threshold of 1.59 mm.  \n\nThus, neither item falls below its threshold.  \n\nLimits:  \n- Service brake pad: 3.2 mm (1/8 inch)   \n- Tire tread depth: 1.59 mm (1/16 inch) ",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1570,
+  "key": "r3-M13-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C000540] TM 9-2320-280-20-1 | PDF 61,64 | Printed 1-31,1-34\nTable 1-2. Tabulated Data (Cont'd)\n15.\nPARKING BRAKE (VEHICLES SERIAL NUMBERS 1 THROUGH 44824)\nSTANDARD\nMETRIC\nBrake Pad:\n\nITEM: Minimum thickness \nSTANDARD: 0.125 in.\nMETRIC: 3.2 mm\n\n[C000874] TM 9-2320-280-20-1 | PDF 95 | Printed 2-4\n2-11. SPECIFIC PMCS PROCEDURES\n\n(5) Not Fully Mission Capable. If vehicle meets criteria in this column, vehicle is not mission\ncapable (NMC).\n\n[C000993] TM 9-2320-280-20-1 | PDF 110,111 | Printed 2-19,2-20\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 19\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Tires\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 19\nITEM TO BE INSPECTED: Tires\nNOT FULLY MISSION CAPABLE IF: a. Tread depth is less\nthan 1/16 in. (1.59 mm).\nPROCEDURES: WARNING\n• Changing tire pressures or wheel\nalignment, out of the\nrecommended specification, may\nadversely affect the vehicle's\nhandling characteristics. Loss of\nvehicle control may result in\nserious injury or death and\ndamage to equipment.\n• Radial and bias ply tires should\nnot be mixed on the same vehicle.\nInjury to personnel and damage to\nequipment may result.\nNOTE\nVehicle must be up on jack stands for\nthe following checks.\na. Check tread depth of tires with tire\ngauge. If tread depth is less than 1/16\nin. (1.59 mm), replace tire in approx-\nimately 400 miles (644 km), bias tires\nwill wear 1/32 in. (0.79 mm), radial tires\nwill take approximately 1,300 miles\n(2092 km) to wear 1/32 in. (0.79 mm). If\nmission will require the vehicle to travel\nthis distance within a month, replace tire\nif it measures 3/32 in. (2.38 mm).\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 19\nITEM TO BE INSPECTED: Tires\n(Cont'd)\nNOT FULLY MISSION CAPABLE IF: b. Tires exhibit excessive\nor uneven wear or\nbalance.\n\nd. Any broken studs,\nloose or missing lug nuts.\nPROCEDURES: b. Inspect tires for uneven wear and\nbalance (paragraph 8-9). For normal\nwear, rotate tires as shown in rotation\ndiagram. The vehicle's wheel alignment\nis optimumly designed for GVW\noperation. Operating the vehicle without\na load can cause excessive wear on the\nouter edge of the tread pattern. If this\npattern develops, turn tires around\n\non the rim (para. 8-\n\n[C000941] TM 9-2320-280-20-1 | PDF 103,104,105 | Printed 2-12,2-13,2-14\nTable 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 11\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Brake\nSystem\n\ns than 1/8 inch\n(3.2 mm).\nd.1. Brake calipers are\ndamaged or mounting\nbolts are loose.\ne. Brake pads less than\n1/8 inch (3.2 mm).\nPROCEDURES: c. Inspect service brake pads and\nrotor disks for wear (para. 7-11).\nd. Inspect parking brake pads and\nrotor disk for wear (para. 7-3).\nd.1. Inspect brake calipers and mounting\nhardware for damage or loose hardware.\ne. Inspect dual service/park brake\npads and rotor for wear (para. 7-21).\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 11\nITEM TO BE INSPECTED: Brake\nSystem\n(Cont'd)\nNOT FULLY MISSION CAPABLE IF: f. Parking brake binding\nor cable frayed or broken.\nSpring or cable clip\nmissing.\nh. Parking brake binding\nor cable frayed or broken.\nPROCEDURES: f. Inspect parking brake cable, cable\nclip, lever, spring, and pushrod/guide\npin for binding and loose components.\ng. On vehicles equipped with a single\nparking brake assembly mounted\nbetween the rear prop shaft and rear\ndifferential, lubricate parking brake\nlever, parking brake cam, parking\nbrake push pins, and parking brake\nguide pins with WTR. On vehicles\nequipped with a left and right parking/\nservice brake assembly mounted between\nthe rear axle half-shafts and rear\ndifferential, lubricate the parking brake\nlever with WTR. The parking/service\nbrake assembly needs no lubrication.\nh. Inspect rear parking brake cables for\ndamage and/or chaffing in the area of\nthe control arm. If cables are damaged,\nreplace cables (paragraph 7-23 or 7-24).\ni. Inspect for presence of, or damage to,\nparking brake cable clamps.\n\n[C005549] TM 9-2320-280-20-1 | PDF 556 | Printed 2-453\nBRAKES\nREFERENCE INFORMATION\n\nNOTE\nThe minimum brake pad thickness is 1/8 of an\nQUESTION:\nPMCS finds service-brake pads 2.5 mm thick and tire tread 1.0 mm deep. Does each fall below its Not Fully Mission Capable threshold? State the respective limits.<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 1569,
+  "question": "PMCS finds service-brake pads 2.5 mm thick and tire tread 1.0 mm deep. Does each fall below its Not Fully Mission Capable threshold? State the respective limits.",
+  "question_id": "M13",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:32:34.634839407+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:32:30.805618207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4904140800.0,
+    "max_actual_interval_ms": 110.11039999993955,
+    "peak_rss_bytes": 13149675520,
+    "peak_vram_bytes": 4904140800,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 6000.344746,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6000.4511287,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6000.5448641,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6000.6537825,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6000.7476511,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6000.8538994,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6000.9474318,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.0541062,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.1464168,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.2535165,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.3481718,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.4570817,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102727680,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101588992,
+          "37504": 8798769152,
+          "37564": 7741440
+        },
+        "rss_bytes": 13081833472,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.5484586,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102969344,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8798814208,
+          "37564": 7741440
+        },
+        "rss_bytes": 13082128384,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.6561914,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8866357248,
+          "37564": 7741440
+        },
+        "rss_bytes": 13149675520,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.7493008,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8866357248,
+          "37564": 7741440
+        },
+        "rss_bytes": 13149675520,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.8571609,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8690405376,
+          "37564": 7741440
+        },
+        "rss_bytes": 12973723648,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6001.9513044,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.0592866,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.1524696,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.2589388,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.3508595,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.4590691,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.5527188,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.6454131,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.7555235,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.8468278,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6002.9526671,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.0595033,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.1535492,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.2462083,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.3551836,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.4455987,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.551972,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.6589698,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.7515753,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.8580447,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      },
+      {
+        "monotonic": 6003.9509987,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 102973440,
+          "17284": 4546560,
+          "30736": 11812864,
+          "34324": 4046557184,
+          "35444": 8089600,
+          "36040": 101597184,
+          "37504": 8617132032,
+          "37564": 7741440
+        },
+        "rss_bytes": 12900450304,
+        "vram_bytes": 4904140800
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:45:17.7795104Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 121,
+    "eval_duration": 2065775999,
+    "load_duration": 10442800,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 1569,
+    "prompt_eval_count": 1570,
+    "prompt_eval_duration": 24675000,
+    "response": "Service-brake pads: 2.5 mm is above the Not Fully Mission Capable threshold of 3.2 mm.  \nTire tread: 1.0 mm is above the Not Fully Mission Capable threshold of 1.59 mm.  \n\nThus, neither item falls below its threshold.  \n\nLimits:  \n- Service brake pad: 3.2 mm (1/8 inch) [C000941]  \n- Tire tread depth: 1.59 mm (1/16 inch) [C000993]",
+    "total_duration": 2440408100
+  },
+  "retrieval": {
+    "embedding_ms": 143.61830000052578,
+    "items": [
+      {
+        "body_end": 59,
+        "body_start": 0,
+        "id": "C000540",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          61,
+          64
+        ],
+        "prefix_chars": 123,
+        "printed_pages": [
+          "1-31",
+          "1-34"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6371185779571533,
+        "source_issues": [
+          {
+            "description": "3L80 W/Dry Converter: 11 qt와 13.2 L가 함께 인쇄됨. 단위를 재계산해 교체하지 않음.",
+            "id": "CAPACITY_INCONSISTENCY",
+            "pdf_page": 61,
+            "status": "SOURCE_NUMERIC_INCONSISTENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "row": 4,
+          "section": 1,
+          "table_id": "P0061:tabulated-data"
+        },
+        "text": "Table 1-2. Tabulated Data (Cont'd)\n15.\nPARKING BRAKE (VEHICLES SERIAL NUMBERS 1 THROUGH 44824)\nSTANDARD\nMETRIC\nBrake Pad:\n\nITEM: Minimum thickness \nSTANDARD: 0.125 in.\nMETRIC: 3.2 mm",
+        "text_sha256": "1bd9593f7a28f2da4a437fe2ae7d6bc1cefab18a347b05ae188e90cc05316ec7",
+        "token_count": 72,
+        "unit_id": "U000540",
+        "unit_key": "P0064:spec:1:4"
+      },
+      {
+        "body_end": 110,
+        "body_start": 0,
+        "id": "C000874",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          95
+        ],
+        "prefix_chars": 32,
+        "printed_pages": [
+          "2-4"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R001026"
+        ],
+        "review_ids": [],
+        "score": 0.6136102676391602,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[8]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "PMCS_OR_MAINTENANCE",
+          "page_layout": "numbered_section",
+          "section": "2-11",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-11. SPECIFIC PMCS PROCEDURES\n\n(5) Not Fully Mission Capable. If vehicle meets criteria in this column, vehicle is not mission\ncapable (NMC).",
+        "text_sha256": "f838e89098c48eec437aa26569005a425f0286aeb3a17e04fdbffeb7417fd70b",
+        "token_count": 41,
+        "unit_id": "U000874",
+        "unit_key": "region:95:1:8"
+      },
+      {
+        "body_end": 1562,
+        "body_start": 0,
+        "id": "C000993",
+        "kind": "pmcs_item",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          110,
+          111
+        ],
+        "prefix_chars": 145,
+        "printed_pages": [
+          "2-19",
+          "2-20"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.6078863143920898,
+        "source_issues": [
+          {
+            "description": "optimumly는 원문 표기임. 타이어 회전/조임 순서는 그림에 의존.",
+            "id": "OPTIMUMLY",
+            "pdf_page": 111,
+            "status": "SOURCE_TEXT_AND_DIAGRAM_DEPENDENCY"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "19",
+          "row_ids": [
+            "P0110-T2_1-R04",
+            "P0111-T2_1-R01",
+            "P0112-T2_1-R01",
+            "P0113-T2_1-R01"
+          ],
+          "source_issues": [
+            "OPTIMUMLY"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 19\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Tires\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 19\nITEM TO BE INSPECTED: Tires\nNOT FULLY MISSION CAPABLE IF: a. Tread depth is less\nthan 1/16 in. (1.59 mm).\nPROCEDURES: WARNING\n• Changing tire pressures or wheel\nalignment, out of the\nrecommended specification, may\nadversely affect the vehicle's\nhandling characteristics. Loss of\nvehicle control may result in\nserious injury or death and\ndamage to equipment.\n• Radial and bias ply tires should\nnot be mixed on the same vehicle.\nInjury to personnel and damage to\nequipment may result.\nNOTE\nVehicle must be up on jack stands for\nthe following checks.\na. Check tread depth of tires with tire\ngauge. If tread depth is less than 1/16\nin. (1.59 mm), replace tire in approx-\nimately 400 miles (644 km), bias tires\nwill wear 1/32 in. (0.79 mm), radial tires\nwill take approximately 1,300 miles\n(2092 km) to wear 1/32 in. (0.79 mm). If\nmission will require the vehicle to travel\nthis distance within a month, replace tire\nif it measures 3/32 in. (2.38 mm).\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 19\nITEM TO BE INSPECTED: Tires\n(Cont'd)\nNOT FULLY MISSION CAPABLE IF: b. Tires exhibit excessive\nor uneven wear or\nbalance.\n\nd. Any broken studs,\nloose or missing lug nuts.\nPROCEDURES: b. Inspect tires for uneven wear and\nbalance (paragraph 8-9). For normal\nwear, rotate tires as shown in rotation\ndiagram. The vehicle's wheel alignment\nis optimumly designed for GVW\noperation. Operating the vehicle without\na load can cause excessive wear on the\nouter edge of the tread pattern. If this\npattern develops, turn tires around\n\non the rim (para. 8-",
+        "text_sha256": "588bc3c84484c08d79407a6b9d9afe9d895d02868eccd7e77659db59e1196958",
+        "token_count": 500,
+        "unit_id": "U000989",
+        "unit_key": "pmcs:19"
+      },
+      {
+        "body_end": 2799,
+        "body_start": 1292,
+        "id": "C000941",
+        "kind": "pmcs_item",
+        "overlap_chars": 279,
+        "overlap_tokens": 100,
+        "pdf_pages": [
+          103,
+          104,
+          105
+        ],
+        "prefix_chars": 152,
+        "printed_pages": [
+          "2-12",
+          "2-13",
+          "2-14"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.5998479127883911,
+        "source_issues": [
+          {
+            "description": "Throughly는 원문 오탈자. 추출 오류 보정 범위에서 철자를 고치지 않음.",
+            "id": "THROUGHLY",
+            "pdf_page": 103,
+            "status": "SOURCE_TEXT_PRESERVED"
+          }
+        ],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "item": "11",
+          "row_ids": [
+            "P0103-T2_1-R02",
+            "P0104-T2_1-R01",
+            "P0105-T2_1-R01"
+          ],
+          "source_issues": [
+            "THROUGHLY"
+          ]
+        },
+        "text": "Table 2-1. Unit Level Preventive Maintenance Checks and Services HMMWV (Cont'd)\nITEM NO.: 11\nINTERVAL: Semi-\nAnnual\nITEM TO BE INSPECTED: Brake\nSystem\n\ns than 1/8 inch\n(3.2 mm).\nd.1. Brake calipers are\ndamaged or mounting\nbolts are loose.\ne. Brake pads less than\n1/8 inch (3.2 mm).\nPROCEDURES: c. Inspect service brake pads and\nrotor disks for wear (para. 7-11).\nd. Inspect parking brake pads and\nrotor disk for wear (para. 7-3).\nd.1. Inspect brake calipers and mounting\nhardware for damage or loose hardware.\ne. Inspect dual service/park brake\npads and rotor for wear (para. 7-21).\n\nINTERVAL: Semi-\nAnnual\nITEM NO.: 11\nITEM TO BE INSPECTED: Brake\nSystem\n(Cont'd)\nNOT FULLY MISSION CAPABLE IF: f. Parking brake binding\nor cable frayed or broken.\nSpring or cable clip\nmissing.\nh. Parking brake binding\nor cable frayed or broken.\nPROCEDURES: f. Inspect parking brake cable, cable\nclip, lever, spring, and pushrod/guide\npin for binding and loose components.\ng. On vehicles equipped with a single\nparking brake assembly mounted\nbetween the rear prop shaft and rear\ndifferential, lubricate parking brake\nlever, parking brake cam, parking\nbrake push pins, and parking brake\nguide pins with WTR. On vehicles\nequipped with a left and right parking/\nservice brake assembly mounted between\nthe rear axle half-shafts and rear\ndifferential, lubricate the parking brake\nlever with WTR. The parking/service\nbrake assembly needs no lubrication.\nh. Inspect rear parking brake cables for\ndamage and/or chaffing in the area of\nthe control arm. If cables are damaged,\nreplace cables (paragraph 7-23 or 7-24).\ni. Inspect for presence of, or damage to,\nparking brake cable clamps.",
+        "text_sha256": "a92afe73f72dea1ff9ccacf68bdfca63c58d20fb6d455f1280f5749e2109866a",
+        "token_count": 467,
+        "unit_id": "U000938",
+        "unit_key": "pmcs:11"
+      },
+      {
+        "body_end": 49,
+        "body_start": 0,
+        "id": "C005549",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          556
+        ],
+        "prefix_chars": 30,
+        "printed_pages": [
+          "2-453"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [
+          "R006015"
+        ],
+        "review_ids": [],
+        "score": 0.5916646718978882,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "BRAKES\nREFERENCE INFORMATION\n\nNOTE\nThe minimum brake pad thickness is 1/8 of an",
+        "text_sha256": "bbca4960d79698ec90ce0d7c184c5dd315dead4a10fe28c55b4a17ba4ba2f558",
+        "token_count": 22,
+        "unit_id": "U005541",
+        "unit_key": "region:556:1:2"
+      }
+    ],
+    "search_ms": 13.340499999685562
+  },
+  "round": 3,
+  "sequence": 342,
+  "started_at": "2026-09-28T04:45:15.161329+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 2461.659900000086,
+    "retrieval": 158.4045999998125,
+    "total": 2620.0644999998985
+  },
+  "unprovided_citations": []
+}

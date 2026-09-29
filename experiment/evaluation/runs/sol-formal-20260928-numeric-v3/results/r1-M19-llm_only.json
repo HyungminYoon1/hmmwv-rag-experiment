@@ -1,0 +1,221 @@
+{
+  "at": "2026-09-28T09:59:37.502038+00:00",
+  "identity_hash": "14ab93d243aa83b66284eb30c51d3669b815595c81d784d2ceffbdead94a855c",
+  "input_hash": "baf78f802890cc3419038791558fe65d470a1f5584511a41341886bf69f0cf5c",
+  "original_result_sha256": "23e6900b310a2a6d88cc91ab49995d3ebdd5d390fed22c5c30d2f78ee1ccfdce",
+  "result": {
+    "attempt_key": "r1-M19-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 28.230039499998384,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8599238601098049
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8599238601098049
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "M19",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives specific lubricant-change and transmission-fluid recommendations rather than abstaining."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8763712437620631,
+          0.8270290891953245,
+          0.8763712473720273
+        ],
+        "query_vector_hash": "0032cd6aaa357e9d35cbbd87adbdd4b74fb0ac67c02e8c3db4b96ae66105f46b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What transmission fluid and lubricant-change practices are recommended for prolonged operation below -15°F (-26°C)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What transmission fluid maintenance and fluid types are recommended for prolonged operation below -15°F (-26°C)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What transmission fluid and lubricant-change practices are recommended for prolonged operation below -15°F (-26°C)?"
+          }
+        ],
+        "response_vectors_hash": "bfd3d18037ec8ee584f4e2aa35758ad1350ac96824ed2bae7e335464f6bbfa7c",
+        "score": 0.8599238601098053
+      },
+      "claims": [
+        {
+          "id": "C001",
+          "text": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to change the transmission fluid more frequently."
+        },
+        {
+          "id": "C002",
+          "text": "Increased viscosity and potential fluid degradation at low temperatures are the stated reasons for changing the transmission fluid more frequently."
+        },
+        {
+          "id": "C003",
+          "text": "The transmission PMCS notes specify a synthetic transmission fluid suitable for arctic conditions, such as MIL-PRF-83133 or a high-performance synthetic fluid approved for use in cold environments."
+        },
+        {
+          "id": "C004",
+          "text": "TM 9-2320-280-20-1 (1996, including Change 2 dated 2004) recommends Type 1 or Type 2 synthetic fluids for arctic conditions, depending on the transmission model, to ensure proper lubrication and performance in extreme cold."
+        }
+      ],
+      "claims_raw": [
+        "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to change the transmission fluid more frequently.",
+        "Increased viscosity and potential fluid degradation at low temperatures are the stated reasons for changing the transmission fluid more frequently.",
+        "The transmission PMCS notes specify a synthetic transmission fluid suitable for arctic conditions, such as MIL-PRF-83133 or a high-performance synthetic fluid approved for use in cold environments.",
+        "TM 9-2320-280-20-1 (1996, including Change 2 dated 2004) recommends Type 1 or Type 2 synthetic fluids for arctic conditions, depending on the transmission model, to ensure proper lubrication and performance in extreme cold."
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "change the transmission fluid more frequently",
+            "fulfilled": 0,
+            "id": "M19-A01",
+            "reason": "The required instruction is to remove the above-threshold lubricants and relubricate with those specified for below the threshold, not merely change fluid more frequently."
+          },
+          {
+            "answer_quote": "Type 1 or Type 2 synthetic fluids, depending on transmission model",
+            "fulfilled": 0,
+            "id": "M19-A02",
+            "reason": "The PMCS note specifies OEA for both 3L80 and 4L80-E transmissions; the answer instead suggests model-dependent synthetic fluids."
+          }
+        ]
+      },
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The instruction is to replace lubricants with those specified for below -15°F, not to change transmission fluid more frequently.",
+              "statement": "For prolonged operation below -15°F (-26°C), the general lubricant-change instruction is to change the transmission fluid more frequently.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context states neither these reasons nor a more frequent transmission-fluid change interval.",
+              "statement": "Increased viscosity and potential fluid degradation at low temperatures are the stated reasons for changing the transmission fluid more frequently.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The PMCS notes say to use OEA in arctic conditions but do not specify those synthetic fluids.",
+              "statement": "The transmission PMCS notes specify a synthetic transmission fluid suitable for arctic conditions, such as MIL-PRF-83133 or a high-performance synthetic fluid approved for use in cold environments.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied context does not identify that publication or recommend Type 1 or Type 2 synthetic fluids.",
+              "statement": "TM 9-2320-280-20-1 (1996, including Change 2 dated 2004) recommends Type 1 or Type 2 synthetic fluids for arctic conditions, depending on the transmission model, to ensure proper lubrication and performance in extreme cold.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.8763712437620631,
+          0.8270290891953245,
+          0.8763712473720273
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8599238601098049,
+        "query_vector_hash": "0032cd6aaa357e9d35cbbd87adbdd4b74fb0ac67c02e8c3db4b96ae66105f46b",
+        "ragas_score": 0.8599238601098053,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "bfd3d18037ec8ee584f4e2aa35758ad1350ac96824ed2bae7e335464f6bbfa7c"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8763712437620631,
+          0.8270290891953245,
+          0.8763712473720273
+        ],
+        "decimal50_cosines": [
+          "0.87637124376206291049725808015023082598349692290120",
+          "0.82702908919532454203620639693486183301076372264615",
+          "0.87637124737202701211537960089836180763592873364495"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 3.3306690738754696e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8599238601098053
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8599238601098053
+          }
+        },
+        "query_vector_hash": "0032cd6aaa357e9d35cbbd87adbdd4b74fb0ac67c02e8c3db4b96ae66105f46b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What transmission fluid and lubricant-change practices are recommended for prolonged operation below -15°F (-26°C)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What transmission fluid maintenance and fluid types are recommended for prolonged operation below -15°F (-26°C)?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What transmission fluid and lubricant-change practices are recommended for prolonged operation below -15°F (-26°C)?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "bfd3d18037ec8ee584f4e2aa35758ad1350ac96824ed2bae7e335464f6bbfa7c",
+        "score": 0.8599238601098049
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "3439d29758dbc91aef4f65dab91653204219491e1ee61e168102472d7d8bd26f"
+}

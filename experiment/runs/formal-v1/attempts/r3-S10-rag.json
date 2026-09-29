@@ -1,0 +1,681 @@
+{
+  "citation_ids": [
+    "[C002106]"
+  ],
+  "condition": "RAG",
+  "ended_at": "2026-09-28T04:40:34.718062+00:00",
+  "evaluation_answer": "The engine fan is activated when the coolant temperature reaches 215°F (102°C). ",
+  "fatal_requires_diagnosis": false,
+  "input_tokens_counted": 1276,
+  "key": "r3-S10-rag",
+  "model_pids_after": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "model_pids_before": {
+    "13944": {
+      "name": "ollama.exe",
+      "parent": 36228
+    },
+    "30736": {
+      "name": "conhost.exe",
+      "parent": 13944
+    },
+    "37504": {
+      "name": "llama-server.exe",
+      "parent": 13944
+    },
+    "37564": {
+      "name": "conhost.exe",
+      "parent": 37504
+    }
+  },
+  "output_truncated": false,
+  "payload": {
+    "keep_alive": -1,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "options": {
+      "num_ctx": 4096,
+      "num_gpu": 99,
+      "num_predict": 512,
+      "num_thread": 8,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "temperature": 0
+    },
+    "prompt": "<|im_start|>user\nYou answer questions about HMMWV (M998-series) maintenance. The document of interest is TM 9-2320-280-20-1, Volume 1 (1996, including Change 2 dated 2004).\nAnswer every requested part in English, concisely.\nIf REFERENCE contains manual excerpts, base technical claims on those excerpts and cite their chunk IDs in separate square brackets, for example [C000123].\nUse only chunk IDs actually supplied in REFERENCE. When no excerpts are supplied, do not add chunk citations.\nIf REFERENCE contains no manual excerpts, answer from your existing model knowledge. Lack of supplied excerpts does not by itself require abstention.\nState explicitly when you do not know a requested fact. Do not invent information. You may answer known parts, but do not present a partial answer as complete.\nREFERENCE:\n[C002165] TM 9-2320-280-20-1 | PDF 243 | Printed 2-159\nREFERENCE INFORMATION\nENGINE COOLING\n\nAs the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\nvalve closes. This engages the fan. If the fan is engaged and the accelerator is floored, the\ntransmission kickdown system disengages the fan drive for 20 seconds.\n\n[C002106] TM 9-2320-280-20-1 | PDF 239 | Printed 2-155\n2-25.  ENGINE COOLING TESTS\n\nThe engine cooling system is a pressure type cooling system with thermostatic control of\ncoolant circulation.  The cooling system dissipates heat generated from combustion and\nmaintains the engine operating temperature at its most efficient level.  When the engine is\ncold and the thermostat is closed, coolant is recirculated through the water pump and\nengine.  As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine.  Any air\nor vapor in the cooling system will be forced to the surge tank under the liquid level and\nleave through a vent tube.  As the system cools, the extra coolant in the tank will be drawn\nback to the radiator.  Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used.  The fan is activated when coolant temperature reaches 215°F (102°C).  A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil.  When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere.\n\n[C000595] TM 9-2320-280-20-1 | PDF 68 | Printed 1-38\n1-20. COOLING SYSTEM OPERATION\n\nENGINE TEMPERATURE SWITCH – Sends signal to activate control valve system to operate fan\nB\nwhen engine temperature exceeds 215°F (102°C) and deactivate when engine temperature drops\nbelow 190°F (88°C).\n\n[C005698] TM 9-2320-280-20-1 | PDF 573 | Printed 2-469\nREFERENCE INFORMATION\nSTEERING SYSTEM\n17. Start engine (Refer to TM 9-2320-280-10)\nand allow engine to idle and reach\noperating temperature of 190° F to 230° F.\n18. Check for proper engine idle speeds\nand adjust if necessary (para. 3-44).\nNOTE\nYou must be certain that the engine cooling system is working ok, or this test won't tell you anything. If the\nengine is cold, and everything is working ok, the fan should be disengaged. You can tell by gently revving the\nengine in neutral with the hood open. If the fan is engaged you will feel a breeze outside the driver's door. If it's\ndisengaged, you won't feel it. If you aren't sure if it's working ok, run the tests in Paragraph 2-25.\n\nEngine: 6.5L engine\nIdle speed: 700±25 RPM\n\n[C005699] TM 9-2320-280-20-1 | PDF 573 | Printed 2-469\nREFERENCE INFORMATION\nSTEERING SYSTEM\n17. Start engine (Refer to TM 9-2320-280-10)\nand allow engine to idle and reach\noperating temperature of 190° F to 230° F.\n18. Check for proper engine idle speeds\nand adjust if necessary (para. 3-44).\nNOTE\nYou must be certain that the engine cooling system is working ok, or this test won't tell you anything. If the\nengine is cold, and everything is working ok, the fan should be disengaged. You can tell by gently revving the\nengine in neutral with the hood open. If the fan is engaged you will feel a breeze outside the driver's door. If it's\ndisengaged, you won't feel it. If you aren't sure if it's working ok, run the tests in Paragraph 2-25.\n\nEngine: 6.5L detuned\nengine\nIdle speed: 700±25 RPM\nQUESTION:\nAt approximately what coolant temperature should the engine fan be activated?<|im_end|>\n<|im_start|>assistant\n",
+    "raw": true,
+    "stream": false
+  },
+  "prompt_eval_cache_reporting": "AVAILABLE",
+  "prompt_eval_cached_count": 1275,
+  "question": "At approximately what coolant temperature should the engine fan be activated?",
+  "question_id": "S10",
+  "resident_after": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:27:51.572838207+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resident_before": {
+    "context_length": 4096,
+    "details": {
+      "families": [
+        "qwen3"
+      ],
+      "family": "qwen3",
+      "format": "gguf",
+      "parameter_size": "4.0B",
+      "parent_model": "",
+      "quantization_level": "Q4_K_M"
+    },
+    "digest": "1dbf7ffacf4df55cb6610e16b5ef8716fb88b241d69625657d9c687371692f39",
+    "expires_at": "2319-01-08T13:27:49.462278507+09:00",
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "name": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "size": 3178149969,
+    "size_vram": 3178149969
+  },
+  "resources": {
+    "errors": [],
+    "idle_vram_bytes": 4880875520.0,
+    "max_actual_interval_ms": 110.89140000058251,
+    "peak_rss_bytes": 13599494144,
+    "peak_vram_bytes": 4880875520,
+    "pids": [
+      13944,
+      17284,
+      30736,
+      34324,
+      35444,
+      36040,
+      37504,
+      37564
+    ],
+    "sample_interval_ms": 100.0,
+    "samples": [
+      {
+        "monotonic": 5718.8852649,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5718.9935734,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.088403,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.1992944,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.2943552,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.3881691,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.4987677,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.5927378,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.686519,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.7965802,
+        "phase": "idle",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.8912437,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5719.9987277,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9158926336,
+          "37564": 7958528
+        },
+        "rss_bytes": 13444030464,
+        "vram_bytes": 4880875520
+      },
+      {
+        "monotonic": 5720.0922006,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9244303360,
+          "37564": 7958528
+        },
+        "rss_bytes": 13529407488,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5720.2014649,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9314390016,
+          "37564": 7958528
+        },
+        "rss_bytes": 13599494144,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5720.2927511,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9314390016,
+          "37564": 7958528
+        },
+        "rss_bytes": 13599494144,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5720.3874014,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9119965184,
+          "37564": 7958528
+        },
+        "rss_bytes": 13405069312,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5720.4964624,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9121792000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13406896128,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5720.5893347,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9121792000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13406896128,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5720.6979062,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9121792000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13406896128,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5720.7913172,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9121792000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13406896128,
+        "vram_bytes": 4879040512
+      },
+      {
+        "monotonic": 5720.898537,
+        "phase": "request",
+        "rss_by_pid": {
+          "13944": 103415808,
+          "17284": 4546560,
+          "30736": 12021760,
+          "34324": 4047425536,
+          "35444": 8089600,
+          "36040": 101646336,
+          "37504": 9121792000,
+          "37564": 7958528
+        },
+        "rss_bytes": 13406896128,
+        "vram_bytes": 4879040512
+      }
+    ],
+    "valid": true
+  },
+  "response": {
+    "created_at": "2026-09-28T04:40:34.7166197Z",
+    "done": true,
+    "done_reason": "stop",
+    "eval_count": 31,
+    "eval_duration": 501995000,
+    "load_duration": 15703200,
+    "model": "kidet-qwen3-4b-instruct-2507:q4-k-m-v1",
+    "prompt_eval_cached_count": 1275,
+    "prompt_eval_count": 1276,
+    "prompt_eval_duration": 14946000,
+    "response": "The engine fan is activated when the coolant temperature reaches 215°F (102°C). [C002106]",
+    "total_duration": 901135000
+  },
+  "retrieval": {
+    "embedding_ms": 65.30099999963568,
+    "items": [
+      {
+        "body_end": 262,
+        "body_start": 0,
+        "id": "C002165",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          243
+        ],
+        "prefix_chars": 38,
+        "printed_pages": [
+          "2-159"
+        ],
+        "rank": 1,
+        "resolved_review_ids": [
+          "R002421"
+        ],
+        "review_ids": [],
+        "score": 0.7512601613998413,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[13]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "REFERENCE_PAGE",
+          "page_layout": "reference_information",
+          "section": null,
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "REFERENCE INFORMATION\nENGINE COOLING\n\nAs the engine reaches a temperature of 215°F (102°C), the temperature switch opens and the control\nvalve closes. This engages the fan. If the fan is engaged and the accelerator is floored, the\ntransmission kickdown system disengages the fan drive for 20 seconds.",
+        "text_sha256": "c67ffcfe74e73c1f7c44beb0c40c5668d4b2e4115fe4c7e177c895d9c9db2ee2",
+        "token_count": 74,
+        "unit_id": "U002159",
+        "unit_key": "region:243:1:12"
+      },
+      {
+        "body_end": 1227,
+        "body_start": 0,
+        "id": "C002106",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          239
+        ],
+        "prefix_chars": 29,
+        "printed_pages": [
+          "2-155"
+        ],
+        "rank": 2,
+        "resolved_review_ids": [
+          "R002365"
+        ],
+        "review_ids": [],
+        "score": 0.7320359945297241,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[4]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "NATIVE_TEXT",
+          "page_layout": "numbered_section",
+          "section": "2-25",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "2-25.  ENGINE COOLING TESTS\n\nThe engine cooling system is a pressure type cooling system with thermostatic control of\ncoolant circulation.  The cooling system dissipates heat generated from combustion and\nmaintains the engine operating temperature at its most efficient level.  When the engine is\ncold and the thermostat is closed, coolant is recirculated through the water pump and\nengine.  As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine.  Any air\nor vapor in the cooling system will be forced to the surge tank under the liquid level and\nleave through a vent tube.  As the system cools, the extra coolant in the tank will be drawn\nback to the radiator.  Normally a 50-50 mixture of water and ethylene glycol base antifreeze\nwill be used.  The fan is activated when coolant temperature reaches 215°F (102°C).  A\nseparate oil cooler is mounted in front of the radiator.  This cooler is divided into two parts.\nThe top half is for transmission oil.  The bottom half is for engine oil.  When the cooling\nsystem pressure reaches approximately 15 psi (103 kPa), a valve in the surge tank cap\nopens and lets excess pressure escape to the atmosphere.",
+        "text_sha256": "921babdead3ce5bbc76433831e26d563148362005b4b17843149041ab971b06a",
+        "token_count": 299,
+        "unit_id": "U002100",
+        "unit_key": "region:239:1:4"
+      },
+      {
+        "body_end": 201,
+        "body_start": 0,
+        "id": "C000595",
+        "kind": "prose",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          68
+        ],
+        "prefix_chars": 32,
+        "printed_pages": [
+          "1-38"
+        ],
+        "rank": 3,
+        "resolved_review_ids": [
+          "R000722"
+        ],
+        "review_ids": [],
+        "score": 0.7232728004455566,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "boundary": "source_block_accepted_for_text_scope",
+          "column": "native-block-[3]",
+          "condition_link_basis": "NO_UNREVIEWED_CROSS_BOX_INHERITANCE",
+          "cross_page_join": false,
+          "graphic_dependency": false,
+          "graphic_relations_inferred": false,
+          "layout_family": "TEXT_FIGURE_OR_LABELS",
+          "page_layout": "numbered_section",
+          "section": "1-20",
+          "text_scope_review": "LAYOUT_PROFILE_APPLIED"
+        },
+        "text": "1-20. COOLING SYSTEM OPERATION\n\nENGINE TEMPERATURE SWITCH – Sends signal to activate control valve system to operate fan\nB\nwhen engine temperature exceeds 215°F (102°C) and deactivate when engine temperature drops\nbelow 190°F (88°C).",
+        "text_sha256": "90b3da95d6e0398fbd8fd6f133bf93722518880bc71d7bba15154b6fd5bb8670",
+        "token_count": 62,
+        "unit_id": "U000595",
+        "unit_key": "region:68:1:3"
+      },
+      {
+        "body_end": 42,
+        "body_start": 0,
+        "id": "C005698",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          573
+        ],
+        "prefix_chars": 688,
+        "printed_pages": [
+          "2-469"
+        ],
+        "rank": 4,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.7199214696884155,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "expected_rows": 3,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "procedure_step": "18",
+          "row": 2,
+          "table_id": "P0573:idle"
+        },
+        "text": "REFERENCE INFORMATION\nSTEERING SYSTEM\n17. Start engine (Refer to TM 9-2320-280-10)\nand allow engine to idle and reach\noperating temperature of 190° F to 230° F.\n18. Check for proper engine idle speeds\nand adjust if necessary (para. 3-44).\nNOTE\nYou must be certain that the engine cooling system is working ok, or this test won't tell you anything. If the\nengine is cold, and everything is working ok, the fan should be disengaged. You can tell by gently revving the\nengine in neutral with the hood open. If the fan is engaged you will feel a breeze outside the driver's door. If it's\ndisengaged, you won't feel it. If you aren't sure if it's working ok, run the tests in Paragraph 2-25.\n\nEngine: 6.5L engine\nIdle speed: 700±25 RPM",
+        "text_sha256": "b6ceaebc283460ad4589369960250801e342c56718c83783e6c5de423984ad85",
+        "token_count": 214,
+        "unit_id": "U005690",
+        "unit_key": "P0573:idle:row:2"
+      },
+      {
+        "body_end": 50,
+        "body_start": 0,
+        "id": "C005699",
+        "kind": "manual_table_row",
+        "overlap_chars": 0,
+        "overlap_tokens": 0,
+        "pdf_pages": [
+          573
+        ],
+        "prefix_chars": 688,
+        "printed_pages": [
+          "2-469"
+        ],
+        "rank": 5,
+        "resolved_review_ids": [],
+        "review_ids": [],
+        "score": 0.7199181318283081,
+        "source_issues": [],
+        "status": "STRUCTURE_PROJECTED",
+        "structure_metadata": {
+          "expected_rows": 3,
+          "layout_review": "CODEX_PDF_LAYOUT_REVIEW",
+          "procedure_step": "18",
+          "row": 3,
+          "table_id": "P0573:idle"
+        },
+        "text": "REFERENCE INFORMATION\nSTEERING SYSTEM\n17. Start engine (Refer to TM 9-2320-280-10)\nand allow engine to idle and reach\noperating temperature of 190° F to 230° F.\n18. Check for proper engine idle speeds\nand adjust if necessary (para. 3-44).\nNOTE\nYou must be certain that the engine cooling system is working ok, or this test won't tell you anything. If the\nengine is cold, and everything is working ok, the fan should be disengaged. You can tell by gently revving the\nengine in neutral with the hood open. If the fan is engaged you will feel a breeze outside the driver's door. If it's\ndisengaged, you won't feel it. If you aren't sure if it's working ok, run the tests in Paragraph 2-25.\n\nEngine: 6.5L detuned\nengine\nIdle speed: 700±25 RPM",
+        "text_sha256": "1fb21bbdb07b892ad2346f651d104d871d1932bb592968375fd728b42d070d20",
+        "token_count": 217,
+        "unit_id": "U005691",
+        "unit_key": "P0573:idle:row:3"
+      }
+    ],
+    "search_ms": 8.707900000445079
+  },
+  "round": 3,
+  "sequence": 259,
+  "started_at": "2026-09-28T04:40:33.702578+00:00",
+  "status": "OK",
+  "timing_anomalies": [],
+  "timing_ms": {
+    "component_gap": 0.0,
+    "generation": 940.6865000000835,
+    "retrieval": 75.18340000024182,
+    "total": 1015.8699000003253
+  },
+  "unprovided_citations": []
+}
