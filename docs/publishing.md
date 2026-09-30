@@ -20,7 +20,7 @@ ZIP은 Git 커밋에 넣지 않고 같은 프로젝트의 Release에 첨부합�
 ## 새 배포를 게시하는 순서
 
 1. `LICENSE_STATUS.md`에서 코드의 재사용 허용 범위를 확인합니다. 라이선스를 추가하거나 바꾸는 결정은 별도로 기록하고, 외부 자료에는 해당 자료의 조건을 적용합니다.
-2. `scripts/verify_artifacts.py --scope all`로 복원 자료와 공개 사본 변경 목록을 확인합니다. LICENSE와 SOURCE.md가 들어 있는 현재 ZIP 4개를 사용합니다.
+2. `scripts/verify_artifacts.py --scope all`로 복원 자료와 공개 사본 변경 목록을 확인합니다. manifest에 지정된 현재 ZIP 4개를 사용합니다. 외부 자료의 라이선스와 출처는 함께 제공하는 LICENSE·SOURCE.md와 THIRD_PARTY_NOTICES.md를 따릅니다.
 3. Git에 포함될 파일 목록과 원격 주소를 확인합니다. API 키, `.env`, PC별 로그·자격 증명은 포함하지 않습니다. 개인키·인증파일·HAR·임시 파일의 제외 규칙을 추가했지만, `.gitignore`가 이미 추적 중인 파일을 제거하거나 파일 내용까지 검사하지는 않습니다. `.env.example`에는 예시값만 둡니다. [공개 전 보강 내역](publication-review.md)을 참고하세요.
 4. 소스와 문서를 커밋하고 선택한 GitHub 저장소에 push합니다.
 5. 같은 커밋의 Release를 만든 뒤 `release-assets`의 ZIP 4개를 첨부합니다.
