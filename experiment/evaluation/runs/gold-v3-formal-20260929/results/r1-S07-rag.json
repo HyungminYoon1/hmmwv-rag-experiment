@@ -1,0 +1,284 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "11b06e171a1b04385666e3ad739af6d340e084750dc89e65cec96e84cc0a927d",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-S07-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 18.55277279999973,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9999999999998487
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9999999999998487
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S07",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly states a purpose for the tests and makes substantive factual claims."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          1.0,
+          0.9999999999997728,
+          0.9999999999997733
+        ],
+        "query_vector_hash": "c75e18b644c0630b476d7f543a71c38b35d4449df6895efc35b37002116baa83",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          }
+        ],
+        "response_vectors_hash": "11186366bea156506cd06fc7dc32ea26129d4603c69e35a7304ef2fa2b96eb71",
+        "score": 0.9999999999998487
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [],
+        "statements": [
+          {
+            "answer_quote": "determine if the engine has internal compression or mechanical problems",
+            "statement": "The Compression/Mechanical Tests are intended to determine whether the engine has internal compression problems."
+          },
+          {
+            "answer_quote": "determine if the engine has internal compression or mechanical problems",
+            "statement": "The Compression/Mechanical Tests are intended to determine whether the engine has internal mechanical problems."
+          },
+          {
+            "answer_quote": "to fix everything possible without having to notify DS maintenance",
+            "statement": "A purpose of the Compression/Mechanical Tests is to fix everything possible without having to notify DS maintenance."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "determine if the engine has internal compression or mechanical problems",
+          "id": "C001",
+          "text": "The Compression/Mechanical Tests are intended to determine whether the engine has internal compression problems."
+        },
+        {
+          "answer_quote": "determine if the engine has internal compression or mechanical problems",
+          "id": "C002",
+          "text": "The Compression/Mechanical Tests are intended to determine whether the engine has internal mechanical problems."
+        },
+        {
+          "answer_quote": "to fix everything possible without having to notify DS maintenance",
+          "id": "C003",
+          "text": "A purpose of the Compression/Mechanical Tests is to fix everything possible without having to notify DS maintenance."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "determine if the engine has internal compression or mechanical problems",
+            "fulfilled": 1,
+            "id": "S07-A01",
+            "reason": "States the purpose of identifying internal compression or mechanical problems."
+          },
+          {
+            "answer_quote": "fix everything possible without having to notify DS maintenance",
+            "fulfilled": 1,
+            "id": "S07-A02",
+            "reason": "States the intended repairs and the DS maintenance condition."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002013"
+              ],
+              "evidence_quotes": [
+                "The main intent of this paragraph is to determine if the engine has internal\ncompression or mechanical problems and to fix everything possible without having\nto notify DS maintenance."
+              ],
+              "reason": "The stated main intent includes determining whether the engine has internal compression problems.",
+              "statement": "The Compression/Mechanical Tests are intended to determine whether the engine has internal compression problems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002013"
+              ],
+              "evidence_quotes": [
+                "The main intent of this paragraph is to determine if the engine has internal\ncompression or mechanical problems and to fix everything possible without having\nto notify DS maintenance."
+              ],
+              "reason": "The stated main intent includes determining whether the engine has internal mechanical problems.",
+              "statement": "The Compression/Mechanical Tests are intended to determine whether the engine has internal mechanical problems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002013"
+              ],
+              "evidence_quotes": [
+                "The main intent of this paragraph is to determine if the engine has internal\ncompression or mechanical problems and to fix everything possible without having\nto notify DS maintenance."
+              ],
+              "reason": "The stated main intent explicitly includes fixing everything possible without notifying DS maintenance.",
+              "statement": "A purpose of the Compression/Mechanical Tests is to fix everything possible without having to notify DS maintenance.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002013"
+              ],
+              "evidence_quotes": [
+                "The main intent of this paragraph is to determine if the engine has internal\ncompression or mechanical problems and to fix everything possible without having\nto notify DS maintenance."
+              ],
+              "reason": "The passage states this as part of the paragraph’s main intent.",
+              "statement": "The Compression/Mechanical Tests are intended to determine whether the engine has internal compression problems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002013"
+              ],
+              "evidence_quotes": [
+                "The main intent of this paragraph is to determine if the engine has internal\ncompression or mechanical problems and to fix everything possible without having\nto notify DS maintenance."
+              ],
+              "reason": "The passage includes internal mechanical problems in the main intent.",
+              "statement": "The Compression/Mechanical Tests are intended to determine whether the engine has internal mechanical problems.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002013"
+              ],
+              "evidence_quotes": [
+                "The main intent of this paragraph is to determine if the engine has internal\ncompression or mechanical problems and to fix everything possible without having\nto notify DS maintenance."
+              ],
+              "reason": "The passage explicitly includes fixing everything possible without notifying DS maintenance.",
+              "statement": "A purpose of the Compression/Mechanical Tests is to fix everything possible without having to notify DS maintenance.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          1.0,
+          0.9999999999997728,
+          0.9999999999997733
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9999999999998487,
+        "query_vector_hash": "c75e18b644c0630b476d7f543a71c38b35d4449df6895efc35b37002116baa83",
+        "ragas_score": 0.9999999999998487,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "11186366bea156506cd06fc7dc32ea26129d4603c69e35a7304ef2fa2b96eb71"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          1.0,
+          0.9999999999997728,
+          0.9999999999997733
+        ],
+        "decimal50_cosines": [
+          "0.99999999999999999999999999999999999999999999999990",
+          "0.99999999999977294050396924364906502248067969033609",
+          "0.99999999999977329281843916175368445473120812491270"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9999999999998487
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9999999999998487
+          }
+        },
+        "query_vector_hash": "c75e18b644c0630b476d7f543a71c38b35d4449df6895efc35b37002116baa83",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the primary purpose of the Compression/Mechanical Tests?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "11186366bea156506cd06fc7dc32ea26129d4603c69e35a7304ef2fa2b96eb71",
+        "score": 0.9999999999998487
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "85c7f9b3feb9c29153398d2aaac9c05fa82e7c93fc88db1bb98e3ca39c49700c",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-S07-rag.json",
+  "source_sha256": "101e655b690678a85bf277d8d3188489cc80bb803c3e679f45ca8382eee3e96b"
+}

@@ -7,7 +7,7 @@
 | 목적 | 필요한 것 | 새 모델 호출 |
 | --- | --- | --- |
 | 저장된 답변·평가표 열기 | Python 3.11, 저장소 파일 | 없음 |
-| 파일·수치·PDF 캡처 검증 | 위 자료 + 자료 ZIP 3개 + PyMuPDF | 없음 |
+| 파일·수치·PDF 캡처 검증 | 위 자료 + 자료 ZIP 4개 + PyMuPDF | 없음 |
 | 고정 추출본에서 보정·청킹 재생 | 전처리 환경 + preprocessing-replay 자료 | 없음 |
 | 로컬 모델로 새 답변 생성 | 전체 환경 + BGE-M3 + Qwen + Ollama + 지원 장비 | 로컬 생성만 수행 |
 | 새 답변의 자동평가 | 평가 환경 + 고정 BGE-M3 + GPT-6 Sol API 접근 | 외부 유료 API 사용 |
@@ -45,17 +45,18 @@ ollama --version
 
 ## 3. 고정 자료 복원
 
-[고정 Release `v2026.09.29`](https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/tag/v2026.09.29)에서 다음 파일을 받습니다.
+[고정 Release `v2026.09.30`](https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/tag/v2026.09.30)에서 다음 파일을 받습니다.
 
 - `runtime-data-20260929.zip`: 최종 corpus, 검색 인덱스, 교범 PDF, 생성 토크나이저.
 - `preprocessing-replay-20260929.zip`: 고정 OCR·추출·보정·구조 처리 자료와 참조 기록.
-- `review-evidence-20260929.zip`: 원문 캡처, AI 검토 근거, 평가 수정 검증에 필요한 백업.
+- `review-evidence-20260929.zip`: 기존 원문 캡처, AI 검토 근거와 평가 개정 백업.
+- `correction-evidence-20260929.zip`: 이번 gold-v3 원문 대조의 PDF 캡처 78개. 앞의 세 ZIP은 기존 Release와 동일하다.
 
 다음 명령은 공개 Release에서 ZIP을 내려받고 검증한 뒤 복원합니다.
 
 ```powershell
 py -3.11 -X utf8 scripts/verify_artifacts.py --scope core
-py -3.11 -X utf8 scripts/restore_artifacts.py --base-url https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/download/v2026.09.29
+py -3.11 -X utf8 scripts/restore_artifacts.py --base-url https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/download/v2026.09.30
 py -3.11 -X utf8 scripts/verify_artifacts.py --scope all
 ```
 
@@ -63,7 +64,7 @@ ZIP을 이미 받았다면 `--base-url` 대신 `--asset-dir ../release-assets`�
 
 복원은 ZIP 자체와 내부 파일의 크기·SHA-256을 검사합니다. 동일한 파일은 유지하고, 내용이 다른 기존 파일은 덮어쓰지 않습니다. 교범과 평가질의는 manifest에 지정된 경로에 복원합니다. 실행 프로그램이 해당 경로와 해시를 확인하므로 복원 뒤 임의로 이동하지 않습니다.
 
-현재 자료 묶음은 `20260929-publication-v3`입니다. 공개용 경로·문서 메타데이터 정리, 문서 편집과 외부 자료 라이선스 동봉을 반영했습니다. `artifacts/original-files.json`과 `source-bundles.json`은 원래 연구 파일의 해시를 보존하며, `publication-changes.json`은 변경·이동·빈 로그 제외를 기록합니다. 검증 도구는 이 목록에 선언된 공개 사본의 해시를 검사하고, 선언되지 않은 차이는 실패로 처리합니다. 이전 로컬 준비본에 새 ZIP을 덮어 복원하면 충돌할 수 있으므로 새 디렉토리에 현재 저장소 파일과 ZIP을 함께 사용하세요.
+기존 자료 묶음 `20260929-publication-v3`를 보존하고 정정 Release `v2026.09.30`의 추가 파일 목록과 캡처 묶음을 더했습니다. 공개용 경로·문서 메타데이터 정리, 문서 편집과 외부 자료 라이선스 동봉을 반영했습니다. `artifacts/original-files.json`과 `source-bundles.json`은 원래 연구 파일의 해시를 보존하며, `publication-changes.json`은 변경·이동·빈 로그 제외를 기록합니다. 검증 도구는 이 목록에 선언된 공개 사본의 해시를 검사하고, 선언되지 않은 차이는 실패로 처리합니다. 이전 로컬 준비본에 새 ZIP을 덮어 복원하면 충돌할 수 있으므로 새 디렉토리에 현재 저장소 파일과 ZIP을 함께 사용하세요.
 
 ## 4. 모델 없이 결과를 읽고 검증하기
 
@@ -73,17 +74,28 @@ ZIP을 이미 받았다면 `--base-url` 대신 `--asset-dir ../release-assets`�
 py -3.11 -X utf8 scripts/serve_results.py --port 8767
 ```
 
-<http://127.0.0.1:8767/evaluation>에서 현재 결과 `sol-revision-formal-20260929-v3`를 선택합니다. 원문 이미지 렌더링·수치 검증을 위해 PyMuPDF만 설치할 수도 있습니다. 서버를 `Ctrl+C`로 종료한 뒤 아래 명령을 실행합니다.
+<http://127.0.0.1:8767/evaluation>에서 현재 결과 `gold-v3-formal-20260929`를 선택합니다. 원문 이미지 렌더링·수치 검증을 위해 PyMuPDF만 설치할 수도 있습니다. 서버를 `Ctrl+C`로 종료한 뒤 아래 명령을 실행합니다.
 
 ```powershell
 pwsh -File scripts/setup.ps1 -Mode view
 .\.venv-view\Scripts\python.exe -X utf8 scripts/verify_saved_results.py
+.\.venv-view\Scripts\python.exe -X utf8 -m experiment.correction verify --source-images
 .\.venv-view\Scripts\python.exe -X utf8 scripts/serve_results.py --port 8767
 ```
 
 검증 보고서는 `validation/local/saved-results-verification.json`에 저장됩니다. 원래 검증 프로그램의 계산·대조 로직을 실행하되 보고서 저장 위치만 분리합니다. API·모델 다운로드·생성은 수행하지 않습니다.
 
 공개용으로 바뀐 문서의 백업 목록은 공개 사본 해시를 가리키도록 갱신했습니다. 원래 목록은 `artifacts/source-bundles.json`에 해시를 남겼고, 변경 전후 관계는 `publication-changes.json`에 있습니다. 계산 결과와 인용문·캡처를 대조하는 로직은 그대로 실행합니다.
+
+저장된 정정 결과를 새 디렉토리에 다시 계산하는 명령입니다. 첫 명령은 배포본 검사, 둘째는 별도 재집계이며 API를 호출하지 않습니다. 같은 출력 디렉토리가 있으면 새 이름을 사용하세요.
+
+```powershell
+py -3.11 -X utf8 -m experiment.correction verify
+py -3.11 -X utf8 -m experiment.correction recalculate --output validation/local/gold-v3-recheck
+py -3.11 -X utf8 scripts/score_retrieval.py --source-run formal-v1 --gold-version gold-v3
+```
+
+`artifacts/correction-files.json`은 추가·갱신된 공개 도구와 기록을 검사합니다. 과거 자료는 기존 공개 사본 목록과 계속 대조합니다.
 
 ## 5. 전체 Python 환경 설치
 
@@ -169,6 +181,9 @@ py -3.11 -X utf8 scripts/preflight.py --ollama
 .\retrieval\.venv\Scripts\python.exe -X utf8 -m experiment.audit --id reproduction-v1
 .\retrieval\.venv\Scripts\python.exe -X utf8 -m experiment.report --id reproduction-v1
 .\retrieval\.venv\Scripts\python.exe -X utf8 -m experiment.package_evaluation --id reproduction-v1
+
+# 새 검색 결과를 현재 gold-v3 기준으로 집계
+py -3.11 -X utf8 scripts/score_retrieval.py --source-run reproduction-v1 --gold-version gold-v3 --output validation/local/reproduction-retrieval-v3.json
 ```
 
 정상 종료 후 `experiment/runs/reproduction-v1/attempts/`에 360개 요청 기록이 생기며, 내용 평가에는 `evaluation-inputs/answers.jsonl`의 첫 회차 120개를 사용합니다. 시간은 세 회차 모두 정상인 공통 문항에서 질의별 중앙값 등을 계산합니다. 워밍업은 본 측정과 별도로 저장됩니다.
@@ -200,16 +215,20 @@ Remove-Variable judgeKeyInput
 # 저장된 자료의 수치 재계산: API 추가 호출 없음
 .\experiment\evaluation\.venv\Scripts\python.exe -X utf8 -m experiment.evaluation.verification.recalculate_relevancy --source reproduction-base-v1 --id reproduction-base-numeric-v1
 
-# 새 실행의 답변에 현재 gold-v2 기준을 연결: API 호출 없음
-.\experiment\evaluation\.venv\Scripts\python.exe -X utf8 scripts/prepare_revised_evaluation.py --source-evaluation reproduction-base-numeric-v1 --id reproduction-revised-v2
+# 새 실행의 답변에 현재 gold-v3 기준을 연결: API 호출 없음
+.\experiment\evaluation\.venv\Scripts\python.exe -X utf8 scripts/prepare_revised_evaluation.py --source-evaluation reproduction-base-numeric-v1 --id reproduction-revised-v3 --gold-version gold-v3
 
 # 현재 개정 기준으로 재평가: 실제 API 호출
-.\experiment\evaluation\.venv\Scripts\python.exe -X utf8 -m experiment.evaluation.revision_runner run --id reproduction-revised-v2
+.\experiment\evaluation\.venv\Scripts\python.exe -X utf8 -m experiment.evaluation.revision_runner run --id reproduction-revised-v3
 ```
+
+과거 gold-v2 기준을 재연하려면 준비 명령에서 `--gold-version gold-v2`와 별도 ID를 지정합니다. 새 답변은 실제로 다시 채점해야 하므로 이번 고정 답변의 무호출 재집계와 구별합니다.
 
 개정 준비 도구는 원래 `revision_runner`가 원 실험 ID를 고정해 읽는 부분을 새 실행에 연결하는 별도 도구입니다. 채점 엔진과 지표 계산은 기존 코드를 사용하며, 준비 도구의 해시와 입력·이전 판정을 새 manifest에 기록합니다.
 
 원 실험 v3의 인용 복원은 당시 확인된 M18 사례를 처리한 이력입니다. 새 응답에 같은 보정이 필요하다고 가정하지 않습니다. 평가 오류가 생기면 해당 원본 응답·오류를 보존하고 원인에 맞게 별도 처리합니다. 점수가 좋아질 때까지 재호출하지 않습니다.
+
+기존 `experiment.report`의 검색 점수는 최초 gold-v1 기준입니다. 현재 검색 점수는 위 `score_retrieval.py --gold-version gold-v3`의 별도 보고서를 사용합니다. 원 시간·자원 집계는 유지합니다.
 
 ## 10. 전처리·청킹 재생 — 선택 단계
 

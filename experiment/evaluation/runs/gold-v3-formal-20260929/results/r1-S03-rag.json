@@ -1,0 +1,255 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "b914bedd67ce8249159a0c238790c9eaf84d0328b3ea731c61931f85e55285a3",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-S03-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 14.144277800000054,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9987113955909644
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9987113955909644
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S03",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly identifies two cooling functions as factual claims."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          1.0,
+          1.0,
+          0.9961341867728933
+        ],
+        "query_vector_hash": "d41614ead9b1c8fbedc8fdb61f290245ce6adf1f458ef59814d571bdf7bc58b4",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What two major cooling functions are covered by the top-level Cooling System Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What two major cooling functions are covered by the top-level Cooling System Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the two major cooling functions covered by the top-level Cooling System Tests?"
+          }
+        ],
+        "response_vectors_hash": "0df18bbb0a699876d4a90888c32cb08c1ad719812bd24af1aada653e148790dd",
+        "score": 0.998711395590964
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "At the top level of Cooling System Tests"
+        ],
+        "statements": [
+          {
+            "answer_quote": "the water cooling system",
+            "statement": "At the top level of Cooling System Tests, the water cooling system is covered as a major cooling function."
+          },
+          {
+            "answer_quote": "the oil cooling system",
+            "statement": "At the top level of Cooling System Tests, the oil cooling system is covered as a major cooling function."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "the water cooling system",
+          "id": "C001",
+          "text": "At the top level of Cooling System Tests, the water cooling system is covered as a major cooling function."
+        },
+        {
+          "answer_quote": "the oil cooling system",
+          "id": "C002",
+          "text": "At the top level of Cooling System Tests, the oil cooling system is covered as a major cooling function."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "the water cooling system",
+            "fulfilled": 1,
+            "id": "S03-A01",
+            "reason": "The answer explicitly names the water cooling system."
+          },
+          {
+            "answer_quote": "the oil cooling system",
+            "fulfilled": 1,
+            "id": "S03-A02",
+            "reason": "The answer explicitly names the oil cooling system."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001375"
+              ],
+              "evidence_quotes": [
+                "This paragraph is a top level test for problems with either the watercooling\nsystem or the oil cooling system."
+              ],
+              "reason": "The top-level test covers problems with the watercooling system.",
+              "statement": "At the top level of Cooling System Tests, the water cooling system is covered as a major cooling function.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001375"
+              ],
+              "evidence_quotes": [
+                "This paragraph is a top level test for problems with either the watercooling\nsystem or the oil cooling system."
+              ],
+              "reason": "The top-level test covers problems with the oil cooling system.",
+              "statement": "At the top level of Cooling System Tests, the oil cooling system is covered as a major cooling function.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C001375"
+              ],
+              "evidence_quotes": [
+                "This paragraph is a top level test for problems with either the watercooling\nsystem or the oil cooling system."
+              ],
+              "reason": "The passage identifies the top-level test as addressing problems with the watercooling system.",
+              "statement": "At the top level of Cooling System Tests, the water cooling system is covered as a major cooling function.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001375"
+              ],
+              "evidence_quotes": [
+                "This paragraph is a top level test for problems with either the watercooling\nsystem or the oil cooling system."
+              ],
+              "reason": "The passage identifies the top-level test as addressing problems with the oil cooling system.",
+              "statement": "At the top level of Cooling System Tests, the oil cooling system is covered as a major cooling function.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 4.440892098500626e-16,
+        "cosine_similarities": [
+          1.0,
+          1.0,
+          0.9961341867728933
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9987113955909644,
+        "query_vector_hash": "d41614ead9b1c8fbedc8fdb61f290245ce6adf1f458ef59814d571bdf7bc58b4",
+        "ragas_score": 0.998711395590964,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "0df18bbb0a699876d4a90888c32cb08c1ad719812bd24af1aada653e148790dd"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          1.0,
+          1.0,
+          0.9961341867728933
+        ],
+        "decimal50_cosines": [
+          "1",
+          "1",
+          "0.99613418677289326322081043256046748249492688755458"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.998711395590964
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.998711395590964
+          }
+        },
+        "query_vector_hash": "d41614ead9b1c8fbedc8fdb61f290245ce6adf1f458ef59814d571bdf7bc58b4",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What two major cooling functions are covered by the top-level Cooling System Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What two major cooling functions are covered by the top-level Cooling System Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the two major cooling functions covered by the top-level Cooling System Tests?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "0df18bbb0a699876d4a90888c32cb08c1ad719812bd24af1aada653e148790dd",
+        "score": 0.9987113955909644
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "7e9257d329dab4f035f5317f6dc98f1227cb671bbbfad48411ca47f6ed399f61",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-S03-rag.json",
+  "source_sha256": "c72777d9cfe990cb92185743e8b7228d870bafa531ec121a9592df190f031dfb"
+}

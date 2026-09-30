@@ -1,0 +1,216 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "28e11f81f4a5d8bfcf8a318a0e2bea6634da5ac6315e0f057c8ea8a6bc402990",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-S09-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 12.95218229999955,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.861080342369562
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.861080342369562
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S09",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific thermostat opening temperature."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8610803428354659,
+          0.8610803428354659,
+          0.8610803414377541
+        ],
+        "query_vector_hash": "b0b463de92a70f40008d1e97dc90e7f9fbd2dc195e8386a301c9e29e302d95dc",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what temperature does the thermostat start to open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature does the thermostat start to open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature does the thermostat start to open?"
+          }
+        ],
+        "response_vectors_hash": "daef7ff10aa798ae0f66642960ec4ed8154127e5d5a59e920ad81e1cadefc245",
+        "score": 0.8610803423695618
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [],
+        "statements": [
+          {
+            "answer_quote": "The thermostat starts to open at 190°F (87.7°C).",
+            "statement": "The thermostat starts to open at a coolant temperature of 190°F (87.7°C)."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The thermostat starts to open at 190°F (87.7°C).",
+          "id": "C001",
+          "text": "The thermostat starts to open at a coolant temperature of 190°F (87.7°C)."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The thermostat starts to open at 190°F (87.7°C).",
+            "fulfilled": 1,
+            "id": "S09-A01",
+            "reason": "The answer gives the opening temperature and the Celsius equivalent printed in §2-25."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002106"
+              ],
+              "evidence_quotes": [
+                "As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine."
+              ],
+              "reason": "The operating description says the thermostat opens as engine coolant reaches 190°F (87.7°C).",
+              "statement": "The thermostat starts to open at a coolant temperature of 190°F (87.7°C).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002106"
+              ],
+              "evidence_quotes": [
+                "As the engine coolant reaches 190°F (87.7°C), the thermostat opens allowing\ncoolant to flow through the radiator before returning to the water pump and engine."
+              ],
+              "reason": "The engine cooling tests passage says the thermostat opens as coolant reaches 190°F (87.7°C).",
+              "statement": "The thermostat starts to open at a coolant temperature of 190°F (87.7°C).",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.8610803428354659,
+          0.8610803428354659,
+          0.8610803414377541
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.861080342369562,
+        "query_vector_hash": "b0b463de92a70f40008d1e97dc90e7f9fbd2dc195e8386a301c9e29e302d95dc",
+        "ragas_score": 0.8610803423695618,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "daef7ff10aa798ae0f66642960ec4ed8154127e5d5a59e920ad81e1cadefc245"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8610803428354659,
+          0.8610803428354659,
+          0.8610803414377541
+        ],
+        "decimal50_cosines": [
+          "0.86108034283546570376021616611749039701290077840637",
+          "0.86108034283546570376021616611749039701290077840637",
+          "0.86108034143775396550066917234620706171276457790680"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8610803423695618
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8610803423695618
+          }
+        },
+        "query_vector_hash": "b0b463de92a70f40008d1e97dc90e7f9fbd2dc195e8386a301c9e29e302d95dc",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what temperature does the thermostat start to open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature does the thermostat start to open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what temperature does the thermostat start to open?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "daef7ff10aa798ae0f66642960ec4ed8154127e5d5a59e920ad81e1cadefc245",
+        "score": 0.861080342369562
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "f927f3b5ef6f959ec43b19c14889e065b5da23b38198c9817d53635845496d83",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-S09-rag.json",
+  "source_sha256": "d134c6473d45c23c624156eaae19eee668d24a5d300883f1c361168691f63683"
+}

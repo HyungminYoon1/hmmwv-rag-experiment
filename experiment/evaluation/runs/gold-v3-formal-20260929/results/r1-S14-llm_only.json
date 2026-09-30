@@ -1,0 +1,203 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "d8e85a082eb096713bae25ba909df0942383d6e8ad43c3859b77b2a4e88a4d6d",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-S14-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 15.073640599999635,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9677337797019862
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9677337797019862
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S14",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "Provides a concrete idle-speed range of 600 to 700 RPM and makes a source claim."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.996646716900016,
+          0.996646716900016,
+          0.9099079053059265
+        ],
+        "query_vector_hash": "e51875b235741d74042b8f0c73eb7faf4bc1f8edfe439e0f6e3d09e35e281fc5",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine in the Engine Lubrication Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine in the Engine Lubrication Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine in the HMMWV Engine Lubrication Tests?"
+          }
+        ],
+        "response_vectors_hash": "c7a557cead02fc39d85d95891bb42c7351e85a4f2d3d6aae6dca16b454ab3dd3",
+        "score": 0.9677337797019859
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer attributes the information to HMMWV (M998-series) maintenance and operational guidelines and TM 9-2320-280-20-1, Volume 1.",
+          "The answer says no specific chunk ID is available in the reference excerpts."
+        ],
+        "shared_conditions": [
+          "For the 6.2-liter engine in the Engine Lubrication Tests"
+        ],
+        "statements": [
+          {
+            "answer_quote": "The specified idle-speed range for the 6.2-liter engine in the Engine Lubrication Tests is 600 to 700 RPM.",
+            "statement": "For the 6.2-liter engine in the Engine Lubrication Tests, the specified idle-speed range is 600 to 700 RPM."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The specified idle-speed range for the 6.2-liter engine in the Engine Lubrication Tests is 600 to 700 RPM.",
+          "id": "C001",
+          "text": "For the 6.2-liter engine in the Engine Lubrication Tests, the specified idle-speed range is 600 to 700 RPM."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "600 to 700 RPM",
+            "fulfilled": 0,
+            "id": "S14-A01",
+            "reason": "The answer gives 600–700 RPM, but the specified range is 625–675 RPM (650 ± 25 RPM)."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002420"
+              ],
+              "evidence_quotes": [
+                "ENGINE RPM: 6.2L IDLE (650 ± 25)"
+              ],
+              "reason": "The supplied engine-lubrication reference gives 650 ± 25 RPM, or 625–675 RPM, not 600–700 RPM.",
+              "statement": "For the 6.2-liter engine in the Engine Lubrication Tests, the specified idle-speed range is 600 to 700 RPM.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 2.220446049250313e-16,
+        "cosine_similarities": [
+          0.996646716900016,
+          0.996646716900016,
+          0.9099079053059265
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9677337797019862,
+        "query_vector_hash": "e51875b235741d74042b8f0c73eb7faf4bc1f8edfe439e0f6e3d09e35e281fc5",
+        "ragas_score": 0.9677337797019859,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "c7a557cead02fc39d85d95891bb42c7351e85a4f2d3d6aae6dca16b454ab3dd3"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.996646716900016,
+          0.996646716900016,
+          0.9099079053059265
+        ],
+        "decimal50_cosines": [
+          "0.99664671690001606510431626105366167806240335106044",
+          "0.99664671690001606510431626105366167806240335106044",
+          "0.90990790530592627717145651793931879487883051699432"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9677337797019859
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9677337797019859
+          }
+        },
+        "query_vector_hash": "e51875b235741d74042b8f0c73eb7faf4bc1f8edfe439e0f6e3d09e35e281fc5",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine in the Engine Lubrication Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine in the Engine Lubrication Tests?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What is the specified idle-speed range for the 6.2-liter engine in the HMMWV Engine Lubrication Tests?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "c7a557cead02fc39d85d95891bb42c7351e85a4f2d3d6aae6dca16b454ab3dd3",
+        "score": 0.9677337797019862
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "c0ad17e0ae21798eaf619911dfb702de681fdb668400cfbb163b742b44e4ea05",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-S14-llm_only.json",
+  "source_sha256": "87574bbe553e86ef4498588d5f1525e3c2a9590c039f117ae36e923e138fea9c"
+}

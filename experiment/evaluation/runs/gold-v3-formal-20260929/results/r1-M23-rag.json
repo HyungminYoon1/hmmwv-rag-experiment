@@ -1,0 +1,324 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "e29352df6a543b3bb8bcb2290f7442af04c67fd9ee1ffc07f7e7a736019e9f32",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-M23-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 28.808202399999573,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8278369694495987
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8278369694495987
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.75
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M23",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "Gives a specific cleaning agent, explains why it should not be used on the CDR valve, and states an alternative cleaning method."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8106586230949948,
+          0.8241868952391135,
+          0.8486653900146875
+        ],
+        "query_vector_hash": "dd656fa8ed1dea84fa485db82507b7affe949ea79a1a1bc72f41217ee8b92f5e",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What should be used to clean grease or oil from metal parts, and how should the CDR valve be cleaned instead?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What agent is generally used to remove grease or oil from metal parts, and how should the CDR valve be cleaned instead?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What cleaning agent is specified for grease or oil on metal parts, and how should the CDR valve be cleaned?"
+          }
+        ],
+        "response_vectors_hash": "19388efff23b203f1f7cf4fc9fc03f65162c0bc8f1cfc2084ed1cf813b864ba7",
+        "score": 0.8278369694495984
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "General cleaning of grease or oil from metal parts.",
+          "Cleaning the CDR valve, as an exception to the general metal-parts procedure."
+        ],
+        "statements": [
+          {
+            "answer_quote": "The cleaning agent generally specified for grease or oil on metal parts is drycleaning solvent (SD), type II, or equivalent",
+            "statement": "For general cleaning of grease or oil from metal parts, the specified agent is drycleaning solvent (SD), type II, or equivalent."
+          },
+          {
+            "answer_quote": "this general choice must not be applied to the CDR valve",
+            "statement": "When cleaning the CDR valve, the general choice of solvent for grease or oil on metal parts must not be applied."
+          },
+          {
+            "answer_quote": "cleaning the CDR valve with solvent will damage the diaphragm inside the valve",
+            "statement": "When cleaning the CDR valve, solvent will damage the diaphragm inside the valve."
+          },
+          {
+            "answer_quote": "wipe it and its hoses with a rag only",
+            "statement": "When cleaning the CDR valve, the authorized method is to wipe the valve and its hoses with a rag only."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The cleaning agent generally specified for grease or oil on metal parts is drycleaning solvent (SD), type II, or equivalent",
+          "id": "C001",
+          "text": "For general cleaning of grease or oil from metal parts, the specified agent is drycleaning solvent (SD), type II, or equivalent."
+        },
+        {
+          "answer_quote": "this general choice must not be applied to the CDR valve",
+          "id": "C002",
+          "text": "When cleaning the CDR valve, the general choice of solvent for grease or oil on metal parts must not be applied."
+        },
+        {
+          "answer_quote": "cleaning the CDR valve with solvent will damage the diaphragm inside the valve",
+          "id": "C003",
+          "text": "When cleaning the CDR valve, solvent will damage the diaphragm inside the valve."
+        },
+        {
+          "answer_quote": "wipe it and its hoses with a rag only",
+          "id": "C004",
+          "text": "When cleaning the CDR valve, the authorized method is to wipe the valve and its hoses with a rag only."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "The cleaning agent generally specified for grease or oil on metal parts is drycleaning solvent (SD), type II, or equivalent",
+            "fulfilled": 1,
+            "id": "M23-A01",
+            "reason": "Identifies drycleaning solvent for grease or oil on metal parts."
+          },
+          {
+            "answer_quote": "cleaning the CDR valve with solvent will damage the diaphragm inside the valve",
+            "fulfilled": 1,
+            "id": "M23-A02",
+            "reason": "States the specified reason solvent must not be used."
+          },
+          {
+            "answer_quote": "wipe it and its hoses with a rag only",
+            "fulfilled": 1,
+            "id": "M23-A03",
+            "reason": "Gives the authorized rag-wiping method."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C000865",
+                "C000832"
+              ],
+              "evidence_quotes": [
+                "you must use drycleaning solvent (Appendix C,\nItem 18) to clean grease or oil from metal parts.",
+                "Clean parts with drycleaning solvent (SD), type II, or equivalent."
+              ],
+              "reason": "The general cleaning instruction specifies drycleaning solvent for grease or oil on metal parts; the parts-cleaning instruction specifies SD type II or equivalent.",
+              "statement": "For general cleaning of grease or oil from metal parts, the specified agent is drycleaning solvent (SD), type II, or equivalent.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent."
+              ],
+              "reason": "The CDR-specific caution prohibits cleaning the valve with solvent.",
+              "statement": "When cleaning the CDR valve, the general choice of solvent for grease or oil on metal parts must not be applied.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve."
+              ],
+              "reason": "The CDR-specific caution states this consequence.",
+              "statement": "When cleaning the CDR valve, solvent will damage the diaphragm inside the valve.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag."
+              ],
+              "reason": "The procedure identifies rag wiping as the only authorized method and directs wiping the valve and hoses.",
+              "statement": "When cleaning the CDR valve, the authorized method is to wipe the valve and its hoses with a rag only.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.75,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source specifies drycleaning solvent, but does not specify “(SD), type II, or equivalent.”",
+              "statement": "For general cleaning of grease or oil from metal parts, the specified agent is drycleaning solvent (SD), type II, or equivalent.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000865",
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Where the instruction “clean” appears in a procedure, you must use drycleaning solvent (Appendix C,\nItem 18) to clean grease or oil from metal parts.",
+                "Do not clean CDR valve with solvent."
+              ],
+              "reason": "The general metal-parts instruction calls for solvent, while the CDR instruction expressly prohibits it.",
+              "statement": "When cleaning the CDR valve, the general choice of solvent for grease or oil on metal parts must not be applied.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve."
+              ],
+              "reason": "The CDR caution states this consequence.",
+              "statement": "When cleaning the CDR valve, solvent will damage the diaphragm inside the valve.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Wiping with a rag\nis the only authorized method of\ncleaning.\nc. Remove and wipe off the CDR valve\nand hoses with a rag."
+              ],
+              "reason": "Wiping with a rag is the only authorized method, and the procedure specifies the valve and hoses.",
+              "statement": "When cleaning the CDR valve, the authorized method is to wipe the valve and its hoses with a rag only.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 3.3306690738754696e-16,
+        "cosine_similarities": [
+          0.8106586230949948,
+          0.8241868952391135,
+          0.8486653900146875
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8278369694495987,
+        "query_vector_hash": "dd656fa8ed1dea84fa485db82507b7affe949ea79a1a1bc72f41217ee8b92f5e",
+        "ragas_score": 0.8278369694495984,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "19388efff23b203f1f7cf4fc9fc03f65162c0bc8f1cfc2084ed1cf813b864ba7"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8106586230949948,
+          0.8241868952391135,
+          0.8486653900146875
+        ],
+        "decimal50_cosines": [
+          "0.81065862309499468567391786746446899355752213908563",
+          "0.82418689523911350736867323366675865064429641558353",
+          "0.84866539001468755069776167170303503000522876130862"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8278369694495984
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8278369694495984
+          }
+        },
+        "query_vector_hash": "dd656fa8ed1dea84fa485db82507b7affe949ea79a1a1bc72f41217ee8b92f5e",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What should be used to clean grease or oil from metal parts, and how should the CDR valve be cleaned instead?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What agent is generally used to remove grease or oil from metal parts, and how should the CDR valve be cleaned instead?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What cleaning agent is specified for grease or oil on metal parts, and how should the CDR valve be cleaned?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "19388efff23b203f1f7cf4fc9fc03f65162c0bc8f1cfc2084ed1cf813b864ba7",
+        "score": 0.8278369694495987
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "6cac73c97ff80f5af293c752d955ee61d5bc92244d998898c3d29d3d1c8886da",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-M23-rag.json",
+  "source_sha256": "e55ba0d92cd06d1d76bda9552335cd7653265f55325c72ee57c132e028b1308e"
+}

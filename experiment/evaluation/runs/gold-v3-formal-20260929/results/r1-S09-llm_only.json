@@ -1,0 +1,203 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "893dc67f8f6190a01c3a99bc4f7a6907bfe06628d2416ec425c3b1cf2f4646f0",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-S09-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 13.363419899999826,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7595526210964274
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.7595526210964274
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S09",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives a specific thermostat opening temperature and makes claims about the vehicle and manual, despite noting that excerpts were not provided."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.7604997498636303,
+          0.7532275756274974,
+          0.7649305377981543
+        ],
+        "query_vector_hash": "b0b463de92a70f40008d1e97dc90e7f9fbd2dc195e8386a301c9e29e302d95dc",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the thermostat in the HMMWV (M998-series) typically start to open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the thermostat in an M998-series HMMWV typically start to open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the thermostat in an HMMWV (M998-series) typically start to open?"
+          }
+        ],
+        "response_vectors_hash": "1d442bd2fd3b978499f83c0b0c65fe3101535838fac12aec1328fe3c301e36a9",
+        "score": 0.7595526210964273
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer attributes the information to standard operating procedures in TM 9-2320-280-20-1, Volume 1; this is self-described provenance.",
+          "The answer says specific excerpts were not provided in the reference; this concerns evidence availability."
+        ],
+        "shared_conditions": [
+          "HMMWV (M998-series) cooling system"
+        ],
+        "statements": [
+          {
+            "answer_quote": "The thermostat in the HMMWV (M998-series) typically starts to open at a coolant temperature of 180°F (82°C).",
+            "statement": "In the HMMWV (M998-series) cooling system, the thermostat typically starts to open at a coolant temperature of 180°F (82°C)."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The thermostat in the HMMWV (M998-series) typically starts to open at a coolant temperature of 180°F (82°C).",
+          "id": "C001",
+          "text": "In the HMMWV (M998-series) cooling system, the thermostat typically starts to open at a coolant temperature of 180°F (82°C)."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S09-A01",
+            "reason": "The response says 180°F (82°C), but the operating description says the thermostat opens at 190°F (87.7°C)."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000493"
+              ],
+              "evidence_quotes": [
+                "ITEM: Starts to Open \nSTANDARD: 190°F\nMETRIC: 88°C"
+              ],
+              "reason": "The supplied cooling-system data gives 190°F (88°C) for the thermostat starting to open, not 180°F (82°C).",
+              "statement": "In the HMMWV (M998-series) cooling system, the thermostat typically starts to open at a coolant temperature of 180°F (82°C).",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.7604997498636303,
+          0.7532275756274974,
+          0.7649305377981543
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.7595526210964274,
+        "query_vector_hash": "b0b463de92a70f40008d1e97dc90e7f9fbd2dc195e8386a301c9e29e302d95dc",
+        "ragas_score": 0.7595526210964273,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "1d442bd2fd3b978499f83c0b0c65fe3101535838fac12aec1328fe3c301e36a9"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.7604997498636303,
+          0.7532275756274974,
+          0.7649305377981543
+        ],
+        "decimal50_cosines": [
+          "0.76049974986363021146989676558307826864676007670878",
+          "0.75322757562749728037149802069025606751741775124279",
+          "0.76493053779815423433015048948783383322715868951742"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.7595526210964273
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.7595526210964273
+          }
+        },
+        "query_vector_hash": "b0b463de92a70f40008d1e97dc90e7f9fbd2dc195e8386a301c9e29e302d95dc",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the thermostat in the HMMWV (M998-series) typically start to open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the thermostat in an M998-series HMMWV typically start to open?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "At what coolant temperature does the thermostat in an HMMWV (M998-series) typically start to open?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "1d442bd2fd3b978499f83c0b0c65fe3101535838fac12aec1328fe3c301e36a9",
+        "score": 0.7595526210964274
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "d66a52c44f9bd81633d69cb5983e3acddb16c7320fc4f6055f8a31291274f18c",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-S09-llm_only.json",
+  "source_sha256": "7dd5f444a368b7f2408386a27e4eb3d17b58b6f7e5943c770d2d9a9692899956"
+}

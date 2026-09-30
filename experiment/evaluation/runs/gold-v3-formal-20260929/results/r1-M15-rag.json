@@ -1,0 +1,347 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "83bd4721ec0849542e92edd016b1492be6519da80f2354dbc266482d8808b61c",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-M15-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 54.883729299999686,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8314603321964446
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8314603321964446
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.6
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.6
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      }
+    },
+    "question_id": "M15",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives concrete fluid requirements and transfer-case fill quantities without abstaining."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8441147114925454,
+          0.810628337431454,
+          0.8396379476653343
+        ],
+        "query_vector_hash": "c1c513db219d182f6618e6163103de8bae5004adb760030a62b3053757a2a1da",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "In non-arctic service, can Dexron II be used in a 4L80-E transmission and transfer case, and what are the specified transfer-case fill quantities for models 218 and 242 on level ground?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In non-arctic service, can Dexron II be used in a 4L80-E transmission or transfer case, and what are the transfer-case fill quantities for models 218 and 242?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In non-arctic service, can Dexron II be used in a 4L80-E transmission and its transfer case, and what are the transfer-case fill quantities for models 218 and 242 on level ground?"
+          }
+        ],
+        "response_vectors_hash": "d20f29bff04999b7876554979b8dfbecce17b0826eafb4b7fb91dac8c03a02e5",
+        "score": 0.8314603321964444
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The answer attributes its fluid and fill requirements to a manual."
+        ],
+        "shared_conditions": [
+          "Non-arctic service applies to all stated fluid and fill claims.",
+          "Level ground applies to the stated transfer-case level criterion."
+        ],
+        "statements": [
+          {
+            "answer_quote": "Dexron® II **may not** be used. The manual specifies that **only Dexron® III** is allowed",
+            "statement": "In non-arctic service, only Dexron® III is allowed in the 4L80-E transmission; Dexron® II may not be used."
+          },
+          {
+            "answer_quote": "Using Dexron® II will cause damage to the transmission",
+            "statement": "In non-arctic service, using Dexron® II in the 4L80-E transmission will damage it."
+          },
+          {
+            "answer_quote": "Dexron® II for transfer case filling, regardless of transmission type, and does not restrict use to arctic conditions",
+            "statement": "In non-arctic service, Dexron® II can be used to fill the transfer case regardless of transmission type."
+          },
+          {
+            "answer_quote": "filled with **3.5 quarts (3.3 L)** for model 218",
+            "statement": "In non-arctic service, on level ground, the stated transfer-case level criterion for model 218 is a fill of 3.5 quarts (3.3 L)."
+          },
+          {
+            "answer_quote": "**3.35 quarts (3.17 L)** for model 242",
+            "statement": "In non-arctic service, on level ground, the stated transfer-case level criterion for model 242 is a fill of 3.35 quarts (3.17 L)."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "Dexron® II **may not** be used. The manual specifies that **only Dexron® III** is allowed",
+          "id": "C001",
+          "text": "In non-arctic service, only Dexron® III is allowed in the 4L80-E transmission; Dexron® II may not be used."
+        },
+        {
+          "answer_quote": "Using Dexron® II will cause damage to the transmission",
+          "id": "C002",
+          "text": "In non-arctic service, using Dexron® II in the 4L80-E transmission will damage it."
+        },
+        {
+          "answer_quote": "Dexron® II for transfer case filling, regardless of transmission type, and does not restrict use to arctic conditions",
+          "id": "C003",
+          "text": "In non-arctic service, Dexron® II can be used to fill the transfer case regardless of transmission type."
+        },
+        {
+          "answer_quote": "filled with **3.5 quarts (3.3 L)** for model 218",
+          "id": "C004",
+          "text": "In non-arctic service, on level ground, the stated transfer-case level criterion for model 218 is a fill of 3.5 quarts (3.3 L)."
+        },
+        {
+          "answer_quote": "**3.35 quarts (3.17 L)** for model 242",
+          "id": "C005",
+          "text": "In non-arctic service, on level ground, the stated transfer-case level criterion for model 242 is a fill of 3.35 quarts (3.17 L)."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "Dexron® II **may not** be used. The manual specifies that **only Dexron® III** is allowed for the 4L80-E transmission.",
+            "fulfilled": 1,
+            "id": "M15-A01",
+            "reason": "States both the required fluid and the exclusion of Dexron II."
+          },
+          {
+            "answer_quote": "**Transfer case**: Dexron® II **can** be used.",
+            "fulfilled": 1,
+            "id": "M15-A02",
+            "reason": "States that Dexron II is permitted in the transfer case without asserting it is the only permitted fluid."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M15-A03",
+            "reason": "Gives transfer-case capacities, but not the required distance from the fill opening on level ground."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.6,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C001112"
+              ],
+              "evidence_quotes": [
+                "USAGE: Transmission\n(4L80-E)\nFLUID/LUBRICANT: Dexron\n® III only\n(Do not use Dexron® II)\nCAPACITIES: Dry: 13.5 qt (12.8L)\nDrain & Refill 7.7 qt (7.3 L)\nEXPECTED TEMPERATURE: All Temperatures\nExcept Arctic"
+              ],
+              "reason": "The non-arctic 4L80-E entry specifies Dexron® III only and expressly excludes Dexron® II.",
+              "statement": "In non-arctic service, only Dexron® III is allowed in the 4L80-E transmission; Dexron® II may not be used.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001054"
+              ],
+              "evidence_quotes": [
+                "Use only Dexron®\nIII for 4L80-E transmission. Failure to\nuse only Dexron® III for 4L80E\ntransmission will cause damage to\ntransmission."
+              ],
+              "reason": "The warning says failure to use only Dexron® III will damage the 4L80-E transmission.",
+              "statement": "In non-arctic service, using Dexron® II in the 4L80-E transmission will damage it.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C001063"
+              ],
+              "evidence_quotes": [
+                "• Use Dexron® II for filling transfer\ncase. Failure to use Dexron® II\nwill cause damage to transfer case."
+              ],
+              "reason": "The transfer-case instruction calls for Dexron® II without distinguishing between transmission types.",
+              "statement": "In non-arctic service, Dexron® II can be used to fill the transfer case regardless of transmission type.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source gives that fill quantity, but does not establish it as a level criterion on level ground.",
+              "statement": "In non-arctic service, on level ground, the stated transfer-case level criterion for model 218 is a fill of 3.5 quarts (3.3 L).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The source gives that fill quantity, but does not establish it as a level criterion on level ground.",
+              "statement": "In non-arctic service, on level ground, the stated transfer-case level criterion for model 242 is a fill of 3.35 quarts (3.17 L).",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.6,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C001112"
+              ],
+              "evidence_quotes": [
+                "USAGE: Transmission\n(4L80-E)\nFLUID/LUBRICANT: Dexron\n® III only\n(Do not use Dexron® II)\nCAPACITIES: Dry: 13.5 qt (12.8L)\nDrain & Refill 7.7 qt (7.3 L)\nEXPECTED TEMPERATURE: All Temperatures\nExcept Arctic"
+              ],
+              "reason": "The lubrication table specifies Dexron® III only and expressly excludes Dexron® II outside arctic conditions.",
+              "statement": "In non-arctic service, only Dexron® III is allowed in the 4L80-E transmission; Dexron® II may not be used.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C001112",
+                "O:C001051"
+              ],
+              "evidence_quotes": [
+                "USAGE: Transmission\n(4L80-E)\nFLUID/LUBRICANT: Dexron\n® III only\n(Do not use Dexron® II)\nCAPACITIES: Dry: 13.5 qt (12.8L)\nDrain & Refill 7.7 qt (7.3 L)\nEXPECTED TEMPERATURE: All Temperatures\nExcept Arctic",
+                "Failure to use only Dexron® III for\n4L80E transmission will cause damage\nto transmission."
+              ],
+              "reason": "The manual excludes Dexron® II and warns that failure to use only Dexron® III will damage the transmission.",
+              "statement": "In non-arctic service, using Dexron® II in the 4L80-E transmission will damage it.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000969",
+                "O:C001114",
+                "O:C001115"
+              ],
+              "evidence_quotes": [
+                "Use Dexron® II for filling transfer case.\nFailure to use Dexron® II will cause\ndamage to transfer case.",
+                "USAGE: Transfer (218)\nCase\nFLUID/LUBRICANT: Dexron® II\nor Dexron® III\nCAPACITIES: 3.5 qt (3.3 L)\nEXPECTED TEMPERATURE: All Temperatures",
+                "USAGE: Transfer\nCase       (242)\nFLUID/LUBRICANT: Dexron® II\nor Dexron® III\nCAPACITIES: 3.35 qt (3.17 L)\nEXPECTED TEMPERATURE: All Temperatures"
+              ],
+              "reason": "The transfer-case filling instruction specifies Dexron® II without a transmission-type restriction; both listed transfer-case models also allow it at all temperatures.",
+              "statement": "In non-arctic service, Dexron® II can be used to fill the transfer case regardless of transmission type.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "3.5 qt is a listed capacity, not the level criterion. On level ground, the level should be within 1/2 in. of the fill-plug opening.",
+              "statement": "In non-arctic service, on level ground, the stated transfer-case level criterion for model 218 is a fill of 3.5 quarts (3.3 L).",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "3.35 qt is a listed capacity, not the level criterion. On level ground, the level should be within 1/2 in. of the fill-plug opening.",
+              "statement": "In non-arctic service, on level ground, the stated transfer-case level criterion for model 242 is a fill of 3.35 quarts (3.17 L).",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.8441147114925454,
+          0.810628337431454,
+          0.8396379476653343
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8314603321964446,
+        "query_vector_hash": "c1c513db219d182f6618e6163103de8bae5004adb760030a62b3053757a2a1da",
+        "ragas_score": 0.8314603321964444,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d20f29bff04999b7876554979b8dfbecce17b0826eafb4b7fb91dac8c03a02e5"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8441147114925454,
+          0.810628337431454,
+          0.8396379476653343
+        ],
+        "decimal50_cosines": [
+          "0.84411471149254547681469828717533030451572134162420",
+          "0.81062833743145406791514858438221820191796905421682",
+          "0.83963794766533420094578454008960173647007650868339"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8314603321964444
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8314603321964444
+          }
+        },
+        "query_vector_hash": "c1c513db219d182f6618e6163103de8bae5004adb760030a62b3053757a2a1da",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "In non-arctic service, can Dexron II be used in a 4L80-E transmission and transfer case, and what are the specified transfer-case fill quantities for models 218 and 242 on level ground?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In non-arctic service, can Dexron II be used in a 4L80-E transmission or transfer case, and what are the transfer-case fill quantities for models 218 and 242?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "In non-arctic service, can Dexron II be used in a 4L80-E transmission and its transfer case, and what are the transfer-case fill quantities for models 218 and 242 on level ground?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "d20f29bff04999b7876554979b8dfbecce17b0826eafb4b7fb91dac8c03a02e5",
+        "score": 0.8314603321964446
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "cb3190155e3f844619e86ed0f750b5c0265bc1d8ca68671fdab6aee6ff5f6d2e",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-M15-rag.json",
+  "source_sha256": "e0caab138ac81b287bbf97fe17207b83eccd3632b624346af427b9ed3c3ba420"
+}

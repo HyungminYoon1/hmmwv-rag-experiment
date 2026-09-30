@@ -1,0 +1,353 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "993ca50422c9c7a5da3841d942cc220ac56588c3276a3b794c0a0a8da4a76f84",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-M10-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 40.46264909999991,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8074684300717007
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8074684300717007
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M10",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response compares 8 PSI with a stated idle-pressure range and gives a specific PMCS action."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8061351975361035,
+          0.8061351975361035,
+          0.8101348951428953
+        ],
+        "query_vector_hash": "4555dd70f565340dd744cdcc75f4c941f16a1661ec14d456775d7e72ca6c3c87",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What PMCS action is required for a 6.2L engine with contaminated oil and an idle oil pressure of 8 PSI?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What PMCS action is required for a 6.2L engine with contaminated oil and an idle oil pressure of 8 PSI?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What PMCS action is required when a 6.2L engine has 8 PSI oil pressure at idle and contaminated oil?"
+          }
+        ],
+        "response_vectors_hash": "8150f066649532dae6df196696d11628b89496d790af68b20646ad6a46649d49",
+        "score": 0.8074684300717005
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "The engine is a 6.2L engine idling at 650 RPM with 8 PSI oil pressure and contaminated oil."
+        ],
+        "statements": [
+          {
+            "answer_quote": "the specified range of 10–15 PSI at idle (650 ± 25 RPM)",
+            "statement": "For the 6.2L engine, the specified idle oil-pressure range is 10–15 PSI at 650 ± 25 RPM."
+          },
+          {
+            "answer_quote": "idle oil pressure of 8 PSI is below the specified range",
+            "statement": "For the 6.2L engine idling at 650 RPM with contaminated oil, 8 PSI oil pressure is below the specified idle range."
+          },
+          {
+            "answer_quote": "the PMCS action for inadequate oil pressure—regardless of contamination—is to **replace the engine oil and filter** and verify oil pressure with the engine running",
+            "statement": "For the 6.2L engine with inadequate oil pressure at idle, the PMCS action is to replace the engine oil and filter regardless of whether the oil is contaminated, then verify oil pressure with the engine running."
+          },
+          {
+            "answer_quote": "Contaminated oil reduces lubrication effectiveness",
+            "statement": "For the 6.2L engine with contaminated oil, contamination reduces lubrication effectiveness."
+          },
+          {
+            "answer_quote": "low pressure indicates insufficient protection",
+            "statement": "For the 6.2L engine idling at 650 RPM with 8 PSI oil pressure, the low pressure indicates insufficient engine protection."
+          },
+          {
+            "answer_quote": "necessitating immediate oil replacement to ensure engine protection",
+            "statement": "For the 6.2L engine idling at 650 RPM with 8 PSI oil pressure and contaminated oil, immediate oil replacement is necessary to ensure engine protection."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "the specified range of 10–15 PSI at idle (650 ± 25 RPM)",
+          "id": "C001",
+          "text": "For the 6.2L engine, the specified idle oil-pressure range is 10–15 PSI at 650 ± 25 RPM."
+        },
+        {
+          "answer_quote": "idle oil pressure of 8 PSI is below the specified range",
+          "id": "C002",
+          "text": "For the 6.2L engine idling at 650 RPM with contaminated oil, 8 PSI oil pressure is below the specified idle range."
+        },
+        {
+          "answer_quote": "the PMCS action for inadequate oil pressure—regardless of contamination—is to **replace the engine oil and filter** and verify oil pressure with the engine running",
+          "id": "C003",
+          "text": "For the 6.2L engine with inadequate oil pressure at idle, the PMCS action is to replace the engine oil and filter regardless of whether the oil is contaminated, then verify oil pressure with the engine running."
+        },
+        {
+          "answer_quote": "Contaminated oil reduces lubrication effectiveness",
+          "id": "C004",
+          "text": "For the 6.2L engine with contaminated oil, contamination reduces lubrication effectiveness."
+        },
+        {
+          "answer_quote": "low pressure indicates insufficient protection",
+          "id": "C005",
+          "text": "For the 6.2L engine idling at 650 RPM with 8 PSI oil pressure, the low pressure indicates insufficient engine protection."
+        },
+        {
+          "answer_quote": "necessitating immediate oil replacement to ensure engine protection",
+          "id": "C006",
+          "text": "For the 6.2L engine idling at 650 RPM with 8 PSI oil pressure and contaminated oil, immediate oil replacement is necessary to ensure engine protection."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "10–15 PSI at idle (650 ± 25 RPM)",
+            "fulfilled": 1,
+            "id": "M10-A01",
+            "reason": "Matches the 6.2L idle lubrication chart."
+          },
+          {
+            "answer_quote": "8 PSI is below the specified range of 10–15 PSI at idle (650 ± 25 RPM)",
+            "fulfilled": 1,
+            "id": "M10-A02",
+            "reason": "8 psi is below the chart’s 10–15 psi range."
+          },
+          {
+            "answer_quote": "Even though the oil is contaminated, the PMCS action for inadequate oil pressure—regardless of contamination—is to **replace the engine oil and filter**",
+            "fulfilled": 1,
+            "id": "M10-A03",
+            "reason": "Despite misattributing the PMCS trigger to low pressure, the answer calls for replacing both oil and filter when contamination is known."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.3333333333333333,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002420"
+              ],
+              "evidence_quotes": [
+                "ENGINE RPM: 6.2L IDLE (650 ± 25)\nAPPROXIMATE OIL PRESSURE: 10-15 PSI"
+              ],
+              "reason": "The lubrication chart gives this idle RPM and approximate oil-pressure range for the 6.2L engine.",
+              "statement": "For the 6.2L engine, the specified idle oil-pressure range is 10–15 PSI at 650 ± 25 RPM.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002420"
+              ],
+              "evidence_quotes": [
+                "ENGINE RPM: 6.2L IDLE (650 ± 25)\nAPPROXIMATE OIL PRESSURE: 10-15 PSI"
+              ],
+              "reason": "At the stated idle speed, 8 PSI is below the chart’s 10–15 PSI range; contamination does not change this comparison.",
+              "statement": "For the 6.2L engine idling at 650 RPM with contaminated oil, 8 PSI oil pressure is below the specified idle range.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied passage states this PMCS action or says it applies regardless of contamination.",
+              "statement": "For the 6.2L engine with inadequate oil pressure at idle, the PMCS action is to replace the engine oil and filter regardless of whether the oil is contaminated, then verify oil pressure with the engine running.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied passage describes the effect of oil contamination.",
+              "statement": "For the 6.2L engine with contaminated oil, contamination reduces lubrication effectiveness.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The sources address the pressure range and proper lubrication, but do not establish the claimed level of engine protection.",
+              "statement": "For the 6.2L engine idling at 650 RPM with 8 PSI oil pressure, the low pressure indicates insufficient engine protection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No supplied passage requires immediate oil replacement or states that it ensures engine protection.",
+              "statement": "For the 6.2L engine idling at 650 RPM with 8 PSI oil pressure and contaminated oil, immediate oil replacement is necessary to ensure engine protection.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.3333333333333333,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002420"
+              ],
+              "evidence_quotes": [
+                "ENGINE RPM: 6.2L IDLE (650 ± 25)\nAPPROXIMATE OIL PRESSURE: 10-15 PSI"
+              ],
+              "reason": "The lubrication reference gives this idle speed and approximate pressure range.",
+              "statement": "For the 6.2L engine, the specified idle oil-pressure range is 10–15 PSI at 650 ± 25 RPM.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002420"
+              ],
+              "evidence_quotes": [
+                "ENGINE RPM: 6.2L IDLE (650 ± 25)\nAPPROXIMATE OIL PRESSURE: 10-15 PSI"
+              ],
+              "reason": "Under the shared operating conditions, 8 PSI is below the reference range of 10–15 PSI.",
+              "statement": "For the 6.2L engine idling at 650 RPM with contaminated oil, 8 PSI oil pressure is below the specified idle range.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The PMCS note calls for an oil and filter change when contamination is known; it does not establish this action regardless of contamination or require the stated verification.",
+              "statement": "For the 6.2L engine with inadequate oil pressure at idle, the PMCS action is to replace the engine oil and filter regardless of whether the oil is contaminated, then verify oil pressure with the engine running.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied passages do not state this effect of contamination.",
+              "statement": "For the 6.2L engine with contaminated oil, contamination reduces lubrication effectiveness.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The chart supports that 8 PSI is below its approximate range, but does not state what that indicates about engine protection.",
+              "statement": "For the 6.2L engine idling at 650 RPM with 8 PSI oil pressure, the low pressure indicates insufficient engine protection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The PMCS note calls for changing known contaminated oil and its filter, but does not specify immediacy or the claimed engine-protection rationale.",
+              "statement": "For the 6.2L engine idling at 650 RPM with 8 PSI oil pressure and contaminated oil, immediate oil replacement is necessary to ensure engine protection.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.8061351975361035,
+          0.8061351975361035,
+          0.8101348951428953
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8074684300717007,
+        "query_vector_hash": "4555dd70f565340dd744cdcc75f4c941f16a1661ec14d456775d7e72ca6c3c87",
+        "ragas_score": 0.8074684300717005,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "8150f066649532dae6df196696d11628b89496d790af68b20646ad6a46649d49"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8061351975361035,
+          0.8061351975361035,
+          0.8101348951428953
+        ],
+        "decimal50_cosines": [
+          "0.80613519753610340322096072708400735024513628025896",
+          "0.80613519753610340322096072708400735024513628025896",
+          "0.81013489514289525933692367347499783267884096066847"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8074684300717005
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8074684300717005
+          }
+        },
+        "query_vector_hash": "4555dd70f565340dd744cdcc75f4c941f16a1661ec14d456775d7e72ca6c3c87",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What PMCS action is required for a 6.2L engine with contaminated oil and an idle oil pressure of 8 PSI?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What PMCS action is required for a 6.2L engine with contaminated oil and an idle oil pressure of 8 PSI?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What PMCS action is required when a 6.2L engine has 8 PSI oil pressure at idle and contaminated oil?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "8150f066649532dae6df196696d11628b89496d790af68b20646ad6a46649d49",
+        "score": 0.8074684300717007
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "bbfeb39b6bfaa5f5d6dd0fe4586f06d1c70be209892bdead0c378c8be49706d2",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-M10-rag.json",
+  "source_sha256": "c3f0d96ccf99c0e8920c5d04c68755e41bd3c7a2c24f8b1b13fa3c206b6c8c8d"
+}

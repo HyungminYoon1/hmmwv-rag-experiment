@@ -1,5 +1,5 @@
 """Resolve declared publication derivatives without rewriting research inventories."""
-from artifact_io import read, safe_path
+from artifact_io import read, safe_path, sha
 
 
 def publication_records(root, scope):
@@ -65,6 +65,42 @@ def publication_records(root, scope):
             records.extend(expected)
     if len({r['path'] for r in all_destinations}) != len(all_destinations):
         raise ValueError('Duplicate publication destination')
+    correction = manifest.get('correction_release')
+    if correction:
+        inventory = safe_path(root, correction['inventory'])
+        if sha(inventory) != correction['inventory_sha256']:
+            raise ValueError('Correction inventory checksum differs')
+        data = read(inventory)
+        if data['release_tag'] != manifest['release_tag']:
+            raise ValueError('Correction release version differs')
+        # Existing research/publication records cannot be silently replaced.
+        baseline = {r['path']: r for r in all_destinations}
+        listed = {r['path']: r for r in records}
+        additional = data['files']
+        if len({r['path'] for r in additional}) != len(additional):
+            raise ValueError('Duplicate correction file')
+        for row in additional:
+            safe_path(root, row['path'])
+            if row['path'] in baseline and baseline[row['path']] != row:
+                raise ValueError('Correction overwrites a preserved record')
+            if row['path'] not in listed:
+                records.append(row)
+                listed[row['path']] = row
+        bundle_ids = set(original_bundles)
+        destinations = set(baseline) | set(listed)
+        for bundle in manifest.get('supplemental_bundles', []):
+            if bundle['id'] in bundle_ids:
+                raise ValueError('Duplicate supplemental bundle')
+            bundle_ids.add(bundle['id'])
+            for row in bundle['files']:
+                safe_path(root, row['path'])
+                if row['path'] in destinations:
+                    raise ValueError('Supplemental destination conflicts')
+                destinations.add(row['path'])
+                if scope == 'all':
+                    records.append(row)
+    elif manifest.get('supplemental_bundles'):
+        raise ValueError('Supplemental data has no correction inventory')
     return records, {'publication_revision': ledger['publication_revision'],
                      'declared_changes_or_relocations': len(changes),
                      'excluded_empty_logs': len(exclusions),

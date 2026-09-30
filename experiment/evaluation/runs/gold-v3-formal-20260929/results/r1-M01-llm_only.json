@@ -1,0 +1,238 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "d5b8c77b24ebeeda133c3526ea6883bfcbb8a767b18e592d4675d961003260eb",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-M01-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 16.59570470000017,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8937964912201987
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.8937964912201987
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.5
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.5
+      }
+    },
+    "question_id": "M01",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives both numerical limits and directly assesses whether each reading meets its limit."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.8923621019677399,
+          0.8966652795024961,
+          0.8923620921903598
+        ],
+        "query_vector_hash": "ec1b25c73085a0724d6723cb92759e2c8536ca5e70e4c8724bd0686e0b6462c7",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do a cranking voltage of 17 V and an STE/ICE-R Test 73 reading of 30 milliohms meet their stated limits?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do a cranking voltage of 17 V and an STE/ICE-R Test 73 reading of 30 milliohms meet their respective stated limits?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do a cranking voltage of 17 V and an STE/ICE-R Test 73 reading of 30 milliohms meet their stated limits?"
+          }
+        ],
+        "response_vectors_hash": "d07af51b147a3d9fcd219d97a11e04a5b8ec71be7b486bae016518cc4822b29c",
+        "score": 0.8937964912201987
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "During starter and battery checks"
+        ],
+        "statements": [
+          {
+            "answer_quote": "Cranking voltage of 17 V meets the stated limit of 16 V or higher",
+            "statement": "During starter and battery checks, a cranking voltage of 17 V meets the stated limit of 16 V or higher."
+          },
+          {
+            "answer_quote": "STE/ICE-R Test 73 reading of 30 milliohms exceeds the stated limit of 25 milliohms",
+            "statement": "During starter and battery checks, a STE/ICE-R Test 73 reading of 30 milliohms exceeds the stated limit of 25 milliohms and therefore does not meet it."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "Cranking voltage of 17 V meets the stated limit of 16 V or higher",
+          "id": "C001",
+          "text": "During starter and battery checks, a cranking voltage of 17 V meets the stated limit of 16 V or higher."
+        },
+        {
+          "answer_quote": "STE/ICE-R Test 73 reading of 30 milliohms exceeds the stated limit of 25 milliohms",
+          "id": "C002",
+          "text": "During starter and battery checks, a STE/ICE-R Test 73 reading of 30 milliohms exceeds the stated limit of 25 milliohms and therefore does not meet it."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M01-A01",
+            "reason": "The response gives 16 V, but the stated minimum is 18 V."
+          },
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M01-A02",
+            "reason": "The response says 17 V meets the limit; it is below 18 V."
+          },
+          {
+            "answer_quote": "stated limit of 25 milliohms",
+            "fulfilled": 1,
+            "id": "M01-A03",
+            "reason": "Correctly gives the Test 73 resistance limit."
+          },
+          {
+            "answer_quote": "STE/ICE-R Test 73 reading of 30 milliohms exceeds the stated limit of 25 milliohms",
+            "fulfilled": 1,
+            "id": "M01-A04",
+            "reason": "Correctly says 30 milliohms exceeds the limit."
+          }
+        ]
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.5,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C003174"
+              ],
+              "evidence_quotes": [
+                "CHECK BATTERY VOLTAGE WHILE\nTRYING TO CRANK THE ENGINE. IS\nTHE BATTERY VOLTAGE AT LEAST\n18 VOLTS?"
+              ],
+              "reason": "The supplied starter-circuit check specifies at least 18 V while trying to crank, not 16 V. A reading of 17 V does not meet that limit.",
+              "statement": "During starter and battery checks, a cranking voltage of 17 V meets the stated limit of 16 V or higher.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C003141"
+              ],
+              "evidence_quotes": [
+                "BATTERY INTERNAL RESISTANCE\nSTE/ICE-R TEST 73\n1. Disconnect wire 54A at injection pump to\nprevent starting.\n2. Disconnect glowplug controller and fan\nsolenoid (to keep waveform clean).\n3. Start Test 73, battery internal resistance.\n4. Wait for the GO message. Crank the\nengine.\n5. Result is displayed in milliohms. Battery\nresistance should be 25 milliohms max."
+              ],
+              "reason": "The Test 73 battery-resistance maximum is 25 milliohms; 30 milliohms exceeds it.",
+              "statement": "During starter and battery checks, a STE/ICE-R Test 73 reading of 30 milliohms exceeds the stated limit of 25 milliohms and therefore does not meet it.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 0.0,
+        "cosine_similarities": [
+          0.8923621019677399,
+          0.8966652795024961,
+          0.8923620921903598
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.8937964912201987,
+        "query_vector_hash": "ec1b25c73085a0724d6723cb92759e2c8536ca5e70e4c8724bd0686e0b6462c7",
+        "ragas_score": 0.8937964912201987,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "d07af51b147a3d9fcd219d97a11e04a5b8ec71be7b486bae016518cc4822b29c"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.8923621019677399,
+          0.8966652795024961,
+          0.8923620921903598
+        ],
+        "decimal50_cosines": [
+          "0.89236210196773999508574855359447591062271426158172",
+          "0.89666527950249618489763065452754138082630460498543",
+          "0.89236209219035986977693273956572250150618885617337"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 1.1102230246251565e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.8937964912201987
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.8937964912201987
+          }
+        },
+        "query_vector_hash": "ec1b25c73085a0724d6723cb92759e2c8536ca5e70e4c8724bd0686e0b6462c7",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Do a cranking voltage of 17 V and an STE/ICE-R Test 73 reading of 30 milliohms meet their stated limits?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do a cranking voltage of 17 V and an STE/ICE-R Test 73 reading of 30 milliohms meet their respective stated limits?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Do a cranking voltage of 17 V and an STE/ICE-R Test 73 reading of 30 milliohms meet their stated limits?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "d07af51b147a3d9fcd219d97a11e04a5b8ec71be7b486bae016518cc4822b29c",
+        "score": 0.8937964912201987
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "b9b0d67dcd13c56d59f9209c06b20dc1d12118fe4eec0390d3392fc62c8d8c19",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-M01-llm_only.json",
+  "source_sha256": "41bc170d76ff6e8ad5cee530c38fb0ceed69ea8f03523d40c5fb002a167330ff"
+}

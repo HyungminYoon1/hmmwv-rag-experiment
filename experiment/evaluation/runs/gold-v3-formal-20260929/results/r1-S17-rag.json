@@ -1,0 +1,260 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "440a22153e3e69d43e9b64234cf0aa19ab90488bb5e4f29489592bdf33329e34",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-S17-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 22.837729699998818,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9274109558453136
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9274109558453136
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 0.3333333333333333
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.0
+      }
+    },
+    "question_id": "S17",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly identifies the fuel system and gives technical explanations for black exhaust smoke."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9259619886918039,
+          0.9303088841321993,
+          0.9259619947119377
+        ],
+        "query_vector_hash": "054c9763c2607ed081dee116cd4e21497b4ce9912bc02057ba4cc300f1c89e2f",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What should be checked when exhaust smoke is black, and what might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What should be checked when the exhaust smoke is black, and what might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What should be checked when exhaust smoke is black, and what might cause it?"
+          }
+        ],
+        "response_vectors_hash": "7fba58e8e442660af6152560c39d233efcdcf435ed735a052c6e57c3700487ad",
+        "score": 0.9274109558453141
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "When the exhaust smoke is black"
+        ],
+        "statements": [
+          {
+            "answer_quote": "When the exhaust smoke is black, the fuel system should be checked",
+            "statement": "When the exhaust smoke is black, the fuel system should be checked."
+          },
+          {
+            "answer_quote": "specifically for too much fuel or too little air",
+            "statement": "When the exhaust smoke is black, the fuel system should be checked for too much fuel or too little air."
+          },
+          {
+            "answer_quote": "too much fuel or too little air, often caused by advanced injection timing",
+            "statement": "When the exhaust smoke is black, advanced injection timing often causes the cited too-much-fuel or too-little-air condition."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "When the exhaust smoke is black, the fuel system should be checked",
+          "id": "C001",
+          "text": "When the exhaust smoke is black, the fuel system should be checked."
+        },
+        {
+          "answer_quote": "specifically for too much fuel or too little air",
+          "id": "C002",
+          "text": "When the exhaust smoke is black, the fuel system should be checked for too much fuel or too little air."
+        },
+        {
+          "answer_quote": "too much fuel or too little air, often caused by advanced injection timing",
+          "id": "C003",
+          "text": "When the exhaust smoke is black, advanced injection timing often causes the cited too-much-fuel or too-little-air condition."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "S17-A01",
+            "reason": "The response says to check the fuel system, not the air intake/exhaust system. Mentioning too little air does not identify the required system to check."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.3333333333333333,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The sources describe causes of black smoke but do not direct a fuel-system check for it.",
+              "statement": "When the exhaust smoke is black, the fuel system should be checked.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The stated causes are supported, but a fuel-system check for black smoke is not specified.",
+              "statement": "When the exhaust smoke is black, the fuel system should be checked for too much fuel or too little air.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C001357"
+              ],
+              "evidence_quotes": [
+                "BLACK smoke is too much fuel or too little air. (Often\ncaused by advanced injection timing)."
+              ],
+              "reason": "The passage explicitly links black smoke and that condition to advanced injection timing.",
+              "statement": "When the exhaust smoke is black, advanced injection timing often causes the cited too-much-fuel or too-little-air condition.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The supplied passages direct black smoke to intake/exhaust, not to a fuel-system check.",
+              "statement": "When the exhaust smoke is black, the fuel system should be checked.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passages do not state that a fuel-system check is needed or identify too much fuel or too little air.",
+              "statement": "When the exhaust smoke is black, the fuel system should be checked for too much fuel or too little air.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The passages do not mention injection timing or the cited condition.",
+              "statement": "When the exhaust smoke is black, advanced injection timing often causes the cited too-much-fuel or too-little-air condition.",
+              "verdict": 0
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 4.440892098500626e-16,
+        "cosine_similarities": [
+          0.9259619886918039,
+          0.9303088841321993,
+          0.9259619947119377
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9274109558453136,
+        "query_vector_hash": "054c9763c2607ed081dee116cd4e21497b4ce9912bc02057ba4cc300f1c89e2f",
+        "ragas_score": 0.9274109558453141,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "7fba58e8e442660af6152560c39d233efcdcf435ed735a052c6e57c3700487ad"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9259619886918039,
+          0.9303088841321993,
+          0.9259619947119377
+        ],
+        "decimal50_cosines": [
+          "0.92596198869180391753826176118976354800495732395207",
+          "0.93030888413219941841561882161207418735077973912910",
+          "0.92596199471193752807041210229801431336870720831944"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9274109558453141
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9274109558453141
+          }
+        },
+        "query_vector_hash": "054c9763c2607ed081dee116cd4e21497b4ce9912bc02057ba4cc300f1c89e2f",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What should be checked when exhaust smoke is black, and what might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What should be checked when the exhaust smoke is black, and what might cause it?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What should be checked when exhaust smoke is black, and what might cause it?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "7fba58e8e442660af6152560c39d233efcdcf435ed735a052c6e57c3700487ad",
+        "score": 0.9274109558453136
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "24f8162f3e4e4e10c4ea6d738e54cf2d262786bc276bad812e32a40e3921f1eb",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-S17-rag.json",
+  "source_sha256": "d759a675745cde123cacc2fdf9eafc050ffa4692c1cdfe6eb98203de7b93e9f5"
+}

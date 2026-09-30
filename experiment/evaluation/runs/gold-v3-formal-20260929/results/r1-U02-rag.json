@@ -1,0 +1,283 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "a8694bd7e6fefe6106442ff568b0dcf7019b546300b629820d339263db8b5ced",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-U02-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 61.82241260000046,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U02",
+    "stages": {
+      "abstention": {
+        "answer_quote": "To remove a failed protective control box and install a replacement, follow these steps:",
+        "explicitly_withholds_missing": false,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002990"
+              ],
+              "evidence_quotes": [
+                "Disconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box or distribution box harness."
+              ],
+              "reason": "The warning gives this precaution for the protective control box harness.",
+              "statement": "Disconnect the negative battery cable before disconnecting the protective control box harness.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002990"
+              ],
+              "evidence_quotes": [
+                "Failure\nto do so may result in injury to\npersonnel or damage to equipment."
+              ],
+              "reason": "The same harness warning states this consequence.",
+              "statement": "Failure to do so may result in injury to personnel or damage to equipment .",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The sources refer replacement to paragraph 4-5 but do not give this removal step.",
+              "statement": "Remove the protective control box from the vehicle, following the procedures outlined in paragraph 4-5 of the manual .",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "Replacement is referenced, but an installation step is not supplied.",
+              "statement": "Install the replacement protective control box",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No alignment instruction is supplied.",
+              "statement": "ensuring proper alignment",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No installation instruction specifying a secure connection is supplied.",
+              "statement": "secure connection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The warning addresses harness reconnection, but does not establish this step in the stated installation sequence.",
+              "statement": "Reconnect the protective control box harness.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No final battery-cable reconnection step is supplied.",
+              "statement": "Reconnect the negative battery cable.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C002948"
+              ],
+              "evidence_quotes": [
+                "Replace distribution box, refer to (para.\n4-5.1)."
+              ],
+              "reason": "The distribution box has its own paragraph reference.",
+              "statement": "The manual specifies that replacement of the distribution box is covered in paragraph 4-5.1",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002948"
+              ],
+              "evidence_quotes": [
+                "Replace protective control box, refer to\n(para. 4-5).\nReplace distribution box, refer to (para.\n4-5.1)."
+              ],
+              "reason": "The sources distinguish the distribution-box reference from the protective-control-box reference.",
+              "statement": "but this does not apply to the protective control box itself.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C002948"
+              ],
+              "evidence_quotes": [
+                "Replace protective control box, refer to\n(para. 4-5)."
+              ],
+              "reason": "The source directs protective control box replacement to paragraph 4-5.",
+              "statement": "The procedure for the protective control box is detailed in paragraph 4-5.",
+              "verdict": 1
+            }
+          ]
+        },
+        "partial_claims": [
+          "Disconnect the negative battery cable before disconnecting the protective control box harness.",
+          "Failure to do so may result in injury to personnel or damage to equipment .",
+          "Remove the protective control box from the vehicle, following the procedures outlined in paragraph 4-5 of the manual .",
+          "Install the replacement protective control box",
+          "ensuring proper alignment",
+          "secure connection.",
+          "Reconnect the protective control box harness.",
+          "Reconnect the negative battery cable.",
+          "The manual specifies that replacement of the distribution box is covered in paragraph 4-5.1",
+          "but this does not apply to the protective control box itself.",
+          "The procedure for the protective control box is detailed in paragraph 4-5."
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer does not withhold the missing complete procedure: it presents removal, installation and reassembly as ordered steps. The supplied material supports the harness warning and paragraph references, not those replacement steps.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002990"
+              ],
+              "evidence_quotes": [
+                "Disconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box or distribution box harness."
+              ],
+              "reason": "The retrieved warning gives this precaution for the protective control box harness.",
+              "statement": "Disconnect the negative battery cable before disconnecting the protective control box harness.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002990"
+              ],
+              "evidence_quotes": [
+                "Failure\nto do so may result in injury to\npersonnel or damage to equipment."
+              ],
+              "reason": "The retrieved harness warning states this consequence.",
+              "statement": "Failure to do so may result in injury to personnel or damage to equipment .",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved context refers replacement to paragraph 4-5 but supplies no removal step.",
+              "statement": "Remove the protective control box from the vehicle, following the procedures outlined in paragraph 4-5 of the manual .",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No installation step is retrieved.",
+              "statement": "Install the replacement protective control box",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No alignment instruction is retrieved.",
+              "statement": "ensuring proper alignment",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No installation instruction specifying a secure connection is retrieved.",
+              "statement": "secure connection.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "A warning mentions harness reconnection, not this step in the stated installation sequence.",
+              "statement": "Reconnect the protective control box harness.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No final battery-cable reconnection step is retrieved.",
+              "statement": "Reconnect the negative battery cable.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C002971"
+              ],
+              "evidence_quotes": [
+                "Replace distribution box, refer to\n(para. 4-5.1)."
+              ],
+              "reason": "The retrieved reference assigns paragraph 4-5.1 to the distribution box.",
+              "statement": "The manual specifies that replacement of the distribution box is covered in paragraph 4-5.1",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002971"
+              ],
+              "evidence_quotes": [
+                "Replace protective control box, refer\nto (para. 4-5).\nReplace distribution box, refer to\n(para. 4-5.1)."
+              ],
+              "reason": "The retrieved references assign the two components different paragraphs; the distribution-box procedure is not the requested component's procedure.",
+              "statement": "but this does not apply to the protective control box itself.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C002971"
+              ],
+              "evidence_quotes": [
+                "Replace protective control box, refer\nto (para. 4-5)."
+              ],
+              "reason": "The retrieved source directs protective control box replacement to paragraph 4-5.",
+              "statement": "The procedure for the protective control box is detailed in paragraph 4-5.",
+              "verdict": 1
+            }
+          ]
+        },
+        "supplies_missing_as_fact": true,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 11,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 0,
+        "withholding_only": 0
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "66b48d1004e40f8bba6284d3ee1ea595372740cf93416884687ef89c83a5e74d",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-U02-rag.json",
+  "source_sha256": "fc21a0ece1c2b3449e7d91e84d5d5ddd2ba09b5870c5bb9c40bd02585a2a9a05"
+}

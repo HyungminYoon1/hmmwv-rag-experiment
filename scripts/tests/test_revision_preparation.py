@@ -23,8 +23,8 @@ class RevisionPreparationTest(unittest.TestCase):
                 for path in source.iterdir():
                     if path.is_file() and path.suffix in ('.py', '.json', '.txt'):
                         shutil.copy2(path, target / path.name)
-            for directory in ('experiment/gold-v1', 'experiment/gold-v2', 'experiment/evaluation/profiles'):
-                shutil.copytree(ROOT / directory, fixture / directory)
+            for directory in ('experiment/gold-v1', 'experiment/gold-v2', 'experiment/gold-v3', 'experiment/evaluation/profiles'):
+                shutil.copytree(ROOT / directory, fixture / directory, ignore=shutil.ignore_patterns('pdf-pages'))
             decision = Path('experiment/revisions/20260929-v2/DECISIONS.md')
             (fixture / decision).parent.mkdir(parents=True)
             shutil.copy2(ROOT / decision, fixture / decision)
@@ -53,6 +53,10 @@ class RevisionPreparationTest(unittest.TestCase):
             destination = fixture / 'experiment/evaluation/runs/fixture-revised'
             result = json.loads((destination / 'manifest.json').read_text(encoding='utf-8'))
             self.assertEqual(result['source_run'], 'fixture-generation')
+            self.assertEqual(result['gold_version'], 'gold-v3')
+            packet = json.loads((destination / 'inputs.json').read_text(encoding='utf-8'))
+            s16 = next(r for r in packet['rows'] if r['question_id'] == 'S16')
+            self.assertEqual([e['id'] for e in s16['required_elements']], ['S16-A01'])
             self.assertTrue(any('runs/fixture-generation/attempts/' in path
                                 for path in result['identity']['source_hashes']))
             self.assertFalse(any('runs/formal-v1/' in path for path in result['identity']['source_hashes']))
@@ -60,6 +64,12 @@ class RevisionPreparationTest(unittest.TestCase):
             self.assertEqual(verified.returncode, 0, verified.stdout + verified.stderr)
             self.assertFalse((destination / 'calls').exists())
             self.assertFalse((destination / 'results').exists())
+
+            historical = command(str(helper), '--id', 'fixture-gold-v2', '--source-evaluation', PARENT, '--gold-version', 'gold-v2')
+            self.assertEqual(historical.returncode, 0, historical.stdout + historical.stderr)
+            old_packet = json.loads((fixture / 'experiment/evaluation/runs/fixture-gold-v2/inputs.json').read_text(encoding='utf-8'))
+            old_s16 = next(r for r in old_packet['rows'] if r['question_id'] == 'S16')
+            self.assertEqual(len(old_s16['required_elements']), 2)
 
             parent_inputs = json.loads((parent / 'inputs.json').read_text(encoding='utf-8'))
             parent_inputs['rows'][0]['response'] += '\nDifferent answer fixture.'

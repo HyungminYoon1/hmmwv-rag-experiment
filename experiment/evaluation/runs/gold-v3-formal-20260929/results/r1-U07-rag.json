@@ -1,0 +1,101 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "95097e42fece1cd2edafbead77207abf189fc3891e59a85f58db624abef40ed5",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-U07-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 13.114808000000266,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "OK",
+        "value": 1
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U07",
+    "stages": {
+      "abstention": {
+        "answer_quote": "Therefore, based on the available excerpts, the full removal and installation procedure cannot be described.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002991"
+              ],
+              "evidence_quotes": [
+                "Replace glowplug controller. refer to (para. 4-29)."
+              ],
+              "reason": "The reference directs replacement and points to paragraph 4-29, without giving the complete procedure.",
+              "statement": "the glowplug controller should be replaced",
+              "verdict": 1
+            }
+          ]
+        },
+        "partial_claims": [
+          "the glowplug controller should be replaced"
+        ],
+        "partial_within_allowed": true,
+        "reason": "The answer explicitly withholds the complete removal and installation procedure. Its only substantive technical assertion is the supported replacement direction; it gives no invented steps. Statements about what the supplied excerpts contain are input-scope metadata, not technical claims.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C004010"
+              ],
+              "evidence_quotes": [
+                "Replace glowplug controller, refer to\n(para. 4-29)."
+              ],
+              "reason": "The retrieved reference directs replacement and points to paragraph 4-29, without giving the complete procedure.",
+              "statement": "the glowplug controller should be replaced",
+              "verdict": 1
+            }
+          ]
+        },
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 1,
+        "partial_supported_by_oracle": true,
+        "partial_supported_by_retrieved": true,
+        "value": 1,
+        "withholding_only": 1
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "affe897f793b59768d3a44640770ab11735de7dc16b8ef061674148073003a31",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-U07-rag.json",
+  "source_sha256": "c2131953fd33031bd9fef9af4df757225dbc9c500a94cbf8ab4773288ef4bc9f"
+}

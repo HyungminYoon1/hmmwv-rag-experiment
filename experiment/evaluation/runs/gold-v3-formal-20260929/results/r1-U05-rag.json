@@ -1,0 +1,116 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "6d93104f3d3a9f468d40abea9c5bfbaed4be3e77f503ac969ad24fcabaf11c3b",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-U05-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 33.03388610000002,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U05",
+    "stages": {
+      "abstention": {
+        "answer_quote": "Therefore, based on the available excerpts, this specific procedure cannot be fully answered.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle does not establish this for alternator work.",
+              "statement": "Disconnecting the negative cable is mentioned in the context of alternator maintenance.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C002990"
+              ],
+              "evidence_quotes": [
+                "Disconnect negative battery cable before\ndisconnecting and reconnecting protective\ncontrol box or distribution box harness."
+              ],
+              "reason": "The warning applies specifically before protective control box or distribution box harness work, not to battery replacement.",
+              "statement": "Disconnecting the negative cable is mentioned in the context of control box maintenance.",
+              "verdict": 1
+            }
+          ]
+        },
+        "partial_claims": [
+          "Disconnecting the negative cable is mentioned in the context of alternator maintenance.",
+          "Disconnecting the negative cable is mentioned in the context of control box maintenance."
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer withholds the complete sequence and does not invent its steps. Its partial assertion is outside the declared scope because it omits the specific harness-work condition on the control-box cable instruction and also invokes an alternator procedure.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The alternator procedures say ground cable, not negative cable; they are not battery-replacement steps.",
+              "statement": "Disconnecting the negative cable is mentioned in the context of alternator maintenance.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C003672"
+              ],
+              "evidence_quotes": [
+                "Disconnect the negative battery cable. Disconnect the PCB\nconnector harness from the PCB."
+              ],
+              "reason": "The retrieved PCB procedure explicitly disconnects the negative cable before PCB connector-harness work.",
+              "statement": "Disconnecting the negative cable is mentioned in the context of control box maintenance.",
+              "verdict": 1
+            }
+          ]
+        },
+        "supplies_missing_as_fact": false,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 2,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 0,
+        "withholding_only": 1
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "45618dcd9eec2ea3be1b3545757e167f56661cd26c4ec1e630ef4130a0708c7c",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-U05-rag.json",
+  "source_sha256": "18dbc71d70d8c147717c7811be30de6fdf1c7b2e04bf9b08ef75871bb7f2c5a1"
+}

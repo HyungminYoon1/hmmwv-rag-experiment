@@ -95,6 +95,49 @@ class PublicationTests(unittest.TestCase):
         self.write('artifacts/publication-changes.json', self.ledger)
         self.assertEqual(verify(self.root, 'all')['status'], 'FAIL')
 
+    def correction_inventory(self, files):
+        name = 'artifacts/correction-files.json'
+        self.write(name, {'release_tag': 'test-correction', 'files': files})
+        manifest = json.loads((self.root/'artifacts/manifest.json').read_text())
+        manifest.update(release_tag='test-correction', correction_release={
+            'inventory': name, 'inventory_sha256': hashlib.sha256((self.root/name).read_bytes()).hexdigest()})
+        self.write('artifacts/manifest.json', manifest)
+        return manifest
+
+    def test_correction_cannot_redeclare_changed_original(self):
+        row = json.loads((self.root/'artifacts/original-files.json').read_text())['files'][1]
+        row['sha256'] = '0'*64
+        self.correction_inventory([row])
+        self.assertEqual(verify(self.root, 'core')['status'], 'FAIL')
+
+    def test_correction_inventory_is_hash_checked(self):
+        self.correction_inventory([])
+        self.write('artifacts/correction-files.json', {'release_tag': 'test-correction', 'files': [1]})
+        self.assertEqual(verify(self.root, 'core')['status'], 'FAIL')
+
+    def test_new_record_tampering_and_optional_capture(self):
+        self.write('experiment/corrected.json', {'score': .78})
+        def record(name):
+            data = (self.root/name).read_bytes()
+            return {'path': name, 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()}
+        manifest = self.correction_inventory([record('experiment/corrected.json')])
+        self.write('review/capture.json', {'page': 153})
+        manifest['supplemental_bundles'] = [{'id': 'correction-evidence', 'files': [record('review/capture.json')]}]
+        self.write('artifacts/manifest.json', manifest)
+        self.assertEqual(verify(self.root, 'all')['status'], 'PASS')
+        (self.root/'review/capture.json').unlink()
+        self.assertEqual(verify(self.root, 'core')['status'], 'PASS')
+        self.assertEqual(verify(self.root, 'all')['status'], 'FAIL')
+        self.write('experiment/corrected.json', {'score': 1.0})
+        self.assertEqual(verify(self.root, 'core')['status'], 'FAIL')
+
+    def test_supplement_cannot_shadow_preserved_record(self):
+        manifest = self.correction_inventory([])
+        record = json.loads((self.root/'artifacts/original-files.json').read_text())['files'][1]
+        manifest['supplemental_bundles'] = [{'id': 'correction-evidence', 'files': [record]}]
+        self.write('artifacts/manifest.json', manifest)
+        self.assertEqual(verify(self.root, 'all')['status'], 'FAIL')
+
 
 if __name__ == '__main__':
     unittest.main()

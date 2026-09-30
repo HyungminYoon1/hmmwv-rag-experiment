@@ -1,0 +1,243 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "86394eb4114233932c92947475405c0c8d9e59989c2fd1d64d17c71d4df28b3c",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-U04-llm_only",
+    "condition": "LLM_ONLY",
+    "errors": {},
+    "evaluation_elapsed_seconds": 46.27775870000005,
+    "metrics": {
+      "ar_raw": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "ar_report": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "full_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "oracle_support": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "required_coverage": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      }
+    },
+    "question_id": "U04",
+    "stages": {
+      "abstention": {
+        "answer_quote": "As a result, I cannot provide accurate or detailed steps based on the manual.",
+        "explicitly_withholds_missing": true,
+        "oracle_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle does not identify the vehicle model.",
+              "statement": "the rotary switch on an HMMWV (M998-series)",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "An electrical reference mentions the switch, but the oracle does not support the claim about where it is typically located, including radio equipment.",
+              "statement": "the rotary switch (typically part of the electrical system or radio equipment)",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle refers replacement to paragraph 4-7; it supplies no power-down step.",
+              "statement": "Powering down the vehicle and ensuring the system is de-energized.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No rotary-switch battery-disconnection step or stated rationale is supplied.",
+              "statement": "Disconnecting the battery to prevent electrical shock or damage.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No rotary-switch cover or panel removal step is supplied.",
+              "statement": "Removing the cover or panel housing the rotary switch.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No rotary-switch fastener-removal step is supplied.",
+              "statement": "Unscrewing or releasing the mounting screws or fasteners securing the switch.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle directs replacement to paragraph 4-7 but gives no housing-removal step.",
+              "statement": "Carefully removing the switch from its housing.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No rotary-switch alignment or installation-fastener step is supplied.",
+              "statement": "Installing the new switch by aligning it with the mounting holes and securing it with the appropriate fasteners.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The oracle's troubleshooting instruction to reconnect disconnected wires does not establish this rotary-switch installation step or its polarity requirement.",
+              "statement": "Reconnecting any wiring harnesses or connectors, ensuring proper polarity and secure connections.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No rotary-switch cover or panel installation step is supplied.",
+              "statement": "Reinstalling the cover or panel.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "No rotary-switch battery-reconnection or system-check step is supplied.",
+              "statement": "Reconnecting the battery and performing a system check.",
+              "verdict": 0
+            }
+          ]
+        },
+        "partial_claims": [
+          "the rotary switch on an HMMWV (M998-series)",
+          "the rotary switch (typically part of the electrical system or radio equipment)",
+          "Powering down the vehicle and ensuring the system is de-energized.",
+          "Disconnecting the battery to prevent electrical shock or damage.",
+          "Removing the cover or panel housing the rotary switch.",
+          "Unscrewing or releasing the mounting screws or fasteners securing the switch.",
+          "Carefully removing the switch from its housing.",
+          "Installing the new switch by aligning it with the mounting holes and securing it with the appropriate fasteners.",
+          "Reconnecting any wiring harnesses or connectors, ensuring proper polarity and secure connections.",
+          "Reinstalling the cover or panel.",
+          "Reconnecting the battery and performing a system check."
+        ],
+        "partial_within_allowed": false,
+        "reason": "The answer says it cannot give the manual-based procedure, then supplies nine speculative replacement steps. The oracle only refers rotary-switch repair or replacement to paragraph 4-7; it does not provide the complete procedure. The retrieved source set is empty. The disclaimer does not make the invented steps an allowed partial answer.",
+        "retrieved_verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "the rotary switch on an HMMWV (M998-series)",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "the rotary switch (typically part of the electrical system or radio equipment)",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Powering down the vehicle and ensuring the system is de-energized.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Disconnecting the battery to prevent electrical shock or damage.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Removing the cover or panel housing the rotary switch.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Unscrewing or releasing the mounting screws or fasteners securing the switch.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Carefully removing the switch from its housing.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Installing the new switch by aligning it with the mounting holes and securing it with the appropriate fasteners.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Reconnecting any wiring harnesses or connectors, ensuring proper polarity and secure connections.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Reinstalling the cover or panel.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The retrieved source set is empty.",
+              "statement": "Reconnecting the battery and performing a system check.",
+              "verdict": 0
+            }
+          ]
+        },
+        "supplies_missing_as_fact": true,
+        "unrelated_refusal": false
+      },
+      "abstention_components": {
+        "partial_claim_count": 11,
+        "partial_supported_by_oracle": false,
+        "partial_supported_by_retrieved": false,
+        "value": 0,
+        "withholding_only": 0
+      }
+    },
+    "type": "unanswerable"
+  },
+  "result_hash": "72f25a1528453809427447333ef865b02b65c775736b7ff29f5eaef69f6c1ee0",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-U04-llm_only.json",
+  "source_sha256": "51c9f0e1400ddd21c83c7b1b1d35718c19022e6dbdf275dc302d72e984c91e46"
+}

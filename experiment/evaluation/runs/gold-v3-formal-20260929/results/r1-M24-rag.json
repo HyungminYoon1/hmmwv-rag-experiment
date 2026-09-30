@@ -1,0 +1,255 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "bb8e1b0e2cbf2a0d7ee9b7a48f2b5d9f2ff478ffb679f4d5e643198ddfe13955",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-M24-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 19.25245670000004,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.950304844659681
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.950304844659681
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "M24",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response gives specific torque and pressure values without disclaiming or refusing."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9509201136921905,
+          0.9509200952608362,
+          0.9490743250260164
+        ],
+        "query_vector_hash": "7ab0a012b3e592e097c94d81e41e51a07b905c144db8e1d0d9d25617e71ff578",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What are the specified tightening torque for the steering-gear mounting bolts and the maximum output pressure for the power-steering pump?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the specified tightening torque for the steering-gear mounting bolts and the maximum output pressure for the power-steering pump?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the specified tightening torque for the steering-gear mounting bolts and the maximum output pressure of the power-steering pump?"
+          }
+        ],
+        "response_vectors_hash": "8c53b82c0dbb5c365dfe9932575dde983940fd4bea843720600546d1264b0674",
+        "score": 0.9503048446596809
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "For steering-system inspection"
+        ],
+        "statements": [
+          {
+            "answer_quote": "The specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm)",
+            "statement": "For steering-system inspection, the specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm)."
+          },
+          {
+            "answer_quote": "The maximum output pressure listed for the power-steering pump is 1,450 psi",
+            "statement": "For steering-system inspection, the listed maximum output pressure for the power-steering pump is 1,450 psi."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "The specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm)",
+          "id": "C001",
+          "text": "For steering-system inspection, the specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm)."
+        },
+        {
+          "answer_quote": "The maximum output pressure listed for the power-steering pump is 1,450 psi",
+          "id": "C002",
+          "text": "For steering-system inspection, the listed maximum output pressure for the power-steering pump is 1,450 psi."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "60 ft-lb (81 Nm)",
+            "fulfilled": 1,
+            "id": "M24-A01",
+            "reason": "Matches the specified steering-gear mounting-bolt torque."
+          },
+          {
+            "answer_quote": "1,450 psi",
+            "fulfilled": 1,
+            "id": "M24-A02",
+            "reason": "Matches the pump’s maximum output pressure; the metric conversion is not required."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C005773"
+              ],
+              "evidence_quotes": [
+                "ARE STEERING GEAR MOUNTING CAPSCREWS ADEQUATELY TIGHT? THEY SHOULD BE TIGHTENED TO 60 FT-LB (81 NeM)."
+              ],
+              "reason": "The steering-system inspection passage specifies 60 ft-lb for steering-gear mounting capscrews; the supplied conversion factor rounds this to 81 Nm.",
+              "statement": "For steering-system inspection, the specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000550"
+              ],
+              "evidence_quotes": [
+                "Power Steering Pump:\n\nITEM: Output Pressure (max) \nSTANDARD: 1,450 psi\nMETRIC: 9,998 kPa"
+              ],
+              "reason": "The steering-system table lists the pump's maximum output pressure as 1,450 psi.",
+              "statement": "For steering-system inspection, the listed maximum output pressure for the power-steering pump is 1,450 psi.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000926"
+              ],
+              "evidence_quotes": [
+                "f. Inspect steering gear for mounting\nsecurity. Tighten mounting bolts to\n60 lb-ft (81 N•m)."
+              ],
+              "reason": "The steering-system inspection procedure specifies this torque for the steering-gear mounting bolts.",
+              "statement": "For steering-system inspection, the specified tightening torque for steering-gear mounting bolts is 60 ft-lb (81 Nm).",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000550"
+              ],
+              "evidence_quotes": [
+                "17.\nSTEERING SYSTEM\nSTANDARD\nMETRIC\nPower Steering Pump:\n\nITEM: Output Pressure (max) \nSTANDARD: 1,450 psi\nMETRIC: 9,998 kPa"
+              ],
+              "reason": "The steering-system data table lists 1,450 psi as the pump's maximum output pressure.",
+              "statement": "For steering-system inspection, the listed maximum output pressure for the power-steering pump is 1,450 psi.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9509201136921905,
+          0.9509200952608362,
+          0.9490743250260164
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.950304844659681,
+        "query_vector_hash": "7ab0a012b3e592e097c94d81e41e51a07b905c144db8e1d0d9d25617e71ff578",
+        "ragas_score": 0.9503048446596809,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "8c53b82c0dbb5c365dfe9932575dde983940fd4bea843720600546d1264b0674"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9509201136921905,
+          0.9509200952608362,
+          0.9490743250260164
+        ],
+        "decimal50_cosines": [
+          "0.95092011369219036869098955157917262214491822923704",
+          "0.95092009526083601539384284110095484156084263956833",
+          "0.94907432502601638034276540758564831208165250733561"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9503048446596809
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9503048446596809
+          }
+        },
+        "query_vector_hash": "7ab0a012b3e592e097c94d81e41e51a07b905c144db8e1d0d9d25617e71ff578",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "What are the specified tightening torque for the steering-gear mounting bolts and the maximum output pressure for the power-steering pump?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the specified tightening torque for the steering-gear mounting bolts and the maximum output pressure for the power-steering pump?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "What are the specified tightening torque for the steering-gear mounting bolts and the maximum output pressure of the power-steering pump?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "8c53b82c0dbb5c365dfe9932575dde983940fd4bea843720600546d1264b0674",
+        "score": 0.950304844659681
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "2ba6e2975480693d8078767b924895dd7b33f76b78236b3d41e47b18d9789fcb",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-M24-rag.json",
+  "source_sha256": "e08c8097f493cd10d380529759d9d8bd7cb1e442c1f32083a83206904259f2e0"
+}

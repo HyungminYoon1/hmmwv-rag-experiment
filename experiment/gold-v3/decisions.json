@@ -1,0 +1,131 @@
+[
+  {
+    "id": "G01",
+    "questions": [
+      "S16"
+    ],
+    "decision": "REMOVE_UNASKED_REQUIRED_ELEMENT",
+    "reason": "질문은 청색 배기가스의 의미만 묻는다. S16-A02의 오일 유입 경로는 부수 설명이다.",
+    "pdf_pages": [
+      188,
+      274
+    ],
+    "removed_element": "S16-A02"
+  },
+  {
+    "id": "G02",
+    "questions": [
+      "S16",
+      "M06"
+    ],
+    "decision": "REPLACE_OVERREQUIRED_AND_COMBINATION",
+    "reason": "C002436 단독으로 오일이 연소실로 들어간다는 필수 사실이 완결된다. C001647은 문장이 다음 청크로 이어져 C001648과의 AND를 유지한다.",
+    "pdf_pages": [
+      188,
+      274
+    ],
+    "new_sufficient_sets": [
+      [
+        "C002436"
+      ],
+      [
+        "C001647",
+        "C001648"
+      ]
+    ]
+  },
+  {
+    "id": "G03",
+    "questions": [
+      "M24"
+    ],
+    "decision": "ACCEPT_EQUIVALENT_FACT",
+    "reason": "C005773은 같은 steering gear mounting capscrew의 60 ft-lb (81 N·m)를 명시한다. 조임 토크가 다른 부품에 적용된 경우가 아니다.",
+    "pdf_pages": [
+      102,
+      580
+    ],
+    "add": [
+      "C005773"
+    ]
+  },
+  {
+    "id": "G04",
+    "questions": [
+      "S15"
+    ],
+    "decision": "ACCEPT_SYMPTOM_LINKED_DIAGNOSTIC_TEXT",
+    "reason": "C001838의 FUEL SYSTEM 제목, WHITE SMOKE 조건과 미연소 연료 확인 질문이 한 노드에 함께 있다. 시스템을 묻는 질문에 충분하며 절 번호는 필수 답변이 아니다. 배기색 지침 자체를 지정한 M04에는 추가하지 않는다.",
+    "pdf_pages": [
+      209,
+      274
+    ],
+    "add": [
+      "C001838"
+    ]
+  },
+  {
+    "id": "G05",
+    "questions": [
+      "S17",
+      "M05"
+    ],
+    "decision": "ACCEPT_SYMPTOM_LINKED_DIAGNOSTIC_TEXT",
+    "reason": "C001993은 INTAKE AIR/EXHAUST 진단에서 필터 점검을 지시하고 막힌 필터와 검은 배기가스의 관계를 명시한다. 해당 시스템을 점검해야 한다는 근거로 인정한다.",
+    "pdf_pages": [
+      188,
+      224,
+      274
+    ],
+    "add": [
+      "C001993"
+    ]
+  },
+  {
+    "id": "B01",
+    "questions": [
+      "M01"
+    ],
+    "decision": "EXCLUDE_DIFFERENT_MEASUREMENT_POINT_FROM_MAIN",
+    "reason": "질문에 전압 측정점이 없어 모호하다. 주 집계는 기존 배터리 측정(Test 67) 기준을 유지하며, 모터/솔레노이드(Test 68/70)의 18 V를 자동으로 전용하지 않는다. 두 측정점을 허용하는 별도 민감도와 문항 제외 결과를 제시한다.",
+    "pdf_pages": [
+      356,
+      379
+    ],
+    "candidate_chunks": [
+      "C003397",
+      "C003398"
+    ]
+  },
+  {
+    "id": "B02",
+    "questions": [
+      "M13"
+    ],
+    "decision": "REJECT_COMPONENT_OR_CONFIGURATION_TRANSFER",
+    "reason": "C000540의 parking brake는 service brake와 다르다. C000941에는 범용 service brake 기준 c가 잘렸고 남은 e는 dual service/park 구성이다. C005549는 수치가 끝나기 전에 끊긴다. C000940을 유지한다.",
+    "pdf_pages": [
+      61,
+      64,
+      103,
+      104,
+      556
+    ],
+    "candidate_chunks": [
+      "C000540",
+      "C000941",
+      "C005549"
+    ]
+  },
+  {
+    "id": "B03",
+    "questions": [
+      "M11"
+    ],
+    "decision": "KEEP_FROZEN_QUESTION_AND_REPORT_SENSITIVITY",
+    "reason": "40 lb-ft는 60/100/200 A 발전기 항목의 값이다. 질문에는 발전기 용량이 없으므로 원 질문을 사후 수정하지 않고 M11을 제외한 민감도를 제시한다.",
+    "pdf_pages": [
+      101
+    ]
+  }
+]

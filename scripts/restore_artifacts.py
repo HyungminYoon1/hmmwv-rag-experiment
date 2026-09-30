@@ -13,11 +13,11 @@ def main():
     source = p.add_mutually_exclusive_group()
     source.add_argument('--asset-dir', type=Path)
     source.add_argument('--base-url', help='HTTPS GitHub Release download directory; no trailing filename')
-    p.add_argument('--bundle', action='append', help='runtime-data, preprocessing-replay, or review-evidence; default: all')
+    p.add_argument('--bundle', action='append', help='Bundle ID from artifacts/manifest.json; default: all')
     args = p.parse_args()
     root = args.root.resolve()
     manifest = read(root / 'artifacts/manifest.json')
-    bundles = manifest['bundles']
+    bundles = manifest['bundles'] + manifest.get('supplemental_bundles', [])
     selected = set(args.bundle or [b['id'] for b in bundles])
     if selected - {b['id'] for b in bundles}:
         p.error('Unknown bundle name')

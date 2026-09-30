@@ -1,0 +1,353 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "e1c299560b1ed57c3c3680f545659a9b3462c9556b89f24db1954b194f62f8b8",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-M18-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 45.65071230000012,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9561674492590527
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9561674492590527
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK_SOURCE_QUOTE_RECONSTRUCTED",
+        "value": 0.8
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 0.8
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 0.6666666666666666
+      }
+    },
+    "question_id": "M18",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly answers both questions and makes substantive claims about inspection requirements and CDR valve cleaning methods."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9776769324768867,
+          0.9454127094903739,
+          0.9454127058098976
+        ],
+        "query_vector_hash": "111c1bc970ed0727697149fa879dd211542010ec7df3e5930b11c193f9beca11",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and what cleaning method is required or prohibited for the air-intake CDR valve?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and how should the air-intake CDR valve be cleaned?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and how should the air-intake CDR valve be cleaned?"
+          }
+        ],
+        "response_vectors_hash": "2bb04db33d986b44a95e87ae01cfdef344988579181086c6531ffb24edd58d8b",
+        "score": 0.9561674492590528
+      },
+      "claim_extraction": {
+        "excluded_metadata": [],
+        "shared_conditions": [
+          "Annual inspection",
+          "Air-intake CDR valve cleaning"
+        ],
+        "statements": [
+          {
+            "answer_quote": "at an annual inspection, semiannual checks are not required",
+            "statement": "At an annual inspection, semiannual checks are not required."
+          },
+          {
+            "answer_quote": "Annual inspections include specific tasks such as testing the CDR valve",
+            "statement": "Annual inspections include testing the CDR valve."
+          },
+          {
+            "answer_quote": "The cleaning method that must be used is wiping with a rag.",
+            "statement": "When cleaning the air-intake CDR valve, wiping with a rag is required."
+          },
+          {
+            "answer_quote": "The method that is prohibited is cleaning with solvent",
+            "statement": "When cleaning the air-intake CDR valve, using solvent is prohibited."
+          },
+          {
+            "answer_quote": "it will damage the diaphragm inside the CDR valve",
+            "statement": "Cleaning the air-intake CDR valve with solvent will damage its diaphragm."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "at an annual inspection, semiannual checks are not required",
+          "id": "C001",
+          "text": "At an annual inspection, semiannual checks are not required."
+        },
+        {
+          "answer_quote": "Annual inspections include specific tasks such as testing the CDR valve",
+          "id": "C002",
+          "text": "Annual inspections include testing the CDR valve."
+        },
+        {
+          "answer_quote": "The cleaning method that must be used is wiping with a rag.",
+          "id": "C003",
+          "text": "When cleaning the air-intake CDR valve, wiping with a rag is required."
+        },
+        {
+          "answer_quote": "The method that is prohibited is cleaning with solvent",
+          "id": "C004",
+          "text": "When cleaning the air-intake CDR valve, using solvent is prohibited."
+        },
+        {
+          "answer_quote": "it will damage the diaphragm inside the CDR valve",
+          "id": "C005",
+          "text": "Cleaning the air-intake CDR valve with solvent will damage its diaphragm."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "",
+            "fulfilled": 0,
+            "id": "M18-A01",
+            "reason": "The answer says semiannual checks are not required at an annual inspection, contradicting the required inclusion."
+          },
+          {
+            "answer_quote": "The cleaning method that must be used is wiping with a rag.",
+            "fulfilled": 1,
+            "id": "M18-A02",
+            "reason": "States the required rag-wiping method."
+          },
+          {
+            "answer_quote": "The method that is prohibited is cleaning with solvent, as it will damage the diaphragm inside the CDR valve .",
+            "fulfilled": 1,
+            "id": "M18-A03",
+            "reason": "Explicitly prohibits solvent cleaning."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 0.8,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [],
+              "evidence_quotes": [],
+              "reason": "The context lists annual and semiannual tasks separately but does not state that semiannual checks are not required at an annual inspection.",
+              "statement": "At an annual inspection, semiannual checks are not required.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "C001041"
+              ],
+              "evidence_quotes": [
+                "INTERVAL: Annually ITEM NO.: 29 ITEM TO BE INSPECTED: Air-Intake System PROCEDURES: Test CDR valve (para. 3-9)."
+              ],
+              "reason": "The annual air-intake system procedure specifies this test.",
+              "statement": "Annual inspections include testing the CDR valve.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Wiping with a rag\nis the only authorized method of\ncleaning."
+              ],
+              "reason": "The air-intake system procedure identifies wiping with a rag as the only authorized cleaning method.",
+              "statement": "When cleaning the air-intake CDR valve, wiping with a rag is required.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent."
+              ],
+              "reason": "The air-intake system caution explicitly prohibits solvent cleaning.",
+              "statement": "When cleaning the air-intake CDR valve, using solvent is prohibited.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve."
+              ],
+              "reason": "The caution states that solvent cleaning damages the diaphragm inside the CDR valve.",
+              "statement": "Cleaning the air-intake CDR valve with solvent will damage its diaphragm.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 0.8,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C000854"
+              ],
+              "evidence_quotes": [
+                "Perform all (S) inspections in addition to (A) inspections at the time of the annual inspection."
+              ],
+              "reason": "The context explicitly requires all semiannual inspections at the annual inspection.",
+              "statement": "At an annual inspection, semiannual checks are not required.",
+              "verdict": 0
+            },
+            {
+              "evidence_ids": [
+                "O:C000854",
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Perform all (S) inspections in addition to (A) inspections at the time of the annual inspection.",
+                "Correct CDR function is\ndetermined by checking vacuum with a\nwater manometer. (para. 3-9a)."
+              ],
+              "reason": "Annual inspections include semiannual inspections, and the semiannual air-intake inspection checks CDR function with a water manometer.",
+              "statement": "Annual inspections include testing the CDR valve.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Wiping with a rag\nis the only authorized method of\ncleaning."
+              ],
+              "reason": "The passage says wiping with a rag is the only authorized cleaning method.",
+              "statement": "When cleaning the air-intake CDR valve, wiping with a rag is required.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent."
+              ],
+              "reason": "The passage explicitly says not to clean the CDR valve with solvent.",
+              "statement": "When cleaning the air-intake CDR valve, using solvent is prohibited.",
+              "verdict": 1
+            },
+            {
+              "evidence_ids": [
+                "O:C000914"
+              ],
+              "evidence_quotes": [
+                "Do not clean CDR valve with solvent.\nThis will damage the diaphragm in-\nside the CDR valve."
+              ],
+              "reason": "The solvent warning explicitly states this consequence.",
+              "statement": "Cleaning the air-intake CDR valve with solvent will damage its diaphragm.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9776769324768867,
+          0.9454127094903739,
+          0.9454127058098976
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9561674492590527,
+        "query_vector_hash": "111c1bc970ed0727697149fa879dd211542010ec7df3e5930b11c193f9beca11",
+        "ragas_score": 0.9561674492590528,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "2bb04db33d986b44a95e87ae01cfdef344988579181086c6531ffb24edd58d8b"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9776769324768867,
+          0.9454127094903739,
+          0.9454127058098976
+        ],
+        "decimal50_cosines": [
+          "0.97767693247688651867202772398688788193133115635985",
+          "0.94541270949037381019568873878759851120630407300968",
+          "0.94541270580989756089726342206540890452620722213098"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 2.220446049250313e-16,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.9561674492590528
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.9561674492590528
+          }
+        },
+        "query_vector_hash": "111c1bc970ed0727697149fa879dd211542010ec7df3e5930b11c193f9beca11",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and what cleaning method is required or prohibited for the air-intake CDR valve?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and how should the air-intake CDR valve be cleaned?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are semiannual checks required during an annual inspection, and how should the air-intake CDR valve be cleaned?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "2bb04db33d986b44a95e87ae01cfdef344988579181086c6531ffb24edd58d8b",
+        "score": 0.9561674492590527
+      }
+    },
+    "type": "multi-evidence"
+  },
+  "result_hash": "c11069984faa2e44dd1d05ca1b3c85f905d3e799e4ea37b8719843a06a1642cd",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-M18-rag.json",
+  "source_sha256": "fded00f94ab0cf68a099a3fd4f5d014e1177163413cb8da138904d69fe0b329c"
+}

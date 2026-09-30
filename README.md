@@ -2,6 +2,8 @@
 
 공개 HMMWV 정비교범을 대상으로, 같은 경량 언어모델에 교범 검색 결과를 제공했을 때 답변의 근거 활용과 응답 특성이 어떻게 달라지는지 비교한 연구입니다. 전처리·검색·답변 생성·평가 프로그램과 실제 실험 기록을 함께 제공합니다.
 
+> **정정 배포 `v2026.09.30`**: 정답 근거와 일부 채점 요건을 보완했습니다. 현재 기준은 **gold-v3**, 현재 결과는 **gold-v3-formal-20260929**입니다. [변경 이유와 전후 결과](docs/corrections-20260929.md)를 확인하세요. 기존 질문·검색 결과·생성 답변과 과거 버전은 보존했습니다.
+
 ## 1. 실험 개요
 
 | 항목 | 설정 |
@@ -27,39 +29,39 @@
 | retrieval/ | BGE-M3 임베딩·인덱스·검색 앱 |
 | experiment/ | LLM Only/RAG 실행기, 자원·응답시간 측정과 결과 화면 |
 | experiment/runs/formal-v1/ | 실제 360개 요청과 첫 회차 평가 입력 |
-| experiment/evaluation/runs/ | 실제 답변 평가·수정 기록 6개와 기능 점검 기록 7개 |
-| experiment/gold-v1/, gold-v2/ | 최초 정답 근거와 원문 검토 후 개정한 근거 |
+| experiment/evaluation/runs/ | 실제 답변 평가·수정 기록 7개와 기능 점검 기록 7개 |
+| experiment/gold-v1/, gold-v2/, gold-v3/ | 최초 기준, 1차 개정 기준, 현재 정정 기준 |
 | experiment/revisions/20260929-v2/ | 평가 개정 이유, 전후 점수와 검증 자료 |
 | artifacts/ | 원본 파일 목록, 공개용 변경 기록, 자료 묶음의 SHA-256·복원 경로 |
 | scripts/ | 이 배포본의 설치·복원·조회·검증 보조 도구 |
 | docs/ | 다른 연구자를 위한 설치·재연·출처 안내 |
 
-자료 ZIP 3개는 [고정 Release `v2026.09.29`](https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/tag/v2026.09.29)에서 받습니다. `runtime-data-20260929.zip`, `preprocessing-replay-20260929.zip`, `review-evidence-20260929.zip`으로 나누어 제공합니다. 모델 가중치와 Python 가상환경은 포함하지 않습니다.
+자료 ZIP 4개는 [고정 Release `v2026.09.30`](https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/tag/v2026.09.30)에서 받습니다. `runtime-data-20260929.zip`, `preprocessing-replay-20260929.zip`, `review-evidence-20260929.zip`, `correction-evidence-20260929.zip`으로 나누어 제공합니다. 앞의 세 ZIP은 최초 Release와 바이트가 같습니다. 모델 가중치와 Python 가상환경은 포함하지 않습니다.
 
 실험 계산 코드·교범·청크·질의 본문·생성 답변·평가 결과는 유지했습니다. 공개 사본에서는 PC 경로와 HWPX 작성자 메타데이터를 정리하고, 문서를 저장소 안의 설계·설정·결과만으로 읽을 수 있도록 편집했습니다. 관련 검증 목록도 갱신했습니다. 원 실험의 해시와 공개 사본의 해시는 [공개용 변경 기록](artifacts/publication-changes.json)으로 구분합니다. 하위 README와 당시 보고서는 작성 시점의 상태를 담고 있으므로, 현재 실행 절차는 이 README와 [재연 설명서](docs/reproduction.md)를 먼저 보세요.
 
 ## 3. 현재 결과
 
-현재 자동평가 결과는 **sol-revision-formal-20260929-v3**입니다. 근거 Recall@5는 70%, 모든 필수 근거를 찾은 문항은 답변 가능한 50개 중 27개입니다.
+현재 결과는 **gold-v3-formal-20260929**입니다. 기존 GPT-6 Sol 판정을 재사용하고 정정한 근거 기준으로 집계했습니다. 근거 Recall@5는 **78.0%**, 모든 필수 근거를 찾은 문항은 **31/50**입니다. 새 API 호출은 없습니다.
 
 | 자동평가 지표 | LLM Only | RAG |
 | --- | ---: | ---: |
 | 질문 관련성 | 0.7267 | 0.8411 |
 | 정답 근거 지지율 | 18.4% | 77.7% |
-| 필수 요소 충족률 | 24.8% | 77.2% |
+| 필수 요소 충족률 | 25.8% | 78.2% |
 
 위 세 지표는 각 조건의 답변 가능한 50문항을 대상으로 합니다. 질문 관련성은 정답률과 다릅니다. 원문 대조 후 근거·채점 기준을 수정했으며, 그 전후 변화는 생성모델 자체의 성능 향상을 뜻하지 않습니다. Astra의 추가 AI 검토와 연구자·정비 전문가의 직접 검증도 구분합니다.
 
 - [결과 요약과 해석](docs/results.md)
-- [13개 평가 기록의 목적과 버전 설명](experiment/evaluation/RUN_HISTORY.md)
-- [개정 전후 점수와 검증 기록](experiment/revisions/20260929-v2/결과_업데이트.md)
+- [14개 평가 기록의 목적과 현재 기준](docs/evaluation-history.md)
+- [이번 정정과 검증 기록](docs/corrections-20260929.md)
 
 ## 4. 저장된 결과부터 확인하기
 
 먼저 저장소를 내려받습니다.
 
 ```powershell
-git clone --branch v2026.09.29 https://github.com/HyungminYoon1/hmmwv-rag-experiment.git
+git clone --branch v2026.09.30 https://github.com/HyungminYoon1/hmmwv-rag-experiment.git
 Set-Location hmmwv-rag-experiment
 ```
 
@@ -68,6 +70,7 @@ PowerShell에서 이 README가 있는 폴더를 작업 디렉토리로 사용합
 ```powershell
 # 코드·실험 기록과 공개용 변경 목록에 따른 파일 해시 확인
 py -3.11 -X utf8 scripts/verify_artifacts.py --scope core
+py -3.11 -X utf8 -m experiment.correction verify
 
 # 결과 화면 실행: Python 표준 라이브러리 사용
 py -3.11 -X utf8 scripts/serve_results.py --port 8767
@@ -75,13 +78,14 @@ py -3.11 -X utf8 scripts/serve_results.py --port 8767
 
 브라우저에서 <http://127.0.0.1:8767/evaluation>을 엽니다. 이미 다른 앱이 해당 포트를 사용 중이면 `--port 8772`처럼 바꿀 수 있습니다. 서버는 `Ctrl+C`로 종료합니다.
 
-원문 이미지와 전체 검증도 확인하려면 다음 명령으로 고정 Release의 ZIP 3개를 내려받아 복원합니다.
+원문 이미지와 전체 검증도 확인하려면 다음 명령으로 고정 Release의 ZIP 4개를 내려받아 복원합니다.
 
 ```powershell
-py -3.11 -X utf8 scripts/restore_artifacts.py --base-url https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/download/v2026.09.29
+py -3.11 -X utf8 scripts/restore_artifacts.py --base-url https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/download/v2026.09.30
 py -3.11 -X utf8 scripts/verify_artifacts.py --scope all
 pwsh -File scripts/setup.ps1 -Mode view
 .\.venv-view\Scripts\python.exe -X utf8 scripts/verify_saved_results.py
+.\.venv-view\Scripts\python.exe -X utf8 -m experiment.correction verify --source-images
 ```
 
 복원 프로그램은 다른 내용의 파일을 덮어쓰지 않습니다. 검증 보고서는 기존 결과와 분리한 `validation/local/`에 생성됩니다.
@@ -101,7 +105,7 @@ pwsh -File scripts/setup.ps1 -Mode view
 
 ## 배포 정보
 
-- [공개 저장소](https://github.com/HyungminYoon1/hmmwv-rag-experiment) · [고정 Release `v2026.09.29`](https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/tag/v2026.09.29).
+- [공개 저장소](https://github.com/HyungminYoon1/hmmwv-rag-experiment) · [고정 Release `v2026.09.30`](https://github.com/HyungminYoon1/hmmwv-rag-experiment/releases/tag/v2026.09.30).
 - [배포 준비와 검증 기록](docs/package-validation.md), [패키징 결정 기록](docs/packaging-decisions.md).
 - [공개 전 보강 내역](docs/publication-review.md): 경로·메타데이터 정리, 라이선스 동봉, 원본 보존 및 재검증.
 - 코드의 공개 라이선스는 아직 선택하지 않았습니다. [라이선스 상태](LICENSE_STATUS.md)와 [외부 자료 출처](THIRD_PARTY_NOTICES.md)를 확인하세요.

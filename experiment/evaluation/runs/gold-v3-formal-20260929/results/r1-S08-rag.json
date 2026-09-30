@@ -1,0 +1,218 @@
+{
+  "at": "2026-09-29T14:24:16.045790+00:00",
+  "identity_hash": "e097fa2670485a15a2e54fcba507e18c7310ec5f66245703faa837bc0bc156b2",
+  "input_hash": "e0899c711fa01c1724d00f83e4b33d69d2d6cf743c81f982424382cc83f06b2f",
+  "new_api_calls": 0,
+  "result": {
+    "attempt_key": "r1-S08-rag",
+    "condition": "RAG",
+    "errors": {},
+    "evaluation_elapsed_seconds": 11.231161600000632,
+    "metrics": {
+      "ar_raw": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9773336549893679
+      },
+      "ar_report": {
+        "status": "OK_NUMERIC_RECALCULATION",
+        "value": 0.9773336549893679
+      },
+      "corpus_unanswerable_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "correct_abstention": {
+        "status": "N/A_OUT_OF_SCOPE",
+        "value": null
+      },
+      "faithfulness": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "full_abstention": {
+        "status": "OK",
+        "value": 0
+      },
+      "oracle_support": {
+        "status": "OK",
+        "value": 1.0
+      },
+      "required_coverage": {
+        "status": "OK",
+        "value": 1.0
+      }
+    },
+    "question_id": "S08",
+    "stages": {
+      "answer_kind": {
+        "contains_factual_claims": true,
+        "kind": "normal",
+        "reason": "The response directly answers no and makes a substantive claim about what the document states."
+      },
+      "answer_relevancy": {
+        "cosine_similarities": [
+          0.9773336528014943,
+          0.9773336547588858,
+          0.9773336574077235
+        ],
+        "query_vector_hash": "49fed75b07aa4aeddfdd5f9e9e1a948e4498506f129b169b7f4aef80a6fb174b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Are the Engine Cooling Tests intended to diagnose problems with the temperature sending unit or gauge?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are the Engine Cooling Tests intended to diagnose problems with the temperature sending unit or gauge?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are the Engine Cooling Tests intended to diagnose problems with the temperature sending unit or gauge?"
+          }
+        ],
+        "response_vectors_hash": "938928cb0567ef623d9390a9c644fec2d38d52140b513d613b04296aec6f7dc6",
+        "score": 0.977333654989368
+      },
+      "claim_extraction": {
+        "excluded_metadata": [
+          "The document explicitly states"
+        ],
+        "shared_conditions": [],
+        "statements": [
+          {
+            "answer_quote": "the Engine Cooling Tests are not intended to diagnose a faulty temperature sending unit or gauge",
+            "statement": "The Engine Cooling Tests are not intended to diagnose problems with the temperature sending unit or gauge."
+          }
+        ]
+      },
+      "claims": [
+        {
+          "answer_quote": "the Engine Cooling Tests are not intended to diagnose a faulty temperature sending unit or gauge",
+          "id": "C001",
+          "text": "The Engine Cooling Tests are not intended to diagnose problems with the temperature sending unit or gauge."
+        }
+      ],
+      "coverage": {
+        "elements": [
+          {
+            "answer_quote": "No, the Engine Cooling Tests are not intended to diagnose a faulty temperature sending unit or gauge.",
+            "fulfilled": 1,
+            "id": "S08-A01",
+            "reason": "The answer explicitly excludes diagnosis of both the temperature sending unit and the gauge, matching the source."
+          }
+        ]
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "C002103"
+              ],
+              "evidence_quotes": [
+                "Please note that this paragraph is NOT for diagnoses of problems with the temperature\nsending unit or the gauge."
+              ],
+              "reason": "The Engine Cooling Tests passage explicitly excludes diagnoses of problems with the temperature sending unit or gauge.",
+              "statement": "The Engine Cooling Tests are not intended to diagnose problems with the temperature sending unit or gauge.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "inherited_metrics": [
+        "ar_raw",
+        "ar_report",
+        "full_abstention"
+      ],
+      "oracle_support": {
+        "score": 1.0,
+        "verdicts": {
+          "statements": [
+            {
+              "evidence_ids": [
+                "O:C002103"
+              ],
+              "evidence_quotes": [
+                "Please note that this paragraph is NOT for diagnoses of problems with the temperature\nsending unit or the gauge."
+              ],
+              "reason": "The passage explicitly excludes diagnoses of problems with the temperature sending unit or gauge.",
+              "statement": "The Engine Cooling Tests are not intended to diagnose problems with the temperature sending unit or gauge.",
+              "verdict": 1
+            }
+          ]
+        }
+      },
+      "relevancy_calculation_audit": {
+        "absolute_difference": 1.1102230246251565e-16,
+        "cosine_similarities": [
+          0.9773336528014943,
+          0.9773336547588858,
+          0.9773336574077235
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "independent_score": 0.9773336549893679,
+        "query_vector_hash": "49fed75b07aa4aeddfdd5f9e9e1a948e4498506f129b169b7f4aef80a6fb174b",
+        "ragas_score": 0.977333654989368,
+        "reference_implementation": "python_math_fsum_cosine",
+        "response_vectors_hash": "938928cb0567ef623d9390a9c644fec2d38d52140b513d613b04296aec6f7dc6"
+      },
+      "relevancy_numeric_recalculation": {
+        "cosine_similarities": [
+          0.9773336528014943,
+          0.9773336547588858,
+          0.9773336574077235
+        ],
+        "decimal50_cosines": [
+          "0.97733365280149432544723429603527032511108443810553",
+          "0.97733365475888576721509548943817821230532810455759",
+          "0.97733365740772345459124482487260640119418831529052"
+        ],
+        "flags": [
+          0,
+          0,
+          0
+        ],
+        "maximum_implementation_difference": 0.0,
+        "model_calls": 0,
+        "original_error": null,
+        "original_metrics": {
+          "ar_raw": {
+            "status": "OK",
+            "value": 0.977333654989368
+          },
+          "ar_report": {
+            "status": "OK",
+            "value": 0.977333654989368
+          }
+        },
+        "query_vector_hash": "49fed75b07aa4aeddfdd5f9e9e1a948e4498506f129b169b7f4aef80a6fb174b",
+        "questions": [
+          {
+            "noncommittal": 0,
+            "question": "Are the Engine Cooling Tests intended to diagnose problems with the temperature sending unit or gauge?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are the Engine Cooling Tests intended to diagnose problems with the temperature sending unit or gauge?"
+          },
+          {
+            "noncommittal": 0,
+            "question": "Are the Engine Cooling Tests intended to diagnose problems with the temperature sending unit or gauge?"
+          }
+        ],
+        "reference_implementation": "python_math_fsum_and_decimal50",
+        "response_vectors_hash": "938928cb0567ef623d9390a9c644fec2d38d52140b513d613b04296aec6f7dc6",
+        "score": 0.9773336549893679
+      }
+    },
+    "type": "single-evidence"
+  },
+  "result_hash": "731e9f1959195fc4bc3e2248dd2c03b7c93e9065b57cd313cea3915d8f79ff24",
+  "source_file": "experiment/evaluation/runs/sol-revision-formal-20260929-v3/results/r1-S08-rag.json",
+  "source_sha256": "b6e4c678edb809d8d4dcd83bfea455edc03de66da4ab70f4b9613d3ecf304420"
+}
